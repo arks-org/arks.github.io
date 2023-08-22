@@ -25,7 +25,7 @@
             {% for item in site.data.navigation.main_tree %}
               <li class="nav-item">
                 <a class="nav-link {% if page.url == item.link %}active text-brand" aria-current="page"{% else %}"{% endif %}
-                   href="{{ item.link }}">
+                   href="{{ site.baseurl }}{{ item.link }}">
                 {{ item.text }}
                 </a>
               </li>
