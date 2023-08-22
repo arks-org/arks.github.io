@@ -1,0 +1,30 @@
+<footer class="ark-alliance__footer border-top border-dark-subtle my-4">
+	<nav class="container mt-4">
+		<ul class="d-flex justify-content-between list-unstyled border-bottom border-dark-subtle pb-2">
+			<li>
+				<a class="text-uppercase link-secondary"
+				   href="{{ site.contact.newsletter }}">
+					Subscribe to our Newsletter
+				</a>
+			</li>
+			<li>
+				Updated {{ site.time | date_to_long_string }}
+				<a href="/feed/" class="text-warning">
+					<svg class="svg-inline--fa fa-fa-rss"
+					     aria-hidden="true"
+					     role="img"
+					     xmlns="http://www.w3.org/2000/svg"
+					     viewBox="0 0 448 512" data-fa-i2svg="">
+						<use xlink:href="#svg-rss"></use>
+					</svg>
+				</a>
+			</li>
+			<li>
+				<a class="text-uppercase link-secondary"
+				   href="mailto:{{ site.contact.email }}">
+					Contact Us
+				</a>
+			</li>
+		</ul>
+	</nav>
+</footer>

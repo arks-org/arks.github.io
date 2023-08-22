@@ -1,0 +1,161 @@
+---
+title: Community
+type: article
+permalink: /community/
+pid: 212
+original_date: 2020-11-06T05:16:42+00:00
+published: true
+---
+
+The ARK Alliance community comprises institutions and people who use or assign
+ARK identifiers as well as those interested in promoting ARKs and sustaining
+the open ARK infrastructure, which consists of standards, best practices, the
+[N2T.net] resolver, and the registry of ARK organizations. There is also an
+[ARK Community Code of Conduct].
+
+[![][1]{: .img-thumbnail .img-fluid .rounded-pill fetchpriority="high" loading="eager"}][2]
+
+Global distribution of over 1000 ARK organizations.
+
+The ARK Alliance emerged from a [collaboration] between the California Digital
+Library and DuraSpace/LYRASIS. Launched in 2018, it has gained the support of
+[43 institutions]. Since 2021 the ARK Alliance has been a member of the
+[NDSA], an international consortium committed to the long-term preservation of
+digital information.
+
+## How to get involved
+
+1.  Join a discussion [group] (in English) or 🇫🇷 [liste] de discussion
+    (francophone)
+2.  Follow the ARK Alliance on twitter [@arks_org]
+3.  Follow us on mastodon [@arks_org@fosstodon.org]
+4.  Read the ARK Alliance [blog]
+5.  Sign up for our newsletter
+6.  Submit a community news item or blog post using this [online form]
+7.  Tell us about yourself by filling out a 5-minute [ARK survey] (in English)
+    or 🇫🇷 une [enquête ARK] (version française)
+8.  Tell us about your [interest in helping with the work of the ARK Alliance]
+9.  [Contact us] about joining a [working group][]: [Outreach], [Registry],
+    [Technical], [Advisory]
+
+## Who is creating ARKs
+
+Since 2001 over [1000 organizations] across the world registered to assign
+ARKs. The registry includes national and university libraries and archives,
+art museums, natural history museums, publishers, data centers, government
+agencies, vendors, and research labs. To register your organization, fill out
+this [online request form].
+
+![chart of growth of ARK-assigning organizations since 2001][]{: .img-thumbnail .img-fluid loading="lazy" width="534"}
+
+What ARKs are being assigned to (February 2023):
+
+-   genealogical records (8 billion [FamilySearch])
+-   publisher content (100 million [Portico])
+-   scanned texts (30 million [Internet Archive])
+-   scientific records (22 million [INIST])
+-   bibliographic records (27 million [BnF main catalog])
+-   museum specimens (11 million going on 100 million [Smithsonian])
+-   public health documents, many from legal discovery (15 million [UCSF IDL])
+-   digitized documents and objects (6 million [BnF Gallica])
+-   historical persons, families, and organizations (4 million [SNACC])
+-   finding aids and special collections (4 million [Merritt])
+-   library and archival objects (1.3 million [Durham University Library])
+-   educational resources (1.1 million [University of Utah])
+-   fine art (483,000 [Louvre museum])
+-   historic maps (334,000 [Princeton University Libraries])
+-   vocabulary terms (27,000 [Periodo], [YAMZ])
+-   datasets, journals, archeological artifacts, living beings, etc.
+
+We continue to receive [expressions of interest][interest in helping with the
+work of the ARK Alliance] and have attracted support from the following 43
+institutions on 4 continents:
+
+-   Australian National Data Service
+-   Bibliothèque et Archives nationales du Québec
+-   Bibliothèque nationale de France
+-   Bibliothèque nationale de Luxembourg
+-   The British Library
+-   Caltech (California Institute of Technology)
+-   City University of New York
+-   Colectica
+-   Consejo Nacional de Investigaciones Científicas y Técnicas – Argentina
+-   Crossref
+-   DaSCH, Swiss National Data & Service Center for the Humanities
+-   DeSci Labs
+-   ENIP – Universidad Autónoma de Nayarit
+-   Family Search International
+-   HES-SO University of Applied Sciences and Arts, Haute école de gestion de
+    Genève
+-   Indiana University
+-   Institut Internationale de la Marionnette
+-   Institute of Information Science, Academia Sinica, Taiwan
+-   Internet Archive
+-   Max Planck Institute for Art History – Bibliotheca Hertziana
+-   National Center for Atmospheric Research
+-   National University of Ireland, Galway
+-   Penn State University
+-   Portico
+-   Sempiternelia
+-   Service interministériel des Archives de France
+-   Smithsonian Institution
+-   Texas A&M University Libraries
+-   Texas Advanced Computing Center (TACC)
+-   University College Dublin
+-   University of Arizona
+-   University of California, San Francisco
+-   University of Chicago
+-   University of Houston Libraries
+-   University of Illinois at Chicago
+-   University of Illinois at Urbana-Champaign
+-   University of Maryland
+-   University of North Texas
+-   University of Pennsylvania Libraries
+-   University of Southern California Information Sciences Institute
+-   University of Utah
+-   University of Virginia
+-   Zürcher Hochschule der Künste
+{: .list-2-columns }
+
+
+[N2T.net]: https://n2t.net
+[ARK Community Code of Conduct]: /about/ark-community-code-of-conduct/
+[1]: /assets/images/pages/community/image-2048x845.png
+[2]: https://www.google.com/maps/d/u/0/edit?mid=1ALGeRERECL36f2pg7pqrthUYNmuU43UM&usp=sharing
+[collaboration]: https://wiki.lyrasis.org/display/ARKs/ARKs+in+the+Open+Project
+[43 institutions]: #supporting_organizations
+[NDSA]: https://ndsa.org
+[group]: https://groups.google.com/g/arks-forum
+[liste]: https://framalistes.org/sympa/info/arks-forum-fr
+[@arks_org]: https://twitter.com/arks_org
+[@arks_org@fosstodon.org]: https://fosstodon.org/@arks_org
+[blog]: /blog/
+[online form]: https://docs.google.com/forms/d/1e7GvJYvsMd7Qm_LdgkVaUB96dVzeou85f0VbhA4BsSs
+[ARK survey]: https://survey.alchemer.com/s3/6167987/ARK-Alliance-Survey
+[enquête ARK]: https://survey.alchemer.com/s3/6168001/ARK-Alliance-Survey-French
+[interest in helping with the work of the ARK Alliance]: /eoi
+[Contact us]: /contact-us
+[working group]: https://wiki.lyrasis.org/pages/viewpage.action?pageId=108757988
+[Outreach]: https://wiki.lyrasis.org/display/ARKs/Outreach+Working+Group
+[Registry]: https://wiki.lyrasis.org/display/ARKs/NAAN+Registry+Working+Group
+[Technical]: https://wiki.lyrasis.org/display/ARKs/Technical+Working+Group
+[Advisory]: https://wiki.lyrasis.org/display/ARKs/Advisory+Group
+[1000 organizations]: https://n2t.net/e/pub/naan_table.html
+[online request form]: https://goo.gl/forms/bmckLSPpbzpZ5dix1
+[chart of growth of ARK-assigning organizations since 2001]: https://n2t.net/e/pub/naan_growth.png
+[FamilySearch]: https://familysearch.org/
+[Portico]: https://www.portico.org/
+[Internet Archive]: https://archive.org/
+[INIST]: https://www.inist.fr/
+[BnF main catalog]: https://catalogue.bnf.fr/
+[Smithsonian]: https://library.si.edu/
+[UCSF IDL]: https://www.industrydocuments.ucsf.edu/
+[BnF Gallica]: https://gallica.bnf.fr/GallicaEnChiffres
+[SNACC]: https://snaccooperative.org/
+[Merritt]: https://merritt.cdlib.org/
+[Durham University Library]: https://www.durham.ac.uk/departments/library/
+[University of Utah]: https://lib.utah.edu/
+[Louvre museum]: https://www.louvre.fr/
+[Princeton University Libraries]: https://library.princeton.edu/libraries
+[Periodo]: https://perio.do/
+[YAMZ]: https://yamz.net/

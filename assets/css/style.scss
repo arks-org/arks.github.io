@@ -1,0 +1,7 @@
+---
+---
+{% comment %}
+This file exists to override the default files structure of the gh-pages primer theme
+Generates localized CSS. Local styles defined in _brand/_sass/
+{% endcomment %}
+@import "ark";

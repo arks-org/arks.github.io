@@ -1,0 +1,145 @@
+###############
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+################
+
+title: ARK Alliance
+email: your-email@example.com
+tagline: >-
+  Home of the Archival Resource Key (ARK)
+description: >-
+  ARKs are reliable, persistent identifiers for information objects,
+  functioning as stable web addresses that avoid 404 errors. Join the ARK
+  Alliance, a global community upholding ARK infrastructure for research and
+  scholarship.
+baseurl: ""
+url: "https://arks.org"
+author: "The ARK Alliance"
+
+contact:
+  newsletter: http://eepurl.com/hnpLi5
+  email: name@example.com
+
+##############
+# SEO SPECIFIC
+# see https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
+##############
+twitter:
+  username: arks_org
+  card: summary
+
+social:
+  name: ARK Alliance
+  links:
+    - https://github.com/arks-org
+    - https://twitter.com/arks_org
+    - https://fosstodon.org/@arks_org
+    - https://youtube.com/@arks_org
+
+# webmaster_verifications:
+#   google: 1234
+#   bing: 1234
+#   alexa: 1234
+#   yandex: 1234
+#   baidu: 1234
+#   facebook: 1234
+
+
+#########
+# Plugins
+# see: https://pages.github.com/versions/
+#########
+
+plugins:
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+######################
+# Skinning/Theme Files
+# layout, includes, and sass are moved into non-standard _brand
+######################
+
+layouts_dir         : _brand/layouts
+includes_dir        : _brand/includes
+sass:
+  sass_dir: _brand/sass
+
+
+#############
+# Content/Collections
+# content types for the site, grouped into a "content" directory
+#############
+
+collections_dir: content
+
+collections:
+  posts:
+    output: true
+  pages:
+    output: true
+
+defaults:
+  - scope:
+      type: "posts"
+    values:
+      layout: default
+      permalink: /news/:name/
+  - scope:
+      type: "pages"
+    values:
+      layout: default
+
+##############
+# Misc. Config
+##############
+
+markdown: kramdown
+markdown_ext        : "md"
+excerpt_separator : <!--more-->
+
+##############
+# feed plugin
+# custom path for existing legacy subscribers
+# ############
+feed:
+  path: /feed/index.xml
+
+##########################
+# Exclude from processing.
+##########################
+exclude:
+  - "**/README.md"
+  - "*.gemspec"
+  - "*.gitkeep"
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - ".idea/"
+  - "gulp/"
+  - .asset-cache
+  - .bundle
+  - .jekyll-cache/
+  - .sass-cache/
+  - CHANGELOG
+  - config
+  - CONTRIBUTING.md
+  - Gemfile
+  - Gemfile.lock
+  - gemfiles/
+  - gulpfile.js
+  - LICENSE
+  - log
+  - node_modules/
+  - package.json
+  - README
+  - README.md
+  - tmp
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - yarn.lock

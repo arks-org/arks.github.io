@@ -1,0 +1,37 @@
+@import "utils";
+
+// branding ovverides
+.navbar {
+  --bs-navbar-active-color: #b8860b;
+}
+
+// branding BEM
+.ark-alliance {
+
+  &__title,
+  &__content,
+  &__footer {
+    font-family: 'Poly', serif;
+  }
+  &__tagline
+  &__navbar {
+   font-family: 'Work Sans', sans-serif;
+  }
+  &__content {
+    font-size: 1.4rem;
+
+    h2, h3, h4, h5, h6 {
+      margin-bottom: .75rem;
+    }
+
+    @for $i from 2 through 4 {
+      @include list-columns($i);
+    }
+
+  }
+
+  .text-brand {
+    color: #b8860b;
+  }
+}
+

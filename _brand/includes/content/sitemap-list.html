@@ -1,0 +1,28 @@
+<div class="row">
+	<div class="col">
+		<h2>Pages</h2>
+		<ul>
+		{% for page in site.pages %}
+			{% if page.title and page.permalink != "/404.html" %}
+			<li>
+				<a href="{{ page.permalink }}">
+					{{ page.title }}
+				</a> 
+			</li>
+			{% endif %}
+		{% endfor %}
+		</ul>
+	</div>
+	<div class="col">
+		<h2>Posts</h2>
+		<ul>
+		{% for post in site.posts %}
+			<li>
+				<a href="{{ post.permalink }}">
+					{{ post.title }}
+				</a> 
+			</li>	
+		{% endfor %}
+		</ul>
+	</div>	
+</div>

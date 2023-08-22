@@ -1,0 +1,36 @@
+    <nav class="ark-alliance__navbar navbar navbar-expand-md border-top border-bottom border-dark-subtle">
+      <div class="container">
+        <a href="/" class="navbar-brand d-md-none">
+          <svg class="ark-alliance__logo svg-inline--fa fa-fa-ark fa-xl text-brand"
+               aria-hidden="true"
+               role="img"
+               xmlns="http://www.w3.org/2000/svg"
+               viewBox="0 0 640 512" data-fa-i2svg="">
+            <use xlink:href="#svg-ark"></use>
+          </svg>
+          {{ site.title }}
+        </a>
+        <button class="navbar-toggler" 
+               type="button" 
+               data-bs-toggle="collapse" 
+               data-bs-target="#navbar-content" 
+               aria-controls="navbar-content" 
+               aria-expanded="false" 
+               aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" 
+             id="navbar-content">
+          <ul class="navbar-nav mx-auto mb-2 mb-md-0 text-uppercase">
+            {% for item in site.data.navigation.main_tree %}
+              <li class="nav-item">
+                <a class="nav-link {% if page.url == item.link %}active text-brand" aria-current="page"{% else %}"{% endif %}
+                   href="{{ item.link }}">
+                {{ item.text }}
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </nav>
