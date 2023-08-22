@@ -15,8 +15,8 @@ description: >-
   functioning as stable web addresses that avoid 404 errors. Join the ARK
   Alliance, a global community upholding ARK infrastructure for research and
   scholarship.
-baseurl: ""
-url: "https://arks.org"
+baseurl: "arks.github.io"
+url: "https://arks.github.io"
 author: "The ARK Alliance"
 
 contact:
