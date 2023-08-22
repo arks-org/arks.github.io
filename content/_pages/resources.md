@@ -125,7 +125,7 @@ To get your software listed please [let us know] about it.
 [PDF]: https://n2t.net/e/Towards_Electronic_Persistence_Using_ARK_Identifiers.pdf
 [General identifier concepts and conventions]: /about/identifier-concepts-and-conventions/
 [wikipedia]: http://en.wikipedia.org/wiki/Archival_Resource_Key
-[1]: /assets/images/pages/resources/1089px-Salle_de_lecture_de_la_Bibliotheque_Mazarine_Paris_n1.jpg
+[1]: assets/images/pages/resources/1089px-Salle_de_lecture_de_la_Bibliotheque_Mazarine_Paris_n1.jpg
 [ARKetype]: https://www.arketype.ch/
 [swissuniversities]: https://www.swissuniversities.ch
 [N2T.net]: http://n2t-dev.n2t.net/

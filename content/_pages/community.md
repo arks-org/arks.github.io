@@ -120,7 +120,7 @@ institutions on 4 continents:
 
 [N2T.net]: https://n2t.net
 [ARK Community Code of Conduct]: /about/ark-community-code-of-conduct/
-[1]: /assets/images/pages/community/image-2048x845.png
+[1]: assets/images/pages/community/image-2048x845.png
 [2]: https://www.google.com/maps/d/u/0/edit?mid=1ALGeRERECL36f2pg7pqrthUYNmuU43UM&usp=sharing
 [collaboration]: https://wiki.lyrasis.org/display/ARKs/ARKs+in+the+Open+Project
 [43 institutions]: #supporting_organizations

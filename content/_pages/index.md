@@ -61,8 +61,8 @@ National Library of France).
 
 
 [1000 organizations]: https://arks.org/community/
-[1]: /assets/images/pages/index/ark_things.png
+[1]: assets/images/pages/index/ark_things.png
 [suffix passthrough]: /about/ark-naans-and-systems#suffix-passthrough
 [this request form]: https://goo.gl/forms/bmckLSPpbzpZ5dix1
 [working groups]: https://wiki.lyrasis.org/display/ARKs/ARKs+in+the+Open+Project
-[2]: /assets/images/pages/index/cropped-ARKsInTheOpen-1536x957.jpg
+[2]: assets/images/pages/index/cropped-ARKsInTheOpen-1536x957.jpg
