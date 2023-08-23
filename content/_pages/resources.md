@@ -120,12 +120,12 @@ To get your software listed please [let us know] about it.
     2008-06-05, Mark Phillips. [slides][16]
 
 [NAAN form]: https://goo.gl/forms/bmckLSPpbzpZ5dix1
-[The ARK Identifier Scheme (v.18)]: /wp-content/uploads/2023/04/ark-18-arksorg.pdf
+[The ARK Identifier Scheme (v.18)]: /assets/documents/2023/04/ark-18-arksorg.pdf
 [Current and evolving specifications]: /specs/
 [PDF]: https://n2t.net/e/Towards_Electronic_Persistence_Using_ARK_Identifiers.pdf
 [General identifier concepts and conventions]: /about/identifier-concepts-and-conventions/
 [wikipedia]: http://en.wikipedia.org/wiki/Archival_Resource_Key
-[1]: assets/images/pages/resources/1089px-Salle_de_lecture_de_la_Bibliotheque_Mazarine_Paris_n1.jpg
+[1]: /assets/images/pages/resources/1089px-Salle_de_lecture_de_la_Bibliotheque_Mazarine_Paris_n1.jpg
 [ARKetype]: https://www.arketype.ch/
 [swissuniversities]: https://www.swissuniversities.ch
 [N2T.net]: http://n2t-dev.n2t.net/
@@ -148,8 +148,8 @@ To get your software listed please [let us know] about it.
 [EZID codebase]: https://github.com/CDLUC3/ezid
 [N2T codebase]: https://github.com/jkunze/n2t-eggnog
 [N2T-admin]: https://github.com/jkunze/n2t-admin
-[slides]: /wp-content/uploads/2023/08/ARK-intro-for-GLAMs-2023-slides-15-mins-version.pdf
-[3]: /wp-content/uploads/2023/06/ARK-Training-Tutorial-IIIF-2023-slides.pdf
+[slides]: /assets/documents/2023/08/ARK-intro-for-GLAMs-2023-slides-15-mins-version.pdf
+[3]: /assets/documents/2023/06/ARK-Training-Tutorial-IIIF-2023-slides.pdf
 [video]: https://youtu.be/7HYYR0tGGcw
 [Introduction]: https://youtu.be/7HYYR0tGGcw?t=0
 [ARKs for physical samples]: https://youtu.be/7HYYR0tGGcw?t=259
@@ -170,5 +170,5 @@ To get your software listed please [let us know] about it.
 [15]: https://www.cdlib.org/cdlinfo/2018/01/26/ark-identifier-summit-at-the-national-library-of-france-21-march-2018/
 [collected videos]: https://www.bnf.fr/fr/sommet-international-ark-journee-detude-et-dechanges-sur-lidentifiant-ark-archival-resource-key
 [video link]: https://www.youtube.com/watch?v=vYYYUIokwPM&t=134s
-[English transcription]: /wp-content/uploads/2021/11/The-Covenant-of-the-ARK-en.pdf
+[English transcription]: /assets/documents/2021/11/The-Covenant-of-the-ARK-en.pdf
 [16]: https://digital.library.unt.edu/ark:/67531/metadc28359/

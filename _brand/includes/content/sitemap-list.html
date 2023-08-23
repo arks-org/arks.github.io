@@ -20,7 +20,11 @@
 			<li>
 				<a href="{{ post.permalink }}">
 					{{ post.title }}
-				</a> 
+				</a>
+				<small class="d-block text-secondary">
+					{{ post.date | date: "%Y-%m-%d" | prepend: "Posted: "}}
+					by {{ post.author | default: site.author }}
+				</small>
 			</li>	
 		{% endfor %}
 		</ul>

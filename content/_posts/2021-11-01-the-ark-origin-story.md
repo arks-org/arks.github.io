@@ -1,17 +1,18 @@
 ---
 title: The ARK origin story
 type: article
-permalink: /about/the-ark-origin-story/
-pid: 1257
-original_date: 2021-11-06T01:18:54+00:00
+permalink: /blog/the-ark-origin-story/
+pid: 1217
+author: The ARK Alliance
+original_date: 2021-11-01T20:05:18+00:00
 published: true
 ---
 
 By 2001 there were four major persistent identifier (PID) types, so why was it
 necessary to create a fifth? The origin story of the fifth type, the Archival
-Resource Key (ARK), is adapted from [this interview in 2021].
+Resource Key (ARK), is adapted from [this recent interview].
 
-![][1]{: .img-thumbnail .img-fluid fetchpriority="high" height="378" loading="eager" width="1024"}
+![][1]{: .img-thumbnail .img-responsive fetchpriority="high" height="378" loading="eager" width="1024"}
 
 Capabilities defined for five types of persistent identifier (PID).
 
@@ -126,25 +127,29 @@ not use paywalled silos, and they promote linking identifiers to metadata and
 to commitment statements. ARKs also innovated the idea that persistence is
 nuanced and can mean different things to different providers.
 
-After the passage of two decades, any organization with long-term interests
-can benefit from ARKs, especially those with budget constraints. A large
-portion of the world’s research is invisible to the global North because the
-rest of the world cannot afford to participate in its indexing,
-identification, and publishing infrastructure. For example, [84% of
-peer-reviewed Latin American journals in 2014 were not indexed by Scopus or
-the Web of Science]. Fees for creating Handles and DOIs make the hard job of
-persistence harder. Long term commitment is never free of cost or effort, but
-no one pays for the right to assign ARKs, which can be especially useful for
-organizations that need large numbers of PIDs.
+The next step for ARKs is to convert the current specification to an IETF
+“Informational” RFC. Like the RFCs for Handle and DOI, this kind of RFC is
 
-![][2]{: .img-thumbnail .img-fluid fetchpriority="" height="680" loading="lazy" width="1024"}
+for the general information of the Internet community but does not represent
+an Internet community consensus, recommendation, or standard.
+
+Any organization with long-term interests can benefit from ARKs, especially
+those with budget constraints. A large portion of the world’s research is
+invisible to the global North because the rest of the world cannot afford to
+participate in its indexing, identification, and publishing infrastructure.
+For example, [84% of peer-reviewed Latin American journals in 2014 were not
+indexed by Scopus or the Web of Science]. Fees for creating Handles and DOIs
+make the hard job of persistence harder. Long term commitment is never free of
+cost or effort, but no one pays for the right to assign ARKs, which can be
+especially useful for organizations that need large numbers of PIDs.
+
+![][2]{: .img-thumbnail .img-responsive fetchpriority="" height="680" loading="lazy" width="1024"}
 
 Slide credit: Dominique Babini
 
-
-[this interview in 2021]: https://saaers.wordpress.com/2021/09/14/ark-alliance-an-interview-with-john-kunze/
-[1]: /assets/images/pages/about-the-ark-origin-story/image-4.png
+[this recent interview]: https://saaers.wordpress.com/2021/09/14/ark-alliance-an-interview-with-john-kunze/
+[1]: /assets/images/posts/2021-11-01-the-ark-origin-story/image-4.png
 [the mythology of this view]: https://n2t.net/ark:/13030/c7gb1xh09
 [Cool URIs don’t change]: https://www.w3.org/Provider/Style/URI
 [84% of peer-reviewed Latin American journals in 2014 were not indexed by Scopus or the Web of Science]: https://www.slideshare.net/Babini/coasp2014-dominique-babini-clacso
-[2]: /assets/images/pages/about-the-ark-origin-story/image-1.png
+[2]: /assets/images/posts/2021-11-01-the-ark-origin-story/image-1.png
