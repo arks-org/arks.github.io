@@ -1,6 +1,6 @@
     <nav class="ark-alliance__navbar navbar navbar-expand-md border-top border-bottom border-dark-subtle">
       <div class="container">
-        <a href="{{ site.url }}" class="navbar-brand d-md-none">
+        <a href="{{ site.baseurl }}" class="navbar-brand d-md-none">
           <svg class="ark-alliance__logo svg-inline--fa fa-fa-ark fa-xl text-brand"
                aria-hidden="true"
                role="img"
@@ -25,7 +25,7 @@
             {% for item in site.data.navigation.main_tree %}
               <li class="nav-item">
                 <a class="nav-link {% if page.url == item.link %}active text-brand" aria-current="page"{% else %}"{% endif %}
-                   href="{{ site.url }}{{ item.link }}">
+                   href="{{ site.baseurl }}{{ item.link }}">
                 {{ item.text }}
                 </a>
               </li>
