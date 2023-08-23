@@ -81,8 +81,8 @@ potential users.
 [N2T]: https://n2t.net/
 [EZID]: https://ezid.cdlib.org/
 [ARK]: /
-[Iron blade from the time of the Roman Republic.]: assets/images/posts/2021-01-04-internet-of-samples-to-use-arks-and-igsns-with-physical-objects/iron_blade_roman.png
+[Iron blade from the time of the Roman Republic.]: ../../assets/images/posts/2021-01-04-internet-of-samples-to-use-arks-and-igsns-with-physical-objects/iron_blade_roman.png
 [1]: https://n2t.net/ark:/28722/k2tt4vh8s
-[2]: assets/images/posts/2021-01-04-internet-of-samples-to-use-arks-and-igsns-with-physical-objects/ekansa.png
-[3]: assets/images/posts/2021-01-04-internet-of-samples-to-use-arks-and-igsns-with-physical-objects/SI_biosample.png
+[2]: ../../assets/images/posts/2021-01-04-internet-of-samples-to-use-arks-and-igsns-with-physical-objects/ekansa.png
+[3]: ../../assets/images/posts/2021-01-04-internet-of-samples-to-use-arks-and-igsns-with-physical-objects/SI_biosample.png
 [4]: http://n2t.net/ark:/65665/337856f1a-655e-4ad7-8b1e-f10a16dfb6e3

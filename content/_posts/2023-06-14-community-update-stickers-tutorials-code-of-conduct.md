@@ -115,8 +115,8 @@ registered between 2022-12-14 and 2023-06-11:
 -   Goodwin Archive
 
 [online here]: https://www.stickermule.com/item/2421090c47beca439dbded424879d2e6
-[1]: assets/images/posts/2023-06-14-community-update-2023-06-13-stickers-tutorials-code-of-conduct/arka-vinyl-sticker.png
-[slides here]: assets/documents/2023/06/ARK-Training-Tutorial-IIIF-2023-slides.pdf
+[1]: ../../assets/images/posts/2023-06-14-community-update-2023-06-13-stickers-tutorials-code-of-conduct/arka-vinyl-sticker.png
+[slides here]: ../../assets/documents/2023/06/ARK-Training-Tutorial-IIIF-2023-slides.pdf
 [DWeb Camp]: https://dwebcamp.org/
 [Joint Conference on Digital Libraries]: https://2023.jcdl.org/
 [Earth Science Information Partners]: https://2023julyesipmeeting.sched.com/

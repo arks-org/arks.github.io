@@ -65,5 +65,5 @@ Here is a list of the 30 institutions that registered to assign ARKs since
 -   Musée cantonal de Design et d’Arts Appliqués Contemporains
 
 [chart of growth of ARK-assigning organizations since 2001]: https://n2t.net/e/pub/naan_growth.png
-[1]: assets/images/posts/2022-02-22-community-update/image-1.png
+[1]: ../../assets/images/posts/2022-02-22-community-update/image-1.png
 [IETF]: https://ietf.org

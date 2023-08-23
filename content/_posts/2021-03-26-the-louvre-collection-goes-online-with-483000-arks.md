@@ -29,4 +29,4 @@ The site offers several ways to delve into the collections: simple or advanced s
 
 [this press release]: https://presse.louvre.fr/le-musee-du-louvre-met-en-ligne-ses-collections-et-devoile-son-nouveau-site-internet-3/
 [Louvre]: https://www.louvre.fr/
-[1]: assets/images/posts/2021-03-26-the-louvre-collection-goes-online-with-483000-arks/louvre_objects.png
+[1]: ../../assets/images/posts/2021-03-26-the-louvre-collection-goes-online-with-483000-arks/louvre_objects.png

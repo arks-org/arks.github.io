@@ -214,8 +214,8 @@ Happy New Year!
 [ARK plugin for OJS]: /blog/announcing-an-ark-plugin-for-open-journal-systems-ojs/
 [ARK origin story]: /blog/the-ark-origin-story/
 [NDSA]: https://ndsa.org
-[1]: assets/images/posts/2021-12-16-ark-alliance-2021-wrap-up/image-1.png
-[2]: assets/images/posts/2021-12-16-ark-alliance-2021-wrap-up/image.png
+[1]: ../../assets/images/posts/2021-12-16-ark-alliance-2021-wrap-up/image-1.png
+[2]: ../../assets/images/posts/2021-12-16-ark-alliance-2021-wrap-up/image.png
 [ARK Alliance]: /
 [ARK identifiers]: https://en.wikipedia.org/wiki/Archival_Resource_Key
 [N2T.net]: https://n2t.net/
