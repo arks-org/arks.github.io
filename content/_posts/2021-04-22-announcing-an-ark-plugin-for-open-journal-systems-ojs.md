@@ -34,6 +34,6 @@ to thank Carlos Authier and John Kunze for their support in this initiative.
 [Open Journal Systems]: https://pkp.sfu.ca/ojs/
 [Innovación y Software]: https://revistas.ulasalle.edu.pe/innosoft
 [github repo]: https://github.com/yasielpv/pkp-ark-pubid
-[1]: /assets/images/posts/2021-04-22-announcing-an-ark-plugin-for-open-journal-systems-ojs/innosoft.png 
+[1]: assets/images/posts/2021-04-22-announcing-an-ark-plugin-for-open-journal-systems-ojs/innosoft.png
 [ARK Plugin Guide for OJS]: https://github.com/yasielpv/pkp-ark-pubid/files/8398101/ARK.plugin.guide.for.OJS.pdf
 [Guia del Plugin ARK para OJS]: https://github.com/yasielpv/pkp-ark-pubid/files/8398100/Guia.del.plugin.ARK.para.OJS.pdf

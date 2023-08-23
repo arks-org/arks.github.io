@@ -69,5 +69,5 @@ at least some sweat equity.
 metadata, and [decentralized]. ARKs are offered, not mandated, via the
 ​N2T.net​ resolver, which supports 700+ other types of identifier.
 
-[1]: /assets/images/posts/2021-01-19-ten-persistent-myths-about-persistent-identifiers/nessy.jpg
+[1]: assets/images/posts/2021-01-19-ten-persistent-myths-about-persistent-identifiers/nessy.jpg
 [decentralized]: https://hacks.mozilla.org/2018/07/introducing-the-d-web/

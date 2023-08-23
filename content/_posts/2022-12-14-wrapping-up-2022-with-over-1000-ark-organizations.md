@@ -163,6 +163,6 @@ Here is a list of the 120 institutions that registered to assign ARKs since
 -   Direction régionale des affaires culturelles de Bretagne – service
     régional d’archéologie
 
-[1]: /assets/images/posts/2022-12-14-wrapping-up-2022-with-over-1000-ark-organizations/naan_growth_2022.png
-[2]: /assets/images/posts/2022-12-14-wrapping-up-2022-with-over-1000-ark-organizations/image-2048x845.png
+[1]: assets/images/posts/2022-12-14-wrapping-up-2022-with-over-1000-ark-organizations/naan_growth_2022.png
+[2]: assets/images/posts/2022-12-14-wrapping-up-2022-with-over-1000-ark-organizations/image-2048x845.png
 [Code4Lib 2023]: https://2023.code4lib.org/

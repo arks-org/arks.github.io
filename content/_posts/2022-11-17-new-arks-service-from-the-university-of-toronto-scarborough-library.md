@@ -59,8 +59,8 @@ Github pull requests and issues are welcomed! Potential collaborators and
 users can also reach out at <dsu.utsc@utoronto.ca>.
 
 [Digital Scholarship Unit (DSU)]: https://digital.utsc.utoronto.ca/
-[1]: /assets/images//posts/2022-11-17-new-arks-service-from-the-university-of-toronto-scarborough-library/lake_harbour.png
+[1]: assets/images//posts/2022-11-17-new-arks-service-from-the-university-of-toronto-scarborough-library/lake_harbour.png
 [Islandora,]: https://www.islandora.ca/
-[2]: /assets/images//posts/2022-11-17-new-arks-service-from-the-university-of-toronto-scarborough-library/gazebo_trees.png
+[2]: assets/images//posts/2022-11-17-new-arks-service-from-the-university-of-toronto-scarborough-library/gazebo_trees.png
 [the work of Akio Sensei]: https://github.com/AkioUnity/Noid4Php
 [Noid4PHP]: https://github.com/Daniel-KM/Noid4Php

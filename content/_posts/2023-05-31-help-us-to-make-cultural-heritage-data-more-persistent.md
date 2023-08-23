@@ -90,7 +90,7 @@ for your participation!
 [Europeana]: https://pro.europeana.eu
 [here]: https://pro.europeana.eu/post/help-us-to-make-cultural-heritage-data-more-persistent
 [our survey]: https://survey.zohopublic.com/zs/CCCNrf
-[cite]: /assets/images/posts/2023-05-31-help-us-to-make-cultural-heritage-data-more-persistent/persistent_identifiers_survey_lead.jpg
+[cite]: assets/images/posts/2023-05-31-help-us-to-make-cultural-heritage-data-more-persistent/persistent_identifiers_survey_lead.jpg
 [common European data space for cultural heritage]: https://pro.europeana.eu/page/common-european-data-space-for-cultural-heritage
 [Archival Resource Key (ARK)]: /about/
 [Digital Object Identifier (DOI)]: https://www.doi.org/

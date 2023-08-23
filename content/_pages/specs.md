@@ -23,5 +23,5 @@ Current specification: [The ARK Identifier Scheme V18]
 ## PAGE UNDER CONSTRUCTION
 
 [The ARK Identifier Scheme (latest version)]: https://datatracker.ietf.org/doc/draft-kunze-ark/
-[The ARK Identifier Scheme V18]: /assets/documents/2023/04/ark-18-arksorg.pdf
-[1]: /assets/images/pages/specs/spectacles.jpg
+[The ARK Identifier Scheme V18]: assets/documents/2023/04/ark-18-arksorg.pdf
+[1]: assets/images/pages/specs/spectacles.jpg
