@@ -2,7 +2,7 @@
 <ul class="list-unstyled">
 {% for post in site.posts limit:5  %}
 	<li class="mb-3">
-		<a href="{{ post.url }}">
+		<a href="{{ post.url | prepend: site.baseurl }}">
 			{{ post.title }}
 		</a>
 		<small class="d-block text-secondary">
@@ -16,7 +16,7 @@
 			All Posts
 		</a>
 		<a class="btn btn-primary btn-sm"
-		   href="{{ site.baseurl }}feed/">
+		   href="{{ site.baseurl }}/feed/">
 			<svg class="svg-inline--fa fa-fa-rss"
 			     aria-hidden="true"
 			     role="img"

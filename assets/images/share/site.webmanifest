@@ -5,12 +5,12 @@
     "short_name": "",
     "icons": [
         {
-            "src": "{{ site.baseurl }}assets/images/share/android-chrome-192x192.png?v=2",
+            "src": "{{ site.baseurl }}/assets/images/share/android-chrome-192x192.png?v=2",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "{{ site.baseurl }}assets/images/share/android-chrome-512x512.png?v=2",
+            "src": "{{ site.baseurl }}/assets/images/share/android-chrome-512x512.png?v=2",
             "sizes": "512x512",
             "type": "image/png"
         }
