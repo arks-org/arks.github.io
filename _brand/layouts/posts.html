@@ -15,7 +15,7 @@ layout: default
 		</div>
 		<div class="col-8">
 			<h2 class="h3">
-				<a href="{{ post.url }}"
+				<a href="{{ post.url | prepend: site.baseurl }}"
 				   class="">
 					{{ post.title }}
 				</a>
