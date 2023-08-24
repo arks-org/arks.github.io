@@ -1,11 +1,15 @@
 ---
 title: Community
-type: article
 permalink: /community/
 pid: 212
-original_date: 2020-11-06T05:16:42+00:00
+date: 2020-11-06T05:16:42+00:00
 published: true
 ---
+
+Join the ARK Alliance community for ARK identifier adoption, best practices,
+and collaboration. Over 1000 global organizations create ARKs.
+
+<!--more-->
 
 The ARK Alliance community comprises institutions and people who use or assign
 ARK identifiers as well as those interested in promoting ARKs and sustaining
@@ -30,7 +34,7 @@ digital information.
 2.  Follow the ARK Alliance on twitter [@arks_org]
 3.  Follow us on mastodon [@arks_org@fosstodon.org]
 4.  Read the ARK Alliance [blog]
-5.  Sign up for our newsletter
+5.  [Sign up for our newsletter][]
 6.  Submit a community news item or blog post using this [online form]
 7.  Tell us about yourself by filling out a 5-minute [ARK survey] (in English)
     or 🇫🇷 une [enquête ARK] (version française)
@@ -119,8 +123,8 @@ institutions on 4 continents:
 
 
 [N2T.net]: https://n2t.net
-[ARK Community Code of Conduct]: /about/ark-community-code-of-conduct/
-[1]: assets/images/pages/community/image-2048x845.png
+[ARK Community Code of Conduct]: about-ark-community-code-of-conduct.md
+[1]: ../assets/images/pages/community/image-2048x845.png
 [2]: https://www.google.com/maps/d/u/0/edit?mid=1ALGeRERECL36f2pg7pqrthUYNmuU43UM&usp=sharing
 [collaboration]: https://wiki.lyrasis.org/display/ARKs/ARKs+in+the+Open+Project
 [43 institutions]: #supporting_organizations
@@ -129,12 +133,13 @@ institutions on 4 continents:
 [liste]: https://framalistes.org/sympa/info/arks-forum-fr
 [@arks_org]: https://twitter.com/arks_org
 [@arks_org@fosstodon.org]: https://fosstodon.org/@arks_org
-[blog]: /blog/
+[blog]: news.md
+[Sign up for our newsletter]: {{ site.contact.newsletter }}
 [online form]: https://docs.google.com/forms/d/1e7GvJYvsMd7Qm_LdgkVaUB96dVzeou85f0VbhA4BsSs
 [ARK survey]: https://survey.alchemer.com/s3/6167987/ARK-Alliance-Survey
 [enquête ARK]: https://survey.alchemer.com/s3/6168001/ARK-Alliance-Survey-French
-[interest in helping with the work of the ARK Alliance]: /eoi
-[Contact us]: /contact-us
+[interest in helping with the work of the ARK Alliance]: https://docs.google.com/forms/d/15bhmP5Z0aOLaTWfXKK0TBTJCOAXuT30hIzfhij-D_oM/viewform?edit_requested=true
+[Contact us]: contact-us.md
 [working group]: https://wiki.lyrasis.org/pages/viewpage.action?pageId=108757988
 [Outreach]: https://wiki.lyrasis.org/display/ARKs/Outreach+Working+Group
 [Registry]: https://wiki.lyrasis.org/display/ARKs/NAAN+Registry+Working+Group

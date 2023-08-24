@@ -1,11 +1,17 @@
 ---
 title: "Getting started: what to plan for as you implement ARKs"
-type: article
 permalink: /about/getting-started-implementing-arks/
 pid: 816
-original_date: 2021-01-23T22:29:57+00:00
+date: 2021-01-23T22:29:57+00:00
 published: true
 ---
+
+Guidance on getting started with implementing ARKs, outlining the steps and
+considerations necessary for adopting ARKs for your organization's resources,
+including obtaining a Name Assigning Authority Number (NAAN), choosing ARK
+features, selecting or building an ARK system, and more.
+
+<!--more-->
 
 To start using ARKs you need:
 
@@ -97,16 +103,16 @@ Read more about:
 
 
 [NAAN request form]: https://n2t.net/e/naan_request
-[ARK namespaces]: /about/ark-namespaces/
-[General identifier concepts and conventions]: /about/identifier-concepts-and-conventions/
-[ARK shoulders]: /about/shoulders/
-[ARK features]: /about/ark-features/
+[ARK namespaces]: about-ark-namespaces.md
+[General identifier concepts and conventions]: about-identifier-concepts-and-conventions.md
+[ARK shoulders]: about-shoulders.md
+[ARK features]: about-ark-features.md
 [Parts of an ARK]: https://wiki.lyrasis.org/display/ARKs/ARK+Identifiers+FAQ#ARKIdentifiersFAQ-WhatarethepartsofanARK?
 [suffix passthrough]: https://n2t.net/e/suffix_passthrough.html
 [Internet Archive]: https://archive.org
 [YAMZ.net]: https://yamz.net
-[**Resources**]: /resources
-[Noid]: http://n2t.net/e/noid.html
-[Running minters and resolvers]: /about/running-minters-and-resolvers/
-[ARK Implementation best practices]: /about/best-practices/
-[Service providers]: /resources/
+[**Resources**]: resources.md
+[Noid]: https://n2t.net/e/noid.html
+[Running minters and resolvers]: about-running-minters-and-resolvers.md
+[ARK Implementation best practices]: about-best-practices.md
+[Service providers]: resources.md

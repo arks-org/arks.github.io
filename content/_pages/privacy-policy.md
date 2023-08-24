@@ -1,11 +1,14 @@
 ---
 title: Privacy Policy
-type: article
 permalink: /privacy-policy/
 pid: 3
-original_date: 2020-10-07T19:50:23+00:00
+date: 2020-10-07T19:50:23+00:00
 published: true
 ---
+
+Our privacy policy.
+
+<!--more-->
 
 ## Who we are
 

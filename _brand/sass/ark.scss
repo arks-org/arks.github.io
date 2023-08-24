@@ -24,14 +24,18 @@
       margin-bottom: .75rem;
     }
 
+    // create "list-N-columns" classes.
     @for $i from 2 through 4 {
       @include list-columns($i);
     }
 
+    // don't let naked URLs break layouts.
+    a[href^="http"] {
+      word-break: break-word;
+    }
   }
 
   .text-brand {
     color: #b8860b;
   }
 }
-

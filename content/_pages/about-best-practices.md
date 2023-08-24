@@ -1,11 +1,16 @@
 ---
 title: ARK implementation best practices
-type: article
 permalink: /about/best-practices/
 pid: 829
-original_date: 2021-01-23T23:10:16+00:00
+date: 2021-01-23T23:10:16+00:00
 published: true
 ---
+
+This article outlines best practices for implementing ARK identifiers,
+covering ARK creation, metadata, and policy statements for object lifecycle
+management.
+
+<!--more-->
 
 ## ARK creation and object lifecycle
 
@@ -60,4 +65,4 @@ statements]
 [persistence statements]: https://doi.org/10.5334/dsj-2017-039
 [EZID]: https://ezid.cdlib.org/
 [N2T.net]: https://n2t.net/
-[Identifier Conventions]: http://ezid.cdlib.org/learn/id_concepts
+[Identifier Conventions]: https://ezid.cdlib.org/learn/id_concepts

@@ -59,6 +59,9 @@ plugins:
   - jekyll-redirect-from
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-relative-links
+  - jekyll-github-metadata
+  - jekyll-include-cache
 
 ######################
 # Skinning/Theme Files
@@ -84,16 +87,28 @@ collections:
   pages:
     output: true
 
+#################################
+# Default Properties and Metadata
+#################################
 defaults:
   - scope:
       type: "posts"
     values:
-      layout: default
+      layout: post
       permalink: /news/:name/
   - scope:
       type: "pages"
     values:
-      layout: default
+      layout: page
+  - scope:
+      path: "assets/documents"
+    values:
+      document: true
+  - scope:
+      path: "assets/images"
+    values:
+      image: true
+
 
 ##############
 # Misc. Config
@@ -109,6 +124,16 @@ excerpt_separator : <!--more-->
 # ############
 feed:
   path: /feed/index.xml
+
+
+##############
+# relative links plugin
+# markdown links to .md files resolved in gh and built site.
+# ############
+# 
+relative_links:
+  enabled:     true
+  collections: true # enable in custom collections
 
 ##########################
 # Exclude from processing.

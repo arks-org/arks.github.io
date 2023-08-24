@@ -1,0 +1,8 @@
+{% comment %}
+    page = current collection instance (a single page or post)
+    excerpt and content require markdownify at render time.
+{% endcomment %}
+{%- assign content_array = page.content | split: site.excerpt_separator -%}
+{%- assign excerpt_only = content_array | first -%}
+{%- assign content_only = content_array | last -%}
+{%- assign table_of_contents =  content_only | toc  -%}

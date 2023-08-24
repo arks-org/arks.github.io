@@ -1,12 +1,16 @@
 ---
 title: Community update 2021-04-26
-type: article
-permalink: /blog/community-update-2021-04-26/
+redirect_from: blog/community-update-2021-04-26/
 pid: 1124
-author: The ARK Alliance
-original_date: 2021-04-26T01:38:38+00:00
+authors:
+  - ark-alliance
+date: 2021-04-26T01:38:38+00:00
 published: true
 ---
+
+Snapshot of a few ARK community numbers.
+
+<!--more-->
 
 Here is a snapshot of a few ARK community numbers.
 

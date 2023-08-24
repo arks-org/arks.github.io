@@ -1,0 +1,55 @@
+---
+layout: default
+---
+{%- include content/content_assigns.html -%}
+<div class="row">
+	<div class="col">
+		{{ content_only | markdownify }}		
+	</div>
+</div>
+
+{% for post in site.posts %}
+	<div class="row py-2 my-2">
+		<div class="col-4">
+			&nbsp;
+		</div>
+		<div class="col-8">
+			<h2 class="h3">
+				<a href="{{ post.url }}"
+				   class="">
+					{{ post.title }}
+				</a>
+			</h2>
+			<small class="ark-alliance__tagline d-block text-secondary text-uppercase fs-6">
+				{{ post.date | date: "%Y-%m-%d" "}}
+			</small>
+			<small class="ark-alliance__tagline d-block text-secondary text-uppercase fs-6">
+{% assign author_names = "" %}
+
+{% for author_key in post.authors %}
+  {% assign author = site.data.authors[author_key] %}
+  {% if author %}
+    {% if forloop.index > 2 and forloop.last %}
+        {% assign author_names = author_names | append: "and " %}
+    {% endif %}
+    {% assign author_names = author_names | append: author.visible_name %}
+    {% unless forloop.last %}
+    	{% assign author_names = author_names | append: ", " %}
+    {% endunless %}
+  {% endif %}
+{% endfor %}
+
+{% if author_names == "" %}
+  {% assign author_names = site.author.default_name %}
+{% endif %}
+
+{{ author_names }}
+
+			</small>
+		</div>
+	</div>
+{% endfor %}
+
+<!-- Pagination links -->
+<ul class="pagination">
+</ul>

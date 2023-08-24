@@ -1,12 +1,18 @@
 ---
 title: Upcoming changes to the ARK specification
-type: article
-permalink: /blog/upcoming-changes-to-the-ark-specification/
+redirect_from: blog/upcoming-changes-to-the-ark-specification/
 pid: 1341
-author: The ARK Alliance
-original_date: 2022-03-18T20:07:27+00:00
+authors:
+  - ark-alliance
+date: 2022-03-18T20:07:27+00:00
 published: true
 ---
+
+The ARK Alliance’s Outreach and Technical Working Groups will develop a
+community plan to transition from the older 2013 ARK spec to the current
+2022 ARK spec.
+
+<!--more-->
 
 Since 2019 the ARK Alliance (then known as ARKs-in-the-Open) has been
 reviewing the ARK specification (“spec”) in light of the [ARK Experts Day

@@ -1,12 +1,18 @@
 ---
 title: ARKs added to new version of the PID Guide
-type: article
-permalink: /blog/arks-added-to-new-version-of-the-pid-guide/
+redirect_from: blog/arks-added-to-new-version-of-the-pid-guide/
 pid: 1623
-author: Remco van Veenendaal
-original_date: 2023-05-31T13:41:11+00:00
+authors:
+  - remco-van-veenendaal
+date: 2023-05-31T13:41:11+00:00
 published: true
 ---
+
+The PID Guide, an interactive resource by the National Archives of the
+Netherlands, now includes ARKs, DOIs, Handles, and URNs to aid organizations
+worldwide in selecting suitable Persistent Identifier systems for their needs.
+
+<!--more-->
 
 It is not always easy for organizations to understand and choose an
 appropriate Persistent Identifier (PID) system. PIDs such as ARKs, DOIs,

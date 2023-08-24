@@ -1,12 +1,18 @@
 ---
 title: "New “ARKs-Service” from the University of Toronto Scarborough Library"
-type: article
-permalink: /blog/new-arks-service-from-the-university-of-toronto-scarborough-library/
+redirect_from: blog/new-arks-service-from-the-university-of-toronto-scarborough-library/
 pid: 1479
-author: Kirsta Stapelfeldt
-original_date: 2022-11-17T23:54:38+00:00
+authors:
+  - kirsta-stapelfeldt
+date: 2022-11-17T23:54:38+00:00
 published: true
 ---
+
+The University of Toronto Scarborough Library's "ARKs-Service" is a
+user-friendly app for smaller libraries to manage persistent identifiers,
+simplifying ARK minting and management.
+
+<!--more-->
 
 How can smaller library shops mint and resolve persistent identifiers? A new
 self-hosted application called “ARKs-Service” is a user interface designed to

@@ -1,0 +1,105 @@
+ark-alliance:
+  visible_name: The ARK Alliance
+  url: https://arks.org/
+  name: arks_org #twitter_profile
+  info:
+
+
+aurelien-conraux:
+  visible_name: Aurélien Conraux
+  url: 
+  name: AConraux #twitter_profile
+  info:
+
+
+hugo-manguinhas:
+  visible_name: Hugo Manguinhas
+  url: 
+  name: #twitter_profile
+  info:
+
+
+john-jung:
+  visible_name: John Jung
+  url: 
+  name: #twitter_profile
+  info: >-
+    John Jung is a Senior Programmer/Analyst in the Digital Library Development
+    Center at the University of Chicago. He provides infrastructure for digital
+    library collections and builds web interfaces to help people search and
+    browse cultural heritage materials in useful and satisfying ways. He has a
+    lot of experience dealing with datasets and all of their idiosyncrasies, and
+    he helps people set up workflows to extract data from legacy systems, and to
+    query, transform and load it into new systems from relational to graph
+    databases. John has a Master of Design Methods degree from the Illinois
+    Institute of Technology Institute of Design.
+
+
+john-kunze:
+  visible_name: John Kunze
+  url: 
+  name: #twitter_profile
+  info: >-
+    John Kunze is a pioneer in the theory and practice of digital libraries.
+    With a background in computer science and mathematics, he wrote BSD Unix
+    software tools that come pre-installed with Mac and Linux systems. He
+    created the ARK identifier scheme, the N2T.net scheme-agnostic resolver,
+    and contributed heavily to the first standards for URLs (RFC1736, RFC1625,
+    RFC2056), for library search and retrieval (Z39.50), for archival transfer
+    (BagIt - RFC8493), for web archiving (WARC), and for metadata (RFC2413,
+    RFC2731, ANSI/NISO Z39.85). Follow-on work in metadata includes creation
+    of the Dublin Kernel and yamz.net.
+
+
+julien-raemy:
+  visible_name: Julien A. Raemy
+  url: 
+  name: #twitter_profile
+  info: >-
+    Julien A. Raemy is an Assistant and PhD Candidate in Digital Humanities at
+    the University of Basel, Switzerland. He works as well as Interoperability
+    Specialist for DaSCH, the Swiss National Data and Service Center for the
+    Humanities. He holds a MSc in Information Science from the Haute école de
+    gestion de Genève (Geneva, Switzerland). He is particularly interested in
+    ways of improving the digital preservation, dissemination and
+    interoperability of cultural heritage objects and their associated
+    metadata through the application of Linked Open (Usable) Data. Julien A.
+    Raemy also investigates digital practices from the perspective of Science
+    and Technology Studies, especially through the lens of the Actor-Network
+    Theory.
+
+
+kirsta-stapelfeldt:
+  visible_name: Kirsta Stapelfeldt
+  url: 
+  name: #twitter_profile
+  info:
+
+
+luciano-johnson:
+  visible_name: Luciano Johnson
+  url: 
+  name: #twitter_profile
+  info:
+
+
+remco-van-veenendaal:
+  visible_name: Remco van Veenendaal
+  url: 
+  name: #twitter_profile
+  info:
+
+
+yasiel-perez:
+  visible_name: Yasiel Pérez
+  url: 
+  name: #twitter_profile
+  info:
+
+valentine-charles:
+  visible_name: Valentine Charles
+  url: 
+  name: #twitter_profile
+  info:
+
+

@@ -1,24 +1,24 @@
 main_tree:
   - text: Home
-    link: "/" 
+    link: "" 
     type: standard
 
   - text: Get Started
-    link: "/about/getting-started-implementing-arks/" 
+    link: "about/getting-started-implementing-arks/" 
     type: standard
 
   - text: About Arks
-    link: "/about/" 
+    link: "about/" 
     type: standard
 
   - text: Community
-    link: "/community/" 
+    link: "community/" 
     type: standard
 
   - text: Resources
-    link: "/resources/" 
+    link: "resources/" 
     type: standard
 
   - text: News
-    link: "/news/" 
+    link: "news/" 
     type: standard

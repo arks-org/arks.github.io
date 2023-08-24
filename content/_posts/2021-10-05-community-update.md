@@ -1,12 +1,17 @@
 ---
 title: Community update 2021-10-05
-type: article
-permalink: /blog/community-update-2021-10-05/
+redirect_from: blog/community-update-2021-10-05/
 pid: 1208
-author: The ARK Alliance
-original_date: 2021-10-05T16:18:46+00:00
+authors:
+  - ark-alliance
+date: 2021-10-05T16:18:46+00:00
 published: true
 ---
+
+Welcome David Nogueiras Blanco and Stéphanie Gregorio to the
+NAAN curator team.
+
+<!--more-->
 
 We’re pleased to welcome David Nogueiras Blanco and Stéphanie Gregorio to the
 NAAN curator team. David is working with the ARKetype project at the Geneva

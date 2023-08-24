@@ -1,11 +1,15 @@
 ---
 title: ARK NAANs and systems
-type: article
 permalink: /about/ark-naans-and-systems/
 pid: 798
-original_date: 2021-01-23T17:36:24+00:00
+date: 2021-01-23T17:36:24+00:00
 published: true
 ---
+
+The article discusses NAANs' role in ARKs, preventing naming conflicts, Noid
+systems, metadata management, and N2T resolver.
+
+<!--more-->
 
 Whether you use an ARK service provider, a plug-in or microservice, or build
 your own ARK support, there are multiple systems that play a part in making
@@ -174,7 +178,7 @@ Most ARKs are created by organizations that advertise (“publish”) them based
 at their own resolvers. For example, this ARK was published based at the
 ark.bnf.fr resolver:
 
-        http://ark.bnf.fr/ark:/12148/btv1b8449691v/f29
+        https://ark.bnf.fr/ark:/12148/btv1b8449691v/f29
 
 Having to run and maintain your own resolver is the cost of complete autonomy.
 Using your own resolver also lets you do branding via the hostname, the
@@ -220,6 +224,6 @@ for three more pages. In fact, it works for an unlimited number of pages. You
 can [learn more about N2T’s suffix passthrough].
 
 [NAAN request form]: https://docs.google.com/forms/d/e/1FAIpQLSfd1CX6idwLB47g8OGKUG654auV8IU8yI7DAs61cXGOoFDn0g/viewform?c=0&w=1
-[Running ARK Minters and Resolvers]: /about/running-minters-and-resolvers/
-[ARK features]: /about/ark-features/
+[Running ARK Minters and Resolvers]: about-running-minters-and-resolvers.md
+[ARK features]: about-ark-features.md
 [learn more about N2T’s suffix passthrough]: https://n2t.net/e/suffix_passthrough.html

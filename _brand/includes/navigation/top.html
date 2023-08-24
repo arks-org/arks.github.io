@@ -23,9 +23,14 @@
              id="navbar-content">
           <ul class="navbar-nav mx-auto mb-2 mb-md-0 text-uppercase">
             {% for item in site.data.navigation.main_tree %}
+              {% if item.link contains "http" %}
+                {% assign url = item.link %}
+              {% else %}
+                {% assign url = item.link | prepend: site.baseurl %}
+              {% endif %}
               <li class="nav-item">
                 <a class="nav-link {% if page.url == item.link %}active text-brand" aria-current="page"{% else %}"{% endif %}
-                   href="{{ site.baseurl }}{{ item.link }}">
+                   href="{{ url }}">
                 {{ item.text }}
                 </a>
               </li>

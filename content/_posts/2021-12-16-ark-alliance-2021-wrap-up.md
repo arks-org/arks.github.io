@@ -1,12 +1,18 @@
 ---
 title: ARK Alliance 2021 wrap up
-type: article
-permalink: /blog/ark-alliance-2021-wrap-up/
+redirect_from: blog/ark-alliance-2021-wrap-up/
 pid: 1302
-author: The ARK Alliance
-original_date: 2021-12-16T03:02:42+00:00
+authors:
+  - ark-alliance
+date: 2021-12-16T03:02:42+00:00
 published: true
 ---
+
+In 2021, the ARK community expanded with 187 new institutions, including the
+Louvre and Frick Collection, showcasing ARK's flexibility and preservation
+commitment.
+
+<!--more-->
 
 With a record 187 new institutions registered in 2021 (up from 113 in 2020),
 it has been another banner year for the ARK community. The [Louvre museum] and
@@ -209,17 +215,17 @@ Happy New Year!
 -   Médiathèque Jean Rouppert
 -   Ludo-médiathèque Frouard
 
-[Louvre museum]: /blog/the-louvre-collection-goes-online-with-483000-arks/
-[Frick Collection]: /blog/the-frick-collection-to-use-arks/
-[ARK plugin for OJS]: /blog/announcing-an-ark-plugin-for-open-journal-systems-ojs/
-[ARK origin story]: /blog/the-ark-origin-story/
+[Louvre museum]: 2021-03-26-the-louvre-collection-goes-online-with-483000-arks.md
+[Frick Collection]: 2021-12-08-the-frick-collection-to-use-arks.md
+[ARK plugin for OJS]: 2021-04-22-announcing-an-ark-plugin-for-open-journal-systems-ojs.md
+[ARK origin story]: 2021-11-01-the-ark-origin-story.md
 [NDSA]: https://ndsa.org
 [1]: ../../assets/images/posts/2021-12-16-ark-alliance-2021-wrap-up/image-1.png
 [2]: ../../assets/images/posts/2021-12-16-ark-alliance-2021-wrap-up/image.png
-[ARK Alliance]: /
+[ARK Alliance]: ../_pages/index.md
 [ARK identifiers]: https://en.wikipedia.org/wiki/Archival_Resource_Key
 [N2T.net]: https://n2t.net/
 [outreach]: https://wiki.lyrasis.org/display/ARKs/Outreach+Working+Group
 [technical]: https://wiki.lyrasis.org/display/ARKs/Technical+Working+Group
 [registering new institutions]: https://wiki.lyrasis.org/display/ARKs/NAAN+Registry+Working+Group
-[let us know]: /contact-us
+[let us know]: ../_pages/contact-us.md

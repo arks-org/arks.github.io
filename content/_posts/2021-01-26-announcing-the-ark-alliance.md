@@ -1,12 +1,17 @@
 ---
 title: Announcing the ARK Alliance
-type: article
-permalink: /blog/announcing-the-ark-alliance/
+redirect_from: blog/announcing-the-ark-alliance/
 pid: 604
-author: The ARK Alliance
-original_date: 2021-01-26T16:17:42+00:00
+authors:
+  - ark-alliance
+date: 2021-01-26T16:17:42+00:00
 published: true
 ---
+
+The ARK Alliance, succeeding ARKs-in-the-Open, has grown with 700+
+organizations, 4 working groups, and a new website at arks.org.
+
+<!--more-->
 
 We are thrilled to introduce the ARK Alliance as heir to the successful
 ARKs-in-the-Open initiative, which began in 2018 with the goal of launching an
@@ -44,4 +49,4 @@ visit the [community] page to learn about ways to become involved.
 [arks.org]: https://arks.org
 [arksintheopen.org]: https://ARKsInTheOpen.org
 [N2T.net]: https://n2t.net
-[community]: /community/
+[community]: community.md

@@ -1,11 +1,16 @@
 ---
 title: General identifier concepts and conventions
-type: article
 permalink: /about/identifier-concepts-and-conventions/
 pid: 1025
-original_date: 2021-02-09T01:03:16+00:00
+date: 2021-02-09T01:03:16+00:00
 published: true
 ---
+
+This document specifies common identifier-related terms, conventions, and
+practices as observed at services such as N2T.net, EZID.cdlib.org, and
+ARKetype.ch.
+
+<!--more-->
 
 This document specifies common identifier-related terms, conventions, and
 practices as observed at services such as N2T.net, EZID.cdlib.org, and
@@ -49,7 +54,7 @@ branded plastic key-cover.
               :                  :    :     :      :  :
               v                  v    v     v      v  v
     |..........................|....+.....|...|......|.|
-     http://OwlBike.example.org/ark:/13030/tqb3kh97gh8w   <----  Example Key
+     https://OwlBike.example.org/ark:/13030/tqb3kh97gh8w   <----  Example Key
                                  doi:10.30/tqb3kh97gh8w         with parallel
                                  hdl:13030/tqb3kh97gh8w        parts in other
                                  urn:13030:tqb3kh97gh8w          id schemes.
@@ -279,6 +284,6 @@ reduce the chance of “accidental” semantics in generated identifiers and to
 avoid some of the confusion that arises over mistaking digits for letters,
 such as ‘1’ for ‘l’ and ‘0’ for ‘O’.
 
-[https://n2t.net]: http://n2t.net/
+[https://n2t.net]: https://n2t.net/
 [Noid]: https://n2t.net/e/noid.html
-[here]: /about/running-minters-and-resolvers/
+[here]: about-running-minters-and-resolvers.md

@@ -1,11 +1,17 @@
 ---
 title: About ARKs
-type: article
 permalink: /about/
 pid: 77
-original_date: 2020-10-16T21:21:22+00:00
+date: 2020-10-16T21:21:22+00:00
 published: true
 ---
+
+Learn about Archival Resource Key (ARK) identifiers, their anatomy, usage, and
+implementation. Discover ARK features, namespaces, and comparisons with other
+identifier systems. For users and developers seeking comprehensive insights
+into ARK Alliance.
+
+<!--more-->
 
 Archival Resource Key (ARK) identifiers are URLs that support long-term access
 to information. Learn below what you need to know about ARKs, whether you’re
@@ -136,18 +142,18 @@ developing an ARK system.
 [FAQ about ARK identifiers 🇬🇧]: https://wiki.lyrasis.org/display/ARKs/ARK+Identifiers+FAQ
 [FAQ sur les identifiants ARK 🇫🇷]: https://wiki.lyrasis.org/pages/viewpage.action?pageId=178880619
 [FAQ sobre identificadores ARK 🇪🇸]: https://wiki.lyrasis.org/pages/viewpage.action?pageId=185991610
-[ARK overview]: /about/ark-overview
-[ARK Community Code of Conduct]: /about/ark-community-code-of-conduct/
-[Why ARKs?]: /about/the-ark-origin-story
-[ARK NAANs and systems]: /about/ark-naans-and-systems
-[N2T feature: suffix passthrough]: /about/ark-naans-and-systems#suffix-passthrough
-[ARK features]: /about/ark-features
-[Comparing ARKs, DOIs and other identifier systems]: /about/comparing-arks-and-other-identifiers
-[Getting started: what to plan for as you implement ARKs]: /about/getting-started-implementing-arks
-[General identifier concepts and conventions]: /about/identifier-concepts-and-conventions/
-[Running minters and resolvers]: /about/running-minters-and-resolvers
-[More about the N2T global resolver]: /about/n2t-global-resolver
-[ARK namespaces and sub-namespaces]: /about/ark-namespaces
-[More about ARK shoulders]: /about/shoulders
-[Testing ARKs with N2T]: /about/testing-arks
-[ARK implementation best practices]: /about/best-practices
+[ARK overview]: about-ark-overview.md
+[ARK Community Code of Conduct]: about-ark-community-code-of-conduct.md
+[Why ARKs?]: about-the-ark-origin-story.md
+[ARK NAANs and systems]: about-ark-naans-and-systems.md
+[N2T feature: suffix passthrough]: about-ark-naans-and-systems.md#n2t-feature-suffix-passthrough
+[ARK features]: about-ark-features.md
+[Comparing ARKs, DOIs and other identifier systems]: about-comparing-arks-and-other-identifiers.md
+[Getting started: what to plan for as you implement ARKs]: about-getting-started-implementing-arks.md
+[General identifier concepts and conventions]: about-identifier-concepts-and-conventions.md
+[Running minters and resolvers]: about-running-minters-and-resolvers.md
+[More about the N2T global resolver]: about-n2t-global-resolver.md
+[ARK namespaces and sub-namespaces]: about-ark-namespaces.md
+[More about ARK shoulders]: about-shoulders.md
+[Testing ARKs with N2T]: about-testing-arks.md
+[ARK implementation best practices]: about-best-practices.md

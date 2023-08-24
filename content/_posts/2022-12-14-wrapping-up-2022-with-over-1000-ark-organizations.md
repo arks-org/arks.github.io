@@ -1,12 +1,19 @@
 ---
 title: Wrapping up 2022 with over 1000 ARK organizations
-type: article
-permalink: /blog/wrapping-up-2022-with-over-1000-ark-organizations/
+redirect_from: blog/wrapping-up-2022-with-over-1000-ark-organizations/
 pid: 1478
-author: The ARK Alliance
-original_date: 2022-12-14T02:31:19+00:00
+authors:
+  - ark-alliance
+date: 2022-12-14T02:31:19+00:00
 published: true
 ---
+
+In 2022, the ARK Alliance achieved significant milestones, surpassing 1000
+registered ARK organizations, enhancing the ARK specification, and expanding
+collaborations, reaffirming its commitment to facilitating persistent
+identifier management and interoperability among institutions.
+
+<!--more-->
 
 ![][1]{: .img-thumbnail .img-responsive fetchpriority="high" height="480" loading="eager" width="640"}
 

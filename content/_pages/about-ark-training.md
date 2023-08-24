@@ -1,11 +1,16 @@
 ---
 title: ARK Training
-type: article
 permalink: /about/ark-training/
 pid: 1608
-original_date: 2023-03-08T17:22:01+00:00
+date: 2023-03-08T17:22:01+00:00
 published: true
 ---
+
+This article introduces an ARK training workshop covering persistable
+identifiers, their uses, minting, resolution, and more. Taught by Donny
+Winston and John Kunze.
+
+<!--more-->
 
 The ARK tutorial described below was first offered in 2023 along with
 conferences such as Code4lib, IIIF, and JCDL. We hope to offer it at other

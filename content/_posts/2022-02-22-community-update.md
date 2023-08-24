@@ -1,12 +1,18 @@
 ---
 title: Community update 2022-02-22
-type: article
-permalink: /blog/community-update-2022-02-22/
+redirect_from: blog/community-update-2022-02-22/
 pid: 1328
-author: Aurélien Conraux
-original_date: 2022-02-22T04:47:00+00:00
+authors:
+  - aurelien-conraux
+date: 2022-02-22T04:47:00+00:00
 published: true
 ---
+
+In February 2022, the ARK community reached 900 registered organizations,
+welcomed a new curator, and got ARK specification accepted for an IETF RFC
+publication.
+
+<!--more-->
 
 ![chart of growth of ARK-assigning organizations since 2001]{: .img-thumbnail .img-responsive height="191" loading="lazy" width="255" }
 

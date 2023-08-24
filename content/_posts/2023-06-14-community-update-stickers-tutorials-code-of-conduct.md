@@ -1,12 +1,17 @@
 ---
 title: "Community update 2023-06-13: stickers, tutorials, code of conduct"
-type: article
-permalink: /blog/community-update-stickers-tutorials-code-of-conduct/
+redirect_from: blog/community-update-stickers-tutorials-code-of-conduct/
 pid: 1641
-author: The ARK Alliance
-original_date: 2023-06-14T02:30:11+00:00
+authors:
+  - ark-alliance
+date: 2023-06-14T02:30:11+00:00
 published: true
 ---
+
+ARK Alliance's thriving community adds 74 new organizations, launches vinyl
+stickers and tutorials, and introduces a Code of Conduct.
+
+<!--more-->
 
 The past six months have seen strong growth in the ARK community, including
 registration of 74 new ARK organizations. As always we welcome new volunteers
@@ -121,6 +126,6 @@ registered between 2022-12-14 and 2023-06-11:
 [Joint Conference on Digital Libraries]: https://2023.jcdl.org/
 [Earth Science Information Partners]: https://2023julyesipmeeting.sched.com/
 [International Conference on Digital Preservation]: https://ipres2023.us/
-[ARK Community Code of Conduct]: /about/ark-community-code-of-conduct/
+[ARK Community Code of Conduct]: ../_pages/about-ark-community-code-of-conduct.md
 [ARKA wiki]: https://wiki.lyrasis.org/display/ARKs/ARKs+in+the+Open+Project
 [ARK organizations]: https://n2t.net/e/pub/naan_table.html

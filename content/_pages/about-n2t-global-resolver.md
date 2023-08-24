@@ -1,11 +1,15 @@
 ---
 title: More about the N2T global resolver
-type: article
 permalink: /about/n2t-global-resolver/
 pid: 821
-original_date: 2021-01-23T23:05:29+00:00
+date: 2021-01-23T23:05:29+00:00
 published: true
 ---
+
+N2T global resolver: Redirects identifiers to forwarding links. Resolves
+various types, not just ARKs. Built on open principles.
+
+<!--more-->
 
 ## How N2T Works
 
@@ -54,8 +58,8 @@ ARKs but is also regularly used by organizations that mint Handles.
 [suffix passthrough]: https://n2t.net/e/suffix_passthrough.html
 [N2T API]: https://n2t.net/e/n2t_apidoc.html
 [NAAN registry]: https://n2t.net/e/pub/naan_registry.txt
-[namespaces]: /about/ark-namespaces/ {data-id="823" data-type="page"}
-[compact identifiers]: http://n2t.net/e/compact_ids.html
+[namespaces]: about-ark-namespaces.md
+[compact identifiers]: https://n2t.net/e/compact_ids.html
 [identifiers.org]: https://identifiers.org/
 [1]: https://lh3.googleusercontent.com/vZvC9P_CZkA7M0sos-lvF6QEt50rbzpZmu__eW3wIYtfw6ldRJu74Ze92zQohHHftmgXBisE4VzKUFCJMgRvKfOrornPKzmrhLzXhaO4ZHCafV4L-30KhjbmbOURLf7zD4rOJSst
 [Noid]: https://metacpan.org/pod/distribution/Noid/noid

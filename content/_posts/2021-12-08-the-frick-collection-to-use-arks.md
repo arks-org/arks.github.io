@@ -1,12 +1,18 @@
 ---
 title: The Frick Collection to use ARKs
-type: article
-permalink: /blog/the-frick-collection-to-use-arks/
+redirect_from: blog/the-frick-collection-to-use-arks/
 pid: 1295
-author: Luciano Johnson
-original_date: 2021-12-08T21:49:56+00:00
+authors:
+  - luciano-johnson
+date: 2021-12-08T21:49:56+00:00
 published: true
 ---
+
+The Frick Collection has chosen ARK persistent identifiers to enhance
+long-term stewardship of its digital assets, offering flexibility for diverse
+scholarly resources and materials.
+
+<!--more-->
 
 The [Frick Collection] plans to assign ARK persistent identifiers as part of
 its commitment to the long-term stewardship of our publicly available digital
@@ -26,6 +32,6 @@ natural choice to support this diversity of scholarly resources.
 
 Frick Art Reference Library Reading Room (George Koelle, 2018)
 
-[Frick Collection]: http://digitalcollections.frick.org/
+[Frick Collection]: https://digitalcollections.frick.org/
 [1]: ../../assets/images/posts/2021-12-08-the-frick-collection-to-use-arks/screencapture-digitalcollections-frick-org-2021-09-22-12_08_46-2048x1538.png
 [2]: ../../assets/images/posts/2021-12-08-the-frick-collection-to-use-arks/Frick-Art-Reference-Library-Reading-Room-Photographer-George-Koelle-2018.jpg

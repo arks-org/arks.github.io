@@ -1,12 +1,19 @@
 ---
 title: The Louvre collection goes online with 483,000 ARKs
-type: article
-permalink: /blog/the-louvre-collection-goes-online-with-483000-arks/
+redirect_from: blog/the-louvre-collection-goes-online-with-483000-arks/
 pid: 1119
-author: The ARK Alliance
-original_date: 2021-03-26T17:21:49+00:00
+authors:
+  - ark-alliance
+date: 2021-03-26T17:21:49+00:00
 published: true
 ---
+
+The Louvre, the world's largest art museum, has made its entire collection
+available online, featuring 482,943 collection entries with ARKs as
+permalinks. Visitors can explore works from the Louvre and more through the
+collections.louvre.fr database.
+
+<!--more-->
 
 \[ *With permission the present post is largely based on [this press release].* \]
 

@@ -1,12 +1,16 @@
 ---
 title: Community update 2021-01-26
-type: article
-permalink: /blog/community-update-2021-01-26/
+redirect_from: blog/community-update-2021-01-26/
 pid: 631
-author: The ARK Alliance
-original_date: 2021-01-26T02:16:07+00:00
+authors:
+  - ark-alliance
+date: 2021-01-26T02:16:07+00:00
 published: true
 ---
+
+Community Updates for 2021-01-26.
+
+<!--more-->
 
 -   Organizations registered to assign ARKs: 701.
 -   Known number of ARKs in the world: 8.2 billion.

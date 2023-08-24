@@ -1,12 +1,17 @@
 ---
 title: Announcing an ARK plugin for Open Journal Systems (OJS)
-type: article
-permalink: /blog/announcing-an-ark-plugin-for-open-journal-systems-ojs/
+redirect_from: blog/announcing-an-ark-plugin-for-open-journal-systems-ojs/
 pid: 1126
-author: Yasiel Pérez
-original_date: 2021-04-22T02:49:22+00:00
+authors:
+  - yasiel-perez
+date: 2021-04-22T02:49:22+00:00
 published: true
 ---
+
+An open source plugin enables ARK usage in Open Journal Systems (OJS),
+supporting articles, issues, and galleys.
+
+<!--more-->
 
 I am happy to share with the ARK community an open source plugin that I
 developed for creating and resolving ARKs with [Open Journal Systems] (OJS).

@@ -1,0 +1,25 @@
+  <script>
+    /**
+     * Automatically updates the theme based on the user's preference.
+     */
+    (() => {
+      /**
+       * Function to update the theme based on user preference.
+       */
+      const updateTheme = () => {
+        const htmlElement = document.querySelector("html");
+        htmlElement.setAttribute(
+          "data-bs-theme",
+          window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"
+        );
+      };
+
+      // Add event listener for changes in color scheme preference
+      window
+        .matchMedia("(prefers-color-scheme: dark)")
+        .addEventListener("change", updateTheme);
+
+      // Initial update of theme
+      updateTheme();
+    })();
+  </script>

@@ -1,24 +1,45 @@
+
+{%- assign sorted_pages = site.pages | sort: "title" -%}
+{%- assign site_docs = site.static_files | where: "document", true -%}
 <div class="row">
 	<div class="col">
 		<h2>Pages</h2>
 		<ul>
-		{% for page in site.pages %}
+		{% for page in sorted_pages %}
 			{% if page.title and page.permalink != "/404.html" %}
 			<li>
-				<a href="{{ page.permalink | prepend:site.baseurl }}">
+				<a href="{{ page.permalink }}">
 					{{ page.title }}
 				</a> 
 			</li>
 			{% endif %}
 		{% endfor %}
 		</ul>
+		{% if site_docs|size > 1 %}
+			<h2>Downloads</h2>
+			<ul>
+			{% for file in site_docs %}
+				<li>
+					<span class="badge bg-dark text-uppercase">
+						{{ file.extname | remove_first: "." }}
+					</span>
+					<a href="{{ page.path }}">
+						{{ file.basename }}
+					</a>
+					<small class="text-secondary d-block">
+						Modified: {{ file.modified_time | date: "%Y-%m-%d" }}
+					</small>
+				</li>
+			{% endfor %}			
+			</ul>
+		{% endif %}
 	</div>
 	<div class="col">
-		<h2>Posts</h2>
+		<h2>News Items</h2>
 		<ul>
 		{% for post in site.posts %}
 			<li>
-				<a href="{{ post.permalink | prepend:site.baseurl }}">
+				<a href="{{ post.url }}">
 					{{ post.title }}
 				</a>
 				<small class="d-block text-secondary">

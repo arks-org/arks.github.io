@@ -1,11 +1,15 @@
 ---
 title: ARK overview
-type: article
 permalink: /about/ark-overview/
 pid: 778
-original_date: 2021-01-23T00:12:51+00:00
+date: 2021-01-23T00:12:51+00:00
 published: true
 ---
+
+This article explains ARK identifiers, their versatility as persistent URLs
+for various objects, and their role in stable linking and access.
+
+<!--more-->
 
 ## What ARKs are and why you would use them
 
@@ -71,7 +75,7 @@ core ARK identifier,
 appears inside two different URLs (Uniform Resource Locators, also known as
 web links or web addresses):
 
-       http://ark.bnf.fr/ark:/12148/btv1b8449691v/f29
+       https://ark.bnf.fr/ark:/12148/btv1b8449691v/f29
 
          https://n2t.net/ark:/12148/btv1b8449691v/f29
 
@@ -197,4 +201,4 @@ All identifier systems are subject to the same weaknesses:
 Given how little the schemes do for you, when choosing one you’ll likely want
 to consider factors such as cost, risk, and openness.
 
-[10 persistent myths about persistent identifiers]: /blog/ten-persistent-myths-about-persistent-identifiers/
+[10 persistent myths about persistent identifiers]: ../_posts/2021-01-19-ten-persistent-myths-about-persistent-identifiers.md

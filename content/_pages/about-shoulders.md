@@ -1,11 +1,16 @@
 ---
-title: ARK shoulders: Do’s and Don’ts
-type: article
+title: "ARK shoulders: Do’s and Don’ts"
 permalink: /about/shoulders/
 pid: 825
-original_date: 2021-01-23T23:07:47+00:00
+date: 2021-01-23T23:07:47+00:00
 published: true
 ---
+
+ARK Shoulder Selection: Best Practices. Choose short, unique extension with
+lowercase letters and ending digit. Avoid '/', ensure compliance.
+Implementation options discussed.
+
+<!--more-->
 
 In selecting a shoulder format, do start with your NAAN and decide on a short,
 fixed extension that you will add to it. The extension should
@@ -66,8 +71,8 @@ shoulder with a minter service and an API access point.
 A completely different kind of shoulder “creation” step is needed to implement
 a shoulder under one of the few shared NAANs (described under [namespaces]).
 
-[here]: /about/running-minters-and-resolvers/
+[here]: about-running-minters-and-resolvers.md
 [ezid.cdlib.org]: https://ezid.cdlib.org/
 [suffix passthrough]: https://n2t.net/e/suffix_passthrough.html
-[ark:/99152/p0]: http://n2t.net/ark:/99152/p0
-[namespaces]: /about/ark-namespaces
+[ark:/99152/p0]: https://n2t.net/ark:/99152/p0
+[namespaces]: about-ark-namespaces.md

@@ -1,12 +1,17 @@
 ---
 title: "New service: ARKetype"
-type: article
-permalink: /blog/new-service-arketype/
+redirect_from: blog/new-service-arketype/
 pid: 769
-author: Julien A. Raemy
-original_date: 2021-01-20T23:11:21+00:00
+authors:
+  - julien-raemy
+date: 2021-01-20T23:11:21+00:00
 published: true
 ---
+
+ARKetype, a new ARK allocation service by HEG-GE and SIB, will be introduced
+on Jan 27 in an online event.
+
+<!--more-->
 
 The Haute école de gestion de Genève (HEG-GE) will soon release its ARK
 allocation service, called **ARKetype**, which was created with the help of

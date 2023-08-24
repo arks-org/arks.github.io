@@ -1,11 +1,16 @@
 ---
 title: Comparing ARKs, DOIs and other identifier systems
-type: article
 permalink: /about/comparing-arks-and-other-identifiers/
 pid: 814
-original_date: 2021-01-23T22:28:11+00:00
+date: 2021-01-23T22:28:11+00:00
 published: true
 ---
+
+This article compares ARKs with other identifier systems like DOIs, Handles,
+PURLs, and URNs. It highlights reasons to use ARKs, their differences, and the
+advantages they offer in terms of cost, flexibility, metadata, and more.
+
+<!--more-->
 
 ## Reasons to use ARKs as compared to DOIs
 
@@ -195,6 +200,6 @@ checking, duplicate detection, report generation, and searching.
 [persistence commitments]: https://doi.org/10.5334/dsj-2017-039
 [IIIF]: https://iiif.io/technical-details
 [ORCID.org]: https://orcid.org/
-[n2t.net]: http://n2t.net/
-[1]: http://n2t.net
+[n2t.net]: https://n2t.net/
+[1]: https://n2t.net
 [apply for a URN namespace]: https://tools.ietf.org/html/rfc8141#section-6

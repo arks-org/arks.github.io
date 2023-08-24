@@ -1,12 +1,18 @@
 ---
 title: ‘Internet of Samples’ to use ARKs and IGSNs with physical objects
-type: article
-permalink: /blog/internet-of-samples-to-use-arks-and-igsns-with-physical-objects/
+redirect_from: blog/internet-of-samples-to-use-arks-and-igsns-with-physical-objects/
 pid: 351
-author: The ARK Alliance
-original_date: 2021-01-04T23:08:29+00:00
+authors:
+  - ark-alliance
+date: 2021-01-04T23:08:29+00:00
 published: true
 ---
+
+NSF-funded 'Internet of Samples' project integrates scientific samples into a
+digital ecosystem with ARKs and IGSNs. Collaboration between Lamont-Doherty
+Earth Observatory, partner institutions, and ARK Alliance.
+
+<!--more-->
 
 In August 2020, the US National Science Foundation (NSF) awarded the
 Lamont-Doherty Earth Observatory of Columbia University and partner
@@ -80,9 +86,9 @@ potential users.
 
 [N2T]: https://n2t.net/
 [EZID]: https://ezid.cdlib.org/
-[ARK]: /
+[ARK]: _pages/index.md
 [Iron blade from the time of the Roman Republic.]: ../../assets/images/posts/2021-01-04-internet-of-samples-to-use-arks-and-igsns-with-physical-objects/iron_blade_roman.png
 [1]: https://n2t.net/ark:/28722/k2tt4vh8s
 [2]: ../../assets/images/posts/2021-01-04-internet-of-samples-to-use-arks-and-igsns-with-physical-objects/ekansa.png
 [3]: ../../assets/images/posts/2021-01-04-internet-of-samples-to-use-arks-and-igsns-with-physical-objects/SI_biosample.png
-[4]: http://n2t.net/ark:/65665/337856f1a-655e-4ad7-8b1e-f10a16dfb6e3
+[4]: https://n2t.net/ark:/65665/337856f1a-655e-4ad7-8b1e-f10a16dfb6e3

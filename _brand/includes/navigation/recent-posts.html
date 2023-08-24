@@ -1,0 +1,29 @@
+<h2>Recent Posts</h2>
+<ul class="list-unstyled">
+{% for post in site.posts limit:5  %}
+	<li class="mb-3">
+		<a href="{{ post.url }}">
+			{{ post.title }}
+		</a>
+		<small class="d-block text-secondary">
+			{{ post.date | date: "%Y-%m-%d" | prepend: "Posted: "}}
+			by {{ post.author | default: site.author }}
+		</small>
+	</li>
+{% endfor %}
+	<li class="d-flex justify-content-between border-top border-secondary-subtle pt-2">
+		<a href="{% link _pages/news.md %}">
+			All Posts
+		</a>
+		<a class="btn btn-primary btn-sm"
+		   href="{{ site.baseurl }}feed/">
+			<svg class="svg-inline--fa fa-fa-rss"
+			     aria-hidden="true"
+			     role="img"
+			     xmlns="http://www.w3.org/2000/svg"
+			     viewBox="0 0 448 512" data-fa-i2svg="">
+				<use xlink:href="#svg-rss"></use>
+			</svg> RSS
+		</a>
+	</li>
+</ul>

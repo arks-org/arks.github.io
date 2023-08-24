@@ -1,11 +1,15 @@
 ---
 title: ARK namespaces and sub-namespaces
-type: article
 permalink: /about/ark-namespaces/
 pid: 823
-original_date: 2021-01-23T23:06:30+00:00
+date: 2021-01-23T23:06:30+00:00
 published: true
 ---
+
+The article covers ARK namespaces, extending prefixes, shoulders, shared
+NAANs, resolving ARKs, and updating NAAN registry entries.
+
+<!--more-->
 
 ## ARK namespace overview
 
@@ -20,6 +24,7 @@ names (ARKs) that start with it.
 ARK namespaces begin with the Name Assigning Authority Number (NAAN), and can
 be further extended by a shoulder.
 
+<div class="table-responsive" markdown=1>
 | ***Set of all ARKs starting*** | ***Associated namespace***             | ***Example ARK in that namespace*** |
 |--------------------------------|----------------------------------------|-------------------------------------|
 | ark:/                          | All ARKs                               | ark:/99999/fk4gt2m                  |
@@ -27,6 +32,7 @@ be further extended by a shoulder.
 | ark:/12345/x5                  | ARKs under the 12345/x5 *shoulder*     | ark:/12345/x5wf6789                 |
 | ark:/12345/x5wf6789/           | ARKs under the 12345/x5wf6789 *object* | ark:/12345/x5wf6789/c2/s4.pdf       |
 {: .table .table-striped .table-hover }
+</div>
 
 The above table shows examples of four common namespace/sub-namespace levels.
 The first is for all ARKs and the second is for all ARKs under ark:12345. The
@@ -127,39 +133,63 @@ a shoulder, and that requires filling out an online [form to request a
 shoulder under a shared NAAN] (please don’t use this for shoulders under your
 own, non-shared NAAN).
 
+<div class="table-responsive">
 <table class="table table-hover table-striped">
+<thead>
 <tr>
-<th><strong>Shared NAAN <em>meaning</em></strong></th>
-<th><strong>Purpose, meaning, or connotation of ARKs with this NAAN.</strong><br />
-<strong>(It’s ok for these NAANs to be <em>non-opaque</em> since their meanings are immutable.)</strong></th>
-<th><strong>Expect to resolve?</strong></th>
-<th><strong>OK for long term reference?</strong></th>
+<th>Shared NAAN <em>meaning</em></th>
+<th>Purpose, meaning, or connotation of ARKs with this NAAN.
+<br />
+(It’s ok for these NAANs to be <em>non-opaque</em> since their meanings are
+immutable.)
+</th>
+<th>Expect to resolve?</th>
+<th>OK for long term reference?</th>
 </tr>
+</thead>
+<tbody>
 <tr>
-<td><strong>12345</strong> <em>examples</em></td>
-<td>Example ARKs appearing in documentation. They might resolve, but no link checker need be concerned if they don’t. They should not be considered viable for long term reference.</td>
+<th>12345 <em>examples</em></th>
+<td>
+Example ARKs appearing in documentation. They might resolve, but no link
+checker need be concerned if they don’t. They should not be considered viable
+for long term reference.
+</td>
 <td>maybe</td>
 <td>no</td>
 </tr>
 <tr>
-<td><strong>99152</strong> <em>terms</em></td>
-<td>ARKs for controlled vocabulary and ontology terms, such as metadata element names and pick-list values. They should resolve to term definitions and are suitable for long term reference.</td>
+<th>99152 <em>terms</em>
+</th>
+<td>
+ARKs for controlled vocabulary and ontology terms, such as metadata element
+names and pick-list values. They should resolve to term definitions and are
+suitable for long term reference.</td>
 <td>yes</td>
 <td>yes</td>
 </tr>
 <tr>
-<td><strong>99166</strong> <em>agents</em></td>
-<td>ARKs for people, groups, and institutions as “agents” (actors, such as creators, contributors, publishers, performers, etc). They should resolve to agent definitions and are suitable for long term reference.</td>
+<th>99166 <em>agents</em></th>
+<td>
+ARKs for people, groups, and institutions as “agents” (actors, such as
+creators, contributors, publishers, performers, etc). They should resolve to
+agent definitions and are suitable for long term reference.</td>
 <td>yes</td>
 <td>yes</td>
 </tr>
 <tr>
-<td><strong>99999</strong> <em>test ids</em></td>
-<td>ARKs for test, development, or experimental purposes, often at scale. They might resolve, but no link checker need be concerned if they don’t. They should not be considered viable for long term reference.</td>
+<th>99999 <em>test ids</em></th>
+<td>
+ARKs for test, development, or experimental purposes, often at scale. They
+might resolve, but no link checker need be concerned if they don’t. They
+should not be considered viable for long term reference.</td>
 <td>maybe</td>
 <td>no</td>
 </tr>
+</tbody>
 </table>
+</div>
+
 
 The 99999 and 12345 ARKs (“non-real”) are especially useful if you are
 responsible for reviewing broken link reports. Unless you know otherwise,
@@ -197,10 +227,10 @@ manually. Example reasons for a change may include
 NAANs are portable. If your organization transitions into or out of a vendor
 relationship, there is no impediment to taking your NAAN with you.
 
-[more information about implementing shoulders]: /about/shoulders
+[more information about implementing shoulders]: about-shoulders.md
 [1]: https://lh6.googleusercontent.com/4P2TlDWgXCj_wBahPf2UDHXeIbebp_8BTHlDccb0HGedk6wsqKLJCyWWXPmCN_j1zl_S_YjBO94rY7f80fUZNzaVkGy3-Dq28o9bLpD3tjVap0_b1VYFgOofuEOGwEgogvLtOAHY
 [namespace splitting problem]: https://n2t.net/e/n2t_vision.html
 [ARK Shoulders FAQ]: https://wiki.lyrasis.org/display/ARKs/ARK+Shoulders+FAQ
 [form to request a shoulder under a shared NAAN]: https://n2t.net/e/shoulder_request
 [online form]: https://n2t.net/e/naan_request
-[sample policy]: http://ark.bnf.fr/ark:/12148/bpt6k2102478.policy
+[sample policy]: https://ark.bnf.fr/ark:/12148/bpt6k2102478.policy

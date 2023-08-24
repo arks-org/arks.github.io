@@ -8,15 +8,18 @@
 				</a>
 			</li>
 			<li>
-				Updated {{ site.time | date_to_long_string }}
-				<a href="/feed/" class="text-warning">
+				<span class="h5">
+					Updated {{ site.time | date_to_long_string }}
+				</span>
+				<a class="btn btn-primary btn-sm"
+				   href="{{ site.baseurl }}feed/">
 					<svg class="svg-inline--fa fa-fa-rss"
 					     aria-hidden="true"
 					     role="img"
 					     xmlns="http://www.w3.org/2000/svg"
 					     viewBox="0 0 448 512" data-fa-i2svg="">
 						<use xlink:href="#svg-rss"></use>
-					</svg>
+					</svg> RSS
 				</a>
 			</li>
 			<li>
@@ -27,4 +30,57 @@
 			</li>
 		</ul>
 	</nav>
+
+
+	<nav class="container m-4">
+		<ul class="nav">
+			<li class="nav-item">
+				<a class="nav-link text-uppercase link-secondary"
+				   href="{% link _pages/sitemap.md %}">
+					Sitemap
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link text-uppercase link-secondary"
+				   href="{{ site.github.repository_url }}">
+					<svg aria-hidden="true"
+					     role="img"
+					     xmlns="http://www.w3.org/2000/svg"
+					     data-fa-i2svg=""
+						 class="ark-alliance__social--link svg-inline--fa fa-xl fa-github"
+						 viewBox="0 0 496 512">
+						<use xlink:href="#svg-github"></use>
+					</svg> Repository
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link text-uppercase link-secondary"
+				   href="{{ site.github.issues_url }}">
+					<svg aria-hidden="true"
+					     role="img"
+					     xmlns="http://www.w3.org/2000/svg"
+					     data-fa-i2svg=""
+						 class="ark-alliance__social--link svg-inline--fa fa-xl fa-github"
+						 viewBox="0 0 496 512">
+						<use xlink:href="#svg-github"></use>
+					</svg> Issues
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link text-uppercase link-secondary"
+				   href="{{ site.github.wiki_url }}">
+					<svg aria-hidden="true"
+					     role="img"
+					     xmlns="http://www.w3.org/2000/svg"
+					     data-fa-i2svg=""
+						 class="ark-alliance__social--link svg-inline--fa fa-xl fa-github"
+						 viewBox="0 0 496 512">
+						<use xlink:href="#svg-github"></use>
+					</svg> Wiki Docs
+				</a>
+			</li>
+		</ul>
+	</nav>
+
+
 </footer>

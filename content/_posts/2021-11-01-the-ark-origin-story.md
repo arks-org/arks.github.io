@@ -1,12 +1,19 @@
 ---
 title: The ARK origin story
-type: article
-permalink: /blog/the-ark-origin-story/
+redirect_from: blog/the-ark-origin-story/
 pid: 1217
-author: The ARK Alliance
-original_date: 2021-11-01T20:05:18+00:00
+authors:
+  - ark-alliance
+date: 2021-11-01T20:05:18+00:00
 published: true
 ---
+
+The ARK scheme originated in 2001 as a response to issues with existing PID
+systems (PURL, Handle, URN, DOI), aiming for decentralization, recognition of
+URLs, and open practices. It offered an innovative approach to persistence and
+is poised to become an IETF "Informational" RFC.
+
+<!--more-->
 
 By 2001 there were four major persistent identifier (PID) types, so why was it
 necessary to create a fifth? The origin story of the fifth type, the Archival

@@ -1,12 +1,17 @@
 ---
 title: ARKs at PIDapalooza
-type: article
-permalink: /blog/arks-at-pidapalooza/
+redirect_from: blog/arks-at-pidapalooza/
 pid: 971
-author: The ARK Alliance
-original_date: 2021-01-26T06:24:12+00:00
+authors:
+  - ark-alliance
+date: 2021-01-26T06:24:12+00:00
 published: true
 ---
+
+ARK-related sessions at PIDapalooza, a persistent identifier conference, will
+cover topics in English, Spanish, and German, starting on January 27.
+
+<!--more-->
 
 In an action-packed 24-hour period starting **Wednesday 27 January**
 (tomorrow!), there will be *five* virtual [Crowdcast] sessions relating to ARK

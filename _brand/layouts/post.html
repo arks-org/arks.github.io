@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+{%- include content/content_assigns.html -%}
+
+<div class="row">
+	<div class="col-lg-8">
+		{{ content_only | markdownify }}		
+	</div>
+	<div class="col-lg-4">
+		{%- include_cached navigation/recent-posts.html -%}
+	</div>
+</div>

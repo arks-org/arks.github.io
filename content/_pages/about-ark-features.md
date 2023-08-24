@@ -1,11 +1,18 @@
 ---
 title: ARK features
-type: article
 permalink: /about/ark-features/
 pid: 812
-original_date: 2021-01-23T22:26:24+00:00
+date: 2021-01-23T22:26:24+00:00
 published: true
 ---
+
+Explore the diverse capabilities of ARK identifiers, including local
+namespaces (shoulders), flexible metadata support, inflections for additional
+data, and the ability to delete ARKs when necessary. Gain insights into how
+ARKs empower a range of use cases while offering options for metadata schemas
+and policy statements.
+
+<!--more-->
 
 The availability of the features below is based on what system you’re using to
 resolve ARKs, so may vary whether you’re using an ARK service provider or
@@ -193,11 +200,11 @@ Because ARKs can be deleted and don’t require metadata, you can create them
 very early in the object workflow, before you’re sure about the keeping the
 resource and before you’ve invested in describing it.
 
-[ARK shoulders and namespaces]: /about/ark-namespaces/
+[ARK shoulders and namespaces]: about-ark-namespaces.md
 [DataCite schema]: https://schema.datacite.org/meta/kernel-4.2/
-[Dublin Core]: http://dublincore.org/
+[Dublin Core]: https://dublincore.org/
 [DataCite]: https://schema.datacite.org/
 [Schema.org]: https://schema.org/
-[Dublin Kernel]: http://dublincore.org/groups/kernel/spec/
+[Dublin Kernel]: https://dublincore.org/groups/kernel/spec/
 [N2T]: https://n2t.net/
 [statements]: https://doi.org/10.5334/dsj-2017-039

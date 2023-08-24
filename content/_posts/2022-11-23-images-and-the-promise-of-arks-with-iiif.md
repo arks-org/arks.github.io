@@ -1,12 +1,21 @@
 ---
 title: Images and the promise of ARKs with IIIF
-type: article
-permalink: /blog/images-and-the-promise-of-arks-with-iiif/
+redirect_from: blog/images-and-the-promise-of-arks-with-iiif/
 pid: 1498
-author: Julien A. Raemy
-original_date: 2022-11-23T20:19:11+00:00
+authors:
+  - julien-raemy
+  - john-jung
+  - john-kunze
+date: 2022-11-23T20:19:11+00:00
 published: true
 ---
+
+The integration of ARKs with the International Image Interoperability
+Framework (IIIF) enables standardized access to digital image collections,
+enhancing collaboration and interoperability among cultural heritage
+institutions.
+
+<!--more-->
 
 Digital images hold critical, compelling scholarly and scientific information.
 Unlocking their value, however, can be expensive. High-quality image object

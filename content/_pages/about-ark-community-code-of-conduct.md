@@ -1,11 +1,17 @@
 ---
 title: ARK Community Code of Conduct
-type: article
 permalink: /about/ark-community-code-of-conduct/
 pid: 1583
-original_date: 2023-02-07T00:53:01+00:00
+date: 2023-02-07T00:53:01+00:00
 published: true
 ---
+
+Understand the ARK Alliance's commitment to inclusivity and respect with their
+Community Code of Conduct. This document outlines behavior expectations,
+enforcement measures, and reporting guidelines for a safe and harassment-free
+community environment.
+
+<!--more-->
 
 We value the participation of each member of the ARK (Archival Resource Key)
 community. For the purposes of this document, the community includes the

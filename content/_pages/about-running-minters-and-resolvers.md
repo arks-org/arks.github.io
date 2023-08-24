@@ -1,11 +1,14 @@
 ---
 title: Running minters and resolvers
-type: article
 permalink: /about/running-minters-and-resolvers/
 pid: 819
-original_date: 2021-01-23T23:03:44+00:00
+date: 2021-01-23T23:03:44+00:00
 published: true
 ---
+
+Creating & Managing ARKs: Use alphanumerics, inert hyphens. Opt for opaque identifiers. Choose URL format for stability. Guide to minters & resolvers.
+
+<!--more-->
 
 ## Minting ARK name strings
 
@@ -76,6 +79,7 @@ with risk too, for example, numbers assigned sequentially reveal timing
 information and strings containing letters can unintentionally spell words
 (which is why vowels are missing from the recommended character repertoire).
 
+<div class="table-responsive" markdown=1>
 |                |                                      |                           |                        |
 |----------------|--------------------------------------|---------------------------|------------------------|
 | **non-opaque** | Netscape Permanent Archive           | Gay_Divorcee_1934_April_1 | Name-to-Thing Resolver |
@@ -83,6 +87,7 @@ information and strings containing letters can unintentionally spell words
 | **opaquer**    | 141e86dc-d396-4e59-bbc2-4c3bf5326152 | 19340401                  | n2t                    |
 | **opaquest**   | 141e86dcd3964e59bbc24c3bf5326152     | h8k74926g                 | 12148                  |
 {: .table .table-striped .table-hover }
+</div>
 
 ARKs are not required to be opaque, but it is recommended that the base object
 name be made opaque, since it tends to name the main focus of persistence. If
@@ -186,7 +191,7 @@ your local hostname, you would advertise your ARKs based at [n2t.net].
 Resolving your ARKs through N2T is always possible for users, regardless of
 how you advertise them.
 
-[Noid]: http://n2t.net/e/noid.html
+[Noid]: https://n2t.net/e/noid.html
 [UUID]: https://en.wikipedia.org/w/index.php?title=Universally_unique_identifier&oldid=906541334
-[ARK software tools and services]: /resources/
-[n2t.net]: http://n2t.net/
+[ARK software tools and services]: resources.md
+[n2t.net]: https://n2t.net/

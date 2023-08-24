@@ -1,11 +1,16 @@
 ---
 title: Testing ARKs with N2T
-type: article
 permalink: /about/testing-arks/
 pid: 827
-original_date: 2021-01-23T23:09:05+00:00
+date: 2021-01-23T23:09:05+00:00
 published: true
 ---
+
+ARK Testing: Best Practices. Delete test ARKs regularly. Quick test ARKs with
+your NAAN: ark:/99999/9NNNNN\_. Shared NAAN 99999 for testing; list in
+registry for N2T resolution.
+
+<!--more-->
 
 Test ARKs should be deleted regularly or else users will get used to them
 being there and they may become attached to them. The longer an identifier is

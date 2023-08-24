@@ -1,11 +1,16 @@
 ---
 title: The ARK origin story
-type: article
 permalink: /about/the-ark-origin-story/
 pid: 1257
-original_date: 2021-11-06T01:18:54+00:00
+date: 2021-11-06T01:18:54+00:00
 published: true
 ---
+
+ARK Origin: A Unique Identifier's Journey. ARKs address flaws in previous
+PIDs: PURL, Handle, URN, DOI. Created 2001 as URLs with 'ark:' label for
+persistence. Decentralized, open source, metadata linking.
+
+<!--more-->
 
 By 2001 there were four major persistent identifier (PID) types, so why was it
 necessary to create a fifth? The origin story of the fifth type, the Archival
@@ -143,8 +148,8 @@ Slide credit: Dominique Babini
 
 
 [this interview in 2021]: https://saaers.wordpress.com/2021/09/14/ark-alliance-an-interview-with-john-kunze/
-[1]: assets/images/pages/about-the-ark-origin-story/image-4.png
+[1]: ../assets/images/pages/about-the-ark-origin-story/image-4.png
 [the mythology of this view]: https://n2t.net/ark:/13030/c7gb1xh09
 [Cool URIs don’t change]: https://www.w3.org/Provider/Style/URI
 [84% of peer-reviewed Latin American journals in 2014 were not indexed by Scopus or the Web of Science]: https://www.slideshare.net/Babini/coasp2014-dominique-babini-clacso
-[2]: assets/images/pages/about-the-ark-origin-story/image-1.png
+[2]: ../assets/images/pages/about-the-ark-origin-story/image-1.png
