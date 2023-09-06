@@ -1,0 +1,8 @@
+#################
+# Site setting
+# Local overrides
+#################
+
+domain: arks.org
+baseurl: ""
+url: https://arks.org
