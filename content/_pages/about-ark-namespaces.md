@@ -58,7 +58,7 @@ or division makes it easy to ensure that independent assignment streams –
 present, past, or future – won’t conflict with each other, thanks to
 non-overlapping namespaces.
 
-Technically, a *shoulder* is a sub-namespace under a NAAN. It is the set all
+Technically, a *shoulder* is a sub-namespace under a NAAN. It is the set of all
 ARKs starting with a short, fixed extension to the NAAN. For example, in
 
        ark:/12345/x5wf6789/c2/s4.pdf
@@ -230,7 +230,7 @@ relationship, there is no impediment to taking your NAAN with you.
 [more information about implementing shoulders]: about-shoulders.md
 [1]: https://lh6.googleusercontent.com/4P2TlDWgXCj_wBahPf2UDHXeIbebp_8BTHlDccb0HGedk6wsqKLJCyWWXPmCN_j1zl_S_YjBO94rY7f80fUZNzaVkGy3-Dq28o9bLpD3tjVap0_b1VYFgOofuEOGwEgogvLtOAHY
 [namespace splitting problem]: https://n2t.net/e/n2t_vision.html
-[ARK Shoulders FAQ]: https://wiki.lyrasis.org/display/ARKs/ARK+Shoulders+FAQ
+[ARK Shoulders FAQ]: about-ark-shoulders-faq.md
 [form to request a shoulder under a shared NAAN]: https://n2t.net/e/shoulder_request
 [online form]: https://n2t.net/e/naan_request
 [sample policy]: https://ark.bnf.fr/ark:/12148/bpt6k2102478.policy
