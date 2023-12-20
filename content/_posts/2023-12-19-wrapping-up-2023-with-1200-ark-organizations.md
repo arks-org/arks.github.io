@@ -21,7 +21,6 @@ registered ARK organizations.
 - developed the first ever ARK tutorial, delivered at 16 conferences in
   versions ranging from 15 minutes to 3 hours; example videos: [60 minutes][],
   [18 minutes][]
-  - Code4lib, IIIF, DWeb, JCDL, iPRES, ESIP, NDSA, NTTW, CNI, DPC, TDWG, Bioschemas, EDDI
 - engaged the West and Central African Research and Education Network
   ([WACREN][]) and [LA Referencia][] (a Latin American network of open science
   repositories), which are contributing 3 people to ARKA working groups
