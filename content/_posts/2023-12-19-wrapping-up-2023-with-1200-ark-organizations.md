@@ -13,21 +13,41 @@ registered ARK organizations.
 
 <!--more-->
 
-2023 has has been another big year for the ARK Alliance. Some highlights:
+2023 has been another big year for the ARK Alliance. Some highlights:
 
-- 167 ARK organizations newly registered (most recent listed at the end)
+- 167 ARK organizations newly registered (listed at the end)
 - first ever ARK tutorial, delivered at 10 conferences
-  - 60 minute version https://www.youtube.com/watch?v=WpdmYvrKN-M&t=50s
+  - [60 minute video][]
     Princeton, Naples, Navarro, Santa Fe, Burlington,
     Champaign, St. Louis, Cambridge, Accra (remote), Prague (remote)
 - presented on ARKs to 6 other groups and meetings (CNI, DPC, Czech cult heritage, TDWG, Bioschemas, EDDI)  add WACREN/LIBSENSE, Code4lib, IIIF, DWeb, JCDL, iPRES, ESIP, NDSA, NTTW
-- new working group members: omo omaiya, lautaro matas, sefakor ankora, sergio santamarina, jack o'malley, lesley frew, ...?
-- published the ARK Alliance Code of Conduct
-- created ARK Alliance stickers, available to order online at ...
-- ARKs were added to new version of the PID Guide (PIDwijzer)
-- videos now available
-   18 mins https://www.youtube.com/watch?v=oZM2NbkjqQk&t=107s
-   60 mins https://www.youtube.com/watch?v=WpdmYvrKN-M&t=50s
+  - [18 minute video][]
+- 9 new working group members
+  donny winston, john jung, chloé pochon, omo omaiya, lautaro matas, sefakor ankora, sergio santamarina, Jack O'Malley, Lesley Frew
+- published the [ARK Community Code of Conduct][]
+- made ARK Alliance stickers available to order [online here][]
+- ARKs added to new version of the [PID Guide (PIDwijzer)][]
+
+- WACREN engagement
+
+<div class="row" markdown=1>
+
+![][chart]{: .img-thumbnail .img-responsive fetchpriority="high" height="80" loading="eager" width="160"}
+
+![][sticker]{: .img-thumbnail .img-responsive fetchpriority="high" height="142" loading="eager" width="129" }
+{: .col }
+
+<div class="col" markdown=1>
+![][map]{: .img-thumbnail .img-fluid .d-block fetchpriority="high" height="200" loading="eager" width="500"}
+
+</div>
+</div>
+
+The past six months have seen accelerating growth in the ARK community,
+including registration of 93 new ARK organizations. As always we welcome new
+volunteers for our working groups, especially those interested in raising ARK
+awareness and curating requests for new ARK organizations. Please let us know
+via email to info@arks.org.
 
 - registered 167 ARK organizations (most recent listed at the end)
 - developed the first ever ARK tutorial, and delivered it at 10 conferences
@@ -36,26 +56,19 @@ registered ARK organizations.
 - presented on ARKs to 6 other groups and meetings (CNI, DPC, Czech cult heritage, TDWG, Bioschemas, EDDI)  add WACREN/LIBSENSE, Code4lib, IIIF, DWeb, JCDL, iPRES, ESIP, NDSA, NTTW
 - new working group members: omo omaiya, lautaro matas, sefakor ankora, sergio santamarina, jack o'malley, lesley frew, ...?
 - published the ARK Alliance Code of Conduct
-- created ARK Alliance stickers, available to order online at ...
+- made ARK Alliance stickers available to order [online here]
 - ARKs were added to new version of the PID Guide (PIDwijzer)
 - videos now available
    18 mins https://www.youtube.com/watch?v=oZM2NbkjqQk&t=107s
    60 mins https://www.youtube.com/watch?v=WpdmYvrKN-M&t=50s
 
 - thank and name? wg stalwarts:
-- WACREN engagement
 
-<div class="row" markdown=1>
+In 2023 we began hosting our first ever ARK tutorials our Code of Conduct and now have stunning new vinyl ARK Alliance stickers! They are in a standard
+hexagonal format suitable for tiling your laptop, phone, refrigerator, etc.
+Currently they can only be ordered [online here] via Stickermule.
 
-![][1]{: .img-thumbnail .img-responsive fetchpriority="high" height="150" loading="eager" width="300"}
-<!-- ![][1]{: .img-thumbnail .img-responsive fetchpriority="high" height="480" loading="eager" width="640"} -->
-{: .col }
-
-<div class="col" markdown=1>
-![][2]{: .img-thumbnail .img-fluid .d-block fetchpriority="high" height="172" loading="eager" width="417"}
-
-</div>
-</div>
+![][sticker]{: .img-thumbnail .img-responsive fetchpriority="high" height="142" loading="eager" width="129" }
 
 -   It was a delight to welcome Donny Winston (Polyneme LLC), John Jung
     (University of Chicago), and Chloé Pochon (French National Institute of
@@ -65,18 +78,6 @@ registered ARK organizations.
 -   Our pre-conference proposal for a 3-hour ARK training session was accepted
     as part of [Code4Lib 2023], and will take place Tuesday, March 14, 2023 at
     Princeton University.
-
-The past six months have seen accelerating growth in the ARK community,
-including registration of 93 new ARK organizations. As always we welcome new
-volunteers for our working groups, especially those interested in raising ARK
-awareness and curating requests for new ARK organizations. Please let us know
-via email to info@arks.org.
-
-In 2023 we began hosting our first ever ARK tutorials our Code of Conduct and now have stunning new vinyl ARK Alliance stickers! They are in a standard
-hexagonal format suitable for tiling your laptop, phone, refrigerator, etc.
-Currently they can only be ordered [online here] via Stickermule.
-
-![][3]{: .img-thumbnail .img-responsive fetchpriority="high" height="142" loading="eager" width="129" }
 
 We are also happy to announce that a 3-hour ARK tutorial has been given this
 year at the annual Code4lib and IIIF conferences ([slides here]). There are
@@ -191,10 +192,13 @@ With a total of over 1200, we will close with a list of the 93
 - Agir pour l'École
 - Teylers Museum
 
+[PID Guide (PIDwijzer)]: https://www.pidwijzer.nl/en/
+[60 minute video]: https://www.youtube.com/watch?v=WpdmYvrKN-M&t=50s
+[18 minute video]: https://www.youtube.com/watch?v=oZM2NbkjqQk&t=107s
 [online here]: https://www.stickermule.com/item/2421090c47beca439dbded424879d2e6
-[1]: ../../assets/images/posts/2023-12-19-wrapping-up-2023-with-1200-ark-organizations/naan_growth_2023.png
-[2]: ../../assets/images/posts/2023-12-19-wrapping-up-2023-with-1200-ark-organizations/map_dec_2023.png
-[3]: ../../assets/images/posts/2023-06-14-community-update-2023-06-13-stickers-tutorials-code-of-conduct/arka-vinyl-sticker.png
+[chart]: ../../assets/images/posts/2023-12-19-wrapping-up-2023-with-1200-ark-organizations/naan_growth_2023.png
+[map]: ../../assets/images/posts/2023-12-19-wrapping-up-2023-with-1200-ark-organizations/map_dec_2023.png
+[sticker]: ../../assets/images/posts/2023-06-14-community-update-2023-06-13-stickers-tutorials-code-of-conduct/arka-vinyl-sticker.png
 [slides here]: ../../assets/documents/2023/06/ARK-Training-Tutorial-IIIF-2023-slides.pdf
 [DWeb Camp]: https://dwebcamp.org/
 [Joint Conference on Digital Libraries]: https://2023.jcdl.org/
