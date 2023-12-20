@@ -15,6 +15,20 @@ registered ARK organizations.
 
 2023 has has been another big year for the ARK Alliance. Some highlights:
 
+- 167 ARK organizations newly registered (most recent listed at the end)
+- first ever ARK tutorial, delivered at 10 conferences
+  - 60 minute version https://www.youtube.com/watch?v=WpdmYvrKN-M&t=50s
+    Princeton, Naples, Navarro, Santa Fe, Burlington,
+    Champaign, St. Louis, Cambridge, Accra (remote), Prague (remote)
+- presented on ARKs to 6 other groups and meetings (CNI, DPC, Czech cult heritage, TDWG, Bioschemas, EDDI)  add WACREN/LIBSENSE, Code4lib, IIIF, DWeb, JCDL, iPRES, ESIP, NDSA, NTTW
+- new working group members: omo omaiya, lautaro matas, sefakor ankora, sergio santamarina, jack o'malley, lesley frew, ...?
+- published the ARK Alliance Code of Conduct
+- created ARK Alliance stickers, available to order online at ...
+- ARKs were added to new version of the PID Guide (PIDwijzer)
+- videos now available
+   18 mins https://www.youtube.com/watch?v=oZM2NbkjqQk&t=107s
+   60 mins https://www.youtube.com/watch?v=WpdmYvrKN-M&t=50s
+
 - registered 167 ARK organizations (most recent listed at the end)
 - developed the first ever ARK tutorial, and delivered it at 10 conferences
     Princeton, Naples, Navarro, Santa Fe, Burlington,
@@ -31,10 +45,17 @@ registered ARK organizations.
 - thank and name? wg stalwarts:
 - WACREN engagement
 
-![][1]{: .img-thumbnail .img-responsive fetchpriority="high" height="300" loading="eager" width="400"}
-<!-- ![][1]{: .img-thumbnail .img-responsive fetchpriority="high" height="480" loading="eager" width="640"} -->
+<div class="row" markdown=1>
 
-![][2]{: .img-thumbnail .img-responsive fetchpriority="high" height="172" loading="eager" width="417"}
+![][1]{: .img-thumbnail .img-responsive fetchpriority="high" height="150" loading="eager" width="300"}
+<!-- ![][1]{: .img-thumbnail .img-responsive fetchpriority="high" height="480" loading="eager" width="640"} -->
+{: .col }
+
+<div class="col" markdown=1>
+![][2]{: .img-thumbnail .img-fluid .d-block fetchpriority="high" height="172" loading="eager" width="417"}
+
+</div>
+</div>
 
 -   It was a delight to welcome Donny Winston (Polyneme LLC), John Jung
     (University of Chicago), and Chloé Pochon (French National Institute of
