@@ -17,15 +17,17 @@ registered ARK organizations.
 
 ![][chart]{: .img-thumbnail .img-responsive fetchpriority="high" height="80" loading="eager" width="160"}
 
-![][sticker]{: .img-thumbnail .img-responsive fetchpriority="high" height="142" loading="eager" width="129" }
+<!-- ![][sticker]{: .img-thumbnail .img-responsive fetchpriority="high" height="142" loading="eager" width="129" } -->
 {: .col }
 
 <div class="col" markdown=1>
-![][map]{: .img-thumbnail .img-responsive fetchpriority="high" height="200" loading="eager" width="500"}
+![][map]{: .img-thumbnail .img-responsive fetchpriority="high" height="auto" loading="eager"}
 <!-- ![][map]{: .img-thumbnail .img-fluid .d-block fetchpriority="high" height="200" loading="eager" width="500"} -->
 
 </div>
 </div>
+
+![][sticker]{: .img-thumbnail .img-responsive fetchpriority="high" height="142" loading="eager" width="129" }
 
 2023 has been another big year for the ARK Alliance. Some highlights:
 
