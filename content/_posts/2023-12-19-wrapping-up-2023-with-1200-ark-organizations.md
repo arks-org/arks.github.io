@@ -15,23 +15,23 @@ registered ARK organizations.
 
 ![][map]{: .img-thumbnail .img-responsive fetchpriority="high" height="auto" loading="eager"}
 
-2023 has been another big year for the ARK Alliance. Some highlights:
+2023 was another big year for the ARK Alliance. Some highlights:
 
 - registered 167 ARK organizations (most recent listed at the end)
-- developed the first ever ARK tutorial, delivered at 10 conferences; sample [60 minute video][]
-- began collaboration with the West and Central African Research and
-  Education Network ([WACREN][]) and [LA Referencia][] (a Latin American
-  network of open science repositories), engagine 3 new working group members
-- added a total of 9 new working group members
-  - Donny Winston, John Jung, Chloé Pochon, Omo Oaiya, Lesley Frew, Lautaro Matas, Sefakor Ankora, Jack O'Malley, Sergio Santamarina
-- presented ARKs at 6 other disciplinary meetings; sample [18 minute video][]
-    Princeton, Naples, Navarro, Santa Fe, Burlington, Champaign, St. Louis, Cambridge, Accra (remote), Prague (remote)
-  (CNI, DPC, Czech cult heritage, TDWG, Bioschemas, EDDI)  add WACREN/LIBSENSE, Code4lib, IIIF, DWeb, JCDL, iPRES, ESIP, NDSA, NTTW
+- developed the first ever ARK tutorial, delivered at 16 conferences in
+  versions ranging from 15 minutes to 3 hours; example [60 minute video][],
+  example [18 minute video][]
+  - Code4lib, IIIF, DWeb, JCDL, iPRES, ESIP, NDSA, NTTW, CNI, DPC, TDWG, Bioschemas, EDDI
+- engaged the West and Central African Research and Education Network
+  ([WACREN][]) and [LA Referencia][] (a Latin American network of open science
+  repositories), which are contributing 3 working group members
+- welcomed a total of 9 new working group members to the ARK Alliance
+  - Donny Winston, John Jung, Chloé Pochon, Omo Oaiya, Lesley Frew, Lautaro Matas, Sefakor Ankora, Jack O'Malley, and Sergio Santamarina
 - published the [ARK Community Code of Conduct][]
 - worked with the Dutch [PID Guide (PIDwijzer)][] to integrate ARKs
-- made ARK Alliance stickers (image below) available to order [online here][]
+- made ARK Alliance stickers available to order [online here][]
 
-<div class="row" markdown=1>
+<div class="row" align="center" markdown=1>
 
 ![][chart]{: .img-thumbnail .img-responsive fetchpriority="high" height="80" loading="eager" width="160"}
 {: .col }
@@ -42,50 +42,17 @@ registered ARK organizations.
 </div>
 </div>
 
-The past six months have seen accelerating growth in the ARK community,
-including registration of 93 new ARK organizations. As always we welcome new
-volunteers for our working groups, especially those interested in raising ARK
-awareness and curating requests for new ARK organizations. Please let us know
-via email to info@arks.org.
+<!-- 
+- presented ARKs at 6 other disciplinary meetings; sample [18 minute video][]
+    Princeton, Naples, Navarro, Santa Fe, Burlington, Champaign, St. Louis, Cambridge, Accra (remote), Prague (remote)
+  (CNI, DPC, Czech cult heritage, TDWG, Bioschemas, EDDI)  add WACREN/LIBSENSE, Code4lib, IIIF, DWeb, JCDL, iPRES, ESIP, NDSA, NTTW
+-->
 
-- developed the first ever ARK tutorial, and delivered it at 10 conferences
-    Princeton, Naples, Navarro, Santa Fe, Burlington,
-    Champaign, St. Louis, Cambridge, Accra (remote), Prague (remote)
-- presented on ARKs to 6 other groups and meetings (CNI, DPC, Czech cult heritage, TDWG, Bioschemas, EDDI)  add WACREN/LIBSENSE, Code4lib, IIIF, DWeb, JCDL, iPRES, ESIP, NDSA, NTTW
-- new working group members: omo omaiya, lautaro matas, sefakor ankora, sergio santamarina, jack o'malley, lesley frew, ...?
-
-- thank and name? wg stalwarts:
-
-In 2023 we began hosting our first ever ARK tutorials our Code of Conduct and now have stunning new vinyl ARK Alliance stickers! They are in a standard
-hexagonal format suitable for tiling your laptop, phone, refrigerator, etc.
-Currently they can only be ordered [online here] via Stickermule.
-
-![][sticker]{: .img-thumbnail .img-responsive fetchpriority="high" height="142" loading="eager" width="129" }
-
--   It was a delight to welcome Donny Winston (Polyneme LLC), John Jung
-    (University of Chicago), and Chloé Pochon (French National Institute of
-    Art History) to the ARK Alliance working groups.
--   The ARK specification has been converted from the classic XML/RFC format
-    to a much more streamlined Markdown/RFC format.
--   Our pre-conference proposal for a 3-hour ARK training session was accepted
-    as part of [Code4Lib 2023], and will take place Tuesday, March 14, 2023 at
-    Princeton University.
-
-We are also happy to announce that a 3-hour ARK tutorial has been given this
-year at the annual Code4lib and IIIF conferences ([slides here]). There are
-four more tutorials coming up:
-
--   90 mins at [DWeb Camp] around June 20
--   180 mins at [Joint Conference on Digital Libraries] (ACM/IEEE JCDL) June
-    26
--   60 mins at [Earth Science Information Partners] (ESIP) July 20
--   90 mins at [International Conference on Digital Preservation] (iPRES)
-    around Sept 20
-
-Finally we would like to announce availability of the [ARK Community Code of
-Conduct]. This document represents consensus across the ARK Alliance Advisory
-Group and the NAAN Registry, Outreach, and Technical Working Groups. Working
-documents for these groups are linked from the sidebar on the [ARKA wiki].
+The past six months have seen the usual accelerating growth in the ARK
+community, including registration of 93 new ARK organizations. As always we
+welcome new volunteers for our working groups, especially those interested in
+raising ARK awareness and curating requests for new ARK organizations. Please
+let us know via email to info@arks.org.
 
 With a total of over 1200, we will close with a list of the 93
 [ARK organizations] registered since 2023-06-11:
