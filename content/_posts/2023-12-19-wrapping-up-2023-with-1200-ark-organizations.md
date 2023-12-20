@@ -15,16 +15,16 @@ registered ARK organizations.
 
 ![][map]{: .img-thumbnail .img-responsive fetchpriority="high" height="auto" loading="eager"}
 
-2023 was another big year for the ARK Alliance. Some highlights:
+2023 was another big year for the ARK Alliance (ARKA). Some highlights:
 
 - registered 167 ARK organizations (most recent listed at the end)
 - developed the first ever ARK tutorial, delivered at 16 conferences in
-  versions ranging from 15 minutes to 3 hours; example [60 minute video][],
-  example [18 minute video][]
+  versions ranging from 15 minutes to 3 hours; example videos: [60 minutes][],
+  [18 minutes][]
   - Code4lib, IIIF, DWeb, JCDL, iPRES, ESIP, NDSA, NTTW, CNI, DPC, TDWG, Bioschemas, EDDI
 - engaged the West and Central African Research and Education Network
   ([WACREN][]) and [LA Referencia][] (a Latin American network of open science
-  repositories), which are contributing 3 working group members
+  repositories), which are contributing 3 people to ARKA working groups
 - welcomed a total of 9 new working group members to the ARK Alliance
   - Donny Winston, John Jung, Chloé Pochon, Omo Oaiya, Lesley Frew, Lautaro Matas, Sefakor Ankora, Jack O'Malley, and Sergio Santamarina
 - published the [ARK Community Code of Conduct][]
@@ -54,7 +54,7 @@ welcome new volunteers for our working groups, especially those interested in
 raising ARK awareness and curating requests for new ARK organizations. Please
 let us know via email to info@arks.org.
 
-With a total of over 1200, we will close with a list of the 93
+With a total of over 1200, we close with a list of the 93
 [ARK organizations] registered since 2023-06-11:
 
 - Archives municipales de Noisiel
@@ -154,8 +154,8 @@ With a total of over 1200, we will close with a list of the 93
 [LA Referencia]: https://www.lareferencia.info/en/
 [WACREN]: https://wacren.net/
 [PID Guide (PIDwijzer)]: https://www.pidwijzer.nl/en/
-[60 minute video]: https://www.youtube.com/watch?v=WpdmYvrKN-M&t=50s
-[18 minute video]: https://www.youtube.com/watch?v=oZM2NbkjqQk&t=107s
+[60 minutes]: https://www.youtube.com/watch?v=WpdmYvrKN-M&t=50s
+[18 minutes]: https://www.youtube.com/watch?v=oZM2NbkjqQk&t=107s
 [online here]: https://www.stickermule.com/item/2421090c47beca439dbded424879d2e6
 [chart]: ../../assets/images/posts/2023-12-19-wrapping-up-2023-with-1200-ark-organizations/naan_growth_2023.png
 [map]: ../../assets/images/posts/2023-12-19-wrapping-up-2023-with-1200-ark-organizations/map_dec_2023.png
