@@ -58,7 +58,7 @@ or division makes it easy to ensure that independent assignment streams –
 present, past, or future – won’t conflict with each other, thanks to
 non-overlapping namespaces.
 
-Technically, a *shoulder* is a sub-namespace under a NAAN. It is the set all
+Technically, a *shoulder* is a sub-namespace under a NAAN. It is the set of all
 ARKs starting with a short, fixed extension to the NAAN. For example, in
 
        ark:/12345/x5wf6789/c2/s4.pdf
