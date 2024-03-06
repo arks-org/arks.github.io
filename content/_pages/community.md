@@ -15,7 +15,7 @@ The ARK Alliance community comprises institutions and people who use or assign
 ARK identifiers as well as those interested in promoting ARKs and sustaining
 the open ARK infrastructure, which consists of standards, best practices, the
 [N2T.net] resolver, and the registry of ARK organizations. There is also an
-[ARK Community Code of Conduct].
+[Archival Resource Key Community Code of Conduct].
 
 [![][1]{: .img-thumbnail .img-fluid .rounded-pill fetchpriority="high" loading="eager"}][2]
 
@@ -123,7 +123,7 @@ institutions on 4 continents:
 
 
 [N2T.net]: https://n2t.net
-[ARK Community Code of Conduct]: about-ark-community-code-of-conduct.md
+[Archival Resource Key Community Code of Conduct]: about-ark-community-code-of-conduct.md
 [1]: ../assets/images/pages/community/image-2048x845.png
 [2]: https://www.google.com/maps/d/u/0/edit?mid=1ALGeRERECL36f2pg7pqrthUYNmuU43UM&usp=sharing
 [collaboration]: https://wiki.lyrasis.org/display/ARKs/ARKs+in+the+Open+Project
