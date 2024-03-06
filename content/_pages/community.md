@@ -23,7 +23,7 @@ Global distribution of over 1250 ARK organizations.
 
 The ARK Alliance emerged from a [collaboration] between the California Digital
 Library and DuraSpace/LYRASIS. Launched in 2018, it has gained the support of
-[43 institutions]. Since 2021 the ARK Alliance has been a member of the
+[44 institutions]. Since 2021 the ARK Alliance has been a member of the
 [NDSA], an international consortium committed to the long-term preservation of
 digital information.
 
@@ -72,7 +72,7 @@ What ARKs are being assigned to (February 2023):
 -   datasets, journals, archeological artifacts, living beings, etc.
 
 We continue to receive [expressions of interest][interest in helping with the
-work of the ARK Alliance] and have attracted support from the following 43
+work of the ARK Alliance] and have attracted support from the following 44
 institutions on 4 continents:
 
 -   Australian National Data Service
@@ -118,6 +118,7 @@ institutions on 4 continents:
 -   University of Southern California Information Sciences Institute
 -   University of Utah
 -   University of Virginia
+-   West and Central African Research and Education Network (WACREN)
 -   Zürcher Hochschule der Künste
 {: .list-2-columns }
 
@@ -127,7 +128,7 @@ institutions on 4 continents:
 [1]: ../assets/images/pages/community/image-2048x845.png
 [2]: https://www.google.com/maps/d/u/0/edit?mid=1ALGeRERECL36f2pg7pqrthUYNmuU43UM&usp=sharing
 [collaboration]: https://wiki.lyrasis.org/display/ARKs/ARKs+in+the+Open+Project
-[43 institutions]: #supporting_organizations
+[44 institutions]: #supporting_organizations
 [NDSA]: https://ndsa.org
 [group]: https://groups.google.com/g/arks-forum
 [liste]: https://framalistes.org/sympa/info/arks-forum-fr
