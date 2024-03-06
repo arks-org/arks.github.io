@@ -7,7 +7,7 @@ published: true
 ---
 
 ARK Alliance: Global community for open, decentralized ARK identifiers
-supporting research and scholarship. 8.2B ARKs created by 1000+ orgs.
+supporting research and scholarship. 8.2B ARKs created by 1250+ orgs.
 
 <!--more-->
 
@@ -19,7 +19,7 @@ behalf of research and scholarship.
 
 End users, especially researchers, rely on ARKs for long term access to the
 global scientific and cultural record. Since 2001 some 8.2 billion ARKs have
-been created by over [1000 organizations] — libraries, data centers, archives,
+been created by over [1250 organizations] — libraries, data centers, archives,
 museums, publishers, government agencies, and vendors.
 
 ARKs are open, mainstream, non-paywalled, decentralized persistent identifiers
@@ -64,7 +64,7 @@ Ravenelle, that itself has an ARK identifier:
 National Library of France).
 
 
-[1000 organizations]: community.md
+[1250 organizations]: community.md
 [1]: ../assets/images/pages/index/ark_things.png
 [suffix passthrough]: about-ark-naans-and-systems.md#n2t-feature-suffix-passthrough
 [this request form]: https://goo.gl/forms/bmckLSPpbzpZ5dix1
