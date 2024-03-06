@@ -67,7 +67,7 @@ groups, as listed on this page:
 <https://wiki.lyrasis.org/display/ARKs/ARK+Alliance+Community+Leaders>.
 
 Community Leaders may be contacted by email at this address:
-<arka-conduct@googlegroups.com>. They have the right and responsibility to
+<archival-resource-key-community-conduct@googlegroups.com>. They have the right and responsibility to
 remove, edit, or reject comments, commits, code, wiki edits, issues, and other
 contributions that are not aligned to this Code of Conduct, and will
 communicate reasons for moderation decisions when appropriate.
@@ -87,7 +87,7 @@ virtual or in-person space are required to conform to this Code of Conduct.
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
 reported to the Community Leaders responsible for enforcement at the private
-list <arka-conduct@googlegroups.com>. If you would prefer, you may email one
+list <archival-resource-key-community-conduct@googlegroups.com>. If you would prefer, you may email one
 or more individuals listed in the [Community Leaders page] mentioned earlier.
 All complaints will be reviewed and investigated promptly and fairly.
 
@@ -196,7 +196,7 @@ Consequence: A permanent ban from any sort of public interaction within the comm
 ## What if your report concerns a possible violation by a Community Leader?
 
 If your report concerns a Community Leader, you may not feel comfortable
-contacting the <arka-conduct@googlegroups.com> list, as all Community Leaders
+contacting the <archival-resource-key-community-conduct@googlegroups.com> list, as all Community Leaders
 will see the report.
 
 In that case, you can make a report directly to any of the individuals on the
