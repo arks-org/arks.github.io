@@ -50,6 +50,8 @@ To get your software listed please [let us know] about it.
 
 -   [arklet][]: a Python Django application for minting, binding, and
     resolving ARKs, created by the Internet Archive
+-   [Arklet-Frick][]: the Frick Collection's adaptation of the Internet Archive's arklet tool, with improved security and bugfixes, as well as 
+    bulk operations, suffix passthrough, shoulder rules, extensive metadata, ?info and ?json endpoints, and more
 -   [arknoid][]: docker application to simplify setting up and managing ARK
     minters
 -   [Noid][]: (Nice Opaque Identifiers), original open source Perl software
@@ -78,8 +80,9 @@ To get your software listed please [let us know] about it.
     [N2T-admin] package; we are currently looking to create a next-generation
     ARK resolver
 
-## Selected presentations, most recent first
+## Selected presentations
 
+-   _Getting Started with ARK Persistent Identifiers (PIDs)_, 2024-03-31, recommended ARK (Archival Resource Key) tutorial for beginners. [video][17] (30 mins)
 -   Brief Introduction to ARKs for GLAMs, 2023-08-03. [slides] (15 mins)
 -   ARK Training, 2023-06-06, 3-hour tutorial from 2023 IIIF Annual
     Conference. [slides][3]
@@ -134,6 +137,7 @@ To get your software listed please [let us know] about it.
 [CDL]: https://cdlib.org/
 [let us know]: contact-us.md
 [arklet]: https://github.com/internetarchive/arklet
+[Arklet-Frick]: https://github.com/squidgetx/arklet-frick/tree/master
 [arknoid]: https://github.com/jkunze/docker-arknoid
 [Noid]: https://n2t.net/e/noid.html
 [Pynoid]: https://github.com/no-reply/pynoid
@@ -174,3 +178,4 @@ To get your software listed please [let us know] about it.
 [video link]: https://www.youtube.com/watch?v=vYYYUIokwPM&t=134s
 [English transcription]: ../assets/documents/2021/11/The-Covenant-of-the-ARK-en.pdf
 [16]: https://digital.library.unt.edu/ark:/67531/metadc28359/
+[17]: https://www.youtube.com/watch?v=-RkMGFCGRic
