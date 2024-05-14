@@ -26,5 +26,5 @@ development, or incomplete.
 ## PAGE UNDER CONSTRUCTION
 
 [The ARK Identifier Scheme (latest version)]: https://datatracker.ietf.org/doc/draft-kunze-ark/
-[The ARK Identifier Scheme V18]: ../assets/documents/2024/ark_spec_39.pdf
+[The ARK Identifier Scheme V39]: ../assets/documents/2024/ark_spec_39.pdf
 [1]: ../assets/images/pages/specs/spectacles.jpg
