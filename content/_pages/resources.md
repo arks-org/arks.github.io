@@ -17,7 +17,7 @@ A helpful list of resources, documentation, and services.
 
 <div class="row" markdown=1>
 
--   [The ARK Identifier Scheme (v.18)], technical specification
+-   [The ARK Identifier Scheme (v.39)], technical specification
 -   [Current and evolving specifications]
 -   *Towards Electronic Persistence Using ARK Identifiers*, 2003-07, [PDF]
 -   [General identifier concepts and conventions]
@@ -125,7 +125,7 @@ To get your software listed please [let us know] about it.
     2008-06-05, Mark Phillips. [slides][16]
 
 [NAAN form]: https://goo.gl/forms/bmckLSPpbzpZ5dix1
-[The ARK Identifier Scheme (v.18)]: ../assets/documents/2023/04/ark-18-arksorg.pdf
+[The ARK Identifier Scheme (v.39)]: ../assets/documents/2024/ark_spec_39.pdf
 [Current and evolving specifications]: specs.md
 [PDF]: https://n2t.net/e/Towards_Electronic_Persistence_Using_ARK_Identifiers.pdf
 [General identifier concepts and conventions]: about-identifier-concepts-and-conventions.md
