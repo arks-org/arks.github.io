@@ -33,7 +33,7 @@ digital information.
     (francophone)
 2.  Follow the ARK Alliance on twitter [@arks_org]
 3.  Follow us on mastodon [@arks_org@fosstodon.org]
-4.  Read the ARK Alliance [blog]
+4.  Read the ARK Alliance [blog] and share your own ARK story ([story template])
 5.  [Sign up for our newsletter][]
 6.  Submit a community news item or blog post using this [online form]
 7.  Tell us about yourself by filling out a 5-minute [ARK survey] (in English)
@@ -135,6 +135,7 @@ institutions on 4 continents:
 [@arks_org]: https://twitter.com/arks_org
 [@arks_org@fosstodon.org]: https://fosstodon.org/@arks_org
 [blog]: news.md
+[story template]: blog-post-template.md
 [Sign up for our newsletter]: {{ site.contact.newsletter }}
 [online form]: https://docs.google.com/forms/d/1e7GvJYvsMd7Qm_LdgkVaUB96dVzeou85f0VbhA4BsSs
 [ARK survey]: https://survey.alchemer.com/s3/6167987/ARK-Alliance-Survey
