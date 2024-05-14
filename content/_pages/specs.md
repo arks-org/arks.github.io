@@ -17,7 +17,7 @@ This page links to technical specs, some of which are current, under
 development, or incomplete.
 
 -  Under development: [The ARK Identifier Scheme (latest version)]
--  Current specification: [The ARK Identifier Scheme V18]
+-  Current specification: [The ARK Identifier Scheme V39]
 
 ![][1]{: .img-thumbnail .img-fluid fetchpriority="high" height="320" loading="eager" width="241"}
 
@@ -26,5 +26,5 @@ development, or incomplete.
 ## PAGE UNDER CONSTRUCTION
 
 [The ARK Identifier Scheme (latest version)]: https://datatracker.ietf.org/doc/draft-kunze-ark/
-[The ARK Identifier Scheme V18]: ../assets/documents/2023/04/ark-18-arksorg.pdf
+[The ARK Identifier Scheme V18]: ../assets/documents/2024/ark_spec_39.pdf
 [1]: ../assets/images/pages/specs/spectacles.jpg
