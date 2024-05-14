@@ -33,9 +33,10 @@ digital information.
     (francophone)
 2.  Follow the ARK Alliance on twitter [@arks_org]
 3.  Follow us on mastodon [@arks_org@fosstodon.org]
-4.  Read the ARK Alliance [blog] and share your own ARK story ([story template])
+4.  Read the ARK Alliance [blog]
 5.  [Sign up for our newsletter][]
-6.  Submit a community news item or blog post using this [online form]
+6.  Submit a community news item or blog post using this [online news form];
+    you can use this [story template] to help create your content
 7.  Tell us about yourself by filling out a 5-minute [ARK survey] (in English)
     or 🇫🇷 une [enquête ARK] (version française)
 8.  Tell us about your [interest in helping with the work of the ARK Alliance]
@@ -45,10 +46,10 @@ digital information.
 ## Who is creating ARKs
 
 Since 2001 over [1250 organizations] across the world registered to assign
-ARKs. The registry includes national and university libraries and archives,
-art museums, natural history museums, publishers, data centers, government
-agencies, vendors, and research labs. To register your organization, fill out
-this [online request form].
+ARKs. As of early 2024, the registry includes 10 national libraries, 145 
+universities, 184 archives, 90 museums, and 75 journals, as well as many other 
+organization types (data centers, government agencies, vendors, research labs, etc). 
+To register your organization, fill out this [online request form].
 
 ![chart of growth of ARK-assigning organizations since 2001][]{: .img-thumbnail .img-fluid loading="lazy" width="534"}
 
@@ -137,7 +138,6 @@ institutions on 4 continents:
 [blog]: news.md
 [story template]: blog-post-template.md
 [Sign up for our newsletter]: {{ site.contact.newsletter }}
-[online form]: https://docs.google.com/forms/d/1e7GvJYvsMd7Qm_LdgkVaUB96dVzeou85f0VbhA4BsSs
 [ARK survey]: https://survey.alchemer.com/s3/6167987/ARK-Alliance-Survey
 [enquête ARK]: https://survey.alchemer.com/s3/6168001/ARK-Alliance-Survey-French
 [interest in helping with the work of the ARK Alliance]: https://docs.google.com/forms/d/15bhmP5Z0aOLaTWfXKK0TBTJCOAXuT30hIzfhij-D_oM/viewform?edit_requested=true
@@ -149,6 +149,7 @@ institutions on 4 continents:
 [Advisory]: https://wiki.lyrasis.org/display/ARKs/Advisory+Group
 [1250 organizations]: https://n2t.net/e/pub/naan_table.html
 [online request form]: https://goo.gl/forms/bmckLSPpbzpZ5dix1
+[online news form]: https://docs.google.com/forms/d/1e7GvJYvsMd7Qm_LdgkVaUB96dVzeou85f0VbhA4BsSs
 [chart of growth of ARK-assigning organizations since 2001]: https://n2t.net/e/pub/naan_growth.png
 [FamilySearch]: https://familysearch.org/
 [Portico]: https://www.portico.org/
