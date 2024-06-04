@@ -19,7 +19,7 @@ behalf of research and scholarship.
 
 End users, especially researchers, rely on ARKs for long term access to the
 global scientific and cultural record. Since 2001 some 8.2 billion ARKs have
-been created by over [1250 organizations] — libraries, data centers, archives,
+been created by over [1300 organizations] — libraries, data centers, archives,
 museums, publishers, government agencies, and vendors.
 
 ARKs are open, mainstream, non-paywalled, decentralized persistent identifiers
