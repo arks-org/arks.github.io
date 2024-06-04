@@ -56,16 +56,17 @@ To get started creating ARKs, please fill out [this request form] for your
 organization. If you wish to get involved in the ARK Alliance, consider
 joining one of its [working groups].
 
-<p class="text-center">
-![][2]{: .img-thumbnail .img-fluid width="1024" height="638"}
-</p>
+![][2]{: .img-thumbnail .img-fluid .mx-auto width="1024" height="638"}
 
-<p class="text-center">
 Working on the ARK. From a 1401 manuscript page, illuminated by Johannette
 Ravenelle, that itself has an ARK identifier:
 <https://n2t.net/ark:/12148/btv1b8449691v/f29> (source gallica.bnf.fr,
 National Library of France).
+
+<p class="text-center">
+center this
 </p>
+
 
 [1300 organizations]: community.md
 [1]: ../assets/images/pages/index/ark_things.png
