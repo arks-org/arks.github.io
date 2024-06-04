@@ -56,7 +56,7 @@ To get started creating ARKs, please fill out [this request form] for your
 organization. If you wish to get involved in the ARK Alliance, consider
 joining one of its [working groups].
 
-![][2]{: .img-thumbnail .img-fluid .mx-auto width="1024" height="638"}
+![][2]{: .img-thumbnail .img-fluid width="1024" height="838"}
 
 Working on the ARK. From a 1401 manuscript page, illuminated by Johannette
 Ravenelle, that itself has an ARK identifier:
