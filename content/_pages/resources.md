@@ -178,4 +178,4 @@ To get your software listed please [let us know] about it.
 [video link]: https://www.youtube.com/watch?v=vYYYUIokwPM&t=134s
 [English transcription]: ../assets/documents/2021/11/The-Covenant-of-the-ARK-en.pdf
 [16]: https://digital.library.unt.edu/ark:/67531/metadc28359/
-[17]: https://www.youtube.com/watch?v=-RkMGFCGRic
+[17]: https://youtu.be/-RkMGFCGRic

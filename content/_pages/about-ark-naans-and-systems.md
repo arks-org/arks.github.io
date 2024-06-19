@@ -38,7 +38,7 @@ access may be provided by one or more different entities instead of or in
 addition to the original naming authority.
 
 The NAAN used above, 13030, represents the California Digital Library (CDL).
-Over 1250 organizations have registered for ARK NAANs, including numerous
+Over 1300 organizations have registered for ARK NAANs, including numerous
 universities, Google, the Internet Archive, WIPO, the British Library, and
 other national libraries.
 
