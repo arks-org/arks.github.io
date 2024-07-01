@@ -64,11 +64,6 @@ Ravenelle, that itself has an ARK identifier:
 <https://n2t.net/ark:/12148/btv1b8449691v/f29> (source gallica.bnf.fr,
 National Library of France).
 
-<p class="text-center">
-center this
-</p>
-
-
 [{{ site.num_ark_orgs }} organizations]: community.md
 [1]: ../assets/images/pages/index/ark_things.png
 [suffix passthrough]: about-ark-naans-and-systems.md#n2t-feature-suffix-passthrough
