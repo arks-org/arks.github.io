@@ -12,9 +12,10 @@ and Donny Winston.
 
 <!--more-->
 
-The ARK tutorial described below was first offered in 2023 along with
-conferences such as Code4lib, IIIF, and JCDL. We hope to offer it at other
-conferences and to make a video recording available.
+The ARK tutorial described below was first offered in 2023 and has been given
+at conferences such as Code4lib, IIIF, JCDL, iPRES, and Open Repositories.
+We will continue to adapt the content for other conferences, but a basic
+[30-minute ARK tutorial video recording] is available.
 
 ## Course description
 
@@ -59,3 +60,4 @@ Laboratory (LBNL) in Berkeley, CA. He is the owner and principal of Polyneme
 LLC; a cofounder of the FAIR Points event series; and host of the
 Machine-Centric Science podcast.
 
+[30-minute ARK tutorial video recording]: https://youtu.be/-RkMGFCGRic
