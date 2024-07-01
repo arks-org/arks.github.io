@@ -7,7 +7,7 @@
 ################
 
 title: ARK Alliance
-email: your-email@example.com
+email: info@arks.org
 tagline: >-
   Home of the Archival Resource Key (ARK)
 description: >-
@@ -19,10 +19,12 @@ domain: arks-org.github.io
 baseurl: /arks.github.io
 url: https://arks-org.github.io
 author: "The ARK Alliance"
+num_ark_orgs: 1300
+num_support_orgs: 44
 
 contact:
   newsletter: http://eepurl.com/hnpLi5
-  email: name@example.com
+  email: info@arks.org
 
 ##############
 # SEO SPECIFIC
