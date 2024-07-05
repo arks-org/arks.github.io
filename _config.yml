@@ -16,7 +16,7 @@ description: >-
   Alliance, a global community upholding ARK infrastructure for research and
   scholarship.
 domain: arks-org.github.io
-baseurl: /arks.github.io
+baseurl: ""
 url: https://arks-org.github.io
 author: "The ARK Alliance"
 num_ark_orgs: 1300
