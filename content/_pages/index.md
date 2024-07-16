@@ -23,21 +23,13 @@ global scientific and cultural record. Since 2001 some 8.2 billion ARKs have
 been created by over [{{ site.num_ark_orgs }} organizations] — libraries, data
 centers, archives, museums, publishers, government agencies, and vendors.
 
-| | ![][1]{: .img-thumbnail .img-fluid width="1024" height="183" loading="eager"} | |
-|-|:--:|-|
-| &nbsp; | Some things that have ARKs — an article, violin, genealogy, painting, book, sports photo, and plant specimen — assigned by the Louvre, Smithsonian Institution, Internet Archive, California Digital Library, and FamilySearch. | &nbsp; |
-
-{% include content/image.html url="../../assets/images/pages/index/ark_things.png" description="Some things that have ARKs — an article, violin, genealogy, painting, book, sports photo, and plant specimen — assigned by the Louvre, Smithsonian Institution, Internet Archive, California Digital Library, and FamilySearch." %}
-
 ARKs are open, mainstream, non-paywalled, decentralized persistent identifiers
 that you can start creating in under 48 hours. They identify anything digital,
 physical, or abstract.
 
-![][1]{: .img-thumbnail .img-fluid width="1024" height="183" loading="eager"}
-
-Some things that have ARKs — an article, violin, genealogy, painting, book,
-sports photo, and plant specimen — assigned by the Louvre, Smithsonian
-Institution, Internet Archive, California Digital Library, and FamilySearch.
+| ![][1]{: .img-thumbnail .img-fluid width="1024" height="183" loading="eager"} |
+|:--:|
+| Some things that have ARKs — an article, violin, genealogy, painting, book, sports photo, and plant specimen — assigned by the Louvre, Smithsonian Institution, Internet Archive, California Digital Library, and FamilySearch. |
 
 ARKs are similar to DOIs, URNs, and Handles. All of them
 
@@ -63,12 +55,9 @@ To get started creating ARKs, please fill out [this request form] for your
 organization. If you wish to get involved in the ARK Alliance, consider
 joining one of its [working groups].
 
-![][2]{: .img-thumbnail .img-fluid width="1024" height="638"}
-
-Working on the ARK. From a 1401 manuscript page, illuminated by Johannette
-Ravenelle, that itself has an ARK identifier:
-<https://n2t.net/ark:/12148/btv1b8449691v/f29> (source gallica.bnf.fr,
-National Library of France).
+| ![][2]{: .img-thumbnail .img-fluid width="1024" height="638"} |
+|:--:|
+| Working on the ARK. From a 1401 manuscript page, illuminated by Johannette Ravenelle, that itself has an ARK identifier: <https://n2t.net/ark:/12148/btv1b8449691v/f29> (source gallica.bnf.fr, National Library of France). |
 
 [{{ site.num_ark_orgs }} organizations]: community.md
 [1]: ../assets/images/pages/index/ark_things.png
