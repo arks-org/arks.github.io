@@ -31,7 +31,6 @@ physical, or abstract.
 |:--:|
 | Some things that have ARKs — an article, violin, genealogy, painting, book, sports photo, and plant specimen — assigned by the Louvre, Smithsonian Institution, Internet Archive, California Digital Library, and FamilySearch. |
 
-<br/>
 ARKs are similar to DOIs, URNs, and Handles. All of them
 
 -   were introduced over 20 years ago,
