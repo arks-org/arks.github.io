@@ -23,9 +23,7 @@ global scientific and cultural record. Since 2001 some 8.2 billion ARKs have
 been created by over [{{ site.num_ark_orgs }} organizations] — libraries, data
 centers, archives, museums, publishers, government agencies, and vendors.
 
-{% include content/image.html url="../assets/images/pages/index/ark_things.png" description="Some things that have ARKs — an article, violin, genealogy, painting, book,
-sports photo, and plant specimen — assigned by the Louvre, Smithsonian
-Institution, Internet Archive, California Digital Library, and FamilySearch." %}
+{% include content/image.html url="../../assets/images/pages/index/ark_things.png" description="Some things that have ARKs — an article, violin, genealogy, painting, book, sports photo, and plant specimen — assigned by the Louvre, Smithsonian Institution, Internet Archive, California Digital Library, and FamilySearch." %}
 
 ARKs are open, mainstream, non-paywalled, decentralized persistent identifiers
 that you can start creating in under 48 hours. They identify anything digital,
