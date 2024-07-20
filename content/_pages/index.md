@@ -7,7 +7,7 @@ published: true
 ---
 
 ARK Alliance: Global community for open, decentralized ARK identifiers
-supporting research and scholarship. 8.2B ARKs created by {{ site.num_ark_orgs
+supporting research and scholarship. {{ site.num_arks }} ARKs created by {{ site.num_ark_orgs
 }}+ orgs.
 
 <!--more-->
@@ -19,9 +19,9 @@ Alliance is an open global community supporting the ARK infrastructure on
 behalf of research and scholarship.
 
 End users, especially researchers, rely on ARKs for long term access to the
-global scientific and cultural record. Since 2001 some 8.2 billion ARKs have
-been created by over [{{ site.num_ark_orgs }} organizations] — libraries, data
-centers, archives, museums, publishers, government agencies, and vendors.
+global scientific and cultural record. Since 2001 some {{ site.num_arks }} ARKs
+have been created by over [{{ site.num_ark_orgs }} organizations] — libraries,
+data centers, archives, museums, publishers, government agencies, and vendors.
 
 ARKs are open, mainstream, non-paywalled, decentralized persistent identifiers
 that you can start creating in under 48 hours. They identify anything digital,
@@ -29,13 +29,14 @@ physical, or abstract.
 
 | ![][1]{: .img-thumbnail .img-fluid width="1024" height="183" loading="eager"} |
 |:--:|
-| Some things that have ARKs — an article, violin, genealogy, painting, book, sports photo, and plant specimen — assigned by the Louvre, Smithsonian Institution, Internet Archive, California Digital Library, and FamilySearch. |
-<br/>
+| _Some things that have ARKs — an article, violin, genealogy, painting, book, sports photo, and plant specimen — assigned by the Louvre, Smithsonian Institution, Internet Archive, California Digital Library, and FamilySearch._ |
 
+<br/>
 ARKs are similar to DOIs, URNs, and Handles. All of them
 
--   were introduced over 20 years ago,
--   exist in large numbers (8.2 billion ARKs, 240 million DOIs, etc.),
+-   were introduced over {{ site.ark_age }} ago,
+-   exist in large numbers ({{ site.num_arks }} ARKs, {{ site.num_dois }} DOIs,
+    etc.),
 -   start with a string to identify the name assigning authority,
 -   require the active updating of URL redirects, and
 -   support research and scholarship, appearing in the Data Citation Index,
@@ -58,7 +59,7 @@ joining one of its [working groups].
 
 | ![][2]{: .img-thumbnail .img-fluid width="1024" height="638"} |
 |:--:|
-| Working on the ARK. From a 1401 manuscript page, illuminated by Johannette Ravenelle, that itself has an ARK identifier: <https://n2t.net/ark:/12148/btv1b8449691v/f29> (source gallica.bnf.fr, National Library of France). |
+| _Working on the ARK. From a 1401 manuscript page, illuminated by Johannette Ravenelle, that itself has an ARK identifier: <https://n2t.net/ark:/12148/btv1b8449691v/f29> (source gallica.bnf.fr, National Library of France)._ |
 
 [{{ site.num_ark_orgs }} organizations]: community.md
 [1]: ../assets/images/pages/index/ark_things.png

@@ -6,12 +6,13 @@ date: 2021-07-13T22:55:39+00:00
 published: true
 ---
 
-Technical specifications for ARKs, ARK services, data models, inflections, and
-applications continue to evolve.
+Technical specifications for ARKs, ARK services, persistence statements, data
+models, inflections, and applications continue to evolve.
 
 <!--more-->
 
-ARK services, data models, inflections, and applications continue to evolve.
+ARK services, persistence statements, data models, inflections, and
+applications continue to evolve.
 
 This page links to technical specs, some of which are current, under
 development, or incomplete.
@@ -19,11 +20,12 @@ development, or incomplete.
 -  Under development: [The ARK Identifier Scheme (latest version)]
 -  Current specification: [The ARK Identifier Scheme V39]
 
-![][1]{: .img-thumbnail .img-fluid fetchpriority="high" height="320" loading="eager" width="241"}
+| ![][1]{: .img-thumbnail .img-fluid fetchpriority="high" height="320" loading="eager" width="241"} |
+|:--:|
+| _(photo by Maggie B@flickr)_ |
+||
 
-(photo by Maggie B@flickr)
-
-## PAGE UNDER CONSTRUCTION
+### Page under construction
 
 [The ARK Identifier Scheme (latest version)]: https://datatracker.ietf.org/doc/draft-kunze-ark/
 [The ARK Identifier Scheme V39]: ../assets/documents/2024/ark_spec_39.pdf
