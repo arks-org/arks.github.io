@@ -7,7 +7,8 @@ published: true
 ---
 
 Join the ARK Alliance community for ARK identifier adoption, best practices,
-and collaboration. Over 1250 global organizations create ARKs.
+and collaboration. Over {{ site.num_ark_orgs }} global organizations create
+ARKs.
 
 <!--more-->
 
@@ -17,15 +18,16 @@ the open ARK infrastructure, which consists of standards, best practices, the
 [N2T.net] resolver, and the registry of ARK organizations. There is also an
 [Archival Resource Key Community Code of Conduct].
 
-[![][1]{: .img-thumbnail .img-fluid .rounded-pill fetchpriority="high" loading="eager"}][2]
-
-Global distribution of over 1250 ARK organizations.
+| [![][1]{: .img-thumbnail .img-fluid fetchpriority="high" loading="eager"}][2] |
+|:--:|
+| _Global distribution of over {{ site.num_ark_orgs }} ARK organizations._ |
+| |
 
 The ARK Alliance emerged from a [collaboration] between the California Digital
 Library and DuraSpace/LYRASIS. Launched in 2018, it has gained the support of
-[44 institutions]. Since 2021 the ARK Alliance has been a member of the
-[NDSA], an international consortium committed to the long-term preservation of
-digital information.
+{{ site.num_support_orgs }} institutions listed further below. Since 2021 the
+ARK Alliance has been a member of the [NDSA], an international consortium
+committed to the long-term preservation of digital information.
 
 ## How to get involved
 
@@ -45,11 +47,12 @@ digital information.
 
 ## Who is creating ARKs
 
-Since 2001 over [1250 organizations] across the world registered to assign
-ARKs. As of early 2024, the registry includes 10 national libraries, 145 
-universities, 184 archives, 90 museums, and 75 journals, as well as many other 
-organization types (data centers, government agencies, vendors, research labs, etc). 
-To register your organization, fill out this [online request form].
+Since 2001 over [{{ site.num_ark_orgs }} organizations] across the world
+registered to assign ARKs. As of early 2024, the registry includes 10 national
+libraries, 145 universities, 184 archives, 90 museums, and 75 journals, as well
+as many other organization types (data centers, government agencies, vendors,
+research labs, etc). To register your organization, fill out this [online
+request form].
 
 ![chart of growth of ARK-assigning organizations since 2001][]{: .img-thumbnail .img-fluid loading="lazy" width="534"}
 
@@ -73,8 +76,8 @@ What ARKs are being assigned to (February 2023):
 -   datasets, journals, archeological artifacts, living beings, etc.
 
 We continue to receive [expressions of interest][interest in helping with the
-work of the ARK Alliance] and have attracted support from the following 44
-institutions on 4 continents:
+work of the ARK Alliance] and have attracted support from the following
+{{ site.num_support_orgs }} institutions on 4 continents:
 
 -   Australian National Data Service
 -   Bibliothèque et Archives nationales du Québec
@@ -126,10 +129,9 @@ institutions on 4 continents:
 
 [N2T.net]: https://n2t.net
 [Archival Resource Key Community Code of Conduct]: about-ark-community-code-of-conduct.md
-[1]: ../assets/images/pages/community/image-2048x845.png
+[1]: ../assets/images/pages/community/arkamap202407.png
 [2]: https://www.google.com/maps/d/u/0/edit?mid=1ALGeRERECL36f2pg7pqrthUYNmuU43UM&usp=sharing
 [collaboration]: https://wiki.lyrasis.org/display/ARKs/ARKs+in+the+Open+Project
-[44 institutions]: #supporting_organizations
 [NDSA]: https://ndsa.org
 [group]: https://groups.google.com/g/arks-forum
 [liste]: https://framalistes.org/sympa/info/arks-forum-fr
@@ -147,7 +149,7 @@ institutions on 4 continents:
 [Registry]: https://wiki.lyrasis.org/display/ARKs/NAAN+Registry+Working+Group
 [Technical]: https://wiki.lyrasis.org/display/ARKs/Technical+Working+Group
 [Advisory]: https://wiki.lyrasis.org/display/ARKs/Advisory+Group
-[1250 organizations]: https://n2t.net/e/pub/naan_table.html
+[{{ site.num_ark_orgs }} organizations]: https://n2t.net/e/pub/naan_table.html
 [online request form]: https://goo.gl/forms/bmckLSPpbzpZ5dix1
 [online news form]: https://docs.google.com/forms/d/1e7GvJYvsMd7Qm_LdgkVaUB96dVzeou85f0VbhA4BsSs
 [chart of growth of ARK-assigning organizations since 2001]: https://n2t.net/e/pub/naan_growth.png

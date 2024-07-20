@@ -49,7 +49,7 @@ Alphanumeric characters (letters and digits) are generally adequate, but it is
 recommended to use the *betanumeric* subset, consisting only of digits and
 consonants minus ‘l’ (letter ell, often mistaken for the digit 1):
 
-         0123456789bcdfghjkmnpqrstvwxz
+         bcdfghjkmnpqrstvwxz0123456789
 {: .bg-secondary-subtle }
 
 This happens to be the repertoire produced from *minters* (unique string
