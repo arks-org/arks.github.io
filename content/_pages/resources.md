@@ -10,29 +10,7 @@ A helpful list of resources, documentation, and services.
 
 <!--more-->
 
--   [NAAN form] to *get started* creating ARKs or to *update* your existing
-    NAAN
-
-## Documentation
-
-<div class="row" markdown=1>
-
--   [The ARK Identifier Scheme (v.39)], technical specification
--   [Current and evolving specifications]
--   *Towards Electronic Persistence Using ARK Identifiers*, 2003-07, [PDF]
--   [General identifier concepts and conventions]
--   Archival Resource Key [wikipedia]
-{: .col }
-
-<div class="col" markdown=1>
-![][1]{: .img-thumbnail .img-fluid .d-block fetchpriority="high" loading="eager"}
-
-The Mazarine Library, Paris, which assigns ARKs under the NAAN 61562 (photo by
-Marie-Lan Nguyen).
-</div>
-
-</div>
-
+| **BASICS** <br/> &nbsp;•&nbsp; [The ARK Tutorial][17] introduces Archival Resource Keys in 30 minutes. <br/> &nbsp;•&nbsp; [NAAN form] to *get started* creating ARKs or to *update* your existing NAAN. <br/> &nbsp;•&nbsp; See the [current and evolving specifications] to keep up with the latest. <br/> &nbsp;•&nbsp; First ARK paper, [*Towards Electronic Persistence Using ARK Identifiers*], 2003. <br/> &nbsp;•&nbsp; [General identifier concepts and conventions], first articulated for ARKs. <br/> &nbsp;•&nbsp; The [Arklet-Frick][] software package is the Frick Collection's enhanced version of an Internet Archive tool, which adds bulk operations, suffix passthrough, shoulder rules, extensive metadata, inflections, and more. <br/> &nbsp;•&nbsp; [ARK Identifier Scheme (v.39)] for technical details. <br/> &nbsp;•&nbsp; The Archival Resource Key at [wikipedia]. | ![][1]{: .img-thumbnail .img-fluid .d-block fetchpriority="high" loading="eager"} _The Mazarine Library, Paris, which assigns ARKs under the NAAN 61562 (photo by Marie-Lan Nguyen)._ |
 
 ## Services
 
@@ -50,8 +28,10 @@ To get your software listed please [let us know] about it.
 
 -   [arklet][]: a Python Django application for minting, binding, and
     resolving ARKs, created by the Internet Archive
--   [Arklet-Frick][]: the Frick Collection's adaptation of the Internet Archive's arklet tool, with improved security and bugfixes, as well as 
-    bulk operations, suffix passthrough, shoulder rules, extensive metadata, ?info and ?json endpoints, and more
+-   [Arklet-Frick][]: the Frick Collection's adaptation of the Internet
+    Archive's arklet tool, with improved security and bugfixes, as well as bulk
+    operations, suffix passthrough, shoulder rules, extensive metadata, ?info
+    and ?json endpoints, and more
 -   [arknoid][]: docker application to simplify setting up and managing ARK
     minters
 -   [Noid][]: (Nice Opaque Identifiers), original open source Perl software
@@ -71,14 +51,17 @@ To get your software listed please [let us know] about it.
     Omeka S open source web-publishing platform
 -   [Archival][] [Resource Key Identifier Name Mapping][Archival]: module for
     Drupal which allows your Drupal site to act as a Name Mapping Authority
--   [EZID codebase][]: Provides a user interface to minting and resolving that
-    enables you to become an ARK service provider (requires significant
+-   [EZID UI codebase][]: Provides a user interface to minting and resolving
+    that enables you to become an ARK service provider (requires significant
     expertise to set up and run)
--   [N2T codebase][]: Picks up where Noid development left off; the code is in
-    flux, requires significant expertise to set up and run, and consists of a
-    generic Eggnog minting, binding, and resolution package plus an
-    [N2T-admin] package; we are currently looking to create a next-generation
-    ARK resolver
+-   [N2T resolver codebase][]: Using python and SQLite, this code was deployed
+    in 2024 as a lightweight upgrade to the ARK resolver infrastructure. It is
+    complemented by the [arks.org codebase][].
+-   [legacy N2T code][]: Picking up where Noid development left off, this code
+    reflects an older architecture and development paradigm. It requires
+    significant expertise to set up and run, and consists of a generic Eggnog
+    minting, binding, and resolution package plus a [legacy N2T admin] package.
+    Replaced by the resolver code above.
 
 ## Selected presentations
 
@@ -125,9 +108,10 @@ To get your software listed please [let us know] about it.
     2008-06-05, Mark Phillips. [slides][16]
 
 [NAAN form]: https://goo.gl/forms/bmckLSPpbzpZ5dix1
-[The ARK Identifier Scheme (v.39)]: ../assets/documents/2024/ark_spec_39.pdf
-[Current and evolving specifications]: specs.md
+[ARK Identifier Scheme (v.39)]: ../assets/documents/2024/ark_spec_39.pdf
+[current and evolving specifications]: specs.md
 [PDF]: https://n2t.net/e/Towards_Electronic_Persistence_Using_ARK_Identifiers.pdf
+[*Towards Electronic Persistence Using ARK Identifiers*]: https://n2t.net/e/Towards_Electronic_Persistence_Using_ARK_Identifiers.pdf
 [General identifier concepts and conventions]: about-identifier-concepts-and-conventions.md
 [wikipedia]: https://en.wikipedia.org/wiki/Archival_Resource_Key
 [1]: ../assets/images/pages/resources/1089px-Salle_de_lecture_de_la_Bibliotheque_Mazarine_Paris_n1.jpg
@@ -151,8 +135,11 @@ To get your software listed please [let us know] about it.
 [ArkAndNoid]: https://github.com/Daniel-KM/ArkAndNoid4Omeka
 [2]: https://github.com/Daniel-KM/Omeka-S-module-Ark
 [Archival]: https://www.drupal.org/project/ark/
-[EZID codebase]: https://github.com/CDLUC3/ezid
-[N2T codebase]: https://github.com/jkunze/n2t-eggnog
+[EZID UI codebase]: https://github.com/CDLUC3/ezid
+[N2T resolver codebase]: https://github.com/CDLUC3/N2T
+[arks.org codebase]: https://github.com/CDLUC3/arksorg-site
+[legacy N2T code]: https://github.com/CDLUC3/n2t-eggnog
+[legacy N2T admin]: https://github.com/CDLUC3/n2t-admin
 [N2T-admin]: https://github.com/jkunze/n2t-admin
 [slides]: ../assets/documents/2023/08/ARK-intro-for-GLAMs-2023-slides-15-mins-version.pdf
 [3]: ../assets/documents/2023/06/ARK-Training-Tutorial-IIIF-2023-slides.pdf

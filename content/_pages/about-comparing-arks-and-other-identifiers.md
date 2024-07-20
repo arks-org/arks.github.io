@@ -109,7 +109,7 @@ ARKs are unusual in being decentralized. While one *can* get resolution
 services from a global ARK resolver called [n2t.net], over 90% of the ARKs in
 the world are published without using [n2t.net][1] in the URL hostname. More
 than 650 registered ARK organizations across the world have, between them,
-created an estimated 8.2 billion ARKs, and, as with URLs, no one has ever paid
+created an estimated {{ site.num_arks }} ARKs, and, as with URLs, no one has ever paid
 an identifier fee to create them. Of course *maintaining* them isn’t free. It
 is never without cost to keep content access persistent in the long term,
 regardless of identifier type.

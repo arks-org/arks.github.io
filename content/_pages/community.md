@@ -18,9 +18,10 @@ the open ARK infrastructure, which consists of standards, best practices, the
 [N2T.net] resolver, and the registry of ARK organizations. There is also an
 [Archival Resource Key Community Code of Conduct].
 
-[![][1]{: .img-thumbnail .img-fluid .rounded-pill fetchpriority="high" loading="eager"}][2]
-
-Global distribution of over {{ site.num_ark_orgs }} ARK organizations.
+| [![][1]{: .img-thumbnail .img-fluid fetchpriority="high" loading="eager"}][2] |
+|:--:|
+| _Global distribution of over {{ site.num_ark_orgs }} ARK organizations._ |
+| |
 
 The ARK Alliance emerged from a [collaboration] between the California Digital
 Library and DuraSpace/LYRASIS. Launched in 2018, it has gained the support of
@@ -128,7 +129,7 @@ work of the ARK Alliance] and have attracted support from the following
 
 [N2T.net]: https://n2t.net
 [Archival Resource Key Community Code of Conduct]: about-ark-community-code-of-conduct.md
-[1]: ../assets/images/pages/community/image-2048x845.png
+[1]: ../assets/images/pages/community/arkamap202407.png
 [2]: https://www.google.com/maps/d/u/0/edit?mid=1ALGeRERECL36f2pg7pqrthUYNmuU43UM&usp=sharing
 [collaboration]: https://wiki.lyrasis.org/display/ARKs/ARKs+in+the+Open+Project
 [NDSA]: https://ndsa.org
