@@ -1,6 +1,6 @@
 ---
 title: ARKs added to new version of the PID Guide
-redirect_from: blog/arks-added-to-new-version-of-the-pid-guide/
+redirect_from: /blog/arks-added-to-new-version-of-the-pid-guide
 pid: 1623
 authors:
   - remco-van-veenendaal
