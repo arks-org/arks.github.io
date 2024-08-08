@@ -76,6 +76,8 @@ for its supporting documents.
 *   Riccardo Ferrante, (AG Liaison) Smithsonian Institution Libraries and Archives
 *   Sergio Santamarina, University of José C Paz, Argentina
 
+---
+
 ## Technical Group
 
 ### Purpose
@@ -132,6 +134,8 @@ for its supporting documents.
 *   Dave Vieglais co-chair, Natural History Museum and Biodiversity Research Center, University of Kansas
 *   Donny Winston Polyneme LLC
 
+---
+
 ## NAAN Group
 
 The NAAN Registry Working Group (WG) oversees the registry of institutions that have been given a Name Assigning Authority Number (NAAN), with which they can begin assigning ARKs. The work consists mostly of responding to requests for new NAANs, but also to requests for changes to existing NAANs. Effectively the WG is a team of volunteer curators whose work will be ongoing. Although the WG is not expected ever to be finished, composition of the curatorial team is expected to evolve year to year.
@@ -180,6 +184,8 @@ for its supporting documents (this wiki is unfortunately not open due to PII con
 *   Sefakor Ankora, WACREN
 
 ![][1]
+
+---
 
 ## Advisory Group
 
