@@ -23,6 +23,8 @@ join a working group by contacting info@arks.org. These groups are introduced be
 ### Purpose
 
 The Outreach Working Group (WG) oversees development of the ARK Alliance (ARKA) community, as well as the promotion of awareness, understanding, and adoption of ARKs, the only major persistent identifier scheme that is open, decentralized, non-siloed, and non-paywalled.
+There is an [ARK Alliance Outreach Working Group wiki](https://github.com/arks-org/arks.github.io/wiki/ARKA-Outreach-WG-wiki) 
+for its supporting documents.
 
 ### Objectives
 
@@ -74,6 +76,8 @@ The Outreach Working Group (WG) oversees development of the ARK Alliance (ARKA) 
 ### Purpose
 
 The Technical Working Group (WG) oversees development and maintenance of specifications, software, and servers that support infrastructure for the ARK Alliance (ARKA) community. Examples include ARK standardization, code for counting ARKs, and global resolver replication.
+There is an [ARK Alliance Technical Working Group wiki](https://github.com/arks-org/arks.github.io/wiki/ARKA-Technical-WG-wiki) 
+for its supporting documents.
 
 ### Objectives
 
@@ -126,6 +130,8 @@ The Technical Working Group (WG) oversees development and maintenance of specifi
 ## NAAN Group
 
 The NAAN Registry Working Group (WG) oversees the registry of institutions that have been given a Name Assigning Authority Number (NAAN), with which they can begin assigning ARKs. The work consists mostly of responding to requests for new NAANs, but also to requests for changes to existing NAANs. Effectively the WG is a team of volunteer curators whose work will be ongoing. Although the WG is not expected ever to be finished, composition of the curatorial team is expected to evolve year to year.
+There is an [ARK Alliance NAAN Working Group wiki](https://github.com/arks-org/arks.github.io/wiki/ARKA-NAAN-WG-wiki) 
+for its supporting documents (this wiki is unfortunately not open due to PII concerns).
 
 ### Objectives
 
@@ -177,7 +183,9 @@ The Advisory Group (AG) will provide a means for transitioning the ARK infrastru
 supported and managed activity. Planning is underway for an initial meeting of the group 
 to review the goals, proposed timetable and roles drafted so far, as well as to launch 
 working groups dedicated to pursuing objectives related to outreach, technical best 
-practices, and sustainability.
+practices, and sustainability. There is an 
+[ARK Alliance Advisory Working Group wiki](https://github.com/arks-org/arks.github.io/wiki/ARKA-Advisory-WG-wiki) 
+for its supporting documents.
 
 ### ARK Alliance Advisory Group members:
 
@@ -190,7 +198,8 @@ practices, and sustainability.
 *   Mark Phillips, Chair (University of North Texas Libraries)
 *   Kate Wittenberg (Portico)
 
-Guided by the Mozilla Foundation‚Äôs Open Leadership Framework, LYRASIS and CDL constituted this body by reaching out to those organizations that filled out our Expression of Interest form.
+Guided by the Mozilla Foundation's Open Leadership Framework, LYRASIS and CDL constituted 
+this body by reaching out to those organizations that filled out our Expression of Interest form.
 
 
 [1]: /assets/images/pages/about-ark-naans-and-systems/NAAN_slice.jpg
