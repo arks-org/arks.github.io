@@ -65,5 +65,5 @@ joining one of its [working groups].
 [1]: ../assets/images/pages/index/ark_things.png
 [suffix passthrough]: about-ark-naans-and-systems.md#n2t-feature-suffix-passthrough
 [this request form]: https://goo.gl/forms/bmckLSPpbzpZ5dix1
-[working groups]: https://github.com/arks-org/arks.github.io/wiki
+[working groups]: community-groups.md
 [2]: ../assets/images/pages/index/cropped-ARKsInTheOpen-1536x957.jpg
