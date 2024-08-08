@@ -114,6 +114,7 @@ The sections below describe the Noid software in more detail.
     Name Mapping Authority (NMA) |    Assigned Name
                                  |
                   Name Assigning Authority Number (NAAN)
+{: .bg-secondary-subtle }
 
 The “assigned name” in an ARK is the part of the ARK string that your
 organization is responsible for making unique. Appended to your NAAN, it
@@ -223,6 +224,7 @@ In this case, suffix passthrough saved your having to maintain registrations
 for three more pages. In fact, it works for an unlimited number of pages. You
 can [learn more about N2T’s suffix passthrough].
 
+[1]: /assets/images/pages/about-ark-naans-and-systems/NAAN_slice.jpg
 [NAAN request form]: https://docs.google.com/forms/d/e/1FAIpQLSfd1CX6idwLB47g8OGKUG654auV8IU8yI7DAs61cXGOoFDn0g/viewform?c=0&w=1
 [Running ARK Minters and Resolvers]: about-running-minters-and-resolvers.md
 [ARK features]: about-ark-features.md
