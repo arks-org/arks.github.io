@@ -28,13 +28,18 @@ for its supporting documents.
 
 ### Objectives
 
-1.  Develop strategies for gathering requirements, priorities, and models for shared community and infrastructure management. Examples include ARK community survey draft created by the BnF, organizing events such as the 2018 ARK summit, spreading the word in international conferences, supporting the world map of ARK assigning organizations updated via geo-locations in the NAAN registry, etc.
-2.  Clearly articulate what ARKs are, how they can be used, and why they are essential (the ‚Äúvalue proposition‚Äù) and promote their adoption and use.
-3.  Maintain and update the ARK Alliance website at [arks.org](http://arks.org/) and documentation at the [n2t.net](http://n2t.net/) ARK resolver.
-4.  Support the [calendar of events](https://wiki.lyrasis.org/display/ARKs/Calendar+of+events) and [list of ARKA-related email groups](https://wiki.lyrasis.org/display/ARKs/Email+lists%2C+groups%2C+forums+for+outreach).
-5.  Develop ways to characterize ARK usage, such as surveys or an API permitting ARK organizations to self-report via a harvestable API endpoint.¬†
-6.  Develop training materials and videos.
-7.  Oversee the information used to support ARKA working groups (currently Confluence wiki).
+1.  Develop strategies for gathering requirements, priorities, and models for shared
+    community and infrastructure management. Examples include ARK community survey draft
+    created by the BnF, organizing events such as the 2018 ARK summit, spreading the word
+    in international conferences, supporting the world map of ARK assigning organizations
+    updated via geo-locations in the NAAN registry, etc.
+3.  Clearly articulate what ARKs are, how they can be used, and why they are essential
+    (the "value proposition") and promote their adoption and use.
+5.  Maintain and update the ARK Alliance website at [arks.org](http://arks.org/) and documentation at the [n2t.net](http://n2t.net/) ARK resolver.
+6.  Support the [calendar of events](https://wiki.lyrasis.org/display/ARKs/Calendar+of+events) and [list of ARKA-related email groups](https://wiki.lyrasis.org/display/ARKs/Email+lists%2C+groups%2C+forums+for+outreach).
+7.  Develop ways to characterize ARK usage, such as surveys or an API permitting ARK organizations to self-report via a harvestable API endpoint.
+8.  Develop training materials and videos.
+9.  Oversee the information used to support ARKA working groups (currently Confluence wiki).
 
 ### Deliverables
 
@@ -45,7 +50,7 @@ for its supporting documents.
 *   maintain material (on arks.org) associated with¬† getting started with ARKs
 *   plan for community to transition from v18 to the v37 specification
 *   canned presentations, slide shows, webinars
-*   translations of existing documents (e.g., ¬†[https://francearchives.gouv.fr/fr/article/339695117](https://francearchives.gouv.fr/fr/article/339695117))
+*   translations of existing documents (e.g., [https://francearchives.gouv.fr/fr/article/339695117](https://francearchives.gouv.fr/fr/article/339695117))
 *   tool resource guides to promote ARK software (eg, OJS plugin)
 *   ARKA representation on NDSA and IIIF working groups
 *   move wiki and wordpress site to github pages
