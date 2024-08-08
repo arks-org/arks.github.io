@@ -91,6 +91,7 @@ work of the ARK Alliance] and have attracted support from the following
 -   Crossref
 -   DaSCH, Swiss National Data & Service Center for the Humanities
 -   DeSci Labs
+-   Editorial Mar Caribe
 -   ENIP – Universidad Autónoma de Nayarit
 -   Family Search International
 -   HES-SO University of Applied Sciences and Arts, Haute école de gestion de
