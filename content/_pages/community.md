@@ -42,8 +42,7 @@ committed to the long-term preservation of digital information.
 7.  Tell us about yourself by filling out a 5-minute [ARK survey] (in English)
     or 🇫🇷 une [enquête ARK] (version française)
 8.  Tell us about your [interest in helping with the work of the ARK Alliance]
-9.  [Contact us] about joining a [working group][]: [Outreach], [Registry],
-    [Technical], [Advisory]
+9.  [Contact us] about joining a [working group][] (Outreach, Technical, NAAN Registry, Advisory)
 
 ## Who is creating ARKs
 
@@ -145,11 +144,7 @@ work of the ARK Alliance] and have attracted support from the following
 [enquête ARK]: https://survey.alchemer.com/s3/6168001/ARK-Alliance-Survey-French
 [interest in helping with the work of the ARK Alliance]: https://docs.google.com/forms/d/15bhmP5Z0aOLaTWfXKK0TBTJCOAXuT30hIzfhij-D_oM/viewform?edit_requested=true
 [Contact us]: contact-us.md
-[working group]: https://wiki.lyrasis.org/pages/viewpage.action?pageId=108757988
-[Outreach]: https://wiki.lyrasis.org/display/ARKs/Outreach+Working+Group
-[Registry]: https://wiki.lyrasis.org/display/ARKs/NAAN+Registry+Working+Group
-[Technical]: https://wiki.lyrasis.org/display/ARKs/Technical+Working+Group
-[Advisory]: https://wiki.lyrasis.org/display/ARKs/Advisory+Group
+[working group]: https://github.com/arks-org/arks.github.io/wiki
 [{{ site.num_ark_orgs }} organizations]: https://n2t.net/e/pub/naan_table.html
 [online request form]: https://goo.gl/forms/bmckLSPpbzpZ5dix1
 [online news form]: https://docs.google.com/forms/d/1e7GvJYvsMd7Qm_LdgkVaUB96dVzeou85f0VbhA4BsSs
