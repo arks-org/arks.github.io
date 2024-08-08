@@ -18,7 +18,7 @@ be made via social media and email forums relevant to digital preservation.
 There are also working groups focussed in specific areas. Anyone may request to 
 join a working group by contacting info@arks.org. These groups are introduced below.
 
-## Outreach Group Meetings
+## Outreach Group
 
 ### Purpose
 
@@ -55,7 +55,7 @@ The Outreach Working Group (WG) oversees development of the ARK Alliance (ARKA) 
 *   [Technical WG](https://wiki.lyrasis.org/display/ARKs/Technical+Working+Group)
 *   [General WG features](https://wiki.duraspace.org/pages/viewpage.action?pageId=108757988) common across ARKA working groups
 
-### Outreach Working Group Members
+### ARK Alliance Outreach Working Group Members
 
 *   Bertrand Caron, BnF (National Library of France)
 *   Carlos Authier, National Scientific and Technical Research Council, Argentina
@@ -69,8 +69,7 @@ The Outreach Working Group (WG) oversees development of the ARK Alliance (ARKA) 
 *   Riccardo Ferrante, (AG Liaison) Smithsonian Institution Libraries and Archives
 *   Sergio Santamarina, University of José C Paz, Argentina
 
-
-## Technical Working Group
+## Technical Group
 
 ### Purpose
 
@@ -107,7 +106,7 @@ The Technical Working Group (WG) oversees development and maintenance of specifi
 *   [General WG features](https://wiki.lyrasis.org/display/ARKs/Working+Group+Documents) common across ARKA working groups
 *   Persistence Statements: Describing Digital Stickiness: ¬† [https://doi.org/10.5334/dsj-2017-039](https://doi.org/10.5334/dsj-2017-039)
 
-### Technical Working Group Members
+### ARK Alliance Technical Working Group Members
 
 *   Emmanuelle Bermes, Ecole des Chartes
 *   Bertrand Caron, BnF
@@ -124,8 +123,7 @@ The Technical Working Group (WG) oversees development and maintenance of specifi
 *   Dave Vieglais co-chair, Natural History Museum and Biodiversity Research Center, University of Kansas
 *   Donny Winston Polyneme LLC
 
-
-## ARK Alliance NAAN Working Group
+## NAAN Group
 
 The NAAN Registry Working Group (WG) oversees the registry of institutions that have been given a Name Assigning Authority Number (NAAN), with which they can begin assigning ARKs. The work consists mostly of responding to requests for new NAANs, but also to requests for changes to existing NAANs. Effectively the WG is a team of volunteer curators whose work will be ongoing. Although the WG is not expected ever to be finished, composition of the curatorial team is expected to evolve year to year.
 
@@ -158,7 +156,7 @@ The NAAN Registry Working Group (WG) oversees the registry of institutions that 
 *   The [Advisory Group](https://wiki.lyrasis.org/display/ARKs/Advisory+Group) and the [Technical WG](https://wiki.lyrasis.org/display/ARKs/Technical+Working+Group)
 *   [General WG features](https://wiki.duraspace.org/pages/viewpage.action?pageId=108757988) common across ARKA working groups
 
-### Working Group Members
+### ARK Alliance NAAN Working Group Members
 
 *   Aurélien Conraux French Ministry of Culture (co-chair)
 *   Bertrand Caron BnF (National Library of France)
@@ -172,7 +170,7 @@ The NAAN Registry Working Group (WG) oversees the registry of institutions that 
 
 ![][1]
 
-## ARK Alliance Advisory Working Group
+## Advisory Group
 
 The Advisory Group (AG) will provide a means for transitioning the ARK infrastructure 
 (specification, NAAN registry, resolver) from the California Digital Library (CDL) to a community 
@@ -181,7 +179,7 @@ to review the goals, proposed timetable and roles drafted so far, as well as to 
 working groups dedicated to pursuing objectives related to outreach, technical best 
 practices, and sustainability.
 
-### ARK Alliance AG members:
+### ARK Alliance Advisory Group members:
 
 *   John Chodacki (California Digital Library)
 *   Ricc Ferrante (Smithsonian Institution Libraries and Archives), alternate Martin Kalfatovic
