@@ -121,18 +121,16 @@ for its supporting documents.
 
 ### ARK Alliance Technical Working Group Members
 
-*   Emmanuelle Bermes, Ecole des Chartes
+*   Emmanuelle Bermes, École des Chartes
 *   Bertrand Caron, BnF
 *   Randy Wilson, FamilySearch
-*   Tom Creighton ex-FamilySearch
 *   Karen Hanson, Portico
 *   Greg Janée, UC Santa Barbara
-*   John Kunze chair, Ronin Institut
+*   John Kunze chair, Drexel University Metadata Research Center
 *   Lautaro Matas, LA Referencia
 *   Roxana Maurer, National Library of Luxembourg
 *   Curtis Mirci, University of Utah
 *   Mark Phillips, University of North Texas
-*   Amir Alwash, HES-SO, University of Applied Sciences and Arts of Western Switzerland
 *   Dave Vieglais co-chair, Natural History Museum and Biodiversity Research Center, University of Kansas
 *   Donny Winston Polyneme LLC
 
