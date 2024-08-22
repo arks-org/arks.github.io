@@ -11,12 +11,6 @@ A helpful list of resources, documentation, and services.
 <!--more-->
 
 | **BASICS** <br/> &nbsp;•&nbsp; [The ARK Tutorial][17] introduces Archival Resource Keys in 30 minutes. <br/> &nbsp;•&nbsp; [NAAN form] to *get started* creating ARKs or to *update* your existing NAAN. <br/> &nbsp;•&nbsp; See the [current and evolving specifications] to keep up with the latest. <br/> &nbsp;•&nbsp; First ARK paper, [*Towards Electronic Persistence Using ARK Identifiers*], 2003. <br/> &nbsp;•&nbsp; [General identifier concepts and conventions], first articulated for ARKs. <br/> &nbsp;•&nbsp; The [Arklet-Frick][] software package is the Frick Collection's enhanced version of an Internet Archive tool, which adds bulk operations, suffix passthrough, shoulder rules, extensive metadata, inflections, and more. <br/> &nbsp;•&nbsp; [ARK Identifier Scheme (v.39)] for technical details. <br/> &nbsp;•&nbsp; The Archival Resource Key at [wikipedia]. | ![][1]{: .img-thumbnail .img-fluid .d-block fetchpriority="high" loading="eager"} _The Mazarine Library, Paris, which assigns ARKs under the NAAN 61562 (photo by Marie-Lan Nguyen)._ |
-
-## Services
-
--   [ARKetype][]: ARKetype is an Archival Resource Key (ARK) allocation
-    service managed by the Haute école de gestion de Genève which was
-    initiated thanks to the funding from [swissuniversities].
 -   [N2T.net] resolver: Name-to-Thing, a global resolver for ARKs and other
     identifiers. The service is currently hosted at the [CDL].
 
@@ -37,6 +31,7 @@ To get your software listed please [let us know] about it.
 -   [Noid][]: (Nice Opaque Identifiers), original open source Perl software
     for minting and resolving ARKs on your own
 -   [Pynoid][]: Python implementation of Noid
+-   [ARKBeizli](https://gitlab.com/zhbluzern/arkbeizli): a lightweight SQLite application to mint and store ARKs; it comes with a command-line tool and a Python library
 -   [Golang Noid][]: Golang/Docker implementation of Noid
 -   [Ruby Noid][]: Ruby implementation of Noid
 -   [PHP Noid][]: PHP implementation of Noid
@@ -83,12 +78,10 @@ To get your software listed please [let us know] about it.
     [video][5] (19 mins, in French 🇫🇷)
 -   *The ARK Alliance: 20 years, 850 institutions, 8.2 billion persistent
     identifiers*, 2021-10-22, presentation (English). [slides][6]
--   *ARKetype – Ask Me Anything*, 2021-01-27, presentation (English) plus
-    interactive questions and answers (English, French, German). [video][7]
-    (75 mins)
--   *INCIPIT: An ARK Allocation Service in Switzerland*, 2020-11-16, Julien
-    Raemy. [video][8] (12 mins) Note (2021): this project is still known as
-    INCIPIT but the service is now called ARKetype.
+-   \[obsolete\] *ARKetype – Ask Me Anything*, 2021-01-27, presentation (English) plus
+    interactive questions and answers (English, French, German). [video][7] (75 mins);
+    based on \[obsolete\] *INCIPIT: An ARK Allocation Service in Switzerland*, 2020-11-16,
+    Julien Raemy. [video][8] (12 mins).
 -   *ARKs in the Open: 3.2 billion Persistent Identifiers*, 2020-04-23, John
     Kunze, Bess Missell, Karen Hanson, Tom Creighton. [abstract] \| [video][9]
     (62 mins) \| [slides][10]
