@@ -11,6 +11,7 @@ A helpful list of resources, documentation, and services.
 <!--more-->
 
 | **BASICS** <br/> &nbsp;•&nbsp; [The ARK Tutorial][17] introduces Archival Resource Keys in 30 minutes. <br/> &nbsp;•&nbsp; [NAAN form] to *get started* creating ARKs or to *update* your existing NAAN. <br/> &nbsp;•&nbsp; See the [current and evolving specifications] to keep up with the latest. <br/> &nbsp;•&nbsp; First ARK paper, [*Towards Electronic Persistence Using ARK Identifiers*], 2003. <br/> &nbsp;•&nbsp; [General identifier concepts and conventions], first articulated for ARKs. <br/> &nbsp;•&nbsp; The [Arklet-Frick][] software package is the Frick Collection's enhanced version of an Internet Archive tool, which adds bulk operations, suffix passthrough, shoulder rules, extensive metadata, inflections, and more. <br/> &nbsp;•&nbsp; [ARK Identifier Scheme (v.39)] for technical details. <br/> &nbsp;•&nbsp; The Archival Resource Key at [wikipedia]. | ![][1]{: .img-thumbnail .img-fluid .d-block fetchpriority="high" loading="eager"} _The Mazarine Library, Paris, which assigns ARKs under the NAAN 61562 (photo by Marie-Lan Nguyen)._ |
+
 -   [N2T.net] resolver: Name-to-Thing, a global resolver for ARKs and other
     identifiers. The service is currently hosted at the [CDL].
 
