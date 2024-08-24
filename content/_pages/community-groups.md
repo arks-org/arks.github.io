@@ -11,12 +11,8 @@ in joining.
 
 <!--more-->
 
-The ARK Alliance periodically hosts [ARK Community meetings](https://github.com/arks-org/arks.github.io/wiki/ARKA-Calendar) that are open for 
-anyone interested in ARKs to attend. Announcements about upcoming meetings will
-be made via social media and email forums relevant to digital preservation.
-
-There are also working groups focussed in specific areas. Anyone may request to 
-join a working group by contacting info@arks.org. These groups are introduced below.
+The ARK Alliance (ARKA) has working groups (WGs) focussed on general topic areas. Anyone may request to 
+join a working group by contacting one of its current members or writing to info@arks.org. The groups are introduced below.
 
 ---
 
@@ -24,7 +20,7 @@ join a working group by contacting info@arks.org. These groups are introduced be
 
 ### Purpose
 
-The Outreach Working Group (WG) oversees development of the ARK Alliance (ARKA) community, as well as the promotion of awareness, understanding, and adoption of ARKs, the only major persistent identifier scheme that is open, decentralized, non-siloed, and non-paywalled.
+The ARKA Outreach Working Group oversees development of the ARK Alliance community, as well as the promotion of awareness, understanding, and adoption of ARKs, the only major persistent identifier scheme that is open, decentralized, non-siloed, and non-paywalled.
 There is an [ARK Alliance Outreach Working Group wiki](https://github.com/arks-org/arks.github.io/wiki/ARKA-Outreach-WG-wiki) 
 for its supporting documents.
 
@@ -70,12 +66,12 @@ for its supporting documents.
 *   Carlos Authier, National Scientific and Technical Research Council, Argentina
 *   Donny Winston, Polyneme LLC
 *   Jack OMalley, Frick Collection
-*   John Jung co-chair, University of Chicago
-*   John Kunze chair, Drexel University Metadata Research Center
+*   John Jung, co-chair, University of Chicago
+*   John Kunze, chair, Drexel University Metadata Research Center
 *   Julien Antoine Raemy, Data and Service Center for the Humanities (DaSCH)
 *   Lesley Frew, Old Dominion University
 *   Omo Oaiya, WACREN
-*   Riccardo Ferrante, (AG Liaison) Smithsonian Institution Libraries and Archives
+*   Riccardo Ferrante, Smithsonian Institution Libraries and Archives
 *   Sergio Santamarina, University of José C Paz, Argentina
 
 ---
@@ -84,7 +80,7 @@ for its supporting documents.
 
 ### Purpose
 
-The Technical Working Group (WG) oversees development and maintenance of specifications, software, and servers that support infrastructure for the ARK Alliance (ARKA) community. Examples include ARK standardization, code for counting ARKs, and global resolver replication.
+The ARKA Technical Working Group oversees development and maintenance of specifications, software, and servers that support infrastructure for the ARK Alliance community. Examples include ARK standardization, code for counting ARKs, and global resolver replication.
 There is an [ARK Alliance Technical Working Group wiki](https://github.com/arks-org/arks.github.io/wiki/ARKA-Technical-WG-wiki) 
 for its supporting documents.
 
@@ -126,19 +122,19 @@ for its supporting documents.
 *   Randy Wilson, FamilySearch
 *   Karen Hanson, Portico
 *   Greg Janée, UC Santa Barbara
-*   John Kunze chair, Drexel University Metadata Research Center
+*   John Kunze, chair, Drexel University Metadata Research Center
 *   Lautaro Matas, LA Referencia
 *   Roxana Maurer, National Library of Luxembourg
 *   Curtis Mirci, University of Utah
 *   Mark Phillips, University of North Texas
-*   Dave Vieglais co-chair, Natural History Museum and Biodiversity Research Center, University of Kansas
+*   Dave Vieglais, co-chair, Natural History Museum and Biodiversity Research Center, University of Kansas
 *   Donny Winston Polyneme LLC
 
 ---
 
 ## NAAN Group
 
-The NAAN Registry Working Group (WG) oversees the registry of institutions that have been given a Name Assigning Authority Number (NAAN), with which they can begin assigning ARKs. The work consists mostly of responding to requests for new NAANs, but also to requests for changes to existing NAANs. Effectively the WG is a team of volunteer curators whose work will be ongoing. Although the WG is not expected ever to be finished, composition of the curatorial team is expected to evolve year to year.
+The ARKA NAAN Registry Working Group oversees the registry of institutions that have been given a Name Assigning Authority Number (NAAN), with which they can begin assigning ARKs. The work consists mostly of responding to requests for new NAANs, but also to requests for changes to existing NAANs. Effectively the WG is a team of volunteer curators whose work will be ongoing. Although the WG is not expected ever to be finished, composition of the curatorial team is expected to evolve year to year.
 There is an [ARK Alliance NAAN Working Group wiki](https://github.com/arks-org/arks.github.io/wiki/ARKA-NAAN-WG-wiki) 
 for its supporting documents (this wiki is unfortunately not open due to PII concerns).
 
@@ -173,10 +169,10 @@ for its supporting documents (this wiki is unfortunately not open due to PII con
 
 ### ARK Alliance NAAN Working Group Members
 
-*   Aurélien Conraux French Ministry of Culture (co-chair)
+*   Aurélien Conraux, co-chair, French Ministry of Culture
 *   Bertrand Caron BnF (National Library of France)
 *   Chloé Pochon French National Institute of Art History
-*   Brian McBride University of Utah (chair)
+*   Brian McBride, chair, University of Utah
 *   Jennifer Marill, US National Library of Medicine (retired)
 *   John Kunze, Drexel University Metadata Research Center
 *   John Chodacki, CDL
@@ -189,7 +185,7 @@ for its supporting documents (this wiki is unfortunately not open due to PII con
 
 ## Advisory Group
 
-The Advisory Group (AG) will provide a means for transitioning the ARK infrastructure 
+The ARKA Advisory Group (AG) will provide a means for transitioning the ARK infrastructure 
 (specification, NAAN registry, resolver) from the California Digital Library (CDL) to a community 
 supported and managed activity. Planning is underway for an initial meeting of the group 
 to review the goals, proposed timetable and roles drafted so far, as well as to launch 
@@ -200,14 +196,14 @@ for its supporting documents.
 
 ### ARK Alliance Advisory Group members:
 
-*   John Chodacki (California Digital Library)
-*   Ricc Ferrante (Smithsonian Institution Libraries and Archives), alternate Martin Kalfatovic
-*   Emmanuel Jaslier (Biblioth√®que nationale de France), alternate Bertrand Caron
-*   Martin Kalfatovic (IIIF Consortium)
-*   John Kunze (Drexel University Metadata Research Center)
-*   Brian McBride (University of Utah)
-*   Mark Phillips, Chair (University of North Texas Libraries)
-*   Kate Wittenberg (Portico)
+*   John Chodacki, California Digital Library (CDL)
+*   Ricc Ferrante, Smithsonian Institution Libraries and Archives
+*   Emmanuel Jaslier, Biblioth√®que nationale de France, alternate Bertrand Caron
+*   Martin Kalfatovic, IIIF Consortium
+*   John Kunze, Drexel University Metadata Research Center
+*   Brian McBride, University of Utah
+*   Mark Phillips, chair, University of North Texas Libraries
+*   Kate Wittenberg, Portico
 
 Guided by the Mozilla Foundation's Open Leadership Framework, LYRASIS and CDL constituted 
 this body by reaching out to those organizations that filled out our Expression of Interest form.
