@@ -15,14 +15,13 @@ into ARK Alliance.
 
 Did you know...
 
-* ... that ARK is another PID (Persistent IDentifier) scheme, along with DOI, ORCID, and ROR?
+* ... that ARK is a PID (Persistent IDentifier), along with DOI, ORCID, and ROR?
 * ... that ARK may be the fastest growing PID scheme you've never heard of?
-* ... that 50 new ARK organizations requested registration within the six weeks
-  starting June 4, 2024?
-* ... that ARK and DOI are both more than {{ site.ark_age }} old?
-* ... that there are over ten times as many ARKs in the world as DOIs?
-* ... that, as of early 2024, ARK organizations include 10 national libraries,
-  145 universities, 184 archives, 90 museums, and 75 journals?
+* ... that an average of 5 new ARK organizations are registered every week?
+* ... that the ARK scheme is more than {{ site.ark_age }} old?
+* ... that no one has to pay for the right to create ARKs?
+* ... that there are over 8.2 billion ARKs in the world?
+* ... that ARK organizations include universities, journals, national libraries, national and regional archives, and fine art and natural history museums?
 
 Archival Resource Key (ARK) identifiers are URLs that support long-term access
 to information. Learn below what you need to know about ARKs, whether you’re
