@@ -107,6 +107,7 @@ work of the ARK Alliance] and have attracted support from the following
 -   Sempiternelia
 -   Service interministériel des Archives de France
 -   Smithsonian Institution
+-   South China Institute of Frontier Science
 -   Texas A&M University Libraries
 -   Texas Advanced Computing Center (TACC)
 -   University College Dublin
