@@ -6,15 +6,13 @@ date: 2021-01-23T17:36:24+00:00
 published: true
 ---
 
-This table lists events of interest to the ARK community.
+This calendar lists events relevant to the ARK community.
 
 <!--more-->
 
-This table lists events of interest to the ARK community.
+This calendar lists events relevant to the ARK community.
 
 ---
-
-This calendar is heavily based on [the Fedora events calendar](https://wiki.lyrasis.org/display/FF/Conferences). See also this list of library-centric conferences. 
 
 |     |     |     |     |     |     |
 | --- | --- | --- | --- | --- | --- |
@@ -30,9 +28,9 @@ This calendar is heavily based on [the Fedora events calendar](https://wiki.lyra
 | iPRES | 2024.09.16-20 | Ghent, Belgium | [https://ipres2024.pubpub.org/](https://ipres2024.pubpub.org/) |     |     |
 | FORCE11 2024 | 2024.08.01-03 | Los Angeles, CA (UCLA) | [https://force11.org/conference/](https://force11.org/conference/) | TBA |     |
 | DLF | 2024.07.29-31 | East Lansing, Michigan | [https://forum2024.diglib.org/](https://forum2024.diglib.org/) |     | ARK tutorial accepted, scheduled for July 29 |
-| PIDFest | 2024.06.11-13 | Prague, Czech Republic | [https://www.pidfest.org/](https://www.pidfest.org/) |     | DW attended |
+| PIDFest | 2024.06.11-13 | Prague, Czech Republic | [https://www.pidfest.org/](https://www.pidfest.org/) |     |  |
 | IIIF | 2024.06.04-7 | Los Angeles, CA | [https://iiif.io/event/2024/los-angeles/](https://iiif.io/event/2024/los-angeles/) |     |     |
-| OR 2024 | 2024.06.03-06 | Gothenburg, Sweden | Open Repositories [https://or2024.openrepositories.org/](https://or2024.openrepositories.org/) |     | ARK tutorial accepted. DW and BM attending in person |
+| OR 2024 | 2024.06.03-06 | Gothenburg, Sweden | Open Repositories [https://or2024.openrepositories.org/](https://or2024.openrepositories.org/) |     | ARK tutorial accepted |
 | WAC 2024 | 2024.04.24-26 | Paris, FR | [Web Archiving Conference 2024](https://netpreserve.org/ga2024/) | Sept 24 | ARK tutorial not accepted |
 | Archiving 2024 | 2024.04.9-12 | Washington, DC | [Archiving Conference 2024](https://www.imaging.org/IST/IST/Conferences/Archiving/Archiving2024/Archiving2024_Home.aspx) |     |     |
 | EDDI 2023 | 2023.11.27-30 | Ljubljana, Slovenia | [European DDI Users Conference](https://events.geant.org/event/1457/)  <br>in person with online participation | Sept 4 | ARK tutorial accepted  <br>scheduled Nov 27, remote |
@@ -47,9 +45,9 @@ This calendar is heavily based on [the Fedora events calendar](https://wiki.lyra
 | DWeb Camp | 2023.06.21-25 | Navarro, California | [https://dwebcamp.org/](https://dwebcamp.org/)<br><br>[submission form](https://cryptpad.fr/form/#/2/form/view/oX6k-whWQM8Nzzma9MuoEc5+Hv11Y9e+oCD3hskKg78/) | by May 8 | ARK tutorial accepted<br><br>scheduled around June 22 |
 | OR 2022 | 2023.06.12-15 | Stellenbosch, South Africa | [https://or2023.openrepositories.org/](https://or2023.openrepositories.org/) | submit by 15 January |     |
 | IIIF 2023 | 2023.06.05-8 | Naples, Italy | [https://iiif.io/event/2023/naples/](https://iiif.io/event/2023/naples/) | CfP out in Dec; book hotel by Jan 31 for low rates | ARK tutorial accepted<br><br>scheduled June 6 |
-| Knowledge Graph Conference | 2023.05.08-12 | NYC | [https://www.knowledgegraph.tech/](https://www.knowledgegraph.tech/) | Call for workshops due Jan 30 | dw considering proposing a modified version of the accepted code4lib workshop proposal (w/ jk). dw likely attending anyway. |
+| Knowledge Graph Conference | 2023.05.08-12 | NYC | [https://www.knowledgegraph.tech/](https://www.knowledgegraph.tech/) | Call for workshops due Jan 30 |  |
 | CNI 2023 | 2023.04.03-04 | Denver, Colorado | Spring membership meeting |     | submitted proposal for pre-recorded briefing |
-| Code4lib | 2023.03.14-17 | Princeton, New Jersey | [https://2023.code4lib.org/](https://2023.code4lib.org/) |     | First ARK tutorial delivered as a pre-conference workshop. Led by jk and dw. |
+| Code4lib | 2023.03.14-17 | Princeton, New Jersey | [https://2023.code4lib.org/](https://2023.code4lib.org/) |     | First ARK tutorial delivered as a pre-conference workshop. |
 | IIIF Outreach Meeting | 2023.02.38 | Zoom: 8am PT/ 11am ET/ 4pm UK/ 5pm CET | Notes [here](https://docs.google.com/document/d/1WC_ebe5XA7b2X3Ofbif0lYCxsOfQdensQqikVxi7SGE/edit). |     | Reasons to attend this open meeting:<br><br>*   ARKA has been connecting with IIIF<br>*   maybe we can learn from them |
 | CNI 2022 | 2022.12.12-13 | Washington, DC | [Fall 2022 CNI Membership Meeting](https://www.cni.org/events/membership-meetings/upcoming-meeting/fall-2022) |     |     |
 | MTSR 2022 | 2022.11.08-10 | London, UK | [International Conference on Metadata and Semantics Research](http://www.mtsr-conf.org/programme) | Two papers using ARKs | *   Toward a Flexible Metadata Pipeline for Fish Specimen Images _Dom Jebbia, Yasin Bakis, Xiaojun Wang, Henry L. Bart and Jane Greenberg_<br>*   Designing PIDs for Reproducible Science Using Time-Series Data _Wen Ting Maria Tu and Stephen Makonin_ |
