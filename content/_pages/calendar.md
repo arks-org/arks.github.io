@@ -1,6 +1,20 @@
-## ARK Alliance Calendar of events
+---
+title: ARK Alliance Calendar of events
+permalink: /calendar/
+pid: 797
+date: 2021-01-23T17:36:24+00:00
+published: true
+---
 
-This is heavily based on [the Fedora events calendar](https://wiki.lyrasis.org/display/FF/Conferences). See also this list of library-centric conferences. 
+This table lists events of interest to the ARK community.
+
+<!--more-->
+
+This table lists events of interest to the ARK community.
+
+---
+
+This calendar is heavily based on [the Fedora events calendar](https://wiki.lyrasis.org/display/FF/Conferences). See also this list of library-centric conferences. 
 
 |     |     |     |     |     |     |
 | --- | --- | --- | --- | --- | --- |
