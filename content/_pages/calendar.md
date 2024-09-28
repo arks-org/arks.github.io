@@ -14,10 +14,10 @@ This calendar lists events relevant to the ARK community.
 
 ---
 
-|     |     |     |     |     |     |
-| --- | --- | --- | --- | --- | --- |
-| Conference | Dates | Location | Description | Deadlines | Notes/Attendees/Presenters |
-| BigData2024 | 2024.12-15-18 | Washington, DC | [https://bigdataieee.org/BigData2024/CallPapers.html](https://bigdataieee.org/BigData2024/CallPapers.html) |     | ARK tutorial submitted |
+<div class="table-responsive" markdown=1>
+| ***Conference*** | ***Dates*** | ***Location*** | ***Description*** | ***Deadlines*** | ***Notes*** |
+|---|---|---|---|---|---|
+| BigData2024 | 2024.12-15-18 | Washington, DC | [bigdataieee.org/BigData2024/CallPapers.html](https://bigdataieee.org/BigData2024/CallPapers.html) |     | ARK tutorial submitted |
 | 2024 Core Forum | 2024.11.14-16 | Minneapolis | [https://coreforum.org/](https://coreforum.org/) |     | ARK tutorial accepted, but withdrawn due to scheduling conflicts |
 | ASIS&T 2024 | 2024.10.25-29 | Calgary, Canada | [https://www.asist.org/meetings-events/am/am24/](https://www.asist.org/meetings-events/am/am24/) | 9 April |     |
 | CIKM 2024 | 2024.10.21-25 | Boise, Idaho, USA | 33rd ACM International [Conference on  <br>Information and Knowledge Management](https://cikm2024.org/)  <br>deadlines: tutorials 14 June; papers 13 May | 14 June; 13 May |     |
@@ -79,3 +79,5 @@ This calendar lists events relevant to the ARK community.
 | Fedora User Group Meeting | 2021.03.15-19 | Virtual | Accommodating European Time Zones | [Available Now](https://forms.gle/j3e7ttex5rW6weho8) |     |
 | Research Data Access and Preservation Association (RDAP) Summit | 2021.03.10-12 | Virtual | The Summit is relevant to the interests and needs of data managers and curators, librarians who work with research data, and researchers and data scientists. A wide range of disciplines from the life sciences, physical sciences, social sciences, and humanities will be represented. The Summit will bring together practitioners and researchers from academic institutions, data centers, funding agencies, and industry. | [Due November 30, 2020](https://rdapassociation.org/call-for-proposals) |     |
 | Designing for Digital 2021 (D4D) | 2021.02.22-25 | Virtual | Designing for Digital brings together UX professionals, web designers, managers, researchers, strategists, and librarians of all types to examine the current users experience of the library and design the future of libraries in a modern, digital world. | [Due December 1, 2020](http://designingfordigital.com/speaking-opportunities/) |     |
+{: .table .table-striped .table-hover }
+</div>
