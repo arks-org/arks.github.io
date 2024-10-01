@@ -198,7 +198,7 @@ for its supporting documents.
 
 *   John Chodacki, California Digital Library (CDL)
 *   Ricc Ferrante, Smithsonian Institution Libraries and Archives
-*   Emmanuel Jaslier, Biblioth√®que nationale de France, alternate Bertrand Caron
+*   Emmanuel Jaslier, BnF (National Library of France), alternate Bertrand Caron
 *   Martin Kalfatovic, IIIF Consortium
 *   John Kunze, Drexel University Metadata Research Center
 *   Brian McBride, University of Utah
