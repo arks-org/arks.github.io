@@ -1,9 +1,9 @@
 ---
-title: ARK Alliance Calendar of events
+title: ARK events calendar
 permalink: /calendar/
 pid: 797
 date: 2021-01-23T17:36:24+00:00
-published: true
+published: false
 ---
 
 This calendar lists events relevant to the ARK community.
