@@ -66,7 +66,6 @@ for its supporting documents.
 *   Carlos Authier, National Scientific and Technical Research Council, Argentina
 *   Donny Winston, Polyneme LLC
 *   Jack OMalley, Frick Collection
-*   John Jung, co-chair, University of Chicago
 *   John Kunze, chair, Drexel University Metadata Research Center
 *   Julien Antoine Raemy, Data and Service Center for the Humanities (DaSCH)
 *   Lesley Frew, Old Dominion University
