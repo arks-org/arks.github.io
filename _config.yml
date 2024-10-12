@@ -19,7 +19,8 @@ domain: arks-org.github.io
 baseurl: /arks.github.io
 url: https://arks-org.github.io
 author: "The ARK Alliance"
-num_ark_orgs: 1350
+
+num_ark_orgs: 1400
 num_support_orgs: 46
 ark_age: "22 years"
 num_arks: "8.2 billion"
@@ -52,7 +53,6 @@ social:
 #   yandex: 1234
 #   baidu: 1234
 #   facebook: 1234
-
 
 #########
 # Plugins
