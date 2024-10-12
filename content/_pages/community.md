@@ -31,18 +31,20 @@ committed to the long-term preservation of digital information.
 
 ## How to get involved
 
-1.  Join a discussion [group] (in English) or 🇫🇷 [liste] de discussion
-    (francophone)
-2.  Follow the ARK Alliance on twitter [@arks_org]
-3.  Follow us on mastodon [@arks_org@fosstodon.org]
-4.  Read the ARK Alliance [blog]
-5.  [Sign up for our newsletter][]
-6.  Submit a community news item or blog post using this [online news form];
+1.  Join an ARK discussion forum
+    * [in English](https://groups.google.com/g/arks-forum)
+    * [en français](https://framalistes.org/sympa/info/arks-forum-fr) 🇫🇷 
+    * [español/português](arks-forum-ib@googlegroups.com)
+3.  Follow the ARK Alliance on twitter [@arks_org]
+4.  Follow us on mastodon [@arks_org@fosstodon.org]
+5.  Read the ARK Alliance [blog]
+6.  [Sign up for our newsletter][]
+7.  Submit a community news item or blog post using this [online news form];
     you can use this [story template] to help create your content
-7.  Tell us about yourself by filling out a 5-minute [ARK survey] (in English)
+8.  Tell us about yourself by filling out a 5-minute [ARK survey] (in English)
     or 🇫🇷 une [enquête ARK] (version française)
-8.  Tell us about your [interest in helping with the work of the ARK Alliance]
-9.  [Contact us] about joining a [working group]: Outreach, Technical, NAAN Registry, Advisory
+9.  Tell us about your [interest in helping with the work of the ARK Alliance]
+10.  [Contact us] about joining a [working group]: Outreach, Technical, NAAN Registry, Advisory
 
 ## Who is creating ARKs
 
@@ -134,8 +136,6 @@ work of the ARK Alliance] and have attracted support from the following
 [2]: https://www.google.com/maps/d/u/0/edit?mid=1ALGeRERECL36f2pg7pqrthUYNmuU43UM&usp=sharing
 [collaboration]: https://wiki.lyrasis.org/display/ARKs/ARKs+in+the+Open+Project
 [NDSA]: https://ndsa.org
-[group]: https://groups.google.com/g/arks-forum
-[liste]: https://framalistes.org/sympa/info/arks-forum-fr
 [@arks_org]: https://twitter.com/arks_org
 [@arks_org@fosstodon.org]: https://fosstodon.org/@arks_org
 [blog]: news.md
