@@ -1,6 +1,18 @@
-### Arklet-frick: bringing ARKs from need to implementation at the Frick Collection
+---
+title: "Arklet-frick: bringing ARKs from need to implementation at the Frick Collection"
+redirect_from: /blog/2024-10-25-arklet-frick-ark-minter-resolver-tool/
+pid: 551
+authors:
+  - Jack O'Malley
+date: 2023-12-19T00:00:00+00:00
+published: true
+---
 
-Authors: Jack O’Malley
+Arklet-frick is from the Frick collection for minting and resolving ARKs.
+
+<!--more-->
+
+![][map]{: .img-thumbnail .img-responsive fetchpriority="high" height="auto" loading="eager"}
 
 In 2021, the Frick Collection announced that it would start assigning ARK
 identifiers to assets in its digital collections and library catalog. The
