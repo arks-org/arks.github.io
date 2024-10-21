@@ -3,7 +3,7 @@ title: "Arklet-frick: bringing ARKs from need to implementation at the Frick Col
 redirect_from: /blog/2024-10-25-arklet-frick-ark-minter-resolver-tool/
 pid: 551
 authors:
-  - Jack O'Malley
+  - jack-omalley
 date: 2024-10-20
 published: true
 ---
