@@ -4,7 +4,7 @@ redirect_from: /blog/2024-10-25-arklet-frick-ark-minter-resolver-tool/
 pid: 551
 authors:
   - Jack O'Malley
-date: 2024-10-25T02:31:01+00:00
+date: 2024-10-20
 published: true
 ---
 
@@ -37,7 +37,7 @@ include support for subparts and commitment statements.
 To create ARKs with arklet-frick, which uses a technical base of Python and
 Django, an organization must first request a NAAN (name assigning authority
 number) and enter it into the Django administration interface in order to
-generate an API key.. This interface is also where administrators can create
+generate an API key. This interface is also where administrators can create
 and manage shoulders, which subdivide a NAAN‚Äôs namespace. Shoulders are one of
 the most powerful and flexible features of the ARK specification because they
 allow ARKs to support a variety of content and usage standards. The Frick uses
@@ -64,3 +64,4 @@ The open source code for [arklet-frick](https://github.com/squidgetx/arklet-fric
 is available on Github, where we welcome feedback.  In a separate blog post we 
 will present how the Frick has been using ARKs since launching its API.
 
+[map]: ../../assets/images/posts/2023-12-19-wrapping-up-2023-with-1200-ark-organizations/map_dec_2023.png
