@@ -8,18 +8,15 @@ authors:
   - elizabeth-yayra-tordzro
   - donald-doe-seanedzu
   - keziah-okyere
-date: 2023-06-14T02:30:11+00:00
+date: 2024-10-20
 published: true
 ---
 
-The WACREN implementation of ARKs.
+The WACREN network describes their use of ARKs and their new ARKs Management Dashboard.
 
 <!--more-->
 
 ![][1]{: .img-thumbnail .img-responsive fetchpriority="high" height="142" loading="eager" width="129" }
-
-Title: ARK Community Highlight: West and Central African Research and Education Network (WACREN)
-Authors: Omo Oaiya, Sefakor Ankora, Elizabeth Yayra Tordzro, Donald Doe Seanedzu, Keziah Okyere
 
 The West and Central African Research and Education Network (WACREN) is
 committed to advancing research and education through robust network
