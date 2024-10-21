@@ -4,7 +4,7 @@ redirect_from: /blog/2024-10-25-arklet-frick-ark-minter-resolver-tool/
 pid: 551
 authors:
   - Jack O'Malley
-date: 2023-12-19T00:00:00+00:00
+date: 2024-10-25
 published: true
 ---
 
