@@ -25,7 +25,8 @@ From May to September 2023, the Frick Collection worked with a developer, Emery
 Infrastructure, to implement software that could mint, manage, and resolve
 ARKs. The software expanded on arklet, an ARK minting and resolving tool
 designed and maintained by the Internet Archive. The modified tool,
-arklet-frick, makes several improvements and changes to arklet. 
+[arklet-frick](https://github.com/squidgetx/arklet-frick/tree/master), 
+makes several improvements and changes to arklet. 
 
 In addition to supporting URL resolution, arklet-frick supports six Dublin Core
 metadata fields: title, identifier, source, relation, type, and format.
@@ -59,7 +60,7 @@ generated API keys for testing and production use cases. For each shoulder the
 Frick created, we created a set of rules governing the use case for the
 shoulder and the standards for the Dublin Core metadata fields.
 
-The open source code for arklet-frick is available on Github, where we welcome
-feedback.  In a separate blog post we will present how the Frick has been using
-ARKs since launching its API.
+The open source code for [arklet-frick](https://github.com/squidgetx/arklet-frick/tree/master) 
+is available on Github, where we welcome feedback.  In a separate blog post we 
+will present how the Frick has been using ARKs since launching its API.
 
