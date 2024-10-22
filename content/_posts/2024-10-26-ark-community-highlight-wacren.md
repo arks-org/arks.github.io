@@ -18,9 +18,13 @@ The WACREN network describes their use of ARKs and their new ARKs Management Das
 
 ![][1]{: .img-thumbnail .img-responsive fetchpriority="high" height="142" loading="eager" width="129" }
 
+[1]: ../../assets/images/posts/2024-10-26-ark-community-highlight-wacren/wacren_images.png
+
 The West and Central African Research and Education Network (WACREN) is
 committed to advancing research and education through robust network
-infrastructure and innovative technological solutions across the region. As the
+infrastructure and innovative technological solutions across the region.
+The University of Ghana Legon and its Balme Library (above), is 
+participating in WACREN along with members from 12 other countries. As the
 association of NRENs in the region, our organisation plays a pivotal role in
 fostering collaboration and knowledge sharing among academic and research
 institutions, thus contributing to the socio-economic development of West and
@@ -75,5 +79,3 @@ feedback has been positive. Stakeholders have expressed enthusiasm for
 implementing ARKs and anticipate their potential benefits to our organisation
 and the broader research and education community in West and Central Africa. We
 will be considering pilot partners at the University of Ghana and  Eko-Konnect.
-
-[1]: ../../assets/images/posts/2023-06-14-community-update-2023-06-13-stickers-tutorials-code-of-conduct/arka-vinyl-sticker.png
