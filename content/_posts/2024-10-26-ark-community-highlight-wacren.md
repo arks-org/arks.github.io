@@ -16,7 +16,7 @@ The WACREN network describes their use of ARKs and their new ARKs Management Das
 
 <!--more-->
 
-![][1]{: .img-thumbnail .img-responsive fetchpriority="high" height="142" loading="eager" width="129" }
+![][1]{: .img-thumbnail .img-responsive fetchpriority="high" height="auto" loading="eager" }
 
 [1]: ../../assets/images/posts/2024-10-26-ark-community-highlight-wacren/wacren_images.png
 
