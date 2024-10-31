@@ -1,6 +1,6 @@
 ---
 title: "ARK Community Highlight: West and Central African Research and Education Network (WACREN)"
-redirect_from: /blog/2024-10-26-ark-community-highlight-wacren/
+redirect_from: /blog/2024-11-04-ark-community-highlight-wacren/
 pid: 517
 authors:
   - omo-oaiya
@@ -8,7 +8,7 @@ authors:
   - elizabeth-yayra-tordzro
   - donald-doe-seanedzu
   - keziah-okyere
-date: 2024-10-20
+date: 2024-11-04
 published: true
 ---
 
@@ -24,7 +24,7 @@ The West and Central African Research and Education Network (WACREN) is
 committed to advancing research and education through robust network
 infrastructure and innovative technological solutions across the region.
 The University of Ghana Legon and its Balme Library (above), is 
-participating in WACREN along with members from 12 other countries. As the
+participating in WACREN along with members from 20 countries. As the
 association of NRENs in the region, our organisation plays a pivotal role in
 fostering collaboration and knowledge sharing among academic and research
 institutions, thus contributing to the socio-economic development of West and
@@ -53,11 +53,12 @@ seamlessly integrates with other applications. This API enables developers and
 users to extend the capabilities of our dashboard, integrate it with existing
 systems, and automate processes, enhancing workflow efficiency and flexibility.
 
-Our decision to implement ARKs was based on the PIDs roadmap from our 
-[LIBSENSE initiative](https://libsense.ren.africa/en/libsense-develops-a-roadmap-for-implementing-persistent-identifiers-in-africa-re-ecosystem/), we carefully evaluated various Persistent Identifier (PID) options
-and found ARKs most suitable for our requirements. Their flexibility,
-interoperability, and robust resolution mechanisms aligned perfectly with our
-needs, making them the preferred choice for our organisation.
+Our decision to implement ARKs stems from the PIDs roadmap developed under our 
+[LIBSENSE initiative](https://libsense.ren.africa/en/libsense-develops-a-roadmap-for-implementing-persistent-identifiers-in-africa-re-ecosystem/).
+After carefully evaluating various Persistent Identifier (PID) options, we 
+determined that ARKs best suit our needs due to their flexibility, 
+interoperability, and robust resolution mechanisms. These attributes align 
+seamlessly with our organizational requirements, making ARKs the preferred choice.
 
 The adoption of ARKs has significantly transformed the way we work. By
 incorporating ARKs into our platform, we have streamlined our processes and
@@ -74,8 +75,9 @@ Moreover, the robust resolution services associated with ARKs enhance the user
 experience by delivering accurate and reliable access to resources, thus
 fostering trust and confidence in our services.
 
-Although we have yet to pilot the full usage of ARKs with our platform, initial
-feedback has been positive. Stakeholders have expressed enthusiasm for
-implementing ARKs and anticipate their potential benefits to our organisation
-and the broader research and education community in West and Central Africa. We
-will be considering pilot partners at the University of Ghana and  Eko-Konnect.
+Although we have yet to fully pilot the usage of ARKs with our platform, initial 
+feedback has been positive. Stakeholders have expressed enthusiasm for ARK 
+implementation and anticipate its potential benefits for our organization and the 
+broader research and education community across West and Central Africa. We have 
+integrated ARKs into BAOBAB, our shared repository platform, and will begin pilots 
+with member NRENs in Nigeria, Ghana, and Burkina Faso in the new year.
