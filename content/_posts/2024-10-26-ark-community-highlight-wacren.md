@@ -18,7 +18,7 @@ The WACREN network describes their use of ARKs and their new ARKs Management Das
 
 ![][1]{: .img-thumbnail .img-responsive fetchpriority="high" height="auto" loading="eager" }
 
-[1]: ../../assets/images/posts/2024-10-26-ark-community-highlight-wacren/wacren_images.png
+[1]: ../../assets/images/posts/wacren_images.png
 
 The West and Central African Research and Education Network (WACREN) is
 committed to advancing research and education through robust network
