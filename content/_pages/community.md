@@ -34,7 +34,7 @@ committed to the long-term preservation of digital information.
 1.  Join an ARK discussion forum
     * [in English](https://groups.google.com/g/arks-forum)
     * [en français](https://framalistes.org/sympa/info/arks-forum-fr) 🇫🇷 
-    * [español/português](arks-forum-ib@googlegroups.com)
+    * [español/português](https://groups.google.com/g/arks-forum-ib)
 3.  Follow the ARK Alliance on twitter [@arks_org]
 4.  Follow us on mastodon [@arks_org@fosstodon.org]
 5.  Read the ARK Alliance [blog]
