@@ -1,6 +1,6 @@
 ---
 title: "Arklet-frick: bringing ARKs from need to implementation at the Frick Collection"
-redirect_from: /blog/2024-10-25-arklet-frick-ark-minter-resolver-tool/
+redirect_from: /blog/2024-11-03-arklet-frick-ark-minter-resolver-tool/
 pid: 551
 authors:
   - jack-omalley
@@ -12,7 +12,7 @@ Arklet-frick is from the Frick collection for minting and resolving ARKs.
 
 <!--more-->
 
-![][map]{: .img-thumbnail .img-responsive fetchpriority="high" height="auto" loading="eager"}
+![][building]{: .img-thumbnail .img-responsive fetchpriority="high" height="auto" loading="eager"}
 
 In 2021, the Frick Collection announced that it would start assigning ARK
 identifiers to assets in its digital collections and library catalog. The
@@ -64,4 +64,4 @@ The open source code for [arklet-frick](https://github.com/squidgetx/arklet-fric
 is available on Github, where we welcome feedback.  In a separate blog post we 
 will present how the Frick has been using ARKs since launching its API.
 
-[map]: ../../assets/images/posts/2023-12-19-wrapping-up-2023-with-1200-ark-organizations/map_dec_2023.png
+[building]: ../../assets/images/posts/Frick_Collection_wkpdia.jpg
