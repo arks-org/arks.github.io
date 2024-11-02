@@ -36,7 +36,7 @@ into our operations. Specifically, we have developed a
 ARKs, harnessing their unique capabilities to enhance our services and support our
 organisational goals. The platform is built on 
 [arklet-frick](https://github.com/squidgetx/arklet-frick/tree/master), created by
-developers at The [Frick Collection](https://www.frick.org/), which itself was
+developers at [The Frick Collection](https://www.frick.org/), which itself was
 originally based on code from the [Internet Archive](https://archive.org). The
 open source code for our platform will be made available.
 
