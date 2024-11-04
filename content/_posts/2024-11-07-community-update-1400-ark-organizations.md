@@ -1,11 +1,11 @@
 ---
-title: "Community update 2024-11-07 on World Preservation Day"
-redirect_from: /blog/community-update-on-world-preservation-day/
+title: "Community update 2024-11-07: 1400 ARK organizations"
+redirect_from: /blog/community-update-update-1400-ark-organizations/
 pid: 1649
 authors:
   - ark-alliance
 date: 2024-11-02
-published: true
+published: false
 ---
 
 The ARK Alliance surpasses 1400 ARK organizations and reveals a
