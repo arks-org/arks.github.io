@@ -13,17 +13,11 @@ promising new ARK minting and resolving tool.
 
 <!--more-->
 
-xxx WHAT image?
+![][wdpd]{: .img-thumbnail .img-responsive fetchpriority="high" height="142" loading="eager" width="129" }
 
-title: "Community update 2023-06-13: stickers, tutorials, code of conduct"
-redirect_from: blog/community-update-stickers-tutorials-code-of-conduct/
-pid: 1641
-authors: ark-alliance
-date: 2023-06-14T02:30:11+00:00
-published: true
 
-Today, November 7, being [[World Preservation Day]], we are delighted to announce
-that the number of ARK organizations has surpassed 1400, which includes
+On November 7, which is [[World Digital Preservation Day]], we are delighted to announce
+that the number of ARK organizations has surpassed 1400. That number includes
 
 - 10 national libraries
 - 185 universities
@@ -31,17 +25,25 @@ that the number of ARK organizations has surpassed 1400, which includes
 - 104 museums
 - 101 journals
 
-In the past eleven months our tireless [[NAAN curators]] processed registration requests
-for 221 new ARK organizations. 
+In the past eleven months we were a little quieter than usual while we converted both 
+the ARK Alliance website (originally under WordPress) and wiki (originally under
+Confluence) to GitHub-based hosting. In that time our tireless [[NAAN curators]] 
+processed registration requests for 224 new ARK organizations and XXX ARK tutorials 
+of varying length were given at such venues as
 
-As always we welcome new volunteers, 
-and we now have [[an online form]] for people to express interest in helping out 
-with one of our [[working groups]]: Outreach, Technical, and NAAN Curation.
+xxx 224 as of 11.04
 
-We are also excited to let you know about a promising new open source software tool for 
-implementing ARKs in your organization. Based on the Internet Archive's [[arklet]] 
+We are also excited to let you know of a promising new open source software tool for 
+organizations getting ready to implement ARKs. Based on the Internet Archive's [[arklet]] 
 implementation, developers at The Frick Collection created [[arklet-Frick]]. It has
 feature list xxxx
+
+As always we welcome volunteers for our [[working groups]]: Outreach, Technical, and 
+NAAN Curation. If you are interested, please fill out this new [[online form]],
+
+for people to express interest in helping out 
+with one of 
+
 
 presentations list, past and future
 
@@ -75,6 +77,7 @@ With a total of over 1400, here are some of newest [ARK organizations]:
 
 -   
 
+[wdpd]: ../../assets/images/posts/logo_wdpd2024.jpg
 [online here]: https://www.stickermule.com/item/2421090c47beca439dbded424879d2e6
 [1]: ../../assets/images/posts/2023-06-14-community-update-2023-06-13-stickers-tutorials-code-of-conduct/arka-vinyl-sticker.png
 [slides here]: ../../assets/documents/2023/06/ARK-Training-Tutorial-IIIF-2023-slides.pdf
