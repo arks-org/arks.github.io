@@ -4,8 +4,8 @@ redirect_from: /blog/community-update-update-1400-ark-organizations/
 pid: 1649
 authors:
   - ark-alliance
-date: 2024-11-02
-published: false
+date: 2024-11-06
+published: true
 ---
 
 The ARK Alliance surpasses 1400 ARK organizations and reveals a
