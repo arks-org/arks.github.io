@@ -13,6 +13,11 @@ promising new ARK minting and resolving tool.
 
 <!--more-->
 
+| ![][bytld]{: .img-thumbnail .img-responsive fetchpriority="high" height="142" loading="eager" width="129" } | ![][wdpd]{: .img-thumbnail .img-responsive fetchpriority="high" loading="eager" width="29" } |
+|--|--|
+| *caption* | |
+
+![][bytld]{: .img-thumbnail .img-responsive fetchpriority="high" height="142" loading="eager" width="129" }
 ![][wdpd]{: .img-thumbnail .img-responsive fetchpriority="high" height="142" loading="eager" width="129" }
 
 
@@ -34,16 +39,15 @@ of varying length were given at such venues as
 xxx 224 as of 11.04
 
 We are also excited to let you know of a promising new open source software tool for 
-organizations getting ready to implement ARKs. Based on the Internet Archive's [[arklet]] 
-implementation, developers at The Frick Collection created [[arklet-Frick]]. It has
-feature list xxxx
+organizations getting ready to implement ARKs. Based on the Internet Archive's 
+[arklet](https://github.com/squidgetx/arklet-frick/tree/master) 
+implementation, developers at The Frick Collection created 
+[arklet-Frick](https://github.com/squidgetx/arklet-frick/tree/master). 
+It adds improved security and bugfixes, as well as bulk operations, suffix passthrough, 
+shoulder rules, extensive metadata, endpoints for `?info` and `?json`, and more.
 
 As always we welcome volunteers for our [[working groups]]: Outreach, Technical, and 
-NAAN Curation. If you are interested, please fill out this new [[online form]],
-
-for people to express interest in helping out 
-with one of 
-
+NAAN Curation. If you are interested, please fill out this new XXX [[online form]],
 
 presentations list, past and future
 
@@ -77,6 +81,7 @@ With a total of over 1400, here are some of newest [ARK organizations]:
 
 -   
 
+[bytld]: ../../assets/images/posts/ARK-orgs-by-TLD.png
 [wdpd]: ../../assets/images/posts/logo_wdpd2024.jpg
 [online here]: https://www.stickermule.com/item/2421090c47beca439dbded424879d2e6
 [1]: ../../assets/images/posts/2023-06-14-community-update-2023-06-13-stickers-tutorials-code-of-conduct/arka-vinyl-sticker.png
