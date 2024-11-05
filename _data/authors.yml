@@ -4,13 +4,23 @@ ark-alliance:
   name: arks_org #twitter_profile
   info:
 
-
 aurelien-conraux:
   visible_name: Aurélien Conraux
   url: 
   name: AConraux #twitter_profile
   info:
 
+donald-doe-seanedzu:
+  visible_name: Donald Doe Seanedzu
+  url:
+  name: #twitter_profile
+  info:
+
+elizabeth-yayra-tordzro:
+  visible_name: Elizabeth Yayra Tordzro
+  url:
+  name: #twitter_profile
+  info:
 
 hugo-manguinhas:
   visible_name: Hugo Manguinhas
@@ -18,6 +28,11 @@ hugo-manguinhas:
   name: #twitter_profile
   info:
 
+jack-omalley:
+  visible_name: Jack O'Malley
+  url: 
+  name: #twitter_profile
+  info:
 
 john-jung:
   visible_name: John Jung
@@ -34,7 +49,6 @@ john-jung:
     databases. John has a Master of Design Methods degree from the Illinois
     Institute of Technology Institute of Design.
 
-
 john-kunze:
   visible_name: John Kunze
   url: 
@@ -49,7 +63,6 @@ john-kunze:
     (BagIt - RFC8493), for web archiving (WARC), and for metadata (RFC2413,
     RFC2731, ANSI/NISO Z39.85). Follow-on work in metadata includes creation
     of the Dublin Kernel and yamz.net.
-
 
 julien-raemy:
   visible_name: Julien A. Raemy
@@ -68,6 +81,11 @@ julien-raemy:
     and Technology Studies, especially through the lens of the Actor-Network
     Theory.
 
+keziah-okyere:
+  visible_name: Keziah Okyere
+  url:
+  name: #twitter_profile
+  info:
 
 kirsta-stapelfeldt:
   visible_name: Kirsta Stapelfeldt
@@ -75,13 +93,17 @@ kirsta-stapelfeldt:
   name: #twitter_profile
   info:
 
-
 luciano-johnson:
   visible_name: Luciano Johnson
   url: 
   name: #twitter_profile
   info:
 
+omo-oaiya:
+  visible_name: Omo Oaiya
+  url:
+  name: #twitter_profile
+  info:
 
 remco-van-veenendaal:
   visible_name: Remco van Veenendaal
@@ -89,6 +111,11 @@ remco-van-veenendaal:
   name: #twitter_profile
   info:
 
+sefakor-ankora:
+  visible_name: Sefakor Ankora
+  url:
+  name: #twitter_profile
+  info:
 
 yasiel-perez:
   visible_name: Yasiel Pérez
@@ -101,5 +128,3 @@ valentine-charles:
   url: 
   name: #twitter_profile
   info:
-
-
