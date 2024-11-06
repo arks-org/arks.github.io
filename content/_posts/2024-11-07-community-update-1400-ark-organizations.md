@@ -4,7 +4,7 @@ redirect_from: /blog/community-update-update-1400-ark-organizations/
 pid: 1649
 authors:
   - ark-alliance
-date: 2024-11-07
+date: 2024-11-06
 published: true
 ---
 
@@ -31,7 +31,7 @@ to GitHub-based hosting. Much has happened in that time:
 - 224 new ARK organizations were registered
 - a new [Spanish and Portuguese discussion forum](https://groups.google.com/g/arks-forum-ib) was created
 - XXX ARK tutorials of varying length were given at such venues as XXX. See the
-[ARK Alliance calendar](/calendar) for more events.
+[ARK Alliance calendar](/calendar.md) for more events.
 
 xxx 224 as of 11.04
 
