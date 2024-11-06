@@ -13,13 +13,8 @@ promising new ARK minting and resolving tool.
 
 <!--more-->
 
-| ![][bytld]{: .img-thumbnail .img-responsive fetchpriority="high" height="142" loading="eager" width="129" } | ![][wdpd]{: .img-thumbnail .img-responsive fetchpriority="high" loading="eager" width="29" } |
-|--|--|
-| *caption* | |
-
-![][bytld]{: .img-thumbnail .img-responsive fetchpriority="high" height="142" loading="eager" width="129" }
-![][wdpd]{: .img-thumbnail .img-responsive fetchpriority="high" height="142" loading="eager" width="129" }
-
+![][arkabytld]{: .img-thumbnail .img-responsive fetchpriority="high" height="142" loading="eager" width="129" }
+*Number of ARK organizations per top-level domain next to the #WDPD2024 logo.*
 
 On November 7, which is [[World Digital Preservation Day]], we are delighted to announce
 that the number of ARK organizations has surpassed 1400. That number includes
@@ -32,9 +27,10 @@ that the number of ARK organizations has surpassed 1400. That number includes
 
 In the past eleven months we were a little quieter than usual while we converted both 
 the ARK Alliance website (originally under WordPress) and wiki (originally under
-Confluence) to GitHub-based hosting. In that time our tireless [[NAAN curators]] 
-processed registration requests for 224 new ARK organizations and XXX ARK tutorials 
-of varying length were given at such venues as
+Confluence) to GitHub-based hosting. Much has happened in that time, in which our 
+tireless [[NAAN curators]] processed registration requests for 224 new ARK organizations
+and XXX ARK tutorials of varying length were given at such venues as XXX. See our
+[[xxx calendar]] for more events.
 
 xxx 224 as of 11.04
 
@@ -81,6 +77,7 @@ With a total of over 1400, here are some of newest [ARK organizations]:
 
 -   
 
+[arkabytld]: ../../assets/images/posts/arka_com_update_nov2024.png
 [bytld]: ../../assets/images/posts/ARK-orgs-by-TLD.png
 [wdpd]: ../../assets/images/posts/logo_wdpd2024.jpg
 [online here]: https://www.stickermule.com/item/2421090c47beca439dbded424879d2e6
