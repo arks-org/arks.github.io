@@ -13,11 +13,11 @@ promising new ARK minting and resolving tool.
 
 <!--more-->
 
-![][arkabytld]{: .img-thumbnail .img-responsive fetchpriority="high" height="142" loading="eager" width="129" }
+![][arkabytld]{: .img-thumbnail .img-responsive fetchpriority="high" height="auto" loading="eager" }
 *Number of ARK organizations per top-level domain next to the #WDPD2024 logo.*
 
-On November 7, which is [[World Digital Preservation Day]], we are delighted to announce
-that the number of ARK organizations has surpassed 1400. That number includes
+On November 7, which is [World Digital Preservation Day](https://www.dpconline.org/events/world-digital-preservation-day),
+we are delighted to announce that the number of ARK organizations has surpassed 1400. That number includes
 
 - 10 national libraries
 - 185 universities
@@ -25,11 +25,12 @@ that the number of ARK organizations has surpassed 1400. That number includes
 - 104 museums
 - 101 journals
 
-In the past eleven months we were a little quieter than usual while we converted both 
-the ARK Alliance website (originally under WordPress) and wiki (originally under
-Confluence) to GitHub-based hosting. Much has happened in that time, in which our 
-tireless [[NAAN curators]] processed registration requests for 224 new ARK organizations
-and XXX ARK tutorials of varying length were given at such venues as XXX. See our
+In the past year we have  been busy converting both the ARK Alliance website 
+(originally under WordPress) and working group wiki (originally under Confluence) 
+to GitHub-based hosting. Much has happened in that time:
+- 224 new ARK organizations were registered
+- a new [Spanish and Portuguese discussion forum](https://groups.google.com/g/arks-forum-ib) was created
+- XXX ARK tutorials of varying length were given at such venues as XXX. See our
 [[xxx calendar]] for more events.
 
 xxx 224 as of 11.04
@@ -42,20 +43,19 @@ implementation, developers at The Frick Collection created
 It adds improved security and bugfixes, as well as bulk operations, suffix passthrough, 
 shoulder rules, extensive metadata, endpoints for `?info` and `?json`, and more.
 
-As always we welcome volunteers for our [[working groups]]: Outreach, Technical, and 
-NAAN Curation. If you are interested, please fill out this new XXX [[online form]],
+As always we welcome volunteers for our [working groups](https://arks.org/community-groups/): 
+Outreach, Technical, and NAAN Curation. 
+If you are interested, please fill out this new XXX [[online form]],
 
 presentations list, past and future
 
 much of the past 11 months spent on converting from the old WP site, the Confluence wiki,
 registering new orgs, giving presentations, (DPC, 
 
-
+![][1]{: .img-thumbnail .img-responsive fetchpriority="high" height="142" loading="eager" width="129" }
 We now have stunning new vinyl ARK Alliance stickers! They are in a standard
 hexagonal format suitable for tiling your laptop, phone, refrigerator, etc.
 Currently they can only be ordered [online here] via Stickermule.
-
-![][1]{: .img-thumbnail .img-responsive fetchpriority="high" height="142" loading="eager" width="129" }
 
 We are also happy to announce that a 3-hour ARK tutorial has been given this
 year at the annual Code4lib and IIIF conferences ([slides here]). There are
