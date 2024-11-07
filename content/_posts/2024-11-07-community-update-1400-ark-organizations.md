@@ -14,7 +14,7 @@ promising new ARK minting and resolving tool.
 <!--more-->
 
 ![][arkabytld]{: .img-thumbnail .img-responsive fetchpriority="high" height="auto" loading="eager" }
-*Number of ARK organizations per top-level domain next to the #WDPD2024 logo.*
+*Percent of ARK organizations per top-level domain. #WDPD2024*
 
 Today being [World Digital Preservation Day](https://www.dpconline.org/events/world-digital-preservation-day),
 we are delighted to announce that the number of ARK organizations has surpassed 1400. That number includes
@@ -27,31 +27,28 @@ we are delighted to announce that the number of ARK organizations has surpassed 
 
 In the past year we have  been busy converting both the ARK Alliance website 
 (originally under WordPress) and working group wiki (originally under Confluence) 
-to GitHub-based hosting. Much has happened in that time:
-- 224 new ARK organizations were registered
-- a new [Spanish and Portuguese discussion forum](https://groups.google.com/g/arks-forum-ib) was created
+to GitHub-based hosting. Meanwhile,
+
+- 224 new ARK organizations were registered,
 - 8 ARK tutorials of varying length were given at conferences for Open Repositories,
-  Dublin Core Metadata Initiative, Latindex, Linked Open Data, and Western Association
-  of Map Libraries
+  Dublin Core Metadata Initiative, Latindex, Linked Open Data, and the Western
+  Association of Map Libraries, and
+- a new [Spanish and Portuguese discussion forum](https://groups.google.com/g/arks-forum-ib) was created
 
 xxx 224 as of 11.04
 
-We are also excited to let you know of a promising new open source software tool for 
-organizations getting ready to implement ARKs. Based on the Internet Archive's 
+We are also excited to tell you of a promising new open source software package for 
+organizations implementing ARKs. Based on the Internet Archive's 
 [arklet](https://github.com/squidgetx/arklet-frick/tree/master) 
-implementation, developers at The Frick Collection created 
+implementation, developers at The Frick Collection have created the open source
 [arklet-Frick](https://github.com/squidgetx/arklet-frick/tree/master). 
 It adds improved security and bugfixes, as well as bulk operations, suffix passthrough, 
 shoulder rules, extensive metadata, endpoints for `?info` and `?json`, and more.
 
 As always we welcome volunteers for our [working groups](https://arks.org/community-groups/): 
-Outreach, Technical, and NAAN Curation. 
-If you are interested, please fill out this new XXX [[online form]],
+Outreach, Technical, and NAAN Curation. If you wish to volunteer, please express your interest
+by filling out [this form](https://docs.google.com/forms/d/15bhmP5Z0aOLaTWfXKK0TBTJCOAXuT30hIzfhij-D_oM)
 
-presentations list, past and future
-
-much of the past 11 months spent on converting from the old WP site, the Confluence wiki,
-registering new orgs, giving presentations, (DPC, 
 
 ![][1]{: .img-thumbnail .img-responsive fetchpriority="high" height="142" loading="eager" width="129" }
 We now have stunning new vinyl ARK Alliance stickers! They are in a standard
@@ -73,8 +70,6 @@ Finally we would like to announce availability of the [ARK Community Code of
 Conduct]. This document represents consensus across the ARK Alliance Advisory
 Group and the NAAN Registry, Outreach, and Technical Working Groups. Working
 documents for these groups are linked from the sidebar on the [ARKA wiki].
-
-With a total of over 1400, here are some of newest [ARK organizations]:
 
 -   
 
