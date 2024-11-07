@@ -32,7 +32,8 @@ to GitHub-based hosting. Meanwhile,
 - 224 new ARK organizations were registered,
 - 8 ARK tutorials of varying length were given at conferences for Open Repositories,
   Dublin Core Metadata Initiative, Latindex, Linked Open Data, and the Western
-  Association of Map Libraries, and
+  Association of Map Libraries, 
+- a [30-minute ARK tutorial video](https://youtu.be/-RkMGFCGRic) was made available, and
 - a new [Spanish and Portuguese discussion forum](https://groups.google.com/g/arks-forum-ib) was created
 
 xxx 224 as of 11.04
@@ -45,9 +46,9 @@ implementation, developers at The Frick Collection have created the open source
 It adds improved security and bugfixes, as well as bulk operations, suffix passthrough, 
 shoulder rules, extensive metadata, endpoints for `?info` and `?json`, and more.
 
-As always we welcome volunteers for our [working groups](https://arks.org/community-groups/): 
+As always we welcome volunteers for our [working groups](../_pages/community-groups/): 
 Outreach, Technical, and NAAN Curation. If you wish to volunteer, please express your interest
-by filling out [this form](https://docs.google.com/forms/d/15bhmP5Z0aOLaTWfXKK0TBTJCOAXuT30hIzfhij-D_oM)
+by filling out [this form](https://docs.google.com/forms/d/15bhmP5Z0aOLaTWfXKK0TBTJCOAXuT30hIzfhij-D_oM).
 
 
 ![][1]{: .img-thumbnail .img-responsive fetchpriority="high" height="142" loading="eager" width="129" }
