@@ -3,7 +3,7 @@ title: ARK events calendar
 permalink: /calendar/
 pid: 797
 date: 2021-01-23T17:36:24+00:00
-published: true
+published: false
 ---
 
 This calendar lists events relevant to the ARK community.
@@ -28,7 +28,6 @@ This calendar lists events relevant to the ARK community.
 | WAML 2024 | 2024.10.10 | Albuquerque, New Mexico | [Western Association of Map Libraries](https://waml.org/conferences/waml2024/) |     | ARK tutorial accepted    |
 | 2024 LD4 | 2024.10.07-11 | virtual | [Linked Open Data](https://sites.google.com/view/2024-ld4-conference/home) |     | ARK tutorial accepted    |
 | TPDL 2024 | 2024.09.24-27 | Ljubljana, Slovenia | [https://tpdl2024.nuk.si/](https://tpdl2024.nuk.si/)  paper deadlines:  <br>long April 30; short May 7 |     |     |
-Latindex, https://latindex.org/latindex/ 2024.09.16-19
 | iPRES | 2024.09.16-20 | Ghent, Belgium | [https://ipres2024.pubpub.org/](https://ipres2024.pubpub.org/) |     |     |
 | Latindex | 2024.09.16-29 | Madrid, Spain | [https://latindex.org/latindex/] |     | ARK overview accepted |
 | FORCE11 2024 | 2024.08.01-03 | Los Angeles, CA (UCLA) | [https://force11.org/conference/](https://force11.org/conference/) | TBA | ARK tutorial not accepted |
