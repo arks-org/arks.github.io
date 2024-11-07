@@ -30,49 +30,24 @@ In the past year we have  been busy converting both the ARK Alliance website
 to GitHub-based hosting. Meanwhile,
 
 - 224 new ARK organizations were registered,
-- 8 ARK tutorials of varying length were given at conferences for Open Repositories,
+- 8 ARK tutorials of varying length were given at conferences such as Open Repositories,
   Dublin Core Metadata Initiative, Latindex, Linked Open Data, and the Western
   Association of Map Libraries, 
 - a [30-minute ARK tutorial video](https://youtu.be/-RkMGFCGRic) was made available, and
-- a new [Spanish and Portuguese discussion forum](https://groups.google.com/g/arks-forum-ib) was created
+- a new [Spanish and Portuguese discussion forum](https://groups.google.com/g/arks-forum-ib) was created.
 
-xxx 224 as of 11.04
-
-We are also excited to tell you of a promising new open source software package for 
-organizations implementing ARKs. Based on the Internet Archive's 
+We are also excited to share a promising new open source software package for 
+organizations implementing ARKs. Starting with the Internet Archive's 
 [arklet](https://github.com/squidgetx/arklet-frick/tree/master) 
-implementation, developers at The Frick Collection have created the open source
-[arklet-Frick](https://github.com/squidgetx/arklet-frick/tree/master). 
+implementation, developers at The Frick Collection have created the
+[arklet-Frick](https://github.com/squidgetx/arklet-frick/tree/master) tool. 
 It adds improved security and bugfixes, as well as bulk operations, suffix passthrough, 
-shoulder rules, extensive metadata, endpoints for `?info` and `?json`, and more.
+shoulder rules, extensive metadata, endpoints for `?info` and `?json`, and more. See the
+[about] pages for more information on these concepts.
 
 As always we welcome volunteers for our [working groups](../_pages/community-groups/): 
 Outreach, Technical, and NAAN Curation. If you wish to volunteer, please express your interest
 by filling out [this form](https://docs.google.com/forms/d/15bhmP5Z0aOLaTWfXKK0TBTJCOAXuT30hIzfhij-D_oM).
-
-
-![][1]{: .img-thumbnail .img-responsive fetchpriority="high" height="142" loading="eager" width="129" }
-We now have stunning new vinyl ARK Alliance stickers! They are in a standard
-hexagonal format suitable for tiling your laptop, phone, refrigerator, etc.
-Currently they can only be ordered [online here] via Stickermule.
-
-We are also happy to announce that a 3-hour ARK tutorial has been given this
-year at the annual Code4lib and IIIF conferences ([slides here]). There are
-four more tutorials coming up:
-
--   90 mins at [DWeb Camp] around June 20
--   180 mins at [Joint Conference on Digital Libraries] (ACM/IEEE JCDL) June
-    26
--   60 mins at [Earth Science Information Partners] (ESIP) July 20
--   90 mins at [International Conference on Digital Preservation] (iPRES)
-    around Sept 20
-
-Finally we would like to announce availability of the [ARK Community Code of
-Conduct]. This document represents consensus across the ARK Alliance Advisory
-Group and the NAAN Registry, Outreach, and Technical Working Groups. Working
-documents for these groups are linked from the sidebar on the [ARKA wiki].
-
--   
 
 [arkabytld]: ../../assets/images/posts/arka_com_update_nov2024.png
 [bytld]: ../../assets/images/posts/ARK-orgs-by-TLD.png
