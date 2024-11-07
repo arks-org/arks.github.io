@@ -5,7 +5,7 @@ pid: 551
 authors:
   - jack-omalley
 date: 2024-10-20
-published: false
+published: true
 ---
 
 Arklet-frick is from the Frick collection for minting and resolving ARKs.
