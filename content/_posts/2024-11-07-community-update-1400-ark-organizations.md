@@ -30,8 +30,9 @@ In the past year we have  been busy converting both the ARK Alliance website
 to GitHub-based hosting. Much has happened in that time:
 - 224 new ARK organizations were registered
 - a new [Spanish and Portuguese discussion forum](https://groups.google.com/g/arks-forum-ib) was created
-- XXX ARK tutorials of varying length were given at such venues as XXX. See the
-[ARK Alliance calendar](/calendar.md) for more events.
+- 8 ARK tutorials of varying length were given at conferences for Open Repositories,
+  Dublin Core Metadata Initiative, Latindex, Linked Open Data, and Western Association
+  of Map Libraries
 
 xxx 224 as of 11.04
 
