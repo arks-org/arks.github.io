@@ -3,7 +3,7 @@ title: ARK events calendar
 permalink: /calendar/
 pid: 797
 date: 2021-01-23T17:36:24+00:00
-published: false
+published: true
 ---
 
 This calendar lists events relevant to the ARK community.
@@ -19,19 +19,24 @@ This calendar lists events relevant to the ARK community.
 |---|---|---|---|---|---|
 | BigData2024 | 2024.12-15-18 | Washington, DC | [bigdataieee.org/BigData2024/CallPapers.html](https://bigdataieee.org/BigData2024/CallPapers.html) |     | ARK tutorial submitted |
 | 2024 Core Forum | 2024.11.14-16 | Minneapolis | [https://coreforum.org/](https://coreforum.org/) |     | ARK tutorial accepted, but withdrawn due to scheduling conflicts |
+| CHOSN webinar | 2024.11.07 | virtual | Cultural Heritage Open Scholarship Network |  | ARK tutorial accepted |
 | ASIS&T 2024 | 2024.10.25-29 | Calgary, Canada | [https://www.asist.org/meetings-events/am/am24/](https://www.asist.org/meetings-events/am/am24/) | 9 April |     |
 | CIKM 2024 | 2024.10.21-25 | Boise, Idaho, USA | 33rd ACM International [Conference on  <br>Information and Knowledge Management](https://cikm2024.org/)  <br>deadlines: tutorials 14 June; papers 13 May | 14 June; 13 May |     |
-| DCMI 2024 | 2024.10.20-23 | Toronto | [https://www.dublincore.org/conferences/2024/](https://www.dublincore.org/conferences/2024/)  <br>deadlines: paper 15 Apr; tutorial 27 May | 15 Apr; 27 May | ARK tutorial submitted |
+| DCMI 2024 | 2024.10.20-23 | Toronto | [https://www.dublincore.org/conferences/2024/](https://www.dublincore.org/conferences/2024/)  <br>deadlines: paper 15 Apr; tutorial 27 May | 15 Apr; 27 May | ARK tutorial accepted |
 | Fantastic Futures 2024 | 2024.10.15-18 | Canberra, Australia | [https://www.nfsa.gov.au/fantastic-futures-canberra-2024-conference-call-papers](https://www.nfsa.gov.au/fantastic-futures-canberra-2024-conference-call-papers) | 30 April | ARK tutorial submitted |
 | USRSE 2024 | 2024.10.15-17 | Albuquerque, New Mexico | [https://us-rse.org/usrse24/](https://us-rse.org/usrse24/) | 1 April |     |
+| WAML 2024 | 2024.10.10 | Albuquerque, New Mexico | [Western Association of Map Libraries](https://waml.org/conferences/waml2024/) |     | ARK tutorial accepted    |
+| 2024 LD4 | 2024.10.07-11 | virtual | [Linked Open Data](https://sites.google.com/view/2024-ld4-conference/home) |     | ARK tutorial accepted    |
 | TPDL 2024 | 2024.09.24-27 | Ljubljana, Slovenia | [https://tpdl2024.nuk.si/](https://tpdl2024.nuk.si/)  paper deadlines:  <br>long April 30; short May 7 |     |     |
+Latindex, https://latindex.org/latindex/ 2024.09.16-19
 | iPRES | 2024.09.16-20 | Ghent, Belgium | [https://ipres2024.pubpub.org/](https://ipres2024.pubpub.org/) |     |     |
-| FORCE11 2024 | 2024.08.01-03 | Los Angeles, CA (UCLA) | [https://force11.org/conference/](https://force11.org/conference/) | TBA |     |
+| Latindex | 2024.09.16-29 | Madrid, Spain | [https://latindex.org/latindex/] |     | ARK overview accepted |
+| FORCE11 2024 | 2024.08.01-03 | Los Angeles, CA (UCLA) | [https://force11.org/conference/](https://force11.org/conference/) | TBA | ARK tutorial not accepted |
 | DLF | 2024.07.29-31 | East Lansing, Michigan | [https://forum2024.diglib.org/](https://forum2024.diglib.org/) |     | ARK tutorial accepted, scheduled for July 29 |
 | PIDFest | 2024.06.11-13 | Prague, Czech Republic | [https://www.pidfest.org/](https://www.pidfest.org/) |     |  |
 | IIIF | 2024.06.04-7 | Los Angeles, CA | [https://iiif.io/event/2024/los-angeles/](https://iiif.io/event/2024/los-angeles/) |     |     |
 | OR 2024 | 2024.06.03-06 | Gothenburg, Sweden | Open Repositories [https://or2024.openrepositories.org/](https://or2024.openrepositories.org/) |     | ARK tutorial accepted |
-| WAC 2024 | 2024.04.24-26 | Paris, FR | [Web Archiving Conference 2024](https://netpreserve.org/ga2024/) | Sept 24 | ARK tutorial not accepted |
+| WAC 2024 | 2024.04.24-26 | Paris, FR | [Web Archiving Conference 2024](https://netpreserve.org/ga2024/) | Sept 24 | ARK overview accepted |
 | Archiving 2024 | 2024.04.9-12 | Washington, DC | [Archiving Conference 2024](https://www.imaging.org/IST/IST/Conferences/Archiving/Archiving2024/Archiving2024_Home.aspx) |     |     |
 | EDDI 2023 | 2023.11.27-30 | Ljubljana, Slovenia | [European DDI Users Conference](https://events.geant.org/event/1457/)  <br>in person with online participation | Sept 4 | ARK tutorial accepted  <br>scheduled Nov 27, remote |
 | NDSA DigiPres 2023 | 2023.11.15-16 | St. Louis. Missouri | [National Digital Stewardship Alliance call](https://ndsa.org/conference/digital-preservation-2023/cfp/)  <br>60 minute tutorial | by May 1 | ARK tutorial accepted  <br>scheduled Nov 15, onsite |
