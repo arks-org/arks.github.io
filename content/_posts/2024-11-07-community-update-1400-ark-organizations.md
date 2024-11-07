@@ -43,7 +43,7 @@ implementation, developers at The Frick Collection have created the
 [arklet-Frick](https://github.com/squidgetx/arklet-frick/tree/master) tool. 
 It adds improved security and bugfixes, as well as bulk operations, suffix passthrough, 
 shoulder rules, extensive metadata, endpoints for `?info` and `?json`, and more. See the
-[about] pages for more information on these concepts.
+[about](../_pages/about/) pages for more information on these concepts.
 
 As always we welcome volunteers for our [working groups](../_pages/community-groups/): 
 Outreach, Technical, and NAAN Curation. If you wish to volunteer, please express your interest
