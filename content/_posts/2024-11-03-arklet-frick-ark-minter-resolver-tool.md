@@ -1,14 +1,14 @@
 ---
 title: "Arklet-frick: bringing ARKs from need to implementation at the Frick Collection"
-redirect_from: /blog/2024-11-03-arklet-frick-ark-minter-resolver-tool/
+redirect_from: /blog/2024-11-11-arklet-frick-ark-minter-resolver-tool/
 pid: 551
 authors:
   - jack-omalley
-date: 2024-10-20
+date: 2024-11-10
 published: true
 ---
 
-Arklet-frick is from the Frick collection for minting and resolving ARKs.
+Arklet-frick is a tool created by the Frick collection for minting and resolving ARKs.
 
 <!--more-->
 
