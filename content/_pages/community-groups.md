@@ -18,13 +18,13 @@ join a working group by contacting one of its current members or writing to info
 
 ## Outreach Group
 
-### Purpose
+#### Purpose
 
 The ARKA Outreach Working Group oversees development of the ARK Alliance community, as well as the promotion of awareness, understanding, and adoption of ARKs, the only major persistent identifier scheme that is open, decentralized, non-siloed, and non-paywalled.
 There is an [ARK Alliance Outreach Working Group wiki](https://github.com/arks-org/arks.github.io/wiki/ARKA-Outreach-WG-wiki) 
 for its supporting documents.
 
-### Objectives
+#### Objectives
 
 1.  Develop strategies for gathering requirements, priorities, and models for shared
     community and infrastructure management. Examples include ARK community survey draft
@@ -39,7 +39,7 @@ for its supporting documents.
 8.  Develop training materials and videos.
 9.  Oversee the information used to support ARKA working groups (currently Confluence wiki).
 
-### Deliverables
+#### Deliverables
 
 *   public website maintenance and published blog posts
 *   newsletter and wikipedia page (ongoing)
@@ -53,19 +53,19 @@ for its supporting documents.
 *   ARKA representation on NDSA and IIIF working groups
 *   move wiki and wordpress site to github pages
 
-### Resources
+#### Resources
 
 *   [Notes from ARK "Experts" meetings in 2018](https://wiki.duraspace.org/pages/viewpage.action?pageId=112525432), with discussions of surveys, ARK spec changes, counting ARKs, sustainability, etc
     *   [Latest draft survey](https://docs.google.com/document/d/1lzJEvMjj3_OCm8KKtQ5_aJHra2RSzbsx_ZH2C2Ma34g/edit)
 *   [Technical WG](#Outreach-Group)
 *   [General WG features](https://github.com/arks-org/arks.github.io/wiki/WG-Background) common across ARKA working groups
 
-### ARK Alliance Outreach Working Group Members
+#### ARK Alliance Outreach Working Group Members
 
 *   Bertrand Caron, BnF (National Library of France)
 *   Carlos Authier, National Scientific and Technical Research Council, Argentina
 *   Donny Winston, Polyneme LLC
-*   Jack OMalley, Frick Collection
+*   Jack OMalley, [ORCID 0009-0002-1801-6265](https://orcid.org/0009-0002-1801-6265)
 *   John Kunze, chair, Drexel University Metadata Research Center
 *   Julien Antoine Raemy, Data and Service Center for the Humanities (DaSCH)
 *   Lesley Frew, Old Dominion University
@@ -77,13 +77,13 @@ for its supporting documents.
 
 ## Technical Group
 
-### Purpose
+#### Purpose
 
 The ARKA Technical Working Group oversees development and maintenance of specifications, software, and servers that support infrastructure for the ARK Alliance community. Examples include ARK standardization, code for counting ARKs, and global resolver replication.
 There is an [ARK Alliance Technical Working Group wiki](https://github.com/arks-org/arks.github.io/wiki/ARKA-Technical-WG-wiki) 
 for its supporting documents.
 
-### Objectives
+#### Objectives
 
 1.  Standardization. Work with standards bodies (IETF, NISO, W3C, etc) to adopt the ARK spec.
 2.  Design and review '?info' inflection for returning human- and machine-readable metadata.
@@ -92,7 +92,7 @@ for its supporting documents.
 5.  Support the Outreach WG in a liaison with the IIIF community.
 6.  Work with standards bodies (IETF, NISO, W3C, etc) to adopt the ARK spec.
 
-### Deliverables
+#### Deliverables
 
 *   A declarative schema (e.g. JSON Schema) for NAAN entry record, for validation.
 *   schema definition
@@ -103,7 +103,7 @@ for its supporting documents.
 *   Investigate moving arks.org from a Wordpress site to a github pages site
 *   Move lyrasis confluence wiki content to github.
 
-### Resources
+#### Resources
 
 *   2008 ARK spec: [http://n2t.net/e/arkspec.txt](https://n2t.net/e/arkspec.txt)
 *   2022 ARK spec: [https://datatracker.ietf.org/doc/html/draft-kunze-ark-34](https://datatracker.ietf.org/doc/html/draft-kunze-ark-34)
@@ -114,7 +114,7 @@ for its supporting documents.
 *   [General WG features](https://github.com/arks-org/arks.github.io/wiki/WG-Background) common across ARKA working groups
 *   Persistence Statements: Describing Digital Stickiness:  [https://doi.org/10.5334/dsj-2017-039](https://doi.org/10.5334/dsj-2017-039)
 
-### ARK Alliance Technical Working Group Members
+#### ARK Alliance Technical Working Group Members
 
 *   Emmanuelle Bermes, École des Chartes
 *   Bertrand Caron, BnF
@@ -137,7 +137,7 @@ The ARKA NAAN Registry Working Group oversees the registry of institutions that 
 There is an [ARK Alliance NAAN Working Group wiki](https://github.com/arks-org/arks.github.io/wiki/ARKA-NAAN-WG-wiki) 
 for its supporting documents (this wiki is unfortunately not open due to PII concerns).
 
-### Objectives
+#### Objectives
 
 1.  NAA maintenance. Create and refine processes that permit each [NAAN request](https://goo.gl/forms/bmckLSPpbzpZ5dix1)
     and Shoulder request to receive a response within two business days.
@@ -148,7 +148,7 @@ for its supporting documents (this wiki is unfortunately not open due to PII con
     information to the N2T resolver. Work with the Technical WG to ensure stable, error-free harvesting
     of registry information needed for continuous and reliable resolution.
 
-### Deliverables
+#### Deliverables
 
 *   Create a policy document
 *   Work with CDL to implement form processing changes (agreed upon in March 2022)
@@ -156,7 +156,7 @@ for its supporting documents (this wiki is unfortunately not open due to PII con
 *   Convert to github projects
 *   Monthly meetings facilitated by the current primary or secondary curator (rotating duties)
 
-### Resources
+#### Resources
 
 *   A private github repository for maintaining the primary registry (private because it contains personally identifiable contact information)
 *   A public repository to host the official public registry and derivative files
@@ -166,7 +166,7 @@ for its supporting documents (this wiki is unfortunately not open due to PII con
 *   The [Advisory Group](#Advisory-Group) and the [Technical WG](#Technical-Group)
 *   [General WG features](https://github.com/arks-org/arks.github.io/wiki/WG-Background) common across ARKA working groups
 
-### ARK Alliance NAAN Working Group Members
+#### ARK Alliance NAAN Working Group Members
 
 *   Aurélien Conraux, co-chair, French Ministry of Culture
 *   Bertrand Caron BnF (National Library of France)
@@ -193,7 +193,7 @@ practices, and sustainability. There is an
 [ARK Alliance Advisory Working Group wiki](https://github.com/arks-org/arks.github.io/wiki/ARKA-Advisory-WG-wiki) 
 for its supporting documents.
 
-### ARK Alliance Advisory Group members:
+#### ARK Alliance Advisory Group members:
 
 *   John Chodacki, California Digital Library (CDL)
 *   Ricc Ferrante, Smithsonian Institution Libraries and Archives
