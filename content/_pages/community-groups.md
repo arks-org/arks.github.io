@@ -168,13 +168,14 @@ for its supporting documents (this wiki is unfortunately not open due to PII con
 
 #### ARK Alliance NAAN Working Group Members
 
+*   Adam Buttrick, California Digital Library
 *   Aurélien Conraux, co-chair, French Ministry of Culture
-*   Bertrand Caron BnF (National Library of France)
-*   Chloé Pochon French National Institute of Art History
+*   Bertrand Caron, BnF (National Library of France)
+*   Chloé Pochon, French National Institute of Art History
 *   Brian McBride, chair, University of Utah
 *   Jennifer Marill, US National Library of Medicine (retired)
 *   John Kunze, Drexel University Metadata Research Center
-*   John Chodacki, CDL
+*   Mark Shelstad, Colorado State University
 *   Romuald Verrier, French Ministry of Education
 *   Sefakor Ankora, WACREN
 
