@@ -80,6 +80,7 @@ We continue to receive [expressions of interest][interest in helping with the
 work of the ARK Alliance] and have attracted support from the following
 {{ site.num_support_orgs }} institutions on 4 continents:
 
+-   Africa PID Alliance
 -   Australian National Data Service
 -   Bibliothèque et Archives nationales du Québec
 -   Bibliothèque nationale de France
