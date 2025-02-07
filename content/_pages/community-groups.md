@@ -200,7 +200,7 @@ for its supporting documents.
 *   Ricc Ferrante, Smithsonian Institution Libraries and Archives
 *   Emmanuel Jaslier, BnF (National Library of France), alternate Bertrand Caron
 *   Martin Kalfatovic, IIIF Consortium
-*   John Kunze, Drexel University Metadata Research Center
+*   John Kunze, Drexel University Metadata Research Center, creator of the ARK identifier scheme and infrastructure 2001-2024
 *   Brian McBride, University of Utah
 *   Mark Phillips, chair, University of North Texas Libraries
 *   Kate Wittenberg, Portico
