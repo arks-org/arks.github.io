@@ -62,8 +62,9 @@ for its supporting documents.
 
 #### ARK Alliance Outreach Working Group Members
 
-*   Bertrand Caron, BnF (National Library of France)
 *   Carlos Authier, National Scientific and Technical Research Council, Argentina
+*   Cécile Queffélec, BnF (National Library of France)
+*   Chloé Pochon, French National Institute of Art History
 *   Donny Winston, Polyneme LLC
 *   Jack OMalley, [ORCID 0009-0002-1801-6265](https://orcid.org/0009-0002-1801-6265)
 *   John Kunze, chair, Drexel University Metadata Research Center
@@ -170,9 +171,8 @@ for its supporting documents (this wiki is unfortunately not open due to PII con
 
 *   Adam Buttrick, California Digital Library
 *   Aurélien Conraux, co-chair, French Ministry of Culture
-*   Bertrand Caron, BnF (National Library of France)
-*   Chloé Pochon, French National Institute of Art History
 *   Brian McBride, chair, University of Utah
+*   Gabriel Silveira Marques, Brazilian Institute of Information in Science and Technology (IBICT.br)
 *   Jennifer Marill, US National Library of Medicine (retired)
 *   John Kunze, Drexel University Metadata Research Center
 *   Mark Shelstad, Colorado State University
