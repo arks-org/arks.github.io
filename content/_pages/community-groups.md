@@ -43,7 +43,7 @@ for its supporting documents.
 
 *   public website maintenance and published blog posts
 *   newsletter and wikipedia page (ongoing)
-*   social media (such as Mastodon, Twitter, Discord, Zulip, Youtube)
+*   social media (such as Mastodon, Bluesky, Discord, Youtube)
 *   action plan to represent ARK-identified resources and Name Assigning Authorities in Wikidata
 *   maintain material (on arks.org) associated with getting started with ARKs
 *   plan for community to transition from v18 to the v37 specification
