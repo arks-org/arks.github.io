@@ -14,17 +14,6 @@
 						<use xlink:href="#svg-github"></use>
 					</svg>
 				</a>
-				{% when 'twitter.com' %}
-				<a href="{{ url }}" class="link-dark p-3">
-					<svg aria-hidden="true"
-					     role="img"
-					     xmlns="http://www.w3.org/2000/svg"
-					     data-fa-i2svg=""
-						 class="ark-alliance__social--link svg-inline--fa fa-fw fa-xl fa-twitter-x"
-						 viewBox="0 0 512 512">
-						<use xlink:href="#svg-twitter-x"></use>
-					</svg>
-				</a>
 				{% when 'fosstodon.org' %}
 				<a href="{{ url }}" class="link-primary p-3">
 					<svg aria-hidden="true"
@@ -34,6 +23,17 @@
 						 class="ark-alliance__social--link svg-inline--fa fa-fw fa-xl fa-fosstodon"
 						 viewBox="0 0 448 512">
 						<use xlink:href="#svg-fosstodon"></use>
+					</svg>
+				</a>
+				{% when 'bsky.app' %}
+				<a href="{{ url }}" class="link-primary p-3">
+					<svg aria-hidden="true"
+					     role="img"
+					     xmlns="http://www.w3.org/2000/svg"
+					     data-fa-i2svg=""
+					     class="ark-alliance__social--link svg-inline--fa fa-fw fa-xl fa-bluesky"
+					     viewBox="0 0 512 512">
+						<use xlink:href="#svg-bluesky"></use>
 					</svg>
 				</a>
 				{% when 'youtube.com' %}
