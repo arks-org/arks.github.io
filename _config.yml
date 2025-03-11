@@ -34,16 +34,16 @@ contact:
 # SEO SPECIFIC
 # see https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 ##############
-twitter:
-  username: arks_org
-  card: summary
+#twitter:
+#  username: arks_org
+#  card: summary
 
 social:
   name: ARK Alliance
   links:
     - https://github.com/arks-org
-    - https://twitter.com/arks_org
     - https://fosstodon.org/@arks_org
+    - https://bsky.app/profile/arks-org.bsky.social
     - https://youtube.com/@arks_org
 
 # webmaster_verifications:
