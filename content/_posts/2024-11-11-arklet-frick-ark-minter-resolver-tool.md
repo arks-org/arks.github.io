@@ -6,6 +6,7 @@ authors:
   - jack-omalley
 date: 2024-11-10
 published: true
+image: "../../assets/images/posts/Frick_Collection_wkpdia.jpg"
 ---
 
 Arklet-frick is a tool created by the Frick collection for minting and resolving ARKs.
