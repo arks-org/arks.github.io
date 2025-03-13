@@ -6,6 +6,7 @@ authors:
   - ark-alliance
 date: 2024-11-06
 published: true
+image: "../assets/images/posts/arka_com_update_nov2024.png"
 ---
 
 The ARK Alliance surpasses 1400 ARK organizations and reveals a

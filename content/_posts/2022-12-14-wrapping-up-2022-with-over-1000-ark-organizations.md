@@ -6,6 +6,7 @@ authors:
   - ark-alliance
 date: 2022-12-14T02:31:19+00:00
 published: true
+image: "../assets/images/posts/2022-12-14-wrapping-up-2022-with-over-1000-ark-organizations/image-2048x845.png"
 ---
 
 In 2022, the ARK Alliance achieved significant milestones, surpassing 1000
