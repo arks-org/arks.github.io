@@ -6,6 +6,7 @@ authors:
   - ark-alliance
 date: 2023-12-19T00:00:00+00:00
 published: true
+image: "../assets/images/posts/2023-12-19-wrapping-up-2023-with-1200-ark-organizations/map_dec_2023.png"
 ---
 
 In 2023, the ARK Alliance achieved significant milestones, surpassing 1200

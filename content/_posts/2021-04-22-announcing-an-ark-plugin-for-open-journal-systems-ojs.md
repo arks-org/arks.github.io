@@ -6,6 +6,7 @@ authors:
   - yasiel-perez
 date: 2021-04-22T02:49:22+00:00
 published: true
+image: "../assets/images/posts/2021-04-22-announcing-an-ark-plugin-for-open-journal-systems-ojs/innosoft.png"
 ---
 
 An open source plugin enables ARK usage in Open Journal Systems (OJS),

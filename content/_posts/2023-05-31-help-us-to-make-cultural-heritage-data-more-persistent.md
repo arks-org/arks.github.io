@@ -7,6 +7,7 @@ authors:
   - valentine-charles
 date: 2023-05-31T14:01:15+00:00
 published: true
+image: "../assets/images/posts/2023-05-31-help-us-to-make-cultural-heritage-data-more-persistent/persistent_identifiers_survey_lead.jpg"
 ---
 
 Europeana Foundation seeks input through a survey to enhance persistent

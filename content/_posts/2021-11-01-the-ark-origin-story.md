@@ -6,6 +6,7 @@ authors:
   - ark-alliance
 date: 2021-11-01T20:05:18+00:00
 published: true
+image: "../assets/images/posts/2021-11-01-the-ark-origin-story/image-4.png"
 ---
 
 The ARK scheme originated in 2001 as a response to issues with existing PID

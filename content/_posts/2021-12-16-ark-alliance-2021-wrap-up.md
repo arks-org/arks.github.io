@@ -6,6 +6,7 @@ authors:
   - ark-alliance
 date: 2021-12-16T03:02:42+00:00
 published: true
+image: "../assets/images/posts/2021-12-16-ark-alliance-2021-wrap-up/image-1.png"
 ---
 
 In 2021, the ARK community expanded with 187 new institutions, including the

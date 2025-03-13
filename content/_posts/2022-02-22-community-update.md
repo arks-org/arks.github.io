@@ -6,6 +6,7 @@ authors:
   - aurelien-conraux
 date: 2022-02-22T04:47:00+00:00
 published: true
+image: "../assets/images/posts/2022-02-22-community-update/image-1.png"
 ---
 
 In February 2022, the ARK community reached 900 registered organizations,
