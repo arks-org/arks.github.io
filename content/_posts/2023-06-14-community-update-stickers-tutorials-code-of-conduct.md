@@ -6,6 +6,7 @@ authors:
   - ark-alliance
 date: 2023-06-14T02:30:11+00:00
 published: true
+image: "../assets/images/posts/2023-06-14-community-update-2023-06-13-stickers-tutorials-code-of-conduct/arka-vinyl-sticker.png"
 ---
 
 ARK Alliance's thriving community adds 74 new organizations, launches vinyl

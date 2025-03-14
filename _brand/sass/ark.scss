@@ -35,6 +35,12 @@
     }
   }
 
+  .post-image {
+    height: 200px;
+    width: auto;   /* Maintain aspect ratio */
+    object-fit: cover; /* Optionally cover container w.o. stretching */
+  }
+
   .text-brand {
     color: #b8860b;
   }

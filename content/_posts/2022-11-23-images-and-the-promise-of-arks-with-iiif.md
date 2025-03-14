@@ -8,6 +8,7 @@ authors:
   - john-kunze
 date: 2022-11-23T20:19:11+00:00
 published: true
+image: "../assets/images/posts/2022-11-23-images-and-the-promise-of-arks-with-iiif/ark_iiif.jpg"
 ---
 
 The integration of ARKs with the International Image Interoperability

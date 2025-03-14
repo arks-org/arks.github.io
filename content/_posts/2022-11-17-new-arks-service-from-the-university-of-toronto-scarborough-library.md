@@ -6,6 +6,7 @@ authors:
   - kirsta-stapelfeldt
 date: 2022-11-17T23:54:38+00:00
 published: true
+image: "../assets/images/posts/2022-11-17-new-arks-service-from-the-university-of-toronto-scarborough-library/lake_harbour.png"
 ---
 
 The University of Toronto Scarborough Library's "ARKs-Service" is a
