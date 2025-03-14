@@ -6,6 +6,7 @@ authors:
   - ark-alliance
 date: 2021-01-04T23:08:29+00:00
 published: true
+image: "../assets/images/posts/2021-01-04-internet-of-samples-to-use-arks-and-igsns-with-physical-objects/iron_blade_roman.png"
 ---
 
 NSF-funded 'Internet of Samples' project integrates scientific samples into a

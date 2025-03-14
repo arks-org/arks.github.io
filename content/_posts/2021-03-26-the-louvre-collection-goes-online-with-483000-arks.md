@@ -6,6 +6,7 @@ authors:
   - ark-alliance
 date: 2021-03-26T17:21:49+00:00
 published: true
+image: "../assets/images/posts/2021-03-26-the-louvre-collection-goes-online-with-483000-arks/louvre_objects.png"
 ---
 
 The Louvre, the world's largest art museum, has made its entire collection

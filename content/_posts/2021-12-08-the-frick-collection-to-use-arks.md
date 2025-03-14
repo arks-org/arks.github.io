@@ -6,6 +6,7 @@ authors:
   - luciano-johnson
 date: 2021-12-08T21:49:56+00:00
 published: true
+image: "../assets/images/posts/2021-12-08-the-frick-collection-to-use-arks/Frick-Art-Reference-Library-Reading-Room-Photographer-George-Koelle-2018.jpg"
 ---
 
 The Frick Collection has chosen ARK persistent identifiers to enhance

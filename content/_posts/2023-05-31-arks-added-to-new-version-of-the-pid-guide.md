@@ -6,6 +6,7 @@ authors:
   - remco-van-veenendaal
 date: 2023-05-31T13:41:11+00:00
 published: true
+image: "../assets/images/posts/2023-05-31-arks-added-to-new-version-of-the-pid-guide/pidwijzer.png"
 ---
 
 The PID Guide, an interactive resource by the National Archives of the

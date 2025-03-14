@@ -6,6 +6,7 @@ authors:
   - julien-raemy
 date: 2021-01-20T23:11:21+00:00
 published: true
+image: "../assets/images/posts/2021-01-20-new-service-arketype/AskMeAnything-2048x862.png"
 ---
 
 ARKetype, a new ARK allocation service by HEG-GE and SIB, will be introduced

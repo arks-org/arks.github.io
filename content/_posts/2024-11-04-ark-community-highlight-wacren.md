@@ -10,6 +10,7 @@ authors:
   - keziah-okyere
 date: 2024-11-04
 published: true
+image: "../assets/images/posts/wacren_images.png"
 ---
 
 The WACREN network describes their use of ARKs and their new ARKs Management Dashboard.

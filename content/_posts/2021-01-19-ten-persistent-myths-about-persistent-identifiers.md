@@ -6,6 +6,7 @@ authors:
   - john-kunze
 date: 2021-01-19T21:22:42+00:00
 published: true
+image: "../assets/images/posts/2021-01-19-ten-persistent-myths-about-persistent-identifiers/nessy.jpg"
 ---
 
 Persistent identifier (PID) myths clarified: PIDs aren't access guarantees;
