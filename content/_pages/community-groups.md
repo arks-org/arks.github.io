@@ -71,7 +71,6 @@ for its supporting documents.
 *   Julien Antoine Raemy, Data and Service Center for the Humanities (DaSCH)
 *   Lesley Frew, Old Dominion University
 *   Omo Oaiya, WACREN
-*   Riccardo Ferrante, Smithsonian Institution Libraries and Archives
 *   Sergio Santamarina, University of José C Paz, Argentina
 
 ---
@@ -172,6 +171,7 @@ for its supporting documents (this wiki is unfortunately not open due to PII con
 *   Adam Buttrick, California Digital Library
 *   Aurélien Conraux, co-chair, French Ministry of Culture
 *   Brian McBride, chair, University of Utah
+*   Donald Doe Seanedzu, WACREN
 *   Gabriel Silveira Marques, Brazilian Institute of Information in Science and Technology (IBICT.br)
 *   Jennifer Marill, US National Library of Medicine (retired)
 *   John Kunze, Drexel University Metadata Research Center
@@ -197,7 +197,6 @@ for its supporting documents.
 #### ARK Alliance Advisory Group members:
 
 *   John Chodacki, California Digital Library (CDL)
-*   Ricc Ferrante, Smithsonian Institution Libraries and Archives
 *   Emmanuel Jaslier, BnF (National Library of France), alternate Bertrand Caron
 *   Martin Kalfatovic, IIIF Consortium
 *   John Kunze, Drexel University Metadata Research Center, creator of the ARK identifier scheme and infrastructure 2001-2024
