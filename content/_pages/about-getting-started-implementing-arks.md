@@ -1,5 +1,5 @@
 ---
-title: "Getting started: what to plan for as you implement ARKs"
+title: "Getting started"
 permalink: /about/getting-started-implementing-arks/
 pid: 816
 date: 2021-01-23T22:29:57+00:00
@@ -13,12 +13,17 @@ features, selecting or building an ARK system, and more.
 
 <!--more-->
 
-To start using ARKs you need:
+Become familiar with
 
--   A Name Assigning Authority Number (NAAN) to indicate your organization.
--   Decide what ARK features you need
--   Choose your local ARK resolver system, usually your website modified
-    just enough to respond correctly to URLs containing "ark:<your_NAAN>"
+- the Archival Resource Key (ARK) summary on the https://arks.org homepage and
+- this [video overview of ARKs](https://youtu.be/-RkMGFCGRic) (with slides, 30 minutes).
+
+When you are ready to start using ARKs you will need to
+
+-   request a Name Assigning Authority Number (NAAN) to indicate your organization,
+-   decide what ARK features you need, and
+-   choose your local ARK resolver system, usually your website modified
+    just enough to respond correctly to URLs containing "ark:<your_NAAN>".
 
 ## Get a Name Assigning Authority Number (NAAN)
 
