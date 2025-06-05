@@ -1,0 +1,393 @@
+---
+title: NAAN statistics
+permalink: /about/naan-stats/
+published: true
+---
+
+<style>
+.tooltip {
+  position: absolute;
+  text-align: center;
+  padding: 8px;
+  font-size: 13px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  border-radius: 4px;
+  pointer-events: none;
+}
+#tldGraph {
+  display: flex;
+  justify-content: center;
+}
+.arc path {
+  cursor: pointer;
+}
+</style>
+
+<script src="https://d3js.org/d3.v7.min.js" integrity="sha384-CjloA8y00+1SDAUkjs099PVfnY2KmDC2BZnws9kh8D/lX1s46w6EPhpXdqMfjK6i" crossorigin="anonymous"></script>
+
+A [Name Assigning Authority Number] (NAAN) must be registered with the Name-to-Thing (N2T) ARK registry and
+listed in the public [NAAN registry], which also lists the official resolver for
+each NAAN. Any stable memory organization may obtain a NAAN at no cost and
+begin assigning ARKs by filling out the [NAAN request form].
+
+The latest <span id="number_latest"></span> registered NAANs include:
+<ul id="naan_latest"></ul>
+
+Based on this registry with <strong id="naan_count">1500</strong> NAANs some statistics can be drawn, as shown below.
+
+<br>
+## Registered NAANs per year
+The following chart shows the number of newly registered NAANs per year.
+<div id="yearGraph"></div>
+
+<div style="margin-bottom: 1em;">
+  <button id="resetYearGraph" style="display:none;">Reset Year Graph</button>
+  <span id="yearGraphTitle" style="margin-left: 1em; font-weight: bold;"></span>
+</div>
+
+## Top TLD's of NAAN redirects
+The following chart visualizes the distribution of top-level domains (TLDs) used in the resolver URLs of all NAAN registry entries.
+
+<div id="tldGraph"></div>
+<br>
+Click on a TLD slice to update the registered NAANs per year graph for that TLD.
+
+<script>
+
+const naan_registry_url='https://legacy-n2t.n2t.net/e/pub/naan_registry.txt';
+const maxTldShow=40;
+const maxLatest=20;
+
+function parseANVL(text) {
+    const records = text.split(/\n\s*\n/); // Split by blank lines
+    const parsed = [];
+
+    for (const record of records) {
+        const lines = record.split('\n');
+        const entry = {};
+
+        for (const line of lines) {
+            const trimmedLine = line.trim();
+            if (trimmedLine.startsWith('#') || trimmedLine === '') continue; // Skip comments and empty lines
+
+            const [key, ...rest] = trimmedLine.split(':');
+            if (!key || rest.length === 0) continue;
+
+            const value = rest.join(':').trim();
+            const normalizedKey = key.trim().toLowerCase();
+
+            // Handle multiple 'where' entries
+            if (normalizedKey === 'where') {
+                if (!entry.where) entry.where = [];
+                entry.where.push(value);
+            } else {
+                entry[normalizedKey] = value;
+            }
+        }
+
+        if (Object.keys(entry).length > 0) {
+            parsed.push(entry);
+        }
+    }
+
+    return parsed;
+}
+
+function getLastEntriesByDate(data, count) {
+    // Filter entries with a valid 'when' field and a number in the 'what' field
+    const filtered = data.filter(entry =>
+        entry.when && /\d/.test(entry.what)
+    );
+
+    // Sort descending by 'when' (assumes year or ISO-like date string)
+    filtered.sort((a, b) => {
+        const dateA = new Date(a.when).getTime();
+        const dateB = new Date(b.when).getTime();
+        return dateB - dateA;
+    });
+
+    // Get the last `count` entries (most recent ones)
+    return filtered.slice(0, count);
+}
+
+function getYearCounts(data, tld) {
+    const yearCounts = {};
+
+    data.forEach(entry => {
+        if (entry.when && /^\d{4}/.test(entry.when) && entry.where) {
+            const matchesTLD = !tld || entry.where.some(url => {
+                try {
+                    const hostname = new URL(url).hostname;
+                    const parts = hostname.split('.');
+                    const entryTLD = parts[parts.length - 1].toLowerCase();
+                    return entryTLD === tld;
+                } catch (e) {
+                    return false;
+                }
+            });
+
+            if (matchesTLD) {
+                const year = entry.when.slice(0, 4);
+                yearCounts[year] = (yearCounts[year] || 0) + 1;
+            }
+        }
+    });
+
+    return yearCounts;
+}
+
+function yearGraph(data, tld = null) {
+    const container = document.getElementById("yearGraph");
+    const fullWidth = container.offsetWidth;
+    const margin = {
+        top: 25,
+        right: 25,
+        bottom: 75,
+        left: 75
+    };
+    const width = fullWidth - margin.left - margin.right;
+    const height = 400 - margin.top - margin.bottom;
+
+    const yearCounts = getYearCounts(data, tld);
+
+    const yearData = Object.entries(yearCounts)
+        .map(([year, count]) => ({
+            year: +year,
+            count
+        }))
+        .sort((a, b) => a.year - b.year);
+
+    const svg = d3.select("#yearGraph")
+        .append("svg")
+        .attr("width", "100%")
+        .attr("height", height + margin.top + margin.bottom)
+        .attr("viewBox", `0 0 ${fullWidth} ${height + margin.top + margin.bottom}`)
+        .attr("preserveAspectRatio", "xMidYMid meet")
+        .append("g")
+        .attr("transform", `translate(${margin.left},${margin.top})`);
+
+    // Tooltip
+    const tooltip = d3.select("body")
+        .append("div")
+        .attr("class", "tooltip")
+        .style("opacity", 0);
+
+    // Scales
+    const x = d3.scaleBand()
+        .domain(yearData.map(d => d.year))
+        .range([0, width])
+        .padding(0.1);
+
+    const y = d3.scaleLinear()
+        .domain([0, d3.max(yearData, d => d.count)])
+        .nice()
+        .range([height, 0]);
+
+    // Bars with animation
+    svg.selectAll("rect")
+        .data(yearData)
+        .enter()
+        .append("rect")
+        .attr("x", d => x(d.year))
+        .attr("width", x.bandwidth())
+        .attr("y", height)
+        .attr("height", 0)
+        .attr("fill", "#ab8716")
+        .on("mouseover", (event, d) => {
+            tooltip.transition().duration(200).style("opacity", 0.9);
+            tooltip.html(`<strong>${d.year}</strong><br>${d.count} new NAAN registrations`)
+                .style("left", `${event.pageX + 10}px`)
+                .style("top", `${event.pageY - 28}px`);
+        })
+        .on("mouseout", () => {
+            tooltip.transition().duration(300).style("opacity", 0);
+        })
+        .transition()
+        .duration(600)
+        .attr("y", d => y(d.count))
+        .attr("height", d => height - y(d.count));
+
+    // Axes
+    svg.append("g")
+        .attr("transform", `translate(0,${height})`)
+        .call(d3.axisBottom(x).tickFormat(d3.format("d")))
+        .selectAll("text")
+        .attr("transform", "rotate(-45)")
+        .style("text-anchor", "end");
+
+    svg.append("g")
+        .call(d3.axisLeft(y));
+
+    // Labels
+    svg.append("text")
+        .attr("x", width / 2)
+        .attr("y", height + 40)
+        .attr("text-anchor", "middle")
+        .text("Year");
+
+    svg.append("text")
+        .attr("transform", "rotate(-90)")
+        .attr("y", -40)
+        .attr("x", -height / 2)
+        .attr("text-anchor", "middle")
+        .text("Number of new NAANs");
+
+    // Update title and reset button
+    const title = document.getElementById("yearGraphTitle");
+    const resetBtn = document.getElementById("resetYearGraph");
+
+    if (tld) {
+        title.innerText = `Filtered by .${tld}`;
+        resetBtn.style.display = "inline-block";
+    } else {
+        title.innerText = "";
+        resetBtn.style.display = "none";
+    }
+}
+
+function getTldCounts(data) {
+    const tldCounts = {};
+
+    data.forEach(entry => {
+        if (!entry.where) return;
+
+        entry.where.forEach(url => {
+            try {
+                const hostname = new URL(url).hostname;
+                const parts = hostname.split('.');
+                const tld = parts[parts.length - 1].toLowerCase();
+
+                if (tld) {
+                    tldCounts[tld] = (tldCounts[tld] || 0) + 1;
+                }
+            } catch (e) {
+                // Invalid URL – skip
+            }
+        });
+    });
+
+    return tldCounts;
+}
+
+function tldGraph(data) {
+    const tldCounts = getTldCounts(data);
+
+    const total = Object.values(tldCounts).reduce((sum, val) => sum + val, 0);
+    const tldData = Object.entries(tldCounts)
+        .map(([tld, count]) => ({
+            tld,
+            count
+        }))
+        .sort((a, b) => b.count - a.count)
+        .slice(0, maxTldShow);
+
+    const width = 500;
+    const height = 500;
+    const radius = Math.min(width, height) / 2;
+
+    const svg = d3.select("#tldGraph")
+        .style("display", "flex")
+        .style("justify-content", "center")
+        .append("svg")
+        .attr("width", width)
+        .attr("height", height)
+        .append("g")
+        .attr("transform", `translate(${width / 2}, ${height / 2})`);
+
+    const color = d3.scaleOrdinal()
+        .domain(tldData.map(d => d.tld))
+        .range(d3.schemeTableau10);
+
+    const tooltip = d3.select("body")
+        .append("div")
+        .attr("class", "tooltip")
+        .style("opacity", 0);
+
+    const pie = d3.pie()
+        .value(d => d.count);
+
+    const arc = d3.arc()
+        .innerRadius(radius * 0.5)
+        .outerRadius(radius);
+
+    const arcs = svg.selectAll("arc")
+        .data(pie(tldData))
+        .enter()
+        .append("g")
+        .attr("class", "arc");
+
+    arcs.append("path")
+        .attr("d", arc)
+        .attr("fill", d => color(d.data.tld))
+        .style("cursor", "pointer") // 👈 Add pointer cursor
+        .on("mouseover", (event, d) => {
+            const percent = ((d.data.count / total) * 100).toFixed(2);
+            tooltip.transition().duration(200).style("opacity", 0.9);
+            tooltip.html(`<strong>.${d.data.tld}</strong><br>${d.data.count} NAAN registrations<br>${percent}%`)
+                .style("left", `${event.pageX + 10}px`)
+                .style("top", `${event.pageY - 28}px`);
+        })
+        .on("mouseout", () => {
+            tooltip.transition().duration(300).style("opacity", 0);
+        });
+
+    arcs.append("text")
+        .attr("transform", d => `translate(${arc.centroid(d)})`)
+        .attr("text-anchor", "middle")
+        .attr("dy", "0.35em")
+        .style("font-size", "11px")
+        .style("fill", "#fff")
+        .text(d => {
+            const percent = (d.data.count / total) * 100;
+            return percent > 3 ? `${percent.toFixed(1)}%` : '';
+        });
+		
+	arcs.on("click", (event, d) => {
+		d3.select("#yearGraph").selectAll("*").remove();
+		yearGraph(data, d.data.tld);
+		document.getElementById('registered-naans-per-year').scrollIntoView({ behavior: 'smooth' });
+	});		
+}
+
+let data;
+
+fetch(naan_registry_url)
+    .then(response => response.text())
+    .then(text => {
+        data = parseANVL(text);
+
+        const countWithUrl = data.filter(entry => 'where' in entry).length;
+        document.getElementById("naan_count").innerHTML = countWithUrl.toLocaleString();
+
+        const latest = getLastEntriesByDate(data, maxLatest);
+
+		document.getElementById("number_latest").innerHTML = maxLatest.toLocaleString();
+		
+        const ul = document.getElementById("naan_latest");
+
+        latest.forEach(entry => {
+            const who = entry.who || "";
+            const what = entry.what || "";
+            const when = entry.when || "";
+
+            const li = document.createElement("li");
+            li.innerHTML = `${when} - ${who} (<a href="https://arks.org/ark:${what}">${what}</a>)`;
+            ul.appendChild(li);
+        });
+
+        tldGraph(data);
+        yearGraph(data);
+
+        document.getElementById("resetYearGraph").addEventListener("click", () => {
+            d3.select("#yearGraph").selectAll("*").remove();
+            yearGraph(data); // back to unfiltered
+        });
+
+    })
+    .catch(error => console.error('Error fetching the NAAN registry:', error));
+</script>
+
+[Name Assigning Authority Number]: ark-naans-and-systems.md
+[NAAN request form]: https://docs.google.com/forms/d/e/1FAIpQLSfd1CX6idwLB47g8OGKUG654auV8IU8yI7DAs61cXGOoFDn0g/viewform?c=0&w=1
+[NAAN registry]: https://legacy-n2t.n2t.net/e/pub/naan_registry.txt
