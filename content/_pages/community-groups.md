@@ -68,6 +68,7 @@ for its supporting documents.
 *   Donny Winston, Polyneme LLC
 *   Jack OMalley, [ORCID 0009-0002-1801-6265](https://orcid.org/0009-0002-1801-6265)
 *   John Kunze, chair, Drexel University Metadata Research Center
+*   Josefrank Pernalete, Editorial Mar Caribe
 *   Julien Antoine Raemy, Data and Service Center for the Humanities (DaSCH)
 *   Lesley Frew, Old Dominion University
 *   Omo Oaiya, WACREN
@@ -127,7 +128,8 @@ for its supporting documents.
 *   Curtis Mirci, University of Utah
 *   Mark Phillips, University of North Texas
 *   Dave Vieglais, co-chair, Natural History Museum and Biodiversity Research Center, University of Kansas
-*   Donny Winston Polyneme LLC
+*   Paul Walk, Antleaf Ltd
+*   Donny Winston, Polyneme LLC
 
 ---
 
