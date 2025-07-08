@@ -12,5 +12,5 @@ published: true
 
 The NAAN Request form is currently offline for maintenance an updates.
 
-Normal service is expected to resume at 2027-07-09 22:30 UTC.
+Normal service is expected to resume at 2025-07-09 22:30 UTC.
 
