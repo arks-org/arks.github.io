@@ -148,7 +148,7 @@ work of the ARK Alliance] and have attracted support from the following
 [Contact us]: contact-us.md
 [working group]: community-groups.md
 [{{ site.num_ark_orgs }} organizations]: https://n2t.net/e/pub/naan_table.html
-[online request form]: https://goo.gl/forms/bmckLSPpbzpZ5dix1
+[online request form]: {{ site.naan_form_url }}
 [online news form]: https://docs.google.com/forms/d/1e7GvJYvsMd7Qm_LdgkVaUB96dVzeou85f0VbhA4BsSs
 [chart of growth of ARK-assigning organizations since 2001]: https://n2t.net/e/pub/naan_growth.png
 [FamilySearch]: https://familysearch.org/
