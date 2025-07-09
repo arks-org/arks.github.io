@@ -101,7 +101,7 @@ To get your software listed please [let us know] about it.
 -   *Using Archival Resource Keys (ARKs) for Persistent Identification*,
     2008-06-05, Mark Phillips. [slides][16]
 
-[NAAN form]: https://goo.gl/forms/bmckLSPpbzpZ5dix1
+[NAAN form]: {{ site.naan_form_url }}
 [ARK Identifier Scheme (v.39)]: ../assets/documents/2024/ark_spec_39.pdf
 [current and evolving specifications]: specs.md
 [PDF]: https://n2t.net/e/Towards_Electronic_Persistence_Using_ARK_Identifiers.pdf
