@@ -64,6 +64,6 @@ joining one of its [working groups].
 [{{ site.num_ark_orgs }} organizations]: community.md
 [1]: ../assets/images/pages/index/ark_things.png
 [suffix passthrough]: about-ark-naans-and-systems.md#n2t-feature-suffix-passthrough
-[this request form]: maintenance.md
+[this request form]: {{ site.naan_form_url }}
 [working groups]: community-groups.md
 [2]: ../assets/images/pages/index/cropped-ARKsInTheOpen-1536x957.jpg
