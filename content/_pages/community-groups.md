@@ -68,6 +68,7 @@ for its supporting documents.
 *   Donny Winston, Polyneme LLC
 *   Jack OMalley, [ORCID 0009-0002-1801-6265](https://orcid.org/0009-0002-1801-6265)
 *   John Kunze, chair, Drexel University Metadata Research Center
+*   Josefrank Pernalete, Editorial Mar Caribe
 *   Julien Antoine Raemy, Data and Service Center for the Humanities (DaSCH)
 *   Lesley Frew, Old Dominion University
 *   Omo Oaiya, WACREN
@@ -127,7 +128,8 @@ for its supporting documents.
 *   Curtis Mirci, University of Utah
 *   Mark Phillips, University of North Texas
 *   Dave Vieglais, co-chair, Natural History Museum and Biodiversity Research Center, University of Kansas
-*   Donny Winston Polyneme LLC
+*   Paul Walk, Antleaf Ltd
+*   Donny Winston, Polyneme LLC
 
 ---
 
@@ -139,7 +141,7 @@ for its supporting documents (this wiki is unfortunately not open due to PII con
 
 #### Objectives
 
-1.  NAA maintenance. Create and refine processes that permit each [NAAN request](https://goo.gl/forms/bmckLSPpbzpZ5dix1)
+1.  NAA maintenance. Create and refine processes that permit each [NAAN request]({{ site.naan_form_url }})
     and Shoulder request to receive a response within two business days.
 3.  Policy. In consultation with the Advisory Group, develop
     [policies](https://github.com/CDLUC3/naan_reg_priv/blob/main/Policy.md) for deciding which requests are
@@ -160,7 +162,7 @@ for its supporting documents (this wiki is unfortunately not open due to PII con
 
 *   A private github repository for maintaining the primary registry (private because it contains personally identifiable contact information)
 *   A public repository to host the official public registry and derivative files
-*   The [NAAN Request form](https://goo.gl/forms/bmckLSPpbzpZ5dix1)
+*   The [NAAN Request form]({{ site.naan_form_url }})
 *   The [Shoulder Request (on shared NAANs) form](https://docs.google.com/forms/d/10J2VxsaeQG-IpkqZ6wpqAKqt8hYnMSf4bxdL8ktI-to)
 *   The N2T resolver: [n2t.net](http://n2t.net/)
 *   The [Advisory Group](#Advisory-Group) and the [Technical WG](#Technical-Group)

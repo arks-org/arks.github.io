@@ -99,7 +99,7 @@ Read more about:
 -   [Service providers]
 
 
-[NAAN request form]: https://n2t.net/e/naan_request
+[NAAN request form]: {{ site.naan_form_url }}
 [ARK namespaces]: about-ark-namespaces.md
 [General identifier concepts and conventions]: about-identifier-concepts-and-conventions.md
 [ARK shoulders]: about-shoulders.md

@@ -17,8 +17,7 @@ applications continue to evolve.
 This page links to technical specs, some of which are current, under
 development, or incomplete.
 
--  Under development: [The ARK Identifier Scheme (latest version)]
--  Current specification: [The ARK Identifier Scheme V39]
+- Current specification: [The ARK Identifier Scheme]({{ site.ark_spec_current }})
 
 | ![][1]{: .img-thumbnail .img-fluid fetchpriority="high" height="320" loading="eager" width="241"} |
 |:--:|
