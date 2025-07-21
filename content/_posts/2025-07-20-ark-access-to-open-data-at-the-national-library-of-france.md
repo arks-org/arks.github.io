@@ -3,7 +3,8 @@ title: "Access to open data at the National Library of France using ARK variants
 redirect_from: /blog/2025-07-25-ark-access-to-open-data-at-the-national-library-of-france/
 pid: 552
 authors:
-  - xavier-levoin xavier.levoin@bnf.fr 
+  - xavier-levoin
+  - john-kunze
 date: 2025-07-20
 published: true
 image: "../assets/images/posts/bnf_entry.png"
@@ -55,9 +56,9 @@ To simplify the user experience and our own maintenance, we added download butto
 - `.json` for JSON
 - `.pdf` for PDF
 
-For example, here's some of the metadata downloaded in RDF/XML upon accessing https://data.bnf.fr/ark:/12148/cb12515307z.rdfxml. 
+For example, here's some of the metadata downloaded in RDF/XML upon accessing [https://data.bnf.fr/ark:/12148/cb12515307z.rdfxml]. 
 
-```
+```rdf
 <rdf:Description rdf:about="https://data.bnf.fr/ark:/12148/cb414064167#Expression">
   <bnfroles:r70 rdf:resource="https://data.bnf.fr/ark:/12148/cb12515307z#about"/>
   <marcrel:aut rdf:resource="https://data.bnf.fr/ark:/12148/cb12515307z#about"/>
@@ -92,7 +93,7 @@ For example, here's some of the metadata downloaded in RDF/XML upon accessing ht
 </rdf:Description>
 ```
 
-The "default" variant (no suffix) for https://data.bnf.fr/ark:/12148/cb12515307z returns simple metadata displayed in HTML, as shown below. All the download and export choices (PDF, JSON, XML, NT, N3, and JSON-LD) can be selected from the buttons and drop-down menus circled in red in the upper right-hand corner.
+The "default" variant (no suffix) for [https://data.bnf.fr/ark:/12148/cb12515307z] returns simple metadata displayed in HTML, as shown below. All the download and export choices (PDF, JSON, XML, NT, N3, and JSON-LD) can be selected from the buttons and drop-down menus circled in red in the upper right-hand corner.
  
 ![screenshot of page for artist Frida Kahlo](../../assets/images/posts/bnf_frida_kahlo.png){: .img-thumbnail .img-responsive fetchpriority="high" height="auto" loading="eager"}
 
