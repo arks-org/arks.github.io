@@ -1,5 +1,5 @@
 ---
-title: "Simplifying access to open data at the National Library of France using ARK variants"
+title: "Access to open data at the National Library of France using ARK variants"
 redirect_from: /blog/2025-07-25-ark-access-to-open-data-at-the-national-library-of-france/
 pid: 552
 authors:
@@ -21,7 +21,7 @@ This post introduces [data.bnf.fr](https://data.bnf.fr) (dataBnF), the data gate
 In 2024, the [dataBnF](https://data.bnf.fr) website underwent a major usability and graphic redesign to make the interface more readable and to offer more intuitive, operational  features for discovering BnF collections. This project was an opportunity to reexamine how ARK identifiers were implemented and presented on the website, and to leverage [ARK variant form
 qualifiers](https://www.ietf.org/archive/id/draft-kunze-ark-40.html#name-arks-that-reveal-object-var) in order to return metadata and inter-resource relationships needed by the Semantic Web. 
 
-### Where we started
+## Where we started
 
 One challenge was to take data offered by the BnF in traditional catalogue-entity formats such as INTERMARC (BnF’s version of the [MARC](https://www.loc.gov/marc/) format) and [XML-EAD](https://www.loc.gov/ead/index.html), and to make it available in modern formats such as [RDF](https://en.wikipedia.org/wiki/Resource_Description_Framework) and [JSON](https://en.wikipedia.org/wiki/JSON). These modern formats express a hierarchical entity as a flattened byte stream (serialization) for easy transmission over networks and later reconstruction (deserialization) on the receiving end. The main objectives of [dataBnF](https://data.bnf.fr) were as follows.
 
@@ -44,7 +44,7 @@ We also wanted to simplify and rationalize the sometimes confusing mix of ways t
 - [HTTP content
   negotiation](https://www.rfc-editor.org/rfc/rfc9110.html#name-content-negotiation) allowed a software client to request a given representation using HTTP headers.
 
-### Where we got to
+## Where we got to
 
 To simplify the user experience and our own maintenance, we added download buttons to help users explicitly request a representation. We also took advantage of the ARK variant qualifier mechanism to support the same thing for software (and human) clients.  Since the website redesign, access to different representations of the resource is provided using the following qualifiers:
 
