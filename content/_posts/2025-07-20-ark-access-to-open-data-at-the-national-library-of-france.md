@@ -58,7 +58,7 @@ To simplify the user experience and our own maintenance, we added download butto
 
 For example, here's some of the metadata downloaded in RDF/XML upon accessing [https://data.bnf.fr/ark:/12148/cb12515307z.rdfxml]().
 
-```xml
+```mxml
 <rdf:Description rdf:about="https://data.bnf.fr/ark:/12148/cb414064167#Expression">
   <bnfroles:r70 rdf:resource="https://data.bnf.fr/ark:/12148/cb12515307z#about"/>
   <marcrel:aut rdf:resource="https://data.bnf.fr/ark:/12148/cb12515307z#about"/>
