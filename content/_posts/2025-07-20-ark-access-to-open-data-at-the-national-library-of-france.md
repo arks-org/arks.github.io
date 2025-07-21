@@ -49,7 +49,7 @@ We also wanted to simplify and rationalize the sometimes confusing mix of ways t
 
 To simplify the user experience and our own maintenance, we added download buttons to help users explicitly request a representation. We also took advantage of the ARK variant qualifier mechanism to support the same thing for software (and human) clients.  Since the website redesign, access to different representations of the resource is provided using the following qualifiers (suffixes):
 
-- `.rdf` = `.rdfxml` for RDF/XML
+- `.rdf` or `.rdfxml` for RDF/XML
 - `.rdfnt` for N-triples
 - `.rdfn3` for Notation3
 - `.rdfjsonld` for JSON-LD
@@ -58,7 +58,7 @@ To simplify the user experience and our own maintenance, we added download butto
 
 For example, here's some of the metadata downloaded in RDF/XML upon accessing [https://data.bnf.fr/ark:/12148/cb12515307z.rdfxml]().
 
-```rdf
+```xml
 <rdf:Description rdf:about="https://data.bnf.fr/ark:/12148/cb414064167#Expression">
   <bnfroles:r70 rdf:resource="https://data.bnf.fr/ark:/12148/cb12515307z#about"/>
   <marcrel:aut rdf:resource="https://data.bnf.fr/ark:/12148/cb12515307z#about"/>
