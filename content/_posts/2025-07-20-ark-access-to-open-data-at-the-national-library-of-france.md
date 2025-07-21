@@ -37,16 +37,16 @@ While many Semantic Web links (URLs, or `https://` URIs) out in the wild are not
 
 When we began the [dataBnF](https://data.bnf.fr) project, these ARKs were often overlooked by users. They appeared at the bottom of the page, while the impersistent page URLs that appeared up top in the browser’s location bar tended to get used for citation. This is a common problem for all persistent identifier (PID) types, and our solution was to make sure that the ARK appears in the location bar. This encourages the use of ARKs in citations and in search engine indexes (SEO). 
 
-We also wanted to simplify and rationalize the sometimes confusing mix of ways to access different representations of a resource, such as the  HTML page or RDF serialization. Prior to the project, there were at least three ways:
+We also wanted to simplify and rationalize the sometimes confusing mix of ways to access different representations of a resource, such as the  HTML page or RDF/XML representation (the set of [semantic triples](https://en.wikipedia.org/wiki/Semantic_triple) whose subject or object is the URL). When we started out,
 
-- For the impersistent page URL, adding a .rdf inflection led to the RDF/XML representation of the resource (the set of triples whose subject or object is the URL).
-- The same was true for the ARK URL
-- [HTTP content
-  negotiation](https://www.rfc-editor.org/rfc/rfc9110.html#name-content-negotiation) allowed a software client to request a given representation using HTTP headers.
+- adding an `.rdf` suffix to the ARK URL led to the RDF/XML representation,
+- adding an `.rdf` suffix to the impersistent page URL did the same thing, and
+- using [HTTP content
+  negotiation](https://www.rfc-editor.org/rfc/rfc9110.html#name-content-negotiation) via a software client was a third way.
 
 ## Where we got to
 
-To simplify the user experience and our own maintenance, we added download buttons to help users explicitly request a representation. We also took advantage of the ARK variant qualifier mechanism to support the same thing for software (and human) clients.  Since the website redesign, access to different representations of the resource is provided using the following qualifiers:
+To simplify the user experience and our own maintenance, we added download buttons to help users explicitly request a representation. We also took advantage of the ARK variant qualifier mechanism to support the same thing for software (and human) clients.  Since the website redesign, access to different representations of the resource is provided using the following qualifiers (suffixes):
 
 - `.rdf` = `.rdfxml` for RDF/XML
 - `.rdfnt` for N-triples
@@ -55,14 +55,47 @@ To simplify the user experience and our own maintenance, we added download butto
 - `.json` for JSON
 - `.pdf` for PDF
 
-Here’s an example of very detailed metadata available for RDF/XML, with the ARK showing in the browser location bar at the top, followed by a simpler metadata display with download and export buttons for PDF, JSON, XML, NT, N3, and JSON-LD.
+For example, here's some of the metadata downloaded in RDF/XML upon accessing https://data.bnf.fr/ark:/12148/cb12515307z.rdfxml. 
 
-![example of very detailed metadata available for RDF/XML](../../assets/images/posts/bnf_rdf_mdata.png){: .img-thumbnail .img-responsive fetchpriority="high" height="auto" loading="eager"}
+```
+<rdf:Description rdf:about="https://data.bnf.fr/ark:/12148/cb414064167#Expression">
+  <bnfroles:r70 rdf:resource="https://data.bnf.fr/ark:/12148/cb12515307z#about"/>
+  <marcrel:aut rdf:resource="https://data.bnf.fr/ark:/12148/cb12515307z#about"/>
+  <dcterms:contributor rdf:resource="https://data.bnf.fr/ark:/12148/cb12515307z#about"/>
+</rdf:Description>
+  <rdf:Description rdf:about="https://data.bnf.fr/ark:/12148/cb12515307z">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <bnf-onto:FRBNF rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12515307</bnf-onto:FRBNF>
+  <skos:editorialNote xml:lang="fr">Le journal de Frida Kahlo / introd. de Carlos Fuentes ; av.-propos de Sarah M. Lowe ; [trad. de l'espagnol par Rauda Jamis, et de l'anglais par Martine Laroche et Olivier Meyer], 1995. - . - Frida Kahlo, Leo Matiz, 2003. - . -</skos:editorialNote>
+  <skos:prefLabel xml:lang="fr">Frida Kahlo (1907-1954)</skos:prefLabel>
+  <skos:altLabel xml:lang="fr">Frida Kahlo de Rivera (1907-1954)</skos:altLabel>
+  <isni:identifierValid>0000000121477893</isni:identifierValid>
+  <bnf-onto:isniAttributionDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-10-24</bnf-onto:isniAttributionDate>
+  <bnf-onto:isniAttributionAgency>VIAF</bnf-onto:isniAttributionAgency>
+  <skos:note xml:lang="fr">Peintre. - Épouse du peintre : Diego Rivera (1886-1957)</skos:note>
+  <dcterms:created>1996-06-04</dcterms:created>
+  <dcterms:modified>2013-10-24</dcterms:modified>
+  <foaf:focus rdf:resource="https://data.bnf.fr/ark:/12148/cb12515307z#about"/>
+  <rdfs:seeAlso rdf:resource="http://fr.wikipedia.org/wiki/Frida_Kahlo"/>
+  <rdfs:seeAlso rdf:resource="https://catalogue.bnf.fr/ark:/12148/cb12515307z"/>
+  <rdau:P61160 rdf:resource="http://www.rdaregistry.info/termList/statIdentification/1001"/>
+  <skos:exactMatch rdf:resource="http://fr.dbpedia.org/resource/Frida_Kahlo"/>
+  <skos:exactMatch rdf:resource="http://fr.wikipedia.org/wiki/Frida_Kahlo"/>
+  <skos:exactMatch rdf:resource="http://isni.org/isni/0000000121477893"/>
+  <skos:exactMatch rdf:resource="https://musicbrainz.org/artist/15bd9f83-0073-432c-b1a4-0c3a6fa1e3b9"/>
+  <skos:exactMatch rdf:resource="http://viaf.org/viaf/110981647/"/>
+  <skos:exactMatch rdf:resource="http://wikidata.org/entity/Q5588"/>
+  <skos:exactMatch rdf:resource="http://www.idref.fr/027696707"/>
+  <skos:closeMatch rdf:resource="http://datos.bne.es/resource/XX1119271"/>
+  <skos:closeMatch rdf:resource="http://d-nb.info/gnd/11855932X"/>
+  <skos:closeMatch rdf:resource="http://id.loc.gov/authorities/n82031966"/>
+</rdf:Description>
+```
 
-Export buttons are located at the top-right of the main metadata frame displayed with the HTML (the "default" variant) in this next screenshot of https://data.bnf.fr/en/ark:/12148/cb12515307z.
+The "default" variant (no suffix) for https://data.bnf.fr/ark:/12148/cb12515307z returns simple metadata displayed in HTML, as shown below. All the download and export choices (PDF, JSON, XML, NT, N3, and JSON-LD) can be selected from the buttons and drop-down menus circled in red in the upper right-hand corner.
  
 ![screenshot of page for artist Frida Kahlo](../../assets/images/posts/bnf_frida_kahlo.png){: .img-thumbnail .img-responsive fetchpriority="high" height="auto" loading="eager"}
 
-We invite you to visit [dataBnF](https://data.bnf.fr) to see how we have simplified access to all available resource representations, and made the ARK identifier constantly visible to users.
+We invite you to visit [dataBnF](https://data.bnf.fr) to see how the National Library of France provides simple access to all resource representations and makes the ARK identifier constantly visible to users.
 
 [entry]: ../../assets/images/posts/bnf_entry.png
