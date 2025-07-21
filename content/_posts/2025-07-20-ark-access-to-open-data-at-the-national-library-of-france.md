@@ -10,7 +10,7 @@ published: true
 image: "../assets/images/posts/bnf_entry.png"
 ---
 
-An early adopter of ARKs, the BnF shows good practices for displaying persistent linked open data (LOD) using
+An early adopter of ARKs, the BnF has developed practices for displaying persistent linked open data (LOD) using
 ARK suffixes for object variants.
 
 <!--more-->
@@ -34,9 +34,9 @@ A goal of [dataBnF](https://data.bnf.fr) was to facilitate access to BnF resourc
 
 All of these resources are identified by ARKs whose “[shoulder](https://arks.org/about/ark-namespaces/)” (a kind of internal prefix) varies depending on the source application. A BnF ARK shoulder is a 2- or 3-letter code following the `ark:/12148/` that begins each BnF ARK. A resource from the general catalogue is prefixed by the two characters “cb” (`ark:/12148/cb13913991p`). If the resource is imported from EAD, it is prefixed by “cc” (`ark:/12148/cc56356g`). Gallica resources are prefixed by “btv” or “bpt” (for example, `ark:/12148/bpt6k1911706t` and `ark:/12148/btv1b108674013`).
 
-While many Semantic Web links (URLs, or `https://` URIs) out in the wild are not meant to be “actionable” (they always return a 404 Page Not Found error), in stricter alignment with Linked Open Data principles, [dataBnF](https://data.bnf.fr) ARKs are actionable. As such, all dataBnF ARKs are Semantic Web links that are meant to persist and to resolve.
+While many Semantic Web links (URLs, or https:// URIs) out in the wild are not meant to be “actionable” (they always return a 404 Page Not Found error), in stricter alignment with Linked Open Data principles, [dataBnF](https://data.bnf.fr) ARKs are actionable. As such, all dataBnF ARKs are Semantic Web links that are meant to persist and to resolve.
 
-When we began the [dataBnF](https://data.bnf.fr) project, these ARKs were often overlooked by users. They appeared at the bottom of the page, while the impersistent page URLs that appeared up top in the browser’s location bar tended to get used for citation. This is a common problem for all persistent identifier (PID) types, and our solution was to make sure that the ARK appears in the location bar. This encourages the use of ARKs in citations and in search engine indexes (SEO). 
+When we began the [dataBnF](https://data.bnf.fr) project, these ARKs were often overlooked by users. They appeared at the bottom of the page, while the impersistent page URLs that appeared up top in the browser’s location bar tended to get used for citation. This is a common problem for all persistent identifier (PID) types. Our solution was to make sure that the ARK appears in the location bar. which encourages the use of ARKs in citations and in search engine indexes (SEO). 
 
 We also wanted to simplify and rationalize the sometimes confusing mix of ways to access different representations of a resource, such as the  HTML page or RDF/XML representation (the set of [semantic triples](https://en.wikipedia.org/wiki/Semantic_triple) whose subject or object is the URL). When we started out,
 
@@ -56,7 +56,7 @@ To simplify the user experience and our own maintenance, we added download butto
 - `.json` for JSON
 - `.pdf` for PDF
 
-For example, here's some of the metadata downloaded in RDF/XML upon accessing [https://data.bnf.fr/ark:/12148/cb12515307z.rdfxml]. 
+For example, here's some of the metadata downloaded in RDF/XML upon accessing [https://data.bnf.fr/ark:/12148/cb12515307z.rdfxml]().
 
 ```rdf
 <rdf:Description rdf:about="https://data.bnf.fr/ark:/12148/cb414064167#Expression">
@@ -93,7 +93,7 @@ For example, here's some of the metadata downloaded in RDF/XML upon accessing [h
 </rdf:Description>
 ```
 
-The "default" variant (no suffix) for [https://data.bnf.fr/ark:/12148/cb12515307z] returns simple metadata displayed in HTML, as shown below. All the download and export choices (PDF, JSON, XML, NT, N3, and JSON-LD) can be selected from the buttons and drop-down menus circled in red in the upper right-hand corner.
+The "default" variant (no suffix) for [https://data.bnf.fr/ark:/12148/cb12515307z]() returns simple metadata displayed in HTML, as shown below. All the download and export choices (PDF, JSON, XML, NT, N3, and JSON-LD) can be selected from the buttons and drop-down menus circled in red in the upper right-hand corner.
  
 ![screenshot of page for artist Frida Kahlo](../../assets/images/posts/bnf_frida_kahlo.png){: .img-thumbnail .img-responsive fetchpriority="high" height="auto" loading="eager"}
 
