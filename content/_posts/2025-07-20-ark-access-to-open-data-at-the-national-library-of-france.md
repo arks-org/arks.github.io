@@ -9,16 +9,18 @@ published: true
 image: "../assets/images/posts/bnf_entry.png"
 ---
 
-An early adopter of ARKs, the BnF shows best practices for displaying persistent links and using
+An early adopter of ARKs, the BnF shows good practices for displaying persistent linked open data (LOD) using
 ARK suffixes for object variants.
 
 <!--more-->
 
-![Digital and physical entry to the National Library of France](../../assets/images/posts/bnf_entry.png){: .img-thumbnail .img-responsive fetchpriority="high" height="auto" loading="eager"}
+![Digital and physical entry to the National Library of France][entry]{: .img-thumbnail .img-responsive fetchpriority="high" height="auto" loading="eager"}
 
 *Digital and physical entry to the National Library of France*
 
-This post introduces [data.bnf.fr](https://data.bnf.fr) (dataBnF), the data gateway service of the French National Library, or Bibliothèque nationale de France (BnF). The main purpose of dataBnF is to promote BnF data discoverability and re-use both within and beyond its catalogs. This article dives into some details of how [dataBnF](https://data.bnf.fr) uses ARK (Archival Resource Key) identifiers to support the Semantic Web’s vision of a “Web of Data”, which is built on Linked Open Data (LOD) for sharing structured (hierarchical), machine-readable information on the web.
+! [Digital and physical entry to the National Library of France](../../assets/images/posts/bnf_entry.png){: .img-thumbnail .img-responsive fetchpriority="high" height="auto" loading="eager"}
+
+This post introduces [data.bnf.fr](https://data.bnf.fr) (dataBnF), the data gateway service of the French National Library, or Bibliothèque nationale de France (BnF). The main purpose of dataBnF is to promote BnF data discoverability and re-use both within and beyond its catalogs. This article dives into some details of how a national library uses ARK (Archival Resource Key) identifiers to support the Semantic Web’s vision of a “Web of Data”, which is built on Linked Open Data (LOD) for sharing structured (hierarchical), machine-readable information on the web.
 
 In 2024, the [data.bnf.fr](https://data.bnf.fr) website underwent a major usability and graphic redesign to make the interface more readable and to offer more intuitive, operational  features for discovering BnF collections. This project was an opportunity to reexamine how ARK identifiers were implemented and presented on the website, and to leverage [ARK variant form
 qualifiers](https://www.ietf.org/archive/id/draft-kunze-ark-40.html#name-arks-that-reveal-object-var) in order to return metadata and inter-resource relationships needed by the Semantic Web. 
