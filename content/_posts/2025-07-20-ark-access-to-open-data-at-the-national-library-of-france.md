@@ -4,7 +4,7 @@ redirect_from: /blog/2025-07-25-ark-access-to-open-data-at-the-national-library-
 pid: 552
 authors:
   - xavier-levoin xavier.levoin@bnf.fr 
-date: 2025-07-25
+date: 2025-07-20
 published: true
 image: "../assets/images/posts/bnf_entry.png"
 ---
@@ -15,6 +15,7 @@ ARK suffixes for object variants.
 <!--more-->
 
 ![Digital and physical entry to the National Library of France](../../assets/images/posts/bnf_entry.png){: .img-thumbnail .img-responsive fetchpriority="high" height="auto" loading="eager"}
+
 *Digital and physical entry to the National Library of France*
 
 This post introduces [data.bnf.fr](https://data.bnf.fr) (dataBnF), the data gateway service of the French National Library, or Bibliothèque nationale de France (BnF). The main purpose of dataBnF is to promote BnF data discoverability and re-use both within and beyond its catalogs. This article dives into some details of how [dataBnF](https://data.bnf.fr) uses ARK (Archival Resource Key) identifiers to support the Semantic Web’s vision of a “Web of Data”, which is built on Linked Open Data (LOD) for sharing structured (hierarchical), machine-readable information on the web.
