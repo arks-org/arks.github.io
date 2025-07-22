@@ -5,7 +5,7 @@ pid: 552
 authors:
   - xavier-levoin
   - john-kunze
-date: 2025-07-20
+date: 2025-07-23
 published: true
 image: "../assets/images/posts/bnf_entry.png"
 ---
