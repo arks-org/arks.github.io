@@ -1,6 +1,6 @@
 ---
 title: "Access to open data at the National Library of France using ARK variants"
-redirect_from: /blog/2025-07-25-ark-access-to-open-data-at-the-national-library-of-france/
+redirect_from: /blog/2025-07-23-ark-access-to-open-data-at-the-national-library-of-france/
 pid: 552
 authors:
   - xavier-levoin
