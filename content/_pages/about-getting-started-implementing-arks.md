@@ -65,7 +65,7 @@ passthrough] feature (implemented by the [Frick Collection tool]).
 This can be useful if your resources contain many sub-resources with a large
 number of files per resource.
 
-## Choose your local ARK resolver ystem
+## Choose your local ARK resolver system
 
 Because ARKs are free, open identifiers, there are many choices for
 implementing them. Some free, specialized services offer ARK assignments, such
