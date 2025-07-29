@@ -93,7 +93,7 @@ For example, here's some of the metadata downloaded in RDF/XML upon accessing [h
 </rdf:Description>
 ```
 
-The "default" variant (no suffix) for [https://data.bnf.fr/ark:/12148/cb12515307z]() returns simple metadata displayed in HTML, as shown below. All the download and export choices (PDF, JSON, XML, NT, N3, and JSON-LD) can be selected from the buttons and drop-down menus circled in red in the upper right-hand corner.
+The "default" variant (no suffix) for [https://data.bnf.fr/ark:/12148/cb12515307z]() returns simple metadata displayed in HTML, as shown below. All the download and export choices (PDF, JSON, XML, NT, N3, and JSON-LD) can be selected from the buttons and drop-down menus circled in red in the upper right-hand corner. 
  
 ![screenshot of page for artist Frida Kahlo](../../assets/images/posts/bnf_frida_kahlo.png){: .img-thumbnail .img-responsive fetchpriority="high" height="auto" loading="eager"}
 
