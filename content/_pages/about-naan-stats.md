@@ -55,44 +55,9 @@ Click on a TLD slice to update the registered NAANs per year graph for that TLD.
 
 <script>
 
-const naan_registry_url='https://legacy-n2t.n2t.net/e/pub/naan_registry.txt';
+const naan_registry_url='https://cdluc3.github.io/naan_reg_priv/naan_records.json';
 const maxTldShow=40;
 const maxLatest=20;
-
-function parseANVL(text) {
-    const records = text.split(/\n\s*\n/); // Split by blank lines
-    const parsed = [];
-
-    for (const record of records) {
-        const lines = record.split('\n');
-        const entry = {};
-
-        for (const line of lines) {
-            const trimmedLine = line.trim();
-            if (trimmedLine.startsWith('#') || trimmedLine === '') continue; // Skip comments and empty lines
-
-            const [key, ...rest] = trimmedLine.split(':');
-            if (!key || rest.length === 0) continue;
-
-            const value = rest.join(':').trim();
-            const normalizedKey = key.trim().toLowerCase();
-
-            // Handle multiple 'where' entries
-            if (normalizedKey === 'where') {
-                if (!entry.where) entry.where = [];
-                entry.where.push(value);
-            } else {
-                entry[normalizedKey] = value;
-            }
-        }
-
-        if (Object.keys(entry).length > 0) {
-            parsed.push(entry);
-        }
-    }
-
-    return parsed;
-}
 
 function getLastEntriesByDate(data, count) {
     // Filter entries with a valid 'when' field and a number in the 'what' field
@@ -116,16 +81,16 @@ function getYearCounts(data, tld) {
 
     data.forEach(entry => {
         if (entry.when && /^\d{4}/.test(entry.when) && entry.where) {
-            const matchesTLD = !tld || entry.where.some(url => {
-                try {
-                    const hostname = new URL(url).hostname;
-                    const parts = hostname.split('.');
-                    const entryTLD = parts[parts.length - 1].toLowerCase();
-                    return entryTLD === tld;
-                } catch (e) {
-                    return false;
-                }
-            });
+            const matchesTLD = !tld || (() => {
+              try {
+                  const hostname = new URL(entry.where).hostname;
+                  const parts = hostname.split('.');
+                  const entryTLD = parts[parts.length - 1].toLowerCase();
+                  return entryTLD === tld;
+              } catch (e) {
+                  return false;
+              }
+            })();
 
             if (matchesTLD) {
                 const year = entry.when.slice(0, 4);
@@ -251,20 +216,17 @@ function getTldCounts(data) {
 
     data.forEach(entry => {
         if (!entry.where) return;
+        try {
+            const hostname = new URL(entry.where).hostname;
+            const parts = hostname.split('.');
+            const tld = parts[parts.length - 1].toLowerCase();
 
-        entry.where.forEach(url => {
-            try {
-                const hostname = new URL(url).hostname;
-                const parts = hostname.split('.');
-                const tld = parts[parts.length - 1].toLowerCase();
-
-                if (tld) {
-                    tldCounts[tld] = (tldCounts[tld] || 0) + 1;
-                }
-            } catch (e) {
-                // Invalid URL – skip
+            if (tld) {
+                tldCounts[tld] = (tldCounts[tld] || 0) + 1;
             }
-        });
+        } catch (e) {
+            // Invalid URL – skip
+        }
     });
 
     return tldCounts;
@@ -354,22 +316,23 @@ let data;
 
 fetch(naan_registry_url)
     .then(response => response.text())
-    .then(text => {
-        data = parseANVL(text);
+    .then(json => {        
+
+        data=JSON.parse(json).data;
 
         const countWithUrl = data.filter(entry => 'where' in entry).length;
         document.getElementById("naan_count").innerHTML = countWithUrl.toLocaleString();
 
         const latest = getLastEntriesByDate(data, maxLatest);
 
-		document.getElementById("number_latest").innerHTML = maxLatest.toLocaleString();
+		    document.getElementById("number_latest").innerHTML = maxLatest.toLocaleString();
 		
         const ul = document.getElementById("naan_latest");
 
         latest.forEach(entry => {
-            const who = entry.who || "";
+            const who = entry.who.name || "";
             const what = entry.what || "";
-            const when = entry.when || "";
+            const when = entry.when.substring(0, 10) || "";
 
             const li = document.createElement("li");
             li.innerHTML = `${when} - ${who} (<a href="https://arks.org/ark:${what}">${what}</a>)`;
