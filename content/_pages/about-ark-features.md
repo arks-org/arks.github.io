@@ -28,7 +28,7 @@ following:
 
 Shoulders are short strings that extend your NAAN and allow you to create
 local namespaces below your NAAN. They divide your ARKs across autonomous
-projects or divisions, the which prevents independent assignment operations
+projects or divisions, which prevents independent assignment operations
 from creating duplicate ARKs. There is more to learn more about [ARK shoulders
 and namespaces].
 
