@@ -26,18 +26,21 @@ published: true
 
 <script src="https://d3js.org/d3.v7.min.js" integrity="sha384-CjloA8y00+1SDAUkjs099PVfnY2KmDC2BZnws9kh8D/lX1s46w6EPhpXdqMfjK6i" crossorigin="anonymous"></script>
 
-A [Name Assigning Authority Number] (NAAN) must be registered with the Name-to-Thing (N2T) ARK registry and
-listed in the public [NAAN registry], which also lists the official resolver for
-each NAAN. Any stable memory organization may obtain a NAAN at no cost and
-begin assigning ARKs by filling out the [NAAN request form].
+An ARK organization is one that has a [Name Assigning Authority Number] (NAAN) appearing in the public [NAAN registry].
+Each registered NAAN record includes the official local organizational
+resolver, which is used by the global [Name-to-Thing](https://n2t.net)
+(N2T.net) resolver when it receives ARK resolution requests. Thus ARKs
+can be resolved by presenting them to either the local or the
+global resolver. Any memory organization may request a NAAN at
+no cost and begin assigning ARKs by filling out the [NAAN request form].
 
-The latest <span id="number_latest"></span> registered NAANs include:
+There are over {{ site.num_ark_orgs }} ARK organizations. The
+<span id="number_latest"></span> most recently registered NAANs appear
+below, followed by some charts.
 <ul id="naan_latest"></ul>
 
-Based on this registry with <strong id="naan_count">1500</strong> NAANs some statistics can be drawn, as shown below.
-
 <br>
-## Registered NAANs per year
+## NAANs registered per year
 The following chart shows the number of newly registered NAANs per year.
 <div id="yearGraph"></div>
 
@@ -47,11 +50,12 @@ The following chart shows the number of newly registered NAANs per year.
 </div>
 
 ## Top TLD's of NAAN redirects
-The following chart visualizes the distribution of top-level domains (TLDs) used in the resolver URLs of all NAAN registry entries.
+The following chart shows the distribution of top-level domains (TLDs) used
+in the local resolver URLs of all NAAN registry records.
 
 <div id="tldGraph"></div>
 <br>
-Click on a TLD slice to update the registered NAANs per year graph for that TLD.
+Click on a TLD slice to update the NAANs registered per year chart for that TLD.
 
 <script>
 
