@@ -12,6 +12,6 @@
   {% endif %}
 {% endfor %}
 {% if author_names == "" %}
-  {% assign author_names = site.author.default_name %}
+  {% assign author_names = site.author %}
 {% endif %}
 {{ author_names }}

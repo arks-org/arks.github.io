@@ -6,13 +6,13 @@
 			{{ post.title }}
 		</a>
 		<small class="d-block text-secondary">
-			{{ post.date | date: "%Y-%m-%d" | prepend: "Posted: "}}
-			by {%- include content/authors.html -%}
+			{{ post.date | date: "%Y-%m-%d" }}
+			by {%- include content/authors.html post=post -%}
 		</small>
 	</li>
 {% endfor %}
 	<li class="d-flex justify-content-between border-top border-secondary-subtle pt-2">
-		<a href="{% link _pages/news.md %}">
+		<a href="{{ site.baseurl }}{% link _pages/news.md %}">
 			All Posts
 		</a>
 		<a class="btn btn-primary btn-sm"
