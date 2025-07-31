@@ -1,0 +1,17 @@
+{% assign author_names = "" %}
+{% for author_key in include.post.authors %}
+  {% assign author = site.data.authors[author_key] %}
+  {% if author %}
+    {% if forloop.index > 2 and forloop.last %}
+        {% assign author_names = author_names | append: "and " %}
+    {% endif %}
+    {% assign author_names = author_names | append: author.visible_name %}
+    {% unless forloop.last %}
+        {% assign author_names = author_names | append: ", " %}
+    {% endunless %}
+  {% endif %}
+{% endfor %}
+{% if author_names == "" %}
+  {% assign author_names = site.author.default_name %}
+{% endif %}
+{{ author_names }}
