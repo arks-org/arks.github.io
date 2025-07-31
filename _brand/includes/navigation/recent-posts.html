@@ -7,7 +7,7 @@
 		</a>
 		<small class="d-block text-secondary">
 			{{ post.date | date: "%Y-%m-%d" | prepend: "Posted: "}}
-			by {{ post.author | default: site.author }}
+			by {% include recent-posts-authors.html %}
 		</small>
 	</li>
 {% endfor %}
