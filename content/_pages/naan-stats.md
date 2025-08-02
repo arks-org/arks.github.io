@@ -22,6 +22,9 @@ published: true
 .arc path {
   cursor: pointer;
 }
+@media (prefers-color-scheme: dark) {
+	#yearGraph svg text { fill: white }
+}
 </style>
 
 <script src="https://d3js.org/d3.v7.min.js" integrity="sha384-CjloA8y00+1SDAUkjs099PVfnY2KmDC2BZnws9kh8D/lX1s46w6EPhpXdqMfjK6i" crossorigin="anonymous"></script>
@@ -30,8 +33,8 @@ Every ARK organization has a [Name Assigning Authority Number] (NAAN) listed in
 the public [NAAN registry]. Usually the NAAN representing a Name Assigning
 Authority (NAA) is a 5-digit number, but sometimes it is
 a [shoulder](https://arks.org/about/ark-namespaces/), which is a few characters
-longer (e.g., "12345/x5"). There is a total of <span id="naan_count"></span>
-NAAs in the public registry.
+longer (e.g., "12345/x5"). There are <span id="naan_count"></span> NAAs in the
+public registry.
 
 Each NAAN record includes the local organizational resolver to which the global
 [Name-to-Thing](https://n2t.net) (N2T.net) resolver will redirect ARKs that
@@ -48,7 +51,7 @@ all local ARK resolvers is shown below. There is also a simple
 <div id="tldGraph"></div>
 <br/>
 
-## NAANs registered per year
+## Organizations registered per year
 
 The next chart shows the number of newly registered NAANs per year.
 Click on a TLD slice above to update the NAANs registered per year
@@ -56,12 +59,12 @@ in the chart below for that TLD.
 
 <div id="yearGraph"></div>
 
-<div style="margin-bottom: 1em;">
+<div>
   <button id="resetYearGraph" style="display:none;">Reset Year Graph</button>
   <span id="yearGraphTitle" style="margin-left: 1em; font-weight: bold;"></span>
 </div>
 
-## Latest NAANs registered
+## Latest ARK organizations registered
 
 Any memory organization can start creating ARKs once it obtains a NAAN, which
 may be requested at no cost by filling out the [NAAN request form].
@@ -267,18 +270,17 @@ function tldGraph(data) {
         .sort((a, b) => b.count - a.count)
         .slice(0, maxTldShow);
 
-    const width = 500;
-    const height = 500;
-    const radius = Math.min(width, height) / 2;
+    const size = Math.min(document.getElementById('tldGraph').offsetWidth,500);
+    const radius =  size / 2;
 
     const svg = d3.select("#tldGraph")
         .style("display", "flex")
         .style("justify-content", "center")
         .append("svg")
-        .attr("width", width)
-        .attr("height", height)
+        .attr("width", size)
+        .attr("height", size)
         .append("g")
-        .attr("transform", `translate(${width / 2}, ${height / 2})`);
+        .attr("transform", `translate(${size / 2}, ${size / 2})`);
 
     const color = d3.scaleOrdinal()
         .domain(tldData.map(d => d.tld))
@@ -341,7 +343,7 @@ fetch(naan_registry_url)
     .then(response => response.text())
     .then(json => {        
 
-        data=JSON.parse(json).data;
+        data = JSON.parse(json).data.filter(entry => entry.what && !entry.what.includes('/'));
 
         const countWithUrl = data.filter(entry => 'where' in entry).length;
         document.getElementById("naan_count").innerHTML = countWithUrl.toLocaleString();
@@ -358,7 +360,7 @@ fetch(naan_registry_url)
             const when = entry.when.substring(0, 10) || "";
 
             const li = document.createElement("li");
-            li.innerHTML = `${when} &nbsp; ${who} (<a href="https://arks.org/ark:${what}">${what}</a>)`;
+            li.innerHTML = `${when} &nbsp; <a href="https://arks.org/ark:${what}">${what}</a> &nbsp; ${who}`;
             ul.appendChild(li);
         });
 
