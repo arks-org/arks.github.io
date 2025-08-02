@@ -22,6 +22,9 @@ published: true
 .arc path {
   cursor: pointer;
 }
+@media (prefers-color-scheme: dark) {
+	#yearGraph svg text { fill: white }
+}
 </style>
 
 <script src="https://d3js.org/d3.v7.min.js" integrity="sha384-CjloA8y00+1SDAUkjs099PVfnY2KmDC2BZnws9kh8D/lX1s46w6EPhpXdqMfjK6i" crossorigin="anonymous"></script>
@@ -244,18 +247,17 @@ function tldGraph(data) {
         .sort((a, b) => b.count - a.count)
         .slice(0, maxTldShow);
 
-    const width = 500;
-    const height = 500;
-    const radius = Math.min(width, height) / 2;
+    const size = min(document.getElementById('tldGraph').offsetWidth,500);
+    const radius =  size / 2;
 
     const svg = d3.select("#tldGraph")
         .style("display", "flex")
         .style("justify-content", "center")
         .append("svg")
-        .attr("width", width)
-        .attr("height", height)
+        .attr("width", size)
+        .attr("height", size)
         .append("g")
-        .attr("transform", `translate(${width / 2}, ${height / 2})`);
+        .attr("transform", `translate(${size / 2}, ${size / 2})`);
 
     const color = d3.scaleOrdinal()
         .domain(tldData.map(d => d.tld))
