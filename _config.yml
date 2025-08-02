@@ -12,9 +12,9 @@ tagline: >-
   Home of the Archival Resource Key (ARK)
 description: >-
   ARKs are reliable, persistent identifiers for information objects,
-  functioning as stable web addresses that avoid 404 errors. Join the ARK
-  Alliance, a global community upholding ARK infrastructure for research and
-  scholarship.
+  functioning as stable web addresses that avoid 404 errors. Join the
+  ARK Alliance, a global community sustaining the ARK infrastructure
+  for research and scholarship.
 domain: arks-org.github.io
 baseurl: /arks.github.io
 url: https://arks-org.github.io
@@ -27,6 +27,8 @@ num_arks: "8.2 billion"
 num_dois: "257 million"
 ark_spec_current: "https://www.ietf.org/archive/id/draft-kunze-ark-41.html"
 naan_form_url: "https://docs.google.com/forms/d/e/1FAIpQLSf_847hNXtLGikR-XeDy1uT1AKd24DpHnt5UQh2i8ORRu7u-w/viewform"
+naan_registry_txt: "https://cdluc3.github.io/naan_reg_priv/naan_registry.txt"
+naan_registry_json: "https://cdluc3.github.io/naan_reg_priv/naan_records.json"
 
 contact:
   newsletter: http://eepurl.com/hnpLi5
