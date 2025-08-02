@@ -1,5 +1,5 @@
 ---
-title: NAAN Statistics
+title: Overview of ARK organizations
 permalink: /naan/stats/
 published: true
 ---
@@ -26,22 +26,34 @@ published: true
 
 <script src="https://d3js.org/d3.v7.min.js" integrity="sha384-CjloA8y00+1SDAUkjs099PVfnY2KmDC2BZnws9kh8D/lX1s46w6EPhpXdqMfjK6i" crossorigin="anonymous"></script>
 
-An ARK organization is one that has a [Name Assigning Authority Number] (NAAN) appearing in the public [NAAN registry].
-Each registered NAAN record includes the official local organizational
-resolver, which is used by the global [Name-to-Thing](https://n2t.net)
-(N2T.net) resolver when it receives ARK resolution requests. Thus ARKs
-can be resolved by presenting them to either the local or the
-global resolver. Any memory organization may request a NAAN at
-no cost and begin assigning ARKs by filling out the [NAAN request form].
+Every ARK organization has a [Name Assigning Authority Number] (NAAN) listed in
+the public [NAAN registry]. Usually the NAAN representing a Name Assigning
+Authority (NAA) is a 5-digit number, but sometimes it is
+a [shoulder](https://arks.org/about/ark-namespaces/), which is a few characters
+longer (e.g., "12345/x5"). There is a total of <span id="naan_count"></span>
+NAAs in the public registry.
 
-There are over {{ site.num_ark_orgs }} ARK organizations. The
-<span id="number_latest"></span> most recently registered NAANs appear
-below, followed by some charts.
-<ul id="naan_latest"></ul>
+Each NAAN record includes the local organizational resolver to which the global
+[Name-to-Thing](https://n2t.net) (N2T.net) resolver will redirect ARKs that
+come in with that NAAN. Most ARKs, however, are published as URLs based at the
+local resolver (server) domain name, bypassing the global resolver.
 
-<br>
+## Distribution of top-level domains (TLDs)
+
+The range of top-level domains -- the final part of the domain name -- across
+all local ARK resolvers is shown below. There is also a simple
+[NAAN registry search interface](https://cdluc3.github.io/naan_reg_priv/).
+
+<br/>
+<div id="tldGraph"></div>
+<br/>
+
 ## NAANs registered per year
-The following chart shows the number of newly registered NAANs per year.
+
+The next chart shows the number of newly registered NAANs per year.
+Click on a TLD slice above to update the NAANs registered per year
+in the chart below for that TLD.
+
 <div id="yearGraph"></div>
 
 <div style="margin-bottom: 1em;">
@@ -49,13 +61,19 @@ The following chart shows the number of newly registered NAANs per year.
   <span id="yearGraphTitle" style="margin-left: 1em; font-weight: bold;"></span>
 </div>
 
-## Top TLD's of NAAN redirects
-The following chart shows the distribution of top-level domains (TLDs) used
-in the local resolver URLs of all NAAN registry records.
+## Latest NAANs registered
 
-<div id="tldGraph"></div>
-<br>
-Click on a TLD slice to update the NAANs registered per year chart for that TLD.
+Any memory organization can start creating ARKs once it obtains a NAAN, which
+may be requested at no cost by filling out the [NAAN request form].
+The <span id="number_latest"></span> most recently registered ARK organizations
+appear below.
+
+<ul id="naan_latest"></ul>
+
+<br/>
+<small class="ark-alliance__tagline d-block text-secondary text-uppercase fs-6">
+  Page and code credit: Bob Coret, National Library of the Netherlands.
+</small>
 
 <script>
 
@@ -191,7 +209,7 @@ function yearGraph(data, tld = null) {
     // Labels
     svg.append("text")
         .attr("x", width / 2)
-        .attr("y", height + 40)
+        .attr("y", height + 50)
         .attr("text-anchor", "middle")
         .text("Year");
 
@@ -236,6 +254,7 @@ function getTldCounts(data) {
     return tldCounts;
 }
 
+// future refinement(?): use TLD of org URL rather than the resolver URL
 function tldGraph(data) {
     const tldCounts = getTldCounts(data);
 
@@ -339,7 +358,7 @@ fetch(naan_registry_url)
             const when = entry.when.substring(0, 10) || "";
 
             const li = document.createElement("li");
-            li.innerHTML = `${when} - ${who} (<a href="https://arks.org/ark:${what}">${what}</a>)`;
+            li.innerHTML = `${when} &nbsp; ${who} (<a href="https://arks.org/ark:${what}">${what}</a>)`;
             ul.appendChild(li);
         });
 
@@ -356,5 +375,5 @@ fetch(naan_registry_url)
 </script>
 
 [Name Assigning Authority Number]: ark-naans-and-systems.md
-[NAAN request form]: {{ site.naan_form_url }}
-[NAAN registry]: https://n2t.net/e/pub/naan_registry.txt
+[NAAN request form]: https://docs.google.com/forms/d/e/1FAIpQLSfd1CX6idwLB47g8OGKUG654auV8IU8yI7DAs61cXGOoFDn0g/viewform?c=0&w=1
+[NAAN registry]: https://legacy-n2t.n2t.net/e/pub/naan_registry.txt
