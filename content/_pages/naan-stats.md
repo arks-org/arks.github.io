@@ -33,8 +33,8 @@ Every ARK organization has a [Name Assigning Authority Number] (NAAN) listed in
 the public [NAAN registry]. Usually the NAAN representing a Name Assigning
 Authority (NAA) is a 5-digit number, but sometimes it is
 a [shoulder](https://arks.org/about/ark-namespaces/), which is a few characters
-longer (e.g., "12345/x5"). There are <span id="naan_count"></span> NAAs in the
-public registry.
+longer (e.g., "12345/x5"). As of <span id="current-date"></span>, there are
+<span id="naan_count"></span> NAAs in the public registry.
 
 Each NAAN record includes the local organizational resolver to which the global
 [Name-to-Thing](https://n2t.net) (N2T.net) resolver will redirect ARKs that
@@ -75,10 +75,25 @@ appear below.
 
 <br/>
 <small class="ark-alliance__tagline d-block text-secondary text-uppercase fs-6">
-  Page and code credit: Bob Coret, National Library of the Netherlands.
+  Page concept and JavaScript credit: Bob Coret, National Library of the Netherlands
 </small>
 
 <script>
+
+//  const today = new Date();
+//  const options = { year: 'numeric', month: 'long', day: 'numeric' };
+//  document.getElementById('current-date').textContent = today.toLocaleDateString('en-US', options);
+
+function formatDateToYYYYMMDD(date) {
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, '0'); // Months are 0-indexed
+  const day = String(date.getDate()).padStart(2, '0');
+
+  return `${year}-${month}-${day}`;
+}
+const today = new Date();
+document.getElementById('current-date').textContent = formatDateToYYYYMMDD(today);
+
 
 const naan_registry_url='https://cdluc3.github.io/naan_reg_priv/naan_records.json';
 const maxTldShow=40;
