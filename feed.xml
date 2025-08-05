@@ -50,8 +50,8 @@ layout: none
       <summary type="html">{{ post.excerpt | xml_escape }}</summary>
       <content type="html">{{ post.content | xml_escape }}</content>
       {% if post.image %}
-        <media:thumbnail url="{{ post.image | absolute_url }}" />
-        <media:content url="{{ post.image | absolute_url }}" medium="image" />
+        <media:thumbnail url="{{ post.image | relative_url | absolute_url }}" />
+        <media:content url="{{ post.image | relative_url | absolute_url }}" medium="image" />
       {% endif %}
     </entry>
   {% endfor %}
