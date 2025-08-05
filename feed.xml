@@ -1,0 +1,58 @@
+---
+layout: none
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"
+      xmlns:media="http://search.yahoo.com/mrss/">
+  <title>{{ site.title | xml_escape }}</title>
+  <link href="{{ site.feed.path | absolute_url }}" rel="self"/>
+  <link href="{{ "/" | absolute_url }}"/>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <id>{{ "" | absolute_url }}/</id>
+  <author>
+    <name>{{ site.author.default_name | default: site.title | xml_escape }}</name>
+  </author>
+  {% for post in site.posts limit: site.feed.posts_limit %}
+    <entry>
+      <title>{{ post.title | xml_escape }}</title>
+      <link href="{{ post.url | absolute_url }}"/>
+      <id>{{ post.url | absolute_url }}</id>
+      <updated>{{ post.date | date_to_xmlschema }}</updated>
+      <published>{{ post.date | date_to_xmlschema }}</published>
+      {% if post.authors %}
+        {% for author_key in post.authors %}
+          {% assign author = site.data.authors[author_key] %}
+          {% if author %}
+            <author>
+              <name>{{ author.visible_name | xml_escape }}</name>
+              {% if author.url %}
+                <uri>{{ author.url | xml_escape }}</uri>
+              {% endif %}
+            </author>
+          {% endif %}
+        {% endfor %}
+      {% elsif post.author %}
+        <author>
+          <name>
+            {% assign author = site.data.authors[post.author] %}
+            {% if author and author.visible_name %}
+              {{ author.visible_name | xml_escape }}
+            {% else %}
+              {{ post.author | xml_escape }}
+            {% endif %}
+          </name>
+        </author>
+      {% else %}
+        <author>
+          <name>{{ site.author.default_name | default: site.title | xml_escape }}</name>
+        </author>
+      {% endif %}
+      <summary type="html">{{ post.excerpt | xml_escape }}</summary>
+      <content type="html">{{ post.content | xml_escape }}</content>
+      {% if post.image %}
+        <media:thumbnail url="{{ post.image | relative_url | absolute_url }}" />
+        <media:content url="{{ post.image | relative_url | absolute_url }}" medium="image" />
+      {% endif %}
+    </entry>
+  {% endfor %}
+</feed>
