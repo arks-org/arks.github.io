@@ -8,7 +8,7 @@ layout: none
   <link href="{{ site.feed.path | absolute_url }}" rel="self"/>
   <link href="{{ "/" | absolute_url }}"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
-  <id>{{ "/" | absolute_url }}/</id>
+  <id>{{ "" | absolute_url }}/</id>
   <author>
     <name>{{ site.author.default_name | default: site.title | xml_escape }}</name>
   </author>
