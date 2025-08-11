@@ -7,15 +7,19 @@ authors:
   - john-kunze
 date: 2025-07-23
 published: true
-image: "../assets/images/posts/bnf_entry.png"
+image:
+  url: "/assets/images/posts/bnf_entry.png"
+  title: "physical entryway to the National Library of France"
+imagekahlo:
+  url: "/assets/images/posts/bnf_frida_kahlo.png"
+  title: "screenshot of page for artist Frida Kahlo"
 ---
 
-An early adopter of ARKs, the BnF has developed practices for displaying persistent linked open data (LOD) using
-ARK suffixes for object variants.
+An early adopter of ARKs, the BnF has developed practices for displaying persistent linked open data (LOD) using ARK suffixes for object variants.
 
 <!--more-->
 
-![Entry to the National Library of France](../../assets/images/posts/bnf_entry.png){: .img-thumbnail .img-responsive fetchpriority="high" height="auto" loading="eager"}
+![{{ page.image.title }} ]({{ page.image.url | absolute_url }}){: .img-thumbnail .img-responsive title="{{ page.image.title }}" fetchpriority="high" height="auto" loading="eager"}
 
 This post introduces [data.bnf.fr](https://data.bnf.fr) (dataBnF), the data gateway service of the French National Library, or Bibliothèque nationale de France (BnF). The main purpose of dataBnF is to promote BnF data discoverability and re-use both within and beyond its catalogs. This article dives into some details of how a national library uses ARK (Archival Resource Key) identifiers to support the Semantic Web’s vision of a “Web of Data”, which is built on Linked Open Data (LOD) for sharing structured (hierarchical), machine-readable information on the web.
 
@@ -95,8 +99,6 @@ For example, here's some of the metadata downloaded in RDF/XML upon accessing [h
 
 The "default" variant (no suffix) for [https://data.bnf.fr/ark:/12148/cb12515307z]() returns simple metadata displayed in HTML, as shown below. All the download and export choices (PDF, JSON, XML, NT, N3, and JSON-LD) can be selected from the buttons and drop-down menus circled in red in the upper right-hand corner. 
  
-![screenshot of page for artist Frida Kahlo](../../assets/images/posts/bnf_frida_kahlo.png){: .img-thumbnail .img-responsive fetchpriority="high" height="auto" loading="eager"}
+![{{ page.imagekahlo.title }}]({{ page.imagekahlo.url | absolute_url }}){: .img-thumbnail .img-responsive fetchpriority="high" title="{{ page.imagekahlo.title }}" height="auto" loading="eager"}
 
 We invite you to visit [dataBnF](https://data.bnf.fr) to see how the National Library of France provides simple access to all resource representations and makes the ARK identifier constantly visible to users.
-
-[entry]: ../../assets/images/posts/bnf_entry.png
