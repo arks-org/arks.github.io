@@ -111,7 +111,7 @@ To get your software listed please [let us know] about it.
 [1]: ../assets/images/pages/resources/1089px-Salle_de_lecture_de_la_Bibliotheque_Mazarine_Paris_n1.jpg
 [ARKetype]: https://www.arketype.ch/
 [swissuniversities]: https://www.swissuniversities.ch
-[N2T.net]: https://n2t-dev.n2t.net/
+[N2T.net]: https://n2t.net/
 [CDL]: https://cdlib.org/
 [let us know]: contact-us.md
 [arklet]: https://github.com/internetarchive/arklet

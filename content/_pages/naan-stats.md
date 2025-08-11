@@ -392,5 +392,5 @@ fetch(naan_registry_url)
 </script>
 
 [Name Assigning Authority Number]: ark-naans-and-systems.md
-[NAAN request form]: https://docs.google.com/forms/d/e/1FAIpQLSfd1CX6idwLB47g8OGKUG654auV8IU8yI7DAs61cXGOoFDn0g/viewform?c=0&w=1
-[NAAN registry]: https://legacy-n2t.n2t.net/e/pub/naan_registry.txt
+[NAAN request form]: {{ site.naan_form_url }}
+[NAAN registry]: https://n2t.net/e/pub/naan_registry.txt

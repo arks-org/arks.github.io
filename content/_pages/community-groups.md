@@ -210,4 +210,4 @@ Guided by the Mozilla Foundation's Open Leadership Framework, LYRASIS and CDL co
 this body by reaching out to those organizations that filled out our Expression of Interest form.
 
 
-[1]: /assets/images/pages/about-ark-naans-and-systems/NAAN_slice.jpg
+[1]: {{ site.baseurl }}/assets/images/pages/about-ark-naans-and-systems/NAAN_slice.jpg
