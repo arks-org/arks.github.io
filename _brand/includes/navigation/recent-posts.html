@@ -15,15 +15,12 @@
 		<a href="{{ site.baseurl }}{% link _pages/news.md %}">
 			All Posts
 		</a>
-		<a class="btn btn-primary btn-sm"
-		   href="{{ site.baseurl }}/feed/index.xml">
-			<svg class="svg-inline--fa fa-fa-rss"
-			     aria-hidden="true"
-			     role="img"
-			     xmlns="http://www.w3.org/2000/svg"
-			     viewBox="0 0 448 512" data-fa-i2svg="">
-				<use xlink:href="#svg-rss"></use>
-			</svg> RSS
+		<a
+		   href="{{ site.baseurl }}{{ site.feed.path }}">
+            <svg width="28" height="28">
+                <title>Atom/RSS feed</title>
+                <use xlink:href="#svg-rss"></use>
+            </svg>
 		</a>
 	</li>
 </ul>
