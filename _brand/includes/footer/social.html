@@ -3,17 +3,6 @@
 		{% for url in site.social.links %}
 			{% assign domain = url | replace: 'https://', '' | split: '/' | first %}
 			{% case domain %}
-				{% when 'github.com' %}
-				<a href="{{ url }}" class="link-secondary p-3">
-					<svg aria-hidden="true"
-					     role="img"
-					     xmlns="http://www.w3.org/2000/svg"
-					     data-fa-i2svg=""
-						 class="ark-alliance__social--link svg-inline--fa fa-fw fa-xl fa-github"
-						 viewBox="0 0 496 512">
-						<use xlink:href="#svg-github"></use>
-					</svg>
-				</a>
 				{% when 'fosstodon.org' %}
 				<a href="{{ url }}" class="link-primary p-3">
 					<svg aria-hidden="true"
@@ -22,6 +11,7 @@
 					     data-fa-i2svg=""
 						 class="ark-alliance__social--link svg-inline--fa fa-fw fa-xl fa-fosstodon"
 						 viewBox="0 0 448 512">
+                        <title>Mastodon microblog</title>
 						<use xlink:href="#svg-fosstodon"></use>
 					</svg>
 				</a>
@@ -33,6 +23,7 @@
 					     data-fa-i2svg=""
 					     class="ark-alliance__social--link svg-inline--fa fa-fw fa-xl fa-bluesky"
 					     viewBox="0 0 512 512">
+                        <title>Bluesky microblog</title>
 						<use xlink:href="#svg-bluesky"></use>
 					</svg>
 				</a>
@@ -44,10 +35,10 @@
 					     data-fa-i2svg=""
 					     class="ark-alliance__social--link svg-inline--fa fa-fw fa-xl fa-linkedin"
 					     viewBox="0 0 512 512">
+                        <title>LinkedIn social network</title>
 						<use xlink:href="#svg-linkedin"></use>
 					</svg>
 				</a>
-
 				{% when 'youtube.com' %}
 				<a href="{{ url }}" class="link-danger p-3">
 					<svg aria-hidden="true"
@@ -56,7 +47,8 @@
 					     data-fa-i2svg=""
 						 class="ark-alliance__social--link svg-inline--fa fa-fw fa-xl fa-youtube"
 						 viewBox="0 0 576 512">
-							<use xlink:href="#svg-youtube"></use>
+                        <title>YouTube video/social media</title>
+                        <use xlink:href="#svg-youtube"></use>
 					</svg>
 				</a>
 				{% else %}
@@ -67,10 +59,41 @@
 					     data-fa-i2svg=""
 						 class="ark-alliance__social--link svg-inline--fa fa-fw fa-xl fa-link"
 						 viewBox="0 0 640 512">
-							<use xlink:href="#svg-link"></use>
+                        <title>external website link</title>
+                        <use xlink:href="#svg-link"></use>
 					</svg>
 				</a>
 			{% endcase %}
 		{% endfor %}
+				<a class="link-secondary p-3"> </a>
+				<a href="{{ site.baseurl }}{{ site.feed.path }}" class="link-danger p-3">
+					<svg aria-hidden="true"
+					     role="img"
+					     xmlns="http://www.w3.org/2000/svg"
+					     data-fa-i2svg=""
+						 class="ark-alliance__social--link svg-inline--fa fa-fw fa-xl fa-link"
+                         width="19"
+                         height="19">
+                            <title>Atom/RSS feed</title>
+                            <use xlink:href="#svg-rss"></use>
+					</svg>
+				</a>
+				<a href="{{ site.github.repository_url }}" class="link-secondary p-3">
+					<svg aria-hidden="true"
+					     role="img"
+					     xmlns="http://www.w3.org/2000/svg"
+					     data-fa-i2svg=""
+						 class="ark-alliance__social--link svg-inline--fa fa-fw fa-xl fa-github"
+						 viewBox="0 0 720 576">
+                        <title>Github source code repository</title>
+						<use xlink:href="#svg-github"></use>
+					</svg>
+				</a>
+				<a href="https://github.com/arks-org/arks.github.io/wiki" class="link-danger p-3">
+                    <svg width="31" height="31">
+                        <title>ARKA working group wikis</title>
+                        <use xlink:href="#svg-arka-wg"></use>
+                    </svg>
+				</a>
 	</div>
 </nav>
