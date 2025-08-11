@@ -8,7 +8,10 @@ authors:
   - john-kunze
 date: 2022-11-23T20:19:11+00:00
 published: true
-image: "../assets/images/posts/2022-11-23-images-and-the-promise-of-arks-with-iiif/ark_iiif.jpg"
+image:
+  url: "/assets/images/posts/2022-11-23-images-and-the-promise-of-arks-with-iiif/ark_iiif.jpg"
+image2:
+  url: "/assets/images/posts/2022-11-23-images-and-the-promise-of-arks-with-iiif/IIIF-logo-500w.png"
 ---
 
 The integration of ARKs with the International Image Interoperability
@@ -210,14 +213,14 @@ French)
 
 [interactive figure]: https://gallica.bnf.fr/iiif/ark:/12148/btv1b8449691v/manifest.json
 [Universal Viewer]: https://universalviewer.io/
-[IIIF Logo]: ../../assets/images/posts/2022-11-23-images-and-the-promise-of-arks-with-iiif/IIIF-logo-500w.png
+[IIIF Logo]: {{ page.image2.url | absolute_url }}
 [International Image Interoperability Framework]: https://iiif.io
 [virtual reconstruction demo]: https://demos.biblissima.fr/chateauroux/
 [Mirador]: https://projectmirador.org/
 [Introduction to IIIF video]: https://www.youtube.com/watch?v=K4i7YlZEMGA
 [IIIF image API]: https://iiif.io/api/image/
 [IIIF presentation API]: https://iiif.io/api/presentation/
-[1]: ../../assets/images/posts/2022-11-23-images-and-the-promise-of-arks-with-iiif/ark_iiif.jpg
+[1]: {{ page.image.url | absolute_url }}
 [suffix passthrough]: https://n2t.net/e/suffix_passthrough.html
 [URI Syntax of the IIIF Image API]: https://iiif.io/api/image/3.0/#2-uri-syntax
 [current ARK specification]: https://datatracker.ietf.org/doc/draft-kunze-ark/

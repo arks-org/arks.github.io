@@ -12,7 +12,7 @@ layout: default
 	<div class="row py-2 my-2">
 		<div class="col-2">
 		  {% if post.image %}
-			<img src="{{ post.image }}" alt="{{ post.title }}" class="img-fluid">
+			<img src="{{ site.baseurl }}{{ post.image.url }}" alt="{{ post.title }}" class="img-fluid">
 			<!--
             consider class=post-image to refine presentation of thumbnails
             <img src="{{ post.image }}" alt="{{ post.title }}" class="img-fluid post-image">
@@ -23,7 +23,7 @@ layout: default
 		</div>
 		<div class="col-10">
 			<h2 class="h3">
-				<a href="{{ post.url | prepend: site.baseurl }}"
+				<a href="{{ site.baseurl }}{{ post.url }}"
 				   class="">
 					{{ post.title }}
 				</a>

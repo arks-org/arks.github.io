@@ -10,7 +10,8 @@ authors:
   - keziah-okyere
 date: 2024-11-04
 published: true
-image: "../assets/images/posts/wacren_images.png"
+image:
+  url: "/assets/images/posts/wacren_images.png"
 ---
 
 The WACREN network describes their use of ARKs and their new ARKs Management Dashboard.
@@ -19,7 +20,7 @@ The WACREN network describes their use of ARKs and their new ARKs Management Das
 
 ![][1]{: .img-thumbnail .img-responsive fetchpriority="high" height="auto" loading="eager" }
 
-[1]: ../../assets/images/posts/wacren_images.png
+[1]: {{ page.image.url | absolute_url }}
 
 The West and Central African Research and Education Network (WACREN) is
 committed to advancing research and education through robust network

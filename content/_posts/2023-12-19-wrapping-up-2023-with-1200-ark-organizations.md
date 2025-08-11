@@ -6,7 +6,14 @@ authors:
   - ark-alliance
 date: 2023-12-19T00:00:00+00:00
 published: true
-image: "../assets/images/posts/2023-12-19-wrapping-up-2023-with-1200-ark-organizations/map_dec_2023.png"
+image:
+  url: "/assets/images/posts/2023-12-19-wrapping-up-2023-with-1200-ark-organizations/map_dec_2023.png"
+image2:
+  url: "/assets/images/posts/2023-12-19-wrapping-up-2023-with-1200-ark-organizations/naan_growth_2023.png"
+image3:
+  url: "/assets/images/posts/2023-06-14-community-update-2023-06-13-stickers-tutorials-code-of-conduct/arka-vinyl-sticker.png"
+conduct:
+  url: "/about/ark-community-code-of-conduct"
 ---
 
 In 2023, the ARK Alliance achieved significant milestones, surpassing 1200
@@ -157,14 +164,13 @@ With a total of over 1200, we close with a list of the 93
 [60 minutes]: https://www.youtube.com/watch?v=WpdmYvrKN-M&t=50s
 [18 minutes]: https://www.youtube.com/watch?v=oZM2NbkjqQk&t=107s
 [online here]: https://www.stickermule.com/item/2421090c47beca439dbded424879d2e6
-[chart]: ../../assets/images/posts/2023-12-19-wrapping-up-2023-with-1200-ark-organizations/naan_growth_2023.png
-[map]: ../../assets/images/posts/2023-12-19-wrapping-up-2023-with-1200-ark-organizations/map_dec_2023.png
-[sticker]: ../../assets/images/posts/2023-06-14-community-update-2023-06-13-stickers-tutorials-code-of-conduct/arka-vinyl-sticker.png
-[slides here]: ../../assets/documents/2023/06/ARK-Training-Tutorial-IIIF-2023-slides.pdf
+[chart]: {{ page.image2.url | absolute_url }}
+[map]: {{ page.image.url | absolute_url }}
+[sticker]: {{ page.image3.url | absolute_url }}
 [DWeb Camp]: https://dwebcamp.org/
 [Joint Conference on Digital Libraries]: https://2023.jcdl.org/
 [Earth Science Information Partners]: https://2023julyesipmeeting.sched.com/
 [International Conference on Digital Preservation]: https://ipres2023.us/
-[ARK Community Code of Conduct]: ../_pages/about-ark-community-code-of-conduct.md
+[ARK Community Code of Conduct]: {{ page.conduct.url | absolute_url }}
 [ARKA wiki]: https://wiki.lyrasis.org/display/ARKs/ARKs+in+the+Open+Project
 [ARK organizations]: https://n2t.net/e/pub/naan_table.html

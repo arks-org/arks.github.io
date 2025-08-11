@@ -6,7 +6,8 @@ authors:
   - ark-alliance
 date: 2021-01-26T16:17:42+00:00
 published: true
-image: "../assets/images/posts/naan_growth_jan_2021.png"
+image:
+  url: "/assets/images/posts/naan_growth_jan_2021.png"
 ---
 
 The ARK Alliance, succeeding ARKs-in-the-Open, has grown with 700+
@@ -46,7 +47,7 @@ Collopy, and Julien Raemy for their help in this transition.
 The ARK Alliance welcomes participation, which can take many forms. Please
 visit the [community] page to learn about ways to become involved.
 
-[chart of growth of ARK-assigning organizations since 2001]: ../../assets/images/posts/naan_growth_jan_2021.png
+[chart of growth of ARK-assigning organizations since 2001]: {{ page.image.url | absolute_url }}
 [arks.org]: https://arks.org
 [arksintheopen.org]: https://ARKsInTheOpen.org
 [N2T.net]: https://n2t.net

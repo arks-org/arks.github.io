@@ -8,7 +8,8 @@ authors:
   - remco-van-veenendaal
 date: 2023-05-31T13:41:11+00:00
 published: true
-image: "../assets/images/posts/2023-05-31-arks-added-to-new-version-of-the-pid-guide/pidwijzer.png"
+image:
+  url: "/assets/images/posts/2023-05-31-arks-added-to-new-version-of-the-pid-guide/pidwijzer.png"
 ---
 
 The PID Guide, an interactive resource by the National Archives of the
@@ -50,6 +51,6 @@ Toolkit], which can be used to create independent instances of the interactive
 guide adapted to different contexts and use cases.
 
 
-[Screen shot of first questions of the PID guide.]: ../../assets/images/posts/2023-05-31-arks-added-to-new-version-of-the-pid-guide/pidwijzer.png
+[Screen shot of first questions of the PID guide.]: {{ page.image.url | absolute_url }}
 [pidwijzer.nl]: https://www.pidwijzer.nl/en/
 [PID Guide Toolkit]: https://www.pidwijzer.nl/en/pid-guide-methodology

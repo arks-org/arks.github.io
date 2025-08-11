@@ -6,7 +6,10 @@ authors:
   - kirsta-stapelfeldt
 date: 2022-11-17T23:54:38+00:00
 published: true
-image: "../assets/images/posts/2022-11-17-new-arks-service-from-the-university-of-toronto-scarborough-library/lake_harbour.png"
+image:
+  url: "/assets/images/posts/2022-11-17-new-arks-service-from-the-university-of-toronto-scarborough-library/lake_harbour.png"
+image2:
+  url: "/assets/images//posts/2022-11-17-new-arks-service-from-the-university-of-toronto-scarborough-library/gazebo_trees.png"
 ---
 
 The University of Toronto Scarborough Library's "ARKs-Service" is a
@@ -66,8 +69,8 @@ Github pull requests and issues are welcomed! Potential collaborators and
 users can also reach out at <dsu.utsc@utoronto.ca>.
 
 [Digital Scholarship Unit (DSU)]: https://digital.utsc.utoronto.ca/
-[1]: ../../assets/images//posts/2022-11-17-new-arks-service-from-the-university-of-toronto-scarborough-library/lake_harbour.png
+[1]: {{ page.image.url | absolute_url }}
 [Islandora,]: https://www.islandora.ca/
-[2]: ../../assets/images//posts/2022-11-17-new-arks-service-from-the-university-of-toronto-scarborough-library/gazebo_trees.png
+[2]: {{ page.image2.url | absolute_url }}
 [the work of Akio Sensei]: https://github.com/AkioUnity/Noid4Php
 [Noid4PHP]: https://github.com/Daniel-KM/Noid4Php

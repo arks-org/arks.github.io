@@ -6,7 +6,8 @@ authors:
   - john-kunze
 date: 2021-01-19T21:22:42+00:00
 published: true
-image: "../assets/images/posts/2021-01-19-ten-persistent-myths-about-persistent-identifiers/nessy.jpg"
+image:
+  url: "/assets/images/posts/2021-01-19-ten-persistent-myths-about-persistent-identifiers/nessy.jpg"
 ---
 
 Persistent identifier (PID) myths clarified: PIDs aren't access guarantees;
@@ -75,5 +76,5 @@ at least some sweat equity.
 metadata, and [decentralized]. ARKs are offered, not mandated, via the
 N2T.net resolver, which supports 700+ other types of identifier.
 
-[1]: ../../assets/images/posts/2021-01-19-ten-persistent-myths-about-persistent-identifiers/nessy.jpg
+[1]: {{ page.image.url | absolute_url }}
 [decentralized]: https://hacks.mozilla.org/2018/07/introducing-the-d-web/

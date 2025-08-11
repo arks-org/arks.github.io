@@ -6,7 +6,8 @@ authors:
   - aurelien-conraux
 date: 2022-02-22T04:47:00+00:00
 published: true
-image: "../assets/images/posts/2022-02-22-community-update/image-1.png"
+image:
+  url: "/assets/images/posts/2022-02-22-community-update/image-1.png"
 ---
 
 In February 2022, the ARK community reached 900 registered organizations,
@@ -14,8 +15,6 @@ welcomed a new curator, and got ARK specification accepted for an IETF RFC
 publication.
 
 <!--more-->
-
-![chart of growth of ARK-assigning organizations since 2001]{: .img-thumbnail .img-responsive height="191" loading="lazy" width="255" }
 
 ![][1]{: .img-thumbnail .img-responsive fetchpriority="high" height="454" loading="eager" width="1024" }
 
@@ -71,6 +70,5 @@ Here is a list of the 30 institutions that registered to assign ARKs since
 -   Musée cantonal des Beaux-Arts de Lausanne
 -   Musée cantonal de Design et d’Arts Appliqués Contemporains
 
-[chart of growth of ARK-assigning organizations since 2001]: https://n2t.net/e/pub/naan_growth.png
-[1]: ../../assets/images/posts/2022-02-22-community-update/image-1.png
+[1]: {{ page.image.url | absolute_url }}
 [IETF]: https://ietf.org
