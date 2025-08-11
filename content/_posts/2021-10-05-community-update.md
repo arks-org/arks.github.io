@@ -6,7 +6,8 @@ authors:
   - ark-alliance
 date: 2021-10-05T16:18:46+00:00
 published: true
-image: "../assets/images/posts/naan_growth_oct_2021.png"
+image:
+  url: "/assets/images/posts/naan_growth_oct_2021.png"
 ---
 
 Welcome David Nogueiras Blanco and Stéphanie Gregorio to the
@@ -59,5 +60,5 @@ past four months:
 -   ZHB Luzern
 -   And more…
 
-[chart of growth of ARK-assigning organizations since 2001]: ../../assets/images/posts/naan_growth_oct_2021.png
+[chart of growth of ARK-assigning organizations since 2001]: {{ page.image.url | absolute_url }}
 [National Microbiome Data]: https://microbiomedata.org/

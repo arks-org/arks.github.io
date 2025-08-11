@@ -6,7 +6,10 @@ authors:
   - ark-alliance
 date: 2021-11-01T20:05:18+00:00
 published: true
-image: "../assets/images/posts/2021-11-01-the-ark-origin-story/image-4.png"
+image:
+  url: "/assets/images/posts/2021-11-01-the-ark-origin-story/image-4.png"
+image2:
+  url: "/assets/images/posts/2021-11-01-the-ark-origin-story/image-1.png"
 ---
 
 The ARK scheme originated in 2001 as a response to issues with existing PID
@@ -156,8 +159,8 @@ especially useful for organizations that need large numbers of PIDs.
 Slide credit: Dominique Babini
 
 [this recent interview]: https://saaers.wordpress.com/2021/09/14/ark-alliance-an-interview-with-john-kunze/
-[1]: ../../assets/images/posts/2021-11-01-the-ark-origin-story/image-4.png
+[1]: {{ page.image.url | absolute_url }}
 [the mythology of this view]: https://n2t.net/ark:/13030/c7gb1xh09
 [Cool URIs don’t change]: https://www.w3.org/Provider/Style/URI
 [84% of peer-reviewed Latin American journals in 2014 were not indexed by Scopus or the Web of Science]: https://www.slideshare.net/Babini/coasp2014-dominique-babini-clacso
-[2]: ../../assets/images/posts/2021-11-01-the-ark-origin-story/image-1.png
+[2]: {{ page.image2.url | absolute_url }}
