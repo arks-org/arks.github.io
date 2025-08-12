@@ -6,7 +6,10 @@ authors:
   - luciano-johnson
 date: 2021-12-08T21:49:56+00:00
 published: true
-image: "../assets/images/posts/2021-12-08-the-frick-collection-to-use-arks/Frick-Art-Reference-Library-Reading-Room-Photographer-George-Koelle-2018.jpg"
+image:
+  url: "/assets/images/posts/2021-12-08-the-frick-collection-to-use-arks/Frick-Art-Reference-Library-Reading-Room-Photographer-George-Koelle-2018.jpg"
+image2:
+  url: "/assets/images/posts/2021-12-08-the-frick-collection-to-use-arks/screencapture-digitalcollections-frick-org-2021-09-22-12_08_46-2048x1538.png"
 ---
 
 The Frick Collection has chosen ARK persistent identifiers to enhance
@@ -34,5 +37,5 @@ natural choice to support this diversity of scholarly resources.
 Frick Art Reference Library Reading Room (George Koelle, 2018)
 
 [Frick Collection]: https://digitalcollections.frick.org/
-[1]: ../../assets/images/posts/2021-12-08-the-frick-collection-to-use-arks/screencapture-digitalcollections-frick-org-2021-09-22-12_08_46-2048x1538.png
-[2]: ../../assets/images/posts/2021-12-08-the-frick-collection-to-use-arks/Frick-Art-Reference-Library-Reading-Room-Photographer-George-Koelle-2018.jpg
+[1]: {{ page.image2.url | absolute_url }}
+[2]: {{ page.image.url | absolute_url }}

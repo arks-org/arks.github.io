@@ -6,7 +6,8 @@ authors:
   - julien-raemy
 date: 2021-01-20T23:11:21+00:00
 published: true
-image: "../assets/images/posts/2021-01-20-new-service-arketype/AskMeAnything-2048x862.png"
+image:
+  url: "/assets/images/posts/2021-01-20-new-service-arketype/AskMeAnything-2048x862.png"
 ---
 
 ARKetype, a new ARK allocation service by HEG-GE and SIB, will be introduced
@@ -37,5 +38,5 @@ INCIPIT project and the establishment of ARKetype.
 [INCIPIT]: https://www.swissuniversities.ch/en/topics/digitalisation/p-5-scientific-information/projects/incipit
 [swissuniversities]: https://www.swissuniversities.ch
 [Ask Me Anything]: https://www.arketype.ch/news/
-[1]: ../../assets/images/posts/2021-01-20-new-service-arketype/AskMeAnything-2048x862.png
+[1]: {{ page.image.url | absolute_url }}
 [https://app.hesge.ch/enquetes/index.php/447277/lang-en]: https://app.hesge.ch/enquetes/index.php/447277/lang-en

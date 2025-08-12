@@ -6,7 +6,8 @@ authors:
   - jack-omalley
 date: 2024-11-10
 published: true
-image: "../assets/images/posts/Frick_Collection_wkpdia.jpg"
+image:
+  url: "/assets/images/posts/Frick_Collection_wkpdia.jpg"
 ---
 
 Arklet-frick is a tool created by the Frick collection for minting and resolving ARKs.
@@ -66,4 +67,4 @@ The open source code for [arklet-frick](https://github.com/squidgetx/arklet-fric
 is available on Github, where we welcome feedback.  In a separate blog post we 
 will present how the Frick has been using ARKs since launching its API.
 
-[building]: ../../assets/images/posts/Frick_Collection_wkpdia.jpg
+[building]: {{ page.image.url | absolute_url }}

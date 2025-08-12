@@ -1,26 +1,18 @@
 <footer class="ark-alliance__footer border-top border-dark-subtle my-4">
 	<nav class="container mt-4">
-		<ul class="d-flex justify-content-between list-unstyled border-bottom border-dark-subtle pb-2">
+		<ul class="d-flex justify-content-between list-unstyled pb-2">
 			<li>
 				<a class="text-uppercase link-secondary"
 				   href="{{ site.contact.newsletter }}">
-					Subscribe to our Newsletter
+					Subscribe to Newsletter
 				</a>
 			</li>
 			<li>
-				<span class="h5">
-					Updated {{ site.time | date_to_long_string }}
-				</span>
-				<a class="btn btn-primary btn-sm"
-				   href="{{ site.baseurl }}/feed/index.xml">
-					<svg class="svg-inline--fa fa-fa-rss"
-					     aria-hidden="true"
-					     role="img"
-					     xmlns="http://www.w3.org/2000/svg"
-					     viewBox="0 0 448 512" data-fa-i2svg="">
-						<use xlink:href="#svg-rss"></use>
-					</svg> RSS
-				</a>
+				<a class="text-uppercase link-secondary"
+				   href="{{ site.baseurl }}{% link _pages/sitemap.md %}">
+					Sitemap</a>
+                <span class="text-uppercase link-secondary">
+                    {{ site.time | date: "%Y-%m-%d" }}</span>
 			</li>
 			<li>
 				<a class="text-uppercase link-secondary"
@@ -30,57 +22,5 @@
 			</li>
 		</ul>
 	</nav>
-
-
-	<nav class="container mt-4">
-		<ul class="nav">
-			<li class="nav-item">
-				<a class="nav-link text-uppercase link-secondary"
-				   href="{{ site.baseurl }}{% link _pages/sitemap.md %}">
-					Sitemap
-				</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link text-uppercase link-secondary"
-				   href="{{ site.github.repository_url }}">
-					<svg aria-hidden="true"
-					     role="img"
-					     xmlns="http://www.w3.org/2000/svg"
-					     data-fa-i2svg=""
-						 class="ark-alliance__social--link svg-inline--fa fa-xl fa-github"
-						 viewBox="0 0 496 512">
-						<use xlink:href="#svg-github"></use>
-					</svg> Repository
-				</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link text-uppercase link-secondary"
-				   href="{{ site.github.issues_url }}">
-					<svg aria-hidden="true"
-					     role="img"
-					     xmlns="http://www.w3.org/2000/svg"
-					     data-fa-i2svg=""
-						 class="ark-alliance__social--link svg-inline--fa fa-xl fa-github"
-						 viewBox="0 0 496 512">
-						<use xlink:href="#svg-github"></use>
-					</svg> Issues
-				</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link text-uppercase link-secondary"
-				   href="{{ site.github.wiki_url }}">
-					<svg aria-hidden="true"
-					     role="img"
-					     xmlns="http://www.w3.org/2000/svg"
-					     data-fa-i2svg=""
-						 class="ark-alliance__social--link svg-inline--fa fa-xl fa-github"
-						 viewBox="0 0 496 512">
-						<use xlink:href="#svg-github"></use>
-					</svg> Wiki Docs
-				</a>
-			</li>
-		</ul>
-	</nav>
-
 
 </footer>
