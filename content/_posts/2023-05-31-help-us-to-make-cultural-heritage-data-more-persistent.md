@@ -7,7 +7,8 @@ authors:
   - valentine-charles
 date: 2023-05-31T14:01:15+00:00
 published: true
-image: "../assets/images/posts/2023-05-31-help-us-to-make-cultural-heritage-data-more-persistent/persistent_identifiers_survey_lead.jpg"
+image:
+  url: "/assets/images/posts/2023-05-31-help-us-to-make-cultural-heritage-data-more-persistent/persistent_identifiers_survey_lead.jpg"
 ---
 
 Europeana Foundation seeks input through a survey to enhance persistent
@@ -98,11 +99,11 @@ for your participation!
 [Europeana]: https://pro.europeana.eu
 [here]: https://pro.europeana.eu/post/help-us-to-make-cultural-heritage-data-more-persistent
 [our survey]: https://survey.zohopublic.com/zs/CCCNrf
-[cite]: ../../assets/images/posts/2023-05-31-help-us-to-make-cultural-heritage-data-more-persistent/persistent_identifiers_survey_lead.jpg
+[cite]: {{ page.image.url | absolute_url }}
 [common European data space for cultural heritage]: https://pro.europeana.eu/page/common-european-data-space-for-cultural-heritage
-[Archival Resource Key (ARK)]: ../_pages/about.md
+[Archival Resource Key (ARK)]: {{ "/about" | absolute_url }}
 [Digital Object Identifier (DOI)]: https://www.doi.org/
 [National Bibliography Numbers (NBN)]: https://www.ifla.org/references/best-practice-for-national-bibliographic-agencies-in-a-digital-age/resource-description-and-standards/identifiers/national-bibliography-number-nbn/
 [Persistent Identifiers for eResearch (ePIC)]: https://www.pidconsortium.net/
-[N2T global resolver]: ../_pages/about-n2t-global-resolver.md
+[N2T global resolver]: {{ "/about/n2t-global-resolver" | absolute_url }}
 [FAIR principles]: https://www.go-fair.org/fair-principles/

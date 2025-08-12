@@ -6,7 +6,9 @@ authors:
   - ark-alliance
 date: 2025-07-28
 published: true
-image: "../assets/images/posts/modern_classic_arks.png"
+image:
+  url: "/assets/images/posts/modern_classic_arks.png"
+  title: "two identical golden arks as car hood ornaments, except the one in front (more modern) is lacking a bowsprit"
 ---
 
 In late 2025 the ARK Alliance (arks.org) will convert its existing documentation and modify its communication practices to align with the modern form of ARKs, the most visible difference being removal of the slash ('/') at the end of "ark:/". Two ARKs that differ only in form are equivalent in perpetuity.
@@ -16,11 +18,11 @@ In late 2025 the ARK Alliance (arks.org) will convert its existing documentation
 <table style="width:100%; border:none; margin-top:30px; margin-bottom:10px;">
   <tr>
     <td style="width:30%; border:none; padding-right:55px;">
-<img src="../../assets/images/posts/modern_classic_arks.png"
-      alt="Tongue-in-cheek image of two identical golden car hood ornaments, except the one in the foreground (the modern) is lacking a bowsprit"
-      style="width: 100%; height: auto;"
-      fetchpriority="high"
-      loading="eager">
+      <img src="{{ page.image.url | absolute_url }}"
+        title="{{ page.image.title }}"
+        style="width: 100%; height: auto;"
+        fetchpriority="high"
+        loading="eager">
     </td>
     <td style="width:70%; border:none; padding-right:20px; vertical-align:bottom;">
 <p>

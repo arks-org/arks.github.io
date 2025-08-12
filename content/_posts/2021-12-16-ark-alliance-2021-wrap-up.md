@@ -6,7 +6,10 @@ authors:
   - ark-alliance
 date: 2021-12-16T03:02:42+00:00
 published: true
-image: "../assets/images/posts/2021-12-16-ark-alliance-2021-wrap-up/image-1.png"
+image:
+  url: "/assets/images/posts/2021-12-16-ark-alliance-2021-wrap-up/image-1.png"
+image2:
+  url: "/assets/images/posts/2021-12-16-ark-alliance-2021-wrap-up/image.png"
 ---
 
 In 2021, the ARK community expanded with 187 new institutions, including the
@@ -221,12 +224,12 @@ Happy New Year!
 [ARK plugin for OJS]: 2021-04-22-announcing-an-ark-plugin-for-open-journal-systems-ojs.md
 [ARK origin story]: 2021-11-01-the-ark-origin-story.md
 [NDSA]: https://ndsa.org
-[1]: ../../assets/images/posts/2021-12-16-ark-alliance-2021-wrap-up/image-1.png
-[2]: ../../assets/images/posts/2021-12-16-ark-alliance-2021-wrap-up/image.png
-[ARK Alliance]: ../_pages/index.md
+[1]: {{ page.image.url | absolute_url }}
+[2]: {{ page.image2.url | absolute_url }}
+[ARK Alliance]: {{ "/" | absolute_url }}
 [ARK identifiers]: https://en.wikipedia.org/wiki/Archival_Resource_Key
 [N2T.net]: https://n2t.net/
 [outreach]: https://wiki.lyrasis.org/display/ARKs/Outreach+Working+Group
 [technical]: https://wiki.lyrasis.org/display/ARKs/Technical+Working+Group
 [registering new institutions]: https://wiki.lyrasis.org/display/ARKs/NAAN+Registry+Working+Group
-[let us know]: ../_pages/contact-us.md
+[let us know]: {{ "/contact-us" | absolute_url }}

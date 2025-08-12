@@ -6,7 +6,8 @@ authors:
   - ark-alliance
 date: 2024-11-06
 published: true
-image: "../assets/images/posts/arka_com_update_nov2024.png"
+image:
+  url: "/assets/images/posts/arka_com_update_nov2024.png"
 ---
 
 The ARK Alliance surpasses 1400 ARK organizations and reveals a
@@ -44,22 +45,12 @@ implementation, developers at The Frick Collection have created the
 [arklet-Frick](https://github.com/squidgetx/arklet-frick/tree/master) tool. 
 It adds improved security and bugfixes, as well as bulk operations, suffix passthrough, 
 shoulder rules, extensive metadata, endpoints for `?info` and `?json`, and more. See the
-[about](../../about/) pages for more information on these concepts.
+[about]({{ "/about" | absolute_url }}) pages for more information on these concepts.
 
-As always we welcome volunteers for our [working groups](../_pages/community-groups/): 
-Outreach, Technical, and NAAN Curation. If you wish to volunteer, please express your interest
-by filling out [this form](https://docs.google.com/forms/d/15bhmP5Z0aOLaTWfXKK0TBTJCOAXuT30hIzfhij-D_oM).
+As always we welcome volunteers for our
+[working groups]({{ "/community-groups/" | absolute_url }}): 
+Outreach, Technical, and NAAN Curation.
+If you wish to volunteer, please express your interest by filling out
+[this form](https://docs.google.com/forms/d/15bhmP5Z0aOLaTWfXKK0TBTJCOAXuT30hIzfhij-D_oM).
 
-[arkabytld]: ../../assets/images/posts/arka_com_update_nov2024.png
-[bytld]: ../../assets/images/posts/ARK-orgs-by-TLD.png
-[wdpd]: ../../assets/images/posts/logo_wdpd2024.jpg
-[online here]: https://www.stickermule.com/item/2421090c47beca439dbded424879d2e6
-[1]: ../../assets/images/posts/2023-06-14-community-update-2023-06-13-stickers-tutorials-code-of-conduct/arka-vinyl-sticker.png
-[slides here]: ../../assets/documents/2023/06/ARK-Training-Tutorial-IIIF-2023-slides.pdf
-[DWeb Camp]: https://dwebcamp.org/
-[Joint Conference on Digital Libraries]: https://2023.jcdl.org/
-[Earth Science Information Partners]: https://2023julyesipmeeting.sched.com/
-[International Conference on Digital Preservation]: https://ipres2023.us/
-[ARK Community Code of Conduct]: ../_pages/about-ark-community-code-of-conduct.md
-[ARKA wiki]: https://wiki.lyrasis.org/display/ARKs/ARKs+in+the+Open+Project
-[ARK organizations]: https://n2t.net/e/pub/naan_table.html
+[arkabytld]: {{ page.image.url | absolute_url }}

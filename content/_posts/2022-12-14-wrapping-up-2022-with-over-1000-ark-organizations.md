@@ -6,7 +6,10 @@ authors:
   - ark-alliance
 date: 2022-12-14T02:31:19+00:00
 published: true
-image: "../assets/images/posts/2022-12-14-wrapping-up-2022-with-over-1000-ark-organizations/image-2048x845.png"
+image:
+  url: "/assets/images/posts/2022-12-14-wrapping-up-2022-with-over-1000-ark-organizations/image-2048x845.png"
+image1:
+  url: "/assets/images/posts/2022-12-14-wrapping-up-2022-with-over-1000-ark-organizations/naan_growth_2022.png"
 ---
 
 In 2022, the ARK Alliance achieved significant milestones, surpassing 1000
@@ -171,6 +174,6 @@ Here is a list of the 120 institutions that registered to assign ARKs since
 -   Direction régionale des affaires culturelles de Bretagne – service
     régional d’archéologie
 
-[1]: ../../assets/images/posts/2022-12-14-wrapping-up-2022-with-over-1000-ark-organizations/naan_growth_2022.png
-[2]: ../../assets/images/posts/2022-12-14-wrapping-up-2022-with-over-1000-ark-organizations/image-2048x845.png
+[1]: {{ page.image1.url | absolute_url }}
+[2]: {{ page.image.url | absolute_url }}
 [Code4Lib 2023]: https://2023.code4lib.org/
