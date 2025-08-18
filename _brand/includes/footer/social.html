@@ -1,5 +1,5 @@
-<nav class="ark-allicance__social my-4">
-	<div class="d-flex justify-content-center my-4">
+<nav class="ark-alliance__social my-4">
+	<div class="d-flex justify-content-center flex-wrap my-4">
 		{% for url in site.social.links %}
 			{% assign domain = url | replace: 'https://', '' | split: '/' | first %}
 			{% case domain %}
