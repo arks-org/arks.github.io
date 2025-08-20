@@ -25,8 +25,11 @@ num_support_orgs: 47
 ark_age: "24 years"
 num_arks: "8.2 billion"
 num_dois: "257 million"
+
+map_ark_orgs: "https://www.google.com/maps/d/viewer?mid=1ALGeRERECL36f2pg7pqrthUYNmuU43UM"
 ark_spec_current: "https://www.ietf.org/archive/id/draft-kunze-ark-41.html"
 naan_form_url: "https://docs.google.com/forms/d/e/1FAIpQLSf_847hNXtLGikR-XeDy1uT1AKd24DpHnt5UQh2i8ORRu7u-w/viewform"
+
 naan_registry_txt: "https://cdluc3.github.io/naan_reg_priv/naan_registry.txt"
 naan_registry_json: "https://cdluc3.github.io/naan_reg_priv/naan_records.json"
 

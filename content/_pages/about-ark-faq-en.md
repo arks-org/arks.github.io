@@ -1,65 +1,20 @@
-ARK Identifiers FAQ
-===================
+---
+title: Frequently Asked Questions and Answers about ARKs
+permalink: /about/ark-identifiers-faq-en
+pid: 77
+date: 2021-03-19
+published: true
+---
 
-Created by John Kunze, last modified on Mar 19, 2021
+Frequently Asked Questions and Answers about ARKs (English version).
 
-**Frequently Asked Questions and Answers about ARKs**
+<!--more-->
 
-/\*<!\[CDATA\[\*/ div.rbtoc1721795063036 {padding: 0px;} div.rbtoc1721795063036 ul {margin-left: 0px;} div.rbtoc1721795063036 li {margin-left: 0px;padding-left: 0px;} /\*\]\]>\*/
 
-*   [Basics](#ARKIdentifiersFAQ-Basics)
-    *   [How can I give feedback on this document?](#ARKIdentifiersFAQ-HowcanIgivefeedbackonthisdocument?)
-    *   [What are ARKs?](#ARKIdentifiersFAQ-WhatareARKs?)
-    *   [What's an identifier?](#ARKIdentifiersFAQ-What'sanidentifier?)
-    *   [What's a persistent identifier?](#ARKIdentifiersFAQ-What'sapersistentidentifier?)
-    *   [What's a resolver?](#ARKIdentifiersFAQ-What'saresolver?)
-    *   [What kinds of things are ARKs assigned to?](#ARKIdentifiersFAQ-ARKedThingsWhatkindsofthingsareARKsassignedto?)
-    *   [Who is using ARKs?](#ARKIdentifiersFAQ-WhoisusingARKs?)
-*   [Getting started](#ARKIdentifiersFAQ-Gettingstarted)
-    *   [What do I need to create ARKs?](#ARKIdentifiersFAQ-localglobalWhatdoIneedtocreateARKs?)
-    *   [How do I start creating the character strings that become ARKs?](#ARKIdentifiersFAQ-HowdoIstartcreatingthecharacterstringsthatbecomeARKs?)
-    *   [What is the recommended form for ARK strings?](#ARKIdentifiersFAQ-betanumericWhatistherecommendedformforARKstrings?)
-    *   [What are opaque identifiers?](#ARKIdentifiersFAQ-opaqueWhatareopaqueidentifiers?)
-    *   [How do I make server content addressable with ARKs?](#ARKIdentifiersFAQ-servingARKsHowdoImakeservercontentaddressablewithARKs?)
-    *   [How do I cite or advertise an ARK?](#ARKIdentifiersFAQ-HowdoIciteoradvertiseanARK?)
-    *   [Are there tools and services to help with ARKs?](#ARKIdentifiersFAQ-toolsAretheretoolsandservicestohelpwithARKs?)
-    *   [Is "ARK" intended to be a Christian metaphor?](#ARKIdentifiersFAQ-Is"ARK"intendedtobeaChristianmetaphor?)
-*   [Beyond the basics](#ARKIdentifiersFAQ-Beyondthebasics)
-    *   [What is N2T?](#ARKIdentifiersFAQ-n2tWhatisN2T?)
-    *   [How does N2T do its work?](#ARKIdentifiersFAQ-HowdoesN2Tdoitswork?)
-    *   [If most ARKs run on their own resolvers, why is there also a global resolver for ARKs?](#ARKIdentifiersFAQ-IfmostARKsrunontheirownresolvers,whyistherealsoaglobalresolverforARKs?)
-    *   [My organization has its own ARK resolver – should I care about N2T.net?](#ARKIdentifiersFAQ-MyorganizationhasitsownARKresolver–shouldIcareaboutN2T.net?)
-    *   [Why does the global ARK resolver (n2t.net) not have the word "ARK" in it?](#ARKIdentifiersFAQ-WhydoestheglobalARKresolver(n2t.net)nothavetheword"ARK"init?)
-    *   [What does "suffix passthrough" mean?](#ARKIdentifiersFAQ-Whatdoes"suffixpassthrough"mean?)
-    *   [What are the parts of an ARK?](#ARKIdentifiersFAQ-WhatarethepartsofanARK?)
-    *   [Can I assign ARKs to things inside something that already has an ARK?](#ARKIdentifiersFAQ-granularityCanIassignARKstothingsinsidesomethingthatalreadyhasanARK?)
-*   [ARK namespaces and sub-namespaces](#ARKIdentifiersFAQ-ARKnamespacesandsub-namespaces)
-    *   [What is the purpose of the NAAN?](#ARKIdentifiersFAQ-namespacesWhatisthepurposeoftheNAAN?)
-    *   [How do ARK namespaces work?](#ARKIdentifiersFAQ-HowdoARKnamespaceswork?)
-    *   [What is a shoulder?](#ARKIdentifiersFAQ-shouldersWhatisashoulder?)
-    *   [What is the purpose of a shoulder?](#ARKIdentifiersFAQ-Whatisthepurposeofashoulder?)
-    *   [Might I ever want to create ARKs on a NAAN that is not owned by my organization?](#ARKIdentifiersFAQ-#sharedNAANMightIeverwanttocreateARKsonaNAANthatisnotownedbymyorganization?)
-    *   [Can I make changes to a NAAN?](#ARKIdentifiersFAQ-CanImakechangestoaNAAN?)
-*   [ARKs and other identifiers](#ARKIdentifiersFAQ-ARKsandotheridentifiers)
-    *   [Why would I use ARKs compared to, for example, DOIs?](#ARKIdentifiersFAQ-WhywouldIuseARKscomparedto,forexample,DOIs?)
-    *   [What do ARK, DOI, Handle, PURL, and URN have in common?](#ARKIdentifiersFAQ-WhatdoARK,DOI,Handle,PURL,andURNhaveincommon?)
-    *   [Wait, are you saying ARK, DOI, Handle, PURL, and URN are useless?](#ARKIdentifiersFAQ-Wait,areyousayingARK,DOI,Handle,PURL,andURNareuseless?)
-    *   [How do ARKs differ from identifiers like DOIs, Handles, PURLs, and URNs?](#ARKIdentifiersFAQ-differencesHowdoARKsdifferfromidentifierslikeDOIs,Handles,PURLs,andURNs?)
-        *   [The short answer](#ARKIdentifiersFAQ-Theshortanswer)
-        *   [More differences between ARKs, DOIs, Handles, PURLs, and URNs](#ARKIdentifiersFAQ-MoredifferencesbetweenARKs,DOIs,Handles,PURLs,andURNs)
-    *   [But if ARKs can be deleted, how can they be trusted?](#ARKIdentifiersFAQ-ButifARKscanbedeleted,howcantheybetrusted?)
-    *   [Can an object have both an ARK and a DOI?](#ARKIdentifiersFAQ-CananobjecthavebothanARKandaDOI?)
-    *   [When should I use ARKs compared to DOIs, Handles, PURLs, or URNs?](#ARKIdentifiersFAQ-WhenshouldIuseARKscomparedtoDOIs,Handles,PURLs,orURNs?)
-*   [From cradle to grave](#ARKIdentifiersFAQ-Fromcradletograve)
-    *   [What is meant by ARKs supporting early object development?](#ARKIdentifiersFAQ-earlyWhatismeantbyARKssupportingearlyobjectdevelopment?)
-    *   [If ARKs don't require it, why bother creating metadata?](#ARKIdentifiersFAQ-metadataIfARKsdon'trequireit,whybothercreatingmetadata?)
-    *   [What metadata is recommended for ARKs?](#ARKIdentifiersFAQ-WhatmetadataisrecommendedforARKs?)
-    *   [Why do I see ARK metadata with who, what, when, where labels?](#ARKIdentifiersFAQ-WhydoIseeARKmetadatawithwho,what,when,wherelabels?)
-    *   [What is an ARK "inflection" and how does it differ from "content negotiation"?](#ARKIdentifiersFAQ-inflectionsWhatisanARK"inflection"andhowdoesitdifferfrom"contentnegotiation"?)
-    *   [What do you mean by silos?](#ARKIdentifiersFAQ-Whatdoyoumeanbysilos?)
+* TOC
+{:toc}
 
-Basics
-======
+## Basics
 
 ### How can I give feedback on this document?
 
@@ -69,11 +24,11 @@ By sending an email to the ARK mailing list, https://groups.google.com/forum/#
 
 ARKs (Archival Resource Keys) are high-functioning _identifiers_ that lead you to things and to descriptions of those things. For example, this ARK,
 
-     `https://n2t.net/ark:/67531/metadc107835/`
+              `https://n2t.net/ark:/67531/metadc107835/`
 
 gets you to a dissertation, and adding '??' on the end of the ARK should get you to its description:
 
-     `[https://n2t.net/ark:/67531/metadc107835/??](https://n2t.net/ark:/67531/metadc107835/??)`
+              `https://n2t.net/ark:/67531/metadc107835/??`
 
 ### What's an identifier?
 
@@ -85,7 +40,7 @@ appears inside two different URLs (Uniform Resource Locators, also known as web 
 
           `http://ark.bnf.fr/ark:/12148/btv1b8449691v/f29`
 
-            `https://n2t.net/ark:/12148/btv1b8449691v/f29`
+          `https://n2t.net/ark:/12148/btv1b8449691v/f29`
 
 ARKs are especially good at being _persistent identifiers_.
 
@@ -109,12 +64,29 @@ To anything digital, physical, or abstract. That can include things that _don't 
 
 Kinds of things that have ARKs include those listed below. Numbers are approximate, current as of September 2020, and self-reported by the linked organizations.
 
+*   genealogical records (8 billion [FamilySearch](https://familysearch.org))
+*   publisher content (100 million [Portico](https://www.portico.org))
+*   scientific records (22 million [INIST](https://www.inist.fr))
+*   scanned texts (20 million [Internet Archive](https://archive.org))
+*   bibliographic records (15 million BnF main catalog)
+*   museum specimens (11 million going on 100 million [Smithsonian](https://library.si.edu))
+*   public health documents, many from legal discovery (15 million [UCSF IDL](https://www.industrydocuments.ucsf.edu))
+*   digitized documents and objects (5 million BnF Gallica)
+*   historical persons, families, and organizations (4 million [SNACC](https://snaccooperative.org))
+*   finding aids and special collections (4 million [Merritt](https://merritt.cdlib.org/))
+*   resource maps (1.5 million [RMap Hub](https://rmap-hub.org))
+*   educational resources (1.1 million University of Utah)
+*   vocabulary terms (9,000 [Periodo](https://perio.do), [YAMZ](https://yamz.net))
+*   datasets, journals, archeological artifacts, living beings, and anything else you can think of!
+
+{% comment %}
 |     |     |
 | --- | --- |
 | Categories | Examples |
 | *   genealogical records (8 billion [FamilySearch](https://familysearch.org))<br>*   publisher content (100 million [Portico](https://www.portico.org))<br>*   scientific records (22 million [INIST](https://www.inist.fr))<br>*   scanned texts (20 million [Internet Archive](https://archive.org))<br>*   bibliographic records (15 million BnF main catalog)<br>*   museum specimens (11 million going on 100 million [Smithsonian](https://library.si.edu))<br>*   public health documents, many from legal discovery (15 million [UCSF IDL](https://www.industrydocuments.ucsf.edu))<br>*   digitized documents and objects (5 million BnF Gallica)<br>*   historical persons, families, and organizations (4 million [SNACC](https://snaccooperative.org))<br>*   finding aids and special collections (4 million [Merritt](https://merritt.cdlib.org/))<br>*   resource maps (1.5 million [RMap Hub](https://rmap-hub.org))<br>*   educational resources (1.1 million University of Utah)<br>*   vocabulary terms (9,000 [Periodo](https://perio.do), [YAMZ](https://yamz.net))<br>*   datasets, journals, archeological artifacts, living beings, and anything else you can think of! | [![](attachments/131533156/176490461.png)](https://www.familysearch.org/ark:/61903/2:1:M4MZ-NDF)[![](attachments/131533156/176490465.jpeg)](http://ark.bnf.fr/ark:/12148/btv1b8449691v)[![](attachments/131533156/176490544.png)](https://n2t.net/ark:/13960/t26b1m88x)[![](attachments/131533156/176490543.png)](http://n2t.net/ark:/99166/w6xd14mf)[![](attachments/131533156/199525311.jpg)](https://n2t.net/ark:/13030/kt3k4017k9)[![](attachments/131533156/176490464.png)](http://n2t.net/ark:/65665/326def39f-b58f-4e05-ad08-edbe9fc87801)[![](attachments/131533156/176490468.png)](https://n2t.net/ark:/88122/lfnv0009)[![](attachments/131533156/176490469.png)](http://n2t.net/ark:/99166/w6b09txc) |
 
 ![Numbers of ARK-assigning organizations since 2001.](https://n2t.net/e/images/naan_growth.png)
+{% endcomment %}
 
 ### Who is using ARKs?
 
@@ -126,9 +98,11 @@ That's a little hard to say because ARKs are very decentralized, but more than 6
 *   Internet Archive collections,
 *   ORCID researcher profiles, etc.
 
-Below is the global distribution of [organizations registered to create ARKs](https://n2t.net/e/pub/naan_registry.txt) as of September 2020. Clicking on the static image below should take you to an up-to-date, zoomable map.
+Below is the global distribution of [organizations registered to create ARKs](https://n2t.net/e/pub/naan_registry.txt). Clicking on the static image below should take you to an up-to-date, zoomable map.
 
-[![](attachments/131533156/195166885.png)](https://www.google.com/maps/d/viewer?mid=1ALGeRERECL36f2pg7pqrthUYNmuU43UM)
+[![][static map]{: .img-thumbnail .img-fluid fetchpriority="high" loading="eager"}][zoomable map]
+[![][1]{: .img-thumbnail .img-fluid fetchpriority="high" loading="eager"}][2]
+
 
 Getting started
 ===============
@@ -143,7 +117,7 @@ First you need a _NAAN_ (Name Assigning Authority Number), which is a number re
 
             `https://n2t.net/ark:/12148/btv1b8449691v/f29`
 
-is 12148, and it uniquely identifies the French National Library. Each NAAN is associated with the URL of a resolver for its ARKs, for example, to resolve 12148 ARKs, append them to `http://ark.bnf.fr/` as shown in above. The [N2T.net resolver](#ARKIdentifiersFAQ-n2) is unusual in that it routes any ARK to the resolver registered under its NAAN.
+is 12148, and it uniquely identifies the French National Library. Each NAAN is associated with the URL of a resolver for its ARKs, for example, to resolve 12148 ARKs, append them to `http://ark.bnf.fr/` as shown in above. The [N2T.net resolver](#what-is-n2t) is unusual in that it routes any ARK to the resolver registered under its NAAN.
 
 There is no charge to obtain or use a NAAN, and you can request one by filling out an online form. Over 650 organizations have NAANs – libraries, archives, museums, university departments, government agencies, scholarly and educational publishers, projects, etc. – all listed in the public NAAN registry.
 
@@ -179,13 +153,15 @@ Regarding assignment, one common strategy is to leverage legacy identifiers. For
 
 Persistent identifier strings are typically opaque, deliberately revealing little about what they're assigned to, because non-opaque identifiers do not age or travel well. Organization names are notoriously transient, which is why NAANs are opaque numbers. As titles and dates are corrected, word meanings evolve (e.g., innocent older acronyms may become offensive or infringing), strings meant to be persistent can become confusing or politically challenging. The generation and assignment of completely opaque strings comes with risk too, for example, numbers assigned sequentially reveal timing information and strings containing letters can unintentionally spell words (which is why vowels are missing from the recommended character repertoire). 
 
-|     |     |     |     |
-| --- | --- | --- | --- |
-| Example strings with a range of opacity |     |     |     |
+<div class="table-responsive" markdown=1>
+|----|----|----|
+| Opacity type | Examples  | Examples  | Examples  |
 | **non-opaque** | Netscape Permanent Archive | Gay\_Divorcee\_1934\_April\_1 | Name-to-Thing Resolver |
 | **opaque-ish** | x0001, x0002, ..., x9998 | GD/1934/04/01 | n2t.net |
 | **opaquer** | 141e86dc-d396-4e59-bbc2-4c3bf5326152 | 19340401 | n2t |
 | **opaquest** | 141e86dcd3964e59bbc24c3bf5326152 | h8k74926g | 12148 |
+{: .table .table-striped .table-hover }
+</div>
 
 ARKs are not required to be opaque, but it is recommended that the base object name be made opaque, since it tends to name the main focus of persistence. If any qualifier strings follow that name, it is less important that they be opaque. To help choose your approach to opacity, you may wish to consider compatibility with legacy identifiers and ease of string generation and transcription (eg, brevity, check digits). New strings can be created (minted) with date/time, UUID, and number generators, as well as [Noid (Nice Opaque Identifiers)](http://n2t.net/e/noid.html) minters. 
 
@@ -245,11 +221,11 @@ When resolution is finished, the user is often unaware that it happened, unless 
 
 ### How does N2T do its work?
 
-![Structure of the N2T resolver](attachments/131533156/131533157.jpg "Structure of the N2T resolver")
+![Structure of the N2T resolver](../assets/images/share/n2t_arch_classic.jpg)
 
 When a resolution request comes in from the general public, N2T looks up the identifier and redirects the original link to a forwarding link. To do this it uses two different resolution "patterns". To begin, N2T tries to resolve according to information found in an individual stored identifier. Failing that, N2T tries to resolve according to any stored class rules, based on the identifier type. 
 
-N2T has a different kind of stored data for each pattern. First, it stores individual records for about 50 million object identifiers (eg, ARKs, DOIs) that it obtains from three sources: [EZID.cdlib.org](https://ezid.cdlib.org), [Internet Archive](https://archive.org), and [YAMZ.net](https://yamz.net). When such records include a redirection URL (_target_) and descriptive [metadata](https://wiki.lyrasis.org/display/ARKs/ARK+Identifiers+FAQ#ARKIdentifiersFAQ-metadata), N2T can act on [inflections](https://wiki.lyrasis.org/display/ARKs/ARK+Identifiers+FAQ#ARKIdentifiersFAQ-inflections) as well as perform [suffix passthrough](https://ezid.cdlib.org/learn/suffix_passthrough) and "content negotiation". To support creation and maintenance of individual identifier records, there is an N2T API requiring login credentials. The API also allows batch operations and unique identifier generation (minting).
+N2T has a different kind of stored data for each pattern. First, it stores individual records for about 50 million object identifiers (eg, ARKs, DOIs) that it obtains from three sources: [EZID.cdlib.org](https://ezid.cdlib.org), [Internet Archive](https://archive.org), and [YAMZ.net](https://yamz.net). When such records include a redirection URL (_target_) and descriptive [metadata](#what-is-meant-by-arks-supporting-early-object-development), N2T can act on [inflections](#what-is-an-ark-inflection-and-how-does-it-differ-from-content-negotiation) as well as perform [suffix passthrough](https://ezid.cdlib.org/learn/suffix_passthrough) and "content negotiation". To support creation and maintenance of individual identifier records, there is an N2T API requiring login credentials. The API also allows batch operations and unique identifier generation (minting).
 
 Second, even if N2T knows nothing about an individual identifier, resolution may still work because of a stored routing rule record triggered by the type of the identifier. N2T maintains over 3500 rule records regularly updated from several sources, including the NAAN registry, a database of ARK and DOI shoulders, and a formal partnership on compact identifiers with identifiers.org.
 
@@ -301,9 +277,22 @@ In this case, suffix passthrough saved your having to maintain registrations for
 
 ### What are the parts of an ARK?
 
-  
+```
 
- `**ARK ANATOMY**                                                      Resolver Service   Base Object Name    Qualifiers        __________________  _________________  _____________       /                  \/         ...     \/             \       https://example.org/ark:/12345/x54xz321/s3/f8.05v.tiff               \_________/ \__/ \___/ \______/\____/\_______/                    |       |     |  ...  |     |       |                    |     Label   |   |   | Sub-parts  Variants                    |             |   |   |    Name Mapping Authority (NMA)  |   |  Assigned Name      ...                                  |   +---------- Shoulder: **/x5**                   Name Assigning Authority Number (NAAN)`
+ARK ANATOMY
+     Resolver Service   Base Object Name    Qualifiers
+    __________________  _________________  _____________
+   /                  \/         ...     \/             \
+   https://example.org/ark:/12345/x54xz321/s3/f8.05v.tiff
+           \_________/ \__/ \___/ \______/\____/\_______/
+                |       |     |  ...  |     |       |
+                |     Label   |   |   | Sub-parts  Variants
+                |             |   |   |
+Name Mapping Authority (NMA)  |   |  Assigned Name      ...
+                              |   +---------- Shoulder: /x5
+               Name Assigning Authority Number (NAAN)
+```
+{: .bg-secondary-subtle }
 
 ### Can I assign ARKs to things inside something that already has an ARK?
 
@@ -336,13 +325,16 @@ All NAANs must be registered with N2T and listed in the public NAAN registry, wh
 
 They work much the same way that all namespaces work. Given a prefix associated with a namespace, this prefix can be "extended" (adding characters to the end of it) to create a new sub-namespace (directly under it) associated with the extended prefix. If the extended prefixes don't conflict, nor will the names in the associated namespaces. There can be a namespace associated with any prefix you can think of, each with a potentially infinite number of names (ARKs) that start with it.
 
-|     |     |     |
-| --- | --- | --- |
+
+<div class="table-responsive" markdown=1>
+|-----|-----|-----|
 | Set of all ARKs starting | Associated namespace | Example ARK in that namespace |
 | ark:/ | All ARKs | ark:/99999/fk4gt2m |
 | ark:/12345/ | ARKs under the NAAN 12345 | ark:/12345/p987654 |
-| `ark:/12345/x5` | ARKs under the 12345/x5 _shoulder_ | ark:/12345/x5wf6789 |
+| ark:/12345/x5 | ARKs under the 12345/x5 _shoulder_ | ark:/12345/x5wf6789 |
 | ark:/12345/x5wf6789/ | ARKs under the 12345/x5wf6789 _object_ | ark:/12345/x5wf6789/c2/s4.pdf |
+{: .table .table-striped .table-hover }
+</div>
 
 The above table shows examples of four common namespace/sub-namespace levels. The first is for all ARKs and the second is for all ARKs under ark:12345. The third is the shoulder concept, described below, which is the next subdivision under the NAAN; note that it has no "/" after it.
 
@@ -350,7 +342,7 @@ The fourth, a complete ARK-as-prefix example, shows that an object ARK is itself
 
 ### What is a shoulder?
 
-![](attachments/131533156/187173674.png)
+![](../assets/images/share/lock_jargon.png)
 
 A _shoulder_ is a sub-namespace under a NAAN. It is the set all ARKs starting with a short, fixed extension to the NAAN. For example, in
 
@@ -374,13 +366,15 @@ Yes, because there are four shared NAANs with special semantics that you might 
 
 Shared NAANs are not owned by any one organization. In order to create ARKs without conflict under a shared NAAN requires, as you might imagine, reserving a shoulder, and that requires filling out an online form to request a shoulder under a shared NAAN (please don't use this for shoulders under your own, non-shared NAAN).
 
-|     |     |     |     |
+<div class="table-responsive" markdown=1>
 | --- | --- | --- | --- |
-| Shared NAAN  <br>_meaning_ | Purpose, meaning, or connotation of ARKs with this NAAN.  <br>  <br>(It's ok for these NAANs to be _non-opaque_ since their meanings are immutable.) | Expect to resolve? | OK for long term reference? |
-| `**12345** _examples_` | Example ARKs appearing in documentation. They might resolve, but no link checker need be concerned if they don't. They should not be considered viable for long term reference. | maybe | no  |
-| 99152 terms | ARKs for controlled vocabulary and ontology terms, such as metadata element names and pick-list values. They should resolve to term definitions and are suitable for long term reference. | yes | yes |
-| 99166 agents | ARKs for people, groups, and institutions as "agents" (actors, such as creators, contributors, publishers, performers, etc). They should resolve to agent definitions and are suitable for long term reference. | yes | yes |
-| 99999 test ids | ARKs for test, development, or experimental purposes, often at scale. They might resolve, but no link checker need be concerned if they don't. They should not be considered viable for long term reference. | maybe | no  |
+| **Shared NAAN  <br>_meaning_** | **Purpose, meaning, or connotation of ARKs with this NAAN.  <br>  <br>(It's ok for these NAANs to be _non-opaque_ since their meanings are immutable.)** | **Expect to resolve?** | **OK for long term reference?** |
+| **12345** _examples_ | Example ARKs appearing in documentation. They might resolve, but no link checker need be concerned if they don't. They should not be considered viable for long term reference. | maybe | no  |
+| **99152** _terms_ | ARKs for controlled vocabulary and ontology terms, such as metadata element names and pick-list values. They should resolve to term definitions and are suitable for long term reference. | yes | yes |
+| **99166** _agents_ | ARKs for people, groups, and institutions as "agents" (actors, such as creators, contributors, publishers, performers, etc). They should resolve to agent definitions and are suitable for long term reference. | yes | yes |
+| **99999** <br>_test ids_ | ARKs for test, development, or experimental purposes, often at scale. They might resolve, but no link checker need be concerned if they don't. They should not be considered viable for long term reference. | maybe | no  |
+{: .table .table-striped .table-hover }
+</div>
 
 The 99999 and 12345 ARKs ("non-real") are especially useful if you are responsible for reviewing broken link reports. Unless you know otherwise, errors for ARKs with these NAANs can be ignored. This can save lots of wasted effort since, despite providers' best efforts, such non-real ARKs frequently "escape into the wild" for all to see. Recipients (eg, people and link checkers) that would normally be concerned with broken links have only to recognize these two special NAANs in order to avoid being distracted by them. (Note that the non-real semantics remain even if the things don't exist.)
 
@@ -388,7 +382,7 @@ The 99999 and 12345 ARKs ("non-real") are especially useful if you are responsib
 
 You can request a change to the registry entry for a NAAN related to your organization by filling out the same online form used for requesting a new NAAN. For security purposes requests are processed manually. Example reasons for a change may include
 
-*   notifying [N2T](#ARKIdentifiersFAQ-n2t) of a change in your organization's contact person or resolver URL,
+*   notifying [N2T](#what-is-n2t) of a change in your organization's contact person or resolver URL,
 *   updating your organization's name assignment policy (sample policy),
 *   requesting an additional NAAN, eg, to support a significant new body of ARKs or new organizational division, and
 *   transitioning your NAAN to another organization that will carry on your work and future use of your NAAN.
@@ -400,7 +394,7 @@ ARKs and other identifiers
 
 ### Why would I use ARKs compared to, for example, DOIs?
 
-*   To keep costs down ([details](#ARKIdentifiersFAQ-differences)).
+*   To keep costs down ([details](#how-do-arks-differ-from-identifiers-like-dois-handles-purls-and-urns)).
 *   To work with exactly the metadata you want.
 *   To be able to create identifiers without metadata.
 *   To be able to create an identifier even before your object exists.
@@ -418,7 +412,7 @@ ARKs and other identifiers
 *   To use open infrastructure consistent with your organization's values.
 *   To link directly to the objects you value instead of to landing pages.
 *   To create one identifier that enables millions ([suffix passthrough](https://ezid.cdlib.org/learn/suffix_passthrough)).
-*   To access convenient, full-function metadata via [inflections](https://wiki.lyrasis.org/display/ARKs/ARK+Identifiers+FAQ#ARKIdentifiersFAQ-inflections).
+*   To access convenient, full-function metadata via [inflections](#what-is-an-ark-inflection-and-how-does-it-differ-from-content-negotiation).
 *   To integrate easily with [IIIF](https://iiif.io/technical-details) APIs using ARK qualifiers.
 
 ### What do ARK, DOI, Handle, PURL, and URN have in common?
@@ -431,9 +425,11 @@ These are the major persistent identifier types (or schemes).
 
 They also have very similar structure, as seen in the examples below, consisting of four parts:
 
-|     |     |
-| --- | --- |
-| `https://n2t.net/_ark_:/99999/12345    https://_doi_.org/10.99999/12345 https://_handle_.net/10.99999/12345      https://purl.org/99999/12345 https:///_urn_:99999:12345` | 1.  the protocol (`https://`) plus a hostname,<br>2.  just for ARK and URN, there's also a label ("ark:" or "urn:"),<br>3.  the name assigning authority (`99999`, `10.99999`, or `99999`), which is the organization or group that created a particular identifier,<br>4.  and finally, the _name_, or local identifier, that it assigned (`12345`). |
+<div class="table-responsive" markdown=1>
+| --- | --- | --- |
+| `https://n2t.net/ark:/99999/12345`<br>`https://doi.org/11.99999/12345`<br>`https://handle.net/10.99999/12345`<br>`https://purl.org/99999/12345`<br>`https:///urn:99999:12345` | | 1.  the protocol (`https://`) plus a hostname,<br>2.  just for ARK and URN, there's also a label ("ark:" or "urn:"),<br>3.  the name assigning authority (`99999`, `10.99999`, or `99999`), which is the organization or group that created a particular identifier,<br>4.  and finally, the _name_, or local identifier, that it assigned (`12345`). |
+{: .table .table-striped .table-hover }
+</div>
 
 And they all have little effect on persistence. See [10 persistent myths about persistent identifiers](https://twitter.com/jakkbl/status/1033059109346586624).
 
@@ -465,8 +461,7 @@ ARKs are unusual in being decentralized. While one _can_ get resolution services
     *   opening an article's PDF file for reading,
     *   referencing an image file meant to be incorporated automatically inline into a document, and
     *   citing a spreadsheet to be used for direct data analysis by software.
-*   DOIs, Handles, etc. do not support ARK-style [inflections](https://wiki.lyrasis.org/display/ARKs/ARK+Identifiers+FAQ#ARKIdentifiersFAQ-inflections).
-*    that permit access to metadata regardless of whether an identifier points to an object or its landing page.
+*   DOIs, Handles, etc. do not support ARK-style [inflections](#what-is-an-ark-inflection-and-how-does-it-differ-from-content-negotiation) that permit access to metadata regardless of whether an identifier points to an object or its landing page.
 *   Unlike DOIs and Handles, ARKs don't have metadata requirements. ARKs that haven't been released into the world are easy to delete.
 *   All things eventually pass, including hostnames and the web itself and the "`https://"` protocol. When that first part of the identifier ceases to have meaning, only ARKs and URNs will include the label (eg, "ark:") indicating the type of identifier that remains.
 *   For DOIs, Handles, and PURLs, you are required to use their respective resolvers. ARKs and URNs, permit you to use your own resolver.
@@ -474,7 +469,7 @@ ARKs are unusual in being decentralized. While one _can_ get resolution services
 *   To create Handles, you are required to install and maintain a local Handle server, which gives you another system to monitor, patch, and troubleshoot.
 *   Although you can use a local or vendor resolver for your ARKs and URNs, ARKs can be resolved via the global [n2t.net](http://n2t.net) resolver.
 *   The envisioned URN resolution infrastructure was never built, so URNs are currently resolved as URLs, and there is no designated global URN-as-URL resolver. In order to register to create URNs, you must [apply for a URN namespace](https://tools.ietf.org/html/rfc8141#section-6).
-*   ARKs have some unique features that support [early object development](#ARKIdentifiersFAQ-early): ARKs can be deleted, can be born with no metadata, and can exist with any metadata you care to store. 
+*   ARKs have some unique features that support [early object development](#what-is-meant-by-arks-supporting-early-object-development): ARKs can be deleted, can be born with no metadata, and can exist with any metadata you care to store. 
 
 ### But if ARKs can be deleted, how can they be trusted?
 
@@ -486,7 +481,7 @@ While not immune to such mistakes, ARKs have the big advantage that they can be 
 
 Yes. Sometimes having two identifiers is useful, although it can become confusing when it happens often. Many people start by assigning ARKs to each thing they create in order to have a stable reference right from the beginning, even before they know whether they want to publish it, let alone keep it.
 
-The object and its metadata develop together, and for the subset of things that you end up wanting to publish in places that require DOIs, you can assign DOIs at publication time. If your ARK is stable and has basic metadata, you're already doing everything you need to support a proper DOI. This is a way in which ARKs support [early object development](#ARKIdentifiersFAQ-early).
+The object and its metadata develop together, and for the subset of things that you end up wanting to publish in places that require DOIs, you can assign DOIs at publication time. If your ARK is stable and has basic metadata, you're already doing everything you need to support a proper DOI. This is a way in which ARKs support [early object development](#what-is-meant-by-arks-supporting-early-object-development).
 
 To support two identifiers efficiently, it is recommended that you create the DOI such that it redirects to the original ARK. This not only eliminates the need ever to update the DOI redirection, but it also keeps the ARK persistent for anyone who previously recorded or bookmarked it.
 
@@ -589,35 +584,7 @@ Typically, scheme-based services are designed as silos, or [closed platforms](
 
 In contrast the [N2T (Name-to-Thing) resolver](https://n2t.net) and [EZID (identifiers made easy) management interface](https://ezid.cdlib.org) were designed to work with all identifiers. Effort put into any new feature can be efficiently leveraged across all types, which sometimes creates surprising flexibility. For example, ARKs are often stored in EZID with "DOI metadata", and every DOI stored in N2T can benefit from "ARK resolution features" such as inflections and [suffix passthrough](https://ezid.cdlib.org/learn/suffix_passthrough), which are not available via the main DOI resolver ([doi.org](https://doi.org)).
 
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
+{% comment %}
 
 Attachments:
 ------------
@@ -639,3 +606,8 @@ Attachments:
 ![](images/icons/bullet_blue.gif) [image2020-6-7\_22-38-18.png](attachments/131533156/187173674.png) (image/png)  
 ![](images/icons/bullet_blue.gif) [image2020-9-29\_10-9-15.png](attachments/131533156/195166885.png) (image/png)  
 ![](images/icons/bullet_blue.gif) [WalterJohnsonAndBabeRuth.jpg](attachments/131533156/199525311.jpg) (image/jpeg)
+
+{% endcomment %}
+
+[static map]: ../assets/images/pages/community/arkamap202407.png
+[zoomable map]: {{ site.map_ark_orgs }}
