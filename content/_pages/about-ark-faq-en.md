@@ -1,6 +1,6 @@
 ---
 title: Frequently Asked Questions and Answers about ARKs
-permalink: /about/ark-identifiers-faq-en
+permalink: /about/ark-faq-en/
 pid: 77
 date: 2021-03-19
 published: true
