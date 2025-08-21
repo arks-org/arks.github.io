@@ -149,7 +149,7 @@ developing an ARK system.
 -   Metadata
 -   Policy statements
 
-[FAQ about ARK identifiers 🇬🇧]: ark-identifiers-faq-en
+[FAQ about ARK identifiers 🇬🇧]: about-ark-faq-en.md
 [FAQ sur les identifiants ARK 🇫🇷]: https://wiki.lyrasis.org/pages/viewpage.action?pageId=178880619
 [FAQ sobre identificadores ARK 🇪🇸]: https://wiki.lyrasis.org/pages/viewpage.action?pageId=185991610
 [ARK overview]: about-ark-overview.md
