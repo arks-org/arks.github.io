@@ -101,7 +101,6 @@ That's a little hard to say because ARKs are very decentralized, but more than 6
 Below is the global distribution of [organizations registered to create ARKs](https://n2t.net/e/pub/naan_registry.txt). Clicking on the static image below should take you to an up-to-date, zoomable map.
 
 [![][static map]{: .img-thumbnail .img-fluid fetchpriority="high" loading="eager"}][zoomable map]
-[![][1]{: .img-thumbnail .img-fluid fetchpriority="high" loading="eager"}][2]
 
 
 Getting started
