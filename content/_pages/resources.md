@@ -117,7 +117,7 @@ To get your software listed please [let us know] about it.
 [arklet]: https://github.com/internetarchive/arklet
 [Arklet-Frick]: https://github.com/squidgetx/arklet-frick/tree/master
 [arknoid]: https://github.com/jkunze/docker-arknoid
-[Noid]: https://n2t.net/e/noid.html
+[Noid]: {{ site.baseurl }}/resources/noid
 [Pynoid]: https://github.com/no-reply/pynoid
 [Golang Noid]: https://github.com/ndlib/noids
 [Ruby Noid]: https://github.com/ruby-microservices/noid
