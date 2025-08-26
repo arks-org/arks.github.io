@@ -285,5 +285,5 @@ avoid some of the confusion that arises over mistaking digits for letters,
 such as ‘1’ for ‘l’ and ‘0’ for ‘O’.
 
 [https://n2t.net]: https://n2t.net/
-[Noid]: https://n2t.net/e/noid.html
+[Noid]: {{ site.baseurl }}/resources/noid
 [here]: about-running-minters-and-resolvers.md

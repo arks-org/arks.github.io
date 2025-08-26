@@ -10,7 +10,6 @@ Frequently Asked Questions and Answers about ARKs (English version).
 
 <!--more-->
 
-
 * TOC
 {:toc}
 
@@ -18,7 +17,7 @@ Frequently Asked Questions and Answers about ARKs (English version).
 
 ### How can I give feedback on this document?
 
-By sending an email to the ARK mailing list, https://groups.google.com/forum/#!forum/arks-forum, or contacting us as described on the communications page.
+By sending an email to the [ARK mailing list](https://groups.google.com/forum/#!forum/arks-forum) or [contacting us here](mailto:{{ site.contact.email }}).
 
 ### What are ARKs?
 
@@ -56,7 +55,7 @@ Persistent identifiers should keep working even as things move between websites.
 
 A _resolver_ is a website that specializes in forwarding incoming identifiers (the ones originally advertised to users) to whichever websites are currently best able to deal with them. Overall, forwarding is called _resolution_; one step in a resolution process is called _redirection_. 
 
-For a resolver to work, its hostname (the `n2t.ne`t or `ark.bnf.f`r in the identifiers above) must be carefully chosen so it won't ever need to be changed. Memory organizations, some of them centuries old, tend to have hostnames well-suited to be resolvers. Some well-known, younger resolvers are [n2t.net](https://n2t.net) (the ARK resolver), [identifiers.org](https://identifiers.org), [doi.org](https://doi.org), [handle.net](https://handle.net), and [purl.org](https://purl.org).
+For a resolver to work, its hostname (the `n2t.net` or `ark.bnf.fr` in the identifiers above) must be carefully chosen so it won't ever need to be changed. Memory organizations, some of them centuries old, tend to have hostnames well-suited to be resolvers. Some well-known, younger resolvers are [n2t.net](https://n2t.net) (the ARK resolver), [identifiers.org](https://identifiers.org), [doi.org](https://doi.org), [handle.net](https://handle.net), and [purl.org](https://purl.org).
 
 ### What kinds of things are ARKs assigned to?
 
@@ -98,7 +97,7 @@ That's a little hard to say because ARKs are very decentralized, but more than 6
 *   Internet Archive collections,
 *   ORCID researcher profiles, etc.
 
-Below is the global distribution of [organizations registered to create ARKs](https://n2t.net/e/pub/naan_registry.txt). Clicking on the static image below should take you to an up-to-date, zoomable map.
+Below is the global distribution of [organizations registered to create ARKs]({{ site.naan_registry_txt }}). Clicking on the static image below should take you to an up-to-date, zoomable map.
 
 [![][static map]{: .img-thumbnail .img-fluid fetchpriority="high" loading="eager"}][zoomable map]
 
@@ -142,7 +141,7 @@ ARKs distinguish between lower- and upper-case letters, which makes shorter iden
 
 Alphanumeric characters (letters and digits) are generally adequate, but it is recommended to use the betanumeric subset, consisting only of digits and consonants minus 'l' (letter ell, often mistaken for the digit 1):
 
-`0123456789bcdfghjkmnpqrstvwxz`
+`bcdfghjkmnpqrstvwxz0123456789`
 
 This happens to be the repertoire produced from minters (unique string generators) supported by the Noid tool and N2T.net (used by ezid.cdlib.org and the Internet Archive), which creates transcription-safe strings using the strongest mainstream identifier check digit algorithm. When generating unique strings automatically, the absence of vowels helps avoid accidentally creating words that users can misconstrue.
 
@@ -152,9 +151,10 @@ Regarding assignment, one common strategy is to leverage legacy identifiers. For
 
 Persistent identifier strings are typically opaque, deliberately revealing little about what they're assigned to, because non-opaque identifiers do not age or travel well. Organization names are notoriously transient, which is why NAANs are opaque numbers. As titles and dates are corrected, word meanings evolve (e.g., innocent older acronyms may become offensive or infringing), strings meant to be persistent can become confusing or politically challenging. The generation and assignment of completely opaque strings comes with risk too, for example, numbers assigned sequentially reveal timing information and strings containing letters can unintentionally spell words (which is why vowels are missing from the recommended character repertoire). 
 
+#### Examples of character strings of varying opacity
+
 <div class="table-responsive" markdown=1>
 |----|----|----|
-| Opacity type | Examples  | Examples  | Examples  |
 | **non-opaque** | Netscape Permanent Archive | Gay\_Divorcee\_1934\_April\_1 | Name-to-Thing Resolver |
 | **opaque-ish** | x0001, x0002, ..., x9998 | GD/1934/04/01 | n2t.net |
 | **opaquer** | 141e86dc-d396-4e59-bbc2-4c3bf5326152 | 19340401 | n2t |
@@ -162,7 +162,7 @@ Persistent identifier strings are typically opaque, deliberately revealing litt
 {: .table .table-striped .table-hover }
 </div>
 
-ARKs are not required to be opaque, but it is recommended that the base object name be made opaque, since it tends to name the main focus of persistence. If any qualifier strings follow that name, it is less important that they be opaque. To help choose your approach to opacity, you may wish to consider compatibility with legacy identifiers and ease of string generation and transcription (eg, brevity, check digits). New strings can be created (minted) with date/time, UUID, and number generators, as well as [Noid (Nice Opaque Identifiers)](http://n2t.net/e/noid.html) minters. 
+ARKs are not required to be opaque, but it is recommended that the base object name be made opaque, since it tends to name the main focus of persistence. If any qualifier strings follow that name, it is less important that they be opaque. To help choose your approach to opacity, you may wish to consider compatibility with legacy identifiers and ease of string generation and transcription (eg, brevity, check digits). New strings can be created (minted) with date/time, UUID, and number generators, as well as [Noid (Nice Opaque Identifiers)]({{ site.baseurl }}/resources/noid) minters. 
 
 Opaque strings are "mute" and therefore can be challenging to use and manage, which is why ARKs were designed to be "talking" identifiers. This means that if there's metadata, an ARK that comes in to your server with the '?' inflection should be able to talk about itself.
 
@@ -184,7 +184,7 @@ The URL (https or http) form of the ARK is preferred, for example,
 
 An ARK meant for external use is generally advertised (released, published, disseminated) in this way in order to be an actionable identifier. If a more compact visual display of an ARK is needed, it should be hyperlinked; for example, a compact display of an HTML hyperlink can be achieved with
 
-`[ark:/99166/w66d60p2](https://n2t.net/ark:/99166/w66d60p2)`
+    <a href="https://n2t.net/ark:/99166/w66d60p2">ark:/99166/w66d60p2</a>
 
 An important decision is whether your URL-based ARKs will use the hostname of your local resolver or the N2T.net resolver. If local control or branding is important enough, you would advertise ARKs based at your local resolver (see about serving content with ARKs). If you're concerned about the stability of your local hostname, you would advertise your ARKs based at n2t.net (see examples of both).
 
@@ -194,7 +194,7 @@ Resolving your ARKs through N2T is always possible for users, regardless of how
 
 Here's a partial list of [software tools for persistent identification](http://coptr.digipres.org/Category:Persistent_Identification) that includes 
 
-*   [Noid (Nice Opaque Identifiers)](http://n2t.net/e/noid.html), open source software for minting and resolving ARKs on your own
+*   [Noid (Nice Opaque Identifiers)]({{ site.baseurl }}/resources/noid), open source software for minting and resolving ARKs on your own
 *   [ArchivesSpace](https://archivesspace.org/), open source application for managing and providing web access to archives, manuscripts and digital objects
 *   [ARK plugin for Omeka](https://github.com/Daniel-KM/ArkAndNoid4Omeka), which creates and manages ARKs for the Omeka open source web-publishing platform
 *   [ARK module for Drupal](https://www.drupal.org/project/ark), which allows your Drupal site to act as a Name Mapping Authority (NMA)
@@ -345,7 +345,7 @@ The fourth, a complete ARK-as-prefix example, shows that an object ARK is itself
 
 A _shoulder_ is a sub-namespace under a NAAN. It is the set all ARKs starting with a short, fixed extension to the NAAN. For example, in
 
-ark:/12345/x5wf6789/c2/s4.pdf
+      ark:/12345/x5wf6789/c2/s4.pdf
 
 the shoulder, /x5, extends the NAAN, 12345. The short designation, /x5, isn't unique in many contexts, so the fully qualified, globally unique designation should be used (for example, ark:/12345/x5). In the classic namespace tradition, the shoulder is the set of all possible ARKs starting with the shoulder name. Our use of this term is borrowed from locksmithing, which understands sets of keys to be defined by fixed, unvarying "shoulders" that precede the varying "blades" (shapes that differ among keys sharing the same shoulder) that follow it.
 
@@ -363,7 +363,7 @@ So shoulders allow ARK assignment under a NAAN to be delegated to autonomous pro
 
 Yes, because there are four shared NAANs with special semantics that you might want to take advantage of. Normally, long term ARKs and their NAANs should be opaque, revealing little about what they're assigned to, but the semantics in the table below are considered so immutable as to not risk their longevity. Each shared NAAN has particular connotations that software and people with enough training can recognize and benefit from, and this offers some relief from the challenge of using opaque identifiers. 
 
-Shared NAANs are not owned by any one organization. In order to create ARKs without conflict under a shared NAAN requires, as you might imagine, reserving a shoulder, and that requires filling out an online form to request a shoulder under a shared NAAN (please don't use this for shoulders under your own, non-shared NAAN).
+Shared NAANs are not owned by any one organization. In order to create ARKs without conflict under a shared NAAN requires, as you might imagine, reserving a shoulder, and that requires filling out an [online form to request a shoulder under a shared NAAN]({{ site.shoulder_form_url }}) (please don't use this for shoulders under your own, non-shared NAAN).
 
 <div class="table-responsive" markdown=1>
 | --- | --- | --- | --- |

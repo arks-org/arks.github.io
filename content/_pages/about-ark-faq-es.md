@@ -1,14 +1,23 @@
-# 🇪🇸 FAQ sobre identificadores ARK
+---
+title:  🇪🇸 FAQ sobre identificadores ARK
+permalink: /about/ark-faq-es/
+pid: 77
+date: 2020-04-28
+published: true
+---
 
-* Created by [John Kunze](https://wiki.lyrasis.org/display/\~jak), last modified on [Apr 28, 2020](https://wiki.lyrasis.org/pages/diffpagesbyversion.action?pageId=185991610\&selectedPageVersions=20\&selectedPageVersions=21)
+Preguntas frecuentes y respuestas sobre ARK.
 
-**Preguntas frecuentes y respuestas sobre ARK**
+<!--more-->
+
+* TOC
+{:toc}
 
 # Lo esencial
 
 ### **¿Cómo puedo dar comentarios sobre este documento?**
 
-Se puede insertar los comentarios en [esta versión del documento](https://translate.googleusercontent.com/translate\_c?depth=1\&rurl=translate.google.com\&sl=en\&sp=nmt4\&tl=es\&u=https://docs.google.com/document/d/1HZmfyFpEUVquG4ObNdI99vaAj6N3vfTL8eV-gSdQIjs/edit%3Fusp%3Dsharing\&usg=ALkJrhgit7dJ0DBEsTi3AMsxrzttBr4wxg).
+Enviando un correo electrónico a la [lista de correo de ARK](https://groups.google.com/forum/#!forum/arks-forum-ib) o [contactándonos aquí](mailto:{{ site.contact.email }}).
 
 ### **¿Qué son los ARK?**
 
@@ -104,9 +113,9 @@ Otra característica única de los ARK es que pueden aparecer guiones ('`-`') pe
 
 Identificar lo mismo. La razón de esta característica es que los procesos de formateo de texto en el mundo introducen rutinariamente guiones adicionales en los identificadores, rompiendo enlaces a cualquier servidor que trate los guiones como significativos.
 
-Los ARK distinguen entre letras minúsculas y mayúsculas, lo que hace posibles identificadores más cortos (52 vs 26 letras por posición de carácter). Sin embargo, la "forma ARK" es usar minúsculas a menos que necesite ARK más cortos. La restricción hace que sea más fácil para los resolvedores admitir sus ARK en caso de que lleguen del mundo con letras mayúsculas o mixtas, lo que sucede lamentablemente a menudo debido a la suposición persistente de 50 años de que los identificadores no distinguen entre mayúsculas y minúsculas. También puede considerar el uso del repertorio de caracteres de la herramienta [Noid](https://translate.googleusercontent.com/translate\_c?depth=1\&rurl=translate.google.com\&sl=en\&sp=nmt4\&tl=es\&u=http://n2t.net/e/noid.html\&usg=ALkJrhjTd9U1lg0TdWEOo09zV3WHI-e9VQ), que crea cadenas seguras para la transcripción utilizando el algoritmo más fuerte de dígitos de verificación del identificador principal; utiliza solo dígitos y consonantes menos 'l' (letra ell, a menudo confundida con el dígito 1):
+Los ARK distinguen entre letras minúsculas y mayúsculas, lo que hace posibles identificadores más cortos (52 vs 26 letras por posición de carácter). Sin embargo, la "forma ARK" es usar minúsculas a menos que necesite ARK más cortos. La restricción hace que sea más fácil para los resolvedores admitir sus ARK en caso de que lleguen del mundo con letras mayúsculas o mixtas, lo que sucede lamentablemente a menudo debido a la suposición persistente de 50 años de que los identificadores no distinguen entre mayúsculas y minúsculas. También puede considerar el uso del repertorio de caracteres de la herramienta [Noid]({{ site.baseurl }}/resources/noid), que crea cadenas seguras para la transcripción utilizando el algoritmo más fuerte de dígitos de verificación del identificador principal; utiliza solo dígitos y consonantes menos 'l' (letra ell, a menudo confundida con el dígito 1):
 
-`0123456789bcdfghjkmnpqrstvwxz`
+`bcdfghjkmnpqrstvwxz0123456789`
 
 Con respecto a la asignación, una estrategia común es aprovechar los identificadores heredados. Por ejemplo, un número de muestra de polilla de museo `cd456f9_87` podría anunciarse debajo del [`ark:/12345/cd456f9_87`](http://ark/12345/cd456f9\_87). Es posible que sea necesario modificar algunos identificadores heredados en vista de las restricciones de caracteres ARK. La segunda estrategia común es crear cadenas completamente nuevas para sus ARK. En este caso, es importante considerar si hacerlos *opacos* o no opacos (o un poco de ambos).
 
@@ -114,14 +123,18 @@ Con respecto a la asignación, una estrategia común es aprovechar los identific
 
 Las cadenas de identificadores persistentes son típicamente *opacas*, revelando deliberadamente poco sobre a qué están asignadas, porque los identificadores no opacos no envejecen ni viajan bien. Los nombres de las organizaciones son notoriamente transitorios, razón por la cual los NAAN son números opacos. A medida que se corrigen los títulos y las fechas, los significados de las palabras evolucionan (p. Ej., Los acrónimos más inocentes pueden volverse ofensivos o infractores), las cadenas destinadas a ser persistentes pueden volverse confusas o políticamente desafiantes. La generación y asignación de cadenas completamente opacas también conlleva un riesgo, por ejemplo, los números asignados secuencialmente revelan información de tiempo y las cadenas que contienen letras pueden deletrear palabras involuntariamente (razón por la cual faltan vocales en el repertorio de caracteres recomendado).
 
-| Ejemplos de cadenas con un rango de opacidad |  |  |  |
-| :---: | :---: | :---: | :---: |
+#### Ejemplos de cadenas con un rango de opacidad
+
+<div class="table-responsive" markdown=1>
+|----|----|----|
 | **no opaco** | Archivo permanente de Netscape | Gay\_Divorcee\_1934\_April\_1 | Resolvedor de nombre a cosa |
-| **opaco-ish** | x0001, x0002,..., x9998 | GD/1934/04/01 | [n2t.net](http://n2t.net/) |
+| **opaco-ish** | x0001, x0002,..., x9998 | GD/1934/04/01 | n2t.net |
 | **opaquer** | 141e86dc-d396-4e59-bbc2-4c3bf5326152 | 19340401 | n2t |
 | **opaquest** | 141e86dcd3964e59bbc24c3bf5326152 | h8k74926g | 12148 |
+{: .table .table-striped .table-hover }
+</div>
 
-No se requiere que los ARK sean opacos, pero se recomienda que el nombre del objeto base se haga opaco, ya que tiende a nombrar el foco principal de persistencia. Si alguna cadena [calificadora](https://translate.googleusercontent.com/translate\_c?depth=1\&rurl=translate.google.com\&sl=en\&sp=nmt4\&tl=es\&u=https://wiki.lyrasis.org/pages/viewpage.action%3FpageId%3D131533174\&usg=ALkJrhgZiYGNdlIoCahi\_-s6002ay4d61g\#ARKIdentifiersFAQ-granularity) sigue ese nombre, es menos importante que sea opaca. Para ayudar a elegir su enfoque de opacidad, es posible que desee considerar la compatibilidad con identificadores heredados y la facilidad de generación y transcripción de cadenas (por ejemplo, brevedad, dígitos de verificación). Se pueden crear nuevas cadenas (minted) con fecha/hora, [UUID](https://translate.googleusercontent.com/translate\_c?depth=1\&rurl=translate.google.com\&sl=en\&sp=nmt4\&tl=es\&u=https://en.wikipedia.org/w/index.php%3Ftitle%3DUniversally\_unique\_identifier%26oldid%3D906541334\&usg=ALkJrhjeAIFhHYiD6gc7oAt5B8-gLzJL1w) y generadores de números, así como [minters Noid (Nice Opaque Identifiers)](https://translate.googleusercontent.com/translate\_c?depth=1\&rurl=translate.google.com\&sl=en\&sp=nmt4\&tl=es\&u=http://n2t.net/e/noid.html\&usg=ALkJrhjTd9U1lg0TdWEOo09zV3WHI-e9VQ).
+No se requiere que los ARK sean opacos, pero se recomienda que el nombre del objeto base se haga opaco, ya que tiende a nombrar el foco principal de persistencia. Si alguna cadena [calificadora](https://translate.googleusercontent.com/translate\_c?depth=1\&rurl=translate.google.com\&sl=en\&sp=nmt4\&tl=es\&u=https://wiki.lyrasis.org/pages/viewpage.action%3FpageId%3D131533174\&usg=ALkJrhgZiYGNdlIoCahi\_-s6002ay4d61g\#ARKIdentifiersFAQ-granularity) sigue ese nombre, es menos importante que sea opaca. Para ayudar a elegir su enfoque de opacidad, es posible que desee considerar la compatibilidad con identificadores heredados y la facilidad de generación y transcripción de cadenas (por ejemplo, brevedad, dígitos de verificación). Se pueden crear nuevas cadenas (minted) con fecha/hora, [UUID](https://translate.googleusercontent.com/translate\_c?depth=1\&rurl=translate.google.com\&sl=en\&sp=nmt4\&tl=es\&u=https://en.wikipedia.org/w/index.php%3Ftitle%3DUniversally\_unique\_identifier%26oldid%3D906541334\&usg=ALkJrhjeAIFhHYiD6gc7oAt5B8-gLzJL1w) y generadores de números, así como [minters Noid (Nice Opaque Identifiers)]({{ site.baseurl }}/resources/noid).
 
 Las cadenas opacas son "mudas" y, por lo tanto, difíciles de manejar, por eso los ARK fueron diseñados para ser identificadores "parlantes". Esto significa que si hay [ARK Identifiers FAQ \# metadata](https://translate.googleusercontent.com/translate\_c?depth=1\&rurl=translate.google.com\&sl=en\&sp=nmt4\&tl=es\&u=https://wiki.lyrasis.org/pages/viewpage.action%3FpageId%3D131533174\&usg=ALkJrhgZiYGNdlIoCahi\_-s6002ay4d61g\#ARKIdentifiersFAQ-metadata), un ARK que llega a su servidor con el '?' [la inflexión](https://translate.googleusercontent.com/translate\_c?depth=1\&rurl=translate.google.com\&sl=en\&sp=nmt4\&tl=es\&u=https://wiki.lyrasis.org/pages/viewpage.action%3FpageId%3D131533174\&usg=ALkJrhgZiYGNdlIoCahi\_-s6002ay4d61g\#ARKIdentifiersFAQ-inflections) debería poder hablar de sí misma.
 
@@ -137,11 +150,11 @@ Otro enfoque es ejecutar su servidor web sin cambios, pero en lugar de actualiza
 
 Se prefiere la forma de URL (https o http) del ARK, por ejemplo,
 
-[`https://n2t.net/ark:/99166/w66d60p2`](https://translate.googleusercontent.com/translate\_c?depth=1\&rurl=translate.google.com\&sl=en\&sp=nmt4\&tl=es\&u=http://n2t.net/ark:/99166/w66d60p2\&usg=ALkJrhjYCyQCZFT7tIqGpFsVGcesRUGI6w)
+`https://n2t.net/ark:/99166/w66d60p2`
 
 Un ARK destinado para uso externo generalmente se publicita (libera, publica, difunde) de esta manera para que sea un *identificador* *accionable*. Si se necesita una visualización visual más compacta de un ARK, debe estar hipervinculado; por ejemplo, se puede lograr una visualización compacta de un hipervínculo HTML con
 
-`<a href=" https://n2t.net/ark:/99166/w66d60p2 "> ark:/99166/w66d60p2 </a>`
+    <a href="https://n2t.net/ark:/99166/w66d60p2">ark:/99166/w66d60p2</a>
 
 Una decisión importante es si sus ARK basados ​​en URL utilizarán el nombre de host de su resolvedor local o el resolvedor [N2T.net](https://translate.googleusercontent.com/translate\_c?depth=1\&rurl=translate.google.com\&sl=en\&sp=nmt4\&tl=es\&u=https://n2t.net/\&usg=ALkJrhhj2Hpz4QTMqR8I9UoEBvNZoy-7IA). Si el control local o el desarrollo de la marca es lo suficientemente importante, anunciaría ARK basados ​​en su resolvedor local (consulte la [publicación de contenido con ARK](https://translate.googleusercontent.com/translate\_c?depth=1\&rurl=translate.google.com\&sl=en\&sp=nmt4\&tl=es\&u=https://wiki.lyrasis.org/pages/viewpage.action%3FpageId%3D131533174\&usg=ALkJrhgZiYGNdlIoCahi\_-s6002ay4d61g\#ARKIdentifiersFAQ-localglobal)). Si le preocupa la estabilidad de su nombre de host local, anunciaría sus ARK basados ​​en [n2t.net](https://translate.googleusercontent.com/translate\_c?depth=1\&rurl=translate.google.com\&sl=en\&sp=nmt4\&tl=es\&u=http://n2t.net/\&usg=ALkJrhgt8hK\_WyiJUM85luGQ1N8SjpoUyA) (vea [ejemplos de ambos](https://translate.googleusercontent.com/translate\_c?depth=1\&rurl=translate.google.com\&sl=en\&sp=nmt4\&tl=es\&u=https://wiki.lyrasis.org/pages/viewpage.action%3FpageId%3D131533174\&usg=ALkJrhgZiYGNdlIoCahi\_-s6002ay4d61g\#ARKIdentifiersFAQ-localglobal)).
 
@@ -151,7 +164,7 @@ Resolver sus ARK a través de [N2T](https://translate.googleusercontent.com/tran
 
 Aquí hay una lista parcial de [herramientas](https://translate.googleusercontent.com/translate\_c?depth=1\&rurl=translate.google.com\&sl=en\&sp=nmt4\&tl=es\&u=http://coptr.digipres.org/Category:Persistent\_Identification\&usg=ALkJrhg8En08hEiuHN\_6Yzlls9JZD2T3Cg) de [software para identificación persistente](https://translate.googleusercontent.com/translate\_c?depth=1\&rurl=translate.google.com\&sl=en\&sp=nmt4\&tl=es\&u=http://coptr.digipres.org/Category:Persistent\_Identification\&usg=ALkJrhg8En08hEiuHN\_6Yzlls9JZD2T3Cg) que incluye
 
-* [Noid (Nice Opaque Identifiers)](https://translate.googleusercontent.com/translate\_c?depth=1\&rurl=translate.google.com\&sl=en\&sp=nmt4\&tl=es\&u=http://n2t.net/e/noid.html\&usg=ALkJrhjTd9U1lg0TdWEOo09zV3WHI-e9VQ), software de código abierto para acuñar y resolver ARK por su cuenta  
+* [Noid (Nice Opaque Identifiers)]({{ site.baseurl }}/resources/noid), software de código abierto para acuñar y resolver ARK por su cuenta  
 * [ArchivesSpace](https://translate.googleusercontent.com/translate\_c?depth=1\&rurl=translate.google.com\&sl=en\&sp=nmt4\&tl=es\&u=https://archivesspace.org/\&usg=ALkJrhgvVBZDaMQaRSDDgXHkLbSKl6IlvA), aplicación de código abierto para administrar y proporcionar acceso web a archivos, manuscritos y objetos digitales  
 * [Complemento ARK para Omeka](https://translate.googleusercontent.com/translate\_c?depth=1\&rurl=translate.google.com\&sl=en\&sp=nmt4\&tl=es\&u=https://github.com/Daniel-KM/ArkAndNoid4Omeka\&usg=ALkJrhja1Y5L7ZS6STp56rItgUJeGpiXTQ), que crea y gestiona ARK para la plataforma de publicación web de código abierto Omeka  
 * [Módulo ARK para Drupal](https://translate.googleusercontent.com/translate\_c?depth=1\&rurl=translate.google.com\&sl=en\&sp=nmt4\&tl=es\&u=https://www.drupal.org/project/ark\&usg=ALkJrhh-Wt3Pkgz95QOicfFEuAOBBxTw4Q), que permite que su sitio Drupal actúe como una Autoridad de asignación de nombres (NMA)
@@ -176,13 +189,13 @@ En segundo lugar, N2T almacena más de 3500 registros de "reglas" para identific
 
 La mayoría de los ARK son creados por organizaciones que los anuncian ("publican") en función de sus propios resolvedores. Por ejemplo, este ARK se publicó en función del [resolvedor ark.bnf.fr](https://translate.googleusercontent.com/translate\_c?depth=1\&rurl=translate.google.com\&sl=en\&sp=nmt4\&tl=es\&u=http://ark.bnf.fr/\&usg=ALkJrhgjiyq0WMpNKURfih\_YQvvlenTebg) :
 
-          [`http://ark.bnf.fr/ark:/12148/btv1b8449691v/f29`](https://translate.googleusercontent.com/translate\_c?depth=1\&rurl=translate.google.com\&sl=en\&sp=nmt4\&tl=es\&u=http://ark.bnf.fr/ark:/12148/btv1b8449691v/f29\&usg=ALkJrhh6MUonAfDIJxp3K0ueVZxmH4KX4A)**
+      http://ark.bnf.fr/ark:/12148/btv1b8449691v/f29
 
 Tener que ejecutar y mantener su propio resolvedor es el costo de una autonomía completa. El uso de su propio resolvedor también le permite crear marcas a través del nombre de host, la desventaja es que las marcas son transitorias y tienden a hacer que los identificadores sean frágiles. Las presiones políticas e incluso legales (p. Ej., Marcas comerciales) pueden dificultar el soporte de nombres de host de marca más antiguos, por lo tanto, sus identificadores.
 
 Esa es otra razón para tener el resolvedor global ARK. Las personas que se encuentren con un identificador roto en el futuro pueden encontrar que su nombre de host ya no existe, y si se trata de un ARK, pueden extraer la identidad central (comenzando con "ark:") y presentarla al [resolvedor](https://translate.googleusercontent.com/translate\_c?depth=1\&rurl=translate.google.com\&sl=en\&sp=nmt4\&tl=es\&u=http://n2t.net/\&usg=ALkJrhgt8hK\_WyiJUM85luGQ1N8SjpoUyA) global [n2t.net](https://translate.googleusercontent.com/translate\_c?depth=1\&rurl=translate.google.com\&sl=en\&sp=nmt4\&tl=es\&u=http://n2t.net/\&usg=ALkJrhgt8hK\_WyiJUM85luGQ1N8SjpoUyA), como en
 
-            [`https://n2t.net/ark:/12148/btv1b8449691v/f29`](https://translate.googleusercontent.com/translate\_c?depth=1\&rurl=translate.google.com\&sl=en\&sp=nmt4\&tl=es\&u=https://n2t.net/ark:/12148/btv1b8449691v/f29\&usg=ALkJrhg\_QwV6e5cS2LVADiFTEdwzkV-8Cg)**
+      https://n2t.net/ark:/12148/btv1b8449691v/f29
 
 ### **Mi organización tiene su propio resolvedor ARK. ¿Debería preocuparme por [N2T.net?](http://n2t.net/)**
 
@@ -202,38 +215,40 @@ Los mismos principios básicos guiaron el diseño de una herramienta anterior ll
 
 Brevemente, el [paso de sufijo](https://translate.googleusercontent.com/translate\_c?depth=1\&rurl=translate.google.com\&sl=en\&sp=nmt4\&tl=es\&u=https://ezid.cdlib.org/learn/suffix\_passthrough\&usg=ALkJrhiVDBrUlta0skcnODWHcQT1aZue2Q) es una característica de N2T. Supongamos que solo tiene un ARK registrado, [`https://n2t.net/ark:/12345/6789`](https://n2t.net/ark:/12345/6789), y lo redirige a la página del servidor web,
 
-[`https://a.example.org/dataset542`](https://a.example.org/dataset542)
+      https://a.example.org/dataset542
 
 Y supongamos que el mismo servidor también sirve estas páginas:
 
-[`https://a.example.org/dataset542/volume3`](https://a.example.org/dataset542/volume3)  
-[`https://a.example.org/dataset542/volume3/part2`](https://a.example.org/dataset542/volume3/part2)  
-[`https://a.example.org/dataset542/volume3/part2.pdf`](https://a.example.org/dataset542/volume3/part2.pdf)
+      https://a.example.org/dataset542/volume3
+      https://a.example.org/dataset542/volume3/part2
+      https://a.example.org/dataset542/volume3/part2.pdf
 
 Lo que hace el sufijo es dejar que su ARK registrado actúe como si también hubiera registrado estos tres ARK a continuación, lo que resolvería las páginas anteriores, respectivamente:
 
-[`https://n2t.net/ark:/12345/6789/volume3`](https://n2t.net/ark:/12345/6789/volume3)  
-[`https://n2t.net/ark:/12345/6789/volume3/part2`](https://n2t.net/ark:/12345/6789/volume3/part2)  
-[`https://n2t.net/ark:/12345/6789/volume3/part2.pdf`](https://n2t.net/ark:/12345/6789/volume3/part2.pdf)
+      https://n2t.net/ark:/12345/6789/volume3
+      https://n2t.net/ark:/12345/6789/volume3/part2
+      https://n2t.net/ark:/12345/6789/volume3/part2.pdf
 
 En este caso, el paso de sufijo le ahorró tener que mantener registros para tres páginas más. De hecho, funciona para un número ilimitado de páginas.
 
 ### **¿Cuáles son las partes de un ARK?**
 
- `ARK ANATOMY                  Core Immutable Identity`  
-                         `________________________________`  
-                        `/                                \`  
-       `Resolver Service   Base Object Name    Qualifiers`  
-     `__________________  _________________  _____________`  
-    `/                  \/                 \/             \`  
-    `https://example.org/ark:/12345/654xz321/s3/f8.05v.tiff`  
-            `\_________/ \__/ \___/ \______/\____/\_______/`  
-                 `|       |     |      |      |       |`  
-                 `|     Label   |      |  Sub-parts  Variants`  
-                 `|             |      |`  
- `Name Mapping Authority (NMA)  |   Assigned Name`  
-                               `|`  
-                `Name Assigning Authority Number (NAAN)`
+```
+
+ARK ANATOMY
+     Resolver Service   Base Object Name    Qualifiers
+    __________________  _________________  _____________
+   /                  \/         ...     \/             \
+   https://example.org/ark:/12345/x54xz321/s3/f8.05v.tiff
+           \_________/ \__/ \___/ \______/\____/\_______/
+                |       |     |  ...  |     |       |
+                |     Label   |   |   | Sub-parts  Variants
+                |             |   |   |
+Name Mapping Authority (NMA)  |   |  Assigned Name      ...
+                              |   +---------- Shoulder: /x5
+               Name Assigning Authority Number (NAAN)
+```
+{: .bg-secondary-subtle }
 
 ### **¿Puedo asignar ARK a cosas dentro de algo que ya tiene un ARK?**
 
@@ -284,7 +299,7 @@ Para las personas con suficiente capacitación, es fácil reconocer y eliminar l
 * Para retener ese identificador después de la publicación, quizás luego asigne un identificador adicional, como un DOI.  
 * Debido a que los ARK, creados para aplicaciones genéricas y no específicamente para contenido publicado, encajan naturalmente con objetos físicos como muestras o estaciones de campo.  
 * Debido a que los resolvedores de ARK pueden lidiar con identificadores dañados rutinariamente en el mundo mediante procesos de formateo de texto que introducen guiones.  
-* Debido a que la mayoría de los ARK llevan un dígito de verificación de [Noid](https://translate.googleusercontent.com/translate\_c?depth=1\&rurl=translate.google.com\&sl=en\&sp=nmt4\&tl=es\&u=http://n2t.net/e/noid.html\&usg=ALkJrhjTd9U1lg0TdWEOo09zV3WHI-e9VQ) que se puede usar para detectar todos los errores de transcripción comunes en lugar de solo algunos de ellos.  
+* Debido a que la mayoría de los ARK llevan un dígito de verificación de [Noid]({{ site.baseurl }}/resources/noid) que se puede usar para detectar todos los errores de transcripción comunes en lugar de solo algunos de ellos.  
 * Para poder crear identificadores más cortos, ya que las mayúsculas y minúsculas permiten cadenas *más densas* (un mayor número de cadenas de una longitud dada).  
 * Para poder cambiar el proveedor y/o la infraestructura sin tener que coordinar las transferencias de bases de datos con una autoridad central.  
 * Para poder lidiar con el [problema de división](https://translate.googleusercontent.com/translate\_c?depth=1\&rurl=translate.google.com\&sl=en\&sp=nmt4\&tl=es\&u=https://n2t.net/e/n2t\_vision.html\&usg=ALkJrhjBD2\_dwAx7YVRGM3uKpFyVO1oA8A) del [espacio de nombres](https://translate.googleusercontent.com/translate\_c?depth=1\&rurl=translate.google.com\&sl=en\&sp=nmt4\&tl=es\&u=https://n2t.net/e/n2t\_vision.html\&usg=ALkJrhjBD2\_dwAx7YVRGM3uKpFyVO1oA8A) sin perder el control de sus identificadores.  

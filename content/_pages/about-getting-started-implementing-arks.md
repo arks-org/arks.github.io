@@ -110,7 +110,7 @@ Read more about:
 [Internet Archive]: https://archive.org
 [YAMZ.net]: https://yamz.net
 [**Resources**]: resources.md
-[Noid]: https://n2t.net/e/noid.html
+[Noid]: {{ site.baseurl }}/resources/noid
 [Running minters and resolvers]: about-running-minters-and-resolvers.md
 [ARK Implementation best practices]: about-best-practices.md
 [Service providers]: resources.md
