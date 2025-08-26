@@ -34,13 +34,13 @@ vous donne accès à une thèse, et, en ajoutant '??' à la fin de l'ARK, devrai
 
 Sur Internet, un **identifiant** est une URL, ou une partie d'URL. Par exemple, cet identifiant ARK principal,
 
-             ark:/12148/btv1b8449691v/f29](http://ark/12148/btv1b8449691v/f29)
+             ark:/12148/btv1b8449691v/f29
 
 figure dans deux URL (*Uniform Resource Locators*, également appelés « liens Web » ou « adresses Web ») différentes :
 
-      http://ark.bnf.fr/ark:/12148/btv1b8449691v/f29](http://ark.bnf.fr/ark:/12148/btv1b8449691v/f29)
+      http://ark.bnf.fr/ark:/12148/btv1b8449691v/f29
 
-      https://n2t.net/ark:/12148/btv1b8449691v/f29](https://n2t.net/ark:/12148/btv1b8449691v/f29)
+      https://n2t.net/ark:/12148/btv1b8449691v/f29
 
 Les ARK sont plus particulièrement destinés à être des identifiants pérennes.
 
@@ -110,11 +110,11 @@ Tout d'abord, vous avez besoin d'un NAAN (numéro d'autorité nommante, ou *Name
 
        http://ark.bnf.fr/ark:/12148/btv1b8449691v/f29
 
-        https://n2t.net/ark:/12148/btv1b8449691v/f29
+         https://n2t.net/ark:/12148/btv1b8449691v/f29
 
 est **12148** ; il identifie de manière unique la Bibliothèque nationale de France. Chaque NAAN est associé à l'URL d'un résolveur pour ses ARK. Par exemple, pour résoudre un ARK en 12148, apposez-le après [http://ark.bnf.fr/](http://ark.bnf.fr/) comme indiqué ci-dessus. Le [résolveur N2T.net](https://wiki.duraspace.org/display/ARKs/ARK+Identifiers+FAQ%2C+version+0.92\#ARKIdentifiersFAQ,version0.92-n2) est à part dans la mesure où il transmet tout ARK au résolveur associé à son NAAN.
 
-L'obtention ou l'utilisation d'un NAAN est gratuite et vous pouvez en demander un en remplissant un [formulaire en ligne](https://n2t.net/e/naan\_request). Plus de 600 organisations (bibliothèques, archives, musées, facultés, agences gouvernementales, éditeurs scientifiques et pédagogiques, projets, etc.) ont un NAAN répertorié dans le [registre public NAAN](https://n2t.net/e/pub/naan\_registry.txt).
+L'obtention ou l'utilisation d'un NAAN est gratuite et vous pouvez en demander un en remplissant un [formulaire en ligne](https://n2t.net/e/naan_request). Plus de 600 organisations (bibliothèques, archives, musées, facultés, agences gouvernementales, éditeurs scientifiques et pédagogiques, projets, etc.) ont un NAAN répertorié dans le [registre public NAAN](https://n2t.net/e/pub/naan_registry.txt).
 
 ## Comment commencer à créer des chaînes de caractères destinées à devenir des ARK ?
     
@@ -153,7 +153,7 @@ Les chaînes de caractères d'identifiants pérennes sont généralement **opaqu
 {: .table .table-striped .table-hover }
 </div>
 
-Il n'est pas obligatoire que les ARK soient opaques, mais il est recommandé que le nom de base de l'objet le soit, car il constitue en général le nom du sujet principal de l’effort de pérennisation. Si des [qualificatifs](https://wiki.lyrasis.org/pages/viewpage.action?pageId=178880635\#id-%F0%9F%87%AB%F0%9F%87%B7FAQsurlesidentifiantsARK-granularite) suivent ce nom, il est moins important qu'ils soient opaques. Pour vous aider à déterminer votre niveau d'opacité, vous pouvez évaluer la compatibilité avec les identifiants hérités et la facilité de génération et de retranscription de la chaîne de caractères (en prenant en compte la compacité, le caractère de contrôle). De nouvelles chaînes de caractères peuvent être générées avec la date et l’heure, un [UUID](https://fr.wikipedia.org/w/index.php?title=Universal\_Unique\_Identifier\&oldid=158784735), à l’aide d’un générateur de nombres ou du générateur [Noid (Nice Opaque Identifiers)]({{ site.baseurl }}/resources/noid).
+Il n'est pas obligatoire que les ARK soient opaques, mais il est recommandé que le nom de base de l'objet le soit, car il constitue en général le nom du sujet principal de l’effort de pérennisation. Si des [qualificatifs](https://wiki.lyrasis.org/pages/viewpage.action?pageId=178880635\#id-%F0%9F%87%AB%F0%9F%87%B7FAQsurlesidentifiantsARK-granularite) suivent ce nom, il est moins important qu'ils soient opaques. Pour vous aider à déterminer votre niveau d'opacité, vous pouvez évaluer la compatibilité avec les identifiants hérités et la facilité de génération et de retranscription de la chaîne de caractères (en prenant en compte la compacité, le caractère de contrôle). De nouvelles chaînes de caractères peuvent être générées avec la date et l’heure, un [UUID](https://en.wikipedia.org/wiki/Universally_unique_identifier), à l’aide d’un générateur de nombres ou du générateur [Noid (Nice Opaque Identifiers)]({{ site.baseurl }}/resources/noid).
 
 Les chaînes de caractères opaques sont « muettes » et donc difficiles à gérer, c'est pourquoi les ARK ont été conçus pour être des identifiants « parlants ». Cela signifie que s'il existe des [métadonnées](https://wiki.duraspace.org/display/ARKs/ARK+Identifiers+FAQ%2C+version+0.92\#ARKIdentifiersFAQ,version0.92-metadata) sur la ressource, un ARK qui se présente sur votre serveur suivi de [l'inflexion](https://wiki.duraspace.org/display/ARKs/ARK+Identifiers+FAQ%2C+version+0.92\#ARKIdentifiersFAQ,version0.92-inflections) « ? » devrait pouvoir parler de lui-même.
 
@@ -171,7 +171,9 @@ On préférera la forme URL (https ou http) de l’ARK. Par exemple : [https://n
 
     <a href="https://n2t.net/ark:/99166/w66d60p2">ark:/99166/w66d60p2</a>
 
-Une décision importante consiste à déterminer si vos URI ARK utiliseront le nom d’hôte de votre résolveur local ou le résolveur [N2T.net](http://n2t.net/). Si vous privilégiez le contrôle ou la stratégie de marque, vous préférerez publier des ARK utilisant votre résolveur local. Si vous doutez de la stabilité de votre nom d’hôte local, vous préférerez publier vos ARK en utilisant le nom d’hôte [n2t.net](http://n2t.net/) (voir [ici](https://wiki.lyrasis.org/pages/viewpage.action?pageId=178880635\#id-%F0%9F%87%AB%F0%9F%87%B7FAQsurlesidentifiantsARK-localglobal) des exemples des deux approches). Quelle que soit la manière dont vous les publiez, la résolution de vos ARK via [N2T](http://wiki.duraspace.org/\#n2t) est toujours possible.
+Une décision importante consiste à déterminer si vos URI ARK utiliseront le nom d’hôte de votre résolveur local ou le résolveur [N2T.net](http://n2t.net/). Si vous privilégiez le contrôle ou la stratégie de marque, vous préférerez publier des ARK utilisant votre résolveur local. Si vous doutez de la stabilité de votre nom d’hôte local, vous préférerez publier vos ARK en utilisant le nom d’hôte [n2t.net](http://n2t.net/) (voir [ici](https://wiki.lyrasis.org/pages/viewpage.action?pageId=178880635\#id-%F0%9F%87%AB%F0%9F%87%B7FAQsurlesidentifiantsARK-localglobal) des exemples des deux approches).
+
+Quelle que soit la manière dont vous les publiez, la résolution de vos ARK via [N2T](http://wiki.duraspace.org/\#n2t) est toujours possible.
 
 ## Existe-t-il des outils et des services de gestion d’ARK ?
 
@@ -338,7 +340,7 @@ Un shoulder est comparable à une chambre d'amis dans votre maison. Imaginez une
 
 Comprenant les difficultés de Sally, vous pourriez exiger de chacun de vos invités qu'ils acceptent de ne déposer leurs affaires que dans leur chambre (leur shoulder). Grâce à un tel accord, non seulement le domicile de Sally aurait été peu perturbé par les affaires de Larry, mais elle aurait également pu accueillir autant de nouveaux locataires (nouvelles opérations d'affectation) que nécessaire dans le cadre d'accords similaires.
 
-Les shoulders permettent donc de déléguer l'affectation d'ARK sous un NAAN à des projets ou divisions autonomes, tout comme les NAAN le font sous l'espace de noms ARK global. Même si une organisation n'a initialement besoin de créer des ARK que pour un seul projet, les plans peuvent évoluer. Si d'autres besoins d'ARK apparaissent ultérieurement, réserver un nouveau shoulder pour chaque nouveau projet ou division permet de garantir facilement l'absence de conflit entre les flux d'affectation indépendants (présents, passés ou futurs), grâce à des espaces de noms non chevauchants. (Les shoulders peuvent également atténuer [le problème de division des espaces de noms](https://n2t.net/e/n2t_vision.html).) Pour en savoir plus sur les shoulders, veuillez consulter la brève FAQ sur les shoulders ARK.
+Les shoulders permettent donc de déléguer l'affectation d'ARK sous un NAAN à des projets ou divisions autonomes, tout comme les NAAN le font sous l'espace de noms ARK global. Même si une organisation n'a initialement besoin de créer des ARK que pour un seul projet, les plans peuvent évoluer. Si d'autres besoins d'ARK apparaissent ultérieurement, réserver un nouveau shoulder pour chaque nouveau projet ou division permet de garantir facilement l'absence de conflit entre les flux d'affectation indépendants (présents, passés ou futurs), grâce à des espaces de noms non chevauchants. (Les shoulders peuvent également atténuer [le problème de division des espaces de noms](https://n2t.net/e/n2t_vision.html).) Pour en savoir plus sur les shoulders, veuillez consulter la brève [FAQ sur les shoulders ARK](https://wiki.lyrasis.org/display/ARKs/ARK+Shoulders+FAQ).
 
 ### Pourrais-je créer des ARK sur un NAAN qui n'appartient pas à mon organisation ?
 
@@ -383,23 +385,33 @@ Vous pouvez demander une modification de l'entrée de registre d'un NAAN relatif
 * Parce que la plupart des ARK portent un caractère de contrôle [Noid]({{ site.baseurl }}/resources/noid) qui peut être utilisé pour détecter toutes les erreurs de transcription courantes (et non certaines d’entre elles uniquement) ;  
 * Pour pouvoir créer des identifiants plus courts, car la casse mixte permet des chaînes plus **compactes** (un plus grand nombre de chaînes d'une longueur donnée) ;  
 * Pour pouvoir changer de prestataire et/ou d'infrastructure sans avoir à coordonner des transferts de bases de données avec une autorité centrale ;  
-* Pour pouvoir résoudre le problème de [la scission d'espace de noms](https://n2t.net/e/n2t\_vision.html) sans perdre le contrôle de vos identifiants ;  
+* Pour pouvoir résoudre le problème de [la scission d'espace de noms](https://n2t.net/e/n2t_vision.html) sans perdre le contrôle de vos identifiants ;  
 * Pour lier des identifiants à différentes [déclarations de permanence](http://doi.org/10.5334/dsj-2017-039) nuancées ;  
 * Pour pouvoir ajouter des requêtes (par exemple « ?lang=en ») lors de la résolution de vos identifiants ;  
 * Pour utiliser une infrastructure ouverte correspondant aux valeurs de votre organisation ;  
 * Pour permettre d’accéder directement aux objets auxquels vous accordez de l’importance et non à leur page d’accueil ;  
-* Pour créer un seul identifiant qui peut être décliné en des millions (grâce au [mécanisme de transfert de préfixe](https://ezid.cdlib.org/learn/suffix\_passthrough)) ;  
+* Pour créer un seul identifiant qui peut être décliné en des millions (grâce au [mécanisme de transfert de suffixe](https://ezid.cdlib.org/learn/suffix_passthrough)) ;  
 * Pour accéder à des métadonnées adaptées et complètes via des [inflexions](https://wiki.lyrasis.org/pages/viewpage.action?pageId=178880635\#id-%F0%9F%87%AB%F0%9F%87%B7FAQsurlesidentifiantsARK-inflexion)  
 * Pour s’intégrer aisément dans des API [IIIF](https://iiif.io/technical-details) en utilisant les qualificatifs ARK.
 
 ## Qu'ont en commun ARK, DOI, Handle, PURL et URN ?
 
-Ce sont les principaux types (ou schémas) d'identifiants pérennes. Tous existent au moins depuis 2001.Tous sont utilisés dans des contextes tels que les profils Data Citation Index℠, Wikipedia et [ORCID.org](https://orcid.org/). Tous donnent accès à presque tout type de contenu, qu'il soit numérique, physique, abstrait, une personne, un groupe, etc. Ils ont également une structure très similaire composée de quatre parties, comme le montrent les exemples ci-dessous : 
+Voici les principaux types (ou schémas) d'identifiants persistants.
 
-|  https://n2t.net/*ark*:/99999/12345     https://*doi*.org/10.99999/12345  https://*handle*.net/10.99999/12345       https://*purl*.org/99999/12345  https://\<various\>/*urn*:99999:12345  | le protocole (https://) plus un nom d'hôte, uniquement pour ARK et URN, un libellé (« ark: » ou « urn: »), l'autorité nommante (99999, 10.99999 ou 99999), qui est l'organisation ou le groupe qui a créé un identifiant particulier, et enfin, le nom, ou l'identifiant local, qu'elle a attribué (12345). |
-| ----: | :---- |
+* Ils existent tous depuis 2001 ou avant.
+* On les trouve dans des sites comme le Data Citation Index ℠, Wikipédia et les profils ORCID.org.
+* Ils donnent accès à presque tout type d'objet, qu'il soit numérique, physique, abstrait, personnel, collectif, etc.
 
- Aucun d’eux n’a d'effet réel sur la persistance (voir [10 mythes persistants sur les identifiants pérennes](https://framalistes.org/sympa/arc/arks-forum-fr/2018-09/msg00000.html)).
+Ils ont également une structure très similaire, comme le montrent les exemples ci-dessous, composée de quatre parties :
+
+<div class="table-responsive" markdown=1>
+| --- | --- | --- |
+| `https://n2t.net/ark:/99999/12345`<br>`https://doi.org/11.99999/12345`<br>`https://handle.net/10.99999/12345`<br>`https://purl.org/99999/12345`<br>`https:///urn:99999:12345` | | 1. le protocole (`https://`) plus un nom d'hôte,<br>2. juste pour ARK et URN, il y a aussi une étiquette ("ark:" ou "urn:"),<br>3. l'autorité d'attribution du nom (`99999`, `10.99999` ou `99999`), qui est l'organisation ou le groupe qui a créé un identifiant particulier,<br>4. et enfin, le _nom_, ou identifiant local, qu'il a attribué (`12345`). |
+{: .table .table-striped .table-hover }
+</div>
+
+Et ils ont tous peu d'effet sur la persistance. Voir [10 mythes persistants sur les identifiants persistants](https://n2t.net/ark:/13030/c7gb1xh09).
+
 
 ## Attendez, vous voulez dire que ARK, DOI, Handle, PURL et URN sont inutiles ?
 
@@ -421,7 +433,7 @@ Les ARK sont les seuls identifiants standards, non cloisonnés et non payants qu
 
 Cela ne veut pas dire que la permanence est gratuite. Rendre un identifiant pérenne, en tant que fournisseur, vous impose des coûts de gestion, d’hébergement, de surveillance et de redirection. Vous pouvez faire ces choses vous-même ou avec l'aide d'un prestataire. Mais avec les ARK, comme avec les URL, vos identifiants ne vous seront pas facturés individuellement et vous ne serez pas enfermés dans un silo n’acceptant qu’un type de résolution spécifique et qui refuse donc les autres identifiants.
 
-Les ARK ont la particularité d'être décentralisés. Bien que l’on *puisse* obtenir des services de résolution d'un résolveur ARK global appelé [n2t.net](http://n2t.net), plus de 90% des ARK dans le monde ne l’utilisent pas comme résolveur. Plus de 600 organisations enregistrées à travers le monde ont créé par elles-mêmes environ 3,2 milliards d’ARK et, à l'instar des URL, personne n'a jamais payé de frais pour les créer. Bien sûr, les **maintenir** n'est pas gratuit. Conserver l’accès au contenu de manière pérenne sur le long terme, quel que soit le type d’identifiant, n’est jamais gratuit.
+Les ARK ont la particularité d'être décentralisés. Bien que l’on *puisse* obtenir des services de résolution d'un résolveur ARK global appelé [n2t.net](http://n2t.net), plus de 90% des ARK dans le monde ne l’utilisent pas comme résolveur. Plus de 650 organisations enregistrées à travers le monde ont créé par elles-mêmes environ 3,2 milliards d’ARK et, à l'instar des URL, personne n'a jamais payé de frais pour les créer. Bien sûr, les **maintenir** n'est pas gratuit. Conserver l’accès au contenu de manière pérenne sur le long terme, quel que soit le type d’identifiant, n’est jamais gratuit.
 
 ### **D’autres différences entre ARK, DOI, Handle, PURL et URN**
 

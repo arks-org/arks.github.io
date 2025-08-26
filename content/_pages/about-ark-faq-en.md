@@ -102,8 +102,7 @@ Below is the global distribution of [organizations registered to create ARKs]({{
 [![][static map]{: .img-thumbnail .img-fluid fetchpriority="high" loading="eager"}][zoomable map]
 
 
-Getting started
-===============
+# Getting started
 
 ### What do I need to create ARKs?
 
@@ -162,7 +161,7 @@ Persistent identifier strings are typically opaque, deliberately revealing litt
 {: .table .table-striped .table-hover }
 </div>
 
-ARKs are not required to be opaque, but it is recommended that the base object name be made opaque, since it tends to name the main focus of persistence. If any qualifier strings follow that name, it is less important that they be opaque. To help choose your approach to opacity, you may wish to consider compatibility with legacy identifiers and ease of string generation and transcription (eg, brevity, check digits). New strings can be created (minted) with date/time, UUID, and number generators, as well as [Noid (Nice Opaque Identifiers)]({{ site.baseurl }}/resources/noid) minters. 
+ARKs are not required to be opaque, but it is recommended that the base object name be made opaque, since it tends to name the main focus of persistence. If any qualifier strings follow that name, it is less important that they be opaque. To help choose your approach to opacity, you may wish to consider compatibility with legacy identifiers and ease of string generation and transcription (eg, brevity, check digits). New strings can be created (minted) with date/time, [UUID](https://en.wikipedia.org/wiki/Universally_unique_identifier), and number generators, as well as [Noid (Nice Opaque Identifiers)]({{ site.baseurl }}/resources/noid) minters. 
 
 Opaque strings are "mute" and therefore can be challenging to use and manage, which is why ARKs were designed to be "talking" identifiers. This means that if there's metadata, an ARK that comes in to your server with the '?' inflection should be able to talk about itself.
 
@@ -207,8 +206,7 @@ No, the ARK identifier is not meant to be a Christian metaphor. "ARK" was chosen
 
 Our logo and acronym may evoke the story of Noah's Ark, which is shared by the Abrahamic faiths of Islam, Judaism, and Christianity, and we would be happy for the ARK identifier to be associated with a trustworthy vessel to help preserve precious things.
 
-Beyond the basics
-=================
+# Beyond the basics
 
 ### What is N2T?
 
@@ -309,8 +307,7 @@ That's the containment qualifier. There's only one other ARK qualifier, and it i
 
 because they differ only by the suffix .pdf or .html, it can be inferred that they identify two different forms of the same document.
 
-ARK namespaces and sub-namespaces
-=================================
+# ARK namespaces and sub-namespaces
 
 ### What is the purpose of the NAAN?
 
@@ -357,7 +354,7 @@ A shoulder is analogous to a guest room in your house. Imagine a colleague, Sall
 
 Understanding Sally's troubles, you might vow to require any guest of yours to agree to place things only in their room (their shoulder). Under such an agreement, not only would Sally's home have been minimally disturbed by Larry's stuff, but also she would be able to take on any number of new lodgers (new assigning operations) under similar agreements.
 
-So shoulders allow ARK assignment under a NAAN to be delegated to autonomous projects or divisions, just as NAANs do under the overall ARK namespace. Even if an organization initially only needs to create ARKs for one project, plans may change. If other needs for ARKs arise later, setting aside a new shoulder for each new project or division makes it easy to ensure that independent assignment streams – present, past, or future – won't conflict with each other, thanks to non-overlapping namespaces. (Shoulders can also ease the [namespace splitting problem](https://n2t.net/e/n2t_vision.html).) If you would like to learn more about shoulders, please see the brief ARK Shoulders FAQ.
+So shoulders allow ARK assignment under a NAAN to be delegated to autonomous projects or divisions, just as NAANs do under the overall ARK namespace. Even if an organization initially only needs to create ARKs for one project, plans may change. If other needs for ARKs arise later, setting aside a new shoulder for each new project or division makes it easy to ensure that independent assignment streams – present, past, or future – won't conflict with each other, thanks to non-overlapping namespaces. (Shoulders can also ease the [namespace splitting problem](https://n2t.net/e/n2t_vision.html).) If you would like to learn more about shoulders, please see the brief [ARK Shoulders FAQ](https://wiki.lyrasis.org/display/ARKs/ARK+Shoulders+FAQ).
 
 ### Might I ever want to create ARKs on a NAAN that is not owned by my organization?
 
@@ -388,8 +385,7 @@ You can request a change to the registry entry for a NAAN related to your organi
 
 NAANs are portable. If your organization transitions into or out of a vendor relationship, there is no impediment to taking your NAAN with you.
 
-ARKs and other identifiers
-==========================
+# ARKs and other identifiers
 
 ### Why would I use ARKs compared to, for example, DOIs?
 
@@ -430,7 +426,7 @@ They also have very similar structure, as seen in the examples below, consisting
 {: .table .table-striped .table-hover }
 </div>
 
-And they all have little effect on persistence. See [10 persistent myths about persistent identifiers](https://twitter.com/jakkbl/status/1033059109346586624).
+And they all have little effect on persistence. See [10 persistent myths about persistent identifiers](https://n2t.net/ark:/13030/c7gb1xh09).
 
 ### Wait, are you saying ARK, DOI, Handle, PURL, and URN are useless?
 
@@ -446,15 +442,15 @@ Given how little the schemes do for you, when choosing one you'll likely want to
 
 ### How do ARKs differ from identifiers like DOIs, Handles, PURLs, and URNs?
 
-#### The short answer
+#### **The short answer**
 
 ARKs are the only mainstream, non-siloed, non-paywalled identifiers that you can register to use in about 48 hours. DOIs, Handles, and PURLs require that resolution and other services come from their respective centralized systems (silos). 
 
 That's not to say that persistence is free. Making any identifier persistent burdens you, the provider, with the costs of content management, hosting, monitoring, and forwarding. You can do those things yourself or with help from a vendor. But with ARKs, just as with URLs, you will not be charged separately for your identifiers and you will not be locked in to a special-purpose resolution silo that also locks out other identifiers.
 
-ARKs are unusual in being decentralized. While one _can_ get resolution services from a global ARK resolver called [n2t.net](http://n2t.net), over 90% of the ARKs in the world are published without using [n2t.net](https://www.google.com/url?q=http://n2t.net&sa=D&ust=1567555183997000&usg=AFQjCNGulC7MZmyrE1R5bkR-On7cH8-L6g) in the URL hostname. More than 650 registered organizations across the world have, between them, created an estimated 8.2 billion ARKs, and, as with URLs, no one has ever paid an identifier fee to create them. Of course _maintaining_ them isn't free. It is never without cost to keep content access persistent in the long term, regardless of identifier type.
+ARKs are unusual in being decentralized. While one _can_ get resolution services from a global ARK resolver called [n2t.net](http://n2t.net), over 90% of the ARKs in the world are published without using [n2t.net](https://n2t.net) in the URL hostname. More than 650 registered organizations across the world have, between them, created an estimated 8.2 billion ARKs, and, as with URLs, no one has ever paid an identifier fee to create them. Of course _maintaining_ them isn't free. It is never without cost to keep content access persistent in the long term, regardless of identifier type.
 
-#### More differences between ARKs, DOIs, Handles, PURLs, and URNs
+#### **More differences between ARKs, DOIs, Handles, PURLs, and URNs**
 
 *   Landing pages: Crossref and DataCite DOIs link to publisher landing pages constructed around but _not directly to_ objects you care about, but ARKs can freely link _directly to_ objects you care about, which is machine- and human-friendly since it does not require an extra human navigation step for common tasks such as
     *   opening an article's PDF file for reading,
@@ -494,16 +490,15 @@ Generalizations about identifier types sometimes apply when resolution and manag
 
 The concrete differences that we experience, such as _metadata_, landing pages, and tool integration (eg, publishing tools), are not properties of identifier schemes per se, but properties of resolution, management, and citation services that various providers extend to or withhold from different identifier types. Those services are shaped in turn by communities of practice and by markets. Basic services are founded on a reliable database storing each identifier along with metadata elements (creator, title, date, redirection URL, etc) that describe the identified object. Extra services include link checking, duplicate detection, report generation, and searching.
 
-From cradle to grave
-====================
+# From cradle to grave
 
-When in my workflow should I create ARKs?
+## When in my workflow should I create ARKs?
 
 At object birth, or even before. We sometimes name our babies before they're born, and we name and refer to objects in the conception stages, sometimes long before they bear fruit. Depending on how elaborate the planning may be, your unborn objects could have full-function ARKs that resolve to an appropriate surrogate and return rich metadata, including persistence statements.
 
 The only caveat is to be careful releasing (advertising) ARKs that have uncertain long term prospects. Some identifier management systems have features to help manage and resolve unreleased identifiers (eg, [EZID](https://ezid.cdlib.org) has a "reserved" status). The more people who know about an ARK, the harder it is to delete.
 
-How is it that ARKs can be easy to delete?
+## How is it that ARKs can be easy to delete?
 
 If no one knows about an identifier but you, there's no harm in deleting or withdrawing it. Stepping back, an identifier is actually an assertion that a given string of characters is associated with specific thing. The fewer people you tell, the easier it is to scrap that assertion. If you create a URL and share it only with your closest colleagues, that is much easier to withdraw than if the URL appeared for a month on a public website, from which it was harvested by internet search engines. In contrast, it is hard to delete DOIs and Handles because once registered and made resolvable, they are effectively released to the world.
 

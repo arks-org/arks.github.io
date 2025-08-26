@@ -150,8 +150,8 @@ developing an ARK system.
 -   Policy statements
 
 [FAQ about ARK identifiers 🇬🇧]: about-ark-faq-en.md
-[FAQ sur les identifiants ARK 🇫🇷]: https://wiki.lyrasis.org/pages/viewpage.action?pageId=178880619
-[FAQ sobre identificadores ARK 🇪🇸]: https://wiki.lyrasis.org/pages/viewpage.action?pageId=185991610
+[FAQ sur les identifiants ARK 🇫🇷]: about-ark-faq-fr.md
+[FAQ sobre identificadores ARK 🇪🇸]: about-ark-faq-es.md
 [ARK overview]: about-ark-overview.md
 [ARK Community Code of Conduct]: about-ark-community-code-of-conduct.md
 [Why ARKs?]: about-the-ark-origin-story.md
