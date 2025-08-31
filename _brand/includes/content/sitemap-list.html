@@ -8,7 +8,7 @@
 		{% for page in sorted_pages %}
 			{% if page.title and page.permalink != "/404.html" %}
 			<li>
-				<a href="{{ page.permalink }}">
+				<a href="{{ site.baseurl }}{{ page.permalink }}">
 					{{ page.title }}
 				</a> 
 			</li>
@@ -23,7 +23,7 @@
 					<span class="badge bg-dark text-uppercase">
 						{{ file.extname | remove_first: "." }}
 					</span>
-					<a href="{{ page.path }}">
+					<a href="{{ site.baseurl }}{{ file.path }}">
 						{{ file.basename }}
 					</a>
 					<small class="text-secondary d-block">
@@ -39,7 +39,7 @@
 		<ul>
 		{% for post in site.posts %}
 			<li>
-				<a href="{{ post.url }}">
+				<a href="{{ site.baseurl }}{{ post.url }}">
 					{{ post.title }}
 				</a>
 				<small class="d-block text-secondary">
