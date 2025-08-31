@@ -272,7 +272,7 @@ What suffix passthrough does is to let your one registered ARK act as if you had
 
 In this case, suffix passthrough saved your having to maintain registrations for three more pages. In fact, it works for an unlimited number of pages.
 
-### What are the parts of an ARK?
+### What are the parts of an ARK? {#parts}
 
 ```
 

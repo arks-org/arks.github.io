@@ -153,7 +153,7 @@ To get your software listed please [let us know] about it.
 [11]: https://archivesspace.org/archives/5930
 [12]: https://youtu.be/Rt_tZHb1kiA
 [13]: https://archivesspace.org/wp-content/uploads/2020/02/ARKs-and-ArchivesSpace-2020-03-04-webinar.pdf
-[14]: https://wiki.lyrasis.org/download/attachments/90979116/aito.pdf?version=1&modificationDate=1548711589415&api=v2
+[14]: ../assets/documents/shared/AITO_slides.pdf
 [15]: https://www.cdlib.org/cdlinfo/2018/01/26/ark-identifier-summit-at-the-national-library-of-france-21-march-2018/
 [collected videos]: https://www.bnf.fr/fr/sommet-international-ark-journee-detude-et-dechanges-sur-lidentifiant-ark-archival-resource-key
 [video link]: https://www.youtube.com/watch?v=vYYYUIokwPM&t=134s
