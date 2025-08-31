@@ -94,7 +94,7 @@ Aquí está la distribución global de las [organizaciones registradas para crea
 
 # Empezando
 
-### **¿Qué necesito para crear ARK?**
+### **¿Qué necesito para crear ARK?** {#creating}
 
 Primero necesita un *NAAN* ("Name assigning authority number," Número de autoridad de asignación de nombre), que es un número reservado exclusivamente para su organización. Debe aparecer en cada ARK que su organización asigne, justo después de la etiqueta "`ark:/`". La NAAN en todas estas ARKs,
 
@@ -104,7 +104,7 @@ Primero necesita un *NAAN* ("Name assigning authority number," Número de autori
 
               https://n2t.net/ark:/12148/btv1b8449691v/f29
 
-es **`12148`**, e identifica de forma exclusiva la Biblioteca Nacional de Francia. Cada NAAN está asociado con la URL de un resolvedor para sus ARK, por ejemplo, para resolver los `12148` ARK, agréguelos a [http://ark.bnf.fr/](http://ark.bnf.fr/) como se muestra arriba. El [resolvedor N2T.net](https://wiki.lyrasis.org/pages/viewpage.action%3FpageId%3D131533174) es inusual en el sentido de que dirige cualquier ARK al resolvedor registrado bajo su NAAN.
+es **`12148`**, e identifica de forma exclusiva la Biblioteca Nacional de Francia. Cada NAAN está asociado con la URL de un resolvedor para sus ARK, por ejemplo, para resolver los `12148` ARK, agréguelos a [http://ark.bnf.fr/](http://ark.bnf.fr/) como se muestra arriba. El [resolvedor N2T.net](#what-n2t) es inusual en el sentido de que dirige cualquier ARK al resolvedor registrado bajo su NAAN.
 
 Es gratis obtener o usar un NAAN, y se lo puede solicitar a través de este [formulario](https://n2t.net/e/naan_request). Más de 600 organizaciones tienen un NAAN (bibliotecas, archivos, museos, departamentos universitarios, agencias gubernamentales, editoriales académicas y educativas, proyectos, etc.), todos incluidos en el [registro](https://n2t.net/e/pub/naan_registry.txt) público de [NAAN](https://n2t.net/e/pub/naan_registry.txt).
 
@@ -114,7 +114,7 @@ Puede crear cadenas ARK como lo desee, siempre que use solo dígitos, letras (AS
 
 `= ~ * + @ _ $ . /`
 
-Los dos últimos caracteres están reservados en el caso de que desee [revelar relaciones ARK](https://wiki.lyrasis.org/pages/viewpage.action%3FpageId%3D131533174).
+Los dos últimos caracteres están reservados en el caso de que desee [revelar relaciones ARK](#already-ark).
 
 Otra característica única de los ARK es que pueden aparecer guiones ('`-`') pero son *inertes de identidad*, lo que significa que las cadenas que difieren solo por guiones se consideran idénticas; por ejemplo, estas cadenas
 
@@ -145,15 +145,15 @@ Las cadenas de identificadores persistentes son típicamente *opacas*, revelando
 {: .table .table-striped .table-hover }
 </div>
 
-No se requiere que los ARK sean opacos, pero se recomienda que el nombre del objeto base se haga opaco, ya que tiende a nombrar el foco principal de persistencia. Si alguna cadena [calificadora](https://wiki.lyrasis.org/pages/viewpage.action%3FpageId%3D131533174) sigue ese nombre, es menos importante que sea opaca. Para ayudar a elegir su enfoque de opacidad, es posible que desee considerar la compatibilidad con identificadores heredados y la facilidad de generación y transcripción de cadenas (por ejemplo, brevedad, dígitos de verificación). Se pueden crear nuevas cadenas (minted) con fecha/hora, [UUID](https://en.wikipedia.org/wiki/Universally_unique_identifier) y generadores de números, así como [minters Noid (Nice Opaque Identifiers)]({{ site.baseurl }}/resources/noid).
+No se requiere que los ARK sean opacos, pero se recomienda que el nombre del objeto base se haga opaco, ya que tiende a nombrar el foco principal de persistencia. Si alguna cadena [calificadora](#already-ark) sigue ese nombre, es menos importante que sea opaca. Para ayudar a elegir su enfoque de opacidad, es posible que desee considerar la compatibilidad con identificadores heredados y la facilidad de generación y transcripción de cadenas (por ejemplo, brevedad, dígitos de verificación). Se pueden crear nuevas cadenas (minted) con fecha/hora, [UUID](https://en.wikipedia.org/wiki/Universally_unique_identifier) y generadores de números, así como [minters Noid (Nice Opaque Identifiers)]({{ site.baseurl }}/resources/noid).
 
-Las cadenas opacas son "mudas" y, por lo tanto, difíciles de manejar, por eso los ARK fueron diseñados para ser identificadores "parlantes". Esto significa que si hay [ARK Identifiers FAQ \# metadata](https://wiki.lyrasis.org/pages/viewpage.action%3FpageId%3D131533174), un ARK que llega a su servidor con el '?' [la inflexión](https://wiki.lyrasis.org/pages/viewpage.action%3FpageId%3D131533174) debería poder hablar de sí misma.
+Las cadenas opacas son "mudas" y, por lo tanto, difíciles de manejar, por eso los ARK fueron diseñados para ser identificadores "parlantes". Esto significa que si hay [metadata](#metadata), un ARK que llega a su servidor con la [inflexión](#inflection) '?' debería poder hablar de sí misma.
 
 ### **¿Cómo hago que el contenido del servidor sea direccionable con ARK?**
 
-Primero, decida cuál será la experiencia del usuario al acceder a sus ARK, por ejemplo, un archivo de hoja de cálculo, un PDF, una imagen, una página de destino llena de metadatos formateados y un rango de opciones, etc. Cualquiera que elija, planifique su servidor para poder responder con metadatos si su ARK debería llegar con un '?' [inflexión](https://wiki.lyrasis.org/pages/viewpage.action%3FpageId%3D131533174) después de eso.
+Primero, decida cuál será la experiencia del usuario al acceder a sus ARK, por ejemplo, un archivo de hoja de cálculo, un PDF, una imagen, una página de destino llena de metadatos formateados y un rango de opciones, etc. Cualquiera que elija, planifique su servidor para poder responder con metadatos si su ARK debería llegar con un '?' [inflexión](#inflection) después de eso.
 
-De lo contrario, servir ARK es como servir URL. Normalmente, las cadenas de URL entrantes *direccionan* (se asignan) al contenido que devuelve su servidor web. Si su servidor reconoce ARK, los ARK entrantes (expresados ​​como URL) deben asignarse al mismo contenido. Un enfoque común es asignar el ARK a la URL utilizando una tabla de software que actualiza cada vez que cambia la URL. En este caso, su servidor está actuando como un *resolvedor local*. Si no desea implementar esto usted mismo, existen [herramientas y servicios de software ARK](https://wiki.lyrasis.org/pages/viewpage.action%3FpageId%3D131533174) que pueden ayudarlo.
+De lo contrario, servir ARK es como servir URL. Normalmente, las cadenas de URL entrantes *direccionan* (se asignan) al contenido que devuelve su servidor web. Si su servidor reconoce ARK, los ARK entrantes (expresados como URL) deben asignarse al mismo contenido. Un enfoque común es asignar el ARK a la URL utilizando una tabla de software que actualiza cada vez que cambia la URL. En este caso, su servidor está actuando como un *resolvedor local*. Si no desea implementar esto usted mismo, existen [herramientas y servicios de software ARK](#tools) que pueden ayudarlo.
 
 Otro enfoque es ejecutar su servidor web sin cambios, pero en lugar de actualizar las tablas locales, actualizaría las tablas de mapeo de ARK a URL que residen en un resolvedor no local. Se pueden encontrar ejemplos de esto entre los proveedores y en cualquier organización que actualice las tablas a través de [EZID.cdlib.org](http://ezid.cdlib.org/) (que, debido a una relación especial, actualiza las tablas de resolución en [n2t.net](http://n2t.net/)).
 
@@ -167,11 +167,11 @@ Un ARK destinado para uso externo generalmente se publicita (libera, publica, di
 
     <a href="https://n2t.net/ark:/99166/w66d60p2">ark:/99166/w66d60p2</a>
 
-Una decisión importante es si sus ARK basados ​​en URL utilizarán el nombre de host de su resolvedor local o el resolvedor [N2T.net](https://n2t.net/). Si el control local o el desarrollo de la marca es lo suficientemente importante, anunciaría ARK basados ​​en su resolvedor local (consulte la [publicación de contenido con ARK](https://wiki.lyrasis.org/pages/viewpage.action%3FpageId%3D131533174)). Si le preocupa la estabilidad de su nombre de host local, anunciaría sus ARK basados ​​en [n2t.net](http://n2t.net/) (vea [ejemplos de ambos](https://wiki.lyrasis.org/pages/viewpage.action%3FpageId%3D131533174)).
+Una decisión importante es si sus ARK basados en URL utilizarán el nombre de host de su resolvedor local o el resolvedor [N2T.net](https://n2t.net/). Si el control local o el desarrollo de la marca es lo suficientemente importante, anunciaría ARK basados en su resolvedor local. Si le preocupa la estabilidad de su nombre de host local, anunciaría sus ARK basados en [n2t.net](http://n2t.net/) (vea [ejemplos de ambos](#creating)).
 
-Resolver sus ARK a través de [N2T](http://wiki.duraspace.org/) siempre es posible para los usuarios, independientemente de cómo los anuncie.
+Resolver sus ARK a través de [N2T](https://n2t.net) siempre es posible para los usuarios, independientemente de cómo los anuncie.
 
-### **¿Existen herramientas y servicios para ayudar con los ARK?**
+### **¿Existen herramientas y servicios para ayudar con los ARK?** {#tools}
 
 Aquí hay una lista parcial de [herramientas](http://coptr.digipres.org/Category:Persistent_Identification) de [software para identificación persistente](http://coptr.digipres.org/Category:Persistent_Identification) que incluye
 
@@ -190,7 +190,7 @@ Nuestro logotipo y acrónimo pueden evocar la historia del Arca de Noé, compart
 
 # Mas allá de lo básico
 
-### **¿Qué es el N2T?**
+### **¿Qué es el N2T?** {#what-n2t}
 
 [N2T.net](https://n2t.net/) es un resolvedor ARK global. N2T, que significa "Name-to-Thing" (nombre-a-cosa), es en realidad un resolvedor generalizado para asignar nombres a cosas, por lo que sabe dónde enrutar más de 900 otros tipos de identificadores: ARK, DOI, PMID, Taxon, PDB, ISSN, etc. Si te interesa, el diagrama y la siguiente respuesta ofrecen más detalles.
 
@@ -204,7 +204,7 @@ Una vez finalizada la resolución, el usuario a menudo no se da cuenta, a menos 
 
 Cuando se recibe una solicitud de resolución del público general, N2T busca el identificador y redirige el enlace original a un enlace de reenvío. Para ello, utiliza dos patrones de resolución diferentes. Para empezar, N2T intenta resolver según la información contenida en un identificador individual almacenado. De no ser posible, intenta resolver según las reglas de clase almacenadas, según el tipo de identificador.
 
-N2T almacena un tipo diferente de datos para cada patrón. En primer lugar, almacena registros individuales para aproximadamente 50 millones de identificadores de objetos (p. ej., ARK, DOI) que obtiene de tres fuentes: [EZID.cdlib.org](https://ezid.cdlib.org), [Internet Archive](https://archive.org) y [YAMZ.net](https://yamz.net). Cuando dichos registros incluyen una URL de redirección (_target_) y metadatos descriptivos (#what-is-meant-by-arks-supporting-early-object-development), N2T puede actuar sobre las inflexiones (#what-is-an-ark-inflection-and-how-does-it-differ-from-content-negotiation), así como realizar el [paso de sufijos](https://ezid.cdlib.org/learn/suffix_passthrough) y la negociación de contenido. Para facilitar la creación y el mantenimiento de registros de identificadores individuales, existe una API de N2T que requiere credenciales de inicio de sesión. La API también permite operaciones por lotes y la generación de identificadores únicos (acuñación).
+N2T almacena un tipo diferente de datos para cada patrón. En primer lugar, almacena registros individuales para aproximadamente 50 millones de identificadores de objetos (p. ej., ARK, DOI) que obtiene de tres fuentes: [EZID.cdlib.org](https://ezid.cdlib.org), [Internet Archive](https://archive.org) y [YAMZ.net](https://yamz.net). Cuando dichos registros incluyen una URL de redirección (_target_) y [metadatos](#metadata) descriptivos, N2T puede actuar sobre las [inflexiones](#inflection), así como realizar el [paso de sufijos](https://ezid.cdlib.org/learn/suffix_passthrough) y la negociación de contenido. Para facilitar la creación y el mantenimiento de registros de identificadores individuales, existe una API de N2T que requiere credenciales de inicio de sesión. La API también permite operaciones por lotes y la generación de identificadores únicos (acuñación).
 
 En segundo lugar, incluso si N2T desconoce un identificador individual, la resolución puede funcionar gracias a un registro de regla de enrutamiento almacenado, activado por el tipo de identificador. N2T mantiene más de 3500 registros de reglas actualizados periódicamente a partir de varias fuentes, incluido el registro NAAN, una base de datos de referencias ARK y DOI, y una asociación formal sobre identificadores compactos con identifiers.org.
 
@@ -222,11 +222,11 @@ Esa es otra razón para tener el resolvedor global ARK. Las personas que se encu
 
 ### **Mi organización tiene su propio resolvedor ARK. ¿Debería preocuparme por [N2T.net?](http://n2t.net/)**
 
-Sí, por dos razones principales. Primero, si sus ARKs "en estado salvaje" se muestran sin su nombre de host de resolución (lo que significa que comienzan con "ark:...", que no es raro ver), la persona que quiera usarlos no necesitará saber el hostname siempre que puedan recordar agregar "[n2t.net](http://n2t.net/)" delante de ellos. Esto funciona porque N2T conoce el nombre de host de resolución correcto.
+Sí, por dos razones principales. Primero, si sus ARK "en estado salvaje" se muestran sin su nombre de host de resolución (lo que significa que comienzan con "ark:...", que no es raro ver), la persona que quiera usarlos no necesitará saber el hostname siempre que puedan recordar agregar "[n2t.net](http://n2t.net/)" delante de ellos. Esto funciona porque N2T conoce el nombre de host de resolución correcto.
 
 En segundo lugar, aunque algunas organizaciones y sus nombres de host de resolución son de larga duración, la mayoría no lo son. Una persona que intente utilizar un ARK que contenga un nombre de host de resolución que no funcione puede reemplazar la parte que no funciona con "[n2t.net](http://n2t.net/)". Si las circunstancias alguna vez lo obligan a cambiar su resolvedor, este paso de reemplazo le da a las ARK que publicó antes del cambio una mejor oportunidad de trabajar.
 
-Para evitar futuros inconvenientes, algunas organizaciones que ejecutan sus propios resolvedores pueden elegir desde el principio suprimir sus nombres de resolvedor y simplemente anunciar ("publicar") sus ARK basados ​​en [n2t.net](http://n2t.net/).
+Para evitar futuros inconvenientes, algunas organizaciones que ejecutan sus propios resolvedores pueden elegir desde el principio suprimir sus nombres de resolvedor y simplemente anunciar ("publicar") sus ARK basados en [n2t.net](http://n2t.net/).
 
 ### **¿Por qué el [resolvedor](http://n2t.net/) ARK global ([n2t.net](http://n2t.net/)) *no* tiene la palabra "ARK"?**
 
@@ -273,7 +273,7 @@ Name Mapping Authority (NMA)  |   |  Assigned Name      ...
 ```
 {: .bg-secondary-subtle }
 
-### **¿Puedo asignar ARK a cosas dentro de algo que ya tiene un ARK?**
+### **¿Puedo asignar ARK a cosas dentro de algo que ya tiene un ARK?** {#already-ark}
 
 Sí, los ARK se pueden asignar a cualquier nivel de *granularidad*, como un manuscrito, capítulos dentro de él, secciones de capítulos, subsecciones, etc. Un ARK también se puede asignar a una cosa que encierra otras cosas. En los ARK, el carácter '/' está reservado para ayudar al destinatario a comprender la contención, por ejemplo, el primer objeto a continuación contiene el segundo:
 
@@ -293,7 +293,7 @@ debido a que difieren solo por el sufijo .`pdf` o .`html`, se puede inferir que 
 
 ### ¿Cuál es el propósito del NAAN?
 
-El propósito principal es evitar conflictos de asignación. Al obtener un NAAN, una organización obtiene el derecho exclusivo de crear ARKs bajo dicho NAAN, que forma parte de un prefijo delante de todos sus ARKs. El conjunto de ARKs que puede crear es infinito y se conoce como el espacio de nombres de su NAAN, y su espacio de nombres NAAN es un subespacio de nombres (subconjunto) del espacio de nombres ARK (el conjunto de todos los ARKs posibles). Por ejemplo, el espacio de nombres NAAN de Internet Archive incluye todos los ARKs que empiezan por "ark:/13960/". Los NAAN subdividen el espacio de nombres ARK en subespacios de nombres no superpuestos, cada uno con un número infinito de ARKs posibles. Dado que las organizaciones solo crean ARKs en sus propios espacios de nombres, las asignaciones de ARKs entre organizaciones nunca entrarán en conflicto.
+El propósito principal es evitar conflictos de asignación. Al obtener un NAAN, una organización obtiene el derecho exclusivo de crear ARKs bajo dicho NAAN, que forma parte de un prefijo delante de todos sus ARK. El conjunto de ARKs que puede crear es infinito y se conoce como el espacio de nombres de su NAAN, y su espacio de nombres NAAN es un subespacio de nombres (subconjunto) del espacio de nombres ARK (el conjunto de todos los ARK posibles). Por ejemplo, el espacio de nombres NAAN de Internet Archive incluye todos los ARK que empiezan por "ark:/13960/". Los NAAN subdividen el espacio de nombres ARK en subespacios de nombres no superpuestos, cada uno con un número infinito de ARKs posibles. Dado que las organizaciones solo crean ARKs en sus propios espacios de nombres, las asignaciones de ARKs entre organizaciones nunca entrarán en conflicto.
 
 Los NAAN también desempeñan un papel clave en la resolución. Por ejemplo, si el resolvedor de N2T.net no encuentra un ARK entrante en su base de datos, lo examina y lo redirige al resolvedor local registrado en el NAAN. Cualquier resolvedor local podría configurarse para que repita el proceso en el caso de los ARK entrantes que contengan NAAN desconocidos, simplemente redirigiéndolos a N2T.
 
@@ -313,7 +313,7 @@ Funcionan de forma muy similar a todos los espacios de nombres. Dado un prefijo 
 {: .table .table-striped .table-hover }
 </div>
 
-La tabla anterior muestra ejemplos de cuatro niveles comunes de espacio de nombres/subespacio de nombres. El primero es para todos los ARKs y el segundo para todos los ARKs bajo ark:12345. El tercero es el concepto de hombro, que se describe a continuación, que es la siguiente subdivisión bajo la NAAN. Tenga en cuenta que no tiene "/" después.
+La tabla anterior muestra ejemplos de cuatro niveles comunes de espacio de nombres/subespacio de nombres. El primero es para todos los ARK y el segundo para todos los ARK bajo ark:12345. El tercero es el concepto de hombro, que se describe a continuación, que es la siguiente subdivisión bajo la NAAN. Tenga en cuenta que no tiene "/" después.
 
 El cuarto ejemplo, un ejemplo completo de ARK como prefijo, muestra que un objeto ARK es en sí mismo también un espacio de nombres, con un número infinito de "sub-ARKs" que podrían descender de él para nombrar partes y variantes del objeto. Crear nuevos espacios de nombres para evitar conflictos de nombres es una práctica antigua. Por ejemplo, una familia puede referirse a alguien como Sam, la comunidad como Sam Smith, el gobierno como Sam Smith, 4321 Main Street, Springfield, e historia como Sam Smith, 4321 Main Street, Springfield, 1888-1997.
 
@@ -339,13 +339,13 @@ Por lo tanto, los hombros permiten que la asignación de ARK bajo un NAAN se del
 
 ### ¿Podría alguna vez querer crear ARKs en un NAAN que no sea propiedad de mi organización?
 
-Sí, porque hay cuatro NAAN compartidos con semántica especial que podría interesarle. Normalmente, los ARKs a largo plazo y sus NAAN deberían ser opacos, revelando poco sobre su asignación, pero la semántica de la tabla a continuación se considera tan inmutable que no pone en riesgo su longevidad. Cada NAAN compartido tiene connotaciones particulares que el software y las personas con la formación suficiente pueden reconocer y aprovechar, lo que ofrece cierta tranquilidad frente al desafío de usar identificadores opacos.
+Sí, porque hay cuatro NAAN compartidos con semántica especial que podría interesarle. Normalmente, los ARK a largo plazo y sus NAAN deberían ser opacos, revelando poco sobre su asignación, pero la semántica de la tabla a continuación se considera tan inmutable que no pone en riesgo su longevidad. Cada NAAN compartido tiene connotaciones particulares que el software y las personas con la formación suficiente pueden reconocer y aprovechar, lo que ofrece cierta tranquilidad frente al desafío de usar identificadores opacos.
 
 Los NAAN compartidos no son propiedad de ninguna organización. Para crear ARKs sin conflictos bajo un NAAN compartido, se requiere, como se puede imaginar, reservar un relevo, lo que implica completar un [formulario en línea para solicitar un relevo bajo un NAAN compartido]({{ site.shoulder_form_url }}) (no lo use para relevos bajo su propio NAAN no compartido).
 
 <div class="table-responsive" markdown=1>
 | --- | --- | --- | --- |
-| **NAAN compartido <br>_significado_** | **Propósito, significado o connotación de los ARKs con este NAAN.<br><br>(Es aceptable que estos NAANs no sean opacos, ya que sus significados son inmutables).** | **¿Se espera que se resuelvan?** | **¿Se puede usar como referencia a largo plazo?** |
+| **NAAN compartido <br>_significado_** | **Propósito, significado o connotación de los ARK con este NAAN.<br><br>(Es aceptable que estos NAANs no sean opacos, ya que sus significados son inmutables).** | **¿Se espera que se resuelvan?** | **¿Se puede usar como referencia a largo plazo?** |
 | **12345** _ejemplos_ | Ejemplos de ARKs que aparecen en la documentación. Podrían resolverse, pero ningún verificador de enlaces debería preocuparse si no lo hacen. No deberían considerarse viables para una referencia a largo plazo. | quizás | no |
 | **99152** _terms_ | ARKs para términos de vocabulario controlado y ontología, como nombres de elementos de metadatos y valores de listas de selección. Deberían resolverse en definiciones de términos y son adecuados para una referencia a largo plazo. | sí | sí |
 | **99166** _agents_ | ARKs para personas, grupos e instituciones como "agentes" (actores, como creadores, colaboradores, editores, artistas, etc.). Deberían resolverse en definiciones de agentes y son adecuados para una referencia a largo plazo. | sí | sí |
@@ -370,7 +370,7 @@ Los NAAN son transferibles. Si su organización entra o sale de una relación co
 
 ### **¿Por qué usaría ARK en comparación con, por ejemplo, DOI?**
 
-* Para mantener bajos los costos ([detalles](https://wiki.lyrasis.org/pages/viewpage.action%3FpageId%3D131533174)).  
+* Para mantener bajos los costos ([detalles](#diffs)).  
 * Para trabajar exactamente con los metadatos que desea.  
 * Para poder crear identificadores sin metadatos.  
 * Para poder crear un identificador incluso antes de que exista su objeto.  
@@ -388,8 +388,8 @@ Los NAAN son transferibles. Si su organización entra o sale de una relación co
 * Utilizar una infraestructura abierta coherente con los valores de su organización.  
 * Para vincular directamente a los objetos que valora en lugar de a las páginas de destino.  
 * Para crear un identificador que permita millones ([paso de sufijo](https://ezid.cdlib.org/learn/suffix_passthrough)).  
-* Para acceder a metadatos convenientes y con todas las funciones a través de las [identificaciones de preguntas frecuentes \# de identificadores ARK](https://wiki.lyrasis.org/pages/viewpage.action%3FpageId%3D131533174).  
-* Para integrarse fácilmente con API [IIIF](https://iiif.io/technical-details) utilizando calificadores ARK.
+* Para acceder a metadatos convenientes y con todas las funciones a través de las [inflexiones](#inflection).  
+* Para integrarse fácilmente con API [IIIF](https://iiif.io/technical-details) utilizando [calificadores](#already-ark) ARK.
 
 ### **¿Qué tienen en común ARK, DOI, Handle, PURL y URN?**
 
@@ -421,7 +421,7 @@ No, esa es una declaración demasiado fuerte. Pero mantengamos estos esquemas de
 
 Dado lo poco que hacen los esquemas por usted, al elegir uno, es probable que desee considerar factores como el costo, el riesgo y la apertura.
 
-### **¿En qué se diferencian los ARK de los identificadores como DOI, Handles, PURL y URN?**
+### **¿En qué se diferencian los ARK de los identificadores como DOI, Handles, PURL y URN?** {#diffs}
 
 #### **La respuesta corta**
 
@@ -437,7 +437,7 @@ Los ARK son inusuales en ser descentralizados. Si bien uno *puede* obtener servi
   * abrir el archivo PDF de un artículo para leerlo,  
   * haciendo referencia a un archivo de imagen destinado a incorporarse automáticamente en línea en un documento, y  
   * citando una hoja de cálculo que se utilizará para el análisis directo de datos por software.  
-* Los DOI, los otros identificadores, etc. no admiten las [inflexiones](https://wiki.lyrasis.org/pages/viewpage.action%3FpageId%3D131533174) estilo [ARK](https://wiki.lyrasis.org/pages/viewpage.action%3FpageId%3D131533174) que permiten el acceso a los metadatos, independientemente de si un identificador apunta a un objeto o su página de destino.  
+* Los DOI, los otros identificadores, etc. no admiten las [inflexiones](#inflection) estilo ARK que permiten el acceso a los metadatos, independientemente de si un identificador apunta a un objeto o su página de destino.  
 * A diferencia de los DOI y los controladores, los ARK no tienen requisitos de metadatos. Los ARK que no se han lanzado al mundo son fáciles de eliminar.  
 * Todas las cosas finalmente pasan, incluidos los nombres de host y la propia web y el protocolo " `https://"`. Cuando esa primera parte del identificador deja de tener significado, solo los ARK y los URN incluirán la etiqueta (por ejemplo, "ark:") que indica el tipo de identificador que queda.  
 * Para DOI, Handle y PURL, debe usar sus respectivos resolvedores. ARKs y URNs, le permiten usar su propio resolvedor.  
@@ -445,7 +445,7 @@ Los ARK son inusuales en ser descentralizados. Si bien uno *puede* obtener servi
 * Para crear Handles, debe instalar y mantener un servidor Handle local, que le brinda otro sistema para monitorear, parchear y solucionar problemas.  
 * Aunque puede usar un resolvedor local o de proveedor para sus ARK y URN, los ARK pueden resolverse a través del resolvedor global [n2t.net](http://n2t.net/).  
 * La infraestructura de resolución de URN prevista nunca se construyó, por lo que los URN se resuelven actualmente como URL y no hay un resolvedor global de URN como URL designado. Para registrarse para crear URN, debe [solicitar un espacio de nombres URN](https://tools.ietf.org/html/rfc8141).  
-* Los ARK tienen algunas características únicas que admiten el [desarrollo temprano de objetos](https://wiki.lyrasis.org/pages/viewpage.action%3FpageId%3D131533174) : los ARK se pueden eliminar, pueden nacer sin metadatos y pueden existir con cualquier metadato que desee almacenar.
+* Los ARK tienen algunas características únicas que admiten el [desarrollo temprano de objetos](#metadata) : los ARK se pueden eliminar, pueden nacer sin metadatos y pueden existir con cualquier metadato que desee almacenar.
 
 ### **Pero si se pueden eliminar los ARK, ¿cómo se puede confiar en ellos?**
 
@@ -457,7 +457,7 @@ Si bien no son inmunes a tales errores, los ARK tienen la gran ventaja de que pu
 
 Si. A veces es útil tener dos identificadores, aunque puede volverse confuso cuando sucede con frecuencia. Muchas personas comienzan asignando ARK a cada cosa que crean para tener una referencia estable desde el principio, incluso antes de saber si quieren publicarla, y mucho menos conservarla.
 
-El objeto y sus metadatos se desarrollan juntos, y para el subconjunto de cosas que finalmente desea publicar en lugares que requieren DOI, puede asignar DOI en el momento de la publicación. Si su ARK es estable y tiene metadatos básicos, ya está haciendo todo lo que necesita para admitir un DOI adecuado. Esta es una forma en que los ARK admiten el [desarrollo temprano de objetos](https://wiki.lyrasis.org/pages/viewpage.action%3FpageId%3D131533174).
+El objeto y sus metadatos se desarrollan juntos, y para el subconjunto de cosas que finalmente desea publicar en lugares que requieren DOI, puede asignar DOI en el momento de la publicación. Si su ARK es estable y tiene metadatos básicos, ya está haciendo todo lo que necesita para admitir un DOI adecuado. Esta es una forma en que los ARK admiten el [desarrollo temprano de objetos](#metadata).
 
 Para admitir dos identificadores de manera eficiente, se recomienda que cree el DOI de modo que redirija al ARK original. Esto no solo elimina la necesidad de actualizar la redirección de DOI, sino que también mantiene el ARK persistente para cualquiera que lo haya grabado o marcado previamente.
 
@@ -489,7 +489,7 @@ Quizás sorprendentemente, incluso si se comparten de manera más amplia, los AR
 
 Finalmente, la gente comete errores. Los ARK, DOI, Handles, PURL y URN a veces se transmiten por error y deben retirarse. Cuando eso sucede, la mejor práctica del proveedor es hacer que el identificador retirado se resuelva en una página de "lápida" que explica y tal vez se disculpe por las molestias. A pesar de los rumores, los identificadores persistentes nunca están garantizados.
 
-### **¿Qué se entiende por ARKs que apoyan el desarrollo temprano de objetos?**
+### **¿Qué se entiende por ARKs que apoyan el desarrollo temprano de objetos?** {#metadata}
 
 Las personas necesitan identificadores antes de saber exactamente a qué objeto se refieren, o si se refieren a algo que valga la pena conservar. No se puede crear un identificador que requiera metadatos consolidados durante el desarrollo temprano ya que se sabe poco sobre el objeto. Por lo tanto, los creadores de objetos casi siempre asignan inicialmente identificadores que no tienen requisitos de metadatos, como URL o ARK.
 
@@ -509,7 +509,7 @@ A diferencia de los DOI Crossref y DataCite, que requieren metadatos específico
 
 ### **Si los ARK no lo requieren, ¿por qué molestarse en crear metadatos?**
 
-Crear metadatos (información adicional asociada o que describe un objeto) tiene varios beneficios clave. En primer lugar, no importa lo que los vuelve a dirigir a ARK \-ya sea una página de destino o un archivo- metadatos ofrece a los usuarios información vital sobre el objeto, como referencias a las versiones más recientes, fecha de creación, procedencia, etc. Por lo general ARKs metadatos se accede a través [ARK Identificadores Preguntas frecuentes \# inflexiones](https://wiki.lyrasis.org/pages/viewpage.action%3FpageId%3D131533174).
+Crear metadatos (información adicional asociada o que describe un objeto) tiene varios beneficios clave. En primer lugar, no importa lo que los vuelve a dirigir a ARK \-ya sea una página de destino o un archivo- metadatos ofrece a los usuarios información vital sobre el objeto, como referencias a las versiones más recientes, fecha de creación, procedencia, etc. Por lo general ARKs metadatos se accede a través [inflexiones](#inflection).
 
 Los metadatos realmente alivian la dificultad de trabajar con identificadores opacos, que no revelan pistas sobre lo que identifican. En ausencia de metadatos, se ve obligado a acceder al objeto en sí para recordar qué es y también a confiar en que está accediendo al objeto correcto. Además, las discrepancias entre los metadatos devueltos y el objeto al que se accede ayudan a todos a detectar cambios de identificador y errores.
 
@@ -545,7 +545,7 @@ Hay mucho más que decir sobre los metadatos ARK, por ejemplo, aplicar quién, q
 * URL de destino de redirección, que generalmente se almacena como un elemento distinguido de metadatos  
 * elementos que contienen [declaraciones de persistencia](https://doi.org/10.5334/dsj-2017-039), para expresar la fuerza o debilidad de un compromiso de archivo
 
-### **¿Qué es una "inflexión" de ARK y en qué se diferencia de la "negociación de contenido"?**
+### **¿Qué es una "inflexión" de ARK y en qué se diferencia de la "negociación de contenido"?** {#inflection}
 
 Una *inflexión* es un cambio al final de una palabra para expresar un cambio en el significado. Nos permite definir una palabra como "ir" sin definir también "va" y "va". A un ARK que conduce a un objeto, simplemente agregando un '?' hasta el final (el '?' es un ejemplo de una inflexión ARK) nos permite solicitar metadatos sin tener que definir un identificador separado para los metadatos del objeto. Esta simple técnica puede ser utilizada por un humano con un navegador web. El resolvedor N2T admite inflexiones y negociación de contenido.
 
@@ -555,7 +555,7 @@ Aunque las inflexiones se asocian comúnmente con ARK, no son "propiedad" de ARK
 
 ### **¿Qué quieres decir con depósitos?**
 
-Por lo general, los servicios basados ​​en esquemas están diseñados como depósitos o repositorio o [plataformas cerradas](https://en.wikipedia.org/wiki/Closed_platform), que sirven a un tipo de identificador particular, como Handle, DOI o PURL. Cada depósito o repositorio realiza las mismas funciones principales: asignar nombres (cadenas de identificadores) a cosas (objetos o metadatos). Excluir todos menos un tipo de cadena de identificación puede ayudar a capturar mercados, pero es un desperdicio y no incluye. Requiere construir el mismo conjunto de servicios una y otra vez para cada tipo y viola los principios básicos de apertura.
+Por lo general, los servicios basados en esquemas están diseñados como depósitos o repositorio o [plataformas cerradas](https://en.wikipedia.org/wiki/Closed_platform), que sirven a un tipo de identificador particular, como Handle, DOI o PURL. Cada depósito o repositorio realiza las mismas funciones principales: asignar nombres (cadenas de identificadores) a cosas (objetos o metadatos). Excluir todos menos un tipo de cadena de identificación puede ayudar a capturar mercados, pero es un desperdicio y no incluye. Requiere construir el mismo conjunto de servicios una y otra vez para cada tipo y viola los principios básicos de apertura.
 
 En contraste, el [resolvedor N2T (Name-to-Thing)](https://n2t.net/) y la [interfaz de administración EZID (identificadores fáciles)](https://ezid.cdlib.org/) fueron diseñados para funcionar con todos los identificadores. El esfuerzo puesto en cualquier nueva característica se puede aprovechar de manera eficiente en todos los tipos, lo que a veces crea una flexibilidad sorprendente. Por ejemplo, los ARK a menudo se almacenan en EZID con "metadatos DOI", y cada DOI almacenado en N2T puede beneficiarse de las "características de resolución ARK", como las inflexiones y el [paso de sufijos](https://ezid.cdlib.org/learn/suffix_passthrough), que no están disponibles a través del resolvedor principal DOI ([doi.org](https://doi.org/)).  
 

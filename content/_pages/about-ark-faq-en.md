@@ -104,7 +104,7 @@ Below is the global distribution of [organizations registered to create ARKs]({{
 
 # Getting started
 
-### What do I need to create ARKs?
+### What do I need to create ARKs? {#creating}
 
 First you need a _NAAN_ (Name Assigning Authority Number), which is a number reserved exclusively for your organization. It must appear in every ARK your organization assigns, just after the "`ark:/`" label. The NAAN in all of these ARKs,
 
@@ -114,7 +114,7 @@ First you need a _NAAN_ (Name Assigning Authority Number), which is a number re
 
             `https://n2t.net/ark:/12148/btv1b8449691v/f29`
 
-is 12148, and it uniquely identifies the French National Library. Each NAAN is associated with the URL of a resolver for its ARKs, for example, to resolve 12148 ARKs, append them to `http://ark.bnf.fr/` as shown in above. The [N2T.net resolver](#what-is-n2t) is unusual in that it routes any ARK to the resolver registered under its NAAN.
+is 12148, and it uniquely identifies the French National Library. Each NAAN is associated with the URL of a resolver for its ARKs, for example, to resolve 12148 ARKs, append them to `http://ark.bnf.fr/` as shown in above. The [N2T.net resolver](#what-n2t) is unusual in that it routes any ARK to the resolver registered under its NAAN.
 
 There is no charge to obtain or use a NAAN, and you can request one by filling out an online form. Over 650 organizations have NAANs – libraries, archives, museums, university departments, government agencies, scholarly and educational publishers, projects, etc. – all listed in the public NAAN registry.
 
@@ -124,7 +124,7 @@ You are free to create ARK strings as you wish, provided you use only digits, le
 
 `= ~ * + @ _ $ . /`
 
-The last two characters are reserved in the event you wish to disclose ARK relationships.
+The last two characters are reserved in the event you wish to [disclose ARK relationships](#already-ark).
 
 Another unique feature of ARKs is that hyphens ('-') may appear but are identity inert, meaning that strings that differ only by hyphens are considered identical; for example, these strings
 
@@ -134,7 +134,7 @@ Another unique feature of ARKs is that hyphens ('-') may appear but are identity
 
 identify the same thing. The reason for this feature is that text formatting processes out in the world routinely introduce extra hyphens into identifiers, and that breaks links to any server that treats hyphens as significant. ARKs are the only identifiers we know of that won't break when that happens.
 
-### What is the recommended form for ARK strings?
+### What is the recommended form for ARK strings? {#betanumeric}
 
 ARKs distinguish between lower- and upper-case letters, which makes shorter identifiers possible (52 vs 26 letters per character position). The "ARK way", however, is to use lower-case only unless you need shorter ARKs. The restriction makes it easier for resolvers to support your ARKs in case they arrive from the world with mixed- or upper-case letters, which happens regrettably often due to the lingering 1960s-era view that identifiers are case-insensitive (one sign of which is the prominence of the Caps Lock key on most computer keyboards).
 
@@ -161,17 +161,17 @@ Persistent identifier strings are typically opaque, deliberately revealing litt
 {: .table .table-striped .table-hover }
 </div>
 
-ARKs are not required to be opaque, but it is recommended that the base object name be made opaque, since it tends to name the main focus of persistence. If any qualifier strings follow that name, it is less important that they be opaque. To help choose your approach to opacity, you may wish to consider compatibility with legacy identifiers and ease of string generation and transcription (eg, brevity, check digits). New strings can be created (minted) with date/time, [UUID](https://en.wikipedia.org/wiki/Universally_unique_identifier), and number generators, as well as [Noid (Nice Opaque Identifiers)]({{ site.baseurl }}/resources/noid) minters. 
+ARKs are not required to be opaque, but it is recommended that the base object name be made opaque, since it tends to name the main focus of persistence. If any [qualifier strings](#already-ark) follow that name, it is less important that they be opaque. To help choose your approach to opacity, you may wish to consider compatibility with legacy identifiers and ease of string generation and transcription (eg, brevity, check digits). New strings can be created (minted) with date/time, [UUID](https://en.wikipedia.org/wiki/Universally_unique_identifier), and number generators, as well as [Noid (Nice Opaque Identifiers)]({{ site.baseurl }}/resources/noid) minters. 
 
-Opaque strings are "mute" and therefore can be challenging to use and manage, which is why ARKs were designed to be "talking" identifiers. This means that if there's metadata, an ARK that comes in to your server with the '?' inflection should be able to talk about itself.
+Opaque strings are "mute" and therefore can be challenging to use and manage, which is why ARKs were designed to be "talking" identifiers. This means that if there's [metadata](#metadata), an ARK that comes in to your server with the '?' [inflection](#inflection) should be able to talk about itself.
 
 ### How do I make server content addressable with ARKs?
 
-First, decide what the user experience of accessing your ARKs will be, for example, a spreadsheet file, a PDF, an image, a landing page filled with formatted metadata and a range of choices, etc. Whichever you choose, plan for your server to be able to respond with metadata if your ARK should arrive with a '?' inflection after it.
+First, decide what the user experience of accessing your ARKs will be, for example, a spreadsheet file, a PDF, an image, a landing page filled with formatted metadata and a range of choices, etc. Whichever you choose, plan for your server to be able to respond with metadata if your ARK should arrive with a '?' [inflection](#inflection) after it.
 
 Otherwise, serving ARKs is like serving URLs. Normally incoming URL strings somehow address (get mapped to) content that your web server returns. If your server is ARK-aware, incoming ARKs (expressed as URLs) must be mapped to the same content. The term "map" here refers to a generic web server software process that associates the incoming URL with content such as a particular file or a database entry. The process varies greatly across servers, but can be thought of abstractly as a lookup in a two-column table: column 1 for each incoming URL and column 2 for the corresponding file, database entry, or another URL.
 
-Unfortunately, this mapping table description is abstract because the details depend on your web server software. On the other hand, the idea of mapping is very basic to how the web has worked since the 1990's, so doing your own resolution is quite feasible. For example, most server configuration files can easily accommodate 100,000 mapping table rows with lines that look like "Redirect " (columns 1 and 2, after you replace what is in <>'s). A common approach with ARKs is to map each incoming ARK (column 1) to the kind of URL that your web server already knows how to deal with, and you are done. With this approach, to keep the ARKs in column 1 stable you only need to keep the URLs in column 2 updated when they change. In this case your server is acting as a local resolver. If you don't want to implement this yourself, there are ARK software tools and services that can help.
+Unfortunately, this mapping table description is abstract because the details depend on your web server software. On the other hand, the idea of mapping is very basic to how the web has worked since the 1990's, so doing your own resolution is quite feasible. For example, most server configuration files can easily accommodate 100,000 mapping table rows with lines that look like "Redirect " (columns 1 and 2, after you replace what is in <>'s). A common approach with ARKs is to map each incoming ARK (column 1) to the kind of URL that your web server already knows how to deal with, and you are done. With this approach, to keep the ARKs in column 1 stable you only need to keep the URLs in column 2 updated when they change. In this case your server is acting as a local resolver. If you don't want to implement this yourself, there are [ARK software tools and services](#tools) that can help.
 
 Another approach is to run your web server without change, but instead of updating local tables, you would update ARK-to-URL mapping tables residing at a non-local resolver. Examples of this can be found among vendors and in any organization that updates tables via [EZID.cdlib.org](http://ezid.cdlib.org) (which, due to a special relationship, updates resolver tables at n2t.net).
 
@@ -185,11 +185,11 @@ An ARK meant for external use is generally advertised (released, published, diss
 
     <a href="https://n2t.net/ark:/99166/w66d60p2">ark:/99166/w66d60p2</a>
 
-An important decision is whether your URL-based ARKs will use the hostname of your local resolver or the N2T.net resolver. If local control or branding is important enough, you would advertise ARKs based at your local resolver (see about serving content with ARKs). If you're concerned about the stability of your local hostname, you would advertise your ARKs based at n2t.net (see examples of both).
+An important decision is whether your URL-based ARKs will use the hostname of your local resolver or the N2T.net resolver. If local control or branding is important enough, you would advertise ARKs based at your local resolver. If you're concerned about the stability of your local hostname, you would advertise your ARKs based at n2t.net (see [examples of both](#creating)).
 
 Resolving your ARKs through N2T is always possible for users, regardless of how you advertise them.
 
-### Are there tools and services to help with ARKs?
+### Are there tools and services to help with ARKs? {#tools}
 
 Here's a partial list of [software tools for persistent identification](http://coptr.digipres.org/Category:Persistent_Identification) that includes 
 
@@ -208,7 +208,7 @@ Our logo and acronym may evoke the story of Noah's Ark, which is shared by the A
 
 # Beyond the basics
 
-### What is N2T?
+### What is N2T? {#what-n2t}
 
 [N2T.net](https://n2t.net) is a global ARK resolver. N2T, which stands for Name-to-Thing, is actually a generalized resolver for mapping names into things, so it knows where to route over 900 other types of identifier – ARK, DOI, PMID, Taxon, PDB, ISSN, etc. If you're interested, the diagram and the next answer give a bit more detail.
 
@@ -222,7 +222,7 @@ When resolution is finished, the user is often unaware that it happened, unless 
 
 When a resolution request comes in from the general public, N2T looks up the identifier and redirects the original link to a forwarding link. To do this it uses two different resolution "patterns". To begin, N2T tries to resolve according to information found in an individual stored identifier. Failing that, N2T tries to resolve according to any stored class rules, based on the identifier type. 
 
-N2T has a different kind of stored data for each pattern. First, it stores individual records for about 50 million object identifiers (eg, ARKs, DOIs) that it obtains from three sources: [EZID.cdlib.org](https://ezid.cdlib.org), [Internet Archive](https://archive.org), and [YAMZ.net](https://yamz.net). When such records include a redirection URL (_target_) and descriptive [metadata](#what-is-meant-by-arks-supporting-early-object-development), N2T can act on [inflections](#what-is-an-ark-inflection-and-how-does-it-differ-from-content-negotiation) as well as perform [suffix passthrough](https://ezid.cdlib.org/learn/suffix_passthrough) and "content negotiation". To support creation and maintenance of individual identifier records, there is an N2T API requiring login credentials. The API also allows batch operations and unique identifier generation (minting).
+N2T has a different kind of stored data for each pattern. First, it stores individual records for about 50 million object identifiers (eg, ARKs, DOIs) that it obtains from three sources: [EZID.cdlib.org](https://ezid.cdlib.org), [Internet Archive](https://archive.org), and [YAMZ.net](https://yamz.net). When such records include a redirection URL (_target_) and descriptive [metadata](#metadata), N2T can act on [inflections](#inflection) as well as perform [suffix passthrough](https://ezid.cdlib.org/learn/suffix_passthrough) and "content negotiation". To support creation and maintenance of individual identifier records, there is an N2T API requiring login credentials. The API also allows batch operations and unique identifier generation (minting).
 
 Second, even if N2T knows nothing about an individual identifier, resolution may still work because of a stored routing rule record triggered by the type of the identifier. N2T maintains over 3500 rule records regularly updated from several sources, including the NAAN registry, a database of ARK and DOI shoulders, and a formal partnership on compact identifiers with identifiers.org.
 
@@ -291,7 +291,7 @@ Name Mapping Authority (NMA)  |   |  Assigned Name      ...
 ```
 {: .bg-secondary-subtle }
 
-### Can I assign ARKs to things inside something that already has an ARK?
+### Can I assign ARKs to things inside something that already has an ARK? {#already-ark}
 
 Yes, ARKs can be assigned at any level of granularity, such as to a manuscript, to chapters inside it, to chapter sections, subsections, etc. An ARK can also be assigned to a thing that encloses other things. In ARKs the character '/' is reserved to help the recipient understand about containment, for example, the first object below contains the second:
 
@@ -336,7 +336,7 @@ The above table shows examples of four common namespace/sub-namespace levels. T
 
 The fourth, a complete ARK-as-prefix example, shows that an object ARK is itself also a namespace, with an infinite number of "sub-ARKs" that could descend from it to name object parts and variants. Creating new namespaces to avoid naming conflicts is an ancient practice. For example, a family may refer to someone as Sam, the community as Sam Smith, the government as Sam Smith, 4321 Main Street, Springfield, and history as Sam Smith, 4321 Main Street, Springfield, 1888-1997.
 
-### What is a shoulder?
+### What is a shoulder? {#shoulder}
 
 ![](../assets/images/share/lock_jargon.png)
 
@@ -378,7 +378,7 @@ The 99999 and 12345 ARKs ("non-real") are especially useful if you are responsib
 
 You can request a change to the registry entry for a NAAN related to your organization by filling out the same online form used for requesting a new NAAN. For security purposes requests are processed manually. Example reasons for a change may include
 
-*   notifying [N2T](#what-is-n2t) of a change in your organization's contact person or resolver URL,
+*   notifying [N2T](#what-n2t) of a change in your organization's contact person or resolver URL,
 *   updating your organization's name assignment policy (sample policy),
 *   requesting an additional NAAN, eg, to support a significant new body of ARKs or new organizational division, and
 *   transitioning your NAAN to another organization that will carry on your work and future use of your NAAN.
@@ -389,7 +389,7 @@ NAANs are portable. If your organization transitions into or out of a vendor rel
 
 ### Why would I use ARKs compared to, for example, DOIs?
 
-*   To keep costs down ([details](#how-do-arks-differ-from-identifiers-like-dois-handles-purls-and-urns)).
+*   To keep costs down ([details](#diffs)).
 *   To work with exactly the metadata you want.
 *   To be able to create identifiers without metadata.
 *   To be able to create an identifier even before your object exists.
@@ -407,8 +407,8 @@ NAANs are portable. If your organization transitions into or out of a vendor rel
 *   To use open infrastructure consistent with your organization's values.
 *   To link directly to the objects you value instead of to landing pages.
 *   To create one identifier that enables millions ([suffix passthrough](https://ezid.cdlib.org/learn/suffix_passthrough)).
-*   To access convenient, full-function metadata via [inflections](#what-is-an-ark-inflection-and-how-does-it-differ-from-content-negotiation).
-*   To integrate easily with [IIIF](https://iiif.io/technical-details) APIs using ARK qualifiers.
+*   To access convenient, full-function metadata via [inflections](#inflection).
+*   To integrate easily with [IIIF](https://iiif.io/technical-details) APIs using ARK [qualifiers](#already-ark).
 
 ### What do ARK, DOI, Handle, PURL, and URN have in common?
 
@@ -440,7 +440,7 @@ No, that's too strong a statement. But let's keep these identifier schemes (type
 
 Given how little the schemes do for you, when choosing one you'll likely want to consider factors such as cost, risk, and openness.
 
-### How do ARKs differ from identifiers like DOIs, Handles, PURLs, and URNs?
+### How do ARKs differ from identifiers like DOIs, Handles, PURLs, and URNs? {#diffs}
 
 #### **The short answer**
 
@@ -456,7 +456,7 @@ ARKs are unusual in being decentralized. While one _can_ get resolution services
     *   opening an article's PDF file for reading,
     *   referencing an image file meant to be incorporated automatically inline into a document, and
     *   citing a spreadsheet to be used for direct data analysis by software.
-*   DOIs, Handles, etc. do not support ARK-style [inflections](#what-is-an-ark-inflection-and-how-does-it-differ-from-content-negotiation) that permit access to metadata regardless of whether an identifier points to an object or its landing page.
+*   DOIs, Handles, etc. do not support ARK-style [inflections](#inflection) that permit access to metadata regardless of whether an identifier points to an object or its landing page.
 *   Unlike DOIs and Handles, ARKs don't have metadata requirements. ARKs that haven't been released into the world are easy to delete.
 *   All things eventually pass, including hostnames and the web itself and the "`https://"` protocol. When that first part of the identifier ceases to have meaning, only ARKs and URNs will include the label (eg, "ark:") indicating the type of identifier that remains.
 *   For DOIs, Handles, and PURLs, you are required to use their respective resolvers. ARKs and URNs, permit you to use your own resolver.
@@ -464,7 +464,7 @@ ARKs are unusual in being decentralized. While one _can_ get resolution services
 *   To create Handles, you are required to install and maintain a local Handle server, which gives you another system to monitor, patch, and troubleshoot.
 *   Although you can use a local or vendor resolver for your ARKs and URNs, ARKs can be resolved via the global [n2t.net](http://n2t.net) resolver.
 *   The envisioned URN resolution infrastructure was never built, so URNs are currently resolved as URLs, and there is no designated global URN-as-URL resolver. In order to register to create URNs, you must [apply for a URN namespace](https://tools.ietf.org/html/rfc8141#section-6).
-*   ARKs have some unique features that support [early object development](#what-is-meant-by-arks-supporting-early-object-development): ARKs can be deleted, can be born with no metadata, and can exist with any metadata you care to store. 
+*   ARKs have some unique features that support [early object development](#metadata): ARKs can be deleted, can be born with no metadata, and can exist with any metadata you care to store. 
 
 ### But if ARKs can be deleted, how can they be trusted?
 
@@ -476,7 +476,7 @@ While not immune to such mistakes, ARKs have the big advantage that they can be 
 
 Yes. Sometimes having two identifiers is useful, although it can become confusing when it happens often. Many people start by assigning ARKs to each thing they create in order to have a stable reference right from the beginning, even before they know whether they want to publish it, let alone keep it.
 
-The object and its metadata develop together, and for the subset of things that you end up wanting to publish in places that require DOIs, you can assign DOIs at publication time. If your ARK is stable and has basic metadata, you're already doing everything you need to support a proper DOI. This is a way in which ARKs support [early object development](#what-is-meant-by-arks-supporting-early-object-development).
+The object and its metadata develop together, and for the subset of things that you end up wanting to publish in places that require DOIs, you can assign DOIs at publication time. If your ARK is stable and has basic metadata, you're already doing everything you need to support a proper DOI. This is a way in which ARKs support [early object development](#metadata).
 
 To support two identifiers efficiently, it is recommended that you create the DOI such that it redirects to the original ARK. This not only eliminates the need ever to update the DOI redirection, but it also keeps the ARK persistent for anyone who previously recorded or bookmarked it.
 
@@ -508,7 +508,7 @@ Perhaps surprisingly, even if shared more broadly, ARKs should come with persist
 
 Finally, people make mistakes. ARKs, DOIs, Handles, PURLs, and URNs are sometimes broadcast in error and need to be withdrawn. When that happens, provider best practice is to make the withdrawn identifier resolve to a "tombstone" page that explains and perhaps apologizes for the inconvenience. Despite the rumors, persistent identifiers are never guaranteed.
 
-### What is meant by ARKs supporting early object development?
+### What is meant by ARKs supporting early object development? {#metadata}
 
 People need identifiers before they know exactly what object they refer to, or if they refer to anything worth keeping. An identifier that requires mature metadata cannot be created during early development since little is known about the object. So object creators almost always initially assign identifiers that have no metadata requirements, such as URLs or ARKs.
 
@@ -528,7 +528,7 @@ Unlike Crossref and DataCite DOIs, which require specific metadata (eg, see the�
 
 ### If ARKs don't require it, why bother creating metadata?
 
-Creating metadata (extra information associated with or describing an object) has several key benefits. First, no matter what the ARK redirects to – whether a landing page or a file – metadata gives users vital information about the object, such as references to newer versions, creation date, provenance, etc. For ARKs typically metadata is accessed via inflections.
+Creating metadata (extra information associated with or describing an object) has several key benefits. First, no matter what the ARK redirects to – whether a landing page or a file – metadata gives users vital information about the object, such as references to newer versions, creation date, provenance, etc. For ARKs typically metadata is accessed via [inflections](#inflection).
 
 Metadata really eases the difficulty of working with opaque identifiers, which reveal no clues as to what they identify. In the absence of metadata you are forced to access the object itself to remind yourself what it is, and also to trust that you're accessing the correct object. Moreover, discrepancies between returned metadata and the accessed object help everyone detect identifier changes and errors. 
 
@@ -564,7 +564,7 @@ There's much more to say about ARK metadata, for example, applying who, what, wh
 *   redirection target URL, which is usually stored as a distinguished element of metadata
 *   elements holding persistence statements, to express the strength or weakness of an archival commitment
 
-### What is an ARK "inflection" and how does it differ from "content negotiation"?
+### What is an ARK "inflection" and how does it differ from "content negotiation"? {#inflection}
 
 An _inflection_ is a change to the ending of a word to express a shift in meaning. It permits us to define a word such as "go" without also defining "goes" and "going". To an ARK that leads to an object, simply adding a '?' to the end (the '?' is one example of an ARK inflection) permits us to request metadata without having to define a separate identifier for the object's metadata. This simple technique can be used by a human with a web browser. The N2T resolver supports both inflections and content negotiation.
 

@@ -19,7 +19,7 @@ By sending an email to the [ARK mailing list](https://groups.google.com/forum/#
 
 ### **What is a "shoulder"?**
 
-To understand this FAQ you should first read this [introduction to shoulders](https://wiki.lyrasis.org/display/ARKs/ARK+Identifiers+FAQ#ARKIdentifiersFAQ-shoulders). Briefly, a *shoulder* is a sub-[namespace](https://wiki.lyrasis.org/pages/viewpage.action?pageId=131533174#ARKIdentifiersFAQ-namespaces) under a NAAN. This sub-namespace is identified by a short, fixed  alphanumeric extension to the NAAN. For example, in
+To understand this FAQ you should first read this [introduction to shoulders]({{ site.baseurl }}/about/ark-faq-en#shoulder). Briefly, a *shoulder* is a sub-[namespace]({{ site.baseurl }}/about/ark-namespaces) under a NAAN. This sub-namespace is identified by a short, fixed  alphanumeric extension to the NAAN. For example, in
 
       ark:/12345/x5wf6789/c2/s4.pdf
 
@@ -51,13 +51,13 @@ Why? The reason is that adding a "`/`" after "`/x5`" makes two false assertions:
 
 Adding a "`/`" might make the shoulder boundary obvious to in-house ARK administrators, but recall that they are trained specialists. The end user has no business knowing your internal operational details, and if they did you would risk their trying to hold you to account for their inferences (eg, about consistent support levels across objects sharing the apparent containing object). Less transparency about administrative structure hides messy details and can save you user-support time in the end.
 
-In fact, in-house ARK administrators always know where the shoulder ends, provided it was chosen using the "first-digit convention". A *primordinal shoulder* is a sequence of one or more [betanumeric](https://wiki.lyrasis.org/display/ARKs/ARK+Identifiers+FAQ#ARKIdentifiersFAQ-betanumeric) characters ending in a digit. This means that the shoulder is all letters (often just one) after the NAAN up to and including the first digit encountered after the NAAN. Another advantage of primordinal shoulders is that there is an infinite number of them possible under any NAAN.
+In fact, in-house ARK administrators always know where the shoulder ends, provided it was chosen using the "first-digit convention". A *primordinal shoulder* is a sequence of one or more [betanumeric]({{ site.baseurl }}/about/ark-faq-en#betanumeric) characters ending in a digit. This means that the shoulder is all letters (often just one) after the NAAN up to and including the first digit encountered after the NAAN. Another advantage of primordinal shoulders is that there is an infinite number of them possible under any NAAN.
 
 ### **How do I implement a shoulder?**
 
 There are different ways to implement a shoulder. Fundamentally, a shoulder is the deliberate practice of assigning ARKs that start with a particular extension to a NAAN. You could implement two shoulders simply by assigning ARKs beginning `ark:/12345/x8` only to apples and ARKs beginning `ark:/12345/x9` only to oranges.
 
-If you use a service that stores ARKs in the [N2T.net](https://n2t.net/) resolver, such as [ezid.cdlib.org](https://ezid.cdlib.org/), then you can supplement that practice in two different ways. First, you could take advantage of N2T's [suffix passthrough](https://ezid.cdlib.org/learn/suffix_passthrough) feature by creating a short ARK, such as [ark:/99152/p0](https://n2t.net/ark:/99152/p0), that looks and acts like a shoulder. To make it work, it suffices for that ARK to redirect to a server URL that can handle all the ARKs on that shoulder (eg, the Smithsonian does this), and you wouldn't have to store or manage any other ARKs on that shoulder at N2T. Second, the EZID service (and perhaps others), associates a shoulder with a [minter](https://wiki.lyrasis.org/pages/viewpage.action?pageId=131533174#ARKIdentifiersFAQ-betanumeric) service and an API access point.
+If you use a service that stores ARKs in the [N2T.net]({{ site.baseurl }}/about/n2t-global-resolver) resolver, such as [ezid.cdlib.org](https://ezid.cdlib.org/), then you can supplement that practice in two different ways. First, you could take advantage of N2T's [suffix passthrough](https://ezid.cdlib.org/learn/suffix_passthrough) feature by creating a short ARK, such as [ark:/99152/p0](https://n2t.net/ark:/99152/p0), that looks and acts like a shoulder. To make it work, it suffices for that ARK to redirect to a server URL that can handle all the ARKs on that shoulder (eg, the Smithsonian does this), and you wouldn't have to store or manage any other ARKs on that shoulder at N2T. Second, the EZID service (and perhaps others), associates a shoulder with a [minter]({{ site.baseurl }}/about/ark-faq-en#betanumeric) service and an API access point.
 
 A completely different kind of shoulder "creation" step is needed to implement a shoulder under one of the few *shared* NAANs (below).
 
@@ -73,9 +73,9 @@ Note that N2T.net is configured to forward any quick test ARK it receives (secon
 
 ### **How do I request or make changes to a shoulder under a shared NAAN?**
 
-As mentioned, to implement a shoulder under your *own* NAAN requires no special request. To implement or change a shoulder under a *shared* NAAN, however, requires getting into the [shared NAAN shoulders registry](https://n2t.net/e/pub/shoulder_registry.txt), which means filling out an [online shoulder form](https://n2t.net/e/shoulder_request). For security purposes requests are processed manually. Example reasons for a change may include
+As mentioned, to implement a shoulder under your *own* NAAN requires no special request. To implement or change a shoulder under a *shared* NAAN, however, requires getting into the [shared NAAN shoulders registry](https://n2t.net/e/pub/shoulder_registry.txt), which means filling out an [online shoulder form](https://docs.google.com/forms/d/10J2VxsaeQG-IpkqZ6wpqAKqt8hYnMSf4bxdL8ktI-to). For security purposes requests are processed manually. Example reasons for a change may include
 
-* notifying [N2T](https://wiki.lyrasis.org/pages/viewpage.action?pageId=131533174#ARKIdentifiersFAQ-n2t) of a change in your organization's contact person or resolver URL,
+* notifying [N2T](https://n2t.net) of a change in your organization's contact person or resolver URL,
 * updating your organization's name assignment policy ([sample policy](http://ark.bnf.fr/ark:/12148/bpt6k2102478.policy)),
 * requesting an additional shoulder, eg, to support a significant new body of ARKs or new organizational division, and
 * transitioning your shoulder to another organization that will carry on your work and future use of your shoulder.
