@@ -191,7 +191,7 @@ your local hostname, you would advertise your ARKs based at [n2t.net].
 Resolving your ARKs through N2T is always possible for users, regardless of
 how you advertise them.
 
-[Noid]: https://n2t.net/e/noid.html
+[Noid]: {{ site.baseurl }}/resources/noid
 [UUID]: https://en.wikipedia.org/w/index.php?title=Universally_unique_identifier&oldid=906541334
 [ARK software tools and services]: resources.md
 [n2t.net]: https://n2t.net/

@@ -55,8 +55,8 @@ Read more about:
 
 -   [General identifier concepts and conventions] (prefix, base, suffix,
     shoulder, check digit, opacity)
--   [ARK namespaces and sub-namespaces][ARK namespaces] (NAANs and shoulders)
--   [ARK shoulders][][: Do’s and Don’ts][ARK shoulders]
+-   [ARK namespaces and sub-namespaces](about-ark-namespaces.md) (NAANs and shoulders)
+-   [ARK shoulders Do’s and Don’ts](about-shoulders.md)
 -   [ARK features] (including Shoulders & Metadata)
 -   [Parts of an ARK] and following questions (including qualifiers)
 
@@ -100,17 +100,15 @@ Read more about:
 
 
 [NAAN request form]: {{ site.naan_form_url }}
-[ARK namespaces]: about-ark-namespaces.md
 [General identifier concepts and conventions]: about-identifier-concepts-and-conventions.md
-[ARK shoulders]: about-shoulders.md
 [ARK features]: about-ark-features.md
 [Frick Collection tool]: https://github.com/squidgetx/arklet-frick/tree/master
-[Parts of an ARK]: https://wiki.lyrasis.org/display/ARKs/ARK+Identifiers+FAQ#ARKIdentifiersFAQ-WhatarethepartsofanARK?
+[Parts of an ARK]: {{ site.baseurl }}/about/ark-faq-en/#parts
 [suffix passthrough]: https://n2t.net/e/suffix_passthrough.html
 [Internet Archive]: https://archive.org
 [YAMZ.net]: https://yamz.net
 [**Resources**]: resources.md
-[Noid]: https://n2t.net/e/noid.html
+[Noid]: {{ site.baseurl }}/resources/noid
 [Running minters and resolvers]: about-running-minters-and-resolvers.md
 [ARK Implementation best practices]: about-best-practices.md
 [Service providers]: resources.md

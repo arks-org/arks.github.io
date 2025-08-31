@@ -16,7 +16,7 @@ join a working group by contacting one of its current members or writing to info
 
 ---
 
-## Outreach Group
+## Outreach Group {#outreach}
 
 #### Purpose
 
@@ -55,9 +55,9 @@ for its supporting documents.
 
 #### Resources
 
-*   [Notes from ARK "Experts" meetings in 2018](https://wiki.duraspace.org/pages/viewpage.action?pageId=112525432), with discussions of surveys, ARK spec changes, counting ARKs, sustainability, etc
+*   [Notes from ARK "Experts" meetings in 2018]({{ site.baseurl }}/community/ark-summit-experts-meetings/), with discussions of surveys, ARK spec changes, counting ARKs, sustainability, etc
     *   [Latest draft survey](https://docs.google.com/document/d/1lzJEvMjj3_OCm8KKtQ5_aJHra2RSzbsx_ZH2C2Ma34g/edit)
-*   [Technical WG](#Outreach-Group)
+*   [Technical WG](#technical)
 *   [General WG features](https://github.com/arks-org/arks.github.io/wiki/WG-Background) common across ARKA working groups
 
 #### ARK Alliance Outreach Working Group Members
@@ -76,7 +76,7 @@ for its supporting documents.
 
 ---
 
-## Technical Group
+## Technical Group {#technical}
 
 #### Purpose
 
@@ -89,7 +89,7 @@ for its supporting documents.
 1.  Standardization. Work with standards bodies (IETF, NISO, W3C, etc) to adopt the ARK spec.
 2.  Design and review '?info' inflection for returning human- and machine-readable metadata.
 3.  Global ARK resolver. Guide the development and hosting of the N2T.net resolver.
-4.  Counting ARKs. Work with the [Outreach Working Group](#Outreach-Group) to implement mechanisms (eg, surveys, APIs) to measure ARK usage world-wide.
+4.  Counting ARKs. Work with the [Outreach Working Group](#outreach) to implement mechanisms (eg, surveys, APIs) to measure ARK usage world-wide.
 5.  Support the Outreach WG in a liaison with the IIIF community.
 6.  Work with standards bodies (IETF, NISO, W3C, etc) to adopt the ARK spec.
 
@@ -102,7 +102,7 @@ for its supporting documents.
 *   Transition to new ARK spec.
 *   Spin off a Persistence Statements group (charter, timeline)
 *   Investigate moving arks.org from a Wordpress site to a github pages site
-*   Move lyrasis confluence wiki content to github.
+*   Move lyrasis confluence wiki content to github. DONE
 
 #### Resources
 
@@ -110,8 +110,8 @@ for its supporting documents.
 *   2022 ARK spec: [https://datatracker.ietf.org/doc/html/draft-kunze-ark-34](https://datatracker.ietf.org/doc/html/draft-kunze-ark-34)
 *   Current NAAN registry: [https://n2t.net/e/pub/naan\_registry.txt](https://n2t.net/e/pub/naan_registry.txt)
 *   Global ARK (and other identifiers) resolver, N2T (Name-to-Thing): [https://n2t.net](https://n2t.net/)
-*   [Notes from ARK "Experts" meetings in 2018](https://wiki.lyrasis.org/pages/viewpage.action?pageId=112525432), with discussions of surveys, ARK spec changes, counting ARKs, sustainability, etc
-*   [Outreach WG](#Outreach-Group) and [Sustainability WG](https://wiki.lyrasis.org/display/ARKs/Sustainability+Working+Group)
+*   [Notes from ARK "Experts" meetings in 2018]({{ site.baseurl }}/community/ark-summit-experts-meetings/), with discussions of surveys, ARK spec changes, counting ARKs, sustainability, etc.
+*   [Outreach WG](outreach) and [Sustainability WG](https://github.com/arks-org/arks.github.io/wiki/ARKA-Sustainability-WG-wiki)
 *   [General WG features](https://github.com/arks-org/arks.github.io/wiki/WG-Background) common across ARKA working groups
 *   Persistence Statements: Describing Digital Stickiness:  [https://doi.org/10.5334/dsj-2017-039](https://doi.org/10.5334/dsj-2017-039)
 
@@ -133,7 +133,7 @@ for its supporting documents.
 
 ---
 
-## NAAN Group
+## NAAN Group {#naan}
 
 The ARKA NAAN Registry Working Group oversees the registry of institutions that have been given a Name Assigning Authority Number (NAAN), with which they can begin assigning ARKs. The work consists mostly of responding to requests for new NAANs, but also to requests for changes to existing NAANs. Effectively the WG is a team of volunteer curators whose work will be ongoing. Although the WG is not expected ever to be finished, composition of the curatorial team is expected to evolve year to year.
 There is an [ARK Alliance NAAN Working Group wiki](https://github.com/arks-org/arks.github.io/wiki/ARKA-NAAN-WG-wiki) 
@@ -165,7 +165,7 @@ for its supporting documents (this wiki is unfortunately not open due to PII con
 *   The [NAAN Request form]({{ site.naan_form_url }})
 *   The [Shoulder Request (on shared NAANs) form](https://docs.google.com/forms/d/10J2VxsaeQG-IpkqZ6wpqAKqt8hYnMSf4bxdL8ktI-to)
 *   The N2T resolver: [n2t.net](http://n2t.net/)
-*   The [Advisory Group](#Advisory-Group) and the [Technical WG](#Technical-Group)
+*   The [Advisory Group](#ag) and the [Technical WG](#technical)
 *   [General WG features](https://github.com/arks-org/arks.github.io/wiki/WG-Background) common across ARKA working groups
 
 #### ARK Alliance NAAN Working Group Members
@@ -185,7 +185,7 @@ for its supporting documents (this wiki is unfortunately not open due to PII con
 
 ---
 
-## Advisory Group
+## Advisory Group {#ag}
 
 The ARKA Advisory Group (AG) will provide a means for transitioning the ARK infrastructure 
 (specification, NAAN registry, resolver) from the California Digital Library (CDL) to a community 
@@ -209,5 +209,17 @@ for its supporting documents.
 Guided by the Mozilla Foundation's Open Leadership Framework, LYRASIS and CDL constituted 
 this body by reaching out to those organizations that filled out our Expression of Interest form.
 
+---
+
+## Community Leaders {#leaders}
+
+The ARK Alliance Community Leaders are listed here.
+
+* Brian McBride
+* Aurélien Conraux
+* John Kunze
+* Julien Raemy
+* Dave Vieglais
+* Mark Phillips
 
 [1]: {{ site.baseurl }}/assets/images/pages/about-ark-naans-and-systems/NAAN_slice.jpg
