@@ -230,7 +230,7 @@ relationship, there is no impediment to taking your NAAN with you.
 [more information about implementing shoulders]: about-shoulders.md
 [1]: https://lh6.googleusercontent.com/4P2TlDWgXCj_wBahPf2UDHXeIbebp_8BTHlDccb0HGedk6wsqKLJCyWWXPmCN_j1zl_S_YjBO94rY7f80fUZNzaVkGy3-Dq28o9bLpD3tjVap0_b1VYFgOofuEOGwEgogvLtOAHY
 [namespace splitting problem]: https://n2t.net/e/n2t_vision.html
-[ARK Shoulders FAQ]: https://wiki.lyrasis.org/display/ARKs/ARK+Shoulders+FAQ
+[ARK Shoulders FAQ]: {{ site.baseurl }}/about/ark-shoulders-faq-en
 [form to request a shoulder under a shared NAAN]: https://n2t.net/e/shoulder_request
 [online form]: https://n2t.net/e/naan_request
 [sample policy]: https://ark.bnf.fr/ark:/12148/bpt6k2102478.policy
