@@ -1,6 +1,6 @@
 ---
 title: Frequently Asked Questions and Answers about ARK Shoulders
-permalink: /about/ark-shoulders-faq-en
+permalink: /about/ark-shoulders-faq-en/
 pid: 77
 date: 2021-03-19
 published: true
