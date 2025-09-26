@@ -27,10 +27,10 @@ be further extended by a shoulder.
 <div class="table-responsive" markdown=1>
 | ***Set of all ARKs starting*** | ***Associated namespace***             | ***Example ARK in that namespace*** |
 |--------------------------------|----------------------------------------|-------------------------------------|
-| ark:/                          | All ARKs                               | ark:/99999/fk4gt2m                  |
-| ark:/12345/                    | ARKs under the NAAN 12345              | ark:/12345/p987654                  |
-| ark:/12345/x5                  | ARKs under the 12345/x5 *shoulder*     | ark:/12345/x5wf6789                 |
-| ark:/12345/x5wf6789/           | ARKs under the 12345/x5wf6789 *object* | ark:/12345/x5wf6789/c2/s4.pdf       |
+| ark:                          | All ARKs                               | ark:99999/fk4gt2m                  |
+| ark:12345/                    | ARKs under the NAAN 12345              | ark:12345/p987654                  |
+| ark:12345/x5                  | ARKs under the 12345/x5 *shoulder*     | ark:12345/x5wf6789                 |
+| ark:12345/x5wf6789/           | ARKs under the 12345/x5wf6789 *object* | ark:12345/x5wf6789/c2/s4.pdf       |
 {: .table .table-striped .table-hover }
 </div>
 
@@ -61,12 +61,12 @@ non-overlapping namespaces.
 Technically, a *shoulder* is a sub-namespace under a NAAN. It is the set of all
 ARKs starting with a short, fixed extension to the NAAN. For example, in
 
-       ark:/12345/x5wf6789/c2/s4.pdf
+       ark:12345/x5wf6789/c2/s4.pdf
 {: .bg-secondary-subtle }
 
 the shoulder, /x5, extends the NAAN, 12345. The short designation, /x5, isn’t
 very unique, so the fully qualified, globally unique designation should be
-used (for example, ark:/12345/x5). There is [more information about
+used (for example, ark:12345/x5). There is [more information about
 implementing shoulders].
 
 ## ARK shoulder as namespace

@@ -10,7 +10,7 @@ A helpful list of resources, documentation, and services.
 
 <!--more-->
 
-| **BASICS** <br/> &nbsp;•&nbsp; [The ARK Tutorial][17] introduces Archival Resource Keys in 30 minutes. <br/> &nbsp;•&nbsp; [NAAN form] to *get started* creating ARKs or to *update* your existing NAAN. <br/> &nbsp;•&nbsp; See the [current and evolving specifications] to keep up with the latest. <br/> &nbsp;•&nbsp; First ARK paper, [*Towards Electronic Persistence Using ARK Identifiers*], 2003. <br/> &nbsp;•&nbsp; [General identifier concepts and conventions], first articulated for ARKs. <br/> &nbsp;•&nbsp; The [Arklet-Frick][] software package is the Frick Collection's enhanced version of an Internet Archive tool, which adds bulk operations, suffix passthrough, shoulder rules, extensive metadata, inflections, and more. <br/> &nbsp;•&nbsp; [ARK Identifier Scheme (v.39)] for technical details. <br/> &nbsp;•&nbsp; The Archival Resource Key at [wikipedia]. | ![][1]{: .img-thumbnail .img-fluid .d-block fetchpriority="high" loading="eager"} _The Mazarine Library, Paris, which assigns ARKs under the NAAN 61562 (photo by Marie-Lan Nguyen)._ |
+| **BASICS** <br/> &nbsp;•&nbsp; [The ARK Tutorial][17] introduces Archival Resource Keys in 30 minutes. <br/> &nbsp;•&nbsp; [NAAN form] to *get started* creating ARKs or to *update* your existing NAAN. <br/> &nbsp;•&nbsp; See the [current and evolving specifications] to keep up with the latest. <br/> &nbsp;•&nbsp; First ARK paper, [*Towards Electronic Persistence Using ARK Identifiers*], 2003. <br/> &nbsp;•&nbsp; [General identifier concepts and conventions], first articulated for ARKs. <br/> &nbsp;•&nbsp; The [Arklet-Frick][] software package is the Frick Collection's enhanced version of an Internet Archive tool, which adds bulk operations, suffix passthrough, shoulder rules, extensive metadata, inflections, and more. <br/> &nbsp;•&nbsp; [ARK Identifier Scheme specification]({{ site.ark_spec_current }}) for technical details. <br/> &nbsp;•&nbsp; The Archival Resource Key at [wikipedia]. | ![][1]{: .img-thumbnail .img-fluid .d-block fetchpriority="high" loading="eager"} _The Mazarine Library, Paris, which assigns ARKs under the NAAN 61562 (photo by Marie-Lan Nguyen)._ |
 
 -   [N2T.net] resolver: Name-to-Thing, a global resolver for ARKs and other
     identifiers. <br>The service is currently hosted at the [CDL].
@@ -102,7 +102,6 @@ To get your software listed please [let us know] about it.
     2008-06-05, Mark Phillips. [slides][16]
 
 [NAAN form]: {{ site.naan_form_url }}
-[ARK Identifier Scheme (v.39)]: ../assets/documents/2024/ark_spec_39.pdf
 [current and evolving specifications]: specs.md
 [PDF]: https://n2t.net/e/Towards_Electronic_Persistence_Using_ARK_Identifiers.pdf
 [*Towards Electronic Persistence Using ARK Identifiers*]: https://n2t.net/e/Towards_Electronic_Persistence_Using_ARK_Identifiers.pdf
@@ -158,5 +157,5 @@ To get your software listed please [let us know] about it.
 [collected videos]: https://www.bnf.fr/fr/sommet-international-ark-journee-detude-et-dechanges-sur-lidentifiant-ark-archival-resource-key
 [video link]: https://www.youtube.com/watch?v=vYYYUIokwPM&t=134s
 [English transcription]: ../assets/documents/2021/11/The-Covenant-of-the-ARK-en.pdf
-[16]: https://digital.library.unt.edu/ark:/67531/metadc28359/
+[16]: https://digital.library.unt.edu/ark:67531/metadc28359/
 [17]: https://youtu.be/-RkMGFCGRic

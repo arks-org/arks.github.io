@@ -25,8 +25,8 @@ Another unique feature of ARKs is that hyphens (‘-‘) may appear but are
 *identity inert*, meaning that strings that differ only by hyphens are
 considered identical; for example, these strings
 
-       ark:/12345/141e86dc-d396-4e59-bbc2-4c3bf5326152
-       ark:/12345/141e86dcd3964e59bbc24c3bf5326152
+       ark:12345/141e86dc-d396-4e59-bbc2-4c3bf5326152
+       ark:12345/141e86dcd3964e59bbc24c3bf5326152
 {: .bg-secondary-subtle }
 
 identify the same thing. The reason for this feature is that text formatting
@@ -61,7 +61,7 @@ vowels helps avoid accidentally creating words that users can misconstrue.
 
 Regarding assignment, one common strategy is to leverage legacy identifiers.
 For example, a museum moth specimen number cd456f9_87 might be advertised
-under the ark:/12345/cd456f9_87. Some legacy identifiers may need to be
+under the ark:12345/cd456f9_87. Some legacy identifiers may need to be
 altered in view of ARK character restrictions. The second common strategy is
 to make up entirely new strings for your ARKs. In this case it is important to
 consider whether to make them *opaque* or non-opaque (or a bit of both).
@@ -171,15 +171,19 @@ called Template Handles) for any identifier types.
 
 The URL (https or http) form of the ARK is preferred, for example,
 
-       https://n2t.net/ark:/99166/w66d60p2
+       https://n2t.net/ark:99166/w66d60p2
 {: .bg-secondary-subtle }
 
 An ARK meant for external use is generally advertised (released, published,
 disseminated) in this way in order to be an *actionable* *identifier*. If a
-more compact visual display of an ARK is needed, it should be hyperlinked; for
-example, a compact display of an HTML hyperlink can be achieved with
+more compact visual display of an ARK is needed, it should be hyperlinked,
+as in
 
-       <a href="https://n2t.net/ark:/99166/w66d60p2"> ark:/99166/w66d60p2 </a>
+&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://n2t.net/ark:99166/w66d60p2"> ark:99166/w66d60p2 </a>
+
+which was achieved with the HTML hyperlink
+
+       <a href="https://n2t.net/ark:99166/w66d60p2"> ark:99166/w66d60p2 </a>
 {: .bg-secondary-subtle }
 
 An important decision is whether your URL-based ARKs will use the hostname of

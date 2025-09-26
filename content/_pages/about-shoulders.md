@@ -22,8 +22,8 @@ fixed extension that you will add to it. The extension should
 Many people make the initial mistake of adding a “/” between the end of the
 shoulder and the rest of the ARK, for example,
 
-       ark:/12345/x5/wf6789/c2/s4.pdf
-                    ^ WRONG!
+       ark:12345/x5/wf6789/c2/s4.pdf
+                   ^ WRONG!
 {: .bg-secondary-subtle }
 
 Don’t do that! It’s natural to want to visually mark the shoulder’s end, but
@@ -31,8 +31,8 @@ it’s prohibited by ARK rules.
 
 Why? The reason is that adding a “/” after “/x5” makes two false assertions:
 
-1.  that ark:/12345/x5 also names an actual object, and
-2.  that the original object (ark:/12345/x5/wf6789/c2/s4.pdf) is contained in it.
+1.  that ark:12345/x5 also names an actual object, and
+2.  that the original object (ark:12345/x5/wf6789/c2/s4.pdf) is contained in it.
 
 Adding a “/” might make the shoulder boundary obvious to in-house ARK
 administrators, but recall that they are trained specialists. The end user has
@@ -55,13 +55,13 @@ number of them possible under any NAAN.
 There are different ways to implement a shoulder. Fundamentally, a shoulder is
 the deliberate practice of assigning ARKs that start with a particular
 extension to a NAAN. You could implement two shoulders simply by assigning
-ARKs beginning ark:/12345/x8 only to apples and ARKs beginning ark:/12345/x9
+ARKs beginning ark:12345/x8 only to apples and ARKs beginning ark:12345/x9
 only to oranges.
 
 If you use a service that stores ARKs in the N2T.net resolver, such as
 [ezid.cdlib.org], then you can supplement that practice in two different ways.
 First, you could take advantage of N2T’s [suffix passthrough] feature by
-creating a short ARK, such as [ark:/99152/p0], that looks and acts like a
+creating a short ARK, such as [ark:99152/p0], that looks and acts like a
 shoulder. To make it work, it suffices for that ARK to redirect to a server
 URL that can handle all the ARKs on that shoulder (eg, the Smithsonian does
 this), and you wouldn’t have to store or manage any other ARKs on that
@@ -74,5 +74,5 @@ a shoulder under one of the few shared NAANs (described under [namespaces]).
 [here]: about-running-minters-and-resolvers.md
 [ezid.cdlib.org]: https://ezid.cdlib.org/
 [suffix passthrough]: https://n2t.net/e/suffix_passthrough.html
-[ark:/99152/p0]: https://n2t.net/ark:/99152/p0
+[ark:99152/p0]: https://n2t.net/ark:99152/p0
 [namespaces]: about-ark-namespaces.md
