@@ -140,9 +140,9 @@ With inflection features, each ARK URL should be able to provide 3 things:
 
 To see inflections in action, visit the following links:
 
--   <https://texashistory.unt.edu/ark:/67531/metapth346793/>
--   <https://texashistory.unt.edu/ark:/67531/metapth346793/?>
--   <https://texashistory.unt.edu/ark:/67531/metapth346793/??>
+-   <https://texashistory.unt.edu/ark:67531/metapth346793/>
+-   <https://texashistory.unt.edu/ark:67531/metapth346793/?>
+-   <https://texashistory.unt.edu/ark:67531/metapth346793/??>
 
 The metadata returned is determined by the metadata schema and maintenance
 decisions you made when implementing ARKs.

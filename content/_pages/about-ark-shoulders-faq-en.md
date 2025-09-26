@@ -21,7 +21,7 @@ By sending an email to the [ARK mailing list](https://groups.google.com/forum/#
 
 To understand this FAQ you should first read this [introduction to shoulders]({{ site.baseurl }}/about/ark-faq-en#shoulder). Briefly, a *shoulder* is a sub-[namespace]({{ site.baseurl }}/about/ark-namespaces) under a NAAN. This sub-namespace is identified by a short, fixed  alphanumeric extension to the NAAN. For example, in
 
-      ark:/12345/x5wf6789/c2/s4.pdf
+      ark:12345/x5wf6789/c2/s4.pdf
 
 the shoulder, `/x5`, extends the NAAN, `12345`.
 
@@ -39,15 +39,15 @@ Some more detail is given in response to the next question.
 
 Many people make the initial mistake of adding a "/" between the end of the shoulder and the rest of the ARK, for example,
 
-      ark:/12345/x5/wf6789/c2/s4.pdf
-                ^ WRONG!
+      ark:12345/x5/wf6789/c2/s4.pdf
+               ^ WRONG!
 
 It's natural to want to visually mark the shoulder's end, but it's prohibited by ARK rules.
 
 Why? The reason is that adding a "`/`" after "`/x5`" makes two false assertions:
 
-1. that `ark:/12345/x5` also names an actual object, and
-2. that the original object (`ark:/12345/x5/wf6789/c2/s4.pdf`) is contained in it.
+1. that `ark:12345/x5` also names an actual object, and
+2. that the original object (`ark:12345/x5/wf6789/c2/s4.pdf`) is contained in it.
 
 Adding a "`/`" might make the shoulder boundary obvious to in-house ARK administrators, but recall that they are trained specialists. The end user has no business knowing your internal operational details, and if they did you would risk their trying to hold you to account for their inferences (eg, about consistent support levels across objects sharing the apparent containing object). Less transparency about administrative structure hides messy details and can save you user-support time in the end.
 
@@ -55,19 +55,19 @@ In fact, in-house ARK administrators always know where the shoulder ends, provid
 
 ### **How do I implement a shoulder?**
 
-There are different ways to implement a shoulder. Fundamentally, a shoulder is the deliberate practice of assigning ARKs that start with a particular extension to a NAAN. You could implement two shoulders simply by assigning ARKs beginning `ark:/12345/x8` only to apples and ARKs beginning `ark:/12345/x9` only to oranges.
+There are different ways to implement a shoulder. Fundamentally, a shoulder is the deliberate practice of assigning ARKs that start with a particular extension to a NAAN. You could implement two shoulders simply by assigning ARKs beginning `ark:12345/x8` only to apples and ARKs beginning `ark:12345/x9` only to oranges.
 
-If you use a service that stores ARKs in the [N2T.net]({{ site.baseurl }}/about/n2t-global-resolver) resolver, such as [ezid.cdlib.org](https://ezid.cdlib.org/), then you can supplement that practice in two different ways. First, you could take advantage of N2T's [suffix passthrough](https://ezid.cdlib.org/learn/suffix_passthrough) feature by creating a short ARK, such as [ark:/99152/p0](https://n2t.net/ark:/99152/p0), that looks and acts like a shoulder. To make it work, it suffices for that ARK to redirect to a server URL that can handle all the ARKs on that shoulder (eg, the Smithsonian does this), and you wouldn't have to store or manage any other ARKs on that shoulder at N2T. Second, the EZID service (and perhaps others), associates a shoulder with a [minter]({{ site.baseurl }}/about/ark-faq-en#betanumeric) service and an API access point.
+If you use a service that stores ARKs in the [N2T.net]({{ site.baseurl }}/about/n2t-global-resolver) resolver, such as [ezid.cdlib.org](https://ezid.cdlib.org/), then you can supplement that practice in two different ways. First, you could take advantage of N2T's [suffix passthrough](https://ezid.cdlib.org/learn/suffix_passthrough) feature by creating a short ARK, such as [ark:99152/p0](https://n2t.net/ark:99152/p0), that looks and acts like a shoulder. To make it work, it suffices for that ARK to redirect to a server URL that can handle all the ARKs on that shoulder (eg, the Smithsonian does this), and you wouldn't have to store or manage any other ARKs on that shoulder at N2T. Second, the EZID service (and perhaps others), associates a shoulder with a [minter]({{ site.baseurl }}/about/ark-faq-en#betanumeric) service and an API access point.
 
 A completely different kind of shoulder "creation" step is needed to implement a shoulder under one of the few *shared* NAANs (below).
 
 ### **Is there a quick way to get started creating test ARKs?**
 
-Yes. Instead of reserving a 99999 shoulder, if your organization already has its own NAAN, you can immediately create and use a "quick test ARK". This is an ARK that starts with ark:/99999/9NNNNN\_, where NNNNN represents the NAAN (preceded by '9' and followed by '\_'). There is no need to register a quick test namespace since it is automatically set aside for each NAAN. As with any prefix, there is an infinite number of possible test ARKs in each NAAN's quick test namespace. Two versions of an example quick test ARK belonging to the BnF (NAAN 12148\) are
+Yes. Instead of reserving a 99999 shoulder, if your organization already has its own NAAN, you can immediately create and use a "quick test ARK". This is an ARK that starts with ark:99999/9NNNNN\_, where NNNNN represents the NAAN (preceded by '9' and followed by '\_'). There is no need to register a quick test namespace since it is automatically set aside for each NAAN. As with any prefix, there is an infinite number of possible test ARKs in each NAAN's quick test namespace. Two versions of an example quick test ARK belonging to the BnF (NAAN 12148\) are
 
-      https://ark.bnf.fr/ark:/99999/912148_testxyz
+      https://ark.bnf.fr/ark:99999/912148_testxyz
 
-         https://n2t.net/ark:/99999/912148_testxyz
+         https://n2t.net/ark:99999/912148_testxyz
 
 Note that N2T.net is configured to forward any quick test ARK it receives (second version above) to the appropriate local resolver (first version).
 

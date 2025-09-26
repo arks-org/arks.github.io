@@ -21,15 +21,7 @@ solution.
 A NAAN is a number that uniquely identifies your institution, and appears near
 the start of the ARKs that your organization produces.
 
-      https://example.org/ark:/12345/x54xz321/s3/f8.05v.tiff
-      \_________________/ \__/ \___/ \______/\____/\_______/
-                  |        |     |      |      |       |
-                  |  ARK Label   |      | Sub-parts  Variants
-                  |              |      |
-    Name Mapping Authority (NMA) |    Assigned Name
-                                 |
-                  Name Assigning Authority Number (NAAN)
-{: .bg-secondary-subtle }
+{% include content/anatomy2.html %}
 
 The NAAN part of an ARK, following the “ark:” label, uniquely identifies the
 organization that assigned the Name part of the ARK. Often the initial access
@@ -106,15 +98,7 @@ The sections below describe the Noid software in more detail.
 
 ### Minting name strings
 
-      https://example.org/ark:/12345/x54xz321/s3/f8.05v.tiff
-      \_________________/ \__/ \___/ \______/\____/\_______/
-                  |        |     |      |      |       |
-                  |  ARK Label   |      | Sub-parts  Variants
-                  |              |      |
-    Name Mapping Authority (NMA) |    Assigned Name
-                                 |
-                  Name Assigning Authority Number (NAAN)
-{: .bg-secondary-subtle }
+{% include content/anatomy2.html %}
 
 The “assigned name” in an ARK is the part of the ARK string that your
 organization is responsible for making unique. Appended to your NAAN, it
@@ -179,7 +163,7 @@ Most ARKs are created by organizations that advertise (“publish”) them based
 at their own resolvers. For example, this ARK was published based at the
 ark.bnf.fr resolver:
 
-        https://ark.bnf.fr/ark:/12148/btv1b8449691v/f29
+        https://ark.bnf.fr/ark:12148/btv1b8449691v/f29
 
 Having to run and maintain your own resolver is the cost of complete autonomy.
 Using your own resolver also lets you do branding via the hostname, the
@@ -201,7 +185,7 @@ Suffix passthrough is a feature of the N2T resolver that allows you to assign
 a single identifier to large complex objects with many files while still being
 able to refer to each distinct file.
 
-Suppose you have a registered ARK, https://n2t.net/ark:/12345/6789, that
+Suppose you have a registered ARK, https://n2t.net/ark:12345/6789, that
 redirects to the web server page,
 
        https://a.example.org/dataset542
@@ -216,9 +200,9 @@ What suffix passthrough does is to let your one registered ARK act as if you
 had also registered these three ARKs below, which would resolve to the pages
 above, respectively:
 
-       https://n2t.net/ark:/12345/6789/volume3
-       https://n2t.net/ark:/12345/6789/volume3/part2
-       https://n2t.net/ark:/12345/6789/volume3/part2.pdf
+       https://n2t.net/ark:12345/6789/volume3
+       https://n2t.net/ark:12345/6789/volume3/part2
+       https://n2t.net/ark:12345/6789/volume3/part2.pdf
 
 In this case, suffix passthrough saved your having to maintain registrations
 for three more pages. In fact, it works for an unlimited number of pages. You
