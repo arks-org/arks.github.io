@@ -149,7 +149,7 @@ Slide credit: Dominique Babini
 
 [this interview in 2021]: https://saaers.wordpress.com/2021/09/14/ark-alliance-an-interview-with-john-kunze/
 [1]: ../assets/images/pages/about-the-ark-origin-story/image-4.png
-[the mythology of this view]: https://n2t.net/ark:/13030/c7gb1xh09
+[the mythology of this view]: https://n2t.net/ark:13030/c7gb1xh09
 [Cool URIs don’t change]: https://www.w3.org/Provider/Style/URI
 [84% of peer-reviewed Latin American journals in 2014 were not indexed by Scopus or the Web of Science]: https://www.slideshare.net/Babini/coasp2014-dominique-babini-clacso
 [2]: ../assets/images/pages/about-the-ark-origin-story/image-1.png

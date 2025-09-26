@@ -59,25 +59,25 @@ The type of a URL-based identifier can often be spotted by how the URL starts,
 but that’s not true for ARKs, which are spotted by an internal “ark:” label
 that comes after the URL hostname. For example, here is an ARK,
 
-            https://n2t.net/ark:/67531/metadc107835/
+            https://n2t.net/ark:67531/metadc107835/
 
 that gets you to a dissertation. ARKs are high-functioning identifiers that
 lead you to things and to descriptions of those things. For example, adding
 ‘?’ on the end of the above ARK should get you to its description:
 
-            https://n2t.net/ark:/67531/metadc107835/?
+            https://n2t.net/ark:67531/metadc107835/?
 
 A common internet **identifier** is a URL, or part of a URL. For example, this
 core ARK identifier,
 
-                         ark:/12148/btv1b8449691v/f29
+                         ark:12148/btv1b8449691v/f29
 
 appears inside two different URLs (Uniform Resource Locators, also known as
 web links or web addresses):
 
-       https://ark.bnf.fr/ark:/12148/btv1b8449691v/f29
+       https://ark.bnf.fr/ark:12148/btv1b8449691v/f29
 
-         https://n2t.net/ark:/12148/btv1b8449691v/f29
+         https://n2t.net/ark:12148/btv1b8449691v/f29
 
 ARKs are especially good at being **persistent identifiers** (PIDs).
 
@@ -127,14 +127,7 @@ the object.
 
 Here is a diagrammed example:
 
-      https://example.org/ark:/12345/x54xz321/s3/f8.05v.tiff
-      \_________________/ \__/ \___/ \______/\____/\_______/
-                  |        |     |      |      |       |
-                  |  ARK Label   |      | Sub-parts  Variants
-                  |              |      |
-    Name Mapping Authority (NMA) |    Assigned Name
-                                 |
-                  Name Assigning Authority Number (NAAN)
+{% include content/anatomy2.html %}
 
 *A peek at ARK anatomy. You can spot an ARK by its internal* *<span
 class="has-inline-color" style="color:#c88c0a">label</span>.*

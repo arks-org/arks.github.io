@@ -27,7 +27,7 @@ num_arks: "8.2 billion"
 num_dois: "257 million"
 
 map_ark_orgs: "https://www.google.com/maps/d/viewer?mid=1ALGeRERECL36f2pg7pqrthUYNmuU43UM"
-ark_spec_current: "https://www.ietf.org/archive/id/draft-kunze-ark-41.html"
+ark_spec_current: "https://datatracker.ietf.org/doc/draft-kunze-ark/"
 naan_form_url: "https://docs.google.com/forms/d/e/1FAIpQLSf_847hNXtLGikR-XeDy1uT1AKd24DpHnt5UQh2i8ORRu7u-w/viewform"
 shoulder_form_url: "https://docs.google.com/forms/d/10J2VxsaeQG-IpkqZ6wpqAKqt8hYnMSf4bxdL8ktI-to/"
 

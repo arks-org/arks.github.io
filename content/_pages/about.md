@@ -30,15 +30,7 @@ building ARK tools.
 
 ## ARK Anatomy
 
-      https://example.org/ark:/12345/x54xz321/s3/f8.05v.tiff
-      \_________________/ \__/ \___/ \______/\____/\_______/
-                  |        |     |      |      |       |
-                  |  ARK Label   |      | Sub-parts  Variants
-                  |              |      |
-    Name Mapping Authority (NMA) |    Assigned Name
-                                 |
-                  Name Assigning Authority Number (NAAN)
-{: .bg-secondary-subtle }
+{% include content/anatomy2.html %}
 
 *A peek at ARK anatomy. You can spot an ARK by its internal* *<span
 class="has-inline-color" style="color:#c88c0a">label</span>.*

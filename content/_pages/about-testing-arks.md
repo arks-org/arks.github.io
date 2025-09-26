@@ -7,7 +7,7 @@ published: true
 ---
 
 ARK Testing: Best Practices. Delete test ARKs regularly. Quick test ARKs with
-your NAAN: ark:/99999/9NNNNN\_. Shared NAAN 99999 for testing; list in
+your NAAN: ark:99999/9NNNNN\_. Shared NAAN 99999 for testing; list in
 registry for N2T resolution.
 
 <!--more-->
@@ -24,15 +24,15 @@ There are two ways to create test ARKs.
 ## 1. Test with your own NAAN
 
 If your organization already has its own NAAN, you can immediately create and
-use a “quick test ARK”. This is an ARK that starts with ark:/99999/9NNNNN\_,
+use a “quick test ARK”. This is an ARK that starts with ark:99999/9NNNNN\_,
 where NNNNN represents the NAAN (preceded by ‘9’ and followed by ‘\_’). There
 is no need to register a quick test namespace since it is automatically set
 aside for each NAAN. As with any prefix, there is an infinite number of
 possible test ARKs in each NAAN’s quick test namespace. Here are two versions
 of an example quick test ARK belonging to the BnF (NAAN 12148):
 
-       https://ark.bnf.fr/ark:/99999/912148_testxyz
-          https://n2t.net/ark:/99999/912148_testxyz
+       https://ark.bnf.fr/ark:99999/912148_testxyz
+          https://n2t.net/ark:99999/912148_testxyz
 {: .bg-secondary-subtle }
 
 Note that N2T.net is configured to forward any quick test ARK it receives
