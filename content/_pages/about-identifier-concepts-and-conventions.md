@@ -54,7 +54,7 @@ branded plastic key-cover.
               :                  :    :     :      :  :
               v                  v    v     v      v  v
     |..........................|....+.....|...|......|.|
-     https://OwlBike.example.org/ark:/13030/tqb3kh97gh8w   <----  Example Key
+     https://OwlBike.example.org/ark:13030/tqb3kh97gh8w   <----  Example Key
                                  doi:10.30/tqb3kh97gh8w         with parallel
                                  hdl:13030/tqb3kh97gh8w        parts in other
                                  urn:13030:tqb3kh97gh8w          id schemes.
@@ -116,7 +116,7 @@ An easy way to extend the NAAN with a shoulder so that one will always have an
 unlimited supply of non-conflicting shoulders is to adhere to the
 “primordinal” (first digit) convention. In this case each shoulder is a string
 of one of more letters ending in a digit (inclusive). For example,
-“ark:/13030/b3th89n” would have fixed shoulder prefix “b3”, and the 13030 NAAN
+“ark:13030/b3th89n” would have fixed shoulder prefix “b3”, and the 13030 NAAN
 could then enjoy an infinite set of potential future shoulders, including,
 
        b3, c3, d3, ...
@@ -242,10 +242,10 @@ scheme permits formal disclosure of hierarchy and equivalence in name
 extensions; if used in an ARK, ‘/’ indicates containment and ‘.’ indicates
 variation. For example,
 
-    ark:/13030/tqb3kh8z/                 # names an object containing...
-    ark:/13030/tqb3kh8z/chap3            # that in turn contains...
-    ark:/13030/tqb3kh8z/chap3/fig5.jpg   # that is a variant of...
-    ark:/13030/tqb3kh8z/chap3/fig5.pdf   # and so forth
+    ark:13030/tqb3kh8z/                 # names an object containing...
+    ark:13030/tqb3kh8z/chap3            # that in turn contains...
+    ark:13030/tqb3kh8z/chap3/fig5.jpg   # that is a variant of...
+    ark:13030/tqb3kh8z/chap3/fig5.pdf   # and so forth
 {: .bg-secondary-subtle }
 
 ## The “NCDA” check character convention

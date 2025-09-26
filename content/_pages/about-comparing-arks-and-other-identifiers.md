@@ -59,7 +59,7 @@ These are the major persistent identifier types (or schemes).
 They also have very similar structure, as seen in the examples below,
 consisting of four parts:
 
-     https://n2t.net/ark:/99999/12345
+      https://n2t.net/ark:99999/12345
        https://doi.org/10.99999/12345
     https://handle.net/10.99999/12345
          https://purl.org/99999/12345
