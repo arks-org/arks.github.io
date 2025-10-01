@@ -23,23 +23,35 @@ Enviando un correo electrónico a la [lista de correo de ARK](https://groups.goo
 
 Los ARK ("Archival Resource Key," claves de recursos de archivo) son *identificadores de* alto funcionamiento que lo conducen a cosas y a descripciones de esas cosas. Por ejemplo, este ARK,
 
-        https://n2t.net/ark:/67531/metadc107835/
+        https://n2t.net/ark:67531/metadc107835/
 
 te lleva a una disertación. Al agregar dos '??' al final del ARK se debería llegar a la descripción del objeto:
 
-        https://n2t.net/ark:/67531/metadc107835/??
+        https://n2t.net/ark:67531/metadc107835/??
+
+### **¿Por qué algunos ARK empiezan con "ark:" y otros con "ark:/"?**
+
+Los ARK que tienen una barra diagonal ('/') justo después de "ark:" son ARK clásicos, y los ARK sin barra diagonal son ARK modernos. Una ARK hace referencia a lo mismo, con o sin barra diagonal, y ambas formas se admiten indefinidamente. Por lo tanto, estos dos ARK
+
+        https://n2t.net/ark:/67531/metadc107835/
+
+        https://n2t.net/ark:67531/metadc107835/
+
+siempre identificarán lo mismo, siendo preferible la segunda forma (moderna). Para más información, consulte [ARK modernos vs. clásicos]({{
+"/news/2025-07-28-documentation-change-from-classic-to-modern-arks/"
+| absolute_url }}).
 
 ### **¿Qué es un identificador?**
 
 En Internet, un *identificador* es una URL, o parte de una URL. Por ejemplo, este identificador ARK central,
 
-             ark:/12148/btv1b8449691v/f29
+             ark:12148/btv1b8449691v/f29
 
 aparece dentro de dos URL diferentes (Localizadores uniformes de recursos, también conocidos como enlaces web o direcciones web):
 
-      http://ark.bnf.fr/ark:/12148/btv1b8449691v/f29
+      http://ark.bnf.fr/ark:12148/btv1b8449691v/f29
 
-      https://n2t.net/ark:/12148/btv1b8449691v/f29
+      https://n2t.net/ark:12148/btv1b8449691v/f29
 
 Los ARK son especialmente buenos para ser *identificadores persistentes*.
 
@@ -96,13 +108,13 @@ Aquí está la distribución global de las [organizaciones registradas para crea
 
 ### **¿Qué necesito para crear ARK?** {#creating}
 
-Primero necesita un *NAAN* ("Name assigning authority number," Número de autoridad de asignación de nombre), que es un número reservado exclusivamente para su organización. Debe aparecer en cada ARK que su organización asigne, justo después de la etiqueta "`ark:/`". La NAAN en todas estas ARKs,
+Primero necesita un *NAAN* ("Name assigning authority number," Número de autoridad de asignación de nombre), que es un número reservado exclusivamente para su organización. Debe aparecer en cada ARK que su organización asigne, justo después de la etiqueta "`ark:`". La NAAN en todas estas ARKs,
 
-                              ark:/12148/btv1b8449691v/f29
+                              ark:12148/btv1b8449691v/f29
 
-            http://ark.bnf.fr/ark:/12148/btv1b8449691v/f29
+            http://ark.bnf.fr/ark:12148/btv1b8449691v/f29
 
-              https://n2t.net/ark:/12148/btv1b8449691v/f29
+              https://n2t.net/ark:12148/btv1b8449691v/f29
 
 es **`12148`**, e identifica de forma exclusiva la Biblioteca Nacional de Francia. Cada NAAN está asociado con la URL de un resolvedor para sus ARK, por ejemplo, para resolver los `12148` ARK, agréguelos a [http://ark.bnf.fr/](http://ark.bnf.fr/) como se muestra arriba. El [resolvedor N2T.net](#what-n2t) es inusual en el sentido de que dirige cualquier ARK al resolvedor registrado bajo su NAAN.
 
@@ -118,9 +130,9 @@ Los dos últimos caracteres están reservados en el caso de que desee [revelar r
 
 Otra característica única de los ARK es que pueden aparecer guiones ('`-`') pero son *inertes de identidad*, lo que significa que las cadenas que difieren solo por guiones se consideran idénticas; por ejemplo, estas cadenas
 
-`ark:/12345/141e86dc-d396-4e59-bbc2-4c3bf5326152`
+`ark:12345/141e86dc-d396-4e59-bbc2-4c3bf5326152`
 
-`ark:/12345/141e86dcd3964e59bbc24c3bf5326152`
+`ark:12345/141e86dcd3964e59bbc24c3bf5326152`
 
 Identificar lo mismo. La razón de esta característica es que los procesos de formateo de texto en el mundo introducen rutinariamente guiones adicionales en los identificadores, rompiendo enlaces a cualquier servidor que trate los guiones como significativos.
 
@@ -128,7 +140,7 @@ Los ARK distinguen entre letras minúsculas y mayúsculas, lo que hace posibles 
 
 `bcdfghjkmnpqrstvwxz0123456789`
 
-Con respecto a la asignación, una estrategia común es aprovechar los identificadores heredados. Por ejemplo, un número de muestra de polilla de museo `cd456f9_87` podría anunciarse debajo del ark:/12345/cd456f9_87. Es posible que sea necesario modificar algunos identificadores heredados en vista de las restricciones de caracteres ARK. La segunda estrategia común es crear cadenas completamente nuevas para sus ARK. En este caso, es importante considerar si hacerlos *opacos* o no opacos (o un poco de ambos).
+Con respecto a la asignación, una estrategia común es aprovechar los identificadores heredados. Por ejemplo, un número de muestra de polilla de museo `cd456f9_87` podría anunciarse debajo del ark:12345/cd456f9_87. Es posible que sea necesario modificar algunos identificadores heredados en vista de las restricciones de caracteres ARK. La segunda estrategia común es crear cadenas completamente nuevas para sus ARK. En este caso, es importante considerar si hacerlos *opacos* o no opacos (o un poco de ambos).
 
 ### **¿Qué son los identificadores opacos?**
 
@@ -161,11 +173,11 @@ Otro enfoque es ejecutar su servidor web sin cambios, pero en lugar de actualiza
 
 Se prefiere la forma de URL (https o http) del ARK, por ejemplo,
 
-`https://n2t.net/ark:/99166/w66d60p2`
+`https://n2t.net/ark:99166/w66d60p2`
 
 Un ARK destinado para uso externo generalmente se publicita (libera, publica, difunde) de esta manera para que sea un *identificador* *accionable*. Si se necesita una visualización visual más compacta de un ARK, debe estar hipervinculado; por ejemplo, se puede lograr una visualización compacta de un hipervínculo HTML con
 
-    <a href="https://n2t.net/ark:/99166/w66d60p2">ark:/99166/w66d60p2</a>
+    <a href="https://n2t.net/ark:99166/w66d60p2">ark:99166/w66d60p2</a>
 
 Una decisión importante es si sus ARK basados en URL utilizarán el nombre de host de su resolvedor local o el resolvedor [N2T.net](https://n2t.net/). Si el control local o el desarrollo de la marca es lo suficientemente importante, anunciaría ARK basados en su resolvedor local. Si le preocupa la estabilidad de su nombre de host local, anunciaría sus ARK basados en [n2t.net](http://n2t.net/) (vea [ejemplos de ambos](#creating)).
 
@@ -212,13 +224,13 @@ En segundo lugar, incluso si N2T desconoce un identificador individual, la resol
 
 La mayoría de los ARK son creados por organizaciones que los anuncian ("publican") en función de sus propios resolvedores. Por ejemplo, este ARK se publicó en función del [resolvedor ark.bnf.fr](http://ark.bnf.fr/) :
 
-      http://ark.bnf.fr/ark:/12148/btv1b8449691v/f29
+      http://ark.bnf.fr/ark:12148/btv1b8449691v/f29
 
 Tener que ejecutar y mantener su propio resolvedor es el costo de una autonomía completa. El uso de su propio resolvedor también le permite crear marcas a través del nombre de host, la desventaja es que las marcas son transitorias y tienden a hacer que los identificadores sean frágiles. Las presiones políticas e incluso legales (p. Ej., Marcas comerciales) pueden dificultar el soporte de nombres de host de marca más antiguos, por lo tanto, sus identificadores.
 
 Esa es otra razón para tener el resolvedor global ARK. Las personas que se encuentren con un identificador roto en el futuro pueden encontrar que su nombre de host ya no existe, y si se trata de un ARK, pueden extraer la identidad central (comenzando con "ark:") y presentarla al [resolvedor](http://n2t.net/) global [n2t.net](http://n2t.net/), como en
 
-      https://n2t.net/ark:/12148/btv1b8449691v/f29
+      https://n2t.net/ark:12148/btv1b8449691v/f29
 
 ### **Mi organización tiene su propio resolvedor ARK. ¿Debería preocuparme por [N2T.net?](http://n2t.net/)**
 
@@ -236,7 +248,7 @@ Los mismos principios básicos guiaron el diseño de una herramienta anterior ll
 
 ### **¿Qué significa "paso de sufijo"?**
 
-Brevemente, el [paso de sufijo](https://ezid.cdlib.org/learn/suffix_passthrough) es una característica de N2T. Supongamos que solo tiene un ARK registrado, https://n2t.net/ark:/12345/6789, y lo redirige a la página del servidor web,
+Brevemente, el [paso de sufijo](https://ezid.cdlib.org/learn/suffix_passthrough) es una característica de N2T. Supongamos que solo tiene un ARK registrado, https://n2t.net/ark:12345/6789, y lo redirige a la página del servidor web,
 
       https://a.example.org/dataset542
 
@@ -248,44 +260,29 @@ Y supongamos que el mismo servidor también sirve estas páginas:
 
 Lo que hace el sufijo es dejar que su ARK registrado actúe como si también hubiera registrado estos tres ARK a continuación, lo que resolvería las páginas anteriores, respectivamente:
 
-      https://n2t.net/ark:/12345/6789/volume3
-      https://n2t.net/ark:/12345/6789/volume3/part2
-      https://n2t.net/ark:/12345/6789/volume3/part2.pdf
+      https://n2t.net/ark:12345/6789/volume3
+      https://n2t.net/ark:12345/6789/volume3/part2
+      https://n2t.net/ark:12345/6789/volume3/part2.pdf
 
 En este caso, el paso de sufijo le ahorró tener que mantener registros para tres páginas más. De hecho, funciona para un número ilimitado de páginas.
 
 ### **¿Cuáles son las partes de un ARK?**
 
-```
-
-ARK ANATOMY
-     Resolver Service   Base Object Name    Qualifiers
-    __________________  _________________  _____________
-   /                  \/         ...     \/             \
-   https://example.org/ark:/12345/x54xz321/s3/f8.05v.tiff
-           \_________/ \__/ \___/ \______/\____/\_______/
-                |       |     |  ...  |     |       |
-                |     Label   |   |   | Sub-parts  Variants
-                |             |   |   |
-Name Mapping Authority (NMA)  |   |  Assigned Name      ...
-                              |   +---------- Shoulder: /x5
-               Name Assigning Authority Number (NAAN)
-```
-{: .bg-secondary-subtle }
+{% include content/anatomy3.html %}
 
 ### **¿Puedo asignar ARK a cosas dentro de algo que ya tiene un ARK?** {#already-ark}
 
 Sí, los ARK se pueden asignar a cualquier nivel de *granularidad*, como un manuscrito, capítulos dentro de él, secciones de capítulos, subsecciones, etc. Un ARK también se puede asignar a una cosa que encierra otras cosas. En los ARK, el carácter '/' está reservado para ayudar al destinatario a comprender la contención, por ejemplo, el primer objeto a continuación contiene el segundo:
 
-      ark:/12148/btv1b8449691v
+      ark:12148/btv1b8449691v
 
-      ark:/12148/btv1b8449691v/f29
+      ark:12148/btv1b8449691v/f29
 
 Ese es el *calificador de* contención. Solo hay otro calificador ARK, e indica formas *variantes* de una cosa usando el carácter reservado ''. delante de un sufijo Por ejemplo, si estos ARK identifican documentos,
 
-      ark:/12148/btv1b8449691v/f29.pdf
+      ark:12148/btv1b8449691v/f29.pdf
 
-      ark:/12148/btv1b8449691v/f29.html
+      ark:12148/btv1b8449691v/f29.html
 
 debido a que difieren solo por el sufijo .`pdf` o .`html`, se puede inferir que identifican dos formas diferentes del mismo documento.
 
@@ -293,7 +290,7 @@ debido a que difieren solo por el sufijo .`pdf` o .`html`, se puede inferir que 
 
 ### ¿Cuál es el propósito del NAAN?
 
-El propósito principal es evitar conflictos de asignación. Al obtener un NAAN, una organización obtiene el derecho exclusivo de crear ARKs bajo dicho NAAN, que forma parte de un prefijo delante de todos sus ARK. El conjunto de ARKs que puede crear es infinito y se conoce como el espacio de nombres de su NAAN, y su espacio de nombres NAAN es un subespacio de nombres (subconjunto) del espacio de nombres ARK (el conjunto de todos los ARK posibles). Por ejemplo, el espacio de nombres NAAN de Internet Archive incluye todos los ARK que empiezan por "ark:/13960/". Los NAAN subdividen el espacio de nombres ARK en subespacios de nombres no superpuestos, cada uno con un número infinito de ARKs posibles. Dado que las organizaciones solo crean ARKs en sus propios espacios de nombres, las asignaciones de ARKs entre organizaciones nunca entrarán en conflicto.
+El propósito principal es evitar conflictos de asignación. Al obtener un NAAN, una organización obtiene el derecho exclusivo de crear ARKs bajo dicho NAAN, que forma parte de un prefijo delante de todos sus ARK. El conjunto de ARKs que puede crear es infinito y se conoce como el espacio de nombres de su NAAN, y su espacio de nombres NAAN es un subespacio de nombres (subconjunto) del espacio de nombres ARK (el conjunto de todos los ARK posibles). Por ejemplo, el espacio de nombres NAAN de Internet Archive incluye todos los ARK que empiezan por "ark:13960/". Los NAAN subdividen el espacio de nombres ARK en subespacios de nombres no superpuestos, cada uno con un número infinito de ARKs posibles. Dado que las organizaciones solo crean ARKs en sus propios espacios de nombres, las asignaciones de ARKs entre organizaciones nunca entrarán en conflicto.
 
 Los NAAN también desempeñan un papel clave en la resolución. Por ejemplo, si el resolvedor de N2T.net no encuentra un ARK entrante en su base de datos, lo examina y lo redirige al resolvedor local registrado en el NAAN. Cualquier resolvedor local podría configurarse para que repita el proceso en el caso de los ARK entrantes que contengan NAAN desconocidos, simplemente redirigiéndolos a N2T.
 
@@ -306,10 +303,10 @@ Funcionan de forma muy similar a todos los espacios de nombres. Dado un prefijo 
 <div class="table-responsive" markdown=1>
 |-----|-----|-----|
 | Conjunto de todos los<br>ARK que empiezan | Espacio de nombres asociado | Ejemplo de ARK en ese espacio<br>de nombres |
-| ark:/ | Todos los ARK | ark:/99999/fk4gt2m |
-| ark:/12345/ | ARK bajo el NAAN 12345 | ark:/12345/p987654 |
-| ark:/12345/x5 | ARKs bajo el _hombro_ 12345/x5 | ark:/12345/x5wf6789 |
-| ark:/12345/x5wf6789/ | ARKs bajo el _objeto_ 12345/x5wf6789 | ark:/12345/x5wf6789/c2/s4.pdf |
+| ark: | Todos los ARK | ark:99999/fk4gt2m |
+| ark:12345/ | ARK bajo el NAAN 12345 | ark:12345/p987654 |
+| ark:12345/x5 | ARKs bajo el _hombro_ 12345/x5 | ark:12345/x5wf6789 |
+| ark:12345/x5wf6789/ | ARKs bajo el _objeto_ 12345/x5wf6789 | ark:12345/x5wf6789/c2/s4.pdf |
 {: .table .table-striped .table-hover }
 </div>
 
@@ -323,9 +320,9 @@ El cuarto ejemplo, un ejemplo completo de ARK como prefijo, muestra que un objet
 
 Un _hombro_ es un subespacio de nombres bajo un NAAN. Es el conjunto de todos los ARK que comienzan con una extensión corta y fija del NAAN. Por ejemplo, en
 
-      ark:/12345/x5wf6789/c2/s4.pdf
+      ark:12345/x5wf6789/c2/s4.pdf
 
-el hombro, /x5, extiende el NAAN, 12345. La designación corta, /x5, no es única en muchos contextos, por lo que se debe usar la designación completa y globalmente única (por ejemplo, ark:/12345/x5). En la tradición clásica de los espacios de nombres, el hombro es el conjunto de todos los ARK posibles que comienzan con el nombre del hombro. Nuestro uso de este término proviene de la cerrajería, que entiende que los juegos de llaves se definen por "hombros" fijos e invariables que preceden a las "hojas" variables (formas que difieren entre llaves que comparten el mismo hombro) que le siguen.
+el hombro, /x5, extiende el NAAN, 12345. La designación corta, /x5, no es única en muchos contextos, por lo que se debe usar la designación completa y globalmente única (por ejemplo, ark:12345/x5). En la tradición clásica de los espacios de nombres, el hombro es el conjunto de todos los ARK posibles que comienzan con el nombre del hombro. Nuestro uso de este término proviene de la cerrajería, que entiende que los juegos de llaves se definen por "hombros" fijos e invariables que preceden a las "hojas" variables (formas que difieren entre llaves que comparten el mismo hombro) que le siguen.
 
 Los hombros ayudan a organizar un espacio de nombres NAAN a largo plazo. El hecho de que un espacio de nombres contenga un número infinito de ARKs posibles no significa que sea fácil encontrar un ARK sin asignar, especialmente cuando con el tiempo existen —o existían, o podrían existir— diferentes operaciones de asignación de ARKs independientes bajo él. Así como la comunidad ARK reserva los espacios de nombres NAAN de las organizaciones, se anima a cada organización a reservar subespacios de nombres de hombro. Si no se utilizan hombros desde el principio, incluso para un flujo simple de asignaciones, se corre el riesgo de crear un caos leve pero permanente en el espacio de nombres NAAN, y se podría terminar solicitando un NAAN adicional (lo cual no se recomienda) para futuros flujos de asignaciones.
 
@@ -403,11 +400,11 @@ También tienen una estructura muy similar, como se ve en los ejemplos a continu
 
 <div class="table-responsive" markdown=1>
 | --- | --- | --- |
-| `https://n2t.net/ark:/99999/12345`<br>`https://doi.org/11.99999/12345`<br>`https://handle.net/10.99999/12345`<br>`https://purl.org/99999/12345`<br>`https:///urn:99999:12345` | | 1.  el protocolo (`https://`) más un nombre de host,<br>2.  solo para ARK y URN, también hay una etiqueta ("ark:" o "urn:"),<br>3.  la autoridad de asignación de nombre (`99999`, `10.99999` o `99999`), que es la organización o grupo que creó un identificador particular,<br>4.  y finalmente, el *nombre* o identificador local que asignó (`12345`). |
+| `https://n2t.net/ark:99999/12345`<br>`https://doi.org/11.99999/12345`<br>`https://handle.net/10.99999/12345`<br>`https://purl.org/99999/12345`<br>`https:///urn:99999:12345` | | 1.  el protocolo (`https://`) más un nombre de host,<br>2.  solo para ARK y URN, también hay una etiqueta ("ark:" o "urn:"),<br>3.  la autoridad de asignación de nombre (`99999`, `10.99999` o `99999`), que es la organización o grupo que creó un identificador particular,<br>4.  y finalmente, el *nombre* o identificador local que asignó (`12345`). |
 {: .table .table-striped .table-hover }
 </div>
 
-Y todos tienen poco efecto sobre la persistencia. Vea [10 mitos persistentes sobre identificadores persistentes](https://n2t.net/ark:/13030/c7gb1xh09).
+Y todos tienen poco efecto sobre la persistencia. Vea [10 mitos persistentes sobre identificadores persistentes](https://n2t.net/ark:13030/c7gb1xh09).
 
 ### **Espera, ¿estás diciendo que ARK, DOI, Handle, PURL y URN son inútiles?**
 
