@@ -57,7 +57,7 @@ Noids are not the same thing as ARKs, but can be used to form them. ARKs are per
 
 and then embed that NOID in a URL to create an ARK, such as
 
-http://ark.cdlib.org/ark:/13030/tf5p30086k
+http://ark.cdlib.org/ark:13030/tf5p30086k
 
 The NOID tool is not necessary to generate ARKs, but has been used for that purpose by organizations such as
 
