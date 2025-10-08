@@ -76,7 +76,7 @@ Note that N2T.net is configured to forward any quick test ARK it receives (secon
 As mentioned, to implement a shoulder under your *own* NAAN requires no special request. To implement or change a shoulder under a *shared* NAAN, however, requires getting into the [shared NAAN shoulders registry](https://n2t.net/e/pub/shoulder_registry.txt), which means filling out an [online shoulder form](https://docs.google.com/forms/d/10J2VxsaeQG-IpkqZ6wpqAKqt8hYnMSf4bxdL8ktI-to). For security purposes requests are processed manually. Example reasons for a change may include
 
 * notifying [N2T](https://n2t.net) of a change in your organization's contact person or resolver URL,
-* updating your organization's name assignment policy ([sample policy](http://ark.bnf.fr/ark:/12148/bpt6k2102478.policy)),
+* updating your organization's name assignment policy ([sample policy](http://ark.bnf.fr/ark:12148/bpt6k2102478.policy)),
 * requesting an additional shoulder, eg, to support a significant new body of ARKs or new organizational division, and
 * transitioning your shoulder to another organization that will carry on your work and future use of your shoulder.
 
