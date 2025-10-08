@@ -233,4 +233,4 @@ relationship, there is no impediment to taking your NAAN with you.
 [ARK Shoulders FAQ]: {{ site.baseurl }}/about/ark-shoulders-faq-en
 [form to request a shoulder under a shared NAAN]: https://n2t.net/e/shoulder_request
 [online form]: https://n2t.net/e/naan_request
-[sample policy]: https://ark.bnf.fr/ark:/12148/bpt6k2102478.policy
+[sample policy]: https://ark.bnf.fr/ark:12148/bpt6k2102478.policy
