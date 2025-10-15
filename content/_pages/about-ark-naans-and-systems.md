@@ -174,16 +174,16 @@ organization may provide the staffing and IT resources needed to host and run
 a local resolver today, IT policy and support may change in the future.
 
 Another reason to use N2T is if your ARKs “in the wild” show up without your
-resolver hostname (meaning that they start “ark:…”, which is not uncommon to
+resolver hostname (meaning that they start “ark:...”, which is not uncommon to
 see), the person wanting to use them won’t need to know the hostname as long
 as they know to add “n2t.net” in front of them. This works because N2T knows
 the correct resolver hostname.
 
-### N2T feature: suffix passthrough
+### Feature: suffix passthrough
 
-Suffix passthrough is a feature of the N2T resolver that allows you to assign
-a single identifier to large complex objects with many files while still being
-able to refer to each distinct file.
+Suffix passthrough (SPT) is a feature of a local ARK resolver that allows you
+to assign a single identifier to large complex objects with many files while
+still being able to refer to each distinct file.
 
 Suppose you have a registered ARK, https://n2t.net/ark:12345/6789, that
 redirects to the web server page,
@@ -206,10 +206,10 @@ above, respectively:
 
 In this case, suffix passthrough saved your having to maintain registrations
 for three more pages. In fact, it works for an unlimited number of pages. You
-can [learn more about N2T’s suffix passthrough].
+can [learn more about suffix passthrough].
 
 [1]: {{ site.baseurl }}/assets/images/pages/about-ark-naans-and-systems/NAAN_slice.jpg
 [NAAN request form]: {{ site.naan_form_url }}
 [Running ARK Minters and Resolvers]: about-running-minters-and-resolvers.md
 [ARK features]: about-ark-features.md
-[learn more about N2T’s suffix passthrough]: {{ site.baseurl }}{{ site.spt_explained }}
+[learn more about suffix passthrough]: {{ site.baseurl }}{{ site.spt_explained }}
