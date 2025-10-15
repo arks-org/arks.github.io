@@ -22,9 +22,9 @@ identifier type.
 
 N2T has a different kind of stored data for each pattern. First, it stores
 individual records for about 50 million object identifiers (eg, ARKs, DOIs)
-that it obtains from three sources: [EZID.cdlib.org], [Inte][][r][Inte][net
-Archive][Inte], and [YAMZ.net]. When such records include a redirection URL
-(*target*) and descriptive metadata, N2T can act on inflections as well as
+that it obtains from three sources: [EZID.cdlib.org], [Internet Archive], and
+[YAMZ.net]. When such records include a redirection URL (*target*) and
+descriptive metadata, N2T can act on inflections as well as
 perform [suffix passthrough] and “content negotiation”. To support creation
 and maintenance of individual identifier records, there is an [N2T API]
 requiring login credentials. The API also allows batch operations and unique
@@ -53,13 +53,13 @@ The same basic principles guided the design of [Noid], which was built for
 ARKs but is also regularly used by organizations that mint Handles.
 
 [EZID.cdlib.org]: https://ezid.cdlib.org/
-[Inte]: https://archive.org/
+[Internet Archive]: https://archive.org/
 [YAMZ.net]: https://yamz.net/
-[suffix passthrough]: https://n2t.net/e/suffix_passthrough.html
+[suffix passthrough]: {{ site.baseurl }}{{ site.spt_explained }}
 [N2T API]: https://n2t.net/e/n2t_apidoc.html
-[NAAN registry]: https://n2t.net/e/pub/naan_registry.txt
+[NAAN registry]: {{ site.list_ark_orgs }}
 [namespaces]: about-ark-namespaces.md
 [compact identifiers]: https://n2t.net/e/compact_ids.html
 [identifiers.org]: https://identifiers.org/
 [1]: https://lh3.googleusercontent.com/vZvC9P_CZkA7M0sos-lvF6QEt50rbzpZmu__eW3wIYtfw6ldRJu74Ze92zQohHHftmgXBisE4VzKUFCJMgRvKfOrornPKzmrhLzXhaO4ZHCafV4L-30KhjbmbOURLf7zD4rOJSst
-[Noid]: https://metacpan.org/pod/distribution/Noid/noid
+[Noid]: {{ site.baseurl }}/resources/noid/

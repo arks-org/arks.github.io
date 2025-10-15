@@ -100,7 +100,7 @@ Kinds of things that have ARKs include those listed below. Numbers are approxima
 | Categories | Examples |
 | *   genealogical records (8 billion [FamilySearch](https://familysearch.org))<br>*   publisher content (100 million [Portico](https://www.portico.org))<br>*   scientific records (22 million [INIST](https://www.inist.fr))<br>*   scanned texts (20 million [Internet Archive](https://archive.org))<br>*   bibliographic records (15 million BnF main catalog)<br>*   museum specimens (11 million going on 100 million [Smithsonian](https://library.si.edu))<br>*   public health documents, many from legal discovery (15 million [UCSF IDL](https://www.industrydocuments.ucsf.edu))<br>*   digitized documents and objects (5 million BnF Gallica)<br>*   historical persons, families, and organizations (4 million [SNACC](https://snaccooperative.org))<br>*   finding aids and special collections (4 million [Merritt](https://merritt.cdlib.org/))<br>*   resource maps (1.5 million [RMap Hub](https://rmap-hub.org))<br>*   educational resources (1.1 million University of Utah)<br>*   vocabulary terms (9,000 [Periodo](https://perio.do), [YAMZ](https://yamz.net))<br>*   datasets, journals, archeological artifacts, living beings, and anything else you can think of! | [![](attachments/131533156/176490461.png)](https://www.familysearch.org/ark:/61903/2:1:M4MZ-NDF)[![](attachments/131533156/176490465.jpeg)](http://ark.bnf.fr/ark:/12148/btv1b8449691v)[![](attachments/131533156/176490544.png)](https://n2t.net/ark:/13960/t26b1m88x)[![](attachments/131533156/176490543.png)](http://n2t.net/ark:/99166/w6xd14mf)[![](attachments/131533156/199525311.jpg)](https://n2t.net/ark:/13030/kt3k4017k9)[![](attachments/131533156/176490464.png)](http://n2t.net/ark:/65665/326def39f-b58f-4e05-ad08-edbe9fc87801)[![](attachments/131533156/176490468.png)](https://n2t.net/ark:/88122/lfnv0009)[![](attachments/131533156/176490469.png)](http://n2t.net/ark:/99166/w6b09txc) |
 
-![Numbers of ARK-assigning organizations since 2001.](https://n2t.net/e/images/naan_growth.png)
+![Numbers of ARK-assigning organizations since 2001.]({{ site.list_ark_orgs }})
 {% endcomment %}
 
 ### Who is using ARKs?
@@ -113,7 +113,7 @@ That's a little hard to say because ARKs are very decentralized, but more than 6
 *   Internet Archive collections,
 *   ORCID researcher profiles, etc.
 
-Below is the global distribution of [organizations registered to create ARKs]({{ site.naan_registry_txt }}). Clicking on the static image below should take you to an up-to-date, zoomable map.
+Below is the global distribution of [organizations registered to create ARKs]({{ site.list_ark_orgs }}). Clicking on the static image below should take you to an up-to-date, zoomable map.
 
 [![][static map]{: .img-thumbnail .img-fluid fetchpriority="high" loading="eager"}][zoomable map]
 
@@ -238,7 +238,7 @@ When resolution is finished, the user is often unaware that it happened, unless 
 
 When a resolution request comes in from the general public, N2T looks up the identifier and redirects the original link to a forwarding link. To do this it uses two different resolution "patterns". To begin, N2T tries to resolve according to information found in an individual stored identifier. Failing that, N2T tries to resolve according to any stored class rules, based on the identifier type. 
 
-N2T has a different kind of stored data for each pattern. First, it stores individual records for about 50 million object identifiers (eg, ARKs, DOIs) that it obtains from three sources: [EZID.cdlib.org](https://ezid.cdlib.org), [Internet Archive](https://archive.org), and [YAMZ.net](https://yamz.net). When such records include a redirection URL (_target_) and descriptive [metadata](#metadata), N2T can act on [inflections](#inflection) as well as perform [suffix passthrough](https://ezid.cdlib.org/learn/suffix_passthrough) and "content negotiation". To support creation and maintenance of individual identifier records, there is an N2T API requiring login credentials. The API also allows batch operations and unique identifier generation (minting).
+N2T has a different kind of stored data for each pattern. First, it stores individual records for about 50 million object identifiers (eg, ARKs, DOIs) that it obtains from three sources: [EZID.cdlib.org](https://ezid.cdlib.org), [Internet Archive](https://archive.org), and [YAMZ.net](https://yamz.net). When such records include a redirection URL (_target_) and descriptive [metadata](#metadata), N2T can act on [inflections](#inflection) as well as perform [suffix passthrough]({{ site.baseurl }}{{ site.spt_explained }}) and "content negotiation". To support creation and maintenance of individual identifier records, there is an N2T API requiring login credentials. The API also allows batch operations and unique identifier generation (minting).
 
 Second, even if N2T knows nothing about an individual identifier, resolution may still work because of a stored routing rule record triggered by the type of the identifier. N2T maintains over 3500 rule records regularly updated from several sources, including the NAAN registry, a database of ARK and DOI shoulders, and a formal partnership on compact identifiers with identifiers.org.
 
@@ -270,7 +270,7 @@ The same basic principles guided the design of an earlier tool called [noid](ht
 
 ### What does "suffix passthrough" mean?
 
-Briefly, [suffix passthrough](https://ezid.cdlib.org/learn/suffix_passthrough) is a feature of N2T. Suppose you have only one registered ARK, `https://n2t.net/ark:12345/6789`, and it redirects to the web server page,
+Briefly, [suffix passthrough]({{ site.baseurl }}{{ site.spt_explained }}) is a feature of N2T. Suppose you have only one registered ARK, `https://n2t.net/ark:12345/6789`, and it redirects to the web server page,
 
 `https://a.example.org/dataset542`
 
@@ -407,7 +407,7 @@ NAANs are portable. If your organization transitions into or out of a vendor rel
 *   To be able to add queries (eg, ?lang=en) when resolving your identifiers.
 *   To use open infrastructure consistent with your organization's values.
 *   To link directly to the objects you value instead of to landing pages.
-*   To create one identifier that enables millions ([suffix passthrough](https://ezid.cdlib.org/learn/suffix_passthrough)).
+*   To create one identifier that enables millions ([suffix passthrough]({{ site.baseurl }}{{ site.spt_explained }})).
 *   To access convenient, full-function metadata via [inflections](#inflection).
 *   To integrate easily with [IIIF](https://iiif.io/technical-details) APIs using ARK [qualifiers](#already-ark).
 
@@ -571,13 +571,13 @@ An _inflection_ is a change to the ending of a word to express a shift in mean
 
 _Content negotiation for metadata_ is a software technique for requesting alternate formats of an object, such as the PDF or RTF form of an HTML file. Although not designed for it, historic "content negotiation" was kludged (twisted) in certain contexts to request metadata under the startling assumption that formats often used to hold metadata _are_ in fact metadata and will never be objects in their own right. Unlike inflections, "content negotiation for metadata"/doesn't work at all for _objects_ represented in those formats (the list of which is growing and known only by private agreement), nor is it easy enough to be used directly by most human users.
 
-Although inflections are commonly associated with ARKs, they are not "owned" by ARKs. Contrary to popular belief, identifiers don't _do_ anything – it's their resolvers that _do_ or _don't_ support such features. So, for example, inflections and [suffix passthrough](https://ezid.cdlib.org/learn/suffix_passthrough) are supported by [n2t.net](http://n2t.net) for all identifier types, but not by [doi.org](http://doi.org) or [handle.net](http://handle.net) (which has a related functionality called Template Handles) for any identifier types.
+Although inflections are commonly associated with ARKs, they are not "owned" by ARKs. Contrary to popular belief, identifiers don't _do_ anything – it's their resolvers that _do_ or _don't_ support such features. So, for example, inflections and [suffix passthrough]({{ site.baseurl }}{{ site.spt_explained }}) are supported by [n2t.net](http://n2t.net) for all identifier types, but not by [doi.org](http://doi.org) or [handle.net](http://handle.net) (which has a related functionality called Template Handles) for any identifier types.
 
 ### What do you mean by silos?
 
 Typically, scheme-based services are designed as silos, or [closed platforms](https://en.wikipedia.org/wiki/Closed_platform), serving a particular identifier type such as Handle, DOI, or PURL. Each silo performs the same main functions – mapping names (identifiers strings) to things (objects or metadata). Excluding all but one type of identifier string may help to capture markets, but it's wasteful and non-inclusive. It requires building the same set of services over and over for each type and violates basic principles of openness.
 
-In contrast the [N2T (Name-to-Thing) resolver](https://n2t.net) and [EZID (identifiers made easy) management interface](https://ezid.cdlib.org) were designed to work with all identifiers. Effort put into any new feature can be efficiently leveraged across all types, which sometimes creates surprising flexibility. For example, ARKs are often stored in EZID with "DOI metadata", and every DOI stored in N2T can benefit from "ARK resolution features" such as inflections and [suffix passthrough](https://ezid.cdlib.org/learn/suffix_passthrough), which are not available via the main DOI resolver ([doi.org](https://doi.org)).
+In contrast the [N2T (Name-to-Thing) resolver](https://n2t.net) and [EZID (identifiers made easy) management interface](https://ezid.cdlib.org) were designed to work with all identifiers. Effort put into any new feature can be efficiently leveraged across all types, which sometimes creates surprising flexibility. For example, ARKs are often stored in EZID with "DOI metadata", and every DOI stored in N2T can benefit from "ARK resolution features" such as inflections and [suffix passthrough]({{ site.baseurl }}{{ site.spt_explained }}), which are not available via the main DOI resolver ([doi.org](https://doi.org)).
 
 {% comment %}
 

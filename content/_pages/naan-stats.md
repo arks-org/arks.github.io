@@ -45,7 +45,7 @@ local resolver (server) domain name, bypassing the global resolver.
 
 The range of top-level domains -- the final part of the domain name -- across
 all local ARK resolvers is shown below. There is also a simple
-[NAAN registry search interface](https://cdluc3.github.io/naan_reg_priv/).
+[NAAN registry search interface]({{ site.list_ark_orgs }}).
 
 <br/>
 <div id="tldGraph"></div>
@@ -393,4 +393,4 @@ fetch(naan_registry_url)
 
 [Name Assigning Authority Number]: ark-naans-and-systems.md
 [NAAN request form]: {{ site.naan_form_url }}
-[NAAN registry]: https://n2t.net/e/pub/naan_registry.txt
+[NAAN registry]: {{ site.list_ark_orgs }}
