@@ -104,7 +104,7 @@ Read more about:
 [ARK features]: about-ark-features.md
 [Frick Collection tool]: https://github.com/squidgetx/arklet-frick/tree/master
 [Parts of an ARK]: {{ site.baseurl }}/about/ark-faq-en/#parts
-[suffix passthrough]: https://n2t.net/e/suffix_passthrough.html
+[suffix passthrough]: {{ site.baseurl }}{{ site.spt_explained }}
 [Internet Archive]: https://archive.org
 [YAMZ.net]: https://yamz.net
 [**Resources**]: resources.md

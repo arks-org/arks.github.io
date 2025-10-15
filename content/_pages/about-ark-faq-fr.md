@@ -108,7 +108,7 @@ Difficile à dire car les ARK sont décentralisés, mais plus de 600 organisatio
 * les collections d’Internet Archive)  
 * les profils de chercheurs ORCID
 
-Voici la répartition globale des [organisations enregistrées comme attributrices d’ARK]({{ site.naan_registry_txt }}) en avril 2020. Cliquez sur l’image ci-dessous pour accéder à une carte à jour et zoomable.
+Voici la répartition globale des [organisations enregistrées comme attributrices d’ARK]({{ site.list_ark_orgs }}) en avril 2020. Cliquez sur l’image ci-dessous pour accéder à une carte à jour et zoomable.
 
 [![][static map]{: .img-thumbnail .img-fluid fetchpriority="high" loading="eager"}][zoomable map]
 
@@ -127,7 +127,7 @@ Tout d'abord, vous avez besoin d'un NAAN (numéro d'autorité nommante, ou *Name
 
 est **12148** ; il identifie de manière unique la Bibliothèque nationale de France. Chaque NAAN est associé à l'URL d'un résolveur pour ses ARK. Par exemple, pour résoudre un ARK en 12148, apposez-le après [http://ark.bnf.fr/](http://ark.bnf.fr/) comme indiqué ci-dessus. Le [résolveur N2T.net](#what-n2t) est à part dans la mesure où il transmet tout ARK au résolveur associé à son NAAN.
 
-L'obtention ou l'utilisation d'un NAAN est gratuite et vous pouvez en demander un en remplissant un [formulaire en ligne](https://n2t.net/e/naan_request). Plus de 650 organisations (bibliothèques, archives, musées, facultés, agences gouvernementales, éditeurs scientifiques et pédagogiques, projets, etc.) ont un NAAN répertorié dans le [registre public NAAN](https://n2t.net/e/pub/naan_registry.txt).
+L'obtention ou l'utilisation d'un NAAN est gratuite et vous pouvez en demander un en remplissant un [formulaire en ligne]({{ site.naan_form_url }}). Plus de 650 organisations (bibliothèques, archives, musées, facultés, agences gouvernementales, éditeurs scientifiques et pédagogiques, projets, etc.) ont un NAAN répertorié dans le [registre public NAAN]({{ site.list_ark_orgs }}).
 
 ## Comment commencer à créer des chaînes de caractères destinées à devenir des ARK ?
     
@@ -222,7 +222,7 @@ Une fois la résolution terminée, l'utilisateur ne s'en rend souvent pas compte
 Lorsqu'une demande de résolution provient du grand public, N2T recherche l'identifiant et redirige le lien d'origine vers un lien de transfert. Pour ce faire, il utilise deux « modèles » de résolution différents. Pour commencer, N2T tente de résoudre le problème en fonction des informations contenues dans un identifiant individuel stocké. À défaut, il tente de résoudre le problème selon les règles de classe stockées, en fonction du type d'identifiant.
 
 N2T stocke un type de données différent pour chaque modèle. Il stocke d'abord les enregistrements individuels d'environ 50 millions d'identifiants d'objet (par exemple, ARK, DOI) obtenus auprès de trois sources : [EZID.cdlib.org](https://ezid.cdlib.org), [Internet Archive](https://archive.org) et [YAMZ.net](https://yamz.net). Lorsque ces enregistrements incluent une URL de redirection (_target_) et des [métadonnées](#metadata) descriptives, N2T peut agir sur les [inflexions](#inflection),
-ainsi qu'effectuer le [suffix passthrough](https://ezid.cdlib.org/learn/suffix_passthrough) et la « négociation de contenu ».
+ainsi qu'effectuer le [suffix passthrough]({{ site.baseurl }}{{ site.spt_explained }}) et la « négociation de contenu ».
 Pour prendre en charge la création et la maintenance d'enregistrements d'identifiants individuels, une API N2T nécessite des identifiants de connexion. L'API permet également des opérations par lots et la génération d'identifiants uniques.
 
 Deuxièmement, même si N2T ne connaît rien d'un identifiant individuel, la résolution peut fonctionner grâce à un enregistrement de règle de routage stocké et déclenché par le type d'identifiant. N2T conserve plus de 3 500 enregistrements de règles régulièrement mis à jour à partir de plusieurs sources, notamment le registre NAAN, une base de données d'épaules ARK et DOI et un partenariat formel sur les identifiants compacts avec identifiers.org.
@@ -253,7 +253,7 @@ Les mêmes principes de base ont guidé la conception d'un outil antérieur appe
 
 ## Que désigne-t-on par « transfert de suffixe » ?
 
-En bref, le [transfert de suffixe](https://ezid.cdlib.org/learn/suffix_passthrough) est une fonctionnalité de N2T. Supposons que vous n'ayez qu'un seul ARK enregistré, [https://n2t.net/ark:12345/6789](https://n2t.net/ark:12345/6789), et qu'il redirige vers la page du serveur Web,
+En bref, le [transfert de suffixe]({{ site.baseurl }}{{ site.spt_explained }}) est une fonctionnalité de N2T. Supposons que vous n'ayez qu'un seul ARK enregistré, [https://n2t.net/ark:12345/6789](https://n2t.net/ark:12345/6789), et qu'il redirige vers la page du serveur Web,
 
       https://a.example.org/dataset542
 
@@ -388,7 +388,7 @@ Vous pouvez demander une modification de l'entrée de registre d'un NAAN relatif
 * Pour pouvoir ajouter des requêtes (par exemple « ?lang=en ») lors de la résolution de vos identifiants ;  
 * Pour utiliser une infrastructure ouverte correspondant aux valeurs de votre organisation ;  
 * Pour permettre d’accéder directement aux objets auxquels vous accordez de l’importance et non à leur page d’accueil ;  
-* Pour créer un seul identifiant qui peut être décliné en des millions (grâce au [mécanisme de transfert de suffixe](https://ezid.cdlib.org/learn/suffix_passthrough)) ;  
+* Pour créer un seul identifiant qui peut être décliné en des millions (grâce au [mécanisme de transfert de suffixe]({{ site.baseurl }}{{ site.spt_explained }})) ;  
 * Pour accéder à des métadonnées adaptées et complètes via des [inflexions](#inflection)  
 * Pour s’intégrer aisément dans des API [IIIF](https://iiif.io/technical-details) en utilisant les [qualificatifs](#already-ark) ARK.
 
@@ -551,13 +551,13 @@ Une inflexion est une désinence à la fin d'un mot qui exprime un changement de
 
 La **négociation de contenu pour les métadonnées** est une technique logicielle permettant de demander d'autres formats d'objet, tels que le format PDF ou RTF d'un fichier HTML. Bien que cela n’ait pas été conçu pour cela, la « négociation de contenu » originelle était détournée dans certains cas pour demander des métadonnées, en considérant curieusement que les formats de fichier souvent utilisés pour exprimer des métadonnées ne pouvaient véhiculer que des métadonnées et jamais des objets à part entière. Contrairement aux inflexions, la « négociation de contenu pour les métadonnées » ne fonctionne pas du tout pour les objets représentés dans ces formats (formats dont la liste ne cesse de s'allonger et n'est connue que par convention tacite) et n'est pas assez simple d’utilisation pour la plupart des usagers humains.
 
-Bien que les inflexions soient généralement associées aux ARK, elles ne leur sont pas réservées. Contrairement aux idées reçues, les identifiants ne font rien ; ce sont leurs résolveurs qui gèrent ou non des fonctionnalités. Ainsi, par exemple, les inflexions et le « [transfert de suffixe](https://ezid.cdlib.org/learn/suffix_passthrough) » sont pris en charge par [n2t.net](http://n2t.net/) pour tous les types d’identifiants, mais pas par [doi.org](https://www.doi.org/) ni par [handle.net](http://handle.net/) (qui dispose d’une fonctionnalité similaire appelée « Template Handles ») pour aucun type d’identifiant.
+Bien que les inflexions soient généralement associées aux ARK, elles ne leur sont pas réservées. Contrairement aux idées reçues, les identifiants ne font rien ; ce sont leurs résolveurs qui gèrent ou non des fonctionnalités. Ainsi, par exemple, les inflexions et le « [transfert de suffixe]({{ site.baseurl }}{{ site.spt_explained }}) » sont pris en charge par [n2t.net](http://n2t.net/) pour tous les types d’identifiants, mais pas par [doi.org](https://www.doi.org/) ni par [handle.net](http://handle.net/) (qui dispose d’une fonctionnalité similaire appelée « Template Handles ») pour aucun type d’identifiant.
 
 ## Qu'entendez-vous par « silos » ?
 
 En règle générale, les services basés sur des formats d’identifiant sont conçus comme des silos, ou des [plates-formes fermées](https://en.wikipedia.org/wiki/Closed_platform), gérant un type d'identifiant particulier tel que Handle, DOI ou PURL. Chaque silo remplit les mêmes fonctions principales \- associer des noms (chaînes de caractères d'identifiant) à des choses (objets ou métadonnées). L'exclusion de tous les types d'identifiant, sauf un, peut aider à conquérir des marchés, mais elle est contre-productive et exclusive. Elle nécessite la reconstruction du même ensemble de services pour chaque format et viole les principes de base de l’ouverture.
 
-À l’inverse, le résolveur [N2T (Name-to-Thing)](https://n2t.net/) et l'interface de gestion [EZID](https://ezid.cdlib.org/) (« identifiants simples ») ont été conçus pour gérer tout identifiant. Les efforts consacrés à toute nouvelle fonctionnalité peuvent être étendus avec profit à tous les types, ce qui permet une surprenante flexibilité. Par exemple, les ARK sont souvent stockés dans EZID avec des métadonnées DOI, et chaque DOI stocké dans N2T peut bénéficier des fonctionnalités de résolution ARK telles que les inflexions et le [« transfert de suffixe »](https://ezid.cdlib.org/learn/suffix_passthrough), qui ne sont pas disponibles via le résolveur DOI principal ([doi.org](https://www.doi.org/)).   
+À l’inverse, le résolveur [N2T (Name-to-Thing)](https://n2t.net/) et l'interface de gestion [EZID](https://ezid.cdlib.org/) (« identifiants simples ») ont été conçus pour gérer tout identifiant. Les efforts consacrés à toute nouvelle fonctionnalité peuvent être étendus avec profit à tous les types, ce qui permet une surprenante flexibilité. Par exemple, les ARK sont souvent stockés dans EZID avec des métadonnées DOI, et chaque DOI stocké dans N2T peut bénéficier des fonctionnalités de résolution ARK telles que les inflexions et le [« transfert de suffixe »]({{ site.baseurl }}{{ site.spt_explained }}), qui ne sont pas disponibles via le résolveur DOI principal ([doi.org](https://www.doi.org/)).   
 
 
 [static map]: ../assets/images/pages/community/arkamap202407.png

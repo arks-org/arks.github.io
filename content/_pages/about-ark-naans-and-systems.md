@@ -212,4 +212,4 @@ can [learn more about N2T’s suffix passthrough].
 [NAAN request form]: {{ site.naan_form_url }}
 [Running ARK Minters and Resolvers]: about-running-minters-and-resolvers.md
 [ARK features]: about-ark-features.md
-[learn more about N2T’s suffix passthrough]: https://n2t.net/e/suffix_passthrough.html
+[learn more about N2T’s suffix passthrough]: {{ site.baseurl }}{{ site.spt_explained }}

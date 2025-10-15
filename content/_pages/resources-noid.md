@@ -86,6 +86,6 @@ The above represents a simplified taste of the complex issues around opaque iden
 
 # Other NOID implementations
 
-* NYU: [Java](https://n2t.net/e/noid-java.tar.gz) (beta)
+* NYU: [Java]({{ site.baseurl }}/assets/documents/shared/noid-java.tar.gz) (beta)
 * PSU: [Ruby](https://github.com/microservices/noid)
 

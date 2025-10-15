@@ -47,7 +47,7 @@ they can tell if the shoulder is under the *shared* NAAN, 99999, which is
 well-known for being reserved for testing. So if you need a shoulder under
 this shared NAAN, and if you want N2T.net to resolve it, you would need to get
 it listed in the [shared NAAN shoulders registry]. That means filling out an
-[online shoulder form].
+[online shoulder request form].
 
-[shared NAAN shoulders registry]: https://n2t.net/e/pub/shoulder_registry.txt
-[online shoulder form]: https://n2t.net/e/shoulder_request
+[shared NAAN shoulders registry]: {{ site.shoulder_registry_txt }}
+[online shoulder request form]: {{ site.shoulder_form_url }}
