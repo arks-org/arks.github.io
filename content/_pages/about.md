@@ -64,7 +64,7 @@ French, and Spanish:
 -   Name Assigning Authority Number (NAAN) registry
 -   Nice Opaque Identifier (Noid) systems
 -   N2T: a global resolver
--   [N2T feature: suffix passthrough]
+-   [Resolver feature: suffix passthrough]
 
 [ARK features]
 
@@ -148,7 +148,7 @@ developing an ARK system.
 [ARK Community Code of Conduct]: about-ark-community-code-of-conduct.md
 [Why ARKs?]: about-the-ark-origin-story.md
 [ARK NAANs and systems]: about-ark-naans-and-systems.md
-[N2T feature: suffix passthrough]: about-ark-naans-and-systems.md#n2t-feature-suffix-passthrough
+[Resolver feature: suffix passthrough]: about-ark-naans-and-systems.md#feature-suffix-passthrough
 [ARK features]: about-ark-features.md
 [Comparing ARKs, DOIs and other identifier systems]: about-comparing-arks-and-other-identifiers.md
 [Getting started: what to plan for as you implement ARKs]: about-getting-started-implementing-arks.md
