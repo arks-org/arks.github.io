@@ -20,7 +20,7 @@ Did you know...
 * ... that an average of 5 new ARK organizations are registered every week?
 * ... that the ARK scheme is more than {{ site.ark_age }} old?
 * ... that no one has to pay for the right to create ARKs?
-* ... that there are over 8.2 billion ARKs in the world?
+* ... that there are over {{ site.num_arks }} ARKs in the world?
 * ... that [ARK organizations](naan-stats.md) include universities, journals, national libraries, national and regional archives, and fine art and natural history museums?
 
 Archival Resource Key (ARK) identifiers are URLs that support long-term access

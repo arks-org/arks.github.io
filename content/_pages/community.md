@@ -61,7 +61,7 @@ What ARKs are being assigned to (February 2023):
 
 -   genealogical records (12 billion [FamilySearch])
 -   publisher content (157 million [Portico])
--   scanned texts (30 million [Internet Archive])
+-   scanned texts (50 million [Internet Archive])
 -   scientific records (22 million [INIST])
 -   bibliographic records (27 million [BnF main catalog])
 -   museum specimens (15 million going on 100 million [Smithsonian])
