@@ -57,7 +57,7 @@ In fact, in-house ARK administrators always know where the shoulder ends, provid
 
 There are different ways to implement a shoulder. Fundamentally, a shoulder is the deliberate practice of assigning ARKs that start with a particular extension to a NAAN. You could implement two shoulders simply by assigning ARKs beginning `ark:12345/x8` only to apples and ARKs beginning `ark:12345/x9` only to oranges.
 
-If you use a service that stores ARKs in the [N2T.net]({{ site.baseurl }}/about/n2t-global-resolver) resolver, such as [ezid.cdlib.org](https://ezid.cdlib.org/), then you can supplement that practice in two different ways. First, you could take advantage of N2T's [suffix passthrough](https://ezid.cdlib.org/learn/suffix_passthrough) feature by creating a short ARK, such as [ark:99152/p0](https://n2t.net/ark:99152/p0), that looks and acts like a shoulder. To make it work, it suffices for that ARK to redirect to a server URL that can handle all the ARKs on that shoulder (eg, the Smithsonian does this), and you wouldn't have to store or manage any other ARKs on that shoulder at N2T. Second, the EZID service (and perhaps others), associates a shoulder with a [minter]({{ site.baseurl }}/about/ark-faq-en#betanumeric) service and an API access point.
+If you use a service that stores ARKs in the [N2T.net]({{ site.baseurl }}/about/n2t-global-resolver) resolver, such as [ezid.cdlib.org](https://ezid.cdlib.org/), then you can supplement that practice in two different ways. First, you could take advantage of N2T's [suffix passthrough]({{ site.baseurl }}{{ site.spt_explained }}) feature by creating a short ARK, such as [ark:99152/p0](https://n2t.net/ark:99152/p0), that looks and acts like a shoulder. To make it work, it suffices for that ARK to redirect to a server URL that can handle all the ARKs on that shoulder (eg, the Smithsonian does this), and you wouldn't have to store or manage any other ARKs on that shoulder at N2T. Second, the EZID service (and perhaps others), associates a shoulder with a [minter]({{ site.baseurl }}/about/ark-faq-en#betanumeric) service and an API access point.
 
 A completely different kind of shoulder "creation" step is needed to implement a shoulder under one of the few *shared* NAANs (below).
 
@@ -73,7 +73,7 @@ Note that N2T.net is configured to forward any quick test ARK it receives (secon
 
 ### **How do I request or make changes to a shoulder under a shared NAAN?**
 
-As mentioned, to implement a shoulder under your *own* NAAN requires no special request. To implement or change a shoulder under a *shared* NAAN, however, requires getting into the [shared NAAN shoulders registry](https://n2t.net/e/pub/shoulder_registry.txt), which means filling out an [online shoulder form](https://docs.google.com/forms/d/10J2VxsaeQG-IpkqZ6wpqAKqt8hYnMSf4bxdL8ktI-to). For security purposes requests are processed manually. Example reasons for a change may include
+As mentioned, to implement a shoulder under your *own* NAAN requires no special request. To implement or change a shoulder under a *shared* NAAN, however, requires getting into the [shared NAAN shoulders registry]({{ site.shoulder_registry_txt }}), which means filling out an [online shoulder form]({{ site.shoulder_form_url }}). For security purposes requests are processed manually. Example reasons for a change may include
 
 * notifying [N2T](https://n2t.net) of a change in your organization's contact person or resolver URL,
 * updating your organization's name assignment policy ([sample policy](http://ark.bnf.fr/ark:12148/bpt6k2102478.policy)),

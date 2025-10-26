@@ -20,7 +20,7 @@ Did you know...
 * ... that an average of 5 new ARK organizations are registered every week?
 * ... that the ARK scheme is more than {{ site.ark_age }} old?
 * ... that no one has to pay for the right to create ARKs?
-* ... that there are over 8.2 billion ARKs in the world?
+* ... that there are over {{ site.num_arks }} ARKs in the world?
 * ... that [ARK organizations](naan-stats.md) include universities, journals, national libraries, national and regional archives, and fine art and natural history museums?
 
 Archival Resource Key (ARK) identifiers are URLs that support long-term access
@@ -64,7 +64,7 @@ French, and Spanish:
 -   Name Assigning Authority Number (NAAN) registry
 -   Nice Opaque Identifier (Noid) systems
 -   N2T: a global resolver
--   [N2T feature: suffix passthrough]
+-   [Resolver feature: suffix passthrough]
 
 [ARK features]
 
@@ -148,7 +148,7 @@ developing an ARK system.
 [ARK Community Code of Conduct]: about-ark-community-code-of-conduct.md
 [Why ARKs?]: about-the-ark-origin-story.md
 [ARK NAANs and systems]: about-ark-naans-and-systems.md
-[N2T feature: suffix passthrough]: about-ark-naans-and-systems.md#n2t-feature-suffix-passthrough
+[Resolver feature: suffix passthrough]: about-ark-naans-and-systems.md#feature-suffix-passthrough
 [ARK features]: about-ark-features.md
 [Comparing ARKs, DOIs and other identifier systems]: about-comparing-arks-and-other-identifiers.md
 [Getting started: what to plan for as you implement ARKs]: about-getting-started-implementing-arks.md

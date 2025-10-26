@@ -231,6 +231,6 @@ relationship, there is no impediment to taking your NAAN with you.
 [1]: https://lh6.googleusercontent.com/4P2TlDWgXCj_wBahPf2UDHXeIbebp_8BTHlDccb0HGedk6wsqKLJCyWWXPmCN_j1zl_S_YjBO94rY7f80fUZNzaVkGy3-Dq28o9bLpD3tjVap0_b1VYFgOofuEOGwEgogvLtOAHY
 [namespace splitting problem]: https://n2t.net/e/n2t_vision.html
 [ARK Shoulders FAQ]: {{ site.baseurl }}/about/ark-shoulders-faq-en
-[form to request a shoulder under a shared NAAN]: https://n2t.net/e/shoulder_request
-[online form]: https://n2t.net/e/naan_request
+[form to request a shoulder under a shared NAAN]: {{ site.shoulder_form_url }}
+[online form]: {{ site.naan_form_url }}
 [sample policy]: https://ark.bnf.fr/ark:12148/bpt6k2102478.policy
