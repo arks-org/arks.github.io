@@ -106,9 +106,9 @@ for its supporting documents.
 
 #### Resources
 
-*   2008 ARK spec: [http://n2t.net/e/arkspec.txt](https://n2t.net/e/arkspec.txt)
+*   2008 ARK spec: [https://datatracker.ietf.org/doc/draft-kunze-ark/15/](https://datatracker.ietf.org/doc/draft-kunze-ark/15/)
 *   2022 ARK spec: [https://datatracker.ietf.org/doc/html/draft-kunze-ark-34](https://datatracker.ietf.org/doc/html/draft-kunze-ark-34)
-*   Current NAAN registry: [https://n2t.net/e/pub/naan\_registry.txt](https://n2t.net/e/pub/naan_registry.txt)
+*   Current NAAN registry: [{{ site.list_ark_orgs }}]({{ site.list_ark_orgs }})
 *   Global ARK (and other identifiers) resolver, N2T (Name-to-Thing): [https://n2t.net](https://n2t.net/)
 *   [Notes from ARK "Experts" meetings in 2018]({{ site.baseurl }}/community/ark-summit-experts-meetings/), with discussions of surveys, ARK spec changes, counting ARKs, sustainability, etc.
 *   [Outreach WG](outreach) and [Sustainability WG](https://github.com/arks-org/arks.github.io/wiki/ARKA-Sustainability-WG-wiki)
@@ -163,7 +163,7 @@ for its supporting documents (this wiki is unfortunately not open due to PII con
 *   A private github repository for maintaining the primary registry (private because it contains personally identifiable contact information)
 *   A public repository to host the official public registry and derivative files
 *   The [NAAN Request form]({{ site.naan_form_url }})
-*   The [Shoulder Request (on shared NAANs) form](https://docs.google.com/forms/d/10J2VxsaeQG-IpkqZ6wpqAKqt8hYnMSf4bxdL8ktI-to)
+*   The [Shoulder Request (on shared NAANs) form]({{ site.shoulder_form_url }})
 *   The N2T resolver: [n2t.net](http://n2t.net/)
 *   The [Advisory Group](#ag) and the [Technical WG](#technical)
 *   [General WG features](https://github.com/arks-org/arks.github.io/wiki/WG-Background) common across ARKA working groups

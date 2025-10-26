@@ -73,6 +73,6 @@ a shoulder under one of the few shared NAANs (described under [namespaces]).
 
 [here]: about-running-minters-and-resolvers.md
 [ezid.cdlib.org]: https://ezid.cdlib.org/
-[suffix passthrough]: https://n2t.net/e/suffix_passthrough.html
+[suffix passthrough]: {{ site.baseurl }}{{ site.spt_explained }}
 [ark:99152/p0]: https://n2t.net/ark:99152/p0
 [namespaces]: about-ark-namespaces.md

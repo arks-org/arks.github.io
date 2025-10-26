@@ -132,4 +132,4 @@ registered between 2022-12-14 and 2023-06-11:
 [International Conference on Digital Preservation]: https://ipres2023.us/
 [ARK Community Code of Conduct]: {{ "/about/ark-community-code-of-conduct" | absolute_url }}
 [ARKA wiki]: https://wiki.lyrasis.org/display/ARKs/ARKs+in+the+Open+Project
-[ARK organizations]: https://n2t.net/e/pub/naan_table.html
+[ARK organizations]: {{ site.list_ark_orgs }}

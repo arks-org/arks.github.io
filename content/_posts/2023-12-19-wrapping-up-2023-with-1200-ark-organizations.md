@@ -173,4 +173,4 @@ With a total of over 1200, we close with a list of the 93
 [International Conference on Digital Preservation]: https://ipres2023.us/
 [ARK Community Code of Conduct]: {{ page.conduct.url | absolute_url }}
 [ARKA wiki]: https://wiki.lyrasis.org/display/ARKs/ARKs+in+the+Open+Project
-[ARK organizations]: https://n2t.net/e/pub/naan_table.html
+[ARK organizations]: {{ site.list_ark_orgs }}

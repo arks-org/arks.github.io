@@ -221,7 +221,7 @@ French)
 [IIIF image API]: https://iiif.io/api/image/
 [IIIF presentation API]: https://iiif.io/api/presentation/
 [1]: {{ page.image.url | absolute_url }}
-[suffix passthrough]: https://n2t.net/e/suffix_passthrough.html
+[suffix passthrough]: {{ site.baseurl }}{{ site.spt_explained }}
 [URI Syntax of the IIIF Image API]: https://iiif.io/api/image/3.0/#2-uri-syntax
 [current ARK specification]: https://datatracker.ietf.org/doc/draft-kunze-ark/
 [Persistent identifiers in IIIF]: https://tanc-ahrc.github.io/IIIF-TNC/seminar02.html

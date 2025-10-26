@@ -59,21 +59,21 @@ request form].
 
 What ARKs are being assigned to (February 2023):
 
--   genealogical records (8 billion [FamilySearch])
--   publisher content (100 million [Portico])
--   scanned texts (30 million [Internet Archive])
+-   genealogical records (12 billion [FamilySearch])
+-   publisher content (157 million [Portico])
+-   scanned texts (50 million [Internet Archive])
 -   scientific records (22 million [INIST])
 -   bibliographic records (27 million [BnF main catalog])
--   museum specimens (11 million going on 100 million [Smithsonian])
--   public health documents, many from legal discovery (15 million [UCSF IDL])
--   digitized documents and objects (6 million [BnF Gallica])
+-   museum specimens (15 million going on 100 million [Smithsonian])
+-   public health documents, many from legal discovery (20 million [UCSF IDL])
+-   digitized documents and objects (36 million CDL, 6 million [BnF Gallica])
 -   historical persons, families, and organizations (4 million [SNACC])
 -   finding aids and special collections (4 million [Merritt])
 -   library and archival objects (1.3 million [Durham University Library])
 -   educational resources (1.1 million [University of Utah])
--   fine art (483,000 [Louvre museum])
+-   fine art (490,000 [Louvre museum])
 -   historic maps (334,000 [Princeton University Libraries])
--   vocabulary terms (27,000 [Periodo], [YAMZ])
+-   vocabulary terms (30,000 [Periodo], [YAMZ])
 -   datasets, journals, archeological artifacts, living beings, etc.
 
 We continue to receive [expressions of interest][interest in helping with the
@@ -147,10 +147,10 @@ work of the ARK Alliance] and have attracted support from the following
 [interest in helping with the work of the ARK Alliance]: https://docs.google.com/forms/d/15bhmP5Z0aOLaTWfXKK0TBTJCOAXuT30hIzfhij-D_oM/viewform?edit_requested=true
 [Contact us]: contact-us.md
 [working group]: community-groups.md
-[{{ site.num_ark_orgs }} organizations]: https://n2t.net/e/pub/naan_table.html
+[{{ site.num_ark_orgs }} organizations]: https://cdluc3.github.io/naan_reg_priv/
 [online request form]: {{ site.naan_form_url }}
 [online news form]: https://docs.google.com/forms/d/1e7GvJYvsMd7Qm_LdgkVaUB96dVzeou85f0VbhA4BsSs
-[chart of growth of ARK-assigning organizations since 2001]: https://n2t.net/e/pub/naan_growth.png
+[chart of growth of ARK-assigning organizations since 2001]: {{ site.baseurl }}/assets/images/share/naan_growth2025.png
 [FamilySearch]: https://familysearch.org/
 [Portico]: https://www.portico.org/
 [Internet Archive]: https://archive.org/
