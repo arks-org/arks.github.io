@@ -35,8 +35,8 @@ committed to the long-term preservation of digital information.
     * [in English](https://groups.google.com/g/arks-forum)
     * [en français](https://framalistes.org/sympa/info/arks-forum-fr) 🇫🇷 
     * [español/português](https://groups.google.com/g/arks-forum-ib)
-3.  Follow the ARK Alliance on twitter [@arks_org]
-4.  Follow us on mastodon [@arks_org@fosstodon.org]
+4.  Follow the ARK Alliance on mastodon [@arks_org@fosstodon.org]
+3.  Follow us on Bluesky [@arks_org.bsky.social]
 5.  Read the ARK Alliance [blog]
 6.  [Sign up for our newsletter][]
 7.  Submit a community news item or blog post using this [online news form];
@@ -49,17 +49,17 @@ committed to the long-term preservation of digital information.
 ## Who is creating ARKs
 
 Since 2001 over [{{ site.num_ark_orgs }} organizations] across the world
-registered to assign ARKs. As of early 2024, the registry includes 10 national
-libraries, 145 universities, 184 archives, 90 museums, and 75 journals, as well
-as many other organization types (data centers, government agencies, vendors,
-research labs, etc). To register your organization, fill out this [online
-request form].
+registered to assign ARKs. As of late 2025, the registry includes 12 national
+libraries, 215 universities, 254 archives, 144 museums, and 124 journals, and
+59 scientific centers, as well as many other organization types (government
+agencies, vendors, research labs, etc). To register your organization, fill out
+this [online request form].
 
 ![chart of growth of ARK-assigning organizations since 2001][]{: .img-thumbnail .img-fluid loading="lazy" width="534"}
 
 What ARKs are being assigned to (February 2023):
 
--   genealogical records (12 billion [FamilySearch])
+-   genealogical records (15 billion [FamilySearch])
 -   publisher content (157 million [Portico])
 -   scanned texts (50 million [Internet Archive])
 -   scientific records (22 million [INIST])
@@ -137,7 +137,7 @@ work of the ARK Alliance] and have attracted support from the following
 [2]: https://www.google.com/maps/d/u/0/edit?mid=1ALGeRERECL36f2pg7pqrthUYNmuU43UM&usp=sharing
 [collaboration]: https://wiki.lyrasis.org/display/ARKs/ARKs+in+the+Open+Project
 [NDSA]: https://ndsa.org
-[@arks_org]: https://twitter.com/arks_org
+[@arks_org.bsky.social]: https://bsky.app/profile/arks-org.bsky.social
 [@arks_org@fosstodon.org]: https://fosstodon.org/@arks_org
 [blog]: news.md
 [story template]: blog-post-template.md
