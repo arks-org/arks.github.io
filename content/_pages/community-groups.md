@@ -127,27 +127,33 @@ features](https://github.com/arks-org/arks.github.io/wiki/WG-Background) common 
 
 ## NAAN Group {#naan}
 
-The ARKA NAAN Registry Working Group oversees the registry of institutions that have been given a Name Assigning Authority Number (NAAN), with which they can begin assigning ARKs. The work consists mostly of responding to requests for new NAANs, but also to requests for changes to existing NAANs. Effectively the WG is a team of volunteer curators whose work will be ongoing. Although the WG is not expected ever to be finished, composition of the curatorial team is expected to evolve year to year.
-There is an [ARK Alliance NAAN Working Group wiki](https://github.com/arks-org/arks.github.io/wiki/ARKA-NAAN-WG-wiki) 
+The ARKA NAAN Registry Working Group oversees the registry of institutions that
+have been given a Name Assigning Authority Number (NAAN), with which they can
+begin assigning ARKs. The work consists of responding to requests for new NAANs
+and for changes to existing NAANs. Effectively the WG is a team of volunteer
+curators whose work will be ongoing. Although the WG is not expected ever to be
+finished, composition of the curatorial team is expected to evolve year to
+year. There is an [ARK Alliance NAAN Working Group
+wiki](https://github.com/arks-org/arks.github.io/wiki/ARKA-NAAN-WG-wiki) 
 for its supporting documents (this wiki is unfortunately not open due to PII concerns).
 
 #### Objectives
 
 1.  NAA maintenance. Create and refine processes that permit each [NAAN request]({{ site.naan_form_url }})
     and Shoulder request to receive a response within two business days.
-3.  Policy. In consultation with the Advisory Group, develop
-    [policies](https://github.com/CDLUC3/naan_reg_priv/blob/main/Policy.md) for deciding which requests are
-    appropriate for the ARK community.
-5.  N2T resolution support. The NAAN Registry is harvested regularly to supply vital redirection
-    information to the N2T resolver. Work with the Technical WG to ensure stable, error-free harvesting
-    of registry information needed for continuous and reliable resolution.
+3.  Policy. In consultation with other working groups, develop guidelines
+    for deciding which requests are appropriate for the ARK community.
+5.  N2T resolution support. The NAAN Registry is harvested regularly to supply
+    vital redirection information to the N2T resolver. Work with the Technical
+    WG and the infrastructure host (CDL) to ensure stable, error-free
+    harvesting of registry information needed for continuous and reliable
+    resolution.
 
 #### Deliverables
 
 *   Create a policy document
 *   Work with CDL to implement form processing changes (agreed upon in March 2022)
 *   Recruit new curators
-*   Convert to github projects
 *   Monthly meetings facilitated by the current primary or secondary curator (rotating duties)
 
 #### Resources
@@ -157,13 +163,12 @@ for its supporting documents (this wiki is unfortunately not open due to PII con
 *   The [NAAN Request form]({{ site.naan_form_url }})
 *   The [Shoulder Request (on shared NAANs) form]({{ site.shoulder_form_url }})
 *   The N2T resolver: [n2t.net](http://n2t.net/)
-*   The [Advisory Group](#ag) and the [Technical WG](#technical)
+*   The ARKA working groups and CDL
 *   [General WG features](https://github.com/arks-org/arks.github.io/wiki/WG-Background) common across ARKA working groups
 
 #### ARK Alliance NAAN Working Group Members
 
 *   Adam Buttrick, California Digital Library
-*   Aurélien Conraux, co-chair, French Ministry of Culture
 *   Brian McBride, chair, University of Utah
 *   Donald Doe Seanedzu, WACREN
 *   Gabriel Silveira Marques, Brazilian Institute of Information in Science and Technology (IBICT.br)
@@ -171,7 +176,7 @@ for its supporting documents (this wiki is unfortunately not open due to PII con
 *   John Kunze, Drexel University Metadata Research Center
 *   Mark Shelstad, Colorado State University
 *   Romuald Verrier, French Ministry of Education
-*   Sefakor Ankora, WACREN
+*   Sefakor Ankora, ex-WACREN
 
 ![][1]
 
