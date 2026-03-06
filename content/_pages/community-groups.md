@@ -21,8 +21,9 @@ join a working group by contacting one of its current members or writing to info
 #### Purpose
 
 The ARKA Outreach Working Group oversees development of the ARK Alliance community, as well as the promotion of awareness, understanding, and adoption of ARKs.
-There is an [ARK Alliance Outreach Working Group wiki](https://github.com/arks-org/arks.github.io/wiki/ARKA-Outreach-WG-wiki) 
-for its supporting documents.
+The [ARK Alliance Outreach
+wiki](https://github.com/arks-org/arks.github.io/wiki/ARK-Alliance-Outreach-wiki)
+is for documents supporting both the ARK community and the ARKA Outreach WG.
 
 #### Objectives
 
