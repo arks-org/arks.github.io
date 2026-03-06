@@ -14,8 +14,7 @@ image3:
   url: "/assets/images/share/arka_logo.svg"
 ---
 
-In 2025, the ARK Alliance achieved significant milestones, surpassing 1720
-registered ARK organizations.
+2025 has been a great year for the ARK Alliance. The 1720+ ARK organizations include 12 national libraries, 215 universities, 254 archives, 144 museums, 124 journals, and 59 scientific centers.
 
 <!--more-->
 
