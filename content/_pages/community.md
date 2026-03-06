@@ -49,9 +49,8 @@ committed to the long-term preservation of digital information.
 ## Who is creating ARKs
 
 Since 2001 over [{{ site.num_ark_orgs }} organizations] across the world
-registered to assign ARKs. As of late 2025, the registry includes
-{{ site.num_national_libs }} national libraries, 215 universities,
-254 archives, 144 museums, 124 journals, and
+registered to assign ARKs. As of late 2025, the registry includes 12 national
+libraries, 215 universities, 254 archives, 144 museums, and 124 journals, and
 59 scientific centers, as well as many other organization types (government
 agencies, vendors, research labs, etc). To register your organization, fill out
 this [online request form].
