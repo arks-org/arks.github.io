@@ -20,13 +20,11 @@ baseurl: /arks.github.io
 url: https://arks-org.github.io
 author: "The ARK Alliance"
 
-# First draft of ARK spec published 2001.02.27
-ark_age: "25 years"
 num_ark_orgs: 1700
 num_support_orgs: 47
+ark_age: "24 years"
 num_arks: "15.3 billion"
 num_dois: "417 million"
-num_national_libs: 13
 
 list_ark_orgs: "https://cdluc3.github.io/naan_reg_priv/"
 map_ark_orgs: "https://www.google.com/maps/d/viewer?mid=1ALGeRERECL36f2pg7pqrthUYNmuU43UM"
