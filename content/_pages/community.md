@@ -15,7 +15,8 @@ ARKs.
 The ARK Alliance community comprises institutions and people who use or assign
 ARK identifiers as well as those interested in promoting ARKs and sustaining
 the open ARK infrastructure, which consists of standards, best practices, the
-[N2T.net] resolver, and the registry of ARK organizations. There is also an
+[N2T.net] resolver, and the registry of ARK organizations. There are also
+[working groups] (Outreach, Technical, NAAN Registry, Advisory) and an
 [Archival Resource Key Community Code of Conduct].
 
 | [![][1]{: .img-thumbnail .img-fluid fetchpriority="high" loading="eager"}][2] |
@@ -44,13 +45,14 @@ committed to the long-term preservation of digital information.
 8.  Tell us about yourself by filling out a 5-minute [ARK survey] (in English)
     or 🇫🇷 une [enquête ARK] (version française)
 9.  Tell us about your [interest in helping with the work of the ARK Alliance]
-10.  [Contact us] about joining a [working group]: Outreach, Technical, NAAN Registry, Advisory
+10.  [Contact us] about joining one of the [working groups]
 
 ## Who is creating ARKs
 
 Since 2001 over [{{ site.num_ark_orgs }} organizations] across the world
-registered to assign ARKs. As of late 2025, the registry includes 12 national
-libraries, 215 universities, 254 archives, 144 museums, and 124 journals, and
+registered to assign ARKs. As of late 2025, the registry includes
+{{ site.num_national_libs }} national libraries, 215 universities,
+254 archives, 144 museums, 124 journals, and
 59 scientific centers, as well as many other organization types (government
 agencies, vendors, research labs, etc). To register your organization, fill out
 this [online request form].
@@ -146,7 +148,7 @@ work of the ARK Alliance] and have attracted support from the following
 [enquête ARK]: https://survey.alchemer.com/s3/6168001/ARK-Alliance-Survey-French
 [interest in helping with the work of the ARK Alliance]: https://docs.google.com/forms/d/15bhmP5Z0aOLaTWfXKK0TBTJCOAXuT30hIzfhij-D_oM/viewform?edit_requested=true
 [Contact us]: contact-us.md
-[working group]: community-groups.md
+[working groups]: community-groups.md
 [{{ site.num_ark_orgs }} organizations]: https://cdluc3.github.io/naan_reg_priv/
 [online request form]: {{ site.naan_form_url }}
 [online news form]: https://docs.google.com/forms/d/1e7GvJYvsMd7Qm_LdgkVaUB96dVzeou85f0VbhA4BsSs
