@@ -175,7 +175,7 @@ for its supporting documents (this wiki is unfortunately not open due to PII con
 *   Gabriel Silveira Marques, Brazilian Institute of Information in Science and Technology (IBICT.br)
 *   Jennifer Marill, US National Library of Medicine (retired)
 *   John Kunze, Drexel University Metadata Research Center
-*   Mark Shelstad, Colorado State University
+*   Mark Shelstad, co-chair, Colorado State University
 *   Romuald Verrier, French Ministry of Education
 *   Sefakor Ankora, ex-WACREN
 
@@ -213,11 +213,11 @@ this body by reaching out to those organizations that filled out our Expression 
 
 The ARK Alliance Community Leaders are listed here.
 
-* Brian McBride
-* Aurélien Conraux
 * John Kunze
-* Julien A. Raemy
-* Dave Vieglais
+* Brian McBride
 * Mark Phillips
+* Julien A. Raemy
+* Mark Shelstad
+* Dave Vieglais
 
 [1]: {{ site.baseurl }}/assets/images/pages/about-ark-naans-and-systems/NAAN_slice.jpg
