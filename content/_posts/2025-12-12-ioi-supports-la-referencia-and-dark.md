@@ -11,7 +11,7 @@ image:
   url: "/assets/images/share/dARK.png"
 ---
 
-Invest in Open Infrastructure (IOI) announced in November 2025 that LA Referencia will receive up to US$1.5M in funding as one of the inaugural winners of the IOI Network Adoption Fund.
+LA Referencia and the dARK (Decentralized ARK) initiative will receive up to US$1.5M in funding as one of the inaugural winners of the IOI Network Adoption Fund.
 
 <!--more-->
 
