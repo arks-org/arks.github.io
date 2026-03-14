@@ -11,8 +11,8 @@ email: info@arks.org
 tagline: >-
   Home of the Archival Resource Key (ARK)
 description: >-
-  ARKs are reliable, persistent identifiers for information objects,
-  functioning as stable web addresses that avoid 404 errors. Join the
+  ARKs are reliable, persistent identifiers (PIDs) for information objects,
+  functioning as stable web addresses that avoid 404 errors. Welcome to the
   ARK Alliance, a global community sustaining the ARK infrastructure
   for research, scholarship, and cultural heritage.
 domain: arks-org.github.io
