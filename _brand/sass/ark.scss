@@ -1,8 +1,12 @@
 @import "utils";
 
-// branding ovverides
+// branding overrides
 .navbar {
   --bs-navbar-active-color: #b8860b;
+}
+
+.navbar-brand {
+  font-family: 'Poly', serif;
 }
 
 // branding BEM (Block Element Modifier) https://css-tricks.com/bem-101/
@@ -12,6 +16,7 @@
   &__content,
   &__footer {
     font-family: 'Poly', serif;
+    color: var(--bs-body-color);
   }
   &__tagline
   &__navbar {
@@ -44,4 +49,18 @@
   .text-brand {
     color: #b8860b;
   }
+}
+
+.icon {
+  width:  1.6rem;
+  height: 1.6rem;
+  display: inline-block;
+  vertical-align: -0.125em;
+  fill: currentColor;
+}
+
+.icon-lg {
+  width:  6.1rem;
+  height: 6rem;
+  fill: currentColor;
 }
