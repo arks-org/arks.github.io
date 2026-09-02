@@ -65,5 +65,3 @@ bundle exec jekyll serve --livereload
 
 Open <http://localhost:4000/arks.github.io/> in a browser.
 
-
-addtional lines for testing
