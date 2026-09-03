@@ -10,6 +10,8 @@ The project uses:
 - Bundler 2.6.9, recorded in `Gemfile.lock`
 - Jekyll 4.4.1 or later within the `Gemfile` constraint
 
+Note: also works with Ruby 3.4.8.
+
 ## Install Ruby
 
 Install Ruby 3.4.10 using a Ruby version manager, `rbenv` for example.
