@@ -6,11 +6,21 @@ This site is built with Jekyll.
 
 The project uses:
 
-- Ruby 3.4.10, selected by `.ruby-version`
+- Ruby 3.4.10, selected by `.ruby-version` (Note: also works with Ruby 3.4.8)
 - Bundler 2.6.9, recorded in `Gemfile.lock`
 - Jekyll 4.4.1 or later within the `Gemfile` constraint
 
-Note: also works with Ruby 3.4.8.
+Bundler version in `Gemfile.lock`:
+```
+BUNDLED WITH
+   2.6.9
+```
+
+Jekyll constrain in `Gemfile`:
+```
+source "https://rubygems.org"
+gem "jekyll", "~> 4.4.1"
+```
 
 ## Install Ruby
 
