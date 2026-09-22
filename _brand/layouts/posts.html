@@ -1,43 +1,46 @@
 ---
 layout: default
 ---
+
 {%- include content/content_assigns.html -%}
-<div class="row">
+
+<div class="arka arka__content arka__content--body container my-4">
+  <div class="row arka__content arka__content--body container">
 	<div class="col">
 		{{ content_only | markdownify }}		
 	</div>
-</div>
+  </div>
 
+<ul class="arka__news-list list-unstyled">
 {% for post in site.posts %}
-	<div class="row py-2 my-2">
-		<div class="col-2">
-		  {% if post.image %}
-			<img src="{{ site.baseurl }}{{ post.image.url }}" alt="{{ post.title }}" class="img-fluid">
-			<!--
-            consider class=post-image to refine presentation of thumbnails
-            <img src="{{ post.image }}" alt="{{ post.title }}" class="img-fluid post-image">
-            -->
-		  {% else %}
-            <img src="{{ site.baseurl }}/assets/images/share/arka_logo.svg" alt="ARK Alliance logo" class="img-fluid" width="50">
-		  {% endif %}
-		</div>
-		<div class="col-10">
-			<h2 class="h3">
-				<a href="{{ site.baseurl }}{{ post.url }}"
-				   class="">
+    {% if post.image %}
+      {% assign image_url = post.image.url %}
+    {% else %}
+      {% assign image_url = "/assets/images/posts/arka_blog_default.png" %}
+    {% endif %}
+    <li>
+      <a href="{{ site.baseurl }}{{ post.url }}">
+        <div class="row py-2 my-2">
+            <div class="col-2">
+                <img src="{{ site.baseurl }}{{ image_url }}" alt="" class="img-thumbnail img-fluid">
+            </div>
+            <div class="col-10">
+                <h2 style="color: var(--arka-color-link);">
 					{{ post.title }}
-				</a>
-			</h2>
-			<small class="ark-alliance__tagline d-block text-secondary text-uppercase fs-6">
-				{{ post.date | date: "%Y-%m-%d" }}
-			</small>
-			<small class="ark-alliance__tagline d-block text-secondary text-uppercase fs-6">
-			    {%- include content/authors.html post=post -%}
-			</small>
-		</div>
-	</div>
+                </h2>
+                <small class="arka__tagline d-block text-secondary text-uppercase fs-6">
+                    {{ post.date | date: "%Y-%m-%d" }}
+                    <br/>
+                    {%- include content/authors.html post=post -%}
+                </small>
+            </div>
+        </div>
+      </a>
+    </li>
 {% endfor %}
-
-<!-- Pagination links -->
-<ul class="pagination">
 </ul>
+
+  <!-- Pagination links -->
+  <ul class="pagination">
+  </ul>
+</div>

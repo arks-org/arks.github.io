@@ -1,24 +1,38 @@
 <!doctype html>
-<html lang="en" data-bs-theme="auto">
+<html lang="{{ page.lang | default: 'en' }}" data-bs-theme="auto">
   {% include head/head.element.html %}
-  <body class="ark-alliance">
-    {% include header/svg-symbols.html %}
-    {% include header/header.html %}
-    {% include navigation/top.html %}
 
-    <div class="ark-alliance__content container my-5">
-      <h1 class="ark-alliance__content--title">
-        {{ page.title }}
-      </h1>
-      <div class="ark-alliance__content--body">
-        {{ content }}
-      </div>
+  <body class="arka">
+   <a lang="en" class="arka__skip-link" href="#main-content">Skip to main content</a>
+
+   {% include header/svg-symbols.html %}
+   {% include header/header.html %}
+   {% include navigation/top.html %}
+
+   <main>
+   <section class="arka__section arka__section--{{ page.background | default: "cool" }}">
+
+    {% if page.callout %}
+    <div class="arka__content container">
+      {% include header/callout.html content=page.callout %}
     </div>
+    {% endif %}
 
-    {% include footer/social.html %}
-    {% include footer/footer.html %}
+    <div class="arka__content arka__content--title container">
+      {% include navigation/breadcrumbs.html %}
+      <h1 id="main-content" tabindex="-1">{{ page.title }}</h1>
+    </div>
+   </section>
 
+   <!-- Page authors use the section include to open and close full-bleed
+   background regions entirely within the page content. -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+     {{ content }}
+   </main>
+
+   {% include footer/social.html %}
+   {% include footer/footer.html %}
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   </body>
 </html>

@@ -8,6 +8,7 @@ date: 2021-01-26T16:17:42+00:00
 published: true
 image:
   url: "/assets/images/posts/naan_growth_jan_2021.png"
+  alt: "Line chart showing slow growth in ARK-assigning organizations during the 2000s, followed by a steeper rise after 2010 to 700 organizations in January 2021."
 ---
 
 The ARK Alliance, succeeding ARKs-in-the-Open, has grown with 700+
@@ -21,7 +22,7 @@ open, global community around Archival Resource Keys (ARKs) and their use as
 persistent identifiers in the scholarly ecosystem. And just this week the
 700th ARK-assigning organization was registered!
 
-![chart of growth of ARK-assigning organizations since 2001]{: .img-thumbnail .img-responsive  loading="lazy" }
+{% include content/fig.html url=page.image.url alt=page.image.alt nocaption=true %}
 
 Since 2018 the ARK Alliance has established 4 working groups, gained support
 of 39 institutions, and added 286 new ARK-assigning organizations.
@@ -51,4 +52,4 @@ visit the [community] page to learn about ways to become involved.
 [arks.org]: https://arks.org
 [arksintheopen.org]: https://ARKsInTheOpen.org
 [N2T.net]: https://n2t.net
-[community]: community.md
+[community]: {{ site.baseurl }}/community/

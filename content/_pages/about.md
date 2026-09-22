@@ -13,7 +13,9 @@ into ARK Alliance.
 
 <!--more-->
 
-Did you know...
+{% include content/section.html do="start" color="cool" label="ARK Basics" %}
+
+## Did you know...
 
 * ... that ARK is a PID (Persistent IDentifier), along with DOI, ORCID, and ROR?
 * ... that ARK may be the fastest growing PID scheme you've never heard of?
@@ -21,27 +23,48 @@ Did you know...
 * ... that the ARK scheme is more than {{ site.ark_age }} old?
 * ... that no one has to pay for the right to create ARKs?
 * ... that there are over {{ site.num_arks }} ARKs in the world?
-* ... that [ARK organizations](naan-stats.md) include universities, journals, national libraries, national and regional archives, and fine art and natural history museums?
+* ... that [ARK organizations](../community/ark-organizations) include universities, journals, national libraries, national and regional archives, and fine art and natural history museums?
 
 Archival Resource Key (ARK) identifiers are URLs that support long-term access
 to information. Learn below what you need to know about ARKs, whether you’re
 planning how your system or collection will use them, or you’re a developer
 building ARK tools.
 
-## ARK Anatomy
+<div class="flex-container">
+<div class="flex-item" markdown="1">
 
-{% include content/anatomy2.html %}
+### ARK anatomy
 
-*A peek at ARK anatomy. You can spot an ARK by its internal* *<span
-class="has-inline-color" style="color:#c88c0a">label</span>.*
+{% include content/fig.html
+  url="/assets/images/share/ark-anatomy.svg"
+  label="Anatomy of an ARK URL"
+  alt="An example ARK URL divided into its resolver, ARK label, NAAN, assigned name, sub-part, and variant components."
+  description="A labeled example of the parts of an ARK URL."
+%}
 
-Please note all ARK documentation has not yet been transferred to this site.
-This includes important ARK FAQs (Frequently Asked Questions) in English,
-French, and Spanish:
+In the example, `https://example.org/` is the replaceable resolver service,
+or Name Mapping Authority (NMA). The stable ARK begins with `ark:`, which
+marks the identifier scheme, followed by the NAAN `12345`. The assigned name
+`x54xz321` is unique within that NAAN, and its initial shoulder `/x5` defines
+a sub-namespace. The full base object name is `ark:12345/x54xz321`. The
+`/s3/f8` qualifiers identify contained sub-parts, and `.05v.tiff` identifies
+a variant.
+
+</div>
+<div class="flex-item" style="margin-left: 2rem;" markdown="1">
+
+### Frequently Asked Questions (FAQs)
+
+ARK FAQs in English, French, and Spanish
 
 -   [FAQ about ARK identifiers 🇬🇧]
--   [FAQ sur les identifiants ARK 🇫🇷]
--   [FAQ sobre identificadores ARK 🇪🇸]
+-   [FAQ sur les identifiants ARK 🇫🇷]{: lang="fr" }
+-   [FAQ sobre identificadores ARK 🇪🇸]{: lang="es" }
+
+</div>
+</div>
+
+{% include content/section.html do="changeto" color="warm" label="Recommended for all" %}
 
 ## Recommended for all users
 
@@ -86,6 +109,8 @@ French, and Spanish:
 -   Get a Name Assigning Authority Number (NAAN)
 -   Decide what ARK features you need
 -   Choose (or build) an ARK system
+
+{% include content/section.html do="changeto" color="cool" label="Recommended for developers" %}
 
 ## Recommended for developers
 
@@ -148,10 +173,10 @@ developing an ARK system.
 [ARK Community Code of Conduct]: about-ark-community-code-of-conduct.md
 [Why ARKs?]: about-the-ark-origin-story.md
 [ARK NAANs and systems]: about-ark-naans-and-systems.md
-[Resolver feature: suffix passthrough]: about-ark-naans-and-systems.md#feature-suffix-passthrough
+[Resolver feature: suffix passthrough]: about-ark-naans-and-systems.md#key-feature-suffix-passthrough
 [ARK features]: about-ark-features.md
 [Comparing ARKs, DOIs and other identifier systems]: about-comparing-arks-and-other-identifiers.md
-[Getting started: what to plan for as you implement ARKs]: about-getting-started-implementing-arks.md
+[Getting started: what to plan for as you implement ARKs]: {{ site.baseurl }}/starting
 [General identifier concepts and conventions]: about-identifier-concepts-and-conventions.md
 [Running minters and resolvers]: about-running-minters-and-resolvers.md
 [More about the N2T global resolver]: about-n2t-global-resolver.md
@@ -159,3 +184,5 @@ developing an ARK system.
 [More about ARK shoulders]: about-shoulders.md
 [Testing ARKs with N2T]: about-testing-arks.md
 [ARK implementation best practices]: about-best-practices.md
+
+{% include content/section.html do="end" %}

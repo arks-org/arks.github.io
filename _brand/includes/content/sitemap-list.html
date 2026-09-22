@@ -8,7 +8,7 @@
 		{% for page in sorted_pages %}
 			{% if page.title and page.permalink != "/404.html" %}
 			<li>
-				<a href="{{ site.baseurl }}{{ page.permalink }}">
+				<a{% if page.lang %} lang="{{ page.lang }}"{% endif %} href="{{ site.baseurl }}{{ page.permalink }}">
 					{{ page.title }}
 				</a> 
 			</li>

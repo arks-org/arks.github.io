@@ -8,6 +8,8 @@ date: 2021-03-26T17:21:49+00:00
 published: true
 image:
   url: "/assets/images/posts/2021-03-26-the-louvre-collection-goes-online-with-483000-arks/louvre_objects.png"
+  alt: "A selection of objects from the Louvre collection, including the Mona
+  Lisa, the Venus de Milo, and the Winged Victory of Samothrace."
 ---
 
 The Louvre, the world's largest art museum, has made its entire collection
@@ -21,7 +23,7 @@ collections.louvre.fr database.
 
 The [Louvre], the world’s largest art museum, [recently announced][this press release] the exciting news that for the first time ever, its entire collection is available online, whether works are on display in its museum in Paris, on long-term loan in other French institutions, or in storage.
 
-![][1]{: .img-thumbnail .img-responsive fetchpriority="high" height="575" loading="eager" width="1024"}
+{% include content/fig.html url=page.image.url description=page.image.alt nocaption=true %}
 
 The Louvre currently has 482,943 collection entries with ARKs as permalinks. Examples (each should be preceded by <https://n2t.net/>):
 

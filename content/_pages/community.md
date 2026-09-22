@@ -12,6 +12,8 @@ ARKs.
 
 <!--more-->
 
+{% include content/section.html do="start" color="cool" label="How to get involved" %}
+
 The ARK Alliance community comprises institutions and people who use or assign
 ARK identifiers as well as those interested in promoting ARKs and sustaining
 the open ARK infrastructure, which consists of standards, best practices, the
@@ -19,10 +21,16 @@ the open ARK infrastructure, which consists of standards, best practices, the
 [working groups] (Outreach, Technical, NAAN Registry, Advisory) and an
 [Archival Resource Key Community Code of Conduct].
 
-| [![][1]{: .img-thumbnail .img-fluid fetchpriority="high" loading="eager"}][2] |
-|:--:|
-| _Global distribution of over {{ site.num_ark_orgs }} ARK organizations._ |
-| |
+{% capture map_caption %}
+  Global distribution of ARK organizations. [View a complete list of institutions shown on the map]({{ site.baseurl }}/community/organizations/map-list/).
+{% endcapture %}
+{% include content/fig.html
+  url="/assets/images/pages/community/arkamap202407.png"
+  description=map_caption
+  label="ARK organizations around the world"
+  alt="A world map with red dots marking the locations of ARK organizations."
+  link="https://www.google.com/maps/d/u/0/edit?mid=1ALGeRERECL36f2pg7pqrthUYNmuU43UM&usp=sharing"
+%}
 
 The ARK Alliance emerged from a [collaboration] between the California Digital
 Library and DuraSpace/LYRASIS. Launched in 2018, it has gained the support of
@@ -30,12 +38,14 @@ Library and DuraSpace/LYRASIS. Launched in 2018, it has gained the support of
 ARK Alliance has been a member of the [NDSA], an international consortium
 committed to the long-term preservation of digital information.
 
+{% include content/section.html do="changeto" color="warm" label="How to get involved" %}
+
 ## How to get involved
 
 1.  Join an ARK discussion forum
     * [in English](https://groups.google.com/g/arks-forum)
-    * [en français](https://framalistes.org/sympa/info/arks-forum-fr) 🇫🇷 
-    * [español/português](https://groups.google.com/g/arks-forum-ib)
+    * <a lang="fr" href="https://framalistes.org/sympa/info/arks-forum-fr">en français</a> 🇫🇷
+    * <a lang="es" href="https://groups.google.com/g/arks-forum-ib">español/<span lang="pt">português</span></a>
 4.  Follow the ARK Alliance on mastodon [@arks_org@fosstodon.org]
 3.  Follow us on Bluesky [@arks_org.bsky.social]
 5.  Read the ARK Alliance [blog]
@@ -43,11 +53,16 @@ committed to the long-term preservation of digital information.
 7.  Submit a community news item or blog post using this [online news form];
     you can use this [story template] to help create your content
 8.  Tell us about yourself by filling out a 5-minute [ARK survey] (in English)
-    or 🇫🇷 une [enquête ARK] (version française)
+    or 🇫🇷 <a lang="fr" href="https://survey.alchemer.com/s3/6168001/ARK-Alliance-Survey-French">une enquête ARK</a> <span lang="fr">(version française)</span>
 9.  Tell us about your [interest in helping with the work of the ARK Alliance]
 10.  [Contact us] about joining one of the [working groups]
 
+{% include content/section.html do="changeto" color="cool" label="Who is creating ARKs" %}
+
 ## Who is creating ARKs
+
+<div class="flex-container">
+<div class="flex-item" markdown="1">
 
 Since 2001 over [{{ site.num_ark_orgs }} organizations] across the world
 registered to assign ARKs. As of late 2025, the registry includes
@@ -57,26 +72,43 @@ registered to assign ARKs. As of late 2025, the registry includes
 agencies, vendors, research labs, etc). To register your organization, fill out
 this [online request form].
 
-![chart of growth of ARK-assigning organizations since 2001][]{: .img-thumbnail .img-fluid loading="lazy" width="534"}
+</div>
+<div class="flex-item" markdown="1">
 
-What ARKs are being assigned to (February 2023):
+{% include content/fig.html
+  url="/assets/images/share/naan_growth2025.png"
+  width="70%"
+  label="Growth of ARK-assigning organizations"
+  alt="A line graph rises from a few registry records in 2001 to about 1,700 in 2025, accelerating from about 200 in 2014. The horizontal axis is Date and the vertical axis is Number of records."
+  description="Growth of ARK-assigning organizations since 2001, measured by the number of NAAN registry records."
+%}
 
--   genealogical records (15 billion [FamilySearch])
--   publisher content (157 million [Portico])
--   scanned texts (50 million [Internet Archive])
--   scientific records (22 million [INIST])
--   bibliographic records (27 million [BnF main catalog])
--   museum specimens (15 million going on 100 million [Smithsonian])
--   public health documents, many from legal discovery (20 million [UCSF IDL])
--   digitized documents and objects (36 million CDL, 6 million [BnF Gallica])
--   historical persons, families, and organizations (4 million [SNACC])
--   finding aids and special collections (4 million [Merritt])
--   library and archival objects (1.3 million [Durham University Library])
--   educational resources (1.1 million [University of Utah])
--   fine art (490,000 [Louvre museum])
--   historic maps (334,000 [Princeton University Libraries])
--   vocabulary terms (30,000 [Periodo], [YAMZ])
+</div>
+</div>
+
+### What ARKs are being assigned to (November 2025):
+
+-   genealogical records (15 billion [FamilySearch](https://familysearch.org/))
+-   publisher content (157 million [Portico](https://www.portico.org/))
+-   scanned texts (50 million [Internet Archive](https://archive.org/))
+-   scientific records (22 million [INIST](https://www.inist.fr/))
+-   bibliographic records (27 million [BnF main catalog](https://catalogue.bnf.fr/))
+-   museum specimens (15 million going on 100 million [Smithsonian](https://library.si.edu/))
+-   public health documents, many from legal discovery (20 million [UCSF IDL](https://www.industrydocuments.ucsf.edu/))
+-   digitized documents and objects (36 million CDL, 6 million [BnF Gallica](https://gallica.bnf.fr/GallicaEnChiffres))
+-   historical persons, families, and organizations (4 million [SNACC](https://snaccooperative.org/))
+-   finding aids and special collections (4 million [Merritt](https://merritt.cdlib.org/))
+-   library and archival objects (1.3 million [Durham University Library](https://www.durham.ac.uk/departments/library/))
+-   educational resources (1.1 million [University of Utah](https://lib.utah.edu/))
+-   fine art (490,000 [Louvre museum](https://www.louvre.fr/))
+-   historic maps (334,000 [Princeton University Libraries](https://library.princeton.edu/libraries))
+-   vocabulary terms (30,000 [Periodo](https://perio.do/), [YAMZ](https://yamz.net/))
 -   datasets, journals, archeological artifacts, living beings, etc.
+{: .list-2-columns }
+
+<aside class="arka__side-note" aria-labelledby="supporting-institutions" markdown="1">
+
+## Supporting institutions {#supporting-institutions}
 
 We continue to receive [expressions of interest][interest in helping with the
 work of the ARK Alliance] and have attracted support from the following
@@ -132,6 +164,7 @@ work of the ARK Alliance] and have attracted support from the following
 -   Zürcher Hochschule der Künste
 {: .list-2-columns }
 
+</aside>
 
 [N2T.net]: https://n2t.net
 [Archival Resource Key Community Code of Conduct]: about-ark-community-code-of-conduct.md
@@ -148,24 +181,10 @@ work of the ARK Alliance] and have attracted support from the following
 [enquête ARK]: https://survey.alchemer.com/s3/6168001/ARK-Alliance-Survey-French
 [interest in helping with the work of the ARK Alliance]: https://docs.google.com/forms/d/15bhmP5Z0aOLaTWfXKK0TBTJCOAXuT30hIzfhij-D_oM/viewform?edit_requested=true
 [Contact us]: contact-us.md
-[working groups]: community-groups.md
+[working groups]: {{ site.baseurl }}/community/groups/
 [{{ site.num_ark_orgs }} organizations]: https://cdluc3.github.io/naan_reg_priv/
 [online request form]: {{ site.naan_form_url }}
 [online news form]: https://docs.google.com/forms/d/1e7GvJYvsMd7Qm_LdgkVaUB96dVzeou85f0VbhA4BsSs
 [chart of growth of ARK-assigning organizations since 2001]: {{ site.baseurl }}/assets/images/share/naan_growth2025.png
-[FamilySearch]: https://familysearch.org/
-[Portico]: https://www.portico.org/
-[Internet Archive]: https://archive.org/
-[INIST]: https://www.inist.fr/
-[BnF main catalog]: https://catalogue.bnf.fr/
-[Smithsonian]: https://library.si.edu/
-[UCSF IDL]: https://www.industrydocuments.ucsf.edu/
-[BnF Gallica]: https://gallica.bnf.fr/GallicaEnChiffres
-[SNACC]: https://snaccooperative.org/
-[Merritt]: https://merritt.cdlib.org/
-[Durham University Library]: https://www.durham.ac.uk/departments/library/
-[University of Utah]: https://lib.utah.edu/
-[Louvre museum]: https://www.louvre.fr/
-[Princeton University Libraries]: https://library.princeton.edu/libraries
-[Periodo]: https://perio.do/
-[YAMZ]: https://yamz.net/
+
+{% include content/section.html do="end" %}

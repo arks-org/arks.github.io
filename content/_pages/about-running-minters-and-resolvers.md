@@ -6,16 +6,20 @@ date: 2021-01-23T23:03:44+00:00
 published: true
 ---
 
-Creating & Managing ARKs: Use alphanumerics, inert hyphens. Opt for opaque identifiers. Choose URL format for stability. Guide to minters & resolvers.
+Creating and managing ARKs via alphanumerics, betanumerics, and inert hyphens.
+Opt for opaque identifiers. Choose URL format for stability.
+Guide to minters and resolvers.
 
 <!--more-->
+
+{% include content/section.html do="start" color="cool" label="Minting and citing ARKs" %}
 
 ## Minting ARK name strings
 
 You are free to create ARK name strings as you wish, provided you use only
 digits, letters (ASCII, no diacritics), and the following characters:
 
-         = ~ * + @ _ $ . /
+`= ~ * + @ _ $ . /`
 {: .bg-secondary-subtle }
 
 The last two characters are reserved in the event you wish to disclose ARK
@@ -25,8 +29,8 @@ Another unique feature of ARKs is that hyphens (‘-‘) may appear but are
 *identity inert*, meaning that strings that differ only by hyphens are
 considered identical; for example, these strings
 
-       ark:12345/141e86dc-d396-4e59-bbc2-4c3bf5326152
-       ark:12345/141e86dcd3964e59bbc24c3bf5326152
+`ark:12345/141e86dc-d396-4e59-bbc2-4c3bf5326152`<br>
+`ark:12345/141e86dcd3964e59bbc24c3bf5326152`
 {: .bg-secondary-subtle }
 
 identify the same thing. The reason for this feature is that text formatting
@@ -49,7 +53,7 @@ Alphanumeric characters (letters and digits) are generally adequate, but it is
 recommended to use the *betanumeric* subset, consisting only of digits and
 consonants minus ‘l’ (letter ell, often mistaken for the digit 1):
 
-         bcdfghjkmnpqrstvwxz0123456789
+`bcdfghjkmnpqrstvwxz0123456789`
 {: .bg-secondary-subtle }
 
 This happens to be the repertoire produced from *minters* (unique string
@@ -79,8 +83,8 @@ with risk too, for example, numbers assigned sequentially reveal timing
 information and strings containing letters can unintentionally spell words
 (which is why vowels are missing from the recommended character repertoire).
 
-<div class="table-responsive" markdown=1>
-|                |                                      |                           |                        |
+<div class="table-responsive" markdown="1">
+| *Opacity level* | *Longer string* | *Medium string* | *Short* |
 |----------------|--------------------------------------|---------------------------|------------------------|
 | **non-opaque** | Netscape Permanent Archive           | Gay_Divorcee_1934_April_1 | Name-to-Thing Resolver |
 | **opaque-ish** | x0001, x0002, …, x9998               | GD/1934/04/01             | n2t.net                |
@@ -171,7 +175,7 @@ called Template Handles) for any identifier types.
 
 The URL (https or http) form of the ARK is preferred, for example,
 
-       https://n2t.net/ark:99166/w66d60p2
+`https://n2t.net/ark:99166/w66d60p2`
 {: .bg-secondary-subtle }
 
 An ARK meant for external use is generally advertised (released, published,
@@ -183,7 +187,7 @@ as in
 
 which was achieved with the HTML hyperlink
 
-       <a href="https://n2t.net/ark:99166/w66d60p2"> ark:99166/w66d60p2 </a>
+`<a href="https://n2t.net/ark:99166/w66d60p2"> ark:99166/w66d60p2 </a>`
 {: .bg-secondary-subtle }
 
 An important decision is whether your URL-based ARKs will use the hostname of
@@ -199,3 +203,5 @@ how you advertise them.
 [UUID]: https://en.wikipedia.org/w/index.php?title=Universally_unique_identifier&oldid=906541334
 [ARK software tools and services]: resources.md
 [n2t.net]: https://n2t.net/
+
+{% include content/section.html do="end" %}

@@ -1,0 +1,7 @@
+{% if page.callout %}
+<div class="container">
+    <div class="arka__callout" lang="{{ page.callout_lang | default: 'en' }}">
+        {{ page.callout | markdownify }}
+    </div>
+</div>
+{% endif %}

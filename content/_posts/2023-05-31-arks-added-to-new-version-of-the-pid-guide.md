@@ -10,6 +10,7 @@ date: 2023-05-31T13:41:11+00:00
 published: true
 image:
   url: "/assets/images/posts/2023-05-31-arks-added-to-new-version-of-the-pid-guide/pidwijzer.png"
+  alt: "Screen shot of first questions of the PID guide."
 ---
 
 The PID Guide, an interactive resource by the National Archives of the
@@ -23,7 +24,7 @@ appropriate Persistent Identifier (PID) system. PIDs such as ARKs, DOIs,
 Handles, and URNs can come with subtle tradeoffs that depend on each
 organization’s needs.
 
-![Screen shot of first questions of the PID guide.]{: .img-thumbnail .img-responsive fetchpriority="high" height="451" loading="eager" width="715"}
+{% include content/fig.html url=page.image.url description=page.image.alt %}
 
 The PID Guide helps you learn and think about important PID topics, and guides
 your first steps towards selecting a PID system.

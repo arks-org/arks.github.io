@@ -21,5 +21,27 @@
 
       // Initial update of theme
       updateTheme();
+
+      /**
+       * Keep the mobile links visible unless Bootstrap's collapse component
+       * and its CSS both load. Only then expose and initialize the toggle.
+       */
+      window.addEventListener("load", () => {
+        const menu = document.querySelector("#navbar-content");
+        const toggle = document.querySelector('[aria-controls="navbar-content"]');
+        const Collapse = window.bootstrap && window.bootstrap.Collapse;
+        const bootstrapCssLoaded = window
+          .getComputedStyle(document.documentElement)
+          .getPropertyValue("--bs-body-font-family")
+          .trim();
+
+        if (!menu || !toggle || !Collapse || !bootstrapCssLoaded) {
+          return;
+        }
+
+        menu.classList.add("collapse");
+        new Collapse(menu, { toggle: false });
+        toggle.hidden = false;
+      });
     })();
   </script>

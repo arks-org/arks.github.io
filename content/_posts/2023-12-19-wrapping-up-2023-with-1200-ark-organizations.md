@@ -8,10 +8,13 @@ date: 2023-12-19T00:00:00+00:00
 published: true
 image:
   url: "/assets/images/posts/2023-12-19-wrapping-up-2023-with-1200-ark-organizations/map_dec_2023.png"
+  alt: "World map of more than 1,200 ARK-assigning organizations in December 2023. Markers cluster most densely in western Europe and the eastern United States, with additional organizations across the Americas, Africa, Asia, and Oceania."
 image2:
   url: "/assets/images/posts/2023-12-19-wrapping-up-2023-with-1200-ark-organizations/naan_growth_2023.png"
+  alt: "Line chart showing slow growth in ARK-assigning organizations during the 2000s, followed by a steeper rise after 2010 to more than 1,200 organizations in December 2023."
 image3:
   url: "/assets/images/posts/2023-06-14-community-update-2023-06-13-stickers-tutorials-code-of-conduct/arka-vinyl-sticker.png"
+  alt: "ARK Alliance vinyl sticker, available to order online."
 conduct:
   url: "/about/ark-community-code-of-conduct"
 ---
@@ -21,7 +24,7 @@ registered ARK organizations.
 
 <!--more-->
 
-![][map]{: .img-thumbnail .img-responsive fetchpriority="high" height="auto" loading="eager"}
+{% include content/fig.html url=page.image.url alt=page.image.alt nocaption=true %}
 
 2023 was another big year for the ARK Alliance (ARKA). Some highlights:
 
@@ -38,13 +41,15 @@ registered ARK organizations.
 - worked with the Dutch [PID Guide (PIDwijzer)][] to integrate ARKs
 - made ARK Alliance stickers available to order [online here][]
 
-<div class="row" align="center" markdown=1>
+<div class="flex-container">
+<div class="flex-item" style="margin-left: 3rem;" markdown="1">
 
-![][chart]{: .img-thumbnail .img-responsive fetchpriority="high" height="80" loading="eager" width="160"}
-{: .col }
+{% include content/fig.html url=page.image2.url alt=page.image2.alt nocaption=true %}
 
-<div class="col" markdown=1>
-![][sticker]{: .img-thumbnail .img-responsive fetchpriority="high" height="142" loading="eager" width="129" }
+</div>
+<div class="flex-item" style="margin-left: 2rem; margin-top: 1.5rem;" markdown="1">
+
+{% include content/fig.html url=page.image3.url description=page.image3.alt nocaption=true width="57%" %}
 
 </div>
 </div>

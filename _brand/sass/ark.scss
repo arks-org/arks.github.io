@@ -1,58 +1,467 @@
 @import "utils";
 
-// branding overrides
-.navbar {
-  --bs-navbar-active-color: #b8860b;
+:root {
+  --bs-code-color: #000000;
+
+  --arka-color-link: #1345f8;
+  --arka-color-text: #424242;
+  --arka-color-gold: #976e07;
+
+  --arka-bg-warm: #f9f4e7;
+  --arka-bg-cool: #ffffff;
+  --arka-bg-dark: #000000;
+  --arka-bg-grey: #e2e2e2;
+  --arka-bg-ascii-art: #e3f5ff;
+
+  --arka-callout-bg: #e3f5ff;
+  --arka-callout-border: #063e5d;
+  --arka-caption-color: #5f5a50;
+
+  --arka-highlight-bg: #424242;
+  --arka-highlight-text: #ffffff;
+  --arka-highlight-link: #fcd36f;
+
+  --arka-tagline-color: #b3b3b3;
+  --arka-header-text: #ffffff;
+
+  --arka-radius-sm: 0.25rem;
+  --arka-radius-md: 0.5rem;
+
+  --arka-content-max-width: 74rem;
 }
 
+[data-bs-theme="dark"] {
+  --bs-body-bg: #212529;
+  --bs-body-color: #e9ecef;
+  --bs-code-color: #f3b6d2;
+  --bs-secondary-color: #cbd1d6;
+  --bs-secondary-rgb: 203, 209, 214;
+
+  --arka-color-link: #9ab8ff;
+  --arka-color-text: #e9ecef;
+  --arka-color-gold: #e8cb72;
+
+  --arka-bg-warm: #2c2920;
+  --arka-bg-cool: #212529;
+  --arka-bg-dark: #000000;
+  --arka-bg-grey: #343a40;
+  --arka-bg-ascii-art: #163544;
+
+  --arka-callout-bg: #163544;
+  --arka-callout-border: #b9e4ff;
+  --arka-caption-color: #cbd1d6;
+}
+
+.arka__skip-link {
+  background-color: var(--arka-bg-cool);
+  color: var(--arka-color-link);
+  left: 0.75rem;
+  padding: 0.75rem 1rem;
+  position: absolute;
+  top: 0.75rem;
+  transform: translateY(-200%);
+  z-index: 1100;
+}
+
+.arka__skip-link:focus {
+  transform: translateY(0);
+}
+
+#main-content {
+  scroll-margin-top: 1rem;
+}
+
+/* flex-container and flex-item for side-by-side layouts that can easily switch
+ * to stacked layouts on smaller screens. */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;             /* Allows items to move to a new row */
+}
+
+.flex-item {
+  padding: 10px;
+  width: 100%;
+  min-width: 0;
+  flex-grow: 1;       /* Items expand to fill available space */
+  flex-basis: 300px;  /* The stacking threshold */
+}
+
+/* Bootstrap override */
+.navbar {
+  --bs-navbar-active-color: var(--arka-color-gold);
+}
+
+/* Global navbar tuning */
 .navbar-brand {
   font-family: 'Poly', serif;
 }
 
-// branding BEM (Block Element Modifier) https://css-tricks.com/bem-101/
-.ark-alliance {
+.navbar .nav-link.active {
+  font-weight: 800;
+}
 
+.arka {
+  background-color: var(--arka-bg-cool);
+  color: var(--arka-color-text);
+
+  /* core typography */
   &__title,
   &__content,
   &__footer {
     font-family: 'Poly', serif;
-    color: var(--bs-body-color);
   }
-  &__tagline
+
+  &__navbar,
+  &__tagline,
+  &__breadcrumbs {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  }
+
+  /* header */
+  &__site-header {
+    background-color: var(--arka-bg-dark);
+    color: var(--arka-header-text);
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+  }
+
+  &__title {
+    color: var(--arka-header-text);
+    margin-bottom: 0.2rem;
+    line-height: 1.05;
+  }
+
+  &__tagline {
+    color: var(--arka-tagline-color);
+    font-size: 0.95rem;
+    line-height: 1.35;
+    letter-spacing: 0.01em;
+  }
+
+  &__logo {
+    margin: -0.2em 0.25em 0.45em;
+    color: var(--arka-color-gold);
+    flex: 0 0 auto;
+  }
+
+  /* navbar */
   &__navbar {
-   font-family: 'Work Sans', sans-serif;
+    background-color: var(--arka-bg-cool);
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    font-size: 0.92rem;
+    letter-spacing: 0.015em;
+    text-transform: uppercase;
   }
+
+  &__navbar .nav-item {
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+  }
+
+  &__navbar .nav-link {
+    font-weight: 500;
+    color: var(--arka-color-text);
+    transition: none;
+  }
+
+  &__navbar .nav-link.active {
+    font-weight: 800;
+    color: var(--arka-color-gold);
+  }
+
+  &__navbar .nav-link:hover,
+  &__navbar .nav-link:focus {
+    color: var(--arka-color-gold);
+  }
+
+  &__navbar .navbar-toggler {
+    border-color: currentColor;
+    color: var(--arka-color-text);
+  }
+
+  &__navbar .navbar-toggler-icon {
+    background: none;
+    border-block: 2px solid currentColor;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  &__navbar .navbar-toggler-icon::before {
+    border-top: 2px solid currentColor;
+    content: "";
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-1px);
+    width: 100%;
+  }
+
+  &__navbar .navbar-toggler:focus-visible {
+    box-shadow: none;
+    outline: 3px solid var(--arka-color-link);
+    outline-offset: 3px;
+  }
+
+  /* breadcrumbs */
+  &__breadcrumbs {
+    padding: 0.25rem 0 0.45rem;
+    font-size: 0.88rem;
+    margin: 1rem 0;
+  }
+  
+  &__breadcrumbs .breadcrumb {
+    margin: 0;
+  }
+  
+  /* base text color */
+  &__breadcrumbs .breadcrumb-item {
+    color: var(--arka-color-text);
+  }
+
+  &__breadcrumbs a {
+    color: var(--arka-color-link);
+    text-decoration: none;
+  }
+  
+  &__breadcrumbs a:is(:hover, :focus) {
+    text-decoration: underline;
+  }
+  
+  /* separator */
+  &__breadcrumbs .breadcrumb-item + .breadcrumb-item::before {
+    content: ">";
+    color: #8a857a;
+  }
+
+  /* page background regions */
+  &__section {
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  &__section--warm {
+    background-color: var(--arka-bg-warm);
+    padding-top: 0.1px; // Prevents margin collapse
+  }
+
+  &__section--cool {
+    background-color: var(--arka-bg-cool);
+    padding-top: 0.1px; // Prevents margin collapse
+  }
+
+  &__section--dark {
+    background-color: var(--arka-bg-dark);
+    color: #fff;
+  }
+
+  /* central content region */
   &__content {
-    font-size: 1.4rem;
+    color: var(--arka-color-text);
+    font-size: 1.25rem;
+    line-height: 1.65;
+    max-width: var(--arka-content-max-width);
+    overflow-wrap: anywhere;
+  }
 
-    h2, h3, h4, h5, h6 {
-      margin-bottom: .75rem;
-    }
+  &__content img {
+    height: auto;
+    max-width: 100%;
+  }
 
-    // create "list-N-columns" classes.
-    @for $i from 2 through 4 {
+  &__content pre {
+    overflow-wrap: anywhere;
+    white-space: pre-wrap;
+  }
+
+  &__content code {
+    overflow-wrap: anywhere;
+    white-space: pre-wrap;
+  }
+
+  &__content h1 {
+    padding-bottom: 0.5rem;
+    margin: 0;
+  }
+
+  &__content h2,
+  &__content h3,
+  &__content h4,
+  &__content h5,
+  &__content h6 {
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    padding-bottom: 1.3rem;
+    line-height: 1.25;
+  }
+
+  /* gold secondary headings */
+  &__content h2 {
+    color: var(--arka-color-gold);
+    font-size: 1.9rem;
+    font-weight: 400;
+  }
+
+  &__content h2.faq-heading {
+    color: var(--arka-color-text);
+    padding-bottom: 0.2rem;
+  }
+
+  /* gold tertiary headings */
+  &__content h3,
+  &__content h4 {
+    color: var(--arka-color-gold);
+    font-size: 1.7rem;
+  }
+
+  &__content a {
+    color: var(--arka-color-link);
+    text-decoration: underline;
+    text-underline-offset: 0.1em;
+  }
+
+  &__content a:hover,
+  &__content a:focus {
+    text-decoration-thickness: 2px;
+  }
+
+  &__content caption {
+    color: var(--arka-caption-color);
+  }
+
+  &__pid-comparison {
+    min-width: 40rem;
+  }
+
+  &__pid-comparison :is(th, td):not(:first-child) {
+    white-space: nowrap;
+  }
+
+  @for $i from 2 through 4 {
+    &__content {
       @include list-columns($i);
     }
+  }
 
-    // don't let naked URLs break layouts.
-    a[href^="http"] {
-      word-break: break-word;
+  // don't let naked URLs break layouts.
+  &__content a[href^="http"] {
+    word-break: break-word;
+  }
+
+  /* blue notification/callout */
+  &__callout {
+    background-color: var(--arka-callout-bg);
+    border: 1px solid var(--arka-callout-border);
+    color: var(--arka-callout-border);
+    padding: 1rem 1.25rem;
+    margin: 1.5rem 0 0;
+    display: flex;
+    align-items: center;
+    p {
+      margin: 0; // Remove default browser margins
     }
   }
 
+  /* grey box for side notes, tips, or as a visual break */
+  &__side-note {
+    background-color: var(--arka-bg-grey);
+    color: var(--arka-color-text);
+    padding: 1.25rem 1.25rem 0.25rem 1.25rem;
+    margin: 1.9rem 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  /* dark highlight / CTA (Call to Action) box */
+  &__highlight {
+    background-color: var(--arka-highlight-bg);
+    color: var(--arka-highlight-text);
+    padding: 1.25rem 1.5rem;
+    margin: 1.7rem 0;
+    line-height: 1.6;
+  }
+
+  &__highlight p:last-child {
+    margin-bottom: 0;
+  }
+
+  &__highlight a {
+    color: var(--arka-highlight-link);
+    text-decoration: underline;
+    text-underline-offset: 0.12em;
+  }
+
+  &__highlight a:hover,
+  &__highlight a:focus {
+    color: var(--arka-highlight-link);
+    text-decoration-thickness: 2px;
+  }
+
+  &__figure {
+    display: table;
+    margin: 1.5rem auto;
+    max-width: 100%;
+  }
+
+  &__ascii_art {
+    background-color: var(--arka-bg-ascii-art);
+    display: table;
+    padding: 0.5rem;
+    max-width: 100%;
+    line-height: 1.2;
+    pre {
+        margin: 0;
+        overflow-wrap: normal;
+        overflow-x: auto;
+        white-space: pre;
+    }
+  }
+
+  /* smaller captions */
+  &__caption,
+  figcaption,
+  .wp-caption-text {
+    display: table-caption;
+    caption-side: bottom;
+    color: var(--arka-caption-color);
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-top: 0.95rem;
+    line-height: 1.45;
+  }
+
+  /* media */
   .post-image {
     height: 200px;
-    width: auto;   /* Maintain aspect ratio */
-    object-fit: cover; /* Optionally cover container w.o. stretching */
+    width: auto;
+    object-fit: cover;
   }
 
   .text-brand {
-    color: #b8860b;
+    color: var(--arka-color-gold);
+  }
+
+  /* footer */
+  &__footer {
+    color: var(--arka-color-text);
+  }
+
+  &__footer a,
+  &__footer-date {
+    color: var(--arka-color-text);
+  }
+
+  &__footer a:hover,
+  &__footer a:focus {
+    color: var(--arka-color-link);
   }
 }
 
+/* icon sizing */
 .icon {
-  width:  1.6rem;
+  width: 1.6rem;
   height: 1.6rem;
   display: inline-block;
   vertical-align: -0.125em;
@@ -60,7 +469,7 @@
 }
 
 .icon-lg {
-  width:  6.1rem;
+  width: 6.1rem;
   height: 6rem;
   fill: currentColor;
 }

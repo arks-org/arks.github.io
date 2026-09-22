@@ -2,6 +2,10 @@
 @mixin list-columns($num-columns) {
   .list-#{$num-columns}-columns {
     columns: $num-columns;
+
+    @media (max-width: 35.999rem) {
+      columns: 1;
+    }
   }
 }
 // usage: @include list-columns(2); // Creates a class for 2 columns

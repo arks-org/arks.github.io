@@ -1,0 +1,44 @@
+{% comment %}
+
+  Usage: Use capture to get formatted markdown, for example (without { and }),
+    % capture my_text %
+      ### Project Details
+      This section contains a complex list:
+      *   **Timeline**: 4 weeks
+      *   **Tools**: Jekyll, Liquid
+      *   **Goal**: Responsive layout
+
+      Can have [multiple paragraphs](https://jekyllrb.com) and links here.
+    % endcapture %
+  Then use the side-by-side include with same arguments as fig include, eg,
+      url="/assets/images/example.jpg"
+      description="This is an example image."
+      link="https://example.com"
+      nocaption=true
+  plus the content and an optional reverse flag:
+      content=my_text
+      reverse=true
+  For example (args must all be on one line):
+      {% include content/side-by-side.html content=my_text reverse=true url="..." description="..." nocaption=true %}
+
+{% endcomment %}
+
+{%- assign direction = "row" -%}
+{%- if include.reverse -%}
+  {%- assign direction = "row-reverse" -%}
+{%- endif -%}
+<div class="arka-side-layout" 
+     style="display: flex; flex-wrap: wrap; flex-direction: {{ direction }}; gap: 2rem; align-items: flex-start;">
+  <!-- Content Column -->
+  <div class="arka-side-layout__text" markdown="1" style="flex: 1 1 30rem; min-width: 0;">
+    {{ include.content }}
+  </div>
+  <!-- Image/Figure Column -->
+  <div class="arka-side-layout__image" style="flex: 1 1 20rem; max-width: 100%;">
+    {%- assign url = include.url -%}
+    {%- assign description = include.description -%}
+    {%- assign link = include.link | default: nil -%}
+    {%- assign nocaption = include.nocaption | default: "1" -%}
+    {% include content/fig.html url=url description=description link=link nocaption=nocaption %}
+  </div>
+</div>

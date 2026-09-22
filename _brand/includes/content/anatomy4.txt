@@ -1,0 +1,6 @@
+   Resolver Service            Compact ARK
+  __________________  _______________________________
+ /                  \/                               \
+ https://example.org/ark:/12345/x6np1wh8k/c3/s5.v7.xsl 
+ \____________________________/\________/\___________/
+              Prefixes          Base Name   Suffixes

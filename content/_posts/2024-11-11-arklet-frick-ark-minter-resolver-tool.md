@@ -8,14 +8,14 @@ date: 2024-11-10
 published: true
 image:
   url: "/assets/images/posts/Frick_Collection_wkpdia.jpg"
+  alt: "Exterior of the Frick Collection building in New York City (photo by Ajay Suresh, CC BY 2.0)."
 ---
 
 Arklet-frick is a tool created by the Frick collection for minting and resolving ARKs.
 
 <!--more-->
 
-![][building]{: .img-thumbnail .img-responsive fetchpriority="high" height="auto" loading="eager"}
-*Exterior of the Frick Collection building in New York City (photo by Ajay Suresh, CC BY 2.0)*
+{% include content/fig.html url=page.image.url description=page.image.alt %}
 
 In 2021, the Frick Collection announced that it would start assigning ARK
 identifiers to assets in its digital collections and library catalog. The

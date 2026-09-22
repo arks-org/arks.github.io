@@ -8,8 +8,10 @@ date: 2021-11-01T20:05:18+00:00
 published: true
 image:
   url: "/assets/images/posts/2021-11-01-the-ark-origin-story/image-4.png"
+  alt: "Capabilities defined for five types of persistent identifier (PID)."
 image2:
   url: "/assets/images/posts/2021-11-01-the-ark-origin-story/image-1.png"
+  alt: "Slide showing research output poorly represented in international indexes"
 ---
 
 The ARK scheme originated in 2001 as a response to issues with existing PID
@@ -23,9 +25,7 @@ By 2001 there were four major persistent identifier (PID) types, so why was it
 necessary to create a fifth? The origin story of the fifth type, the Archival
 Resource Key (ARK), is adapted from [this recent interview].
 
-![][1]{: .img-thumbnail .img-responsive fetchpriority="high" height="378" loading="eager" width="1024"}
-
-Capabilities defined for five types of persistent identifier (PID).
+{% include content/pid-comparison-table.html %}
 
 To explain the need for ARKs is a bit involved and touches on its four
 predecessor PID schemes: PURL, Handle, URN, DOI. Almost as soon as the Web was
@@ -154,7 +154,7 @@ make the hard job of persistence harder. Long term commitment is never free of
 cost or effort, but no one pays for the right to assign ARKs, which can be
 especially useful for organizations that need large numbers of PIDs.
 
-![][2]{: .img-thumbnail .img-responsive fetchpriority="" height="680" loading="lazy" width="1024"}
+{% include content/fig.html url=page.image2.url description=page.image2.alt nocaption=true %}
 
 Slide credit: Dominique Babini
 

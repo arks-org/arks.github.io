@@ -1,0 +1,208 @@
+#tld-container {
+  display: grid;
+  grid-template-columns: minmax(16rem, 1fr) minmax(16rem, 1fr);
+  gap: 2rem;
+  align-items: start;
+  margin-block: 1.5rem 2.5rem;
+}
+
+.ark-chart-data h3 {
+  margin-top: 0;
+}
+
+.ark-chart-figure {
+  min-width: 0;
+  margin: 1.5rem 0;
+}
+
+#tld-container .ark-chart-figure {
+  margin: 0;
+}
+
+#tldGraph,
+#yearGraph {
+  width: 100%;
+  max-width: 100%;
+  color: var(--arka-color-text, #424242);
+}
+
+#tldGraph {
+  max-width: 42rem;
+}
+
+#yearGraph svg {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.ark-tld-bars {
+  display: grid;
+  gap: 0.55rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.ark-tld-bar {
+  display: grid;
+  grid-template-columns: 5.5rem minmax(2rem, 1fr) minmax(7.5rem, auto);
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.ark-tld-bar__label,
+.ark-tld-bar__value {
+  font-variant-numeric: tabular-nums;
+}
+
+.ark-tld-bar__label {
+  font-weight: 600;
+}
+
+.ark-tld-bar__value {
+  text-align: right;
+}
+
+.ark-tld-bar__track {
+  height: 1.25rem;
+  border: 1px solid currentColor;
+}
+
+.ark-tld-bar__fill {
+  display: block;
+  height: 100%;
+  min-width: 2px;
+  background: #3b82c4;
+}
+
+.ark-chart-figure figcaption {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.ark-chart-table {
+  width: 100%;
+}
+
+.ark-chart-table table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.ark-chart-table caption {
+  color: inherit;
+  caption-side: top;
+  padding: 0 0 0.5rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+.ark-chart-table th,
+.ark-chart-table td {
+  padding: 0.45rem 0.5rem;
+  border-bottom: 1px solid var(--bs-border-color, #767676);
+  overflow-wrap: anywhere;
+  vertical-align: top;
+}
+
+.ark-chart-table th:first-child,
+.ark-chart-table td:first-child {
+  width: 40%;
+  text-align: left;
+}
+
+.ark-chart-table th:not(:first-child),
+.ark-chart-table td:not(:first-child) {
+  width: 30%;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.ark-chart-table--years {
+  max-width: 42rem;
+  margin-bottom: 2.5rem;
+}
+
+.ark-chart-filter {
+  max-width: 48rem;
+  margin-block: 1rem;
+}
+
+.ark-chart-filter label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+}
+
+.ark-chart-filter__controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: stretch;
+}
+
+.ark-chart-filter select,
+.ark-chart-filter button {
+  min-height: 2.75rem;
+  padding: 0.5rem 0.75rem;
+  font: inherit;
+}
+
+.ark-chart-filter select {
+  flex: 1 1 18rem;
+  min-width: 0;
+}
+
+.ark-chart-filter button {
+  flex: 0 1 auto;
+}
+
+#yearGraphStatus {
+  margin-block: 1rem;
+  font-weight: 600;
+}
+
+.ark-chart-bar {
+  fill: #9a7610;
+}
+
+@media (max-width: 48rem) {
+  #tld-container {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.5rem;
+  }
+
+  #tldLegend {
+    order: -1;
+  }
+}
+
+@media (max-width: 24rem) {
+  .ark-chart-table th,
+  .ark-chart-table td {
+    padding-inline: 0.25rem;
+    font-size: 0.95rem;
+  }
+
+  .ark-chart-filter__controls > * {
+    width: 100%;
+  }
+
+  .ark-tld-bar {
+    grid-template-columns: 4rem minmax(1.5rem, 1fr) minmax(6.75rem, auto);
+    gap: 0.35rem;
+  }
+
+  .ark-tld-bar__value {
+    font-size: 0.875rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #yearGraph * {
+    transition: none !important;
+  }
+}

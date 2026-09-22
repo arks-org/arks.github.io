@@ -8,8 +8,10 @@ date: 2021-12-08T21:49:56+00:00
 published: true
 image:
   url: "/assets/images/posts/2021-12-08-the-frick-collection-to-use-arks/Frick-Art-Reference-Library-Reading-Room-Photographer-George-Koelle-2018.jpg"
+  alt: "Frick Art Reference Library Reading Room (George Koelle, 2018)."
 image2:
   url: "/assets/images/posts/2021-12-08-the-frick-collection-to-use-arks/screencapture-digitalcollections-frick-org-2021-09-22-12_08_46-2048x1538.png"
+  alt: "Screencapture of the Frick Collection's digital collections web page."
 ---
 
 The Frick Collection has chosen ARK persistent identifiers to enhance
@@ -24,7 +26,7 @@ assets. Guiding this decision was the flexibility of the ARK identifier scheme
 in terms of metadata and content, which lends itself to the range of materials
 and future use cases that we anticipate.
 
-![][1]{: .img-thumbnail .img-responsive fetchpriority="high" height="769" loading="eager" width="1024" }
+{% include content/fig.html url=page.image2.url description=page.image2.alt nocaption=true %}
 
 Our website makes available a unique resource for research in the humanities
 and art history, providing access to over 1.8 million pages of material. That
@@ -32,9 +34,7 @@ includes images and documentation for works of art, books in the public
 domain, and the archives of The Frick Collection. ARK identifiers are a
 natural choice to support this diversity of scholarly resources.
 
-![][2]{: .img-thumbnail .img-responsive fetchpriority="" height="682" loading="lazy" width="1024" }
-
-Frick Art Reference Library Reading Room (George Koelle, 2018)
+{% include content/fig.html url=page.image.url description=page.image.alt %}
 
 [Frick Collection]: https://digitalcollections.frick.org/
 [1]: {{ page.image2.url | absolute_url }}

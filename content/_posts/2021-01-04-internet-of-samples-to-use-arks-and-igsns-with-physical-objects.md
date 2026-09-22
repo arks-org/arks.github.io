@@ -8,11 +8,15 @@ date: 2021-01-04T23:08:29+00:00
 published: true
 image:
   url: "/assets/images/posts/2021-01-04-internet-of-samples-to-use-arks-and-igsns-with-physical-objects/iron_blade_roman.png"
-  title: "Iron blade from the time of the Roman Republic"
+  alt: "Iron blade from the time of the Roman Republic."
+  link: "https://n2t.net/ark:/28722/k2tt4vh8s"
 image2:
   url: "/assets/images/posts/2021-01-04-internet-of-samples-to-use-arks-and-igsns-with-physical-objects/ekansa.png"
+  alt: "Photo of Eric Kansa, Open Context Program Director."
 image3:
   url: "/assets/images/posts/2021-01-04-internet-of-samples-to-use-arks-and-igsns-with-physical-objects/SI_biosample.png"
+  alt: "Smithsonian NMNH Biorepository sample."
+  link: "https://n2t.net/ark:/65665/337856f1a-655e-4ad7-8b1e-f10a16dfb6e3"
 ---
 
 NSF-funded 'Internet of Samples' project integrates scientific samples into a
@@ -35,7 +39,7 @@ identifier, including ARKs and IGSNs for physical objects. CDL’s [N2T] and
 [EZID] systems will provide [ARK] identifiers for a number of partner
 collections.
 
-[![{{ page.image.title }}]{: .img-thumbnail .img-responsive fetchpriority="high" height="245" loading="eager" width="404"}][1]
+{% include content/fig.html url=page.image.url description=page.image.alt link=page.image.link nocaption=true %}
 
 Kerstin Lehnert, Director of Lamont’s Geoinformatics Research Group, is
 serving as principal investigator. All too often, she says, researchers go to
@@ -59,7 +63,7 @@ COVID restrictions for travel, researchers haven’t been able to go into the
 field to collect new samples and so access to existing collections has never
 been more important,” said Lehnert.
 
-![][2]{: .img-thumbnail .img-responsive height="171" loading="lazy" width="145"}
+{% include content/fig.html url=page.image2.url description=page.image2.alt nocaption=true width="50%" %}
 
 In the words of Eric Kansa, Open Context Program Director, “Archaeologists use
 physical evidence to study the human past, and we rely on collaboration with
@@ -71,7 +75,7 @@ laboratory study and museum curation. iSamples may even help in combating the
 illegal trade of antiquities which, on a huge scale, destroys the historical
 record by divorcing objects from their contexts.”
 
-[![][3]{: .img-thumbnail .img-responsive height="394" loading="lazy" width="379"}][4]
+{% include content/fig.html url=page.image3.url description=page.image3.alt link=page.image3.link nocaption=true %}
 
 “In the evolving collaborative world of museums and collections, iSamples is
 an exciting endeavor to provide linkages across both domains and institutions
@@ -93,7 +97,7 @@ potential users.
 
 [N2T]: https://n2t.net/
 [EZID]: https://ezid.cdlib.org/
-[ARK]: _pages/index.md
+[ARK]: {{ site.baseurl }}/
 [{{ page.image.title }}]: {{ page.image.url | absolute_url }}
 [1]: https://n2t.net/ark:/28722/k2tt4vh8s
 [2]: {{ page.image2.url | absolute_url }}

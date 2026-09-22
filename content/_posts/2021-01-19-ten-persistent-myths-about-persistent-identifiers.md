@@ -8,6 +8,7 @@ date: 2021-01-19T21:22:42+00:00
 published: true
 image:
   url: "/assets/images/posts/2021-01-19-ten-persistent-myths-about-persistent-identifiers/nessy.jpg"
+  alt: "Nessie, the Loch Ness Monster, is a mythical creature that is said to inhabit Loch Ness in Scotland, depicted here as a large, long-necked creature with humps on its back."
 ---
 
 Persistent identifier (PID) myths clarified: PIDs aren't access guarantees;
@@ -15,7 +16,7 @@ they can break, need maintenance; ARKs challenge norms with flexibility.
 
 <!--more-->
 
-![][1]{: .img-thumbnail .img-responsive fetchpriority="high" height="169" loading="eager" width="300"}
+{% include content/fig.html url=page.image.url description=page.image.alt nocaption=true %}
 
 \[*Slightly expanded from a Twitter thread published 2018-08-24.*\] Here is a
 list of 10 persistent myths about persistent identifiers (PIDs), whether of

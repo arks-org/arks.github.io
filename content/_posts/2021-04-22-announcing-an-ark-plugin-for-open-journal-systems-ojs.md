@@ -8,6 +8,7 @@ date: 2021-04-22T02:49:22+00:00
 published: true
 image:
   url: "/assets/images/posts/2021-04-22-announcing-an-ark-plugin-for-open-journal-systems-ojs/innosoft.png"
+  alt: "Cover of the first journal to use the ARK OJS plugin."
 ---
 
 An open source plugin enables ARK usage in Open Journal Systems (OJS),
@@ -24,9 +25,7 @@ The plugin is compatible with OJS versions 3.x.x and is currently used to
 publish the journal, *[Innovación y Software]*, of which I am the
 editor-in-chief. You can find the plugin at my [github repo].
 
-![][1]{: .img-thumbnail .img-responsive fetchpriority="high" height="422" loading="eager" width="326"}
-
-First journal to use the ARK OJS plugin.
+{% include content/fig.html url=page.image.url description=page.image.alt width="50%" %}
 
 Installation and configuration for the plugin is documented (PDFs) in English
 ([ARK Plugin Guide for OJS]) and Español ([Guia del Plugin ARK para OJS]). At

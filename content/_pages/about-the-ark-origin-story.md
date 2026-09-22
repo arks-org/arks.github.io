@@ -12,13 +12,13 @@ persistence. Decentralized, open source, metadata linking.
 
 <!--more-->
 
+{% include content/section.html do="start" color="cool" label="Why ARKs came about" %}
+
 By 2001 there were four major persistent identifier (PID) types, so why was it
 necessary to create a fifth? The origin story of the fifth type, the Archival
 Resource Key (ARK), is adapted from [this interview in 2021].
 
-![][1]{: .img-thumbnail .img-fluid fetchpriority="high" height="378" loading="eager" width="1024"}
-
-Capabilities defined for five types of persistent identifier (PID).
+{% include content/pid-comparison-table.html %}
 
 To explain the need for ARKs is a bit involved and touches on its four
 predecessor PID schemes: PURL, Handle, URN, DOI. Almost as soon as the Web was
@@ -142,9 +142,26 @@ persistence harder. Long term commitment is never free of cost or effort, but
 no one pays for the right to assign ARKs, which can be especially useful for
 organizations that need large numbers of PIDs.
 
-![][2]{: .img-thumbnail .img-fluid fetchpriority="" height="680" loading="lazy" width="1024"}
+## Research output poorly represented in international indexes
 
-Slide credit: Dominique Babini
+Dominique Babini's slide reports that, of 5,415 peer-reviewed journals from
+Latin America and the Caribbean listed in Latindex, 16% (841 journals) were
+in Scopus and 5% (294 journals) were in Web of Science.
+
+{% include content/fig.html
+  url="/assets/images/pages/about-the-ark-origin-story/image-1.png"
+  label="Research representation in international indexes"
+  alt="A presentation slide combines journal-indexing statistics with two world cartograms for 1992 and 2011. The statistics and maps are described in the surrounding text."
+  description="Slide credit: Dominique Babini. Cartogram source: Juan Pablo Alperín (2014), World scaled by number of documents in Web of Science by Authors Living There, LSE Impact Blog."
+%}
+
+The two cartograms resize countries by the number of Web of Science documents
+produced by authors living there, rather than by geographic land area. The
+1992 map greatly enlarges North America and Europe, while Latin America and
+Africa appear as thin, small areas. In the 2011 map, Asia occupies more space,
+while North America and Europe remain prominent and Latin America and Africa
+remain small. Together, the maps illustrate the uneven representation of
+research from different regions in this international index.
 
 
 [this interview in 2021]: https://saaers.wordpress.com/2021/09/14/ark-alliance-an-interview-with-john-kunze/
@@ -153,3 +170,5 @@ Slide credit: Dominique Babini
 [Cool URIs don’t change]: https://www.w3.org/Provider/Style/URI
 [84% of peer-reviewed Latin American journals in 2014 were not indexed by Scopus or the Web of Science]: https://www.slideshare.net/Babini/coasp2014-dominique-babini-clacso
 [2]: ../assets/images/pages/about-the-ark-origin-story/image-1.png
+
+{% include content/section.html do="end" %}

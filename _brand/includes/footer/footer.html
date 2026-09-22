@@ -1,23 +1,28 @@
-<footer class="ark-alliance__footer border-top border-dark-subtle my-4">
-	<nav class="container mt-4">
-		<ul class="d-flex justify-content-between list-unstyled pb-2">
+<footer lang="en" class="arka__footer border-top border-dark-subtle my-4">
+	<nav class="container mt-4" aria-label="Footer links">
+		<ul class="d-flex flex-wrap justify-content-between gap-3 list-unstyled pb-2">
 			<li>
-				<a class="text-uppercase link-secondary"
+				<a class="text-uppercase"
 				   href="{{ site.contact.newsletter }}">
 					Subscribe to Newsletter
 				</a>
 			</li>
 			<li>
-				<a class="text-uppercase link-secondary"
+				<a class="text-uppercase"
 				   href="{{ site.baseurl }}{% link _pages/sitemap.md %}">
 					Sitemap</a>
-                <span class="text-uppercase link-secondary"
+                <span class="arka__footer-date text-uppercase"
                       style="white-space: nowrap;">
                     {{ site.time | date: "%Y-%m-%d" }}</span>
-                    <span style="white-space: nowrap;">
 			</li>
 			<li>
-				<a class="text-uppercase link-secondary"
+				<a class="text-uppercase"
+				   href="{{ site.baseurl }}{% link _pages/accessibility.md %}">
+					Accessibility
+				</a>
+			</li>
+			<li>
+				<a class="text-uppercase"
 				   href="mailto:{{ site.contact.email }}">
 					Contact Us
 				</a>

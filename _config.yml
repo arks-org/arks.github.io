@@ -22,7 +22,7 @@ author: "The ARK Alliance"
 
 # First draft of ARK spec published 2001.02.27
 ark_age: "25 years"
-num_ark_orgs: 1700
+num_ark_orgs: 1800
 num_support_orgs: 47
 num_arks: "15.3 billion"
 num_dois: "417 million"
@@ -34,6 +34,7 @@ ark_spec_current: "https://datatracker.ietf.org/doc/draft-kunze-ark/"
 naan_form_url: "https://docs.google.com/forms/d/e/1FAIpQLSf_847hNXtLGikR-XeDy1uT1AKd24DpHnt5UQh2i8ORRu7u-w/viewform"
 shoulder_form_url: "https://docs.google.com/forms/d/10J2VxsaeQG-IpkqZ6wpqAKqt8hYnMSf4bxdL8ktI-to/"
 
+wg_wikis: "https://github.com/arks-org/arks.github.io/wiki"
 naan_registry_txt: "https://cdluc3.github.io/naan_reg_priv/naan_registry.txt"
 naan_registry_json: "https://cdluc3.github.io/naan_reg_priv/naan_records.json"
 shoulder_registry_txt: "https://cdluc3.github.io/naan_reg_priv/shoulder_registry.txt"
@@ -50,6 +51,7 @@ contact:
 # SEO SPECIFIC
 # see https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 ##############
+
 #twitter:
 #  username: arks_org
 #  card: summary
@@ -94,7 +96,6 @@ includes_dir        : _brand/includes
 sass:
   sass_dir: _brand/sass
 
-
 #############
 # Content/Collections
 # content types for the site, grouped into a "content" directory
@@ -110,7 +111,9 @@ collections:
 
 #################################
 # Default Properties and Metadata
+# Example callout: "***Notice***: &nbsp; This site is undergoing changes for accessibility and usability."
 #################################
+
 defaults:
   - scope:
       type: "posts"
@@ -122,6 +125,12 @@ defaults:
     values:
       layout: page
   - scope:
+      path: "" # an empty string here means all files in the project
+      type: "pages"
+    values:
+      # add/remove quoted value after colon to add/remove callout on all pages
+      callout:
+  - scope:
       path: "assets/documents"
     values:
       document: true
@@ -129,7 +138,6 @@ defaults:
       path: "assets/images"
     values:
       image: true
-
 
 ##############
 # Misc. Config
@@ -142,7 +150,8 @@ excerpt_separator : <!--more-->
 ##############
 # feed plugin
 # custom path for existing legacy subscribers
-# ############
+##############
+
 feed:
   path: /feed.xml
   posts_limit: 10
@@ -150,8 +159,8 @@ feed:
 ##############
 # relative links plugin
 # markdown links to .md files resolved in gh and built site.
-# ############
-# 
+##############
+
 relative_links:
   enabled:     true
   collections: true # enable in custom collections
@@ -159,6 +168,7 @@ relative_links:
 ##########################
 # Exclude from processing.
 ##########################
+
 exclude:
   - "**/README.md"
   - "*.gemspec"
@@ -174,6 +184,8 @@ exclude:
   - CHANGELOG
   - config
   - CONTRIBUTING.md
+  - docs/
+  - scripts/
   - Gemfile
   - Gemfile.lock
   - gemfiles/

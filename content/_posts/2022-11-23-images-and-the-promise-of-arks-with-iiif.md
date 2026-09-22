@@ -10,8 +10,12 @@ date: 2022-11-23T20:19:11+00:00
 published: true
 image:
   url: "/assets/images/posts/2022-11-23-images-and-the-promise-of-arks-with-iiif/ark_iiif.jpg"
+  alt: "A rectangular detail region of interest (coordinates 2131,4016,1467,948) requested via IIIF-compliant path elements (parameters) from a manuscript held at the BnF."
+  link: "https://gallica.bnf.fr/iiif/ark:%2F12148%2Fbtv1b8449691v%2Ff29/2131,4016,1467,948/full/0/default.jpg"
 image2:
   url: "/assets/images/posts/2022-11-23-images-and-the-promise-of-arks-with-iiif/IIIF-logo-500w.png"
+  alt: "IIIF logo"
+  link: "https://iiif.io"
 ---
 
 The integration of ARKs with the International Image Interoperability
@@ -41,13 +45,22 @@ could share much of the same software, which would only need to be built once.
 Establishing standard access methods to unlock the value of open image
 collections across a large number of servers is a goal of “IIIF”.
 
-## **What is IIIF?**
+## What is IIIF?
 
-![IIIF Logo]{: .img-thumbnail .img-responsive fetchpriority="high" height="500" loading="eager" width="500"}
+<div class="flex-container">
+<div class="flex-item" markdown="1">
+
+{% include content/fig.html url=page.image2.url description="IIIF logo" link=page.image2.link nocaption=true width="50%" %}
+
+</div>
+<div class="flex-item" style="margin-left: 2rem;" markdown="1">
 
 The [International Image Interoperability Framework] (IIIF – pronounced
 “*triple-eye-eff*“) is a community-driven initiative that has defined six open
 application programming interfaces (APIs).
+
+</div>
+</div>
 
 The APIs provide a rich set of ways to describe, request, and deliver most
 image-based content on the Web. The idea is that the more repositories adopt
@@ -71,7 +84,7 @@ that discourage content sharing across collections. Such sharing becomes all
 the more valuable the more that hyperlinks to internal and external
 institutional image servers are stable. Enter persistent identifiers.
 
-## **The IIIF API expressed via identifiers**
+## The IIIF API expressed via identifiers
 
 While IIIF recommends no particular persistent identifier for linking to
 web-accessible content, they mention ARKs and persistence. In particular, the
@@ -93,7 +106,7 @@ specification, see Comments below)
 requests the return of a specific rectangular region “2131,4016,1467,948”, at
 full quality and in the JPEG (“.jpg”) format. This region is shown below.
 
-![][1]{: .img-thumbnail .img-responsive fetchpriority="" height="662" loading="lazy" width="1024"}
+{% include content/fig.html url=page.image.url description=page.image.alt link=page.image.link %}
 
 A rectangular detail region of interest (coordinates 2131,4016,1467,948)
 requested via IIIF-compliant path elements (parameters) from a manuscript held
@@ -104,18 +117,21 @@ level. For example, a bound manuscript is a compound object consisting of page
 objects. The IIIF model allows for multiple image “canvas” objects under a
 top-level “manifest” object (covered in the [IIIF presentation API]).
 
-## **Congruence of ARK extensions and IIIF paths**
+## Congruence of ARK extensions and IIIF paths
 
 ARK suffixes (extensions), which are used to refer to sub-objects in a
 hierarchy and to variant formats, are a natural fit for IIIF, with its API
 parameters expressed as path extensions.
 
-            Resolver Service            Compact ARK
-           __________________  _______________________________
-          /                  \/                               \
-          https://example.org/ark:/12345/x6np1wh8k/c3/s5.v7.xsl
-          \____________________________/\________/\___________/
-                       Prefixes          Base Name   Suffixes
+For example, consider
+`https://example.org/ark:12345/x6np1wh8k/c3/s5.v7.xsl`:
+
+- The resolver service is `https://example.org/`.
+- The compact ARK starts with the `ark:` scheme label and NAAN prefix
+  `ark:12345/`.
+- The base name is `x6np1wh8k`.
+- The suffix `/c3/s5.v7.xsl` identifies contained sub-objects with `/c3/s5`
+  and a variant with `.v7.xsl`.
 
 Moreover, because ARKs permit [suffix passthrough], it is possible to register
 just the top-level resolvable ARK to support an infinite number of resolvable
@@ -128,8 +144,11 @@ specification]. The table below shows more of the parallelism.
 
 <div class="table-responsive">
 <table class="table table-hover table-striped">
+<caption style="caption-side: top; text-align: center;">
+<em>ARK Components and the IIIF URI Syntax Recommendations</em>
+</caption>
 <tr>
-<th>ARK</th>
+<th>ARKs in general</th>
 <td>https://{NMA}/ark:/{NAAN}/{name}/{qualifiers}</td>
 </tr>
 <tr>
@@ -156,9 +175,7 @@ specification]. The table below shows more of the parallelism.
 </table>
 </div>
 
-The ARK Anatomy and the IIIF URI Syntax Recommendations
-
-## **ARKs and IIIF in practice**
+## ARKs and IIIF in practice
 
 Many organizations use the ARK and IIIF specifications, sometimes in
 conjunction. Examples include the BnF (French National Library), the British
@@ -180,10 +197,13 @@ are highly flexible in terms of descriptive metadata. A case can be made that
 they make persistence and interoperability practicable and affordable for
 cultural heritage institutions.
 
-Below are more links that could be interesting to people who want to implement
-ARKs and IIIF.
+John Kunze, Julien A. Raemy, and Richard Higgins (Durham University Library)
+presented on the topic of ARK and IIIF at the IIIF Community Call on January
+25, 2023 [video recording](https://www.youtube.com/watch?v=it5LA3VRXpE). Below
+are more links that could be interesting to people who want to implement ARKs
+and IIIF.
 
-## **References**
+## References
 
 Ben Brumfield, Sara Brumfield, Andy Irving, Rachael Kotarski, Joseph Padfield,
 Julien A. Raemy, Anne McLaughlin, & Frances Madden. (2021). PIDs in IIIF
@@ -204,12 +224,6 @@ Durham University Library:
 French National Library (BnF):
 <https://api.bnf.fr/api-iiif-de-recuperation-des-images-de-gallica> (in
 French)
-
-------------------------------------------------------------------------
-
-    John Kunze, Julien A. Raemy, and Richard Higgins (Durham University
-    Library) presented on the topic of ARK and IIIF at the IIIF Community Call
-    on January 25, 2023 which was recorded.
 
 [interactive figure]: https://gallica.bnf.fr/iiif/ark:/12148/btv1b8449691v/manifest.json
 [Universal Viewer]: https://universalviewer.io/

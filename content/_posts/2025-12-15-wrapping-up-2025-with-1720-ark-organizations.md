@@ -8,17 +8,20 @@ date: 2025-12-15
 published: true
 image:
   url: "/assets/images/share/arka2025map.png"
+  alt: "Global map showing the locations of ARK organizations in 2025."
 image2:
   url: "/assets/images/share/arka_logo.png"
+  alt: "ARK logo with transparent background, in PNG format."
 image3:
   url: "/assets/images/share/arka_logo.svg"
+  alt: "ARK logo with transparent background, in SVG format."
 ---
 
 2025 has been a great year for the ARK Alliance. The 1720+ ARK organizations include 12 national libraries, 215 universities, 254 archives, 144 museums, 124 journals, and 59 scientific centers.
 
 <!--more-->
 
-![][map]{: .img-thumbnail .img-responsive fetchpriority="high" height="auto" loading="eager"}
+{% include content/fig.html url=page.image.url description=page.image.alt nocaption=true %}
 
 2025 has been a great year for the ARK Alliance (ARKA). With 247 new organizations registered so far, the total number of ARK organizations stands at 1720\. That includes:
 
@@ -32,11 +35,11 @@ image3:
 Some highlights for 2025:
 
 * Implementors are welcome to add the ARK logo to their sites and collections, linking back to arks.org. The logo, with transparent (cut out) background, is available to be copied (e.g., right-click and "Save image as") in PNG or SVG format:
-<div class="row" align="center" markdown=1>
-![][arklogopng]{: .img-thumbnail .img-responsive fetchpriority="high" loading="eager" height="140" width="140"}
+<div class="row" align="center" markdown="1">
+![ARK logo PNG format][arklogopng]{: .img-thumbnail .img-responsive fetchpriority="high" loading="eager" height="140" width="140"}
 {: .col }
-<div class="col" markdown=1>
-![][arklogosvg]{: .img-thumbnail .img-responsive fetchpriority="high" loading="eager" height="140" width="140"}
+<div class="col" markdown="1">
+![ARK logo SVG format][arklogosvg]{: .img-thumbnail .img-responsive fetchpriority="high" loading="eager" height="140" width="140"}
 </div>
 </div>
 * ARK tutorials have been given at conferences including IIIF, Europeana Pro, DCMI, iPRES, SWIB, and Fedora Virtual Showcase, with two new videos added to the [ARKA youtube channel](https://youtube.com/@arks_org) and a French-language tutorial presented in Dakar ([slides](https://docs.google.com/presentation/d/1V7_AnsRiE3X6SSdQnq-2NYDosjp1u2u-Vqp8Lp8YX7Y/edit?usp=sharing)).  

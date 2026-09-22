@@ -8,6 +8,7 @@ date: 2022-02-22T04:47:00+00:00
 published: true
 image:
   url: "/assets/images/posts/2022-02-22-community-update/image-1.png"
+  alt: "World map of more than 900 ARK-assigning organizations in February 2022. Markers cluster most densely in western Europe and the eastern United States, with additional organizations across the Americas, Africa, Asia, and Oceania."
 ---
 
 In February 2022, the ARK community reached 900 registered organizations,
@@ -16,7 +17,7 @@ publication.
 
 <!--more-->
 
-![][1]{: .img-thumbnail .img-responsive fetchpriority="high" height="454" loading="eager" width="1024" }
+{% include content/fig.html url=page.image.url alt=page.image.alt nocaption=true %}
 
 We are excited this month to witness the 900th organization to register to use
 ARKs, and to welcome Romuald Verrier, from the French Ministry of Education,

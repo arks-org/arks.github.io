@@ -8,6 +8,7 @@ date: 2023-06-14T02:30:11+00:00
 published: true
 image:
   url: "/assets/images/posts/2023-06-14-community-update-2023-06-13-stickers-tutorials-code-of-conduct/arka-vinyl-sticker.png"
+  alt: "ARK Alliance logo as hexagonal vinyl sticker."
 slides:
   url: "/assets/documents/2023/06/ARK-Training-Tutorial-IIIF-2023-slides.pdf"
 ---
@@ -27,7 +28,7 @@ We now have stunning new vinyl ARK Alliance stickers! They are in a standard
 hexagonal format suitable for tiling your laptop, phone, refrigerator, etc.
 Currently they can only be ordered [online here] via Stickermule.
 
-![][1]{: .img-thumbnail .img-responsive fetchpriority="high" height="142" loading="eager" width="129" }
+{% include content/fig.html url=page.image.url description=page.image.alt nocaption=true width="20%" %}
 
 We are also happy to announce that a 3-hour ARK tutorial has been given this
 year at the annual Code4lib and IIIF conferences ([slides here]). There are

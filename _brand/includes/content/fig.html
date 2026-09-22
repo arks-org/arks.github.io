@@ -1,0 +1,41 @@
+{% comment %}
+  Usage:
+    {% include content/fig.html url="/assets/images/example.jpg" alt="A concise image description." description="This is an example image." label="Example image" link="https://example.com" nocaption=true %}
+  If no alt text is provided, tries to use the first sentence of description.
+{% endcomment %}
+
+{% if include.nocaption == nil %}
+<figure class="arka__figure"{% if include.label %} aria-label="{{ include.label | escape }}"{% endif %}>
+{% else %}
+<div class="arka__figure">
+{% endif %}
+
+  {%- assign width = include.width | default: "100%" -%}
+  {%- if include.alt != nil -%}
+    {%- assign alt = include.alt -%}
+  {%- else -%}
+    {%- assign alt = include.description | default: "" | strip_html | split: ". " | first -%}
+  {%- endif -%}
+  {% if include.link != nil %}
+    <a href="{{ include.link }}" target="_blank" rel="noopener">
+  {% endif %}
+
+      <img style="display: block; max-width: {{ width }}; height: auto;"
+           src="{{ site.baseurl }}{{ include.url }}"
+           alt="{{ alt | escape }}" />
+
+  {% if include.link != nil %}
+    </a>
+  {% endif %}
+
+  {% if include.nocaption == nil %}
+  <figcaption class="arka__caption">
+    {{ include.description | markdownify | remove: '<p>' | remove: '</p>' }}
+  </figcaption>
+  {% endif %}
+
+{% if include.nocaption == nil %}
+</figure>
+{% else %}
+</div>
+{% endif %}
