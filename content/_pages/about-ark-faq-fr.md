@@ -14,6 +14,9 @@ française du document [ARK Identifiers FAQ](/about/ark-faq-en/).
 
 {% include content/section.html do="start" color="cool" label="Sommaire de la FAQ" %}
 
+## Sommaire de la FAQ
+{: .no_toc .faq-heading }
+
 * TOC
 {:toc}
 

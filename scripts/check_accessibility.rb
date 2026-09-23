@@ -105,6 +105,16 @@ Dir.glob(File.join(site, "**", "*.html")).sort.each do |file|
       check.call(fragment.empty? || ids.include?(fragment), "FAQ link target is missing: #{link['href']}")
     end
   end
+  if path.match?(%r{about/(ark-faq-(en|es|fr)|ark-shoulders-faq-en)/})
+    toc = main.at_css("#markdown-toc")
+    check.call(toc, "FAQ table of contents is missing")
+    heading = toc&.previous_element
+    check.call(heading && heading.name == "h2", "FAQ table of contents needs a visible h2 heading immediately before it")
+    if toc && heading && heading.name == "h2"
+      check.call(!heading.text.strip.empty?, "FAQ table of contents heading needs visible text")
+      check.call(heading["id"].nil? || toc.at_css("a[href='##{heading['id']}']").nil?, "FAQ table of contents must not list its own heading")
+    end
+  end
   if path == "sitemap/index.html"
     check.call(!main.text.match?(%r{</(?:div|section)>}), "stray closing tags visible in sitemap")
     %w[es fr].each do |language|

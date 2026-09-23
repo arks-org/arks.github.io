@@ -12,6 +12,9 @@ Frequently Asked Questions and Answers about ARK Shoulders
 
 {% include content/section.html do="start" color="cool" label="ARK shoulders FAQ" %}
 
+## Table of contents
+{: .no_toc }
+
 * TOC
 {:toc}
 

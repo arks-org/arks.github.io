@@ -78,6 +78,10 @@
 }
 
 .ark-chart-figure figcaption {
+  /* The theme sets figcaption to display: table-caption for .arka__figure;
+     inside a block figure that collapses the caption to one character wide. */
+  display: block;
+  width: 100%;
   margin-top: 0.75rem;
   font-size: 0.95rem;
 }

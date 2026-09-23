@@ -13,6 +13,9 @@ Preguntas frecuentes y respuestas sobre ARK.
 
 {% include content/section.html do="start" color="cool" label="Índice de preguntas frecuentes" %}
 
+## Índice de preguntas frecuentes
+{: .no_toc .faq-heading }
+
 * TOC
 {:toc}
 

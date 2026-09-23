@@ -75,9 +75,9 @@ To get your software listed please [let us know] about it.
     ([ARK Plugin Guide for OJS (PDF)](https://github.com/yasielpv/pkp-ark-pubid/files/8398101/ARK.plugin.guide.for.OJS.pdf))
     and Español
     ([Guia del Plugin ARK para OJS (PDF)](https://github.com/yasielpv/pkp-ark-pubid/files/8398100/Guia.del.plugin.ARK.para.OJS.pdf)).
--   [ArkAndNoid][] “Omeka Classic”: module to create and manage
+-   [ArkAndNoid for Omeka Classic][ArkAndNoid]: module to create and manage
     ARKs for the Omeka Classic open source web-publishing platform
--   [ArkAndNoid][2] “Omeka S”: module to create and manage ARKs for the
+-   [ArkAndNoid for Omeka S][2]: module to create and manage ARKs for the
     Omeka S open source web-publishing platform
 -   [Archival Resource Key Identifier Name Mapping][Archival]: module for
     Drupal which allows your Drupal site to act as a Name Mapping Authority

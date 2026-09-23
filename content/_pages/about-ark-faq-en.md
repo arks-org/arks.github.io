@@ -12,6 +12,9 @@ Frequently Asked Questions and Answers about ARKs (English version).
 
 {% include content/section.html do="start" color="cool" label="FAQ table of contents" %}
 
+## FAQ table of contents
+{: .no_toc .faq-heading }
+
 * TOC
 {:toc}
 
