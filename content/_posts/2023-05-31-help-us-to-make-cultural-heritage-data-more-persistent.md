@@ -9,7 +9,7 @@ date: 2023-05-31T14:01:15+00:00
 published: true
 image:
   url: "/assets/images/posts/2023-05-31-help-us-to-make-cultural-heritage-data-more-persistent/persistent_identifiers_survey_lead.jpg"
-  alt: "Veldzijde, wapensteen, detail Creator: Tangel, L.M. Date: 1990-12-17. Institution: Rijksdienst voor het Cultureel Erfgoed Country: Netherlands."
+  alt: "Black-and-white close-up of a weathered stone relief of a rearing lion with one paw on a shield, and a fish carved below."
 ---
 
 Europeana Foundation seeks input through a survey to enhance persistent
@@ -25,7 +25,7 @@ and encouraging reuse amongst audiences. Discover how the common European data
 space for cultural heritage consortium is working to support the sector to use
 these and take [our survey] to share your thoughts!
 
-{% include content/fig.html url=page.image.url description=page.image.alt nocaption=true %}
+{% include content/fig.html url=page.image.url alt=page.image.alt description="Veldzijde, wapensteen, detail. Creator: Tangel, L.M. Date: 1990-12-17. Institution: Rijksdienst voor het Cultureel Erfgoed. Country: Netherlands." %}
 
 Building a [common European data space for cultural heritage] where data can
 be easily shared for reuse requires organisations that create data

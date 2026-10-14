@@ -25,7 +25,7 @@ The plugin is compatible with OJS versions 3.x.x and is currently used to
 publish the journal, *[Innovación y Software]*, of which I am the
 editor-in-chief. You can find the plugin at my [github repo].
 
-{% include content/fig.html url=page.image.url description=page.image.alt width="50%" %}
+{% include content/fig.html url=page.image.url alt="Innovación y Software journal cover, volume 2 number 1, March to August 2021, from Universidad La Salle in Arequipa, Peru, over circuit-board and digital-globe artwork." description=page.image.alt width="50%" %}
 
 Installation and configuration for the plugin is documented (PDFs) in English
 ([ARK Plugin Guide for OJS]) and Español ([Guia del Plugin ARK para OJS]). At

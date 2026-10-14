@@ -11,7 +11,7 @@ image:
   alt: "Capabilities defined for five types of persistent identifier (PID)."
 image2:
   url: "/assets/images/posts/2021-11-01-the-ark-origin-story/image-1.png"
-  alt: "Slide showing research output poorly represented in international indexes"
+  alt: "Slide titled research output poorly represented in international indexes. From a total of 5.415 peer-review journals from Latin America and the Caribbean (Latindex) 16 % in Scopus (841 Journals) 5 % in WoS (294 journals). Two world maps, 1992 and 2011, sized by Web of Science output, show Latin America shrunken."
 ---
 
 The ARK scheme originated in 2001 as a response to issues with existing PID
@@ -154,9 +154,9 @@ make the hard job of persistence harder. Long term commitment is never free of
 cost or effort, but no one pays for the right to assign ARKs, which can be
 especially useful for organizations that need large numbers of PIDs.
 
-{% include content/fig.html url=page.image2.url description=page.image2.alt nocaption=true %}
+{% include content/fig.html url=page.image2.url alt=page.image2.alt nocaption=true %}
 
-Slide credit: Dominique Babini
+Slide credit: Dominique Babini. Cartogram source: Juan Pablo Alperín (2014), World scaled by number of documents in Web of Science by Authors Living There, LSE Impact Blog.
 
 [this recent interview]: https://saaers.wordpress.com/2021/09/14/ark-alliance-an-interview-with-john-kunze/
 [1]: {{ page.image.url | absolute_url }}

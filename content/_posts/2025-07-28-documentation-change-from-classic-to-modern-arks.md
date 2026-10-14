@@ -61,8 +61,9 @@ ARK implementers are always free, in perpetuity, to store and manage ARKs in any
 There is no single recipe, but for some common resolver implementations, a one-line change might be enough to make a server support both forms. In a technical glimpse of a simplified, hypothetical Apache server example, adding the question mark to this configuration line turns a server of classic ARKs into a server that accepts both forms:
 
     RewriteRule   ark:/?12345/(.*)   "/collection/$1"
-    #                  ^ this '?' accepts both ark:/ and ark:
 {: .bg-secondary-subtle }
+
+The question mark, placed right after "ark:/", makes that slash optional, so the rule accepts both "ark:/" and "ark:".
 
 On a technical level, tools that support classic ARKs should be changed as follows in order to support modern ARKs:
 
