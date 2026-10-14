@@ -80,6 +80,23 @@ Dir.glob(File.join(site, "**", "*.html")).sort.each do |file|
       check.call(!image["alt"].to_s.strip.empty?, "informative diagram needs a nonempty alternative")
     end
   end
+  normalize = ->(text) { text.to_s.split.join(" ").downcase }
+  main.css("figure, .arka__figure").each do |figure|
+    caption = figure.at_css("figcaption")
+    next unless caption
+
+    # content/fig.html strips autolinked URLs when it copies the caption into alt, so also compare without link text.
+    captions = [caption, caption.dup.tap { |copy| copy.css("a").remove }].map { |node| normalize.call(node.text) }
+    caption_links = caption.css("a[href]").map { |link| link["href"] }
+    figure.css("img").each do |image|
+      alt = normalize.call(image["alt"])
+      check.call(alt.empty? || captions.none? { |text| text.start_with?(alt) }, "image alt repeats its caption, pass content/fig.html an alt= that describes the image: #{image['src']}")
+      link = image.ancestors("a").first
+      next unless link
+
+      check.call(!caption_links.include?(link["href"]), "image link duplicates its caption link, remove link= from content/fig.html: #{link['href']}")
+    end
+  end
   document.css("section[aria-label]").each do |section|
     check.call(false, "section has an invisible heading: #{section['aria-label']}")
   end

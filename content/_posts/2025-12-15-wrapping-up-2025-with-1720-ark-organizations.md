@@ -34,14 +34,13 @@ image3:
 
 Some highlights for 2025:
 
-* Implementors are welcome to add the ARK logo to their sites and collections, linking back to arks.org. The logo, with transparent (cut out) background, is available to be copied (e.g., right-click and "Save image as") in PNG or SVG format:
-<div class="row" align="center" markdown="1">
-![ARK logo PNG format][arklogopng]{: .img-thumbnail .img-responsive fetchpriority="high" loading="eager" height="140" width="140"}
-{: .col }
-<div class="col" markdown="1">
-![ARK logo SVG format][arklogosvg]{: .img-thumbnail .img-responsive fetchpriority="high" loading="eager" height="140" width="140"}
-</div>
-</div>
+* Implementors are welcome to add the ARK logo to their sites and collections, linking back to arks.org. The logo, with transparent (cut out) background, is available to download in PNG or SVG format:
+
+  ![ARK logo][arklogopng]{: .img-thumbnail .img-responsive fetchpriority="high" loading="eager" height="140" width="140"}
+
+  - <a href="{{ page.image2.url | relative_url }}" download>Download the ARK logo as PNG</a>
+  - <a href="{{ page.image3.url | relative_url }}" download>Download the ARK logo as SVG</a>
+
 * ARK tutorials have been given at conferences including IIIF, Europeana Pro, DCMI, iPRES, SWIB, and Fedora Virtual Showcase, with two new videos added to the [ARKA youtube channel](https://youtube.com/@arks_org) and a French-language tutorial presented in Dakar ([Dakar tutorial slides](https://docs.google.com/presentation/d/1V7_AnsRiE3X6SSdQnq-2NYDosjp1u2u-Vqp8Lp8YX7Y/edit?usp=sharing)).  
 * In July a new NAAN request form was deployed that helps us build a richer picture of ARK usage, along with a new streamlined backend request processing workflow.  
 * In October the [classic-to-modern ARK document conversion](https://arks.org/news/2025-07-28-documentation-change-from-classic-to-modern-arks/) was completed and inflection support for metadata (e.g., “?info” suffix) was added to the refreshed global ARK resolver based at N2T.net.   
@@ -54,4 +53,3 @@ Thank you for supporting ARKA and best wishes for 2026\!
 
 [map]: {{ page.image.url | absolute_url }}
 [arklogopng]: {{ page.image2.url | absolute_url }}
-[arklogosvg]: {{ page.image3.url | absolute_url }}

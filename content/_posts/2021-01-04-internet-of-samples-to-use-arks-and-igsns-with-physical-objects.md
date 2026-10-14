@@ -8,14 +8,14 @@ date: 2021-01-04T23:08:29+00:00
 published: true
 image:
   url: "/assets/images/posts/2021-01-04-internet-of-samples-to-use-arks-and-igsns-with-physical-objects/iron_blade_roman.png"
-  alt: "Iron blade from the time of the Roman Republic."
+  alt: "Corroded iron blade from the time of the Roman Republic, about 18 cm long against a black-and-white centimeter scale bar. A narrow, rough shaft runs from a rounded, flattened end into a broad leaf-shaped blade that tapers to a point. The surface is pitted and crusted with dark brown rust. Handwritten notes beside it read GPR 15, Area C, SU 0, and a triangle followed by 1425."
   link: "https://n2t.net/ark:/28722/k2tt4vh8s"
 image2:
   url: "/assets/images/posts/2021-01-04-internet-of-samples-to-use-arks-and-igsns-with-physical-objects/ekansa.png"
   alt: "Photo of Eric Kansa, Open Context Program Director."
 image3:
   url: "/assets/images/posts/2021-01-04-internet-of-samples-to-use-arks-and-igsns-with-physical-objects/SI_biosample.png"
-  alt: "Smithsonian NMNH Biorepository sample."
+  alt: "Screenshot of a Smithsonian NMNH Biorepository record titled Genetic Sample, for whole genomic DNA from the fish Paracirrhites arcatus, catalog number USNM 439437. It lists collection details, including a collection date of 10 Mar 2006 at Moorea, French Polynesia, the collectors, and an EZID field holding the sample's ARK identifier. A photo shows the fish, reddish-orange above and pale below, with a white stripe along its side and an orange and yellow arc behind its eye."
   link: "https://n2t.net/ark:/65665/337856f1a-655e-4ad7-8b1e-f10a16dfb6e3"
 ---
 
@@ -39,7 +39,7 @@ identifier, including ARKs and IGSNs for physical objects. CDL’s [N2T] and
 [EZID] systems will provide [ARK] identifiers for a number of partner
 collections.
 
-{% include content/fig.html url=page.image.url description=page.image.alt link=page.image.link nocaption=true %}
+{% include content/fig.html url=page.image.url alt=page.image.alt link=page.image.link nocaption=true %}
 
 Kerstin Lehnert, Director of Lamont’s Geoinformatics Research Group, is
 serving as principal investigator. All too often, she says, researchers go to
@@ -75,7 +75,7 @@ laboratory study and museum curation. iSamples may even help in combating the
 illegal trade of antiquities which, on a huge scale, destroys the historical
 record by divorcing objects from their contexts.”
 
-{% include content/fig.html url=page.image3.url description=page.image3.alt link=page.image3.link nocaption=true %}
+{% include content/fig.html url=page.image3.url alt=page.image3.alt link=page.image3.link nocaption=true %}
 
 “In the evolving collaborative world of museums and collections, iSamples is
 an exciting endeavor to provide linkages across both domains and institutions
@@ -98,8 +98,3 @@ potential users.
 [N2T]: https://n2t.net/
 [EZID]: https://ezid.cdlib.org/
 [ARK]: {{ site.baseurl }}/
-[{{ page.image.title }}]: {{ page.image.url | absolute_url }}
-[1]: https://n2t.net/ark:/28722/k2tt4vh8s
-[2]: {{ page.image2.url | absolute_url }}
-[3]: {{ page.image3.url | absolute_url }}
-[4]: https://n2t.net/ark:/65665/337856f1a-655e-4ad7-8b1e-f10a16dfb6e3

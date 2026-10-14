@@ -24,7 +24,7 @@ appropriate Persistent Identifier (PID) system. PIDs such as ARKs, DOIs,
 Handles, and URNs can come with subtle tradeoffs that depend on each
 organization’s needs.
 
-{% include content/fig.html url=page.image.url description=page.image.alt %}
+{% include content/fig.html url=page.image.url alt="Persistent Identifier Guide web page showing Position 1, I want a PID system that comes with its own metadata policies and requirements, with answer options from Strongly Disagree to Strongly Agree." description=page.image.alt %}
 
 The PID Guide helps you learn and think about important PID topics, and guides
 your first steps towards selecting a PID system.

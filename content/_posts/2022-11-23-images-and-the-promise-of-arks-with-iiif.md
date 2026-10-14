@@ -11,11 +11,9 @@ published: true
 image:
   url: "/assets/images/posts/2022-11-23-images-and-the-promise-of-arks-with-iiif/ark_iiif.jpg"
   alt: "A rectangular detail region of interest (coordinates 2131,4016,1467,948) requested via IIIF-compliant path elements (parameters) from a manuscript held at the BnF."
-  link: "https://gallica.bnf.fr/iiif/ark:%2F12148%2Fbtv1b8449691v%2Ff29/2131,4016,1467,948/full/0/default.jpg"
 image2:
   url: "/assets/images/posts/2022-11-23-images-and-the-promise-of-arks-with-iiif/IIIF-logo-500w.png"
   alt: "IIIF logo"
-  link: "https://iiif.io"
 ---
 
 The integration of ARKs with the International Image Interoperability
@@ -50,7 +48,7 @@ collections across a large number of servers is a goal of “IIIF”.
 <div class="flex-container">
 <div class="flex-item" markdown="1">
 
-{% include content/fig.html url=page.image2.url description="IIIF logo" link=page.image2.link nocaption=true width="50%" %}
+{% include content/fig.html url=page.image2.url alt=page.image2.alt nocaption=true width="50%" %}
 
 </div>
 <div class="flex-item" style="margin-left: 2rem;" markdown="1">
@@ -106,11 +104,7 @@ specification, see Comments below)
 requests the return of a specific rectangular region “2131,4016,1467,948”, at
 full quality and in the JPEG (“.jpg”) format. This region is shown below.
 
-{% include content/fig.html url=page.image.url description=page.image.alt link=page.image.link %}
-
-A rectangular detail region of interest (coordinates 2131,4016,1467,948)
-requested via IIIF-compliant path elements (parameters) from a manuscript held
-at the BnF.
+{% include content/fig.html url=page.image.url alt="Medieval manuscript miniature, framed in blue and gold, of three men building a large wooden boat on grass before a red patterned backdrop. A bearded man in a blue robe raises a hammer at the bow, a man in pink shapes the hull with a tool, and a man in red climbs a plank onto the deck." description=page.image.alt %}
 
 Image content is often hierarchical, so we need identifiers at more than one
 level. For example, a bound manuscript is a compound object consisting of page

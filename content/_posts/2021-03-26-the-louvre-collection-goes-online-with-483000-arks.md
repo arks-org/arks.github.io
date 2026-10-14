@@ -21,7 +21,7 @@ collections.louvre.fr database.
 
 \[ *With permission the present post is largely based on [this press release].* \]
 
-The [Louvre], the world’s largest art museum, [recently announced][this press release] the exciting news that for the first time ever, its entire collection is available online, whether works are on display in its museum in Paris, on long-term loan in other French institutions, or in storage.
+The [Louvre], the world’s largest art museum, recently announced the exciting news that for the first time ever, its entire collection is available online, whether works are on display in its museum in Paris, on long-term loan in other French institutions, or in storage.
 
 {% include content/fig.html url=page.image.url description=page.image.alt nocaption=true %}
 
