@@ -47,6 +47,12 @@ contact:
   newsletter: http://eepurl.com/hnpLi5
   email: info@arks.org
 
+# Site-wide banner shown below the header and navigation on every page.
+# Set show to false to hide it. The message accepts Markdown.
+site_banner:
+  show: true
+  message: "**This site has been redesigned.** Some pages may look different or have moved."
+
 ##############
 # SEO SPECIFIC
 # see https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
