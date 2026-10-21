@@ -77,4 +77,14 @@ bundle exec jekyll serve --livereload
 
 Open <http://localhost:4000/arks.github.io/> in a browser.
 
+## Refresh the organization map list
 
+The accessible list of institutions on the ARK organizations map is generated
+from the map's KML export into `_data/organization_map.json`. To refresh it
+after the map changes, run from the project directory:
+
+```sh
+python3 scripts/update_organization_map.py
+```
+
+To use a KML file you have already downloaded, pass its path as an argument.
