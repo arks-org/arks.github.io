@@ -145,6 +145,23 @@
     flex: 0 0 auto;
   }
 
+  /* site-wide announcement below the navbar */
+  &__site-banner {
+    background-color: var(--arka-callout-bg);
+    border-bottom: 1px solid var(--arka-callout-border);
+    color: var(--arka-callout-border);
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    padding: 0.75rem 0;
+    text-align: center;
+    p {
+      margin: 0;
+    }
+    a {
+      color: inherit;
+      text-decoration: underline;
+    }
+  }
+
   /* navbar */
   &__navbar {
     background-color: var(--arka-bg-cool);
