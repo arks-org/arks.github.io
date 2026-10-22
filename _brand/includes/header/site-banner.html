@@ -1,0 +1,12 @@
+{% comment %}
+  Site-wide announcement, toggled by site_banner.show in _config.yml. It is a
+  named complementary landmark so screen reader users can find it, and it is
+  not a live region, so it is read in page order rather than interrupting.
+{% endcomment %}
+{% if site.site_banner.show and site.site_banner.message %}
+<aside lang="en" class="arka__site-banner" aria-label="Site announcement">
+  <div class="container">
+    {{ site.site_banner.message | markdownify }}
+  </div>
+</aside>
+{% endif %}

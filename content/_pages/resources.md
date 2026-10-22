@@ -10,13 +10,42 @@ A helpful list of resources, documentation, and services.
 
 <!--more-->
 
-| **BASICS** <br/> &nbsp;•&nbsp; [The ARK Tutorial][17] introduces Archival Resource Keys in 30 minutes. <br/> &nbsp;•&nbsp; [NAAN form] to *get started* creating ARKs or to *update* your existing NAAN. <br/> &nbsp;•&nbsp; See the [current and evolving specifications] to keep up with the latest. <br/> &nbsp;•&nbsp; First ARK paper, [*Towards Electronic Persistence Using ARK Identifiers*], 2003. <br/> &nbsp;•&nbsp; [General identifier concepts and conventions], first articulated for ARKs. <br/> &nbsp;•&nbsp; [ARK Identifier Scheme specification]({{ site.ark_spec_current }}) for technical details. <br/> &nbsp;•&nbsp; The Archival Resource Key at [wikipedia]. <br/> &nbsp;•&nbsp; ARK logos, no background, PNG and SVG. &nbsp; ![][ARK logo PNG]{: .img-thumbnail .img-responsive fetchpriority="high" loading="eager" height="140" width="140" title="PNG logo; right-click and 'Save image as...'" alt="ARK logo, PNG format"} &nbsp;&nbsp; ![][ARK logo SVG]{: .img-thumbnail .img-responsive fetchpriority="high" loading="eager" height="140" width="140" title="SVG logo; right-click and 'Save image as...'" alt="ARK logo, SVG format"} &nbsp; | ![][1]{: .img-thumbnail .img-responsive fetchpriority="high" loading="eager" height="400" width="500"} <br/> _The Mazarine Library, Paris, which assigns ARKs under <br/> the NAAN 61562 (photo by Marie-Lan Nguyen)._ |
+{% include content/section.html do="start" color="cool" label="Basics" %}
 
+<div class="flex-container">
+<div class="flex-item" markdown="1">
+
+## Fundamentals
+
+- [ARK Tutorial][17]: Archival Resource Key overview (30 mins).
+- [NAAN form] to *start* creating ARKs or to *update* your existing NAAN.
+- See the [current and evolving specifications] to keep up with the latest.
+- First paper, [*Towards Electronic Persistence Using ARK Identifiers*], 2003.
+- [General identifier concepts and conventions], first articulated for ARKs.
+- [ARK Identifier Scheme specification]({{ site.ark_spec_current }}) for technical details.
+- The Archival Resource Key at [wikipedia].
 -   The [Arklet-Frick][] software package is the Frick Collection's enhanced
     version of an Internet Archive tool, which adds bulk operations, suffix
     passthrough, shoulder rules, extensive metadata, inflections, and more. 
 -   [N2T.net] resolver: Name-to-Thing, a global resolver for ARKs and other
     identifiers, currently hosted at the [CDL].
+
+</div>
+<div class="flex-item" style="margin-left: 2rem;" markdown="1">
+
+{% include content/fig.html url="/assets/images/pages/resources/1089px-Salle_de_lecture_de_la_Bibliotheque_Mazarine_Paris_n1.jpg" label="The Mazarine Library, Paris" alt="A long library reading room with wooden tables and chairs, chandeliers and table lamps, and tall bookshelves lining the walls." description="The Mazarine Library, Paris, which assigns ARKs under the NAAN 61562 (photo by Marie-Lan Nguyen)." %}
+
+## Official ARK logos
+
+![ARK logo]({{ site.baseurl }}/assets/images/share/arka_logo.png){: width="140" height="140" }
+
+- <a href="{{ site.baseurl }}/assets/images/share/arka_logo.png" download>Download the ARK logo as PNG</a>
+- <a href="{{ site.baseurl }}/assets/images/share/arka_logo.svg" download>Download the ARK logo as SVG</a>
+
+</div>
+</div>
+
+{% include content/section.html do="changeto" color="warm" label="Software" %}
 
 ## Plug-ins and software
 
@@ -43,12 +72,14 @@ To get your software listed please [let us know] about it.
     Public Knowledge Project (similar to its DOI plug-in) that works with
     versions 3.1.X, 3.2.X, and 3.3.X, and with locales for the Spanish and
     English (more languages coming). Installation and configuration in English
-    ([ARK Plugin Guide for OJS]) and Español ([Guia del Plugin ARK para OJS]).
--   [ArkAndNoid][] [“Omeka Classic”][ArkAndNoid]: module to create and manage
+    ([ARK Plugin Guide for OJS (PDF)](https://github.com/yasielpv/pkp-ark-pubid/files/8398101/ARK.plugin.guide.for.OJS.pdf))
+    and Español
+    ([Guia del Plugin ARK para OJS (PDF)](https://github.com/yasielpv/pkp-ark-pubid/files/8398100/Guia.del.plugin.ARK.para.OJS.pdf)).
+-   [ArkAndNoid for Omeka Classic][ArkAndNoid]: module to create and manage
     ARKs for the Omeka Classic open source web-publishing platform
--   [ArkAndNoid][2] [“Omeka S”][2]: module to create and manage ARKs for the
+-   [ArkAndNoid for Omeka S][2]: module to create and manage ARKs for the
     Omeka S open source web-publishing platform
--   [Archival][] [Resource Key Identifier Name Mapping][Archival]: module for
+-   [Archival Resource Key Identifier Name Mapping][Archival]: module for
     Drupal which allows your Drupal site to act as a Name Mapping Authority
 -   [EZID UI codebase][]: Provides a user interface to minting and resolving
     that enables you to become an ARK service provider (requires significant
@@ -61,51 +92,54 @@ To get your software listed please [let us know] about it.
     significant expertise to set up and run, and consists of a generic Eggnog
     minting, binding, and resolution package plus a [legacy N2T admin] package.
     Replaced by the resolver code above.
+{: .list-2-columns }
+
+{% include content/section.html do="changeto" color="cool" label="Presentations" %}
 
 ## Selected presentations
 
--   _Getting Started with ARK Persistent Identifiers (PIDs)_, 2024-03-31, recommended ARK (Archival Resource Key) tutorial for beginners. [video][17] (30 mins)
--   Brief Introduction to ARKs for GLAMs, 2023-08-03. [slides] (15 mins)
+-   _Getting Started with ARK Persistent Identifiers (PIDs)_, 2024-03-31, recommended ARK (Archival Resource Key) tutorial for beginners. [Getting Started with ARK Persistent Identifiers video][17] (30 mins)
+-   Brief Introduction to ARKs for GLAMs, 2023-08-03. [Brief Introduction to ARKs for GLAMs slides][slides] (PDF, 15 mins)
 -   ARK Training, 2023-06-06, 3-hour tutorial from 2023 IIIF Annual
-    Conference. [slides][3]
--   ARK Alliance Update and Three Use Cases, 2023-01-18, presentation. [video]
+    Conference. [ARK Training slides][3] (PDF)
+-   ARK Alliance Update and Three Use Cases, 2023-01-18, presentation. [ARK Alliance Update and Three Use Cases video][video]
     (28 mins)
     -   [Introduction]
     -   [ARKs for physical samples]
     -   [ARKs for biomedical AI]
     -   [ARKs for vocabulary terms]
 -   IIIF Community Call: Intersection of IIIF and ARKs, 2023-01-25, meeting.
-    [video][4] (58 mins)
+    [Intersection of IIIF and ARKs video][4] (58 mins)
 -   *Discoverability and future developments in the Louvre Museum’s
     collections portal*, 2022-12-13, Anne-Laure Huet and Benoît Deshayes,
     speaking at the French National Institute for Art History (INHA).
-    [video][5] (19 mins, in French 🇫🇷)
+    [Louvre Museum collections portal video][5] (19 mins, in French 🇫🇷)
 -   *The ARK Alliance: 20 years, 850 institutions, 8.2 billion persistent
-    identifiers*, 2021-10-22, presentation (English). [slides][6]
+    identifiers*, 2021-10-22, presentation (English). [The ARK Alliance: 20 years, 850 institutions, 8.2 billion persistent identifiers slides][6]
 -   \[obsolete\] *ARKetype – Ask Me Anything*, 2021-01-27, presentation (English) plus
-    interactive questions and answers (English, French, German). [video][7] (75 mins);
+    interactive questions and answers (English, French, German). [ARKetype Ask Me Anything video][7] (75 mins);
     based on \[obsolete\] *INCIPIT: An ARK Allocation Service in Switzerland*, 2020-11-16,
-    Julien Raemy. [video][8] (12 mins).
+    Julien Raemy. [INCIPIT: An ARK Allocation Service in Switzerland video][8] (12 mins).
 -   *ARKs in the Open: 3.2 billion Persistent Identifiers*, 2020-04-23, John
-    Kunze, Bess Missell, Karen Hanson, Tom Creighton. [abstract] \| [video][9]
-    (62 mins) \| [slides][10]
+    Kunze, Bess Missell, Karen Hanson, Tom Creighton. [ARKs in the Open: 3.2 billion Persistent Identifiers abstract][abstract] \| [ARKs in the Open: 3.2 billion Persistent Identifiers video][9]
+    (62 mins) \| [ARKs in the Open: 3.2 billion Persistent Identifiers slides][10]
 -   *Integrating ArchivesSpace and ARKs*, 2020-03-04, John Kunze, Seth Shaw,
-    Christine di Bella. [abstract][11] \| [video][12] (60 mins) \|
-    [slides][13]
+    Christine di Bella. [Integrating ArchivesSpace and ARKs abstract][11] \| [Integrating ArchivesSpace and ARKs video][12] (60 mins) \|
+    [Integrating ArchivesSpace and ARKs slides][13] (PDF)
 -   *ARKs in the Open: community owned identifier infrastructure*, 2020-01-24,
-    John Kunze. [slides][14]
+    John Kunze. [ARKs in the Open: community owned identifier infrastructure slides][14] (PDF)
 -   *ARK Identifier Summit, National Library of France*, 2018-03-21, Sébastien
     Peyrard, John Kunze, Bertrand Caron, Nicolas Thouvenin, Roxana
     Maurer-Popistașu, Bruno Revellin, Delphine Jamet, Franck Bernardet, Adrien
     di Mascio, Guillaume Lory, Alexis Moisdon, Emmanuelle Bermès.
-    [abstract][15] \| [collected videos] (5 hours, in French 🇫🇷)
--   *Keynote address at ARK Identifier Summit*, 2018-03-21, John Kunze. [video
-    link] (45 mins, in French 🇫🇷) \| [English transcription]
+    [ARK Identifier Summit abstract][15] \| [ARK Identifier Summit collected videos][collected videos] (5 hours, in French 🇫🇷)
+-   *Keynote address at ARK Identifier Summit*, 2018-03-21, John Kunze. [Keynote address at ARK Identifier Summit video][video link] (45 mins, in French 🇫🇷) \| [Keynote address at ARK Identifier Summit English transcription][English transcription] (PDF)
 -   *Using Archival Resource Keys (ARKs) for Persistent Identification*,
-    2008-06-05, Mark Phillips. [slides][16]
+    2008-06-05, Mark Phillips. [Using Archival Resource Keys for Persistent Identification slides][16]
+{: .list-2-columns }
 
 [NAAN form]: {{ site.naan_form_url }}
-[current and evolving specifications]: specs.md
+[current and evolving specifications]: ../resources/specs
 [*Towards Electronic Persistence Using ARK Identifiers*]: https://n2t.net/ark:13030/c7n00zt1z
 [General identifier concepts and conventions]: about-identifier-concepts-and-conventions.md
 [ARK logo PNG]: ../assets/images/share/arka_logo.png
@@ -127,8 +161,6 @@ To get your software listed please [let us know] about it.
 [PHP Noid]: https://github.com/Daniel-KM/Noid4Php/blob/master/noid
 [OJS Plug-in]: https://github.com/yasielpv/pkp-ark-pubid
 [Open Journal System (OJS)]: https://pkp.sfu.ca/ojs/
-[ARK Plugin Guide for OJS]: https://github.com/yasielpv/pkp-ark-pubid/files/8398101/ARK.plugin.guide.for.OJS.pdf
-[Guia del Plugin ARK para OJS]: https://github.com/yasielpv/pkp-ark-pubid/files/8398100/Guia.del.plugin.ARK.para.OJS.pdf
 [ArkAndNoid]: https://github.com/Daniel-KM/ArkAndNoid4Omeka
 [2]: https://github.com/Daniel-KM/Omeka-S-module-Ark
 [Archival]: https://www.drupal.org/project/ark/
@@ -163,3 +195,5 @@ To get your software listed please [let us know] about it.
 [English transcription]: ../assets/documents/2021/11/The-Covenant-of-the-ARK-en.pdf
 [16]: https://digital.library.unt.edu/ark:67531/metadc28359/
 [17]: https://youtu.be/-RkMGFCGRic
+
+{% include content/section.html do="end" %}

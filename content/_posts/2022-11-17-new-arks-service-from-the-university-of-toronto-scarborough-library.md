@@ -8,8 +8,10 @@ date: 2022-11-17T23:54:38+00:00
 published: true
 image:
   url: "/assets/images/posts/2022-11-17-new-arks-service-from-the-university-of-toronto-scarborough-library/lake_harbour.png"
+  alt: "Scarborough (Toronto) artist Doris McCarthy’s painting, “Lake Harbour in Late Light,” available at ARK: <https://ark.digital.utsc.utoronto.ca/ark:/61220/utsc11251>"
 image2:
   url: "/assets/images//posts/2022-11-17-new-arks-service-from-the-university-of-toronto-scarborough-library/gazebo_trees.png"
+  alt: "McCarthy’s “Reflection of the gazebo and trees,” available at ARK: <https://ark.digital.utsc.utoronto.ca/ark:/61220/utsc11216> (also <https://n2t.net/ark:/61220/utsc11216>)"
 ---
 
 The University of Toronto Scarborough Library's "ARKs-Service" is a
@@ -24,21 +26,13 @@ help those with fewer dedicated IT resources to set up their own persistent
 identifier management service. ARKs-Service is developed and maintained at the
 University of Toronto Scarborough Library’s [Digital Scholarship Unit (DSU)] .
 
-![][1]{: .img-thumbnail .img-responsive fetchpriority="high" height="712" loading="eager" width="928"}
-
-Scarborough (Toronto) artist Doris McCarthy’s painting, “Lake Harbour in Late
-Light,”available at ARK:
-<https://ark.digital.utsc.utoronto.ca/ark:/61220/utsc11251>{: .text-break}
+{% include content/fig.html url=page.image.url alt="Painting of a broad brown and purple hill streaked with snow, rising above a shoreline village of small, brightly colored houses, with icy blue water in the foreground. Shown on its digital collection page." description=page.image.alt %}
 
 The DSU maintains digital special collections using [Islandora,] an
 open-source digital asset management platform that utilizes multiple Drupal
 sites for collaborative authoring, discovery, and display.
 
-![][2]{: .img-thumbnail .img-responsive fetchpriority="" height="807" loading="lazy" width="1024"}
-
-McCarthy’s “Reflection of the gazebo and trees,” available at ARK:
-<https://ark.digital.utsc.utoronto.ca/ark:/61220/utsc11216>{: .text-break} (also
-<https://n2t.net/ark:/61220/utsc11216>)
+{% include content/fig.html url=page.image2.url alt="Loose green watercolor of a pale gazebo framed by tall trees beside a pond, with the gazebo and tree trunks reflected in the water, signed Doris McCarthy at lower right. Shown on its digital collection page." description=page.image2.alt %}
 
 When looking for a persistent identifier solution, ARKs jumped to the top of
 the list as a feature-rich, cost-effective solution. Their support for early

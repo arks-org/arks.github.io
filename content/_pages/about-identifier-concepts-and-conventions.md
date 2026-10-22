@@ -12,6 +12,8 @@ ARKetype.ch.
 
 <!--more-->
 
+{% include content/section.html do="start" color="cool" label="General identifier concepts" %}
+
 This document specifies common identifier-related terms, conventions, and
 practices as observed at services such as N2T.net, EZID.cdlib.org, and
 ARKetype.ch.
@@ -31,36 +33,31 @@ The main concepts covered include:
     information about them
 4.  Name resolution (“resolver”) services, a special class of NMA services.
 
-The terminology that follows is based on the metaphor of a key (or name or
-identifier) in <span class="has-inline-color
-has-vivid-green-cyan-color">locksmithing</span> jargon, and the concept of a
-branded plastic key-cover.
+{% include content/fig.html
+  url="/assets/images/share/durable-identifier-key.svg"
+  label="Key metaphor for the parts of a durable identifier"
+  alt="A key and a parallel ARK URL divided into the cover, bow, shoulder, blade, and tip."
+  description="Durable identifier parts follow a metal key metaphor."
+%}
 
-           _____    slips on    _____
-        .-'  ,_,'-..  ---->  .-'     '-.
-       /    (o,o)  \\       /           \
-      :     {`"'}  ||      :             `____
-     /  .-. -"-"-  ||     /  .-.              '--^.   .^--^.        .^.
-    {  (   )       ||    {  (   )                  `-'      `-^--^-'   '--^.
-     \  `-'   _o   ||     \  '-'         ===================================}
-      :     _|<,_  ||      :             __________________________________/
-       \   (*)/(*) /        \           /
-        `-._____.-'          `-._____.-'
-    |....................|...............|....|..........................|..|
-              ^                    ^        ^                ^            ^
-              :                    :        :                :            :
-            Cover=               Bow=    Shoulder  .------ Blade         Tip
-             NMA             Scheme+NAAN    :      :  .-------------------'
-              :                  :    :     :      :  :
-              v                  v    v     v      v  v
-    |..........................|....+.....|...|......|.|
-     https://OwlBike.example.org/ark:13030/tqb3kh97gh8w   <----  Example Key
-                                 doi:10.30/tqb3kh97gh8w         with parallel
-                                 hdl:13030/tqb3kh97gh8w        parts in other
-                                 urn:13030:tqb3kh97gh8w          id schemes.
-    |..........................|.......................|....
-       Name Mapping Authority       Base object name     ...
-{: .bg-secondary-subtle }
+The replaceable key cover corresponds to the Name Mapping Authority, such as
+`https://example.org/`. The bow corresponds to the scheme and NAAN, such as
+`ark:12345`. The fixed shoulder `/x5` defines a sub-namespace. The variable
+blade `wf678` distinguishes one identifier in that sub-namespace, and the tip
+`9` may hold an error-detection character. Together, the bow, shoulder, blade,
+and tip form the durable identifier. DOI, Handle, and URN identifiers can be
+divided into parallel parts even though their punctuation differs.
+
+In the example URL
+`https://OwlBike.example.org/ark:13030/tqb3kh97gh8w`, the replaceable Name
+Mapping Authority is `https://OwlBike.example.org/`, while the durable base
+object name is `ark:13030/tqb3kh97gh8w`. The same parallel parts appear in
+these identifier schemes:
+
+* `ark:13030/tqb3kh97gh8w`
+* `doi:10.30/tqb3kh97gh8w`
+* `hdl:13030/tqb3kh97gh8w`
+* `urn:13030:tqb3kh97gh8w`
 
 ## NAANs, prefixes, bases, and suffixes
 
@@ -117,13 +114,10 @@ unlimited supply of non-conflicting shoulders is to adhere to the
 “primordinal” (first digit) convention. In this case each shoulder is a string
 of one of more letters ending in a digit (inclusive). For example,
 “ark:13030/b3th89n” would have fixed shoulder prefix “b3”, and the 13030 NAAN
-could then enjoy an infinite set of potential future shoulders, including,
-
-       b3, c3, d3, ...
-       bb3, bc3, bd3, ..., cb3, cc3, cd3, ...
-       bbb3, bbc3, bbd3, ..., bcb3, bcd3, ..., cbb3, cbc3, ...
-       ...
-{: .bg-secondary-subtle }
+could then use an infinite set of potential future shoulders. Short examples
+include `b3`, `c3`, and `d3`. Longer examples include `bb3`, `bc3`, `bd3`,
+`cb3`, `cc3`, and `cd3`. The same pattern continues with shoulders such as
+`bbb3`, `bbc3`, `bbd3`, `bcb3`, `bcd3`, `cbb3`, and `cbc3`.
 
 While there is in principle an unlimited number of shoulders under the
 primordinal convention, each additional shoulder is not without cost,
@@ -141,6 +135,8 @@ It is also strongly discouraged to place brand strings in identifier blades
 because successor organizations, which tend to be former competitors, will
 often be motivated to extinguish your brand rather than honor previous name
 assignments. Branding is most appropriately placed in the NMA, described next.
+
+{% include content/section.html do="changeto" color="warm" label="Resolver concepts" %}
 
 ## Name Mapping Authority (NMA) services
 
@@ -189,6 +185,8 @@ N2T was originally designed for global resolution of ARK identifiers, but it
 is general enough to apply to identifiers from any scheme. It’s NAAN mapping
 mechanism is functionally equivalent to and much simpler than the DOI, Handle,
 and URN resolution mechanisms.
+
+{% include content/section.html do="changeto" color="cool" label="String concepts" %}
 
 ## Opacity
 
@@ -240,13 +238,14 @@ Identifier schemes tend to specify little beyond the form of the NAAN (or
 other designation for the NAA, sometimes called a Name Authority). The ARK
 scheme permits formal disclosure of hierarchy and equivalence in name
 extensions; if used in an ARK, ‘/’ indicates containment and ‘.’ indicates
-variation. For example,
+variation. For example:
 
-    ark:13030/tqb3kh8z/                 # names an object containing...
-    ark:13030/tqb3kh8z/chap3            # that in turn contains...
-    ark:13030/tqb3kh8z/chap3/fig5.jpg   # that is a variant of...
-    ark:13030/tqb3kh8z/chap3/fig5.pdf   # and so forth
-{: .bg-secondary-subtle }
+-   `ark:13030/tqb3kh8z/` names an object containing
+    `ark:13030/tqb3kh8z/chap3`.
+-   `ark:13030/tqb3kh8z/chap3` in turn contains
+    `ark:13030/tqb3kh8z/chap3/fig5.jpg`.
+-   `ark:13030/tqb3kh8z/chap3/fig5.pdf` is a variant of the preceding
+    `fig5.jpg` resource.
 
 ## The “NCDA” check character convention
 
@@ -269,15 +268,11 @@ other words, the last character of the base identifier. First appearing in the
 [Noid] software package, NCDA guarantees the base identifier against the most
 common transcription errors: transposition of two adjacent characters and
 single character errors. NCDA does not protect either the hostname or any
-extensions. For example, in the identifier,
-
-    https://OwlBike.example.org/hdl:13030/tqb3kh8w/chap3/fig5.jpg
-                                    \____________/
-{: .bg-secondary-subtle }
-
-the protected string, “13030/tqb3kh8w”, ends with a “w” that is
+extensions. For example, in
+`https://OwlBike.example.org/hdl:13030/tqb3kh8w/chap3/fig5.jpg`, the protected
+string is `13030/tqb3kh8w`. It ends with a `w` that is
 (hypothetically) the computed NCDA check character. Also, all NCDA examples
-use *betanumeric* characters (more [here]), which are from a restricted
+use *betanumeric* characters (see [more about running minters]), which are from a restricted
 character repertoire consisting of digits and lowercase letters minus vowels
 and minus the letter ‘l’ (ell). The Noid software uses this repertoire to
 reduce the chance of “accidental” semantics in generated identifiers and to
@@ -286,4 +281,6 @@ such as ‘1’ for ‘l’ and ‘0’ for ‘O’.
 
 [https://n2t.net]: https://n2t.net/
 [Noid]: {{ site.baseurl }}/resources/noid
-[here]: about-running-minters-and-resolvers.md
+[more about running minters]: about-running-minters-and-resolvers.md
+
+{% include content/section.html do="end" %}

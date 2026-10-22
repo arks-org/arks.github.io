@@ -12,6 +12,8 @@ and Donny Winston.
 
 <!--more-->
 
+{% include content/section.html do="start" color="cool" label="ARK tutorial" %}
+
 The ARK tutorial described below was first offered in 2023 and has been given
 at conferences such as Code4lib, IIIF, JCDL, iPRES, and Open Repositories.
 We will continue to adapt the content for other conferences, but a basic
@@ -61,3 +63,5 @@ LLC; a cofounder of the FAIR Points event series; and host of the
 Machine-Centric Science podcast.
 
 [30-minute ARK tutorial video recording]: https://youtu.be/-RkMGFCGRic
+
+{% include content/section.html do="end" %}

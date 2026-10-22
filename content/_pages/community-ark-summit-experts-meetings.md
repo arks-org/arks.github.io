@@ -11,7 +11,9 @@ in Paris at the National Library of France (BnF), March 22 and June 11,
 
 <!--more-->
 
-# **ARK Experts Day @ National Library of France (BnF),March 22nd 2018**
+{% include content/section.html do="start" color="cool" label="Notes from 2018 ARK Summit" %}
+
+## **ARK Experts Day @ National Library of France (BnF),March 22nd 2018**
 
 \[ Discussions are *noted in italics* to distinguish them from the original agenda. Notes are mostly unedited. \]
 
@@ -34,7 +36,7 @@ in Paris at the National Library of France (BnF), March 22 and June 11,
 * Jean-Philippe Tramoni (BnF) (all day)  
 * Hélène Zettel (Service interministériel des archives de France) (all day)
 
-# 1. ARK specification change proposals
+### 1. ARK specification change proposals
 
 (present IETF draft at [https://tools.ietf.org/html/draft-kunze-ark-18](https://tools.ietf.org/html/draft-kunze-ark-18))
 
@@ -106,7 +108,7 @@ in Paris at the National Library of France (BnF), March 22 and June 11,
    * *The spec could just make a recommendation, but specific implementations could have a higher limit*  
    * ***We will change the spec to eliminate the limit, but we will make a recommendation for a minimum of 255 characters supported in implementations***
 
-# 2. Counting ARKs project
+### 2. Counting ARKs project
 
 It is a feature of ARKs that there's no centralized maintenance authority, but that makes it difficult to count how many ARKs there are in the world. We propose an easy way for registered ARK implementers – those who are willing – to post a small JSON or YAML file (eg, at a well-known URL path) containing a date and an estimated number of ARKs published. Such files would be harvested to obtain a base total.
 
@@ -136,7 +138,7 @@ It is a feature of ARKs that there's no centralized maintenance authority, but t
   * *Counting ARK names that are kept / active / published / viable / "in the wild", "out there somehow", "meant to persist"*  
 * *Do not add up the counts for bananas and apples: for different sub-naming authorities give separate numbers*
 
-# 3. Persistence statements
+### 3. Persistence statements
 
 It has long been said that ARKs should provide a commitment or policy statement on demand from the current archival institution (object provider, name mapping authority). The day when this becomes true is closer with publication of "Persistence Statements: Describing Digital Stickiness" [https://datascience.codata.org/articles/10.5334/dsj-2017-039/](https://datascience.codata.org/articles/10.5334/dsj-2017-039/)). The paper proposes certain controlled vocabulary terms as building blocks for exactly this purpose. All that is lacking is to select, review, and revise the terms (which we can evolve ourselves in a crowdsourced metadata dictionary), and finally test and propose as a community consensus.
 
@@ -185,7 +187,7 @@ It has long been said that ARKs should provide a commitment or policy statement 
 * ***Deadline for the first version of the statements & first conference call: Tuesday, 22nd of May at 8:00 PDT / 11:00 EDT / 17:00 CEST***  
   * NOTE: this call was postponed pending establishment of the ARKs-in-the-Open working groups
 
-# 4. Towards ARK sustainability
+### 4. Towards ARK sustainability
 
 Any persistent identifier system maintained solely by one organization is vulnerable, and ARK is no exception. CDL is seeking guidance on sustainability of the ARK "infrastructure" and on building a coalition of organizations with shared responsibility and governance. The ARK infrastructure includes the specification, the NAAN registry, the arks-forum googlegroup, and the N2T.net resolver (code, admin scripts, and primary and secondary servers).
 
@@ -208,7 +210,7 @@ A Way Forward \-* [*Web*](https://orcid.org/blog/2016/10/31/organization-identif
   * *advocacy for ARK (Duraspace: "ambassador training" for people to advocate for their solution)*  
   * *conferences & meetings around ARK*
 
-# 5. ARK survey: joint BnF-CDL proposal
+### 5. ARK survey: joint BnF-CDL proposal
 
 BnF and CDL would like to feedback on a proposed online survey to get a better understanding of the different ARK implementations.
 
@@ -235,12 +237,12 @@ BnF and CDL would like to feedback on a proposed online survey to get a better u
 * *Ithaka could review the survey before sending it out*  
 * *We should create a first draft by the 22nd of May*
 
-# 6. Wrap-up
+### 6. Wrap-up
 
 * How can we communicate with each other as a group?  
   * *Emails for the beginning*
 
-## ***ACTIONS By May 22, 2018***
+### ***ACTIONS By May 22, 2018***
 
 * *ACTION: John will propose wording changes for the ARK spec and send with diffs for review by May 2, 2018*  
 * *ACTION: Each institution will send a snapshot set of numbers and naming policy links for the Counting ARKs project*  
@@ -249,7 +251,7 @@ BnF and CDL would like to feedback on a proposed online survey to get a better u
 * *ACTION: John asks Duraspace and CDL for input on the survey*  
 * *ACTION: Sebastien will talk to BnF survey department*
 
-# **Follow up telecon 2018 June 16**
+## **Follow up telecon 2018 June 16**
 
 — 2018.06.11 Notes from ARK experts group meeting —
 
@@ -296,3 +298,5 @@ done soon?)
 *JK: I hope the outreach group can direct the building out of* [*arks.org*](http://arks.org/) *(currently pointing to* [*n2t.net*](http://n2t.net/)*).*  
 5. Around the room:  
 *Confirmed that everyone is ok to wait for the AitO working groups and merge our efforts with theirs.*  
+
+{% include content/section.html do="end" %}

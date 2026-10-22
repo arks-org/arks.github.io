@@ -10,6 +10,8 @@ help spark ideas for an ARK organization to describe their ARK service.
 
 <!--more-->
 
+{% include content/section.html do="start" color="cool" label="News post template" %}
+
 These are questions to help get started telling the story of your organization's use of ARKs.
 
 1. What do you create ARKs for?
@@ -27,3 +29,5 @@ blog at https://arks.org/news or the ARK Alliance newsletter. The title could be
 7. How have ARKs changed the way you work? What benefits have you seen?
 8. What is an example of the feedback have you received since you implemented ARKs?
 9. Would you have some charismatic images that we could include to illustrate your collection, service, organization, etc?
+
+{% include content/section.html do="end" %}

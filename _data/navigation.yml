@@ -4,7 +4,7 @@ main_tree:
     type: standard
 
   - text: Get Started
-    link: "/about/getting-started-implementing-arks/" 
+    link: "/starting/" 
     type: standard
 
   - text: About Arks

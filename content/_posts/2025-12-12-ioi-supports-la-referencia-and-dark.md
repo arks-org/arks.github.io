@@ -9,13 +9,14 @@ date: 2025-12-11
 published: true
 image:
   url: "/assets/images/share/dARK.png"
+  alt: "dARK logo"
 ---
 
 LA Referencia and the dARK (Decentralized ARK) initiative will receive up to US$1.5M in funding as one of the inaugural winners of the IOI Network Adoption Fund.
 
 <!--more-->
 
-![][dARK logo]{: .img-thumbnail .img-responsive fetchpriority="high" height="auto" loading="eager"}
+{% include content/fig.html url=page.image.url description=page.image.alt nocaption=true %}
 
 \[This post is based on the recent [IOI announcement](https://investinopen.org/blog/empowering-networks-advancing-openness-invest-in-open-infrastructure-announces-inaugural-grantees-of-the-ioi-fund-for-network-adoption/).\]
 

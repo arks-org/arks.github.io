@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="280" viewBox="0 0 760 280">
+  <title>Suffix passthrough in action</title>
+  <desc>An extended ARK resolves to a target URL with the same suffix appended.</desc>
+  <rect width="760" height="280" fill="#fff"/>
+  <text x="24" y="38" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#111">Suffix passthrough in action</text>
+
+  <text x="24" y="80" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#8b0018">Extended ARK submitted for resolution</text>
+  <text x="24" y="108" font-family="monospace" font-size="18"><tspan fill="#8b0018">https://n2t.net/ark:12345/x98765</tspan><tspan fill="#4f5358">/study92/location18/day96.xlsx</tspan></text>
+
+  <line x1="380" y1="126" x2="380" y2="164" stroke="#005fcc" stroke-width="5"/>
+  <path d="M369,164 L391,164 L380,180 Z" fill="#005fcc"/>
+  <text x="397" y="153" font-family="Arial, sans-serif" font-size="15" font-style="italic" fill="#222">The resolver passes the suffix through</text>
+
+  <text x="24" y="197" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#006229">Resulting target URL</text>
+  <text x="24" y="225" font-family="monospace" font-size="18"><tspan fill="#006229">https://datazoo.example.com/carbon288</tspan><tspan fill="#004a99">/study92/location18/day96.xlsx</tspan></text>
+
+  <text x="24" y="258" font-family="Arial, sans-serif" font-size="16" fill="#222">The suffix is unchanged and appended to the registered target URL.</text>
+</svg>

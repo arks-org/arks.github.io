@@ -1,0 +1,36 @@
+{% assign parts = page.permalink | remove_first: "/" | split: "/" | reject: "" %}
+
+{% comment %}
+  This code generates a breadcrumb navigation based on the page's permalink.
+  It splits the permalink into parts and creates links for each part, except
+  the last. Some bug in the reject filter caused it to not reject the first
+  empty string after the split, hence use of the remove_first filter.
+{% endcomment %}
+
+<nav lang="en" class="arka__breadcrumbs" aria-label="Breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item">
+      <a href="{{ '/' | relative_url }}">Home</a>
+    </li>
+
+    {% assign path = "" %}
+    {% for part in parts %}
+      {% assign path = path | append: '/' | append: part %}
+      {% if forloop.last %}
+        <li lang="{{ page.lang | default: 'en' }}" class="breadcrumb-item active" aria-current="page">
+          {{ page.title }}
+        </li>
+      {% else %}
+        {% assign breadcrumb_path = path | append: '/' %}
+        {% if path == "/community/organizations" %}
+          {% assign breadcrumb_path = "/community/ark-organizations/" %}
+        {% endif %}
+        <li class="breadcrumb-item">
+          <a href="{{ breadcrumb_path | relative_url }}">
+            {{ part | replace: '-', ' ' | capitalize }}
+          </a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ol>
+</nav>
