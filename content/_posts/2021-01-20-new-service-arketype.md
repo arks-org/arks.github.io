@@ -8,6 +8,7 @@ date: 2021-01-20T23:11:21+00:00
 published: true
 image:
   url: "/assets/images/posts/2021-01-20-new-service-arketype/AskMeAnything-2048x862.png"
+  alt: "Image of the ARKetype event program"
 ---
 
 ARKetype, a new ARK allocation service by HEG-GE and SIB, will be introduced
@@ -25,7 +26,7 @@ Time**, we will introduce the service with a free online event called **[Ask
 Me Anything]**. Presentations will be in English and the Q&A (Question and
 Answer) session will be in French, German and English.
 
-![][1]{: .img-thumbnail .img-responsive fetchpriority="high" height="431" loading="eager" width="1024"}
+{% include content/fig.html url=page.image.url description=page.image.alt nocaption=true %}
 
 You can register for this event by visiting the following link:
 [https://app.hesge.ch/enquetes/index.php/447277/lang-en] (deadline: Tuesday,

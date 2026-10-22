@@ -12,6 +12,8 @@ advantages they offer in terms of cost, flexibility, metadata, and more.
 
 <!--more-->
 
+{% include content/section.html do="start" color="cool" label="ARKs compared to other PIDs" %}
+
 ## Reasons to use ARKs as compared to DOIs
 
 -   To keep costs down. While some ARK service providers exist, ARKs can be
@@ -59,12 +61,11 @@ These are the major persistent identifier types (or schemes).
 They also have very similar structure, as seen in the examples below,
 consisting of four parts:
 
-      https://n2t.net/ark:99999/12345
-       https://doi.org/10.99999/12345
-    https://handle.net/10.99999/12345
-         https://purl.org/99999/12345
-    https://<various>/urn:99999:12345
-{: .bg-secondary-subtle }
+-   `https://n2t.net/ark:99999/12345`
+-   `https://doi.org/10.99999/12345`
+-   `https://handle.net/10.99999/12345`
+-   `https://purl.org/99999/12345`
+-   `https://<various>/urn:99999:12345`
 
 1.  the protocol (`https://`) plus a hostname,
 2.  just for ARK and URN, there’s also a label (“ark:” or “urn:”),
@@ -114,7 +115,7 @@ an identifier fee to create them. Of course *maintaining* them isn’t free. It
 is never without cost to keep content access persistent in the long term,
 regardless of identifier type.
 
-#### More differences between ARKs, DOIs, Handles, PURLs, and URNs
+### More differences between ARKs, DOIs, Handles, PURLs, and URNs
 
 -   Landing pages: Crossref and DataCite DOIs link to publisher landing pages
     constructed around but *not directly to* objects you care about, but ARKs
@@ -203,3 +204,5 @@ checking, duplicate detection, report generation, and searching.
 [n2t.net]: https://n2t.net/
 [1]: https://n2t.net
 [apply for a URN namespace]: https://tools.ietf.org/html/rfc8141#section-6
+
+{% include content/section.html do="end" %}

@@ -6,11 +6,13 @@ date: 2021-01-23T23:07:47+00:00
 published: true
 ---
 
-ARK Shoulder Selection: Best Practices. Choose short, unique extension with
+ARK shoulder best practices. Choose short, unique extension with
 lowercase letters and ending digit. Avoid '/', ensure compliance.
 Implementation options discussed.
 
 <!--more-->
+
+{% include content/section.html do="start" color="cool" label="Introduction to ARK shoulders" %}
 
 In selecting a shoulder format, do start with your NAAN and decide on a short,
 fixed extension that you will add to it. The extension should
@@ -20,11 +22,9 @@ fixed extension that you will add to it. The extension should
 -   contain no vowels or the letter ‘l’ (ell).
 
 Many people make the initial mistake of adding a “/” between the end of the
-shoulder and the rest of the ARK, for example,
-
-       ark:12345/x5/wf6789/c2/s4.pdf
-                   ^ WRONG!
-{: .bg-secondary-subtle }
+shoulder and the rest of the ARK. For example,
+`ark:12345/x5/wf6789/c2/s4.pdf` is wrong. The extra slash appears between the
+shoulder `/x5` and the remainder of the assigned name, `wf6789`.
 
 Don’t do that! It’s natural to want to visually mark the shoulder’s end, but
 it’s prohibited by ARK rules.
@@ -44,7 +44,8 @@ and can save you user-support time in the end.
 
 In fact, in-house ARK administrators always know where the shoulder ends,
 provided it was chosen using the “first-digit convention”. A *primordinal
-shoulder* is a sequence of one or more betanumeric characters (defined [here])
+shoulder* is a sequence of one or more betanumeric characters (see
+[more about running minters])
 ending in a digit. This means that the shoulder is all letters (often just
 one) after the NAAN up to and including the first digit encountered after the
 NAAN. Another advantage of primordinal shoulders is that there is an infinite
@@ -71,8 +72,10 @@ shoulder with a minter service and an API access point.
 A completely different kind of shoulder “creation” step is needed to implement
 a shoulder under one of the few shared NAANs (described under [namespaces]).
 
-[here]: about-running-minters-and-resolvers.md
+[more about running minters]: about-running-minters-and-resolvers.md
 [ezid.cdlib.org]: https://ezid.cdlib.org/
 [suffix passthrough]: {{ site.baseurl }}{{ site.spt_explained }}
 [ark:99152/p0]: https://n2t.net/ark:99152/p0
 [namespaces]: about-ark-namespaces.md
+
+{% include content/section.html do="end" %}

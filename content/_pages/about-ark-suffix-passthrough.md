@@ -12,6 +12,8 @@ that extend that registered ARK with suffixes.
 
 <!--more-->
 
+{% include content/section.html do="start" color="cool" label="Suffix passthrough explained" %}
+
 Suffix Passthrough (SPT) is a feature that lets you add any suffix to an
 identifier, and when a user selects ("clicks on") the identifier, the suffix is
 added to the end of the identifier's location (target) URL. It dramatically
@@ -35,44 +37,46 @@ Any user-added suffix, which is a common way to form sub-object identifiers,
 will be passed through to the registered target object. For example, a dataset
 with a million component parts and just this one "ancestor" ARK,
 
-    https://n2t.net/ark:12345/x98765
+`https://n2t.net/ark:12345/x98765`
 
 would effectively allow access to a million ARKs, but only require you to
-manage the ancestor ARK. Those sub-object ARKs might look like: :
+manage the ancestor ARK. Those sub-object ARKs might include:
 
-    https://n2t.net/ark:12345/x98765/study1/location1/day1.cs
-    https://n2t.net/ark:12345/x98765/study1/location3/day19.cs
-     ...
-    https://n2t.net/ark:12345/x98765/study92/location18/day96.xlsx
+- `https://n2t.net/ark:12345/x98765/study1/location1/day1.cs`
+- `https://n2t.net/ark:12345/x98765/study1/location3/day19.cs`
+- `https://n2t.net/ark:12345/x98765/study92/location18/day96.xlsx`
 
-![][1]{: .img-thumbnail .img-responsive fetchpriority="high" height="769" loading="eager" width="824" }
+{% include content/fig.html
+  url="/assets/images/share/learn_spt_in_action_static.svg"
+  alt="Static suffix passthrough example. The extended ARK ending in /study92/location18/day96.xlsx resolves to the registered target URL with that same suffix appended."
+  description="Suffix passthrough in action."
+  nocaption=true
+%}
 
 When a user clicks on one of those ARKs, it is submitted to N2T, which sees
 that it is forwarded to the local resolver. Failing to find it stored, the
-local resolver scans scans starting from the end of the user-supplied ARK
+local resolver scans from the end of the user-supplied ARK
 string and stops at the first ancestor ARK that is stored (registered) in
 the resolver.
 
 The part that was scanned over, stretching from the first registered ancestor
-ARK to the end of the original string, comprises the suffix.
+ARK to the end of the original string, comprises the suffix. In the extended
+ARK `https://n2t.net/ark:12345/x98765/study92/location18/day96.xlsx`:
 
-    https://n2t.net/ark:12345/x98765/study92/location18/day96.xlsx
-    \______________________________/\____________________________/
-              ancestor ARK                      suffix
+- The ancestor ARK is `https://n2t.net/ark:12345/x98765`.
+- The suffix is `/study92/location18/day96.xlsx`.
 
 Then it redirects the user's browser to the ancestor's target URL,
 appending the suffix that it scanned. So if the ancestor ARK's target
-was, :
+was `https://datazoo.example.com/carbon288`, the mapping would be:
 
-    https://n2t.net/ark:12345/x98765 --> https://datazoo.example.com/carbon288
-    \______________________________/     \___________________________________/
-           ancestor ARK                        ancestor ARK's target URL
+- Ancestor ARK: `https://n2t.net/ark:12345/x98765`
+- Ancestor ARK's target URL: `https://datazoo.example.com/carbon288`
 
-the user would be (hypothetically) redirected to :
-
-    https://datazoo.example.com/carbon288/study92/location18/day96.xlsx
-    \___________________________________/\____________________________/
-           ancestor's target URL                    suffix
+The resolver appends the same suffix to the target URL and redirects the user
+to `https://datazoo.example.com/carbon288/study92/location18/day96.xlsx`.
+That final URL consists of the ancestor's target URL followed by the suffix
+`/study92/location18/day96.xlsx`.
 
 Note that SPT is only useful when the target server can respond to the
 suffixes it receives. For example, you would not instruct users how to
@@ -120,11 +124,9 @@ Example 3. One stored ARK standing in for any number of internet search
 - Its target URL: <https://www.google.com/#q=>
 - Extended ARK: <https://n2t.net/ark:12345/fk3pqrst>
 
-You can experiment easily by pasting this stored ARK, :
-
-    https://n2t.net/ark:12345/fk3
-
-into your browser's location field and appending (no spaces) a "search
+You can experiment by pasting the stored ARK
+`https://n2t.net/ark:12345/fk3` into your browser's location field and
+appending (without spaces) a "search
 term" suffix of your choice.
 
-[1]: {{ site.baseurl }}/assets/images/share/learn_spt_in_action.gif
+{% include content/section.html do="end" %}

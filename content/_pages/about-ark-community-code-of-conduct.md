@@ -13,6 +13,8 @@ community environment.
 
 <!--more-->
 
+{% include content/section.html do="start" color="cool" label="Code of conduct" %}
+
 We value the participation of each member of the ARK (Archival Resource Key)
 community. For the purposes of this document, the community includes the
 working groups sustaining the ARK infrastructure (eg, arks.org,
@@ -61,9 +63,9 @@ Examples of unacceptable behavior include:
 Community Leaders are responsible for clarifying and enforcing our standards
 of acceptable behavior and will take appropriate and fair corrective action in
 response to any behavior that they deem inappropriate, threatening, offensive,
-or harmful. In this document, the Community Leaders that are responsible for
-enforcement are the chairs and co-chairs of the ARK Alliance (ARKA) working
-groups, as listed [here]({{ site.baseurl }}/community-groups#leaders).
+or harmful. In this document, the [Community Leaders]({{ site.baseurl
+}}/community/groups/#leaders) that are responsible for enforcement are the
+chairs and co-chairs of the ARK Alliance (ARKA) working groups.
 
 Community Leaders may be contacted by email at this address:
 <archival-resource-key-community-conduct@googlegroups.com>. They have the right and responsibility to
@@ -88,7 +90,7 @@ Instances of abusive, harassing, or otherwise unacceptable behavior may be
 reported to the Community Leaders responsible for enforcement at the private
 list <archival-resource-key-community-conduct@googlegroups.com>. If you would
 prefer, you may email one or more individuals listed as
-[Community Leaders]({{ site.baseurl }}/community-groups#leaders) as mentioned
+[Community Leaders]({{ site.baseurl }}/community/groups/#leaders) as mentioned
 earlier. All complaints will be reviewed and investigated promptly and fairly.
 
 All Community Leaders are obligated to respect the privacy and security of the
@@ -228,3 +230,5 @@ of Conduct licenses of these two source documents.
 [ARKA Advisory Group]: mailto:arka-advisory-group@googlegroups.com
 [Contributor Covenant]: https://www.contributor-covenant.org/version/2/1/code_of_conduct/
 [Dryad Code of Conduct]: https://datadryad.org/stash/code_of_conduct
+
+{% include content/section.html do="end" %}

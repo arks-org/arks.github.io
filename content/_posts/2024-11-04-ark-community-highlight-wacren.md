@@ -12,15 +12,14 @@ date: 2024-11-04
 published: true
 image:
   url: "/assets/images/posts/wacren_images.png"
+  alt: "Combined image of the WACREN logo next to the University of Ghana Legon Balme Library."
 ---
 
 The WACREN network describes their use of ARKs and their new ARKs Management Dashboard.
 
 <!--more-->
 
-![][1]{: .img-thumbnail .img-responsive fetchpriority="high" height="auto" loading="eager" }
-
-[1]: {{ page.image.url | absolute_url }}
+{% include content/fig.html url=page.image.url description=page.image.alt nocaption=true %}
 
 The West and Central African Research and Education Network (WACREN) is
 committed to advancing research and education through robust network

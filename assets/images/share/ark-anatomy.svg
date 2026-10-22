@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="430" viewBox="0 0 960 430">
+  <style>
+    text { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #173f4d; }
+    .title { font-size: 28px; font-weight: 700; }
+    .url { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 19px; font-weight: 650; }
+    .label { font-size: 18px; font-weight: 700; }
+    .detail { font-size: 16px; }
+    .segment { stroke: #173f4d; stroke-width: 2; }
+    .connector { fill: none; stroke: #315d68; stroke-width: 2; }
+  </style>
+  <rect width="960" height="430" rx="18" fill="#f7fbfc"/>
+  <text class="title" x="480" y="45" text-anchor="middle">Anatomy of an ARK URL</text>
+
+  <rect class="segment" x="20" y="85" width="280" height="58" rx="8" fill="#dceff2"/>
+  <rect class="segment" x="300" y="85" width="75" height="58" rx="8" fill="#f9e2bd"/>
+  <rect class="segment" x="375" y="85" width="95" height="58" rx="8" fill="#d9e8fa"/>
+  <rect class="segment" x="470" y="85" width="175" height="58" rx="8" fill="#e4f1d5"/>
+  <rect class="segment" x="645" y="85" width="120" height="58" rx="8" fill="#f2e0f3"/>
+  <rect class="segment" x="765" y="85" width="160" height="58" rx="8" fill="#f8dfdc"/>
+
+  <text class="url" x="160" y="121" text-anchor="middle">https://example.org/</text>
+  <text class="url" x="337" y="121" text-anchor="middle">ark:</text>
+  <text class="url" x="422" y="121" text-anchor="middle">12345</text>
+  <text class="url" x="557" y="121" text-anchor="middle">/x54xz321</text>
+  <text class="url" x="705" y="121" text-anchor="middle">/s3/f8</text>
+  <text class="url" x="845" y="121" text-anchor="middle">.05v.tiff</text>
+
+  <path class="connector" d="M160 143v45"/>
+  <path class="connector" d="M337 143v125"/>
+  <path class="connector" d="M422 143v45"/>
+  <path class="connector" d="M557 143v125"/>
+  <path class="connector" d="M705 143v45"/>
+  <path class="connector" d="M845 143v125"/>
+
+  <text class="label" x="160" y="212" text-anchor="middle">Resolver service</text>
+  <text class="detail" x="160" y="236" text-anchor="middle">Name Mapping Authority</text>
+  <text class="detail" x="160" y="258" text-anchor="middle">replaceable URL prefix</text>
+
+  <text class="label" x="422" y="212" text-anchor="middle">NAAN</text>
+  <text class="detail" x="422" y="235" text-anchor="middle">identifies the</text>
+  <text class="detail" x="422" y="255" text-anchor="middle">assigning authority</text>
+
+  <text class="label" x="705" y="212" text-anchor="middle">Sub-parts</text>
+  <text class="detail" x="705" y="236" text-anchor="middle">containment qualifiers</text>
+
+  <text class="label" x="337" y="292" text-anchor="middle">ARK label</text>
+  <text class="detail" x="337" y="316" text-anchor="middle">marks the identifier scheme</text>
+
+  <text class="label" x="557" y="292" text-anchor="middle">Assigned name</text>
+  <text class="detail" x="557" y="316" text-anchor="middle">unique within the NAAN</text>
+
+  <text class="label" x="845" y="292" text-anchor="middle">Variants</text>
+  <text class="detail" x="845" y="316" text-anchor="middle">alternate forms of a resource</text>
+
+  <path d="M300 355v22h625v-22" fill="none" stroke="#173f4d" stroke-width="3"/>
+  <text class="label" x="610" y="406" text-anchor="middle">Compact ARK: the stable identifier begins with “ark:”</text>
+</svg>

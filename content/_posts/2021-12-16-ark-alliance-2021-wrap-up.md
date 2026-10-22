@@ -8,8 +8,10 @@ date: 2021-12-16T03:02:42+00:00
 published: true
 image:
   url: "/assets/images/posts/2021-12-16-ark-alliance-2021-wrap-up/image-1.png"
+  alt: "Line chart showing slow growth in ARK-assigning organizations during the 2000s, followed by a steeper rise after 2010 to 877 organizations in December 2021."
 image2:
   url: "/assets/images/posts/2021-12-16-ark-alliance-2021-wrap-up/image.png"
+  alt: "World map of more than 850 ARK-assigning organizations in 2021. Markers cluster most densely in western Europe and the eastern United States, with additional organizations across the Americas, Africa, Asia, and Oceania."
 ---
 
 In 2021, the ARK community expanded with 187 new institutions, including the
@@ -25,9 +27,9 @@ it has been another banner year for the ARK community. The [Louvre museum] and
 be a member of the [NDSA], a consortium of 264 partnering organizations
 committed to the long-term preservation of digital information.
 
-![][1]{: .img-thumbnail .img-responsive fetchpriority="high" height="736" loading="eager" width="830"}
+{% include content/fig.html url=page.image.url alt=page.image.alt nocaption=true %}
 
-![][2]{: .img-thumbnail .img-responsive fetchpriority="" height="441" loading="lazy" width="1024"}
+{% include content/fig.html url=page.image2.url alt=page.image2.alt nocaption=true %}
 
 The [ARK Alliance] community comprises institutions and people who use [ARK
 identifiers] as well as those interested in promoting and sustaining the open

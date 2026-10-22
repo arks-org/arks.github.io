@@ -6,7 +6,13 @@ date: 2025-07-08T22:30:00+00:00
 published: true
 ---
 
-# NAAN Request Form Offline
+Maintenance notice.
+
+<!--more-->
+
+{% include content/section.html do="start" color="cool" label="Maintenance" %}
+
+## NAAN Request Form Offline
 
 **2025-07-08 22:30 UTC**
 
@@ -14,3 +20,4 @@ The NAAN Request form is currently offline for maintenance an updates.
 
 Normal service is expected to resume at 2025-07-09 22:30 UTC.
 
+{% include content/section.html do="end" %}

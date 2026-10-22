@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="470" viewBox="0 0 960 470">
+  <style>
+    text { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #173f4d; }
+    .title { font-size: 28px; font-weight: 700; }
+    .label { font-size: 18px; font-weight: 700; }
+    .detail { font-size: 15px; }
+    .code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 21px; font-weight: 650; }
+    .part { stroke: #173f4d; stroke-width: 3; }
+    .line { fill: none; stroke: #315d68; stroke-width: 2; }
+  </style>
+  <rect width="960" height="470" rx="18" fill="#f7fbfc"/>
+  <text class="title" x="480" y="43" text-anchor="middle">Durable identifier parts use a key metaphor</text>
+
+  <rect class="part" x="52" y="92" width="230" height="116" rx="58" fill="#dceff2"/>
+  <circle class="part" cx="167" cy="150" r="31" fill="#f7fbfc"/>
+  <path class="part" d="M282 126h102v28h64v-18h65v28h60v-22h65v27h62v-17h90v34h38v-17h55v39H282z" fill="#f9e2bd"/>
+  <path class="part" d="M282 126v82"/>
+  <path class="part" d="M790 152v56"/>
+
+  <path class="line" d="M167 208v42"/>
+  <path class="line" d="M333 208v42"/>
+  <path class="line" d="M536 208v42"/>
+  <path class="line" d="M836 208v42"/>
+  <text class="label" x="167" y="274" text-anchor="middle">Bow</text>
+  <text class="label" x="333" y="274" text-anchor="middle">Shoulder</text>
+  <text class="label" x="536" y="274" text-anchor="middle">Blade</text>
+  <text class="label" x="836" y="274" text-anchor="middle">Tip</text>
+
+  <rect class="part" x="35" y="315" width="300" height="48" rx="7" fill="#dceff2"/>
+  <rect class="part" x="335" y="315" width="140" height="48" rx="7" fill="#d9e8fa"/>
+  <rect class="part" x="475" y="315" width="88" height="48" rx="7" fill="#e4f1d5"/>
+  <rect class="part" x="563" y="315" width="245" height="48" rx="7" fill="#f9e2bd"/>
+  <rect class="part" x="808" y="315" width="45" height="48" rx="7" fill="#f8dfdc"/>
+  <text class="code" x="185" y="346" text-anchor="middle">https://example.org/</text>
+  <text class="code" x="405" y="346" text-anchor="middle">ark:12345</text>
+  <text class="code" x="519" y="346" text-anchor="middle">/x5</text>
+  <text class="code" x="685" y="346" text-anchor="middle">wf678</text>
+  <text class="code" x="830" y="346" text-anchor="middle">9</text>
+
+  <text class="label" x="185" y="391" text-anchor="middle">Cover</text>
+  <text class="detail" x="185" y="414" text-anchor="middle">NMA</text>
+  <text class="label" x="405" y="391" text-anchor="middle">Bow</text>
+  <text class="detail" x="405" y="414" text-anchor="middle">scheme + NAAN</text>
+  <text class="label" x="519" y="402" text-anchor="middle">Shoulder</text>
+  <text class="label" x="685" y="402" text-anchor="middle">Blade</text>
+  <text class="label" x="830" y="402" text-anchor="middle">Tip</text>
+  <text x="480" y="449" text-anchor="middle" font-size="16">The replaceable service “cover” is outside the durable identifier.</text>
+</svg>

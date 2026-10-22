@@ -1,0 +1,21 @@
+{% comment %}
+  Start, change, or end a section. Arguments:
+  - do: "start", "end", or "changeto"
+  - color: "warm" (default) or "cool"
+
+  Usage:
+    include content/section.html do="start" color="main"
+    include content/section.html do="changeto" color="cool"
+    include content/section.html do="end"
+
+  Surrounding blank lines and no indentation to protect markdown content.
+{% endcomment %}
+
+{% if include.do == "end" or include.do == "changeto" %}
+</div>
+</section>
+{% endif %}
+{% if include.do == "start" or include.do == "changeto" %}
+<section class="arka__section arka__section--{{ include.color | default: "warm" }}">
+<div class="arka__content arka__content--body container" markdown="1">
+{% endif %}

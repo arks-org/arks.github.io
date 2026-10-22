@@ -8,8 +8,10 @@ date: 2022-12-14T02:31:19+00:00
 published: true
 image:
   url: "/assets/images/posts/2022-12-14-wrapping-up-2022-with-over-1000-ark-organizations/image-2048x845.png"
+  alt: "World map of more than 1,000 ARK-assigning organizations in December 2022. Markers cluster most densely in western Europe and the eastern United States, with additional organizations across the Americas, Africa, Asia, and Oceania."
 image1:
   url: "/assets/images/posts/2022-12-14-wrapping-up-2022-with-over-1000-ark-organizations/naan_growth_2022.png"
+  alt: "Line chart showing slow growth in ARK-assigning organizations during the 2000s, followed by a steeper rise after 2010 to 1,027 organizations in December 2022."
 ---
 
 In 2022, the ARK Alliance achieved significant milestones, surpassing 1000
@@ -19,11 +21,22 @@ identifier management and interoperability among institutions.
 
 <!--more-->
 
-![][1]{: .img-thumbnail .img-responsive fetchpriority="high" height="480" loading="eager" width="640"}
+<div class="flex-container">
+<div class="flex-item" markdown="1">
 
-![][2]{: .img-thumbnail .img-responsive fetchpriority="high" height="172" loading="eager" width="417"}
+{% include content/fig.html url=page.image1.url alt=page.image1.alt nocaption=true %}
 
-Distribution of 1000+ ARK organizations.
+</div>
+<div class="flex-item" style="margin-top: 4rem;" markdown="1">
+
+{% include content/fig.html
+  url=page.image.url
+  alt=page.image.alt
+  description="Global distribution of more than 1,000 ARK-assigning organizations."
+%}
+
+</div>
+</div>
 
 2022 has proven to be another banner year for the ARK Alliance. Some
 highlights:

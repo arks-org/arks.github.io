@@ -11,6 +11,8 @@ NAANs, resolving ARKs, and updating NAAN registry entries.
 
 <!--more-->
 
+{% include content/section.html do="start" color="cool" label="ARK namespaces" %}
+
 ## ARK namespace overview
 
 ARK namespaces work much the same way that all namespaces work. Given a prefix
@@ -24,7 +26,7 @@ names (ARKs) that start with it.
 ARK namespaces begin with the Name Assigning Authority Number (NAAN), and can
 be further extended by a shoulder.
 
-<div class="table-responsive" markdown=1>
+<div class="table-responsive" markdown="1">
 | ***Set of all ARKs starting*** | ***Associated namespace***             | ***Example ARK in that namespace*** |
 |--------------------------------|----------------------------------------|-------------------------------------|
 | ark:                          | All ARKs                               | ark:99999/fk4gt2m                  |
@@ -77,7 +79,12 @@ locksmithing, which understands sets of keys to be defined by fixed, unvarying
 “shoulders” that precede the varying “blades” (shapes that differ among keys
 sharing the same shoulder) that follow it.
 
-![][1]{: .img-thumbnail .img-fluid loading="lazy" }
+{% include content/fig.html
+  url="/assets/images/share/lock_jargon.png"
+  label="Parts of a key labeled with locksmithing terms"
+  alt="A key viewed from the side. Its long body is labeled blade, the short fixed section between the round handle and blade is labeled shoulder, and the far end of the blade is labeled tip."
+  description="The shoulder, blade, and tip of a key provide a metaphor for parts of an ARK."
+%}
 
 Shoulders help organize a NAAN namespace for the long term. Just because a
 namespace contains an infinite number of possible ARKs does not mean that
@@ -228,9 +235,10 @@ NAANs are portable. If your organization transitions into or out of a vendor
 relationship, there is no impediment to taking your NAAN with you.
 
 [more information about implementing shoulders]: about-shoulders.md
-[1]: https://lh6.googleusercontent.com/4P2TlDWgXCj_wBahPf2UDHXeIbebp_8BTHlDccb0HGedk6wsqKLJCyWWXPmCN_j1zl_S_YjBO94rY7f80fUZNzaVkGy3-Dq28o9bLpD3tjVap0_b1VYFgOofuEOGwEgogvLtOAHY
 [namespace splitting problem]: https://n2t.net/e/n2t_vision.html
 [ARK Shoulders FAQ]: {{ site.baseurl }}/about/ark-shoulders-faq-en
 [form to request a shoulder under a shared NAAN]: {{ site.shoulder_form_url }}
 [online form]: {{ site.naan_form_url }}
 [sample policy]: https://ark.bnf.fr/ark:12148/bpt6k2102478.policy
+
+{% include content/section.html do="end" %}

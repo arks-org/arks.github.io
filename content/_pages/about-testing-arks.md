@@ -6,11 +6,13 @@ date: 2021-01-23T23:09:05+00:00
 published: true
 ---
 
-ARK Testing: Best Practices. Delete test ARKs regularly. Quick test ARKs with
+ARK testing best practices. Delete test ARKs regularly. Quick test ARKs with
 your NAAN: ark:99999/9NNNNN\_. Shared NAAN 99999 for testing; list in
 registry for N2T resolution.
 
 <!--more-->
+
+{% include content/section.html do="start" color="cool" label="Testing ARKs" %}
 
 Test ARKs should be deleted regularly or else users will get used to them
 being there and they may become attached to them. The longer an identifier is
@@ -31,9 +33,8 @@ aside for each NAAN. As with any prefix, there is an infinite number of
 possible test ARKs in each NAAN’s quick test namespace. Here are two versions
 of an example quick test ARK belonging to the BnF (NAAN 12148):
 
-       https://ark.bnf.fr/ark:99999/912148_testxyz
-          https://n2t.net/ark:99999/912148_testxyz
-{: .bg-secondary-subtle }
+- `https://ark.bnf.fr/ark:99999/912148_testxyz`
+- `https://n2t.net/ark:99999/912148_testxyz`
 
 Note that N2T.net is configured to forward any quick test ARK it receives
 (second version above) to the appropriate local resolver (first version).
@@ -51,3 +52,5 @@ it listed in the [shared NAAN shoulders registry]. That means filling out an
 
 [shared NAAN shoulders registry]: {{ site.shoulder_registry_txt }}
 [online shoulder request form]: {{ site.shoulder_form_url }}
+
+{% include content/section.html do="end" %}

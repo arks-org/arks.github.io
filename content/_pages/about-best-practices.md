@@ -12,6 +12,8 @@ management.
 
 <!--more-->
 
+{% include content/section.html do="start" color="cool" label="ARK best practices" %}
+
 ## ARK creation and object lifecycle
 
 ARKs should be created at object birth, or even before. We sometimes name our
@@ -66,3 +68,5 @@ statements]
 [EZID]: https://ezid.cdlib.org/
 [N2T.net]: https://n2t.net/
 [Identifier Conventions]: https://ezid.cdlib.org/learn/id_concepts
+
+{% include content/section.html do="end" %}

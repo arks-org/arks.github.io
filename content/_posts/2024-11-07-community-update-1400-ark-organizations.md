@@ -8,6 +8,7 @@ date: 2024-11-06
 published: true
 image:
   url: "/assets/images/posts/arka_com_update_nov2024.png"
+  alt: "Donut chart of ARK organizations by top-level domain: .fr 25.2%, .com 12.8%, .org 12.1%, and .edu 9.2%, followed by smaller shares for .net, .ca, .nl, .ar, .ch, .be, .eu, .uk, .br, .gov, .cu, and others. Beside it is the World Digital Preservation Day logo dated 7 November 2024."
 ---
 
 The ARK Alliance surpasses 1400 ARK organizations and reveals a
@@ -15,8 +16,18 @@ promising new ARK minting and resolving tool.
 
 <!--more-->
 
-![][arkabytld]{: .img-thumbnail .img-responsive fetchpriority="high" height="auto" loading="eager" }
-*Percent of ARK organizations per top-level domain. #WDPD2024*
+{% include content/fig.html
+  url="/assets/images/posts/arka_com_update_nov2024_tld_chart.svg"
+  alt="Donut chart with a labeled segment for each named top-level domain. The four largest segments also show their percentages, and a bracket groups the thinnest slices as smaller TLDs."
+  description="ARK organizations by top-level domain (TLD). The four largest shares are .fr 25.2%, .com 12.8%, .org 12.1%, and .edu 9.2%. The remaining share, about 41%, is split among many smaller TLDs, each under 5%. In the chart's order, the largest of these are .net, .ca, .nl, .ar, .ch, .be, .eu, .uk, .br, .gov, and .cu."
+%}
+
+{% include content/fig.html
+  url="/assets/images/posts/logo_wdpd2024.jpg"
+  alt="World Digital Preservation Day, 7th November 2024"
+  nocaption=true
+  width="240px"
+%}
 
 Today being [World Digital Preservation Day](https://www.dpconline.org/events/world-digital-preservation-day),
 we are delighted to announce that the number of ARK organizations has surpassed 1400. That number includes

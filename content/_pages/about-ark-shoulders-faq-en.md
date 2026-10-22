@@ -10,8 +10,15 @@ Frequently Asked Questions and Answers about ARK Shoulders
 
 <!--more-->
 
+{% include content/section.html do="start" color="cool" label="ARK shoulders FAQ" %}
+
+## Table of contents
+{: .no_toc }
+
 * TOC
 {:toc}
+
+## ARK shoulder basics
 
 ### **How can I give feedback on this document?**
 
@@ -37,10 +44,7 @@ Some more detail is given in response to the next question.
 
 ### **Why is there no "/" to mark the end of a shoulder?**
 
-Many people make the initial mistake of adding a "/" between the end of the shoulder and the rest of the ARK, for example,
-
-      ark:12345/x5/wf6789/c2/s4.pdf
-               ^ WRONG!
+Many people make the initial mistake of adding a "/" between the end of the shoulder and the rest of the ARK, for example, `ark:12345/x5/wf6789/c2/s4.pdf` (wrong). The extra slash appears between the shoulder `/x5` and the remainder of the assigned name, `wf6789`.
 
 It's natural to want to visually mark the shoulder's end, but it's prohibited by ARK rules.
 
@@ -63,11 +67,10 @@ A completely different kind of shoulder "creation" step is needed to implement a
 
 ### **Is there a quick way to get started creating test ARKs?**
 
-Yes. Instead of reserving a 99999 shoulder, if your organization already has its own NAAN, you can immediately create and use a "quick test ARK". This is an ARK that starts with ark:99999/9NNNNN\_, where NNNNN represents the NAAN (preceded by '9' and followed by '\_'). There is no need to register a quick test namespace since it is automatically set aside for each NAAN. As with any prefix, there is an infinite number of possible test ARKs in each NAAN's quick test namespace. Two versions of an example quick test ARK belonging to the BnF (NAAN 12148\) are
+Yes. Instead of reserving a 99999 shoulder, if your organization already has its own NAAN, you can immediately create and use a "quick test ARK". This is an ARK that starts with ark:99999/9NNNNN\_, where NNNNN represents the NAAN (preceded by '9' and followed by '\_'). There is no need to register a quick test namespace since it is automatically set aside for each NAAN. As with any prefix, there is an infinite number of possible test ARKs in each NAAN's quick test namespace. Two versions of an example quick test ARK belonging to the BnF (NAAN 12148\) are:
 
-      https://ark.bnf.fr/ark:99999/912148_testxyz
-
-         https://n2t.net/ark:99999/912148_testxyz
+- `https://ark.bnf.fr/ark:99999/912148_testxyz`
+- `https://n2t.net/ark:99999/912148_testxyz`
 
 Note that N2T.net is configured to forward any quick test ARK it receives (second version above) to the appropriate local resolver (first version).
 
@@ -82,3 +85,5 @@ As mentioned, to implement a shoulder under your *own* NAAN requires no special 
 
 Like NAANs, shoulders under shared NAANs are portable. If your organization transitions into or out of a vendor relationship, there is no impediment to taking your shoulder with you.
 
+
+{% include content/section.html do="end" %}
