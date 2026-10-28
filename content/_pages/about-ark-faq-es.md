@@ -109,17 +109,7 @@ Eso es un poco difícil de decir porque las ARK están muy descentralizadas, per
 * Colecciones de archivo de Internet,  
 * Perfiles de investigadores ORCID, etc.
 
-Aquí está la distribución global de las organizaciones registradas para crear ARK.
-
-{% capture map_caption %}
-  La distribución global de las organizaciones registradas para crear ARK. [Ver una lista completa de las instituciones que aparecen en el mapa]({{ site.baseurl }}/community/organizations/map-list/).
-{% endcapture %}
-{% include content/fig.html
-  url="/assets/images/pages/community/arkamap202407.png"
-  label="Organizaciones asociadas a ARK en todo el mundo"
-  alt="Mapa mundial que muestra las ubicaciones de organizaciones asociadas a ARK como puntos naranjas, con las mayores concentraciones en Norteamérica y Europa."
-  description=map_caption
-%}
+El [registro público de NAAN]({{ site.list_ark_orgs }}) enumera las organizaciones registradas para crear ARK y muestra su distribución global en un mapa.
 
 {% include content/section.html do="changeto" color="cool" label="Empezando" %}
 
@@ -649,8 +639,5 @@ Aunque las inflexiones se asocian comúnmente con ARK, no son "propiedad" de ARK
 Por lo general, los servicios basados en esquemas están diseñados como depósitos o repositorio o [plataformas cerradas](https://en.wikipedia.org/wiki/Closed_platform), que sirven a un tipo de identificador particular, como Handle, DOI o PURL. Cada depósito o repositorio realiza las mismas funciones principales: asignar nombres (cadenas de identificadores) a cosas (objetos o metadatos). Excluir todos menos un tipo de cadena de identificación puede ayudar a capturar mercados, pero es un desperdicio y no incluye. Requiere construir el mismo conjunto de servicios una y otra vez para cada tipo y viola los principios básicos de apertura.
 
 En contraste, el [resolvedor N2T (Name-to-Thing)](https://n2t.net/) y la [interfaz de administración EZID (identificadores fáciles)](https://ezid.cdlib.org/) fueron diseñados para funcionar con todos los identificadores. El esfuerzo puesto en cualquier nueva característica se puede aprovechar de manera eficiente en todos los tipos, lo que a veces crea una flexibilidad sorprendente. Por ejemplo, los ARK a menudo se almacenan en EZID con "metadatos DOI", y cada DOI almacenado en N2T puede beneficiarse de las "características de resolución ARK", como las inflexiones y el [paso de sufijos]({{ site.baseurl }}{{ site.spt_explained }}), que no están disponibles a través del resolvedor principal DOI ([doi.org](https://doi.org/)).  
-
-[static map]: ../assets/images/pages/community/arkamap202407.png
-[zoomable map]: {{ site.map_ark_orgs }}
 
 {% include content/section.html do="end" %}

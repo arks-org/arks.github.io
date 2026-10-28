@@ -17,20 +17,9 @@ ARKs.
 The ARK Alliance community comprises institutions and people who use or assign
 ARK identifiers as well as those interested in promoting ARKs and sustaining
 the open ARK infrastructure, which consists of standards, best practices, the
-[N2T.net] resolver, and the registry of ARK organizations. There are also
+[N2T.net] resolver, and the [registry of ARK organizations]. There are also
 [working groups] (Outreach, Technical, NAAN Registry, Advisory) and an
 [Archival Resource Key Community Code of Conduct].
-
-{% capture map_caption %}
-  Global distribution of ARK organizations. [View a complete list of institutions shown on the map]({{ site.baseurl }}/community/organizations/map-list/).
-{% endcapture %}
-{% include content/fig.html
-  url="/assets/images/pages/community/arkamap202407.png"
-  description=map_caption
-  label="ARK organizations around the world"
-  alt="A world map with red dots marking the locations of ARK organizations."
-  link="https://www.google.com/maps/d/u/0/edit?mid=1ALGeRERECL36f2pg7pqrthUYNmuU43UM&usp=sharing"
-%}
 
 The ARK Alliance emerged from a [collaboration] between the California Digital
 Library and DuraSpace/LYRASIS. Launched in 2018, it has gained the support of
@@ -168,8 +157,7 @@ work of the ARK Alliance] and have attracted support from the following
 
 [N2T.net]: https://n2t.net
 [Archival Resource Key Community Code of Conduct]: about-ark-community-code-of-conduct.md
-[1]: ../assets/images/pages/community/arkamap202407.png
-[2]: https://www.google.com/maps/d/u/0/edit?mid=1ALGeRERECL36f2pg7pqrthUYNmuU43UM&usp=sharing
+[registry of ARK organizations]: {{ site.list_ark_orgs }}
 [collaboration]: https://wiki.lyrasis.org/display/ARKs/ARKs+in+the+Open+Project
 [NDSA]: https://ndsa.org
 [@arks_org.bsky.social]: https://bsky.app/profile/arks-org.bsky.social

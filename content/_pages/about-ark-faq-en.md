@@ -121,17 +121,7 @@ That's a little hard to say because ARKs are very decentralized, but more than 6
 *   Internet Archive collections,
 *   ORCID researcher profiles, etc.
 
-Below is the global distribution of organizations registered to create ARKs.
-
-{% capture map_caption %}
-  Global distribution of over {{ site.num_ark_orgs }} ARK organizations. [View a complete list of institutions shown on the map]({{ site.baseurl }}/community/organizations/map-list/).
-{% endcapture %}
-{% include content/fig.html
-  url="/assets/images/pages/community/arkamap202407.png"
-  label="ARK partner organizations across the world"
-  alt="A world map showing the locations of ARK partner organizations as orange dots, with the greatest concentrations in North America and Europe."
-  description=map_caption
-%}
+The [public NAAN registry]({{ site.list_ark_orgs }}) lists the organizations registered to create ARKs and maps their global distribution.
 
 {% include content/section.html do="changeto" color="cool" label="Getting started" %}
 
@@ -684,8 +674,5 @@ Attachments:
 ![](images/icons/bullet_blue.gif) [WalterJohnsonAndBabeRuth.jpg](attachments/131533156/199525311.jpg) (image/jpeg)
 
 {% endcomment %}
-
-[static map]: ../assets/images/pages/community/arkamap202407.png
-[zoomable map]: {{ site.map_ark_orgs }}
 
 {% include content/section.html do="end" %}
