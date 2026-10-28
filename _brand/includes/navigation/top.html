@@ -13,12 +13,14 @@
 <nav lang="en" class="arka__navbar navbar navbar-expand-md border-top border-bottom border-dark-subtle"
      aria-label="Main navigation">
   <div class="container">
-    <a href="{{ site.baseurl }}" class="navbar-brand d-md-none">
-      <svg class="text-brand icon-lg arka__logo">
-            <title>{{ site.title }}</title>
+    <a href="{{ site.baseurl }}/" class="navbar-brand arka__navbar-brand d-md-none">
+      <svg class="text-brand icon-lg arka__logo" aria-hidden="true">
             <use href="#icon-ark"></use>
       </svg>
-      {{ site.title }}
+      <span class="arka__navbar-brand-text">
+        <span class="arka__navbar-brand-title">{{ site.title }}</span>
+        <span class="arka__tagline arka__navbar-brand-tagline">{{ site.tagline_short }}</span>
+      </span>
     </a>
     <button class="navbar-toggler"
            type="button" 
