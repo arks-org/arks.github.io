@@ -117,17 +117,7 @@ Difficile à dire car les ARK sont décentralisés, mais plus de 650 organisatio
 * les collections d’Internet Archive)  
 * les profils de chercheurs ORCID
 
-Voici la répartition globale des organisations enregistrées comme attributrices d’ARK.
-
-{% capture map_caption %}
-  La répartition globale des organisations enregistrées comme attributrices d’ARK. [Voir la liste complète des institutions figurant sur la carte]({{ site.baseurl }}/community/organizations/map-list/).
-{% endcapture %}
-{% include content/fig.html
-  url="/assets/images/pages/community/arkamap202407.png"
-  label="Organisations partenaires ARK dans le monde"
-  alt="Carte du monde montrant l’emplacement des organisations partenaires ARK par des points orange, avec les plus fortes concentrations en Amérique du Nord et en Europe."
-  description=map_caption
-%}
+Le [registre public NAAN]({{ site.list_ark_orgs }}) recense les organisations enregistrées comme attributrices d’ARK et présente leur répartition globale sur une carte.
 
 {% include content/section.html do="changeto" color="cool" label="Pour commencer" %}
 
@@ -652,8 +642,5 @@ En règle générale, les services basés sur des formats d’identifiant sont c
 
 À l’inverse, le résolveur [N2T (Name-to-Thing)](https://n2t.net/) et l'interface de gestion [EZID](https://ezid.cdlib.org/) (« identifiants simples ») ont été conçus pour gérer tout identifiant. Les efforts consacrés à toute nouvelle fonctionnalité peuvent être étendus avec profit à tous les types, ce qui permet une surprenante flexibilité. Par exemple, les ARK sont souvent stockés dans EZID avec des métadonnées DOI, et chaque DOI stocké dans N2T peut bénéficier des fonctionnalités de résolution ARK telles que les inflexions et le [« transfert de suffixe »]({{ site.baseurl }}{{ site.spt_explained }}), qui ne sont pas disponibles via le résolveur DOI principal ([doi.org](https://www.doi.org/)).   
 
-
-[static map]: ../assets/images/pages/community/arkamap202407.png
-[zoomable map]: {{ site.map_ark_orgs }}
 
 {% include content/section.html do="end" %}
