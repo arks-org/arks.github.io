@@ -10,6 +10,8 @@ title: ARK Alliance
 email: info@arks.org
 tagline: >-
   Home of the Archival Resource Key (ARK)
+# Shown beneath the site title in the mobile navigation bar.
+tagline_short: Home of Archival Resource Keys
 description: >-
   ARKs are reliable, persistent identifiers (PIDs) for information objects,
   functioning as stable web addresses that avoid 404 errors. Welcome to the
