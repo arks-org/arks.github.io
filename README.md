@@ -67,12 +67,15 @@ bundle exec jekyll build --destination _site
 
 The `_site/` directory is generated output and should not be edited directly.
 
-## Preview locally
+## Preview and edit locally
 
-Start a local server with live reload:
+The build step can be skipped and an edit/preview cycle initiated by
+starting a local server with live reload:
 
 ```sh
 bundle exec jekyll serve --livereload
 ```
 
 Open <http://localhost:4000/arks.github.io/> in a browser.
+The --livereload flag causes your files to be watched for changes in the
+background. For each change the site is rebuilt and your browser refreshed.
