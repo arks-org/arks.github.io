@@ -87,6 +87,7 @@ ARK FAQs in English, French, and Spanish
 -   Name Assigning Authority Number (NAAN) registry
 -   Nice Opaque Identifier (Noid) systems
 -   N2T: a global resolver
+-   [N2T resolver rules](ark-resolver-rules)
 -   [Resolver feature: suffix passthrough]
 
 [ARK features]
