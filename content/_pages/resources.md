@@ -68,6 +68,8 @@ To get your software listed please [let us know] about it.
 -   [Golang Noid][]: Golang/Docker implementation of Noid
 -   [Ruby Noid][]: Ruby implementation of Noid
 -   [PHP Noid][]: PHP implementation of Noid
+-   [Dataverse Plugin](https://github.com/pinoyseoul/dataverse-ark): standalone Java Service Provider Interface plugin enabling native Archival Resource Key persistent identifier support in Harvard Dataverse 6.x+ without modifying core application code
+-   [Wordpress Plugin](https://wordpress.org/plugins/arca-del-mar-caribe/): ARCA del Mar Caribe is a WordPress plugin that turns your site into a local ARK resolver
 -   [OJS Plug-in][]: ARK plug-in for the [Open Journal System (OJS)] of the
     Public Knowledge Project (similar to its DOI plug-in) that works with
     versions 3.1.X, 3.2.X, and 3.3.X, and with locales for the Spanish and
